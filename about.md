@@ -3,7 +3,11 @@ layout: page
 title: About MegaMek
 ---
 
-MegaMek is an unofficial, online version of the Classic BattleTech board game. MegaMek is open source, free software. It is licenced under the GPL.
+<p class='lead'>
+  MegaMek is an unofficial, online version of the Classic BattleTech
+  board game. MegaMek is open source, free software. It is licenced under
+  the GPL.
+</p>
   
 Current features include:
   
