@@ -4,11 +4,11 @@ layout: page
 
 <div class="container">
   <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-8">
       {% capture about_include %}{% include mminfo/about.md %}{% endcapture %}
       {{ about_include | markdownify }}          
     </div>
-    <div class="col-md-5">
+    <div class="col-md-4">
         <button class="btn">
           <img class="img-btn" src="assets/images/megamek.png" alt='MekHQ' />           <i class="fa fa-download fa-2x"></i><br>Download MegaMek<br>version 0.45.1</button>
           <br><a href="downloads.html">Other versions and platforms</a>
@@ -35,12 +35,23 @@ layout: page
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       {% capture features_include %}{% include mminfo/features.md %}{% endcapture %}
       {{ features_include | markdownify }}
     </div>
+  </div>
+  <div class="row">
     <div class="col-md-6">
-      <h3>System Requirements</h3>
+      <span class="align-top">
+        {% capture mission_include %}{% include mminfo/mission_statement.md %}{% endcapture %}
+        {{ mission_include | markdownify }}
+      </span>
+    </div>
+    <div class="col-md-6">
+      <span class="align-top">
+        {% capture sys_include %}{% include mminfo/sys_require.md %}{% endcapture %}
+        {{ sys_include | markdownify }}
+      </span>
     </div>
   </div>
 </div>
