@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+}
+
+body {
+  background-color: #3f3e3e;
+  color: #dadfe1;
+}
+
+.banner-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../assets/images/carousel-2.jpeg");
+
+    /* Set a specific height */
+    height: 350px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.banner-text {
+    text-align: center;
+    vertical-align: text-bottom;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+
+.container-fluid {
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  border: 10px;
+  color: #dadfe1;
+  background-color: #91a6ba;
+  border: 2px solid #ffd700;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #939393;
+}
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: #fffacd;
+}
+
+/* visited link */
+a:visited {
+    color: #fffacd;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffd700;
+}
+
+/* selected link */
+a:active {
+    color: #f89406;
+}

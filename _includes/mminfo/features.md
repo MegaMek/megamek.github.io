@@ -1,16 +1,5 @@
----
-layout: page
-title: About MegaMek
----
+### Features 
 
-<p class='lead'>
-  MegaMek is an unofficial, online version of the Classic BattleTech
-  board game. MegaMek is open source, free software. It is licenced under
-  the GPL.
-</p>
-  
-Current features include:
-  
 - Network or hotseat play for 2 or more players
 - A somewhat cunning AI opponent for offline play
 - Choice of ground, atmosphere, or space combat, using Total Warfare rules

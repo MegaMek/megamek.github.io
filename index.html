@@ -2,67 +2,46 @@
 layout: page
 ---
 
-    <div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
-      <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-      </ol>
-      <div class='carousel-inner'>
-        <div class='carousel-item active'>
-          <image class='d-block w-100' src='assets/images/carousel-1.jpeg' />
-        </div>
-        <div class='carousel-item'>
-          <image class='d-block w-100' src='assets/images/carousel-2.jpeg' />
-        </div>
-        <div class='carousel-item'>
-          <image class='d-block w-100' src='assets/images/carousel-5.jpg' />
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      {% capture about_include %}{% include mminfo/about.md %}{% endcapture %}
+      {{ about_include | markdownify }}          
+    </div>
+    <div class="col-md-4">
+      <center>
+        <img src="assets/images/megamek.png" alt='MekHQ' />
+        <button class="btn"><i class="fa fa-download"></i> Download Latest Release</button>
+      </center>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class='col-md-4'>
-        <div class="card">
-          <img class='card-img-top' src="assets/images/megamek.png" alt='MekHQ' />
-          <div class='card-body'>
-            <h5 class='card-title'>MegaMek</h5>
-            <p class='card-text'>
-              A better description of what MegaMek does should go here.
-            </p>
-            <a class="card-link" href="#">Windows</a>
-            <a class="card-link" href="#">Linux</a>
-            <a class="card-link" href="#">macOS</a>
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+      <div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+          <div class='carousel-inner'>
+            <div class='carousel-item active'>
+              <image class='d-block w-100' src='assets/images/screenshots/megamek_screen1.png' />
+            </div>
+            <div class='carousel-item'>
+              <image class='d-block w-100' src='assets/images/screenshots/mekhq_screen2.png' />
+            </div>
           </div>
         </div>
-      </div>
-      <div class='col-md-4'>
-        <div class="card">
-          <img class='card-img-top' src="assets/images/mekhq.png" alt='MekHQ' />
-          <div class='card-body'>
-            <h5 class='card-title'>MekHQ</h5>
-            <p class='card-text'>
-              A better description of what MekHQ does should go here.
-            </p>
-            <a class="card-link" href="#">Windows</a>
-            <a class="card-link" href="#">Linux</a>
-            <a class="card-link" href="#">macOS</a>
-          </div>
-        </div>
-      </div>
-      <div class='col-md-4'>
-        <div class="card">
-          <img class='card-img-top' src="assets/images/megameklab.png" alt='MekHQ' />
-          <div class='card-body'>
-            <h5 class='card-title'>MegaMekLab</h5>
-            <p class='card-text'>
-              A better description of what MegaMekLab does should go here.
-            </p>
-            <a class="card-link" href="#">Windows</a>
-            <a class="card-link" href="#">Linux</a>
-            <a class="card-link" href="#">macOS</a>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {% capture features_include %}{% include mminfo/features.md %}{% endcapture %}
+      {{ features_include | markdownify }}
+    </div>
+    <div class="col-md-6">
+      <h3>System Requirements</h3>
+    </div>
+  </div>
+</div>
