@@ -118,3 +118,12 @@ a:active {
   float: left;
   height: 100px;
 }
+
+BUTTON SPAN {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;    
+}
