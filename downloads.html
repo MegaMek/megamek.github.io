@@ -14,8 +14,10 @@ title: Downloads
     <div class="container">
       <h3>Downloads</h3>
       <div class="row">
-        <h4>MekHQ</h4>
-        This download will install MekHQ, MegaMek, and MegaMekLab. If you want to use all three programs, then this download is all that you need. Older releases and source code available on <a href="https://github.com/MegaMek/mekhq/releases">GitHub</a>.
+        <div class="container">
+          {% capture mhq_include %}{% include mminfo/mhq_dl_info.md %}{% endcapture %}
+          {{ mhq_include | markdownify }}  
+        </div>
       </div>
       <div class="row">
         <div class='col-sm-6'>
@@ -52,8 +54,10 @@ title: Downloads
       </div>
     </div>
     <div class="row">
-      <h4>MegaMek</h4>
-      This download will only install the base MegaMek program. This is recommended if you have no interest in using the MekHQ program. Older releases and source code available on <a href="https://github.com/MegaMek/megamek/releases">GitHub</a>.
+      <div class="container">
+        {% capture mm_include %}{% include mminfo/mm_dl_info.md %}{% endcapture %}
+        {{ mm_include | markdownify }}  
+      </div>
     </div>
     <div class="row">
       <div class='col-sm-6'>
@@ -90,8 +94,10 @@ title: Downloads
       </div>
     </div>
     <div class="row">
-      <h4>MegaMeklab</h4>
-      This download will only install the MegaMekLab program. This is recommended if you just want record sheets for a tabletop game, or you want to customize mechs for a MegaMek game. Older releases and source code available on <a href="https://github.com/MegaMek/megameklab/releases">GitHub</a>.
+      <div class="container">
+        {% capture mml_include %}{% include mminfo/mml_dl_info.md %}{% endcapture %}
+        {{ mml_include | markdownify }}  
+      </div>
     </div>
     <div class="row">
       <div class='col-sm-6'>
