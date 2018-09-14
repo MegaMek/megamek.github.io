@@ -4,14 +4,25 @@ layout: page
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-7">
       {% capture about_include %}{% include mminfo/about.md %}{% endcapture %}
       {{ about_include | markdownify }}          
     </div>
-    <div class="col-md-4">
-        <button class="btn">
-          <img class="img-btn" src="assets/images/megamek.png" alt='MekHQ' />           <i class="fa fa-download fa-2x"></i><br>Download MegaMek<br>version 0.45.1</button>
-          <br><a href="downloads.html">Other versions and platforms</a>
+    <div class="col-md-5">
+      <button class="btn">
+        <img class="img-btn" src="assets/images/megamek.png" alt='MekHQ' />           <i class="fa fa-download fa-2x"></i><br>Download MegaMek<br>version 0.45.1
+      </button>
+      <br/><a href="downloads.html">Other versions and platforms</a>
+      <span class="align-top">
+        <p></p>
+        <h4>Recent News</h4>
+          {% for post in site.posts limit:6 %}
+          <a href="{{ post.url | relative_url }}">
+            <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time> - {{ post.title }}
+          </a><br>
+          {% endfor %}
+          (<a href="archives.html">Older news</a>)
+        </span>
     </div>
   </div>
   <div class="row">
