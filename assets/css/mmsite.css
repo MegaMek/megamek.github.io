@@ -76,7 +76,7 @@ body {
 .btn {
   border: 10px;
   color: #dadfe1;
-  background-color: #91a6ba;
+  background-color: grey;
   border: 2px solid #ffd700;
   padding: 12px 30px;
   cursor: pointer;
@@ -87,6 +87,7 @@ body {
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: #939393;
+  color: #ffd700;
 }
 
 h1,h2,h3 {
@@ -111,4 +112,9 @@ a:hover {
 /* selected link */
 a:active {
     color: #f89406;
+}
+
+.img-btn {
+  float: left;
+  height: 100px;
 }
