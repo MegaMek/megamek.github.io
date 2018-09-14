@@ -21,22 +21,56 @@ body {
     position: relative;
 }
 
-/* Place text in the middle of the image */
-.banner-text {
-    text-align: center;
-    vertical-align: text-bottom;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+.banner-shade {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  top: 308px;
 }
 
+.banner-box {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  height: 40px;
+}
+
+/* Navigation CSS */
+.nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    left: 25%;
+}
+.nav li {
+    list-style-type: none;
+    width: 10%;
+    float: left;
+}
+.nav a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
 
 .container-fluid {
   padding: 0px;
-  padding-bottom: 10px;
+}
+
+.container {
+  padding: 20px;
 }
 
 .btn {
