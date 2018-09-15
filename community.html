@@ -1,0 +1,12 @@
+---
+layout: page
+splash: old_mhq_load.jpeg
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <img src="assets/images/{{ page.splash }}" alt="image" style="float:right;height:250px;">
+    {% capture community_include %}{% include mminfo/community.md %}{% endcapture %}
+    {{ community_include | markdownify }}  
+  </div>
+</div>
