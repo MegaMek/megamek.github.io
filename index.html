@@ -31,14 +31,19 @@ layout: page
       <br>
       <div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'>
           <div class='carousel-inner'>
-            <div class='carousel-item active'>
-              <image class='d-block w-100' src='assets/images/screenshots/screen1.png' />
-            </div>
+            {% assign first_time = true %}
             {% for image in site.static_files %}
               {% if image.path contains 'images/screenshots' %}
-              <div class='carousel-item'>
-                <img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-              </div>
+                {% if first_time==true %}
+                  <div class='carousel-item active'>
+                    <img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                  </div>
+                  {% assign first_time = false %}
+                {% else %}
+                  <div class='carousel-item'>
+                    <img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                  </div>
+                {% endif %}
               {% endif %}
             {% endfor %}
           </div>
