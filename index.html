@@ -17,11 +17,11 @@ layout: page
       <p>
       <span class="align-top">
         <h4>Recent News</h4>
-          {% for post in site.posts limit:6 %}
-          <a href="{{ post.url | relative_url }}">
-            <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date_to_string }}</time> - {{ post.title }}
-          </a><br>
-          {% endfor %}
+          <ul>
+            {% for post in site.posts limit:6 %}
+              <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
           (<a href="archives.html">Older news</a>)
         </span>
     </div>
