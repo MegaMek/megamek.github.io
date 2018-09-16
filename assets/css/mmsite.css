@@ -58,6 +58,15 @@ body {
     width: 10%;
     float: left;
 }
+
+/*To not get the default bullet styling for nav*/
+.nav li:before { 
+  font-family: inherit !important;
+  content: "";
+  margin: 0 0 0 0;
+  color: inherit !important;
+}
+
 .nav a {
     display: inline-block;
     padding: 10px 0;
@@ -133,4 +142,23 @@ BUTTON SPAN {
 }
 .cms-float-right {
     margin-left: 20px;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+li:before {    
+font-family: 'FontAwesome';
+content: '\f05b';
+margin:0 5px 0 -15px;
+color: #dadfe1;
+}
+
+li.news:before {    
+font-family: 'FontAwesome';
+content: '\f1ea';
+margin:0 5px 0 -15px;
+color: #dadfe1;
 }
