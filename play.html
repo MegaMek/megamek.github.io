@@ -5,7 +5,7 @@ splash: old_mhq_splash.jpeg
 
 <div class="row">
   <div class="col-md-12">
-    <img src="assets/images/{{ page.splash }}" alt="image" style="float:right;height:250px;">
+    <img src="assets/images/{{ page.splash }}" alt="image" style="float:right;height:250px;" class="cms-float-right">
     {% capture play_include %}{% include mminfo/play.md %}{% endcapture %}
     {{ play_include | markdownify }}  
   </div>

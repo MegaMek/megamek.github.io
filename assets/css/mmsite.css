@@ -127,3 +127,10 @@ BUTTON SPAN {
     vertical-align: middle;
     text-align: center;    
 }
+
+.cms-float-left {
+    margin-right: 20px;
+}
+.cms-float-right {
+    margin-left: 20px;
+}
