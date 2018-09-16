@@ -43,37 +43,6 @@ body {
   height: 40px;
 }
 
-/* Navigation CSS */
-.nav {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 75%;
-    position: relative;
-    text-align: center;
-    left: 25%;
-}
-.nav li {
-    list-style-type: none;
-    width: 10%;
-    float: left;
-}
-
-/*To not get the default bullet styling for nav*/
-.nav li:before { 
-  font-family: inherit !important;
-  content: "";
-  margin: 0 0 0 0;
-  color: inherit !important;
-}
-
-.nav a {
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-}
-
 .container-fluid {
   padding: 0px;
 }
@@ -161,4 +130,12 @@ li.news:before {
   content: '\f1ea';
   margin:0 5px 0 -15px;
   color: #dadfe1;
+}
+
+.navbar.transparent {
+  width: 100%;  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
 }
