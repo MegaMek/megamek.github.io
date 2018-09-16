@@ -1,370 +1,39 @@
 ---
 layout: page
-title: Frequently Asked Questions
 ---
 
-    <h4>Technical Stuff</h4>
-    <div class="accordion" id="technicalFAQ">
-      <div class="card">
-        <div class="card-header" id="question1">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-              What software do I need to run MegaMek?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse1" class="collapse" aria-labelledby="question1" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              MegaMek will run on any operating system that can run Java 8
-              including Windows, macOS, and Linux. Although it will run on later
-              versions of Java, your experience will vary.
-            </p>
-          </div>
-        </div>
-      </div>
+<h3>FAQ</h3>
 
-      <div class="card">
-        <div class="card-header" id="question2">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-              How do I install and run MegaMek?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse2" class="collapse" aria-labelledby="question2" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              MegaMek comes in a zip file. You will need to unzip it using an
-              appropriate unzipping utility. For example, you could use 7-Zip or
-              WinZip on windows. Simply unzip MegaMek into the directory of your
-              choice. We recommend that you do not unzip a new release into the
-              same directory as an older release, as this can often cause
-              problems if files have changed. As of version 0.35.13, We are now
-              packaging MegaMek in operating system-specific platforms. To run
-              MegaMek on Windows and macOS, simply double-click on the MegaMek
-              icon. In a *nix environment, you can run the startup shell script
-              or run the program from the command line:
-            </p>
-            <p>
-              <code>java -jar MegaMek.jar &</code>
-            </p>
-            <p>
-              On older versions, macOS users will need to double-click the
-              MegaMek.jar file.
-            </p>
-          </div>
-        </div>
-      </div>
+<h4>Technical Stuff</h4>
 
-      <div class="card">
-        <div class="card-header" id="question3">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-              Stable, Dev, Exp... Which Megamek release should I use?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse3" class="collapse" aria-labelledby="question3" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              The Megamek project uses several different types of official
-              releases.
-            </p>
-            <p>
-              Stable releases are, as the name suggest, the most stable. These
-              are released less frequently and have undergone the most testing.
-            </p>
-            <p>
-              Between stable releases the project has two more frequently
-              released versions. The first of which is the dev snapshot
-              releases. These are released periodically during the development
-              process and will contain new features that are being worked that
-              aren't yet in the stable release. Since these releases are
-              currently in development there is a much higher likelihood of
-              encountering bugs.
-            </p>
-            <p>
-              The final release type is experimental. These releases come from
-              the experimental branch and generally contain changes that may not
-              make it into development or are longer term projects. These
-              releases may or may not happen depending on whether there are
-              experimental changes currently in development.
-            </p>
-            <p>
-              When making bug reports or asking questions about functionality,
-              it is important to specify what release you are using.
-            </p>
-          </div>
-        </div>
-      </div>
+{% for item in site.data.faq_tech %}
+  <h5> {{ item.question }} </h5>
+  <div class="container">
+    {{ item.answer}}
+  </div>
+{% endfor %}
 
-      <div class="card">
-        <div class="card-header" id="question4">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-              I am on a Mac and I can’t find my data and log directories. How am I supposed to add my own custom designs, maps, etc.?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse4" class="collapse" aria-labelledby="question4" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              If you are using a version between 0.35.13 and 0.35.21, you will
-              need to right-click (or control + click) on the Megamek icon and
-              choose “Show Package Contents.” Then navigate to Contents >
-              Resources and you will see both your data and log directories. As
-              of version 0.35.21, the data, log, and configuration directories
-              should all appear in the main folder.
-            </p>
-          </div>
-        </div>
-      </div>
+<h4>Unit Questions</h4>
 
-      <div class="card">
-        <div class="card-header" id="question5">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-              Mac fanboy here again, How do I open up multiple instances of MegaMek?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse5" class="collapse" aria-labelledby="question5" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              By default, OSX applications will only open a single instance. To
-              open up a second instance of MegaMek, you will have to use the
-              Terminal application (in Application/Utilities). Navigate to your
-              MegaMek directory and type:
-            </p>
-            <p>
-              <code>open -n MegaMek.app &</code>
-            </p>
-            <p>
-              The “-n” argument tells OSX to open up a new instance of the
-              application.
-            </p>
-          </div>
-        </div>
-      </div>
+{% for item in site.data.faq_unit %}
+  <h5> {{ item.question }} </h5>
+  <div class="container">
+    {{ item.answer}}
+  </div>
+{% endfor %}
 
-      <div class="card">
-        <div class="card-header" id="question6">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-              Why can’t I host a game?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse6" class="collapse" aria-labelledby="question6" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              If you are hosting a game over the internet, and other people
-              cannot connect to your address, then you probably have port
-              forwarding disabled in your router. You will need to allow port
-              forwarding from the router to your computer on the port that
-              MegaMek is using (2346, by default). How to do this will vary
-              depending upon what type of set up you have for connecting with
-              the internet. Check the instructions for your router. You can also
-              try portforward.com, which has instructions on how to forward
-              ports for many routers.
-            </p>
-          </div>
-        </div>
-      </div>
+<h4>Misc Questions</h4>
 
-      <div class="card">
-        <div class="card-header" id="question7">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-              How do I use more, or less, memory?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse7" class="collapse" aria-labelledby="question7" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of
-              memory. This amount of memory is sufficient for most games, but
-              when playing large games against the bot, higher amounts of memory
-              can boost performance. How you change the maximum memory allowed
-              varies by operating system. On windows, open up the
-              MegaMek.l4j.ini file and change the line that says “-Xmx1024m” to
-              the amount of memory you want. For example, if you want 512
-              megabytes of memory, you would change this line to “-Xmx512m”. On
-              macOS, you want to right-click on the MegaMek icon and choose
-              “Show Package Contents.” Then open up Contents/Info.plist. Look
-              for the line that says “-Xmx1024m” and edit this as above. On a
-              *NIX system you will need to edit the startup.sh file's last line,
-              or just add the memory argument directly to your java command if
-              launching manually. For example:
-            </p>
-            <p>
-              <code>java -Xmx512m -jar MegaMek.jar &</code>
-            </p>
-          </div>
-        </div>
-      </div>
+{% for item in site.data.faq_misc %}
+  <h5> {{ item.question }} </h5>
+  <div class="container">
+    {{ item.answer}}
+  </div>
+{% endfor %}
 
-      <div class="card">
-        <div class="card-header" id="question8">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-              How do I start a dedicated server?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse8" class="collapse" aria-labelledby="question8" data-parent="#technicalFAQ">
-          <div class="card-body">
-            <p>
-              It depends what operating system you are on, but in every case you
-              will need to do it from the command line (DOS on Windows,
-              Terminal/Xterm on macOS and unix). Navigate to your MegaMek
-              directory and type:
-            </p>
-            <p>
-              Windows: <code>MegaMek -dedicated -port XXXX</code>
-            </p>
-            <p>
-              macOS: <code>open MegaMek.app –args -dedicated -port XXXX &</code>
-            </p>
-            <p>
-              *nix: <code>java -jar MegaMek.jar -dedicated -port XXXX &</code>
-            </p>
-            <p>
-              Where you replace XXXX with the port you would like to use. On a
-              *nix/macOS system, we also recommend you preface your command with
-              a <kbd>nohup</kbd> command to avoid interruption. You can test your
-              dedicated server now by opening a new MegaMek window and connecting
-              to localhost on the given port number. On macOS, note that you
-              will need to use the “-n” argument to open up a new instance of
-              MegaMek, once your dedicated server is running.
-            </p>
-          </div>
-        </div>
-      </div>
+<!--
 
-    </div>
-    <hr />
-    <h4>Unit Questions</h4>
-
-    <div class="accordion" id="unitFAQ">
-      <div class="card">
-        <div class="card-header" id="question9">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
-              When I turn on the “Canon Units Only” option, I lose a bunch of units that I know should be canon.
-            </button>
-          </h5>
-        </div>
-        <div id="collapse9" class="collapse" aria-labelledby="question9" data-parent="#unitFAQ">
-          <div class="card-body">
-            <p>
-              We are currently in the process of recoding the canon status of
-              all units as part of the Master Unit List project. Please be
-              patient.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question10">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-              Why can't I find unit XXX?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse10" class="collapse" aria-labelledby="question10" data-parent="#unitFAQ">
-          <div class="card-body">
-            <p>
-              There are three possibilities:
-            </p>
-            <ol>
-              <li>Did you check the different rules levels? Perhaps the unit you are looking for is Advanced or Experimental</li>
-              <li>We forgot to add it, then please report it either to the bug tracker or the forums</li>
-              <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait that that happens.</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question11">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-              Why is unit XXX marked as illegal, it fits the official Record Sheet?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse11" class="collapse" aria-labelledby="question11" data-parent="#unitFAQ">
-          <div class="card-body">
-            <p>
-              Most of the times that means that the unit is using
-              ferro-fibrous armor and is using the old armor rules,
-              superceded by TechManual. Armor is now always rounded down,
-              making some units overweight until a new Record Sheet is
-              released.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <hr />
-    <h4>Misc Questions</h4>
-
-    <div class="accordion" id="miscFAQ">
-      <div class="card">
-        <div class="card-header" id="question12">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-              Why is the bot so stupid?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse12" class="collapse" aria-labelledby="question12" data-parent="#miscFAQ">
-          <div class="card-body">
-            <p>
-              The bot has not been overhauled for a long time and is completely
-              unaware of many of the new optional rules available in MegaMek,
-              so it will do stupid things like jump off of cliffs if you let it.
-              For the best bot experience, play with a minimum of extra options
-              enabled. We plan on making the bot better at some point, but right
-              now our priority is on other issues.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question12">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-              Are the dice conspiring against me?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse12" class="collapse" aria-labelledby="question12" data-parent="#miscFAQ">
-          <div class="card-body">
-            <p>
-              Short answer: No. Long answer: The dice use the standard Java
-              random number generation routines. You can find them described
-              in the Sun documentation. The same routine is used for every
-              dice roll in the game. These routines have been tested, and they
-              behave as closely as possible to real dice as is possible on a
-              computer. To put it another way, every time the virtual die is
-              rolled, it stands a one-in-six chance of generating each number,
-              one through six.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
+    
     <hr />
     <h4>Development Questions</h4>
 
@@ -471,3 +140,5 @@ title: Frequently Asked Questions
           </div>
         </div>
       </div>
+      
+    -->

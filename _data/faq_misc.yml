@@ -1,0 +1,22 @@
+# You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash.
+
+- question: "Why is the bot so stupid?"
+  answer: "The bot has not been overhauled for a long time and is completely
+  unaware of many of the new optional rules available in MegaMek,
+  so it will do stupid things like jump off of cliffs if you let it.
+  For the best bot experience, play with a minimum of extra options
+  enabled. We plan on making the bot better at some point, but right
+  now our priority is on other issues."
+  
+- question: "Are the dice conspiring against me?"
+  answer: "Short answer: No. Long answer: The dice use the standard Java
+  random number generation routines. You can find them described
+  in the Sun documentation. The same routine is used for every
+  dice roll in the game. These routines have been tested, and they
+  behave as closely as possible to real dice as is possible on a
+  computer. To put it another way, every time the virtual die is
+  rolled, it stands a one-in-six chance of generating each number,
+  one through six."
+  
+- question:
+  answer:

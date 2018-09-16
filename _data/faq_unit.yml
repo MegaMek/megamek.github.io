@@ -1,0 +1,23 @@
+# You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash. You can mix in html code here, but markdown will not process.
+
+- question: "When I turn on the \"Canon Units Only\" option, I lose a bunch of units that I know should be canon." 
+  answer: "We are currently in the process of recoding the canon status of
+  all units as part of the Master Unit List project. Please be
+  patient."
+  
+- question: "Why can't I find unit XXX?"
+  answer: "<p>
+    There are three possibilities:
+  </p>
+  <ol>
+    <li>Did you check the different rules levels? Perhaps the unit you are looking for is Advanced or Experimental</li>
+    <li>We forgot to add it, then please report it either to the bug tracker or the forums</li>
+    <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait that that happens.</li>
+  </ol>"
+
+- question: "Why is unit XXX marked as illegal when it fits the official Record Sheet?"
+  answer: "Most of the times that means that the unit is using
+  ferro-fibrous armor and is using the old armor rules,
+  superceded by TechManual. Armor is now always rounded down,
+  making some units overweight until a new Record Sheet is
+  released."
