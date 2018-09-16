@@ -6,7 +6,7 @@ layout: page
 
 <h4>Technical Stuff</h4>
 
-{% for item in site.data.faq_tech %}
+{% for item in site.data.faq.faq_tech %}
   <h5> {{ item.question }} </h5>
   <div class="container">
     {{ item.answer}}
@@ -15,7 +15,7 @@ layout: page
 
 <h4>Unit Questions</h4>
 
-{% for item in site.data.faq_unit %}
+{% for item in site.data.faq.faq_unit %}
   <h5> {{ item.question }} </h5>
   <div class="container">
     {{ item.answer}}
@@ -24,7 +24,7 @@ layout: page
 
 <h4>Misc Questions</h4>
 
-{% for item in site.data.faq_misc %}
+{% for item in site.data.faq.faq_misc %}
   <h5> {{ item.question }} </h5>
   <div class="container">
     {{ item.answer}}
