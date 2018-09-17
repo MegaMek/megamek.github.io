@@ -71,4 +71,4 @@ The website should then be viewable at [localhost:4000](http://localhost:4000).
 
 ### PR and Commit Policies
 
-None Yet
+For minor spelling/grammatical corrections or basic updates to content (e.g. updating links), devs with access may push directly to the master branch. For substantial content revisions, new content, or website design changes, a pull request should be made and approved by another dev. 
