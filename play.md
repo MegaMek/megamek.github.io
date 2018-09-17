@@ -1,3 +1,9 @@
+---
+layout: info_page
+title: Play
+splash: old_mhq_splash.jpeg
+---
+
 Stuff about playing the game should go here. Some ideas:
 
 - Getting started with your first MM game

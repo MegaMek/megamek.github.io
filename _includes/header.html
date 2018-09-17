@@ -11,36 +11,38 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="banner-image">
-          <nav class="navbar navbar-dark transparent navbar-expand-sm fixed-top">
-            <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">
-              <img src="{{ '/assets/images/icons/mm_word_logo.png' | relative_url }}" height="25" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                {% for menu_page in site.data.menu_pages %}
-                  {% if menu_page.name == page.title %}
-                    <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-                  {% else %}
-                    <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              <ul class="navbar-nav mr-0">
-                <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><i class="fa fa-facebook"></i></a>
-                <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><i class="fa fa-twitter"></i></a>
-                <a class="nav-item nav-link active" href="http://megamek.org:3000"><i class="fa fa-slack"></i></a>
-                <a class="nav-item nav-link active" href="https://www.github.com/megamek"><i class="fa fa-github"></i></a>
-              </ul>
-            </div>
-          </nav>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-image">
+            <nav class="navbar navbar-dark transparent navbar-expand-sm fixed-top">
+              <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">
+                <img src="{{ '/assets/images/icons/mm_word_logo.png' | relative_url }}" height="25" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  {% for menu_page in site.data.menu_pages %}
+                    {% if menu_page.name == page.title %}
+                      <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+                    {% else %}
+                      <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                <ul class="navbar-nav mr-0">
+                  <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><i class="fa fa-facebook"></i></a>
+                  <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><i class="fa fa-twitter"></i></a>
+                  <a class="nav-item nav-link active" href="http://megamek.org:3000"><i class="fa fa-slack"></i></a>
+                  <a class="nav-item nav-link active" href="https://www.github.com/megamek"><i class="fa fa-github"></i></a>
+                </ul>
+              </div>
+            </nav>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</header>

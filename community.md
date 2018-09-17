@@ -1,3 +1,9 @@
+---
+layout: info_page
+title: Community
+splash: old_mhq_load.jpeg
+---
+
 Stuff about the community should go here. Some ideas:
 
 - How to find places to play
