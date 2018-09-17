@@ -1,6 +1,6 @@
 These files contain a [Jekyll](https://jekyllrb.com/) set-up for a proposed new MegaMek website. [Github pages](https://pages.github.com/) supports Jekyll set ups and will auto re-build the website anytime a new commit is pushed. So we can use this to publish the front page site at megamek.github.io.
 
-The other reasons for using Jekyll is that we can separate frequently updated comment from the HTML formatting and design. This repository is designed so that all content information is pulled from simple Markdown and YAML files that can be easily edited without fiddling around with a bunch of HTML code.
+The other reasons for using Jekyll is that we can separate frequently updated content from the HTML formatting and design, without having to rely on a database system. This repository is designed so that all content information is pulled from simple Markdown and YAML files that can be easily edited without fiddling around with a bunch of HTML code.
 
 ## Adding Content
 
@@ -35,7 +35,7 @@ FAQ information is kept in YAML folders with a `question` and `answer` field for
 
 ### New Pages
 
-To create new pages, some HTML editing is required. The basic format in `play.html` or `community.html` can be copied and a new a markdown file should be added to the `_includes` directory. To add pages to the top navbar, the `header.html` file in the `_includes` folder will need to be edited. 
+To create new pages, some HTML editing is required. The basic format in `play.html` or `community.html` can be copied and a new a markdown file should be added to the `_includes` directory. To add pages to the top navbar, you need to edit the `menu-pages.csv` file in the `_data` directory. The name provided must match the title given in the front matter of the html page. 
 
 ### New Screenshots
 
