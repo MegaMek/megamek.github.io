@@ -14,7 +14,7 @@ page content is stored in markdown files in `_includes/mminfo` and in the root d
 
 - In `_includes`:
   - `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.  
-  - `downloads.md`: Probably should be re-named installation. This is instructions on how to download and install the programs. This will currently appear on the left in the download page.
+  - `installation.md`: Instructions on how to download and install the programs. This will currently appear on the left side of the download page.
   - `features.md`: a list of cool features that shows up on the front page. 
   - `mhq-dl_info.md`: A small blurb indicating what is included with the MHQ package and who should download it. This will show on the download page.
   - `mm_dl_info.md`: A small blurb indicating what is included with the MM package and who should download it. This will show on the download page.
