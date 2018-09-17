@@ -10,18 +10,20 @@ The latest program version information is kept in YAML file `current_releases.ym
 
 ### Page Content
 
-All page content is stored in markdown files in `_includes/mminfo`. Here is a list of the files that currently reside there and what content they change:
+page content is stored in markdown files in `_includes/mminfo` and in the root directory. Here is a list of the files that currently exist and what content they change:
 
-- `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.
-- `community.md`: Information about the megamek community. Very much a WIP ATM. Shows on its own page. 
-- `downloads.md`: Probably should be re-named installation. This is instructions on how to download and install the programs. This will currently appear on the left in the download page.
-- `features.md`: a list of cool features that shows up on the front page. 
-- `mhq-dl_info.md`: A small blurb indicating what is included with the MHQ package and who should download it. This will show on the download page.
-- `mm_dl_info.md`: A small blurb indicating what is included with the MM package and who should download it. This will show on the download page.
-- `mml_dl_info.md`: A small blurb indicating what is included with the MML package and who should download it. This will show on the download page.
-- `mission_statement.md`: The mission statement. Appears on front page.
-- `play.md`: Information about how to play MegaMek. Very much a WIP ATM. Shows on its own page.
-- `sys_require.md`: A short blurb describing the system requirements for the programs.
+- In `_includes`:
+  - `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.  
+  - `downloads.md`: Probably should be re-named installation. This is instructions on how to download and install the programs. This will currently appear on the left in the download page.
+  - `features.md`: a list of cool features that shows up on the front page. 
+  - `mhq-dl_info.md`: A small blurb indicating what is included with the MHQ package and who should download it. This will show on the download page.
+  - `mm_dl_info.md`: A small blurb indicating what is included with the MM package and who should download it. This will show on the download page.
+  - `mml_dl_info.md`: A small blurb indicating what is included with the MML package and who should download it. This will show on the download page.
+  - `mission_statement.md`: The mission statement. Appears on front page.  
+  - `sys_require.md`: A short blurb describing the system requirements for the programs.
+- In root directory:
+  - `community.md`: Information about the megamek community. Very much a WIP ATM. Shows on its own page. 
+  - `play.md`: Information about how to play MegaMek. Very much a WIP ATM. Shows on its own page.
 
 More information about using markdown to write pages can be found [here](https://daringfireball.net/projects/markdown/syntax). Its super easy.
 
@@ -35,7 +37,9 @@ FAQ information is kept in YAML folders with a `question` and `answer` field for
 
 ### New Pages
 
-To create new pages, some HTML editing is required. The basic format in `play.html` or `community.html` can be copied and a new a markdown file should be added to the `_includes` directory. To add pages to the top navbar, you need to edit the `menu-pages.csv` file in the `_data` directory. The name provided must match the title given in the front matter of the html page. 
+To create new pages, add a markdown file to the root directory with the same front matter that is currently in the `play.md` file. Layout should remain "info_page" and the title should be unique. A splash image from the `assets/images` directory is optional. 
+
+To add this to the top navbar, you need to edit the `menu-pages.csv` file in the `_data` directory. The name provided must match the title given in the front matter and the address should point to a file of the same name but with an html rather than md suffix. 
 
 ### New Screenshots
 
