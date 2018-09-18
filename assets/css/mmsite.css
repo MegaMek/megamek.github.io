@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-  background-image: url("../../assets/images/background/hexellence.png"), linear-gradient(#000000, #000000);;
+  background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);;
   color: #dadfe1;
 }
 
