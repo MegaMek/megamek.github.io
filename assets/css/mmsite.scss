@@ -179,3 +179,29 @@ height: 600px; /* This is your slider height */
 width:100%; 
 margin:0 auto; /* center your carousel if other than 100% */ 
 }
+
+/*********************************************************************/
+/* posts                                                             */
+/*********************************************************************/
+div.post-meta {
+  border-width: 1px 0;
+  border-color: #666666;
+  border-style: solid;
+  margin: 0 0 20px;
+  ul {
+    display: inline;
+    padding-left: 0;
+    float: right;
+  }
+  ul > li {
+    display: inline;
+    padding: 0 0 5px 20px;
+  }
+  li:before {    
+    content: '';
+    margin:0 5px 0 0px;
+  }
+  .post-time {
+    display: inline;
+  }
+}
