@@ -167,3 +167,15 @@ li.news:before {
   margin:0 5px 0 -20px;
   color: $font-color;
 }
+
+/*********************************************************************/
+/* sets carousel size                                                */
+/* https://parkhurstdesign.com/improved-carousels-twitter-bootstrap/ */
+/*********************************************************************/
+.slider-size {
+height: 600px; /* This is your slider height */
+}
+.carousel {
+width:100%; 
+margin:0 auto; /* center your carousel if other than 100% */ 
+}
