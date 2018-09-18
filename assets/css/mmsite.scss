@@ -5,11 +5,22 @@
 /* Variables                                           */
 /*******************************************************/
 
+//my first combo
 $font-color: #dadfe1;
-$background-color: #3f3e3e;
+$background-color: #282828;
 $accent-color-light: #fffacd;
 $accent-color-dark: #ffd700;
 $accent-color-selected: #f89406;
+
+//another darker background
+//$background-color: #282828;
+
+//a light background
+//$background-color: #dadfe1;
+//$font-color: #000000;
+//$accent-color-light: #0000A0;
+//$accent-color-dark: #800080;
+//$accent-color-selected: #00FFFF;
 
 /*******************************************************/
 /* Basics                                              */
@@ -143,12 +154,12 @@ li:before {
   font-family: 'FontAwesome';
   content: '\f05b';
   margin:0 5px 0 -20px;
-  color: #dadfe1;
+  color: $font-color;
 }
 
 li.news:before {    
   font-family: 'FontAwesome';
   content: '\f1ea';
   margin:0 5px 0 -20px;
-  color: #dadfe1;
+  color: $font-color;
 }
