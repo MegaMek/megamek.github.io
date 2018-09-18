@@ -14,7 +14,7 @@ page content is stored in markdown files in `_includes/mminfo` and in the root d
 
 - In `_includes`:
   - `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.  
-  - `downloads.md`: Probably should be re-named installation. This is instructions on how to download and install the programs. This will currently appear on the left in the download page.
+  - `installation.md`: Instructions on how to download and install the programs. This will currently appear on the left side of the download page.
   - `features.md`: a list of cool features that shows up on the front page. 
   - `mhq-dl_info.md`: A small blurb indicating what is included with the MHQ package and who should download it. This will show on the download page.
   - `mm_dl_info.md`: A small blurb indicating what is included with the MM package and who should download it. This will show on the download page.
@@ -71,4 +71,4 @@ The website should then be viewable at [localhost:4000](http://localhost:4000).
 
 ### PR and Commit Policies
 
-None Yet
+For minor spelling/grammatical corrections or basic updates to content (e.g. updating links), devs with access may push directly to the master branch. For substantial content revisions, new content, or website design changes, a pull request should be made and approved by another dev. 

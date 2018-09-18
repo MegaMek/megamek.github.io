@@ -21,3 +21,16 @@ Proin sagittis nisl rhoncus mattis. Non nisi est sit amet. Leo urna molestie at 
 Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Sagittis eu volutpat odio facilisis mauris sit amet. At urna condimentum mattis pellentesque id nibh. Gravida quis blandit turpis cursus in hac habitasse. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Purus in mollis nunc sed id semper risus in hendrerit. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Faucibus interdum posuere lorem ipsum. Aliquam ultrices sagittis orci a scelerisque. Ultrices eros in cursus turpis massa tincidunt. Placerat vestibulum lectus mauris ultrices eros in cursus. Facilisis sed odio morbi quis commodo. Sapien faucibus et molestie ac feugiat sed. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Sed pulvinar proin gravida hendrerit lectus. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.
 
 Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Magna fermentum iaculis eu non diam. Tristique nulla aliquet enim tortor at auctor. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Nam aliquam sem et tortor consequat id porta nibh. Consequat interdum varius sit amet mattis. Nullam eget felis eget nunc lobortis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Nec tincidunt praesent semper feugiat nibh. Feugiat nibh sed pulvinar proin gravida hendrerit.
+
+#### Currently registered servers
+
+<div id='servers'>
+</div>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+setInterval(function() {
+  $("#servers").load('https://api.megamek.org/servers.js');
+}, 1000);
+});
+</script>
