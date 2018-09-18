@@ -102,14 +102,14 @@ ul
 li:before {    
   font-family: 'FontAwesome';
   content: '\f05b';
-  margin:0 5px 0 -15px;
+  margin:0 5px 0 -20px;
   color: #dadfe1;
 }
 
 li.news:before {    
   font-family: 'FontAwesome';
   content: '\f1ea';
-  margin:0 5px 0 -15px;
+  margin:0 5px 0 -20px;
   color: #dadfe1;
 }
 
