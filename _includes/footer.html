@@ -8,3 +8,18 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8= sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4= sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8= sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T sha512-YK1Mz9UiZmhbFzXgMbl3bO49wZ78Xj3h8TtTBLFHEAEjUBxsEZdXd8Il5RWbhPOyB653bGQDNVGGny2mORZq4A==" crossorigin="anonymous"></script>
+<script>
+  /* Get correct download button by OS */
+  jQuery(document).ready(function () {
+    if (navigator.appVersion.indexOf("Win") != -1) {
+      document.getElementById("downloader").innerHTML = "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}-win.zip\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-windows\"></i> Windows</span></button></a><br/><a href=\"downloads.html\">Other versions and platforms</a>";
+    }
+    else if (navigator.appVersion.indexOf("Mac") != -1) {
+      //document.getElementById("downloader").innerHTML = "mac";
+      document.getElementById("downloader").innerHTML = "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}-mac.tar.bz2\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-apple\"></i> Mac OS</span></button></a><br/><a href=\"downloads.html\">Other versions and platforms</a>";
+    }
+    else if (navigator.appVersion.indexOf("X11") != -1 || navigator.appVersion.indexOf("Linux") != -1) {
+      document.getElementById("downloader").innerHTML = "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-linux\"></i> Linux/Unix</span></button></a><br/><a href=\"downloads.html\">Other versions and platforms</a>";
+    }
+  });
+</script>

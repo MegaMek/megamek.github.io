@@ -9,27 +9,22 @@ title: Home
       {{ about_include | markdownify }}          
     </div>
     <div class="col-md-5">
-      <div class="container">
-        <button class="btn">
-          <span><img width=100px src="assets/images/icons/megamek.png" alt='MekHQ' /></span>
-          <span>
-            <i class="fa fa-download fa-2x"></i><br>version {{ site.data.current_releases.stable }}
-            <br><i class="fa fa-windows"></i> <a href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}-windows.zip">Windows</a>
-            <br><i class="fa fa-apple"></i><a href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}-mac.tar.bz2">Mac OSX</a>
-            <br><i class="fa fa-linux"></i><a href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz">Linux/Unix</a>
+      <div class="row">
+        <div class="container" align="center" id="downloader">
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <span class="align-top">
+            <h4>Recent News</h4>
+            <ul>
+              {% for post in site.posts limit:6 %}
+                <li class="news"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+            (<a href="archives.html">Older news</a>)
           </span>
-        </button>
-        <br/><a href="downloads.html">Other versions and platforms</a>
-        <p></p>
-        <span class="align-top">
-          <h4>Recent News</h4>
-          <ul>
-            {% for post in site.posts limit:6 %}
-              <li class="news"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-          (<a href="archives.html">Older news</a>)
-        </span>
+        </div>
       </div>
     </div>
   </div>
