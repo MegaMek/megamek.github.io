@@ -5,9 +5,12 @@
 /* Variables                                           */
 /*******************************************************/
 
-//my first combo
+//fonts
+$font-stack: "Source Sans Pro", Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+
+//my initial dark grey color combo
 $font-color: #dadfe1;
-$background-color: #282828;
+$background-color: #3f3e3e;
 $accent-color-light: #fffacd;
 $accent-color-dark: #ffd700;
 $accent-color-selected: #f89406;
@@ -32,6 +35,7 @@ body, html {
 body {
   background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);;
   color: $font-color;
+  font-family: $font-stack;
 }
 
 h1,h2,h3 {
