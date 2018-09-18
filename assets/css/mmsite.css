@@ -36,7 +36,7 @@ body {
 .btn {
   border: 10px;
   color: #dadfe1;
-  background-color: grey;
+  background-image: url("../../assets/images/backgrounds/asfalt-light.png"), linear-gradient(#000000, #434343, #000000);
   border: 2px solid #ffd700;
   padding: 12px 30px;
   cursor: pointer;
@@ -44,11 +44,17 @@ body {
   border-radius: 8px;
 }
 
-/* Darker background on mouse-over */
 .btn:hover {
-  background-color: #939393;
-  color: #ffd700;
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px yellow;
 }
+
+.btn:active {
+  background: yellow;
+}
+
 
 h1,h2,h3 {
   text-align: center;
@@ -79,20 +85,13 @@ a:active {
   height: 100px;
 }
 
-BUTTON SPAN {
+button span {
     line-height: 14px;
     font-size: 14px;
     padding: 4px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;    
-}
-
-.cms-float-left {
-    margin-right: 20px;
-}
-.cms-float-right {
-    margin-left: 20px;
 }
 
 ul
