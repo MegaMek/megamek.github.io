@@ -7,6 +7,9 @@
 
 $font-color: #dadfe1;
 $background-color: #3f3e3e;
+$accent-color-light: #fffacd;
+$accent-color-dark: #ffd700;
+$accent-color-selected: #f89406;
 
 /*******************************************************/
 /* Basics                                              */
@@ -26,22 +29,22 @@ h1,h2,h3 {
 
 /* unvisited link */
 a:link {
-    color: #fffacd;
+    color: $accent-color-light;
 }
 
 /* visited link */
 a:visited {
-    color: #fffacd;
+    color: $accent-color-light;
 }
 
 /* mouse over link */
 a:hover {
-    color: #ffd700;
+    color: $accent-color-dark;
 }
 
 /* selected link */
 a:active {
-    color: #f89406;
+    color: $accent-color-selected;
 }
 
 /*******************************************************/
@@ -95,7 +98,7 @@ a:active {
   border: 10px;
   color: #dadfe1;
   background-image: url("../../assets/images/backgrounds/asfalt-light.png"), linear-gradient(#000000, #434343, #000000);
-  border: 2px solid #ffd700;
+  border: 2px solid $accent-color-light;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
@@ -107,11 +110,11 @@ a:active {
   -webkit-stroke-width: 5.3px;
   -webkit-stroke-color: #FFFFFF;
   -webkit-fill-color: #FFFFFF;
-  text-shadow: 1px 0px 20px yellow;
+  text-shadow: 1px 0px 20px $accent-color-dark;
 }
 
 .btn:active {
-  background: yellow;
+  background: $accent-color-selected;
 }
 
 .img-btn {
