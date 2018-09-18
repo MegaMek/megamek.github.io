@@ -1,0 +1,151 @@
+---
+---
+
+/*******************************************************/
+/* Variables                                           */
+/*******************************************************/
+
+$font-color: #dadfe1;
+$background-color: #3f3e3e;
+
+/*******************************************************/
+/* Basics                                              */
+/*******************************************************/
+body, html {
+    height: 100%;
+}
+
+body {
+  background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);;
+  color: $font-color;
+}
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: #fffacd;
+}
+
+/* visited link */
+a:visited {
+    color: #fffacd;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffd700;
+}
+
+/* selected link */
+a:active {
+    color: #f89406;
+}
+
+/*******************************************************/
+/* For the banner image used at the top and the navbar */
+/*******************************************************/
+.banner-image {
+    background-image: url("../../assets/images/mhq_splash.jpeg");
+
+    /* Set a specific height */
+    height: 350px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Make the navbar semi-transparent */
+.navbar.transparent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
+/********************************/
+/** Adjustments to containers  **/
+/********************************/
+.container-fluid {
+  /* So that the banner image goes all the way to the edges */
+  padding: 0px;
+}
+
+.container {
+  padding: 15px;
+}
+
+.container.footer {
+  padding-top: 0px;
+}
+
+/* Custom top level container for the body */
+.container.top {
+  border-radius: 25px;
+  margin-top: 10px;
+  background-color: $background-color;
+}
+
+/*******************************************/
+/* A special class for the download button */ 
+/*******************************************/
+.btn {
+  border: 10px;
+  color: #dadfe1;
+  background-image: url("../../assets/images/backgrounds/asfalt-light.png"), linear-gradient(#000000, #434343, #000000);
+  border: 2px solid #ffd700;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Make the text shine */
+.btn:hover {
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px yellow;
+}
+
+.btn:active {
+  background: yellow;
+}
+
+.img-btn {
+  float: left;
+  height: 100px;
+}
+
+.btn span {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;    
+}
+
+/****************************************************/
+/* Override default lists to use Font Awesome icons */
+/****************************************************/
+ul
+{
+	list-style-type: none;
+}
+
+li:before {    
+  font-family: 'FontAwesome';
+  content: '\f05b';
+  margin:0 5px 0 -20px;
+  color: #dadfe1;
+}
+
+li.news:before {    
+  font-family: 'FontAwesome';
+  content: '\f1ea';
+  margin:0 5px 0 -20px;
+  color: #dadfe1;
+}
