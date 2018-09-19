@@ -186,6 +186,46 @@ a {
 }
 
 /****************************************************/
+/* styling for color switching                      */
+/****************************************************/
+.choose-dark {
+    background-color: #555555;
+    border: 1px solid grey;
+    padding: 15px;
+    display: inline-block;
+}
+.choose-light {
+    background-color: #dadfe1;
+    border: 1px solid grey;
+    padding: 15px;
+    display: inline-block;
+}
+
+.tooltip-switch {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip-switch .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-switch:hover .tooltiptext {
+    visibility: visible;
+}
+
+/****************************************************/
 /* Override default lists to use Font Awesome icons */
 /****************************************************/
 ul
