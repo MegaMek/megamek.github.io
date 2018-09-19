@@ -25,10 +25,21 @@
 </script>
 <script>
   jQuery(document).ready(function(){
+    if (typeof(Storage) !== "undefined") {
+      if(localStorage.getItem("theme-choice") !== null) {
+        $("#theme").attr('class',localStorage.getItem("theme-choice"));
+      }
+    }
     $("#switch-dark").click(function(){
+      if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("theme-choice", 'theme-dark')
+      }
       $("#theme").attr('class', 'theme-dark');
     });
     $("#switch-light").click(function(){
+      if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("theme-choice", 'theme-light')
+      }
       $("#theme").attr('class', 'theme-light');
     });
 });
