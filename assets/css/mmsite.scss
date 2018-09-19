@@ -181,6 +181,26 @@ li.news:before {
   max-width: 400px;
 }
 
+.carousel-control-prev {
+  background: rgba(0, 0, 0, 0.9);
+  max-width:30px;
+  max-height:30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.carousel-control-next {
+  background: rgba(0, 0, 0, 0.9);
+  max-width:30px;
+  max-height:30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
 /*********************************************************************/
 /* posts                                                             */
 /*********************************************************************/
