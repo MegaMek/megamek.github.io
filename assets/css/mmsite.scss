@@ -173,6 +173,13 @@ li.news:before {
 /*********************************************************************/
 /* Screenshot carousel                                               */
 /*********************************************************************/
+
+.carousel {
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .carousel-caption {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
