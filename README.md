@@ -45,7 +45,7 @@ To add this to the top navbar, you need to edit the `menu-pages.csv` file in the
 
 Before addition, screenshots should be cropped to have an aspect ratio of 2:1 (width to height). this can be done easily with [pixlr](https://pixlr.com/editor/), GIMP, or PhotoShop by maintainging an aspect ratio of 1200 x 600 when cropping. 
 
-New screenshots can be added directly to `assets/images/screenshots`. They will display in the screenshot carousel on the front page. 
+New screenshots should be added directly to `assets/images/screenshots`. To get them to show up in the carousel, you will have to add a line to `_data/screenshots.csv` indicating the full file name, the program being displayed (i.e. MegaMek, MekHQ, or MegaMekLab), and a caption. 
 
 ### New Images
 
