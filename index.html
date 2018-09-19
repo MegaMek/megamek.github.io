@@ -38,14 +38,12 @@ title: Home
               {% if image.path contains 'images/screenshots' %}
                 {% if first_time==true %}
                   <div class='carousel-item active'>
-                    <div style="background:url({{ site.baseurl }}{{ image.path }}) center center; background-size:cover;" class="slider-size"></div>
-                    <!--<img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />-->
+                    <img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                   </div>
                   {% assign first_time = false %}
                 {% else %}
                   <div class='carousel-item'>
-                    <div style="background:url({{ site.baseurl }}{{ image.path }}) center center; background-size:cover;" class="slider-size"></div>
-                    <!--<img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />-->
+                    <img class='d-block w-100' src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                   </div>
                 {% endif %}
               {% endif %}

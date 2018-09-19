@@ -43,7 +43,9 @@ To add this to the top navbar, you need to edit the `menu-pages.csv` file in the
 
 ### New Screenshots
 
-New screenshots can be added directly to `assets/images/screenshots`. They will display in the screenshot carousel on the front page. These screenshots should have some dimension restrictions but that has NOT YET been figured out. 
+Before addition, screenshots should be cropped to have an aspect ratio of 2:1 (width to height). this can be done easily with [pixlr](https://pixlr.com/editor/), GIMP, or PhotoShop by maintainging an aspect ratio of 1200 x 600 when cropping. 
+
+New screenshots can be added directly to `assets/images/screenshots`. They will display in the screenshot carousel on the front page. 
 
 ### New Images
 
