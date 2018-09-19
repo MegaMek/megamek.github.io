@@ -23,3 +23,13 @@
     }
   });
 </script>
+<script>
+  jQuery(document).ready(function(){
+    $("#switch-dark").click(function(){
+      $("#theme").attr('class', 'theme-dark');
+    });
+    $("#switch-light").click(function(){
+      $("#theme").attr('class', 'theme-light');
+    });
+});
+</script>
