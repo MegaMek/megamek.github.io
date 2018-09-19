@@ -257,16 +257,43 @@ li.news:before {
   }
 }
 
+
 /*********************************************************************/
-/* sets carousel size                                                */
-/* https://parkhurstdesign.com/improved-carousels-twitter-bootstrap/ */
+/* Screenshot carousel                                               */
 /*********************************************************************/
-.slider-size {
-height: 600px; /* This is your slider height */
-}
+
 .carousel {
-width:100%; 
-margin:0 auto; /* center your carousel if other than 100% */ 
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 5px;
+  bottom: 10px;
+  max-width: 400px;
+}
+
+.carousel-control-prev {
+  background: rgba(0, 0, 0, 0.9);
+  max-width:30px;
+  max-height:30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.carousel-control-next {
+  background: rgba(0, 0, 0, 0.9);
+  max-width:30px;
+  max-height:30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
 /*********************************************************************/
