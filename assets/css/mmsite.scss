@@ -73,13 +73,13 @@ h1,h2,h3 {
 a {
   @include themify($themes) {
     &:link {
-      color: themed('linkColor');
+      color: themed('accentColor1');
     }
     &:visited {
-      color: themed('linkColor');
+      color: themed('accentColor1');
     }
     &:hover {
-      color: themed('hoverColor');
+      color: themed('accentColor2');
     }
     &:active {
       color: themed('activeColor');
