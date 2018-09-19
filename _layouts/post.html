@@ -1,26 +1,28 @@
 {% include header.html %}
 
 <main role="main">
-  <div class="container top">
-    <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
-    <div class="post-meta">
-      <div class="post-time">
-        <i class="fa fa-calendar"></i>
-        <time>{{ page.date | date_to_string }}</time>
+  <div id="theme" class="theme-light">
+    <div class="container top">
+      <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
+      <div class="post-meta">
+        <div class="post-time">
+          <i class="fa fa-calendar"></i>
+          <time>{{ page.date | date_to_string }}</time>
+        </div>
+        <!-- disable until I figure out tags
+        http://longqian.me/2017/02/09/github-jekyll-tag/
+          <ul>
+            {% for tag in page.tags %}
+              <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
+              {% endfor %}
+            </ul>
+          -->
+        </div>
+        <div class="post-content">
+          {{ content }}
+        </div>
       </div>
-      <!-- disable until I figure out tags
-      http://longqian.me/2017/02/09/github-jekyll-tag/
-        <ul>
-          {% for tag in page.tags %}
-            <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
-      -->
     </div>
-    <div class="post-content">
-      {{ content }}
-    </div>
-  </div>
 </main>
 {% include footer.html %}
 </body>

@@ -1,29 +1,54 @@
 ---
 ---
 
+/*
+ * Theme definitions
+ */
+
+$themes: (
+  light: (
+    backgroundColor: #dadfe1,
+    textColor: #000000,
+    accentColor1: #0000a0,
+    accentColor2: #800080,
+    activeColor: #00ffff,
+  ),
+  dark: (
+    backgroundColor: #282828,//#3f3e3e,
+    textColor: #dadfe1,
+    accentColor1: #fffacd,
+    accentColor2: #ffd700,
+    activeColor: #f89406,
+  ),
+);
+
+/*
+ * Implementation of themes
+ */
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
 /*******************************************************/
 /* Variables                                           */
 /*******************************************************/
 
 //fonts
 $font-stack: "Source Sans Pro", Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
-
-//my initial dark grey color combo
-$font-color: #dadfe1;
-$background-color: #3f3e3e;
-$accent-color-light: #fffacd;
-$accent-color-dark: #ffd700;
-$accent-color-selected: #f89406;
-
-//another darker background
-//$background-color: #282828;
-
-//a light background
-//$background-color: #dadfe1;
-//$font-color: #000000;
-//$accent-color-light: #0000A0;
-//$accent-color-dark: #800080;
-//$accent-color-selected: #00FFFF;
 
 /*******************************************************/
 /* Basics                                              */
@@ -34,33 +59,33 @@ body, html {
 
 body {
   background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);;
-  color: $font-color;
   font-family: $font-stack;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+  }
 }
 
 h1,h2,h3 {
   text-align: center;
 }
 
-/* unvisited link */
-a:link {
-    color: $accent-color-light;
-}
-
-/* visited link */
-a:visited {
-    color: $accent-color-light;
-}
-
-/* mouse over link */
-a:hover {
-    color: $accent-color-dark;
-}
-
-/* selected link */
-a:active {
-    color: $accent-color-selected;
-}
+a {
+  @include themify($themes) {
+    &:link {
+      color: themed('accentColor1');
+    }
+    &:visited {
+      color: themed('accentColor1');
+    }
+    &:hover {
+      color: themed('accentColor2');
+    }
+    &:active {
+      color: themed('activeColor');
+    }
+  }
+}  
 
 /*******************************************************/
 /* For the banner image used at the top and the navbar */
@@ -104,7 +129,11 @@ a:active {
 .container.top {
   border-radius: 25px;
   margin-top: 10px;
-  background-color: $background-color;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+    background-color: themed('backgroundColor');  
+  }
 }
 
 /*******************************************/
@@ -114,11 +143,14 @@ a:active {
   border: 10px;
   color: #dadfe1;
   background-image: url("../../assets/images/backgrounds/asfalt-light.png"), linear-gradient(#000000, #434343, #000000);
-  border: 2px solid $accent-color-light;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   border-radius: 8px;
+  
+  @include themify($themes) {
+    border: 5px solid themed('accentColor1');
+  }
 }
 
 /* Make the text shine */
@@ -126,11 +158,17 @@ a:active {
   -webkit-stroke-width: 5.3px;
   -webkit-stroke-color: #FFFFFF;
   -webkit-fill-color: #FFFFFF;
-  text-shadow: 1px 0px 20px $accent-color-dark;
+  
+  @include themify($themes) {
+    text-shadow: 1px 0px 20px themed('accentColor2');  
+    border: 5px solid themed('accentColor2');
+  }
 }
 
 .btn:active {
-  background: $accent-color-selected;
+  @include themify($themes) {
+    background: themed('activeColor');
+  }
 }
 
 .img-btn {
@@ -148,6 +186,46 @@ a:active {
 }
 
 /****************************************************/
+/* styling for color switching                      */
+/****************************************************/
+.choose-dark {
+    background-color: #555555;
+    border: 1px solid grey;
+    padding: 15px;
+    display: inline-block;
+}
+.choose-light {
+    background-color: #dadfe1;
+    border: 1px solid grey;
+    padding: 15px;
+    display: inline-block;
+}
+
+.tooltip-switch {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip-switch .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-switch:hover .tooltiptext {
+    visibility: visible;
+}
+
+/****************************************************/
 /* Override default lists to use Font Awesome icons */
 /****************************************************/
 ul
@@ -159,14 +237,20 @@ li:before {
   font-family: 'FontAwesome';
   content: '\f05b';
   margin:0 5px 0 -20px;
-  color: $font-color;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+  }
 }
 
 li.news:before {    
   font-family: 'FontAwesome';
   content: '\f1ea';
   margin:0 5px 0 -20px;
-  color: $font-color;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+  }
 }
 
 /*********************************************************************/
