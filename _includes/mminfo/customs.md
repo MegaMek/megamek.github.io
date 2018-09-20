@@ -9,15 +9,14 @@ Our recommended way of building custom units is with [MegaMekLab](https://github
 * Infantry
 * Dropships
 * Small Craft
-* Primitive versions of above units
-
-**Coming Soon (by end of 2018)**
 * Jumpships
 * Warships
 * Space Stations.
+* Primitive versions of above units
 
 **Planned for 2019**
 * ProtoMeks
+* Support Vee's (only ones from TechManual at this time)
 
 Simply build the unit and save it to the customs folder. Make sure the file saves with either it's BLK or MTF (for meks) extension.  Once you start MegaMek the units will be added.
 
