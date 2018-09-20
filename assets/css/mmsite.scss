@@ -235,27 +235,29 @@ a {
 ul
 {
 	list-style-type: none;
-}
-
-li:before {    
-  font-family: 'FontAwesome';
-  content: '\f05b';
-  margin:0 5px 0 -20px;
   
-  @include themify($themes) {
-    color: themed('textColor');  
+  li:before {    
+    font-family: 'FontAwesome';
+    content: '\f05b';
+    margin:0 5px 0 -20px;
+    
+    @include themify($themes) {
+      color: themed('textColor');  
+    }
+  }
+
+  li.news:before {    
+    font-family: 'FontAwesome';
+    content: '\f1ea';
+    margin:0 5px 0 -20px;
+    
+    @include themify($themes) {
+      color: themed('textColor');  
+    }
   }
 }
 
-li.news:before {    
-  font-family: 'FontAwesome';
-  content: '\f1ea';
-  margin:0 5px 0 -20px;
-  
-  @include themify($themes) {
-    color: themed('textColor');  
-  }
-}
+
 
 
 /*********************************************************************/
