@@ -10,7 +10,7 @@ The latest program version information is kept in YAML file `current_releases.ym
 
 ### Page Content
 
-page content is stored in markdown files in `_includes/mminfo` and in the root directory. Here is a list of the files that currently exist and what content they change:
+Page content is stored in markdown files in `_includes/mminfo`, the `wiki` directory, and in the root directory. Here is a list of the files that currently exist and what content they change:
 
 - In `_includes`:
   - `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.  
@@ -24,6 +24,7 @@ page content is stored in markdown files in `_includes/mminfo` and in the root d
 - In root directory:
   - `community.md`: Information about the megamek community. Very much a WIP ATM. Shows on its own page. 
   - `play.md`: Information about how to play MegaMek. Very much a WIP ATM. Shows on its own page.
+- The `wiki` directory contains additional markdown files for supplementary content that is not directly used in the main navbar but that can be linked to and is available at `wiki/name_of_file.html` when the site is compiled.
 
 More information about using markdown to write pages can be found [here](https://daringfireball.net/projects/markdown/syntax). Its super easy.
 
