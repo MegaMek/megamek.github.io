@@ -43,6 +43,18 @@ The instructions in this section will help you quickly get a small game of MegaM
 14. Now we will see a report from the weapons phase showing what attacks hit and what damage was dealt. I missed with all of my attacks. Hopefully, you did better. Hit done when you have read the report.
 15. Now we will see the heat build up and end phase information. Hit done and you will be taken back to the initative phase and can begin the next round. Repeat until your opponents are destroyed and you win!
 
+
+#### Options, Options, and More Options
+
+You can customize your MegaMek experience considerably by playing around with the various options that are available in the game interface. Those options are extensive, so we won't review them all here, but the list below will direct you to areas of further exploration.
+
+- The **Game Options** button in the upper left of the game lobby contains a wide variety of options that you can use in your game. Many of these options are based on official game rules, but many are also unofficial rules based on commonly requested feature enhancements. Mouse over an option to learn more about it.  
+- On the "Select Map" tab, you can select different **planetary conditions** that will change game play. These conditions include weather and lighting, as well as other conditions such as electro-magnetic interference. More information about those planetary conditions and how they affect gameplay is available in the [*Tactical Operations* rulebook](https://bg.battletech.com/?wpsc-product=tactical-operations).
+- Double-clicking on a unit in the unit list in the lobby will bring up a unit dialog with a variety of **unit and pilot options**. You can change the pilot's name, skill levels, and even add a portrait. If you enable special abilities or quircks in the game options, you can add them here. You can also change ammo loadouts, and set options for how the unit deploys. 
+- You can use the **Random Skills** dialog in the lobby to assign skills to pilots randomly, based on an overall skill level for your force.
+- You can use the **Random Name** dialog in the lobby to randomize names based on Battletech faction. 
+- You can use the **Create Random Army** dialog to generate a selection of units for yourself or for the bot. You can base this on matching a certain level of battle value, pull from official random assignment tables (RAT), or use the force generator to generate an entire force, complete with a TO&E. 
+
 #### Playing Other Humans
 
 #### Customization
