@@ -20,13 +20,17 @@ To run the programs from Windows, just double-click on the given program icon fr
 
 The Unix/Linux releases do not include binaries, but you can run the programs directly from the included JAR files. On some desktops, you may just be able to double-click these JAR files in order to run the programs. you can also run the programs (MegaMek in this example) from the command line with the command:
 
-```java -jar MegaMek.jar &```
+```bash
+java -jar MegaMek.jar &
+```
 
 ##### Mac OSX
 
 Due to Apple's increased security on their newer operating systems, there is an additional step that must be taken to ensure ease of use. Open a terminal window and navigate to the folder where you have decompressed MegaMek, MegaMekLab, or MekHQ into. Once there, run 
 
-```sudo xattr -r -d com.apple.quarantine /full/path/to/unzipped/folder``` 
+```bash
+sudo xattr -r -d com.apple.quarantine /full/path/to/unzipped/folder
+``` 
 
 This command removes the 'Quarantine Bit' that Apple places on downloaded programs as a means of protecting you. Without this step, MegaMek would not be able to locate it's data directories.
 
