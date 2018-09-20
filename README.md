@@ -52,8 +52,10 @@ New screenshots should be added directly to `assets/images/screenshots`. To get 
 To use images in a post or page, first add the image to the `assets/images` directory. Then you can reference the image in your markdown document with:
 
 ```
-![My new image description](/assets/images/mynewimage.jpg)
+![My new image description](/assets/images/mynewimage.jpg){:class="img-fluid"}
 ```
+
+The class call ensures that the image will resize by device. This will scale images the full width of the container if they are too large. To get a smaller width use `{:class="img-fluid w-75"}` or `{:class="img-fluid w-50"}` to shrink the image to 75% or 50% of the full width, respectively.
 
 You can also put other documents into the assets directory and reference them in a similar way. For example, for a PDF:
 
