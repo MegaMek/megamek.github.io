@@ -57,6 +57,21 @@ You can customize your MegaMek experience considerably by playing around with th
 
 #### Playing Other Humans
 
+Playing against the bot can be fun, but playing against other human beings will allow you to experience the best MegaMek has to offer. The [community](community.html) page has more information on how to find other people to play against. Here we detail how you connect your games over the internet or a local network. 
+
+When you start up a game of MegaMek, you also start up a server that other players can join. In order for other players to join, they will select "Connect to a Game" from the splash screen. They will then need to enter the IP address of your machine and the port number (the default port number is 2346). If you are playing over a LAN, then this will be your local IP address. If playing over the internet, you will need to figure out two things:
+
+1. You will need to know your external IP address. You can get this from your router, from websites like [What is My IP](https://www.whatismyip.com/) or by simply googling "what is my IP address?" 
+2. In most situations, you will need to configure your router to forward requests for port 2346 (or a different port if you changed the default) to the computer you are actually playing on in order for other players to connect over the internet. This will vary by router, but typically involves using the router's web-based software to add [port forwarding](https://portforward.com/).
+
+You can also register your game when you start it up. This will list your game on our [list of servers](servers.html) and make it easier for other players to find. It will also list your external IP address. You will still need to ensure that port forwarding is working properly.
+
+If you have problems connecting to your machine, you can also try running your game on a dedicated server. We do not run any official dedicated servers, but several members of the community run dedicated servers that you can connect to in order to play a game. In this case, both players will use the "Connect to a Game" option to connect to the dedicated server. If you would like to run your own dedicated server, you can follow our [instructions](wiki/ded_servers.html) for setting one up.
+
+You can also run the game "hotseat" on the same computer. In this case, you want to open up two instances of MegaMek. Start the game with one instance and connect to "localhost" for the second one. 
+
+Once connected, you can chat with other players using the pop-up chat system from within MegaMek. You can also join [MegaMek Slack](http://megamek.org:3000) and chat there. 
+
 #### Customization
 
 #### A First Campaign in MekHQ
