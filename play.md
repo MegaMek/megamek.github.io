@@ -4,6 +4,15 @@ title: Play
 splash: old_mhq_splash.jpeg
 ---
 
+### Playing the Game
+
+1. [Learning the Rules](#learning-the-rules)
+2. [A First Game of MegaMek](#a-first-game-of-megamek)
+3. [Options, Options, and More Options](#options-options-and-more-options)
+4. [Playing Other Humans](#playing-other-humans)
+5. [Customizing Units](#customizing-units)
+6. [A First Campaign in MekHQ](#a-first-campaign-in-mekhq)
+
 #### Learning the Rules
 
 MegaMek uses the rules from the [*Total Warfare* series of books](https://bg.battletech.com/books/core_rulebooks/) from [Catalyst Game Labs](https://www.catalystgamelabs.com/). Although we provide a variety of instructions within the programs of how things work, we do assume that players are familiar with the rules. 
@@ -72,6 +81,6 @@ You can also run the game "hotseat" on the same computer. In this case, you want
 
 Once connected, you can chat with other players using the pop-up chat system from within MegaMek. You can also join [MegaMek Slack](http://megamek.org:3000) and chat there. 
 
-#### Customization
+#### Customizing Units
 
 #### A First Campaign in MekHQ
