@@ -2,26 +2,28 @@
 
 - question: "What software do I need to run MegaMek?"
   answer: "MegaMek will run on any operating system that can run Java 8 including Windows, macOS, and Linux. Although it will run on later versions of Java, your experience will vary."
-
-- question: "On a mac, How do I open up multiple instances of MegaMek?"
-  answer: "By default, OSX applications will only open a single instance. To open up a second instance of MegaMek, you will have to use the Terminal application (in Application/Utilities). Navigate to your MegaMek directory and type: <p><code>open -n MegaMek.app &</code>. <p>The “-n” argument tells OSX to open up a new instance of the application."
-  
+- question: "On a Mac, How do I open up multiple instances of MegaMek?"
+  answer: |
+    By default, OSX applications will only open a single instance. To open up a second instance of MegaMek, you will have to use the Terminal application (in Application/Utilities). Navigate to your MegaMek directory and type:
+    
+    ```bash
+      open -n MegaMek.app &
+    ```
+    
+    The `-n` argument tells OSX to open up a new instance of the application.
 - question: "How do I use more, or less, memory?"
-  answer: "By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of
-  memory. This amount of memory is sufficient for most games, but
-  when playing large games against the bot, higher amounts of memory
-  can boost performance. How you change the maximum memory allowed
-  varies by operating system. <p>On windows, open up the
-  MegaMek.l4j.ini file and change the line that says “-Xmx1024m” to
-  the amount of memory you want. For example, if you want 512
-  megabytes of memory, you would change this line to “-Xmx512m”. <p>On
-  macOS, you want to right-click on the MegaMek icon and choose
-  “Show Package Contents.” Then open up Contents/Info.plist. Look
-  for the line that says “-Xmx1024m” and edit this as above. <p>On a
-  Linux/Unix system you will need to edit the startup.sh file's last line,
-  or just add the memory argument directly to your java command if
-  launching manually. For example: <code>java -Xmx512m -jar MegaMek.jar &</code>"  
-  
+  answer: |
+    By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory. This amount of memory is sufficient for most games, but when playing large games against the bot, higher amounts of memory can boost performance. How you change the maximum memory allowed varies by operating system.
+    
+    On Windows, open up the MegaMek.l4j.ini file and change the line that says `-Xmx1024m` to the amount of memory you want. For example, if you want 512 megabytes of memory, you would change this line to `-Xmx512m`.
+    
+    On macOS, you want to right-click on the MegaMek icon and choose “Show Package Contents.” Then open up Contents/Info.plist. Look for the line that says `-Xmx1024m` and edit this as above. 
+    
+    On a Linux/Unix system, you will need to edit the startup.sh file's last line, or just add the memory argument directly to your java command if launching manually. For example: 
+    
+    ```bash  
+    java -Xmx512m -jar MegaMek.jar &
+    ```
 - question: "Why can’t I host a game?"
   answer: "If you are hosting a game over the internet, and other people
   cannot connect to your address, then you probably have port
@@ -32,30 +34,5 @@
   the internet. Check the instructions for your router. You can also
   try <a href=\"https://portforward.com\">portforward.com</a>, which has instructions on how to forward
   ports for many routers."
-
 - question: "How do I start a dedicated server?"
-  answer: "<p>
-    It depends what operating system you are on, but in every case you
-    will need to do it from the command line (DOS on Windows,
-    Terminal/Xterm on macOS and unix). Navigate to your MegaMek
-    directory and type:
-  </p>
-  <p>
-    Windows: <code>MegaMek -dedicated -port XXXX</code>
-  </p>
-  <p>
-    macOS: <code>open MegaMek.app –args -dedicated -port XXXX &</code>
-  </p>
-  <p>
-    Linux/Unix: <code>java -jar MegaMek.jar -dedicated -port XXXX &</code>
-  </p>
-  <p>
-    Where you replace XXXX with the port you would like to use. On a
-    *nix/macOS system, we also recommend you preface your command with
-    a <kbd>nohup</kbd> command to avoid interruption. You can test your
-    dedicated server now by opening a new MegaMek window and connecting
-    to localhost on the given port number. On macOS, note that you
-    will need to use the “-n” argument to open up a new instance of
-    MegaMek, once your dedicated server is running.
-  </p>"
-  
+  answer: Follow our [detailed instructions](wiki/ded_servers.html) for setting up a dedicated server.

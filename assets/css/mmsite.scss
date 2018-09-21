@@ -22,6 +22,24 @@ $themes: (
   ),
 );
 
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 /*
  * Implementation of themes
  */
@@ -68,6 +86,12 @@ body {
 
 h1,h2,h3 {
   text-align: center;
+}
+
+h5.faq {
+  @include themify($themes) {
+    color: themed('accentColor2');  
+  }
 }
 
 a {
@@ -137,6 +161,21 @@ a {
   @include themify($themes) {
     color: themed('textColor');  
     background-color: themed('backgroundColor');  
+  }
+}
+
+/* custom container for faq answers */
+.container.faq {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 2px inset;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+    background-color: tint(themed('backgroundColor'), 10%);  
   }
 }
 

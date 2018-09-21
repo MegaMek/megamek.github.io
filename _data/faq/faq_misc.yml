@@ -7,7 +7,6 @@
   For the best bot experience, play with a minimum of extra options
   enabled. We plan on making the bot better at some point, but right
   now our priority is on other issues."
-  
 - question: "Are the dice conspiring against me?"
   answer: "Short answer: No. Long answer: The dice use the standard Java
   random number generation routines. You can find them described
@@ -17,6 +16,3 @@
   computer. To put it another way, every time the virtual die is
   rolled, it stands a one-in-six chance of generating each number,
   one through six."
-  
-- question:
-  answer:
