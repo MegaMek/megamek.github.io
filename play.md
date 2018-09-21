@@ -83,4 +83,35 @@ Once connected, you can chat with other players using the pop-up chat system fro
 
 #### Customizing Units
 
+Many players love to create their own custom units. The [*Tech Manual*](https://bg.battletech.com/?wpsc-product=1095-2) contains base rules for creating your own units for most unit types and [*Tactical Operations*](https://bg.battletech.com/?wpsc-product=tactical-operations) and [*Strategic Operations*](https://bg.battletech.com/?wpsc-product=strategic-operations) contain advanced equipment and construction rules for some advanced units.  
+
+We recommend building custom units with MegaMekLab. The program is always kept current with MegaMek and MekHQ. MegaMekLab can currently build the following unit types:
+
+* Meks (Including Industrial, Super Heavy, Tripod, LAMs)         
+* Aerospace Fighters
+* Conventional Fighters
+* Combat Vehicles only (vehicles with a BAR rating are currently not supported)
+* BattleArmor
+* Infantry
+* Dropships
+* Small Craft
+* Jumpships
+* Warships
+* Space Stations.
+* Primitive versions of above units
+
+**Planned for 2019**
+* ProtoMeks
+* Support Vee's (only ones from TechManual at this time)
+
+The best way to manage custom units in Megamek is to create a folder called "Customs" in the `data\mechfiles` folder. Simply build the unit in MegaMekLab and save it to the customs folder. Make sure the file saves with either it's BLK or MTF (for meks) extension.  Once you start MegaMek, the units will be added to your list of available units.
+
+If you can't find your newly created unit in Megamek or MekHQ, check the game's date and rules level. As a last option go into the `data\mechfiles` folder and delete the file called `units.cache`. On restart Megamek will rebuild this file and your custom unit should show up.
+
+When you upgrade to a new version of MegaMek, you can copy your custom folder over to the new version. 
+
+##### Other Builders
+
+We can't guarantee that builders other than MegaMekLab (e.g. Heavy Metal Pro, Solaris Skunkwerks, etc) will work with Megamek.  Megamek is a program in constant development, and while we do our best to ensure backwards compatibility it's not always possible.  Other building programs might not keep current with our name systems or file formats. As such this files might not load, or in extreme cases crash Megamek. 
+
 #### A First Campaign in MekHQ
