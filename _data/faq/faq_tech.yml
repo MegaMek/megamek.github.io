@@ -11,6 +11,8 @@
     ```
     
     The `-n` argument tells OSX to open up a new instance of the application.
+- question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
+  answer: Apple has increased security measures that you will have to override in order to open up any of the programs that have been packaged for a Mac. You can follow [these instructions](wiki/mac_issues.html) to get things working on a Mac. Alternatively, you just download the Unix/Linux distribution which will run perfectly fine on a Mac. 
 - question: "How do I use more, or less, memory?"
   answer: |
     By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory. This amount of memory is sufficient for most games, but when playing large games against the bot, higher amounts of memory can boost performance. How you change the maximum memory allowed varies by operating system.

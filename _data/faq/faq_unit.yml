@@ -1,9 +1,7 @@
 # You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash. You can mix in html code here, but markdown will not process.
 
-- question: "When I turn on the \"Canon Units Only\" option, I lose a bunch of units that I know should be canon." 
-  answer: "We are currently in the process of recoding the canon status of
-  all units as part of the Master Unit List project. Please be
-  patient."
+- question: "My MHQ campaign is failing to because it cannot find some of my units. What should I do?"
+  answer: "As part of ongoing efforts to better organize data, unit names may occasionally change. We have ve added support for backward compatibility for unit name changes, but you may occassionally experience this error when you update MekHQ. In order to correct your campaign file with the new names, you will need to open your campaign file (*.cpnx) in a text editor and correct the names for units that cannot be found. More detailed instructions can be found <a href=\"https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units\">here</a>."
   
 - question: "Why can't I find a particular unit?"
   answer: "<p>
@@ -11,12 +9,25 @@
   </p>
   <ol>
     <li>Did you check the different rules levels? Perhaps the unit you are looking for is Advanced or Experimental</li>
-    <li>We forgot to add it, then please report it either to the bug tracker or the forums.</li>
-    <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait that that happens.</li>
+    <li>We forgot to add it. Please report it either to the <a href=\"https://github.com/MegaMek/megamek/issues\">bug tracker</a> or the <a href=\"https://www.megamek.org/bb/forum-20.html\">forums</a>.</li>
+    <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait until that happens.</li>
   </ol>"
 - question: "Why is a particular unit marked as illegal when it fits the official Record Sheet?"
-  answer: "Most of the times that means that the unit is using
+  answer: "That usually indicates that the unit has
   ferro-fibrous armor and is using the old armor rules,
   superceded by TechManual. Armor is now always rounded down,
-  making some units overweight until a new Record Sheet is
+  making some units overweight, until a new Record Sheet is
   released."
+  
+- question: "How do I get fluff images to show up?"
+  answer: |
+    We cannot provide fluff images for units, but if you own PDFs or hard copies of the appropriate books, you should be able to create your own fluff images.  
+    
+    Fluff images need to go into the correct unit type directory within the <code>/Megamek/data/images/fluff</code> directory. The name of the image must exactly match the name in the unit selector. So, if you wanted to add a fluff image for the "Sunder SD1-0G", you would need to name the image "Sunder SD1-0G.xxx" where xxx is the image extension.
+    
+- question: "How do I get record sheets that I can use with a tabletop game?"
+  answer: "There are a couple of ways to do this depending on if you need a single record sheet or want to print out a whole lance or more.
+
+  For a single record sheet, use the File > Print menu within MegaMekLab, to print out the currently loaded unit or a unit from a file. 
+  
+  For multiple record sheets, you can use the \"Queue Units to Print\" menu option in MegaMekLab to select multiple units to print out at once. You can also print directly from a MUL file that you have saved from the MegaMek lobby."

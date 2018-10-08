@@ -26,12 +26,4 @@ java -jar MegaMek.jar &
 
 ##### Mac OSX
 
-Due to Apple's increased security on their newer operating systems, there is an additional step that must be taken to ensure ease of use. Open a terminal window and navigate to the folder where you have decompressed MegaMek, MegaMekLab, or MekHQ into. Once there, run 
-
-```bash
-sudo xattr -r -d com.apple.quarantine /full/path/to/unzipped/folder
-``` 
-
-This command removes the 'Quarantine Bit' that Apple places on downloaded programs as a means of protecting you. Without this step, MegaMek would not be able to locate it's data directories.
-
-You can also run the programs from the Unix/Linux download on Apple. Just double-click the appropriate JAR file and the program should start.
+Due to Apple's increased security on their newer operating systems, you need to follow [these additional steps](wiki/mac_issues.html) to run the programs. You will then be able to double-click on the applications to run them. Alternatively, you can download the Unix/Linux distribution and double-click on the JAR files to run the programs.
