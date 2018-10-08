@@ -4,6 +4,8 @@ title: Community
 splash: old_mhq_load.jpeg
 ---
 
+### Connecting with the Community
+
 #### Where To Play Other Humans
 
 So you have downloaded MegMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options. 
