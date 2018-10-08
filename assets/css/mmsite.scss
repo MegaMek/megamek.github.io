@@ -12,6 +12,7 @@ $themes: (
     accentColor1: #0000a0,
     accentColor2: #800080,
     activeColor: #00ffff,
+    cardColor: #adb5bd,
   ),
   dark: (
     backgroundColor: #282828,//#3f3e3e,
@@ -19,6 +20,7 @@ $themes: (
     accentColor1: #fffacd,
     accentColor2: #ffd700,
     activeColor: #f89406,
+    cardColor: #343a40,
   ),
 );
 
@@ -362,6 +364,20 @@ div.post-meta {
     display: inline;
   }
 }
+
+/*********************************************************************/
+/* boostrap cards                                                    */
+/*********************************************************************/
+
+.dl-card {
+  @include themify($themes) {
+    background-color: themed('cardColor');  
+    color: themed('textColor');
+  }
+}
+
+
+
 
 /*********************************************************************/
  /* Code formatting                                                  */
