@@ -3,12 +3,15 @@
 - question: "My MHQ campaign is failing to because it cannot find some of my units. What should I do?"
   answer: "As part of ongoing efforts to better organize data, unit names may occasionally change. We have ve added support for backward compatibility for unit name changes, but you may occassionally experience this error when you update MekHQ. In order to correct your campaign file with the new names, you will need to open your campaign file (*.cpnx) in a text editor and correct the names for units that cannot be found. More detailed instructions can be found <a href=\"https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units\">here</a>."
   
+- question: "What is Variable Tech Level?"
+  answer: "This is based on the Tech Progression from Interstellar Operations.  As equipment is introduced and time passes, it will move from Experimental to Standard (common use). When this option is enabled, a unit's tech level is determined by the highest technology rating for the year the game is in."
+  
 - question: "Why can't I find a particular unit?"
   answer: "<p>
     There are three possibilities:
   </p>
   <ol>
-    <li>Did you check the different rules levels? Perhaps the unit you are looking for is Advanced or Experimental</li>
+    <li>Check in the Allowed units sections and make sure the year the game takes place is set, and the tech level is set to the correct level.</li>
     <li>We forgot to add it. Please report it either to the <a href=\"https://github.com/MegaMek/megamek/issues\">bug tracker</a> or the <a href=\"https://www.megamek.org/bb/forum-20.html\">forums</a>.</li>
     <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait until that happens.</li>
   </ol>"
