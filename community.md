@@ -36,7 +36,7 @@ We love good art. Before you start making sprites, you should be aware that we h
 
 Other art such as tilesets should be discussed before you put the work into it. Code limitations can sometimes impact these resources.  If you have an idea for something art-wise for the project, please reach out to us.
 
-##### I'm a data guy
+##### I'm a data person
 
 We do have several ongoing data projects. If you have the time and want to help, the best way is to join the Slack channel and look for Hammer. He coordinates the data stuff and can provide guidance.
 
