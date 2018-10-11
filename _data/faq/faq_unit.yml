@@ -1,7 +1,7 @@
 # You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash. You can mix in html code here, but markdown will not process.
 
 - question: "My MHQ campaign is failing to because it cannot find some of my units. What should I do?"
-  answer: "As part of ongoing efforts to better organize data, unit names may occasionally change. We have ve added support for backward compatibility for unit name changes, but you may occassionally experience this error when you update MekHQ. In order to correct your campaign file with the new names, you will need to open your campaign file (*.cpnx) in a text editor and correct the names for units that cannot be found. More detailed instructions can be found <a href=\"https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units\">here</a>."
+  answer: "As part of ongoing efforts to better organize data, unit names may occasionally change. We have added support for backward compatibility for unit name changes, but you may occasionally experience this error when you update MekHQ. In order to correct your campaign file with the new names, you will need to open your campaign file (*.cpnx) in a text editor and correct the names for units that cannot be found. More detailed instructions can be found <a href=\"https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units\">here</a>."
   
 - question: "What is Variable Tech Level?"
   answer: "This is based on the Tech Progression from Interstellar Operations.  As equipment is introduced and time passes, it will move from Experimental to Standard (common use). When this option is enabled, a unit's tech level is determined by the highest technology rating for the year the game is in."
@@ -26,11 +26,11 @@
   answer: |
     We cannot provide fluff images for units, but if you own PDFs or hard copies of the appropriate books, you should be able to create your own fluff images.  
     
-    Fluff images need to go into the correct unit type directory within the <code>/Megamek/data/images/fluff</code> directory. The name of the image must exactly match the name in the unit selector. So, if you wanted to add a fluff image for the "Sunder SD1-0G", you would need to name the image "Sunder SD1-0G.xxx" where xxx is the image extension.
+    Fluff images need to go into the correct unit type directory within the <code>data/images/fluff</code> directory. The name of the image must exactly match the name in the unit selector. So, if you wanted to add a fluff image for the "Sunder SD1-0G", you would need to name the image "Sunder SD1-0G.xxx" where xxx is the image extension.
     
 - question: "How do I get record sheets that I can use with a tabletop game?"
   answer: "There are a couple of ways to do this depending on if you need a single record sheet or want to print out a whole lance or more.
 
-  For a single record sheet, use the File > Print menu within MegaMekLab, to print out the currently loaded unit or a unit from a file. 
+  For a single record sheet, use the File > Print menu within MegaMekLab to print out the currently loaded unit or a unit from a file. 
   
   For multiple record sheets, you can use the \"Queue Units to Print\" menu option in MegaMekLab to select multiple units to print out at once. You can also print directly from a MUL file that you have saved from the MegaMek lobby."

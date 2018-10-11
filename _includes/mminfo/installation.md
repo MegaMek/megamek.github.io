@@ -18,7 +18,7 @@ To run the programs from Windows, just double-click on the given program icon fr
 
 ##### Unix/Linux
 
-The Unix/Linux releases do not include binaries, but you can run the programs directly from the included JAR files. On some desktops, you may just be able to double-click these JAR files in order to run the programs. you can also run the programs (MegaMek in this example) from the command line with the command:
+The Unix/Linux releases do not include application binaries, but you can run the programs directly from the included JAR files. On some desktops, you may just be able to double-click these JAR files in order to run the programs. you can also run the programs (MegaMek, in the example below) from the command line with the command:
 
 ```bash
 java -jar MegaMek.jar &

@@ -13,7 +13,7 @@ MegaMek uses the rules from the [*Total Warfare* series of books](https://bg.bat
 If you are not familiar with the Battletech rules but would like to try MegaMek, you can download the [free quickstart rules](http://bg.battletech.com/wp-content/uploads/2011/10/BattleTechQuick-Start-Rules.pdf?x64300) to get started. 
 
 - To learn more about the core rules, you should get the [*Total Warfare* core rulebook](https://bg.battletech.com/?wpsc-product=total-warfare).
-- to learn the rules of unit construction used by MegaMekLab, you should get the [*Tech Manual*](https://bg.battletech.com/?wpsc-product=1095-2). Additional rules for a few advanced unit types are in the [*Tactical Operations* rulebook](https://bg.battletech.com/?wpsc-product=tactical-operations) and the [*Strategic Operations* rulebook](https://bg.battletech.com/?wpsc-product=strategic-operations). 
+- To learn the rules of unit construction used by MegaMekLab, you should get the [*Tech Manual*](https://bg.battletech.com/?wpsc-product=1095-2). Additional rules for advanced and experimental technology and a few advanced unit types are in the [*Tactical Operations* rulebook](https://bg.battletech.com/?wpsc-product=tactical-operations) and the [*Strategic Operations* rulebook](https://bg.battletech.com/?wpsc-product=strategic-operations). 
 - To learn about many of the optional settings available in MegaMek, you should get the [*Tactical Operations* rulebook](https://bg.battletech.com/?wpsc-product=tactical-operations).
 - To learn about using warships in large scale space-battles, you should get the [*Strategic Operations* rulebook](https://bg.battletech.com/?wpsc-product=strategic-operations).
 - More information about campaign options used in MekHQ is available in and the [*Strategic Operations* rulebook](https://bg.battletech.com/?wpsc-product=strategic-operations) and the [*Campaign Operations* rulebook](https://bg.battletech.com/?wpsc-product=campaign-operations).
@@ -24,7 +24,7 @@ You can follow [these instructions](wiki/first_game_mm.html) to quickly get a sm
 
 #### A First Campaign in MekHQ
 
-MekHQ is designed to be customizable to a variety of different campaign styles (e.g. mercenary, house command, pirates, clan warriors, small units, large units, highly narrative) and play styles. Its impossible to summarize all of the ways in which you could make use of MekHQ here. Many players enjoy using the community built Against the Bot rules which will automate many of the processes such as selection of missions, scenarios, and OpFor.
+MekHQ is designed to be customizable to a variety of different campaign styles (e.g. mercenary, house command, pirates, clan warriors, small units, large units, highly narrative, etc.) and play styles. Its impossible to summarize all of the ways in which you could make use of MekHQ here. Many players enjoy using the community built Against the Bot rules which will automate many of the processes such as selection of missions, scenarios, and OpFor.
 
 This [step-by-step tutorial](wiki/first_campaign_mhq.html) outlines how to start up a very simple campaign, assign units and pilots and run a first scenario. 
 
@@ -61,7 +61,7 @@ Once connected, you can chat with other players using the pop-up chat system fro
 
 Many players love to create their own custom units. The [*Tech Manual*](https://bg.battletech.com/?wpsc-product=1095-2) contains base rules for creating your own units for most unit types and [*Tactical Operations*](https://bg.battletech.com/?wpsc-product=tactical-operations) and [*Strategic Operations*](https://bg.battletech.com/?wpsc-product=strategic-operations) contain advanced equipment and construction rules for some advanced units.  
 
-We recommend building custom units with MegaMekLab. The program is always kept current with MegaMek and MekHQ. MegaMekLab can currently build the following unit types:
+MegaMekLab can currently build the following unit types:
 
 * Meks (Including Industrial, Super Heavy, Tripod, LAMs)         
 * Aerospace Fighters
@@ -80,9 +80,9 @@ We recommend building custom units with MegaMekLab. The program is always kept c
 * ProtoMeks
 * Support Vee's (from the TechManual)
 
-The best way to manage custom units in Megamek is to create a folder called "Customs" in the `data\mechfiles` folder. Simply build the unit in MegaMekLab and save it to your customs folder. Make sure the file saves with either it's BLK extension (or MTF for meks).  Once you start MegaMek, the unit will be added to your list of available units.
+The best way to manage custom units in Megamek is to create a directory called "Customs" in the `data/mechfiles` directory. Simply build the unit in MegaMekLab and save it to this directory. Files  should saves with an MTF extension for Meks and a BLK extension for other units.  Once you start MegaMek, the unit will be added to your list of available units.
 
-If you can't find your newly created unit in Megamek or MekHQ, check the game's date and the available tech level in the game options. As a last option go into the `data\mechfiles` folder and delete the file called `units.cache`. On restart Megamek will rebuild this file and your custom unit should show up.
+If you can't find your newly created unit in Megamek or MekHQ, check the game's date and the available tech level in the game options. As a last option go into the `data/mechfiles` folder and delete the file called `units.cache`. On restart Megamek will rebuild this file and your custom unit should show up.
 
 When you upgrade to a new version of MegaMek, you can copy your custom folder over to the new version. 
 

@@ -1,7 +1,7 @@
 # You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash.
 
 - question: "Why isn't XYZ rule or feature implemented yet?"
-  answer: "Megamek is a community driven project, with a small, dedicated group of contributors. There isn't a dedicated roadmap, nor overarching directives that say \"We arere working on this.\" The developers tend to work on the projects that interest them in the moment. If you really want a particular feature or rule implemented, then either convince one of the developers that your project would be cool or interesting, or go ahead and code it and issue a pull request. Also, keep in mind that some things are just too complicated and would take considerable development time and knowledge."
+  answer: "Megamek is a community driven project, with a small, dedicated group of contributors. There isn't a hihgly developer roadmap, nor overarching directives that say \"We are working on this.\" The developers tend to work on the projects that interest them in the moment. If you really want a particular feature or rule implemented, then either convince one of the developers that your project would be cool or interesting, or go ahead and code it and issue a pull request. Also, keep in mind that some things are just too complicated and would take considerable development time and knowledge."
 - question: "Why is the bot so stupid?"
   answer: "The new bot (Princess) is substantially better than the original \"Test\" bot that MegaMek used for years. However, there still may be circumstances where the bot is unaware of some rules options or performs poorly in certain terrains/conditions. For the best experience, either play against another human or don't use unusual settings."
 - question: "Are the dice conspiring against me?"
@@ -12,4 +12,4 @@
   behave as closely as possible to real dice as is possible on a
   computer. To put it another way, every time the virtual die is
   rolled, it stands a one-in-six chance of generating each number,
-  one through six and each roll is independent of the previous rolls."
+  one through six, and each roll is independent of previous rolls."

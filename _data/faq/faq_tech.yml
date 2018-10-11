@@ -12,7 +12,7 @@
     
     The `-n` argument tells OSX to open up a new instance of the application.
 - question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
-  answer: Apple has increased security measures that you will have to override in order to open up any of the programs that have been packaged for a Mac. You can follow [these instructions](wiki/mac_issues.html) to get things working on a Mac. Alternatively, you just download the Unix/Linux distribution which will run perfectly fine on a Mac. 
+  answer: Apple has increased security measures that you will have to override in order to open up any of the programs that have been packaged for a Mac. You can follow [these instructions](wiki/mac_issues.html) to get things working on a Mac. Alternatively, you can just download the Unix/Linux distribution which will run perfectly fine on a Mac. 
 - question: "How do I use more, or less, memory?"
   answer: |
     By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory. This amount of memory is sufficient for most games, but when playing large games against the bot, higher amounts of memory can boost performance. How you change the maximum memory allowed varies by operating system.
@@ -34,7 +34,6 @@
   MegaMek is using (2346, by default). How to do this will vary
   depending upon what type of set up you have for connecting with
   the internet. Check the instructions for your router. You can also
-  try <a href=\"https://portforward.com\">portforward.com</a>, which has instructions on how to forward
-  ports for many routers."
+  try <a href=\"https://portforward.com\">portforward.com</a>, which has instructions on how to forward ports for many routers."
 - question: "How do I start a dedicated server?"
   answer: Follow our [detailed instructions](wiki/ded_servers.html) for setting up a dedicated server.
