@@ -12,6 +12,7 @@ $themes: (
     accentColor1: #0000a0,
     accentColor2: #800080,
     activeColor: #00ffff,
+    cardColor: #adb5bd,
   ),
   dark: (
     backgroundColor: #282828,//#3f3e3e,
@@ -19,8 +20,27 @@ $themes: (
     accentColor1: #fffacd,
     accentColor2: #ffd700,
     activeColor: #f89406,
+    cardColor: #343a40,
   ),
 );
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 
 /*
  * Implementation of themes
@@ -68,6 +88,12 @@ body {
 
 h1,h2,h3 {
   text-align: center;
+}
+
+h5.faq {
+  @include themify($themes) {
+    color: themed('accentColor2');  
+  }
 }
 
 a {
@@ -137,6 +163,21 @@ a {
   @include themify($themes) {
     color: themed('textColor');  
     background-color: themed('backgroundColor');  
+  }
+}
+
+/* custom container for faq answers */
+.container.faq {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 2px inset;
+  
+  @include themify($themes) {
+    color: themed('textColor');  
+    background-color: tint(themed('backgroundColor'), 10%);  
   }
 }
 
@@ -323,6 +364,20 @@ div.post-meta {
     display: inline;
   }
 }
+
+/*********************************************************************/
+/* boostrap cards                                                    */
+/*********************************************************************/
+
+.dl-card {
+  @include themify($themes) {
+    background-color: themed('cardColor');  
+    color: themed('textColor');
+  }
+}
+
+
+
 
 /*********************************************************************/
  /* Code formatting                                                  */

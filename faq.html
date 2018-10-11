@@ -8,17 +8,18 @@ title: FAQ
 <h4>Technical Stuff</h4>
 
 {% for item in site.data.faq.faq_tech %}
-  <h5> {{ item.question }} </h5>
-  <div class="container">
-    {{ item.answer}}
+  <h5 class="faq"> {{ item.question }} </h5>
+  <div class="container faq">
+    {% capture answer %}{{ item.answer }}{% endcapture %}
+    {{ answer | markdownify }} 
   </div>
 {% endfor %}
 
 <h4>Unit Questions</h4>
 
 {% for item in site.data.faq.faq_unit %}
-  <h5> {{ item.question }} </h5>
-  <div class="container">
+  <h5 class="faq"> {{ item.question }} </h5>
+  <div class="container faq">
     {{ item.answer}}
   </div>
 {% endfor %}
@@ -26,8 +27,8 @@ title: FAQ
 <h4>Misc Questions</h4>
 
 {% for item in site.data.faq.faq_misc %}
-  <h5> {{ item.question }} </h5>
-  <div class="container">
+  <h5 class="faq"> {{ item.question }} </h5>
+  <div class="container faq">
     {{ item.answer}}
   </div>
 {% endfor %}

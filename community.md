@@ -4,33 +4,42 @@ title: Community
 splash: old_mhq_load.jpeg
 ---
 
-Stuff about the community should go here. Some ideas:
+### Connecting with the Community
 
-- How to find places to play
-- forum information
-- slack information
-- social media
-- how to get involved and contribute to development
+#### Where To Play Other Humans
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem fringilla ut morbi. Turpis egestas sed tempus urna et pharetra. Ipsum dolor sit amet consectetur. Arcu non sodales neque sodales ut. Pretium viverra suspendisse potenti nullam ac tortor. Leo integer malesuada nunc vel risus commodo viverra maecenas. Enim eu turpis egestas pretium aenean pharetra. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Varius duis at consectetur lorem donec. Libero id faucibus nisl tincidunt eget nullam. In vitae turpis massa sed elementum tempus egestas. Quam elementum pulvinar etiam non quam. Libero id faucibus nisl tincidunt eget. Viverra aliquet eget sit amet tellus cras adipiscing. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Consectetur purus ut faucibus pulvinar. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Suspendisse sed nisi lacus sed viverra tellus in.
+You have downloaded MegMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options. 
 
-Arcu odio ut sem nulla pharetra diam. Velit dignissim sodales ut eu sem integer. Ut sem nulla pharetra diam sit. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Velit laoreet id donec ultrices tincidunt. Cum sociis natoque penatibus et. Convallis tellus id interdum velit laoreet. Semper risus in hendrerit gravida rutrum. Est velit egestas dui id. Viverra aliquet eget sit amet tellus. Ac orci phasellus egestas tellus rutrum.
+- The most direct approach is to [join our Slack community](https://megamek.org:3000) where you can chat directly with other players as well as developers.
+- You can check out our [forums](https://www.megamek.org/bb/) as well. However, because most people prefer to hang out on Slack (see above), the forums can be pretty quiet.
+- You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests. 
+- For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
+- Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign “wrapper” for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment.
 
-Proin sagittis nisl rhoncus mattis. Non nisi est sit amet. Leo urna molestie at elementum eu. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Non nisi est sit amet facilisis magna etiam. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Posuere lorem ipsum dolor sit amet consectetur. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Justo nec ultrices dui sapien eget. Id interdum velit laoreet id donec. Malesuada fames ac turpis egestas maecenas.
+#### Find Us On Social Media
 
-Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Sagittis eu volutpat odio facilisis mauris sit amet. At urna condimentum mattis pellentesque id nibh. Gravida quis blandit turpis cursus in hac habitasse. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Purus in mollis nunc sed id semper risus in hendrerit. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Faucibus interdum posuere lorem ipsum. Aliquam ultrices sagittis orci a scelerisque. Ultrices eros in cursus turpis massa tincidunt. Placerat vestibulum lectus mauris ultrices eros in cursus. Facilisis sed odio morbi quis commodo. Sapien faucibus et molestie ac feugiat sed. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Sed pulvinar proin gravida hendrerit lectus. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.
+You can find us on [Twitter](https://twitter.com/MegaMekTeam) and [Facebook](https://www.facebook.com/MegaMek). We love the mentions. 
 
-Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Magna fermentum iaculis eu non diam. Tristique nulla aliquet enim tortor at auctor. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Nam aliquam sem et tortor consequat id porta nibh. Consequat interdum varius sit amet mattis. Nullam eget felis eget nunc lobortis. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Nec tincidunt praesent semper feugiat nibh. Feugiat nibh sed pulvinar proin gravida hendrerit.
+#### Getting Involved with Development
 
-#### Currently registered servers
+We are an open source project so anyone is welcome to help. Consider what you can offer and also join our Slack channel [here.](http://megamek.org:3000/) It's important for us to be able to easily communicate and Slack allows us to do that.
 
-<div id='servers'>
-</div>
+##### I know how to code
 
-<script type='text/javascript'>
-$(document).ready(function() {
-setInterval(function() {
-  $("#servers").load('https://api.megamek.org/servers.js');
-}, 1000);
-});
-</script>
+The projects are written in Java and are hosted on [GitHub](https://github.com/MegaMek). You can also find information about our coding style preferences and how to build the projets in the [developer's section](https://github.com/MegaMek/megamek/wiki#developer-information) of our GitHub wiki page. Its best to start with a small project. Have a look at the issues tracker and start there.
+
+You should submit your changes as a Pull Request (PR) on GitHub. The core developers will review all PRs and provide feedback to ensure things aren't going to break existing save games or the program itself. PR reviews happen as the core developers have time to review them.
+
+##### I'm an artist
+
+We love good art. Before you start making sprites, you should be aware that we have an artist that we've worked with for years and we have a very precise plan going forward for ground units.  That said, no one is currently making Aerospace Sprites and they are badly needed. Sprites need to be in a .png format, and submitted without shading or using the shading scripts found [here](https://www.megamek.org/bb/thread-2295.html).
+
+Other art such as tilesets should be discussed before you put the work into it. Code limitations can sometimes impact these resources.  If you have an idea for something art-wise for the project, please reach out to us.
+
+##### I'm a data guy
+
+We do have several ongoing data projects. If you have the time and want to help, the best way is to join the Slack channel and look for Hammer. He coordinates the data stuff and can provide guidance.
+
+##### I can't do any of the above
+
+You can still help! Play the games, find bugs and [report them](https://github.com/MegaMek/megamek/wiki/Making-a-Bug-Report). Nothing makes our day like a reproducible bug report.
