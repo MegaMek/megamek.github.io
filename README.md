@@ -1,4 +1,4 @@
-These files contain a [Jekyll](https://jekyllrb.com/) set-up for a proposed new MegaMek website. [Github pages](https://pages.github.com/) supports Jekyll set ups and will auto re-build the website anytime a new commit is pushed. So we can use this to publish the front page site at megamek.github.io.
+These files contain a [Jekyll](https://jekyllrb.com/) set-up for a the new MegaMek website hosted at GitHub pages. [Github pages](https://pages.github.com/) supports Jekyll set ups and the site will automatially re-build any time a new commit is pushed to this repository.
 
 The other reasons for using Jekyll is that we can separate frequently updated content from the HTML formatting and design, without having to rely on a database system. This repository is designed so that all content information is pulled from simple Markdown and YAML files that can be easily edited without fiddling around with a bunch of HTML code.
 
@@ -12,7 +12,7 @@ The latest program version information is kept in YAML file `current_releases.ym
 
 Page content is stored in markdown files in `_includes/mminfo`, the `wiki` directory, and in the root directory. Here is a list of the files that currently exist and what content they change:
 
-- In `_includes`:
+- In `_includes/mminfo`:
   - `about.md`: the blurb that appears in the upper left of the home page. This should be an evocative and non-technical description of the programs.  
   - `installation.md`: Instructions on how to download and install the programs. This will currently appear on the left side of the download page.
   - `features.md`: a list of cool features that shows up on the front page. 
@@ -22,8 +22,8 @@ Page content is stored in markdown files in `_includes/mminfo`, the `wiki` direc
   - `mission_statement.md`: The mission statement. Appears on front page.  
   - `sys_require.md`: A short blurb describing the system requirements for the programs.
 - In root directory:
-  - `community.md`: Information about the megamek community. Very much a WIP ATM. Shows on its own page. 
-  - `play.md`: Information about how to play MegaMek. Very much a WIP ATM. Shows on its own page.
+  - `community.md`: Information about the megamek community. Shows on its own page. 
+  - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
 - The `wiki` directory contains additional markdown files for supplementary content that is not directly used in the main navbar but that can be linked to and is available at `wiki/name_of_file.html` when the site is compiled.
 
 More information about using markdown to write pages can be found [here](https://daringfireball.net/projects/markdown/syntax). Its super easy.
@@ -34,13 +34,13 @@ New posts can be created as Markdown files in the `_posts` directory. File names
 
 ### FAQ
 
-FAQ information is kept in YAML folders with a `question` and `answer` field for each item.  Currently there are three different categories of technical, unit, and miscellaneous. If these categories are changed/expanded, the `faq.html` file will require editing to accomodate the new categories.
+FAQ information is kept in YAML files in the `_data/faq` directory. Each file includes `question` and `answer` fields for each item.  Currently there are three different categories of technical, unit, and miscellaneous. If these categories are changed/expanded, the `faq.html` file will require editing to accomodate the new categories.
 
 ### New Pages
 
-To create new pages, add a markdown file to the root directory with the same front matter that is currently in the `play.md` file. Layout should remain "info_page" and the title should be unique. A splash image from the `assets/images` directory is optional. 
+To create new pages, add a markdown file to the root or `wiki` directory with the same front matter that is currently in the `play.md` file. Layout should remain "info_page" and the title should be unique. A splash image from the `assets/images` directory is optional. 
 
-To add this to the top navbar, you need to edit the `menu-pages.csv` file in the `_data` directory. The name provided must match the title given in the front matter and the address should point to a file of the same name but with an html rather than md suffix. 
+To add this page to the top navbar, you need to edit the `menu-pages.csv` file in the `_data` directory. The name provided must match the title given in the front matter and the address should point to a file of the same name but with an html rather than md suffix. 
 
 ### New Screenshots
 
