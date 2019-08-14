@@ -11,7 +11,7 @@ splash: old_mhq_load.jpeg
 You have downloaded MegMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options.
 
 - The most direct approach is to [join our Slack community](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) where you can chat directly with other players as well as developers.
-- You can check out our [forums](https://www.megamek.org/bb/) as well. However, because most people prefer to hang out on Slack (see above), the forums can be pretty quiet.
+- You can check out our [forums](https://forum.megamek.org) as well. However, because most people prefer to hang out on Slack (see above), the forums can be pretty quiet.
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
 - Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign “wrapper” for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment.
@@ -22,7 +22,7 @@ You can find us on [Twitter](https://twitter.com/MegaMekTeam) and [Facebook](htt
 
 #### Getting Involved with Development
 
-We are an open source project so anyone is welcome to help. Consider what you can offer and also join our Slack channel [here.](http://megamek.org:3000/) It's important for us to be able to easily communicate and Slack allows us to do that.
+We are an open source project so anyone is welcome to help. Consider what you can offer and also join our Slack channel [here.](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) It's important for us to be able to easily communicate and Slack allows us to do that.
 
 ##### I know how to code
 
