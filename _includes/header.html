@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html lang='en'>
 
 <head>
   <title>{{ site.title }} - {{ page.title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content= "{{ site.description }}" />
+  <meta name="description" content="{{ site.description }}" />
   <meta name="author" content="{{ site.author }}" />
-  <meta name="keywords" content="megamek, mekhq, megameklab"/>
+  <meta name="keywords" content="megamek, mekhq, megameklab" />
   <meta property="og:image" content="https://megamek.github.io/assets/images/icons/megamek.png" />
   <meta property="og:site_name" content="MegaMek" />
   <meta property="og:type" content="object" />
   <meta property="og:title" content="{{ site.title }}" />
   <meta property="og:url" content="https://megamek.github.io" />
-  <meta property="og:description" content= "{{ site.description }}"/>
+  <meta property="og:description" content="{{ site.description }}" />
   <meta name="twitter:image" content="https://megamek.github.io/assets/images/megamek_splash_spooky_hd.png">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/icons/favicon-apple-touch-114.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/icons/favicon-apple-touch-114.png">
@@ -22,54 +23,51 @@
   <link rel="icon" sizes="128x128" href="favicon.icns">
   <link rel="icon" href="/assets/images/icons/favicon.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha256-Md8eaeo67OiouuXAi8t/Xpd8t2+IaJezATVTWbZqSOw= sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB sha512-iqRdf+0KMFmNZgdsA+8bz1MWIIXQBUCavPYVSVI83fcVfH2Y2PnNooLN04bgTNoUiQvIzidiIHJAcIP/uAEV9w==" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/assets/css/syntax.css' | relative_url }}"rel="stylesheet" >
+  <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="banner-image">
-            <nav class="navbar navbar-dark transparent navbar-expand-sm fixed-top">
-              <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">
-                <img src="{{ '/assets/images/icons/mm_word_logo.png' | relative_url }}" height="35" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                  {% for menu_page in site.data.menu_pages %}
-                    {% if menu_page.name == page.title %}
-                      <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-                    {% else %}
-                      <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-                <ul class="navbar-nav mr-0">
-                  <div class="tooltip-switch">
-                    <button id="switch-light" class="choose-light"></button>
-                    <span class="tooltiptext">light theme</span>
-                  </div>
-                  <div class="tooltip-switch">
-                    <button id="switch-dark" class="choose-dark"></button>
-                    <span class="tooltiptext">dark theme</span>
-                  </div>
-                  <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><i class="fa fa-facebook"></i></a>
-                  <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><i class="fa fa-twitter"></i></a>
-                  <a class="nav-item nav-link active" href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY"><i class="fa fa-slack"></i></a>
-                  <a class="nav-item nav-link active" href="https://forum.megamek.org"><i class="fa fa-comments"></i></a>
-                  <a class="nav-item nav-link active" href="https://www.github.com/megamek"><i class="fa fa-github"></i></a>
-                </ul>
-              </div>
-            </nav>
-        </div>
+    <nav class="navbar navbar-dark transparent navbar-expand-sm fixed-top">
+      <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">
+        <img src="{{ '/assets/images/icons/mm_word_logo.png' | relative_url }}" height="35" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          {% for menu_page in site.data.menu_pages %}
+          {% if menu_page.name == page.title %}
+          <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+          {% else %}
+          <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        <ul class="navbar-nav mr-0">
+          <div class="tooltip-switch">
+            <button id="switch-light" class="choose-light"></button>
+            <span class="tooltiptext">light theme</span>
+          </div>
+          <div class="tooltip-switch">
+            <button id="switch-dark" class="choose-dark"></button>
+            <span class="tooltiptext">dark theme</span>
+          </div>
+          <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><i class="fa fa-facebook"></i></a>
+          <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><i class="fa fa-twitter"></i></a>
+          <a class="nav-item nav-link active"
+            href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY"><i
+              class="fa fa-slack"></i></a>
+          <a class="nav-item nav-link active" href="https://forum.megamek.org"><i class="fa fa-comments"></i></a>
+          <a class="nav-item nav-link active" href="https://www.github.com/megamek"><i class="fa fa-github"></i></a>
+        </ul>
       </div>
-    </div>
-  </div>
-</header>
+    </nav>
+  </header>
+  <div class='banner-image d-none d-sm-block d-sm-none d-md-block'></div>
