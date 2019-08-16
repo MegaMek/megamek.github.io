@@ -133,6 +133,30 @@ title: Downloads
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="container">
+        {% capture mme_include %}{% include mminfo/mme_dl_info.md %}{% endcapture %}
+        {{ mme_include | markdownify }}
+      </div>
+    </div>
+    <div class="row">
+      <div class='col-sm-6'>
+        <div class="card dl-card">
+          <div class='card-header'>
+            <i class="fa fa-download"></i> Extras
+          </div>
+          <div class='card-body'>
+            <h5 class='card-title'>{{ site.data.current_releases.extras }}</h5>
+            <p class='card-text'>
+              {{ site.data.current_releases.extras_date }}<br><br>
+              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip">Windows</a><br>
+              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip">Linux</a><br>
+              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip">macOS</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 </div>
