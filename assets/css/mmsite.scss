@@ -5,17 +5,14 @@
  * Theme definitions
  */
 
-$themes: (
-  light: (
-    backgroundColor: #dadfe1,
+$themes: (light: (backgroundColor: #dadfe1,
     textColor: #000000,
     accentColor1: #0000a0,
     accentColor2: #800080,
     activeColor: #00ffff,
     cardColor: #adb5bd,
   ),
-  dark: (
-    backgroundColor: #282828,//#3f3e3e,
+  dark: (backgroundColor: #282828, //#3f3e3e,
     textColor: #dadfe1,
     accentColor1: #fffacd,
     accentColor2: #ffd700,
@@ -46,13 +43,18 @@ $themes: (
  * Implementation of themes
  */
 @mixin themify($themes) {
-  @each $theme, $map in $themes {
+
+  @each $theme,
+  $map in $themes {
     .theme-#{$theme} & {
       $theme-map: () !global;
-      @each $key, $submap in $map {
+
+      @each $key,
+      $submap in $map {
         $value: map-get(map-get($themes, $theme), '#{$key}');
         $theme-map: map-merge($theme-map, ($key: $value)) !global;
       }
+
       @content;
       $theme-map: null !global;
     }
@@ -68,31 +70,41 @@ $themes: (
 /*******************************************************/
 
 //fonts
-$font-stack: "Source Sans Pro", Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+$font-stack: "Source Sans Pro",
+Trebuchet MS,
+Arial,
+Helvetica,
+Verdana,
+sans-serif;
 
 /*******************************************************/
 /* Basics                                              */
 /*******************************************************/
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 body {
-  background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);;
+  background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);
   font-family: $font-stack;
-  
+
+  padding-top: 60px;
+
   @include themify($themes) {
-    color: themed('textColor');  
+    color: themed('textColor');
   }
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
 h5.faq {
   @include themify($themes) {
-    color: themed('accentColor2');  
+    color: themed('accentColor2');
   }
 }
 
@@ -101,32 +113,34 @@ a {
     &:link {
       color: themed('accentColor1');
     }
+
     &:visited {
       color: themed('accentColor1');
     }
+
     &:hover {
       color: themed('accentColor2');
     }
+
     &:active {
       color: themed('activeColor');
     }
   }
-}  
+}
 
 /*******************************************************/
 /* For the banner image used at the top and the navbar */
 /*******************************************************/
 .banner-image {
-    background-image: url("../../assets/images/mhq_splash.jpeg");
+  background-image: url("../../assets/images/mhq_splash.jpeg");
 
-    /* Set a specific height */
-    height: 350px;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  /* Set a specific height */
+  height: 350px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: 0;
 }
 
 /* Make the navbar semi-transparent */
@@ -134,7 +148,7 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
-.navbar a{
+.navbar a {
   font-size: 1.1em;
 }
 
@@ -159,10 +173,10 @@ a {
 .container.top {
   border-radius: 25px;
   margin-top: 10px;
-  
+
   @include themify($themes) {
-    color: themed('textColor');  
-    background-color: themed('backgroundColor');  
+    color: themed('textColor');
+    background-color: themed('backgroundColor');
   }
 }
 
@@ -174,15 +188,15 @@ a {
   margin-bottom: 15px;
   border-radius: 20px;
   border: 2px inset;
-  
+
   @include themify($themes) {
-    color: themed('textColor');  
-    background-color: tint(themed('backgroundColor'), 10%);  
+    color: themed('textColor');
+    background-color: tint(themed('backgroundColor'), 10%);
   }
 }
 
 /*******************************************/
-/* A special class for the download button */ 
+/* A special class for the download button */
 /*******************************************/
 .btn {
   border: 10px;
@@ -192,7 +206,7 @@ a {
   cursor: pointer;
   font-size: 20px;
   border-radius: 8px;
-  
+
   @include themify($themes) {
     border: 5px solid themed('accentColor1');
   }
@@ -203,9 +217,12 @@ a {
   -webkit-stroke-width: 5.3px;
   -webkit-stroke-color: #FFFFFF;
   -webkit-fill-color: #FFFFFF;
-  
+  stroke-width: 5.3px;
+
+    color: #dadfe1;
+
   @include themify($themes) {
-    text-shadow: 1px 0px 20px themed('accentColor2');  
+    text-shadow: 1px 0px 20px themed('accentColor2');
     border: 5px solid themed('accentColor2');
   }
 }
@@ -222,78 +239,78 @@ a {
 }
 
 .btn span {
-    line-height: 14px;
-    font-size: 14px;
-    padding: 4px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;    
+  line-height: 14px;
+  font-size: 14px;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 /****************************************************/
 /* styling for color switching                      */
 /****************************************************/
 .choose-dark {
-    background-color: #555555;
-    border: 1px solid grey;
-    padding: 15px;
-    display: inline-block;
+  background-color: #555555;
+  border: 1px solid grey;
+  padding: 15px;
+  display: inline-block;
 }
+
 .choose-light {
-    background-color: #dadfe1;
-    border: 1px solid grey;
-    padding: 15px;
-    display: inline-block;
+  background-color: #dadfe1;
+  border: 1px solid grey;
+  padding: 15px;
+  display: inline-block;
 }
 
 .tooltip-switch {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltip-switch .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 }
 
 .tooltip-switch:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 /****************************************************/
 /* Override default lists to use Font Awesome icons */
 /****************************************************/
-ul
-{
-	list-style-type: none;
-  
-  li:before {    
+ul {
+  list-style-type: none;
+
+  li:before {
     font-family: 'FontAwesome';
     content: '\f05b';
-    margin:0 5px 0 -20px;
-    
+    margin: 0 5px 0 -20px;
+
     @include themify($themes) {
-      color: themed('textColor');  
+      color: themed('textColor');
     }
   }
 
-  li.news:before {    
+  li.news:before {
     font-family: 'FontAwesome';
     content: '\f1ea';
-    margin:0 5px 0 -20px;
-    
+    margin: 0 5px 0 -20px;
+
     @include themify($themes) {
-      color: themed('textColor');  
+      color: themed('textColor');
     }
   }
 }
@@ -321,8 +338,8 @@ ul
 
 .carousel-control-prev {
   background: rgba(0, 0, 0, 0.9);
-  max-width:30px;
-  max-height:30px;
+  max-width: 30px;
+  max-height: 30px;
   position: absolute;
   top: 50%;
   border-radius: 5px;
@@ -331,8 +348,8 @@ ul
 
 .carousel-control-next {
   background: rgba(0, 0, 0, 0.9);
-  max-width:30px;
-  max-height:30px;
+  max-width: 30px;
+  max-height: 30px;
   position: absolute;
   top: 50%;
   border-radius: 5px;
@@ -347,19 +364,22 @@ div.post-meta {
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
+
   ul {
     display: inline;
     padding-left: 0;
-    float: right;
   }
-  ul > li {
+
+  ul>li {
     display: inline;
     padding: 0 0 5px 20px;
   }
-  li:before {    
+
+  li:before {
     content: '';
-    margin:0 5px 0 0px;
+    margin: 0 5px 0 0px;
   }
+
   .post-time {
     display: inline;
   }
@@ -371,7 +391,7 @@ div.post-meta {
 
 .dl-card {
   @include themify($themes) {
-    background-color: themed('cardColor');  
+    background-color: themed('cardColor');
     color: themed('textColor');
   }
 }
@@ -380,21 +400,21 @@ div.post-meta {
 
 
 /*********************************************************************/
- /* Code formatting                                                  */
+/* Code formatting                                                  */
 /*********************************************************************/
 pre {
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   overflow-x: auto;
   padding: 8px 12px;
- }
- 
- code.highlighter-rouge {
-   border-radius: 5px;
-   padding: 0px;
-   
-   @include themify($themes) {
-     color: themed('accentColor2');  
-     font-weight: 600;
-   }
- }
+}
+
+code.highlighter-rouge {
+  border-radius: 5px;
+  padding: 0px;
+
+  @include themify($themes) {
+    color: themed('accentColor2');
+    font-weight: 600;
+  }
+}

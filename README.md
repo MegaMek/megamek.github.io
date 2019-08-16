@@ -1,3 +1,5 @@
+# MegaMek Website
+
 These files contain a [Jekyll](https://jekyllrb.com/) set-up for a the new MegaMek website hosted at GitHub pages. [Github pages](https://pages.github.com/) supports Jekyll set ups and the site will automatially re-build any time a new commit is pushed to this repository.
 
 The other reasons for using Jekyll is that we can separate frequently updated content from the HTML formatting and design, without having to rely on a database system. This repository is designed so that all content information is pulled from simple Markdown and YAML files that can be easily edited without fiddling around with a bunch of HTML code.
@@ -52,7 +54,7 @@ New screenshots should be added directly to `assets/images/screenshots`. To get 
 
 To use images in a post or page, first add the image to the `assets/images` directory. Then you can reference the image in your markdown document with:
 
-```
+```Markdown
 ![My new image description](/assets/images/mynewimage.jpg){:class="img-fluid"}
 ```
 
@@ -60,7 +62,7 @@ The class call ensures that the image will resize by device. This will scale ima
 
 You can also put other documents into the assets directory and reference them in a similar way. For example, for a PDF:
 
-```
+```Markdown
 [get the PDF](/assets/mydoc.pdf)
 ```
 
@@ -68,7 +70,7 @@ You can also put other documents into the assets directory and reference them in
 
 To test out changes to a local repository, you need to install [Jekyll](https://jekyllrb.com/). Then from the command line within the repository run:
 
-```
+```Shell
 jekyll serve
 ```
 
