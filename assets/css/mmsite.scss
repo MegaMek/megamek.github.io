@@ -219,6 +219,8 @@ a {
   -webkit-fill-color: #FFFFFF;
   stroke-width: 5.3px;
 
+    color: #dadfe1;
+
   @include themify($themes) {
     text-shadow: 1px 0px 20px themed('accentColor2');
     border: 5px solid themed('accentColor2');
