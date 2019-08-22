@@ -75,9 +75,9 @@ MegaMekLab can currently build the following unit types:
 * Warships
 * Space Stations.
 * Primitive versions of the units listed above
+* ProtoMeks
 
 **Planned for 2019**
-* ProtoMeks
 * Support Vee's (from the TechManual)
 
 The best way to manage custom units in Megamek is to create a directory called "Customs" in the `data/mechfiles` directory. Simply build the unit in MegaMekLab and save it to this directory. Files  should saves with an MTF extension for Meks and a BLK extension for other units.  Once you start MegaMek, the unit will be added to your list of available units.
