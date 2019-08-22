@@ -8,7 +8,7 @@ splash: old_mhq_load.jpeg
 
 #### Where To Play Other Humans
 
-You have downloaded MegMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options.
+You have downloaded MegaMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options.
 
 - The most direct approach is to [join our Slack community](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) where you can chat directly with other players as well as developers.
 - You can check out our [forums](https://forum.megamek.org) as well. However, because most people prefer to hang out on Slack (see above), the forums can be pretty quiet.
@@ -26,7 +26,7 @@ We are an open source project so anyone is welcome to help. Consider what you ca
 
 ##### I know how to code
 
-The projects are written in Java and are hosted on [GitHub](https://github.com/MegaMek). You can also find information about our coding style preferences and how to build the projets in the [developer's section](https://github.com/MegaMek/megamek/wiki#developer-information) of our GitHub wiki page. Its best to start with a small project. Have a look at the issues tracker and start there.
+The projects are written in Java and are hosted on [GitHub](https://github.com/MegaMek). You can also find information about our coding style preferences and how to build the projects in the [developer's section](https://github.com/MegaMek/megamek/wiki#developer-information) of our GitHub wiki page. Its best to start with a small project. Have a look at the issues tracker and start there.
 
 You should submit your changes as a Pull Request (PR) on GitHub. The core developers will review all PRs and provide feedback to ensure things aren't going to break existing save games or the program itself. PR reviews happen as the core developers have time to review them.
 
