@@ -16,4 +16,4 @@ Can I use my campaign(cpnx) file in both?
 Don't.... but we strongly recommend keeping a copy of the campaign file in each folder and back-ups as well.
 
 How can I help?
-Have a look [here]https://megamek.org/community.html
+Have a look [here] (https://megamek.org/community.html)
