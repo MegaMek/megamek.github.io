@@ -18,7 +18,7 @@
   jQuery(document).ready(function () {
     if (navigator.appVersion.indexOf("Win") != -1) {
       document.getElementById("downloader").innerHTML =
-        "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}-windows.zip\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-windows\"></i> Windows</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
+        "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-windows-{{ site.data.current_releases.stable }}.zip\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-windows\"></i> Windows</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
     } else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
       //document.getElementById("downloader").innerHTML = "mac";
       document.getElementById("downloader").innerHTML =
