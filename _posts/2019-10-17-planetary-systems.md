@@ -47,3 +47,12 @@ As CGL produces new canon data for systems, we will be updating our data to adju
 There are also going to be places where the data accidentally misrepresent canon data because we missed a canon source. We encourage users to submit issues to the [MekHQ issues page](https://github.com/MegaMek/mekhq/issues) with corrections for incorrect entries, with a clear indication of the source.
 
 In the meantime, we hope you enjoy exploring the newly enriched Battletech universe. Keep your eyes peeled for a few easter eggs.
+
+#### What About My Custom Planets?
+
+Some users may have made changes to the underlying planet data for their campaigns. There are really two different scenarios here:
+
+1. You may have used the in-game planetary editor to add custom events to a particular planet like faction changes. These custom planetary events *should* load correctly into the new system in 0.47.1 and be saved correctly into the new system when you save a game. However, this is a development version so please post a bug report if you have problems.
+2. You may have edited the planets.xml or planet_events.xml file in the data folder itself to create an AU dataset. This is a more difficult situation. At present, custom planets.xml and planet_events.xml will not load into MekHQ 0.47.1 because we use a new XML structure in which the `planet` tag is wrapped inside a `system` tag. If you are XML savvy, you can make your custom XML work by wrapping each of your `planet` objects in a `system` object and then wrapping the whole thing in a `systems` tag. However, you will only have one planet per system. At some point, we hope to make the code for generating systems available as executable which will make it easier for those with AU campaigns to transition to the new system, but that is farther down the road so you may want to hold off on 0.47.1.
+
+The system in 0.47.1 has also disabled the ability to add custom events to planets. This is temporary. In future development releases in this cycle we plan to add back in the ability to add custom events for planets and systems. 
