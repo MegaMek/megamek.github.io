@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "What You Need to Know about the Planetary System Overhaul"
-date:   2019-10-17
+title:  "Scenario Objectives"
+date:   2019-11-06
 tags:
   - Features MekHQ
 ---
