@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "New Development Release 0.47.3"
-date:   2020-2-1
+title:  "New Development Release 0.47.4"
+date:   2020-2-9
 tags:
   - Releases
 ---
