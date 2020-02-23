@@ -15,6 +15,7 @@ You have downloaded MegaMek, played against the bot, and now you are ready to tr
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
 - Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign “wrapper” for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment.
+- There are also two active BattleTech Discords with Megamek channels - [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52)
 
 #### Find Us On Social Media
 
