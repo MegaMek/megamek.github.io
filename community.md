@@ -33,7 +33,7 @@ You should submit your changes as a Pull Request (PR) on GitHub. The core develo
 
 ##### I'm an artist
 
-We love good art. Before you start making sprites, you should be aware that we have an artist that we've worked with for years and we have a very precise plan going forward for ground units.  That said, no one is currently making Aerospace Sprites and they are badly needed. Sprites need to be in a .png format, and submitted without shading or using the shading scripts found [here](https://www.megamek.org/bb/thread-2295.html).
+We love good art. Before you start making sprites, you should be aware that we have an artist that we've worked with for years and we have a very precise plan going forward for ground units.  That said, no one is currently making Aerospace Sprites and they are badly needed. Sprites need to be in a .png format, and submitted without shading or using the shading scripts found [here](https://www.megamek.org/bb/thread-2295.html). There is also a good tutorial on making Sprites [here]https://forum.megamek.org/showthread.php?tid=1760)
 
 Other art such as tilesets should be discussed before you put the work into it. Code limitations can sometimes impact these resources.  If you have an idea for something art-wise for the project, please reach out to us.
 
