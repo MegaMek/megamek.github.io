@@ -25,12 +25,12 @@ MekHQ has finally gone to the dark side with the dark mode implementation comple
 
 Additionally, there are fourteen new options to campaigns (which can now be reach in existing campaigns through keyboard shortcuts: hold ALT, then press 'F' followed by 'C'), under the Personnel tab in the Family Options tab. These are a mixture of new and additional customization, plus a few new features.
 
-[*] Keyboard Shortcuts for the top Menu (hold ALT, then use the underlined key for the menu option) (primary tab shortcuts coming in the next release)
-[*] Hangar tab pop-up menu bulk selection additions and fixes
-[*] Localized Natural Order Sorting (i.e. going 1, 2, 10, 20 instead of the previous 1, 10, 2, 20)
-[*] Proper Gender and Portrait Migration from MegaMek
-[*] Advance Day in Personnel Market
-[*] Special Abilities are generated for Veteran and Elite Personnel on Person Generation
+* Keyboard Shortcuts for the top Menu (hold ALT, then use the underlined key for the menu option) (primary tab shortcuts coming in the next release)
+* Hangar tab pop-up menu bulk selection additions and fixes
+* Localized Natural Order Sorting (i.e. going 1, 2, 10, 20 instead of the previous 1, 10, 2, 20)
+* Proper Gender and Portrait Migration from MegaMek
+* Advance Day in Personnel Market
+* Special Abilities are generated for Veteran and Elite Personnel on Person Generation
 
 
 Note: You might notice that female personnel may have a box, underline, or an additional space between their given name(s) and surname(s). This is due to an issue for certain non-Latin characters in names in our name text files. This has been fixed, but unfortunately could not be fixed in save files through migration. A extra space can be removed by deleting it (provided the new given name makes sense), but any boxes or underline will require manual fixes. I would recommend doing so by comparing the name to what is in the data/names/firstnames_female.txt file, and replace any names that you find have issues with those located in said file.
