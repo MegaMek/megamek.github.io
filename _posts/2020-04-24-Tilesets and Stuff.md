@@ -16,7 +16,7 @@ Megamek actually has quite a few different Tilesets that change the look of the 
 As you can see it's quite the difference. If you've ever wanted to see samples of all the Tilesets we've got some more screenshots here:
 
 #### BW Atmospheric - A variant on Atmospheric
-![BW Atmospheric](/assets/images/TileSet/BWAtmos1){:class="img-fluid w-75"}
+![BW Atmospheric](/assets/images/TileSet/BWAtmos1.PNG){:class="img-fluid w-75"}
 #### Classic - Styled on the original Table Top maps
 ![Classic](/assets/images/TileSet/Classic1.PNG){:class="img-fluid w-75"}
 #### Isometric - Similar to Atmospheric but optimized for Isometric play
@@ -33,9 +33,9 @@ We also have some HQ tilesets which will tax Megamek unless extra memory has bee
 ![HQ Saxarba](/assets/images/TileSet/HQSaxarba.PNG){:class="img-fluid w-75"}
 
 If you want to explore and experiment with themes and other graphic options they are under View-Client Settings-Graphics
-![population view](/assets/images/TileSet/Options.PNG){:class="img-fluid w-75"}
+![options](/assets/images/TileSet/Options.PNG){:class="img-fluid w-75"}
 
 Also changing the theme under View-Change Tileset theme can had a feel of seasons to the Tilesets.
 
 This is teaser of another Tileset we are looking into.
-![population view](/assets/images/TileSet/Preview1.PNG){:class="img-fluid w-75"}
+![Saxarba with SirMegaV buildings](/assets/images/TileSet/Preview1.PNG){:class="img-fluid w-75"}
