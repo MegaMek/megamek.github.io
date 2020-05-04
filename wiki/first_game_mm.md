@@ -8,7 +8,7 @@ author: Taharqa
 
 Follow these instructions to quickly get a first game of MegaMek up and running against the built-in AI.
 
-1. Start up MegaMek using the OS-specific instructions on the [downloads](downloads.html) page.
+1. Start up MegaMek using the OS-specific instructions on the [downloads](../downloads.html) page.
 2. At the splash screen, choose `Start a new game`. You will be prompted to enter your name. This is how your player name will display in-game. You do not need to enter a server password. 
 3. You will now be taken to the lobby where you can prepare your units, the AI, and the map. There are a lot of customizable options here, but we are going to focus on the basics.<br>
 ![The lobby at startup](/assets/images/first_mm_game/lobby1.png){:class="img-fluid w-75"}
