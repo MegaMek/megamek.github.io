@@ -23,7 +23,7 @@
     
     On a Linux/Unix system, you will need to edit the startup.sh file's last line, or just add the memory argument directly to your java command if launching manually. For example: 
     
-    ```bash  
+    ```bash
     java -Xmx512m -jar MegaMek.jar &
     ```
 - question: "Why can’t I host a game?"

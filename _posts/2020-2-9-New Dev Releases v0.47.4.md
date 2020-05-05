@@ -12,9 +12,9 @@ Quick Turn around for the 47.4 release. 47.3 had some nasty bugs which should be
 These dark themes they are new and have had some testing but there might be glitches and weirdness around them.
 
 **FOR MAC USERS**
-There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
+There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS. We are working on the issue and have no ETA for a fix.
 
-Megamek
+MegaMek
 As mentioned really only bug releases. But to enable dark mode go to View-Client Settings-Graphics and change using the UI Theme.
 Sample of Dark Mode
 ![New Map GUI](/assets/images/screenshots/MMDarkMode.png){:class="img-fluid w-75"}
@@ -24,5 +24,5 @@ To enable Dark Mode in MegaMekLab. Start the program then go to File-Themes and 
 
 ![New Map GUI](/assets/images/screenshots/MMLDarkMode.png){:class="img-fluid w-75"}
 
-MekHQ.
+MekHQ
 Again lots of bug fixes and some QoL stuff.

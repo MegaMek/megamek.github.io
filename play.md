@@ -66,26 +66,24 @@ MegaMekLab can currently build the following unit types:
 * Meks (Including Industrial, Super Heavy, Tripod, LAMs)
 * Aerospace Fighters
 * Conventional Fighters
-* Combat Vehicles (vehicles with a BAR rating are currently not supported)
+* Combat Vehicles
 * BattleArmor
 * Infantry
-* Dropships
+* DropShips
 * Small Craft
-* Jumpships
+* JumpShips
 * Warships
-* Space Stations.
+* Space Stations
 * Primitive versions of the units listed above
 * ProtoMeks
+* Support Vee's (from the TechManual - Partially supported)
 
-**Planned for 2019**
-* Support Vee's (from the TechManual)
+The best way to manage custom units in MegaMek is to create a directory called "Customs" in the `data/mechfiles` directory. Simply build the unit in MegaMekLab and save it to this directory. Files should saves with an MTF extension for Meks and a BLK extension for other units. Once you start MegaMek, the unit will be added to your list of available units.
 
-The best way to manage custom units in Megamek is to create a directory called "Customs" in the `data/mechfiles` directory. Simply build the unit in MegaMekLab and save it to this directory. Files  should saves with an MTF extension for Meks and a BLK extension for other units.  Once you start MegaMek, the unit will be added to your list of available units.
-
-If you can't find your newly created unit in Megamek or MekHQ, check the game's date and the available tech level in the game options. As a last option go into the `data/mechfiles` folder and delete the file called `units.cache`. On restart Megamek will rebuild this file and your custom unit should show up.
+If you can't find your newly created unit in MegaMek or MekHQ, check the game's date and the available tech level in the game options. As a last option go into the `data/mechfiles` folder and delete the file called `units.cache`. On restart MegaMek will rebuild this file and your custom unit should show up.
 
 When you upgrade to a new version of MegaMek, you can copy your custom folder over to the new version.
 
 ##### Other Builders
 
-We can't guarantee that builders other than MegaMekLab (e.g. Heavy Metal Pro, Solaris Skunkwerks) will work with Megamek.  Megamek is a program in constant development, and while we do our best to ensure backwards compatibility it's not always possible.  Other building programs might not keep current with our name systems or file formats. As such this files might not load, or in extreme cases crash Megamek.
+We can't guarantee that builders other than MegaMekLab (e.g. Heavy Metal Pro, Solaris Skunkwerks) will work with MegaMek. MegaMek is a program in constant development, and while we do our best to ensure backwards compatibility it's not always possible. Other building programs might not keep current with our name systems or file formats. As such this files might not load, or in extreme cases crash MegaMek.

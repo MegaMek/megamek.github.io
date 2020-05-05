@@ -4,7 +4,7 @@
   answer: "As part of ongoing efforts to better organize data, unit names may occasionally change. We have added support for backward compatibility for unit name changes, but you may occasionally experience this error when you update MekHQ. In order to correct your campaign file with the new names, you will need to open your campaign file (*.cpnx) in a text editor and correct the names for units that cannot be found. More detailed instructions can be found <a href=\"https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units\">here</a>."
   
 - question: "What is Variable Tech Level?"
-  answer: "This is based on the Tech Progression from Interstellar Operations.  As equipment is introduced and time passes, it will move from Experimental to Standard (common use). When this option is enabled, a unit's tech level is determined by the highest technology rating for the year the game is in."
+  answer: "This is based on the Tech Progression from Interstellar Operations. As equipment is introduced and time passes, it will move from Experimental to Standard (common use). When this option is enabled, a unit's tech level is determined by the highest technology rating for the year the game is in."
   
 - question: "Why can't I find a particular unit?"
   answer: "<p>
@@ -24,7 +24,7 @@
   
 - question: "How do I get fluff images to show up?"
   answer: |
-    We cannot provide fluff images for units, but if you own PDFs or hard copies of the appropriate books, you should be able to create your own fluff images.  
+    We cannot provide fluff images for units, but if you own PDFs or hard copies of the appropriate books, you should be able to create your own fluff images.
     
     Fluff images need to go into the correct unit type directory within the <code>data/images/fluff</code> directory. The name of the image must exactly match the name in the unit selector. So, if you wanted to add a fluff image for the "Sunder SD1-0G", you would need to name the image "Sunder SD1-0G.xxx" where xxx is the image extension.
     

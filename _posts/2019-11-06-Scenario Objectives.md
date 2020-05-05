@@ -8,7 +8,7 @@ tags:
 
 One of things mentioned in the release notes for 0.47.1 was Scenario Objectives. Here is a quick summary of it.
 
-his update adds scenario objectives. What does this mean?
+This update adds scenario objectives. What does this mean?
 
 For standard AtB scenarios, the objectives are now explicitly tracked, to the best of the program's ability, during scenario resolution. This includes enemy unit destruction, allied unit preservation and any special objectives (you will probably need to manually set the state of the latter).
 
