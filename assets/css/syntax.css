@@ -14,12 +14,11 @@
 }
 .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
   color: #6c8b9f;
-  font-style: italic;
+  font-weight: bold;
 }
 .highlight .cp {
   color: #b2fd6d;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: bolder;
 }
 .highlight .err {
   color: #fefeec;
@@ -27,8 +26,7 @@
 }
 .highlight .gr {
   color: #cc0000;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: bolder;
 }
 .highlight .k, .highlight .kd, .highlight .kv {
   color: #f6dd62;
@@ -47,10 +45,7 @@
 .highlight .gi {
   color: #b2fd6d;
 }
-.highlight .ge {
-  font-style: italic;
-}
-.highlight .gs {
+.highlight .ge, .highlight .gs {
   font-weight: bold;
 }
 .highlight .gt {

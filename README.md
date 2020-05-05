@@ -36,7 +36,7 @@ New posts can be created as Markdown files in the `_posts` directory. File names
 
 ### FAQ
 
-FAQ information is kept in YAML files in the `_data/faq` directory. Each file includes `question` and `answer` fields for each item.  Currently there are three different categories of technical, unit, and miscellaneous. If these categories are changed/expanded, the `faq.html` file will require editing to accomodate the new categories.
+FAQ information is kept in YAML files in the `_data/faq` directory. Each file includes `question` and `answer` fields for each item. Currently there are three different categories of technical, unit, and miscellaneous. If these categories are changed/expanded, the `faq.html` file will require editing to accomodate the new categories.
 
 ### New Pages
 

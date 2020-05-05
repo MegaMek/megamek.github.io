@@ -3,9 +3,9 @@ layout: post
 title:  "Tilesets and Such"
 date:   2020-04-20
 tags:
-  - Features Megamek Tileset
+  - Features MegaMek Tileset
 ---
-Megamek actually has quite a few different Tilesets that change the look of the game. We are currently looking at changing our default Tileset to the Saxarba Tileset. 
+MegaMek actually has quite a few different Tilesets that change the look of the game. We are currently looking at changing our default Tileset to the Saxarba Tileset. 
 
 #### Current Tileset - Atmospheric
 ![Atmospheric](/assets/images/TileSet/Atmos1.PNG){:class="img-fluid w-75"}
@@ -24,7 +24,7 @@ As you can see it's quite the difference. If you've ever wanted to see samples o
 #### Large Texture - Designed to spread a base image over a larger area.
 ![Large Texture](/assets/images/TileSet/LargeTexture.PNG){:class="img-fluid w-75"}
 
-We also have some HQ tilesets which will tax Megamek unless extra memory has been allocated to Megamek. Even then it might not help.
+We also have some HQ tilesets which will tax MegaMek unless extra memory has been allocated to MegaMek. Even then it might not help.
 #### HQ Atmospheric
 ![HQ Atmospheric](/assets/images/TileSet/HQAtmos.PNG){:class="img-fluid w-75"}
 #### HQ Isometric

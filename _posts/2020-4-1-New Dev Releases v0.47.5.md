@@ -7,14 +7,14 @@ tags:
 ---
 Hi Everyone,
 
-Been a few months since our last dev release. This is a massive release with a staggering amount of stuff in it which means their will likely be issues. But unless there are major deal breaking bugs in this release. Things will slow on development for the foreseeable future.  The dev's time have become limited with everything going on in world
+Been a few months since our last dev release. This is a massive release with a staggering amount of stuff in it which means their will likely be issues. But unless there are major deal breaking bugs in this release. Things will slow on development for the foreseeable future. The dev's time have become limited with everything going on in world
 
 These dark themes they are new and have had some testing but there might be glitches and weirdness around them.
 
 **FOR MAC USERS**
-There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
+There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS. We are working on the issue and have no ETA for a fix.
 
-Megamek
+MegaMek
 Lots of bug fixes, some errata implemented - looking at you Narrow/Low profile. But a couple of big new things. Fuel-air Explosives for when you just gotta kill that Clan Elemental Cluster. Princess has graduated the next level of artillery school, she can counter-battery fire and so can you. Thanks to Simon Landmine's testing of the new map editor there have been a bunch of bugfixes and further improvements to the map editor.
 
 MegaMekLab
