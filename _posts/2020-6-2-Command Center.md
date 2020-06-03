@@ -1,6 +1,6 @@
 We have a new screen coming to MekHQ called the **Command Center**. It also removes and replaces the **Overview** tab. The command center is now the default tab upon starting MekHQ and contains a variety of useful information. Here is a screenshot of it:
 
-<img width="1478" alt="Screen Shot 2020-06-02 at 2 11 10 PM" src="https://user-images.githubusercontent.com/16107446/83570645-46275f80-a4db-11ea-979b-c7d03d60565d.png">
+<img class="w-100" alt="Command Center screenshot" src="https://user-images.githubusercontent.com/16107446/83570645-46275f80-a4db-11ea-979b-c7d03d60565d.png">
 
 The command center currently includes the following:
 - The daily log. This is probably the most significant change. Rather than the double SplitPane fugliness we have lived with forever (and I created), the daily log now lives in the command center. This provides more room for the other tabs to do their own thing. 
@@ -11,7 +11,7 @@ The command center currently includes the following:
 
 We've also added a few other graphical elements at other parts of the GUI to support these changes:
 
-<img width="1478" alt="Screen Shot 2020-06-02 at 2 11 34 PM" src="https://user-images.githubusercontent.com/16107446/83571101-014ff880-a4dc-11ea-89dc-8f7227e5058c.png">
+<img class="w-100" alt="Repair Bay with Command Center changes" src="https://user-images.githubusercontent.com/16107446/83571101-014ff880-a4dc-11ea-89dc-8f7227e5058c.png">
 
 The two changes here are:
 - The repair bay includes a report of the last repair check, so that users can immediately see whether checks are successful without having to cycle back to the command center. 
