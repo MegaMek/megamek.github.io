@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Development Release 0.47.7"
-date:   2020-5-3
+date:   2020-6-22
 tags:
   - Releases,MegaMek,MegaMekLab,MekHQ,Features
 ---
