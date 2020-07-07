@@ -41,6 +41,10 @@ Other art such as tilesets should be discussed before you put the work into it. 
 
 We do have several ongoing data projects. If you have the time and want to help, the best way is to join the Slack channel and look for Hammer. He coordinates the data stuff and can provide guidance.
 
+##### I'd like to run a server
+
+If your interested in setting up and running a dedicated server one of our contributors (TapEnvy.us LLC) has set up a page with a list of dedicated servers and a how to. See [here](https://megamek.games/) for details.
+
 ##### I can't do any of the above
 
 You can still help! Play the games, find bugs and [report them](https://github.com/MegaMek/megamek/wiki/Making-a-Bug-Report). Nothing makes our day like a reproducible bug report.
