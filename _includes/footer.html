@@ -5,14 +5,12 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8= sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4= sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A=="
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script>
   /* Get correct download button by OS */
   jQuery(document).ready(function () {
@@ -20,7 +18,6 @@
       document.getElementById("downloader").innerHTML =
         "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-windows-{{ site.data.current_releases.stable }}.zip\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-windows\"></i> Windows</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
     } else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
-      //document.getElementById("downloader").innerHTML = "mac";
       document.getElementById("downloader").innerHTML =
         "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-apple\"></i> Mac OSX</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
     } else if (navigator.appVersion.indexOf("X11") != -1 || navigator.appVersion.indexOf("Linux") != -1) {
@@ -31,6 +28,8 @@
 </script>
 <script>
   jQuery(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+
     if (typeof (Storage) !== "undefined") {
       if (localStorage.getItem("theme-choice") !== null) {
         $("#theme").attr('class', localStorage.getItem("theme-choice"));
