@@ -23,8 +23,8 @@
   <link rel="icon" sizes="128x128" href="favicon.icns">
   <link rel="icon" href="/assets/images/icons/favicon.png" type="image/x-icon">
 
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,12 +52,12 @@
         </ul>
         <ul class="navbar-nav mr-0">
           <div class="tooltip-switch">
-            <button id="switch-light" class="choose-light"></button>
-            <span class="tooltiptext">light theme</span>
+            <button id="switch-light" class="choose-light" type='button' data-toggle="tooltip"
+              data-placement="bottom" title='Light Theme'></button>
           </div>
           <div class="tooltip-switch">
-            <button id="switch-dark" class="choose-dark"></button>
-            <span class="tooltiptext">dark theme</span>
+            <button id="switch-dark" class="choose-dark" type='button' data-toggle="tooltip" data-placement="bottom"
+              title='Dark Theme'></button>
           </div>
           <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><strong class="fa fa-facebook"></strong></a>
           <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><strong class="fa fa-twitter"></strong></a>
@@ -70,4 +70,4 @@
       </div>
     </nav>
   </header>
-  <div class='banner-image d-none d-sm-block d-sm-none d-md-block'></div>
+  <div class='container banner-image d-none d-sm-block d-sm-none d-md-block'></div>
