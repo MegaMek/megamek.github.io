@@ -28,10 +28,10 @@ There have been significant additions to the MekHQ Options to allow more customi
 ![Image of Options](https://i.imgur.com/o6liV66.png)
 
 Non-Combat TO&E forces have been added, allowing you to designate forces for support vehicles, HQ defense, or similar. These won't have any missions generated for them in AtB.
-![Image of Non-Combat](https://i.imgur.com/dROPTLx.png)
+![Image of Non-Combat](https://i.imgur.com/dROPTLx.png){:class="img-fluid w-75"}
 
 **FOR MAC USERS**
 There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
 
-You can get them [here](https://megamek.org/downloads.html)
+You can get them [here](https://megamek.org/downloads.html){:class="img-fluid w-75"}
 
