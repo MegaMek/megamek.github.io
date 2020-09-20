@@ -25,13 +25,12 @@ Wow...I don't even know where to start.
 Most of the work this release has been on tons of bugfixes, with some minor enhancements thrown in. However, there are a few larger changes. The first is that there are some new personnel statuses that describe various forms of personnel death.
 
 There have been significant additions to the MekHQ Options to allow more customization in MekHQ. The largest enhancement from this is fully customizable date formats in MekHQ. There are more coming, and Windchild is looking for more ideas for options to add for this (no promises that the ideas will be implemented, but he'll take a look).
-![Image of Options](https://i.imgur.com/o6liV66.png)
+![Image of Options](https://i.imgur.com/o6liV66m.png)
 
-Non-Combat TO&E forces have been added, allowing you to designate forces for support vehicles, HQ defense, or similar. These won't have any missions generated for them in AtB.
-![Image of Non-Combat](https://i.imgur.com/dROPTLx.png){:class="img-fluid w-75"}
+Non-Combat TO&E forces have been added, allowing you to designate forces for support vehicles, HQ defense, or similar. These won't have any missions generated for them in AtB. ![Image of Non-Combat](https://i.imgur.com/dROPTLxm.png)
 
 **FOR MAC USERS**
 There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
 
-You can get them [here](https://megamek.org/downloads.html){:class="img-fluid w-75"}
+You can get them [here](https://megamek.org/downloads.html)
 
