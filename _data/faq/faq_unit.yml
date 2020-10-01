@@ -12,7 +12,7 @@
   </p>
   <ol>
     <li>Check in the Allowed units sections and make sure the year the game takes place is set, and the tech level is set to the correct level.</li>
-    <li>We forgot to add it. Please report it either to the <a href=\"https://github.com/MegaMek/megamek/issues\">bug tracker</a> or the <a href=\"https://www.megamek.org/bb/forum-20.html\">forums</a>.</li>
+    <li>We forgot to add it. Please report it either to the <a href=\"https://github.com/MegaMek/megamek/issues\">bug tracker</a> or the <a href=\"https://forum.megamek.org/\">forums</a>.</li>
     <li>The unit has not yet passed the two months moratorium period since its official Record Sheet got released. You will have to wait until that happens.</li>
   </ol>"
 - question: "Why is a particular unit marked as illegal when it fits the official Record Sheet?"
