@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "New Development Release 0.47.12"
-date:   2020-11-08
+title:  "New Development Release 0.47.13"
+date:   2020-11-09
 tags:
-  - Releases,MegaMek,MegaMekLab,MekHQ,Features,Broken
+  - Releases,MegaMek,MegaMekLab,MekHQ,Features
 ---
 Hi Everyone,
 
-#### We've pulled this release due to game breaking bug in MekHQ.
+Opps...as we set a record for shortest time between releases. 0.47.12 had a game breaking bug in MekHQ that has been fixed in this release. We did add a couple of other small things in this release. For simplicity I'm reusing the main part of the 0.47.12 notes.
 
 The march to stable continues. This is very much a bug release with only a few of new features. But the new things are huge! First up the Megamek portrait pack is here! 1379 Images covering all types of roles. A big thanks to Saxarba for taking generic computer generated faces and turning them into a BattleTech feel. 
 
@@ -35,5 +35,5 @@ Bug fixes and code optimizations here. While MekHQ was never designed to handle 
 **FOR MAC USERS**
 There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
 
-
+You can get them [here](https://megamek.org/downloads.html)
 
