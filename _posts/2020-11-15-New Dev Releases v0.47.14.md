@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "New Development Release 0.47.13"
-date:   2020-11-09
+title:  "New Development Release 0.47.14"
+date:   2020-11-15
 tags:
   - Releases,MegaMek,MegaMekLab,MekHQ,Features
 ---
 Hi Everyone,
+
+They say the third times is the charm. Sorry about the 0.47.12 and 0.47.13 releases but sometime bugs get missed. I'm going to recycle the notes from the previous releases.
 
 Opps...as we set a record for shortest time between releases. 0.47.12 had a game breaking bug in MekHQ that has been fixed in this release. We did add a couple of other small things in this release. For simplicity I'm reusing the main part of the 0.47.12 notes.
 
@@ -35,5 +37,5 @@ Bug fixes and code optimizations here. While MekHQ was never designed to handle 
 **FOR MAC USERS**
 There isn't a Mac release and you'll have to use the Unix release. We are having issues with the Gradle packaging scripts and various security settings in MacOS.  We are working on the issue and have no ETA for a fix.
 
-
+You can get them [here](https://megamek.org/downloads.html)
 
