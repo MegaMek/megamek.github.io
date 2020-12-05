@@ -25,7 +25,7 @@ Once installed, the following command will install OpenJDK 11.
 brew install openjdk@11
 ```
 
-This wont take long to install. This next command WILL require administartion privledges but will make running Java programs easier.
+This won't take long to install. This next command WILL require administrator privileges but will make running Java programs easier.
 
 ```bash
 sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
