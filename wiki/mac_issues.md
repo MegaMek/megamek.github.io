@@ -5,7 +5,7 @@ title: Mac Issues
 
 ### macOS Issues and Solutions
 
-macOS security has strengthened over the years to the point that it makes it difficult to not run programs such as the MegaMek sutie of programs without jumping through many hoops. The instructions below will attempt to make it easier to use the suite with minimal fuss. This will require some familiairty with the Terminal and installation of additional software but afterwards, using the MegaMek suite of programs will be as simple as double clicking the JAR files.
+macOS security has strengthened over the years to the point that it makes it difficult to not run programs such as the MegaMek suite of programs without jumping through many hoops. The instructions below will attempt to make it easier to use the suite with minimal fuss. This will require some familiarity with the Terminal and installation of additional software. Afterwards, however, using the MegaMek suite of programs will be as simple as double clicking the JAR files.
 
 ### Homebrew & OpenJDK
 
