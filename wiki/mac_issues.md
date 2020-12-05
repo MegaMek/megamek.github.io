@@ -3,28 +3,40 @@ layout: info_page
 title: Mac Issues
 ---
 
-### Apple OSX Security Issues
+### macOS Issues and Solutions
 
-Because of additional security precautions, the default applications for Mac OSX will not work without some additional effort. These instructions assume some familiarity with OSX and using the command line from a Terminal. If you do not have such familiarity and cannot figure these instructions out, then it is best to ask for help.
+macOS security has strengthened over the years to the point that it makes it difficult to not run programs such as the MegaMek sutie of programs without jumping through many hoops. The instructions below will attempt to make it easier to use the suite with minimal fuss. This will require some familiairty with the Terminal and installation of additional software but afterwards, using the MegaMek suite of programs will be as simple as double clicking the JAR files.
 
-Alternatively, you can download the Unix/Linux distribution to run the programs on Mac. You simply need to double-click the JAR files to start the program, although you still may need to allow your programs to run using the first two instructions below. 
+### Homebrew & OpenJDK
 
-1. Double-click the Mek application you want to run. A pop-up window will appear telling you that it cannot be run because it is from an unidentified developer.
-2. Open `System Preferences > Security & Privacy`. You should see an option near the bottom that says you recently tried to open the application. Click the `Open Anyway` button to allow it to open. You shold now be able to double-click this application to open it in the future.
-3. The program will still not run properly because the Mac OSX system by default will not allow it to find the data directory because it resides outside of the application itself. Follow one of these procedures to correct this "quarantine" issue: 
-    * Issue the following command from a Terminal:
-        ```bash
-        sudo xattr -r -d com.apple.quarantine /full/path/to/unzipped/folder
-        ```
-    * When you initially unzip the program, use the following command from a Terminal:
-      ```bash
-      mkdir -p /path/where/you/want/program && tar -jxvpf /path/to/program-mac.tar.bz2 -C /path/where/you/want/program
-      ```
+Before we can get to MegaMek, we need to install 2 pieces of support software. Homebrew and OpenJDK.
 
-If you do not want to have to follow instructions 1 and 2 each time you download a new version, you can change the overall security settings on your Mac with the instructions below. Just be aware that you are disabling some of the built in OSX security assistance.
+[Homebrew](https://brew.sh) is a community supported package manager for macOS and Linux. You can use the command below to install.
 
-1. Open `System Preferences > Security & Privacy` and click the lock icon to allow changes.
-2. Set `Allow apps downloaded from` to `Anywhere`. If Anywhere doesn't appear, you will need to open Terminal and run:
-  ```bash
-  sudo spctl --master-disable
-  ```
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+This utility does NOT need administration privledges and will install Homebrew into `/usr/local`.
+
+Once installed, the following command will install OpenJDK 11.
+
+```bash
+brew install openjdk@11
+```
+
+This wont take long to install. This next command WILL require administartion privledges but will make running Java programs easier.
+
+```bash
+sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+```
+
+This links the OpenJDK into a system location which will allow you to simply double click JAR files to open.
+
+### MegaMek Installation
+
+Now that that is out of the way, lets get to the hard part! Due to the increased security of macOS in recent releases, running any of the MegaMek programs from the Downloads folder will fail... horribly. To solve this, all we have to do is move them OUT of the Downloads folder. We recommend creating a `Games` folder in your home directory and placing the uncompressed files in there.
+
+After that, on first load of the JAR files, you'll need to right-click and select open. A dialog will appear mentioning that you downloaded the file from the internet, from a (most likely) Amazon domain, and asking if you are absolutly sure you wish to run it. Hit yes. After that, you can double click the JAR file and it'll load like any other program without any known issue.
+
+Any time you update to a newer version, you'll need to repeat these steps of right-clicking to open on first run.
