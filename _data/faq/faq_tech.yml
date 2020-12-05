@@ -5,24 +5,24 @@
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: |
     By default, OSX applications will only open a single instance. To open up a second instance of MegaMek, you will have to use the Terminal application (in Application/Utilities). Navigate to your MegaMek directory and type:
-    
+
     ```bash
-      open -n MegaMek.app &
+      java -jar MegaMek.jar &
     ```
-    
+
     The `-n` argument tells OSX to open up a new instance of the application.
 - question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
-  answer: Apple has increased security measures that you will have to override in order to open up any of the programs that have been packaged for a Mac. You can follow [these instructions](wiki/mac_issues.html) to get things working on a Mac. Alternatively, you can just download the Unix/Linux distribution which will run perfectly fine on a Mac. 
+  answer: Apple has increased security measures on their system over the years and requires additional steps to make the process as simple as possible. Use the Unix/Linux distribution and follow [these instructions](wiki/mac_issues.html) to get things working on a Mac.
 - question: "How do I use more, or less, memory?"
   answer: |
     By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory. This amount of memory is sufficient for most games, but when playing large games against the bot, higher amounts of memory can boost performance. How you change the maximum memory allowed varies by operating system.
-    
+
     On Windows, open up the MegaMek.l4j.ini file and change the line that says `-Xmx1024m` to the amount of memory you want. For example, if you want 512 megabytes of memory, you would change this line to `-Xmx512m`.
-    
-    On macOS, you want to right-click on the MegaMek icon and choose “Show Package Contents.” Then open up Contents/Info.plist. Look for the line that says `-Xmx1024m` and edit this as above. 
-    
-    On a Linux/Unix system, you will need to edit the startup.sh file's last line, or just add the memory argument directly to your java command if launching manually. For example: 
-    
+
+    On macOS, you want to right-click on the MegaMek icon and choose “Show Package Contents.” Then open up Contents/Info.plist. Look for the line that says `-Xmx1024m` and edit this as above.
+
+    On a Linux/Unix system, you will need to edit the startup.sh file's last line, or just add the memory argument directly to your java command if launching manually. For example:
+
     ```bash
     java -Xmx512m -jar MegaMek.jar &
     ```
