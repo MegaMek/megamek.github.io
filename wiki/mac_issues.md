@@ -17,7 +17,7 @@ Before we can get to MegaMek, we need to install 2 pieces of support software. H
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This utility does NOT need administration privledges and will install Homebrew into `/usr/local`.
+This utility does NOT need administrator privileges and will install Homebrew into `/usr/local`.
 
 Once installed, the following command will install OpenJDK 11.
 
