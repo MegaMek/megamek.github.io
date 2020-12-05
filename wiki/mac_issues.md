@@ -35,7 +35,7 @@ This links the OpenJDK into a system location which will allow you to simply dou
 
 ### MegaMek Installation
 
-Now that that is out of the way, lets get to the hard part! Due to the increased security of macOS in recent releases, running any of the MegaMek programs from the Downloads folder will fail... horribly. To solve this, all we have to do is move them OUT of the Downloads folder. We recommend creating a `Games` folder in your home directory and placing the uncompressed files in there.
+Now that that is out of the way, let's get to the hard part! Due to the increased security of macOS in recent releases, running any of the MegaMek programs from the Downloads folder will fail... horribly. To solve this, all we have to do is move them OUT of the Downloads folder. We recommend creating a `Games` folder in your home directory and placing the uncompressed files in there.
 
 After that, on first load of the JAR files, you'll need to right-click and select open. A dialog will appear mentioning that you downloaded the file from the internet, from a (most likely) Amazon domain, and asking if you are absolutly sure you wish to run it. Hit yes. After that, you can double click the JAR file and it'll load like any other program without any known issue.
 
