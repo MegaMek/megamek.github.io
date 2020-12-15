@@ -4,7 +4,7 @@ title:  "New Development Release 0.47.15 - Release Candidate 1"
 date:   2020-12-14
 tags:
   - Releases,MegaMek,MegaMekLab,MekHQ,Features,Stable
-
+---
 
 Hi Everyone,
 
