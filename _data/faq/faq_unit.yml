@@ -31,6 +31,6 @@
 - question: "How do I get record sheets that I can use with a tabletop game?"
   answer: "There are a couple of ways to do this depending on if you need a single record sheet or want to print out a whole lance or more.
 
-  For a single record sheet, use the File > Print menu within MegaMekLab to print out the currently loaded unit or a unit from a file. 
+  For a single record sheet, use the File > Export to PDF menu within MegaMekLab to print out the currently loaded unit or a unit from a file. 
   
-  For multiple record sheets, you can use the \"Queue Units to Print\" menu option in MegaMekLab to select multiple units to print out at once. You can also print directly from a MUL file that you have saved from the MegaMek lobby."
+  For multiple record sheets, you can use the \"Queue Units to Print\" menu option in MegaMekLab to select multiple units to print out at once. You can also print directly from a MUL file that you have saved from the MegaMek lobby. Remember to check your print options in the File-Configuration."
