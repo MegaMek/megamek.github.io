@@ -1,7 +1,7 @@
 # You can add questions and answers here following the format below. String should be surrounded by quotes to avoid problems with reserved characters. Quote characters within the text (such as for links) should be escaped with a backslash.
 
 - question: "What software do I need to run MegaMek?"
-  answer: "MegaMek will run on any operating system that can run Java 8 including Windows, macOS, and Linux. Although it will run on later versions of Java, your experience will vary. Starting with the 0.49.x Development branch Megamek will require Java 11 to run. Please [see these directions](What software do I need to run MegaMek) for details."
+  answer: "MegaMek will run on any operating system that can run Java 8 including Windows, macOS, and Linux. Although it will run on later versions of Java, your experience will vary. Starting with the 0.49.x Development branch Megamek will require Java 11 to run. Please [see these directions](wiki/What software do I need to run MegaMek) for details."
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: |
     By default, OSX applications will only open a single instance. To open up a second instance of MegaMek, you will have to use the Terminal application (in Application/Utilities). Navigate to your MegaMek directory and type:
