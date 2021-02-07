@@ -8,7 +8,7 @@ tags:
 
 Hi Everyone,
 
-We are pleased to announce the release of Release Candidate 2 for the 0.48.0 Stable. If all goes well we are hoping for new stable to be out end of January. Then we'll start into the 0.49.x Development cycle. 
+We are pleased to announce the release of Release Candidate 3 for the 0.48.0 Stable. If all goes well we are hoping for new stable to be out end of January. Then we'll start into the 0.49.x Development cycle. 
 
 Just a heads up when we hit that milestone we'll be moving all three of the programs to Java 11. This means you'll need to update Java to run in the next development cycle. Lots of players are starting to update and we've got a wiki page to help. Players with high DPI and 4k monitors have noticed a big improvement using Megamek after updating. We'll provide more details on this when we hit the development cycle.
 
