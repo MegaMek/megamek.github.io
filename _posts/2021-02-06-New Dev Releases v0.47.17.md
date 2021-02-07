@@ -32,7 +32,7 @@ For a detailed change log see [HERE](https://bg.battletech.com/forums/megamek-ga
 Also a reminder to drop into the Slack channel to meet other players and harass the Devs that drop in and out. If Slack isn't your thing check out these Discords with Megamek channels - Everything BattleTech and Classic BattleTech
 
 **FOR MAC USERS**
-We think we know have a workaround for Macs.  See [HERE](https://megamek.org/wiki/mac_issues.html) for details.
+We think we now have a workaround for Macs.  See [HERE](https://megamek.org/wiki/mac_issues.html) for details.
 
 Another reminder when moving between versions:<br/>
 1)  Make backups of your campaigns and customs.<br/>
