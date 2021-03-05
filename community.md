@@ -10,7 +10,8 @@ splash: old_mhq_load.jpeg
 
 You have downloaded MegaMek, played against the bot, and now you are ready to try your hand against a real live human opponent. So where should you go to find other players? There are several options.
 
-- The most direct approach is to [join our Slack community](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) where you can chat directly with other players as well as developers.
+- The most direct approach is to [join our Discord community](https://discord.gg/u2vJ5U2QpD) where you can chat directly with other players as well as developers.
+- We also have [Slack that you can join](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) where you can chat directly with other players as well as developers.
 - You can check out our [forums](https://forum.megamek.org) as well. However, because most people prefer to hang out on Slack (see above), the forums can be pretty quiet.
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
