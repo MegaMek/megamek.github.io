@@ -157,7 +157,7 @@ a {
 /********************************/
 .container-fluid {
   /* So that the banner image goes all the way to the edges */
-  padding: 0px;
+  padding: 0;
 }
 
 .container {
@@ -165,7 +165,7 @@ a {
 }
 
 .container.footer {
-  padding-top: 0px;
+  padding-top: 0;
   color: #dadfe1;
 }
 
@@ -359,7 +359,7 @@ div.post-meta {
 
   li:before {
     content: '';
-    margin: 0 5px 0 0px;
+    margin: 0 5px 0 0;
   }
 
   .post-time {
@@ -378,9 +378,6 @@ div.post-meta {
   }
 }
 
-
-
-
 /*********************************************************************/
 /* Code formatting                                                  */
 /*********************************************************************/
@@ -393,7 +390,7 @@ pre {
 
 code.highlighter-rouge {
   border-radius: 5px;
-  padding: 0px;
+  padding: 0;
 
   @include themify($themes) {
     color: themed('accentColor2');

@@ -11,7 +11,7 @@ title: FAQ
   <h5 class="faq"> {{ item.question }} </h5>
   <div class="container faq">
     {% capture answer %}{{ item.answer }}{% endcapture %}
-    {{ answer | markdownify }} 
+    {{ answer | markdownify }}
   </div>
 {% endfor %}
 
@@ -20,7 +20,7 @@ title: FAQ
 {% for item in site.data.faq.faq_unit %}
   <h5 class="faq"> {{ item.question }} </h5>
   <div class="container faq">
-    {{ item.answer}}
+    {{ item.answer | markdownify}}
   </div>
 {% endfor %}
 
@@ -29,118 +29,6 @@ title: FAQ
 {% for item in site.data.faq.faq_misc %}
   <h5 class="faq"> {{ item.question }} </h5>
   <div class="container faq">
-    {{ item.answer}}
+    {{ item.answer | markdownify}}
   </div>
 {% endfor %}
-
-<!--
-
-    
-    <hr />
-    <h4>Development Questions</h4>
-
-    <div class="accordion" id="devFAQ">
-
-      <div class="card">
-        <div class="card-header" id="question13">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
-              How do I submit a bug or learn about the known bugs?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse13" class="collapse" aria-labelledby="question13" data-parent="#devFAQ">
-          <div class="card-body">
-            <p>
-              Bugs are listed in the bug tracker on the project page. For your
-              bug to be at its most useful, you should be able to describe it
-              accurately, and preferably, you should be able to describe how to
-              reproduce the bug. Please include the megameklog.txt file from
-              your game when submitting bugs.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question14">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
-              How do I submit my suggestion or idea for a new feature?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse14" class="collapse" aria-labelledby="question14" data-parent="#devFAQ">
-          <div class="card-body">
-            <p>
-              Similar to the bug tracker, there’s a feature requests tracker,
-              also on the project page.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question15">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
-              When will rule/feature X be supported?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse15" class="collapse" aria-labelledby="question15" data-parent="#devFAQ">
-          <div class="card-body">
-            <p>
-              The developers work on MegaMek as a hobby. This is nice for us,
-              since we enjoy it, and nice for you since we’re able to give you
-              this program for free. However, it means the only honest answer
-              to this question is that we’ll work on rule/feature X when it
-              interests us. If this isn’t fast enough..
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question16">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
-              Can I join the MegaMek developers?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse16" class="collapse" aria-labelledby="question16" data-parent="#devFAQ">
-          <div class="card-body">
-            <p>
-              Certainly! MegaMek is open source and anybody is welcome to
-              contribute. A great way to get involved is to fix a bug or
-              implement a new feature, and submit your patch to the patches
-              section on the project page. Organization is fairly informal at
-              present. If you want to make sure you’re not duplicating someone
-              else’s work, you might post a message in the forums to announce
-              your interest, but otherwise, go wild.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="question17">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
-              I am not a developer. Is there any other way I can help?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse17" class="collapse" aria-labelledby="question17" data-parent="#devFAQ">
-          <div class="card-body">
-            <p>
-              How would you like to help? Are you good with Art? Writing
-              documentation? If you like playing best, submitting accurate
-              and complete bug reports is always a big help.
-            </p>
-          </div>
-        </div>
-      </div>
-      
-    -->

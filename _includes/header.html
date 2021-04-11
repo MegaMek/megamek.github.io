@@ -23,8 +23,7 @@
   <link rel="icon" sizes="128x128" href="favicon.icns">
   <link rel="icon" href="/assets/images/icons/favicon.png" type="image/x-icon">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,20 +51,18 @@
         </ul>
         <ul class="navbar-nav mr-0">
           <div class="tooltip-switch">
-            <button id="switch-light" class="choose-light" type='button' data-toggle="tooltip"
-              data-placement="bottom" title='Light Theme'></button>
+            <button id="switch-light" class="choose-light" type='button' data-toggle="tooltip" data-placement="bottom" title='Light Theme' aria-label="Switch: Light Theme"></button>
           </div>
           <div class="tooltip-switch">
-            <button id="switch-dark" class="choose-dark" type='button' data-toggle="tooltip" data-placement="bottom"
-              title='Dark Theme'></button>
+            <button id="switch-dark" class="choose-dark" type='button' data-toggle="tooltip" data-placement="bottom" title='Dark Theme' aria-label="Switch: Dark Theme"></button>
           </div>
-          <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><strong class="fa fa-facebook"></strong></a>
-          <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><strong class="fa fa-twitter"></strong></a>
+          <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><strong class="fa fa-facebook"><span class='sr-only'>Facebook</span></strong></a>
+          <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><strong class="fa fa-twitter"><span class='sr-only'>Twitter</span></strong></a>
           <a class="nav-item nav-link active"
             href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY"><strong
-              class="fa fa-slack"></strong></a>
-          <a class="nav-item nav-link active" href="https://forum.megamek.org"><strong class="fa fa-comments"></strong></a>
-          <a class="nav-item nav-link active" href="https://www.github.com/megamek"><strong class="fa fa-github"></strong></a>
+              class="fa fa-slack"><span class='sr-only'>Slack</span></strong></a>
+          <a class="nav-item nav-link active" href="https://forum.megamek.org"><strong class="fa fa-comments"><span class='sr-only'>MegaMek Forums</span></strong></a>
+          <a class="nav-item nav-link active" href="https://www.github.com/megamek"><strong class="fa fa-github"><span class='sr-only'>GitHub</span></strong></a>
         </ul>
       </div>
     </nav>
