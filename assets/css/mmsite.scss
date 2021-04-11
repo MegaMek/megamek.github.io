@@ -47,7 +47,7 @@ body {
   background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);
   font-family: $font-stack;
 
-  padding-top: 60px;
+  padding-top: 70px;
   color: var(--text-color);
 }
 
@@ -79,21 +79,6 @@ a {
   }
 }
 
-/*******************************************************/
-/* For the banner image used at the top and the navbar */
-/*******************************************************/
-.banner-image {
-  background-image: url("../../assets/images/mhq_splash.jpeg");
-
-  /* Set a specific height */
-  height: 350px;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: 0;
-}
-
 /* Make the navbar semi-transparent */
 .navbar.transparent {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
@@ -106,17 +91,8 @@ a {
 /********************************/
 /** Adjustments to containers  **/
 /********************************/
-.container-fluid {
-  /* So that the banner image goes all the way to the edges */
-  padding: 0;
-}
-
-.container {
-  padding: 15px;
-}
 
 .container.footer {
-  padding-top: 0;
   color: #dadfe1;
 }
 
@@ -180,29 +156,6 @@ a {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-}
-
-/****************************************************/
-/* styling for color switching                      */
-/****************************************************/
-.choose-dark {
-  background-color: #555555;
-  border: 1px solid grey;
-  padding: 15px;
-  display: inline-block;
-}
-
-.choose-light {
-  background-color: #dadfe1;
-  border: 1px solid grey;
-  padding: 15px;
-  display: inline-block;
-}
-
-.tooltip-switch {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 /****************************************************/
