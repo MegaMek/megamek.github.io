@@ -50,19 +50,13 @@
           {% endfor %}
         </ul>
         <ul class="navbar-nav mr-0">
-          <div class="tooltip-switch">
-            <button id="switch-light" class="choose-light" type='button' data-toggle="tooltip" data-placement="bottom" title='Light Theme' aria-label="Switch: Light Theme"></button>
+          <div class='theme-switch-wrapper text-light nav-item nav-link'>
+            <label class='theme-switch' for='checkbox'>
+              <input type='checkbox' id='checkbox' />
+              <div class='slider round'></div>
+            </label>
+            <em>Dark Mode</em>
           </div>
-          <div class="tooltip-switch">
-            <button id="switch-dark" class="choose-dark" type='button' data-toggle="tooltip" data-placement="bottom" title='Dark Theme' aria-label="Switch: Dark Theme"></button>
-          </div>
-          <a class="nav-item nav-link active" href="https://www.facebook.com/MegaMek"><strong class="fa fa-facebook"><span class='sr-only'>Facebook</span></strong></a>
-          <a class="nav-item nav-link active" href="https://twitter.com/MegaMekTeam"><strong class="fa fa-twitter"><span class='sr-only'>Twitter</span></strong></a>
-          <a class="nav-item nav-link active"
-            href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY"><strong
-              class="fa fa-slack"><span class='sr-only'>Slack</span></strong></a>
-          <a class="nav-item nav-link active" href="https://forum.megamek.org"><strong class="fa fa-comments"><span class='sr-only'>MegaMek Forums</span></strong></a>
-          <a class="nav-item nav-link active" href="https://www.github.com/megamek"><strong class="fa fa-github"><span class='sr-only'>GitHub</span></strong></a>
         </ul>
       </div>
     </nav>

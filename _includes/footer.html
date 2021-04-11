@@ -1,7 +1,27 @@
 <footer>
   <div class="container footer">
-    <hr>
-    <p>&copy; 2021 MegaMek</a></p>
+    <div class='row'>
+      <div class='col'>
+        &copy; 2021 MegaMek
+      </div>
+      <div class='col text-right'>
+        <a class="text-light" href="https://www.facebook.com/MegaMek">
+          <strong class="fa fa-facebook"><span class='sr-only'>Facebook</span></strong>
+        </a>
+        <a class="text-light" href="https://twitter.com/MegaMekTeam">
+          <strong class="fa fa-twitter"><span class='sr-only'>Twitter</span></strong>
+        </a>
+        <a class="text-light" href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY">
+          <strong class="fa fa-slack"><span class='sr-only'>Slack</span></strong>
+        </a>
+        <a class="text-light" href="https://forum.megamek.org">
+          <strong class="fa fa-comments"><span class='sr-only'>MegaMek Forums</span></strong>
+        </a>
+        <a class="text-light" href="https://www.github.com/megamek">
+          <strong class="fa fa-github"><span class='sr-only'>GitHub</span></strong>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -25,36 +45,38 @@
 </script>
 
 <script>
-  jQuery(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-    if (typeof (Storage) !== "undefined") {
-      if (localStorage.getItem("theme-choice") !== null) {
-        $("#theme").attr('class', localStorage.getItem("theme-choice"));
-        if (localStorage.getItem("theme-choice") === "theme-light") {
-          $("#switch-light").css("border", "1px solid yellow");
-          $("#switch-dark").css("border", "1px solid grey");
-        } else {
-          $("#switch-dark").css("border", "1px solid yellow");
-          $("#switch-light").css("border", "1px solid grey");
-        }
-      }
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
-    $("#switch-dark").click(function () {
-      if (typeof (Storage) !== "undefined") {
-        localStorage.setItem("theme-choice", 'theme-dark')
-      }
-      $("#theme").attr('class', 'theme-dark');
-      $("#switch-dark").css("border", "1px solid yellow");
-      $("#switch-light").css("border", "1px solid grey");
-    });
-    $("#switch-light").click(function () {
-      if (typeof (Storage) !== "undefined") {
-        localStorage.setItem("theme-choice", 'theme-light')
-      }
-      $("#theme").attr('class', 'theme-light');
-      $("#switch-light").css("border", "1px solid yellow");
-      $("#switch-dark").css("border", "1px solid grey");
-    });
-  });
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }
+}
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
 </script>
