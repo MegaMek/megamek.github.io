@@ -3,254 +3,208 @@ layout: page
 title: Downloads
 ---
 
-<div class="row">
-  <div class="col-md-6">
-    <h3>Installation Instructions</h3>
-    <div class='card dl-card'>
+<div class="row pt-2 mb-4">
+  <div class="col">
+    <h4>MekHQ</h4>
+    <p>
+      This download will contins all 3 programs, MekHQ, MegaMek, and MegaMekLab.
+      If you're wanting to run a campaign, build units, and slaughter your
+      friends in glorious Mek to Mek comabt, this is what you want.
+    </p>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class='col'>
+    <div class="card dl-card">
       <div class='card-header'>
-        Installing Java
+        Stable:
+        {{ site.data.current_releases.stable }}
+        <small class='text-muted'>{{ site.data.current_releases.stable_date }}</small>
       </div>
       <div class='card-body'>
-        <p class='card-text'>
-          MegaMek is a Java based program, so you must have Java 8 (or later)
-          installed on your computer.
-          <a href='https://java.com/en/download/'>Download Java</a>.
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Stable vs. Development
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          We recommend that most users download and use the stable version of
-          the programs to minimize issues with bugs. The development versions
-          are only for those users interested in testing and bug hunting new
-          features.
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Installation and Running
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          To install the programs, unzip the download into the directory of
-          your choice. To run the programs follow the platform specific
-          instructions below.
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Windows
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          To run the programs from Windows, just double-click on the given
-          program icon from within the folder you unzipped.
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Unix/Linux
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          The Unix/Linux releases do not include application binaries, but
-          you can run the programs directly from the included JAR files. On
-          some desktops, you may just be able to double-click these JAR
-          files in order to run the programs. you can also run the programs
-          (MegaMek, in the example below) from the command line with the
-          command:
-
-          <div class="language-bash highlighter-rouge">
-            <div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
-            </div>
-          </div>
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class='card dl-card'>
-      <div class='card-header'>
-        macOS
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          The Mac OSX installation now uses the same download as the
-          Unix/Linux version. You just need to double-click the JAR file to
-          run the program. You may have to also allow the opening of these
-          files in your security preferences.
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-windows-{{ site.data.current_releases.stable }}.zip">
+            <i class="fab fa-windows"></i>
+            Windows
+          </a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz">
+            <i class="fab fa-linux"></i>
+            Linux |
+            <i class="fab fa-apple"></i>
+            macOS
+          </a>
         </p>
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <h3>Downloads</h3>
-    <div class="row">
-      <div class="container">
-        {% capture mhq_include %}{% include mminfo/mhq_dl_info.md %}{% endcapture %}
-        {{ mhq_include | markdownify }}
+  <div class='col'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Development:
+        {{ site.data.current_releases.dev }}
+        <small class='text-muted'>{{ site.data.current_releases.dev_date }}</small>
+      </div>
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-windows-{{ site.data.current_releases.dev }}.zip">
+            <i class="fab fa-windows"></i>
+            Windows
+          </a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-{{ site.data.current_releases.dev }}.tar.gz">
+            <i class="fab fa-linux"></i>
+            Linux |
+            <i class="fab fa-apple"></i>
+            macOS
+          </a>
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MHQ Stable
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.stable }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.stable_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-windows-{{ site.data.current_releases.stable }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h4>MegaMek</h4>
+    <p>
+      This is for those that just wish to do battle. This is the core
+      program that will allow you to play against the AI, Princess, or
+      against friends online via dedicated servers.
+    </p>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class='col'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Stable:
+        {{ site.data.current_releases.stable }}
+        <small class='text-muted'>{{ site.data.current_releases.stable_date }}</small>
       </div>
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MHQ Dev
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.dev }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.dev_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-windows-{{ site.data.current_releases.dev }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-{{ site.data.current_releases.dev }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-{{ site.data.current_releases.dev }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <div class="row">
-      <div class="container">
-        {% capture mm_include %}{% include mminfo/mm_dl_info.md %}{% endcapture %}
-        {{ mm_include | markdownify }}
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-windows-{{ site.data.current_releases.stable }}.zip">
+            <i class="fab fa-windows"></i>
+            Windows</a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-{{ site.data.current_releases.stable }}.tar.gz">
+            <i class="fab fa-linux"></i>
+            Linux |
+            <i class="fab fa-apple"></i>
+            macOS
+          </a>
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MM Stable
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.stable }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.stable_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-windows-{{ site.data.current_releases.stable }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-{{ site.data.current_releases.stable }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-{{ site.data.current_releases.stable }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
+  </div>
+  <div class='col'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Development:
+        {{ site.data.current_releases.dev }}
+        <small class='text-muted'>{{ site.data.current_releases.dev_date }}</small>
       </div>
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MM Dev
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.dev }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.dev_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-windows-{{ site.data.current_releases.dev }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-{{ site.data.current_releases.dev }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-{{ site.data.current_releases.dev }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-windows-{{ site.data.current_releases.dev }}.zip">
+            <i class="fab fa-windows"></i>
+            Windows
+          </a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-{{ site.data.current_releases.dev }}.tar.gz">
+            <i class="fab fa-linux"></i>
+            Linux |
+            <i class="fab fa-apple"></i>
+            macOS
+          </a>
+        </p>
       </div>
     </div>
-    <hr />
-    <div class="row">
-      <div class="container">
-        {% capture mml_include %}{% include mminfo/mml_dl_info.md %}{% endcapture %}
-        {{ mml_include | markdownify }}
+  </div>
+</div>
+<div class="row">
+  <div class='col'>
+    <h4>MegaMekLab</h4>
+    <p>
+      Want to design your own units? Want to see if a design will work?
+      Need to print out a new record sheet for that last unit that blew
+      up? This is the package for you. Contains all that is needed to
+      build and design the unit you want.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class='col-sm-6'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Stable:
+        {{ site.data.current_releases.stable }}
+        <small class='text-muted'>{{ site.data.current_releases.stable_date }}</small>
+      </div>
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-windows-{{ site.data.current_releases.stable }}.zip">
+            <i class="fab fa-windows"></i> Windows
+          </a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-{{ site.data.current_releases.stable }}.tar.gz">
+            <i class="fab fa-linux"></i> Linux |
+            <i class="fab fa-apple"></i> macOS
+          </a>
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MML Stable
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.stable }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.stable_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-windows-{{ site.data.current_releases.stable }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-{{ site.data.current_releases.stable }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-{{ site.data.current_releases.stable }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
+  </div>
+  <div class='col-sm-6'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Development:
+        {{ site.data.current_releases.dev }}
+        <small class='text-muted'>{{ site.data.current_releases.dev_date }}</small>
       </div>
-      <div class='col-sm-6'>
-        <div class="card dl-card">
-          <div class='card-header'>
-            <i class="fa fa-download"></i> MML Dev
-          </div>
-          <div class='card-body'>
-            <h5 class='card-title'>{{ site.data.current_releases.dev }}</h5>
-            <p class='card-text'>
-              {{ site.data.current_releases.dev_date }}<br><br>
-              <i class="fa fa-windows"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-windows-{{ site.data.current_releases.dev }}.zip">Windows</a><br>
-              <i class="fa fa-linux"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-{{ site.data.current_releases.dev }}.tar.gz">Linux</a><br>
-              <i class="fa fa-apple"></i> <a class="card-link" href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-{{ site.data.current_releases.dev }}.tar.gz">macOS</a>
-            </p>
-          </div>
-        </div>
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-windows-{{ site.data.current_releases.dev }}.zip">
+            <i class="fab fa-windows"></i> Windows
+          </a>
+          <a class="btn card-link"
+            href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-{{ site.data.current_releases.dev }}.tar.gz">
+            <i class="fab fa-linux"></i>Linux |
+            <i class="fab fa-apple"></i> macOS
+          </a>
+        </p>
       </div>
     </div>
-    <hr />
-    <div class="row">
-      <div class='col'>
-        <h4>MegaMek Extras</h4>
-        <h5><small class='text-muted'>{{ site.data.current_releases.extras }} - {{ site.data.current_releases.extras_date }}</small></h5>
-        This download contains additional resources such as camo-packs and
-        character portraits that are not included with the default program
-        downloads. The file structure of these extras is the same as for the
-        programs, so they can be extracted directly into the main program
-        directories. Older releases and source code available on
-        <a href='(https://github.com/MegaMek/megamek-extras/releases'>GitHub</a>.
-      </div>
-    </div>
-    <div class="row">
-      <div class='col'>
-        <div class="card dl-card">
-          <div class='card-footer text-center'>
-            <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip"><i class="fa fa-windows"></i> Windows</a>
-            <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip"><i class="fa fa-linux"></i> Linux</a>
-            <a class="card-link" href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip"><i class="fa fa-apple"></i> macOS</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr />
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class='col'>
+    <h4>MegaMek Extras</h4>
+    <p>
+      This download contains additional resources such as camo-packs and
+      character portraits that are not included with the default program
+      downloads. The file structure of these extras is the same as for the
+      programs, so they can be extracted directly into the main program
+      directories.
+    </p>
+    <p>
+      Version:
+      {{ site.data.current_releases.extras }}
+      <small class='text-muted'>{{ site.data.current_releases.extras_date }}</small>
+      <a class="btn card-link"
+        href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.extras }}/megamek-extras-{{ site.data.current_releases.extras }}.zip">
+        <i class="fab fa-windows"></i>
+        <i class="fab fa-linux"></i>
+        <i class="fab fa-apple"></i>
+        All Platforms
+      </a>
+    </p>
   </div>
 </div>

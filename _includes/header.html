@@ -14,13 +14,13 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/icons/favicon-apple-touch-144.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/icons/favicon-apple-touch-144.png">
   <link rel="icon" type="image/vnd.microsoft.icon" sizes="32x32 48x48" href="/assets/images/icons/favicon.ico">
-  <link rel="icon" sizes="128x128" href="favicon.icns">
+  <link rel="icon" sizes="128x128" href="/assets/images/icons/favicon.icns">
   <link rel="icon" href="/assets/images/icons/favicon.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   {% seo %}
 </head>
 
@@ -38,11 +38,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             {% for menu_page in site.data.menu_pages %}
-              {% if menu_page.name == page.title %}
-                <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-              {% else %}
-                <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-              {% endif %}
+            {% if menu_page.name == page.title %}
+            <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+            {% else %}
+            <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+            {% endif %}
             {% endfor %}
           </ul>
           <ul class="navbar-nav">
@@ -65,4 +65,3 @@
       </div>
     </div>
   </div>
-  <div class='container'>

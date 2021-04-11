@@ -6,7 +6,7 @@
       <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
       <div class="post-meta">
         <div class="post-time">
-          <i class="fa fa-calendar"></i>
+          <i class="fas fa-calendar"></i>
           <time>{{ page.date | date_to_string }}</time>
         </div>
         <!-- disable until I figure out tags
@@ -17,13 +17,13 @@
               {% endfor %}
             </ul>
           -->
-        </div>
-        <div class="post-content">
-          {{ content }}
-        </div>
+      </div>
+      <div class="post-content">
+        {{ content }}
       </div>
     </div>
-</main>
-{% include footer.html %}
-</body>
-</html>
+  </div>
+  {% include footer.html %}
+  </body>
+
+  </html>

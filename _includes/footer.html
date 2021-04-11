@@ -6,90 +6,40 @@
       </div>
       <div class='col text-right'>
         <a class="text-light" href="https://www.facebook.com/MegaMek">
-          <strong class="fa fa-facebook"><span class='sr-only'>Facebook</span></strong>
+          <i class="fab fa-facebook"></i> <span class='sr-only'>Facebook</span>
         </a>
         <a class="text-light" href="https://twitter.com/MegaMekTeam">
-          <strong class="fa fa-twitter"><span class='sr-only'>Twitter</span></strong>
+          <i class="fab fa-twitter"></i> <span class='sr-only'>Twitter</span>
         </a>
-        <a class="text-light" href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY">
-          <strong class="fa fa-slack"><span class='sr-only'>Slack</span></strong>
+        <a class="text-light"
+          href="https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY">
+          <i class="fab fa-slack"></i> <span class='sr-only'>Slack</span>
         </a>
         <a class="text-light" href="https://forum.megamek.org">
-          <strong class="fa fa-comments"><span class='sr-only'>MegaMek Forums</span></strong>
+          <i class="fas fa-comments"></i> <span class='sr-only'>MegaMek Forums</span>
         </a>
         <a class="text-light" href="https://www.github.com/megamek">
-          <strong class="fa fa-github"><span class='sr-only'>GitHub</span></strong>
+          <i class="fab fa-github"></i><span class='sr-only'>GitHub</span>
         </a>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        Mechwarrior, BattleMech, 'Mech and Aerotech are registered trademarks of <a href="http://www.topps.com/">The
+          Topps Company, Inc.</a> All Rights Reserved.<br>
+        <a href="http://www.catalystgamelabs.com/">Catalyst Game Labs</a> and the <a
+          href="http://www.catalystgamelabs.com/">Catalyst Game Labs</a> logo are trademarks of <a
+          href="http://www.imrpro.com">InMediaRes Productions, LLC.</a>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-<script>
-  /* Get correct download button by OS */
-  jQuery(document).ready(function () {
-    var downloader = document.getElementById('downloader');
-
-    if (downloader) {
-      if (navigator.appVersion.indexOf("Win") != -1) {
-        document.getElementById("downloader").innerHTML =
-          "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-windows-{{ site.data.current_releases.stable }}.zip\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-windows\"></i> Windows</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
-      } else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
-        document.getElementById("downloader").innerHTML =
-          "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-apple\"></i> Mac OSX</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
-      } else if (navigator.appVersion.indexOf("X11") != -1 || navigator.appVersion.indexOf("Linux") != -1) {
-        document.getElementById("downloader").innerHTML =
-          "<a href=\"https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz\" download><button class=\"btn\"><span><img width=100px src=\"assets/images/icons/megamek.png\" /></span><span><i class=\"fa fa-download fa-2x\"></i><br>version {{ site.data.current_releases.stable }}<br><i class=\"fa fa-linux\"></i> Linux/Unix</span></button></a><br/><a href=\"downloads.html\"><small>Other versions and platforms</small></a>";
-      }
-    }
-  });
-</script>
-
-<script>
-function isDarkModeEnabled() {
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-}
-
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
-    }
-}
-
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-} else {
-  if (isDarkModeEnabled()) {
-    toggleSwitch.checked = true
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
-}
-
-</script>
+<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script defer src="{{ '/assets/js/site.js' | relative_url }}" type="text/javascript"></script>
+<script defer src="{{ '/assets/js/brands.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/solid.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/fontawesome.js' | relative_url }}"></script>

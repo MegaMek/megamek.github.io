@@ -84,10 +84,6 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
-.navbar a {
-  font-size: 1.1em;
-}
-
 /********************************/
 /** Adjustments to containers  **/
 /********************************/
@@ -120,42 +116,42 @@ a {
 /*******************************************/
 /* A special class for the download button */
 /*******************************************/
-.btn {
+a.download_link {
+  text-decoration: none;
   color: #dadfe1;
   background-image: linear-gradient(#000000, #434343, #000000);
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   border-radius: 8px;
-
   border: 5px solid var(--accent-color);
-}
+  display: block;
 
-/* Make the text shine */
-.btn:hover {
-  stroke-width: 5.3px;
+  img {
+    float: left;
+    height: 100px;
+  }
 
-  color: #dadfe1;
-  text-shadow: 1px 0 20px var(--accent-color-alternate);
-  border: 5px solid var(--accent-color-alternate);
-}
+  span {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
 
-.btn:active {
-  background: var(--active-color);
-}
+  &:hover {
+    stroke-width: 5.3px;
 
-.img-btn {
-  float: left;
-  height: 100px;
-}
+    color: #dadfe1;
+    text-shadow: 1px 0 20px var(--accent-color-alternate);
+    border: 5px solid var(--accent-color-alternate);
+  }
 
-.btn span {
-  line-height: 14px;
-  font-size: 14px;
-  padding: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
+  &:active {
+    background: var(--active-color);
+  }
 }
 
 /****************************************************/
@@ -163,20 +159,6 @@ a {
 /****************************************************/
 ul {
   list-style-type: none;
-
-  li:before {
-    font-family: 'FontAwesome';
-    content: '\f05b';
-    margin: 0 5px 0 -20px;
-    color: var(--text-color);
-  }
-
-  li.news:before {
-    font-family: 'FontAwesome';
-    content: '\f1ea';
-    margin: 0 5px 0 -20px;
-    color: var(--text-color);
-  }
 }
 
 /*********************************************************************/
