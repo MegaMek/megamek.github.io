@@ -12,7 +12,7 @@
     [see these instructions](wiki/adopt_open_java.html) for details.
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: >
-    By default, OSX applications will only open a single instance. To open up
+    By default, macOS applications will only open a single instance. To open up
     a second instance of MegaMek, you will have to use the Terminal application
     (in Application/Utilities). Navigate to your MegaMek directory and type:
 
@@ -20,7 +20,7 @@
       java -jar MegaMek.jar &
     ```
 
-    The `-n` argument tells OSX to open up a new instance of the application.
+    The `-n` argument tells macOS to open up a new instance of the application.
 - question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
   answer: >
     Apple has increased security measures on their system over the years

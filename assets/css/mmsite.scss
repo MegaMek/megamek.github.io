@@ -5,64 +5,22 @@
  * Theme definitions
  */
 
-$themes: (light: (backgroundColor: #dadfe1,
-    textColor: #000000,
-    accentColor1: #0000a0,
-    accentColor2: #800080,
-    activeColor: #00ffff,
-    cardColor: #adb5bd,
-  ),
-  dark: (backgroundColor: #282828, //#3f3e3e,
-    textColor: #dadfe1,
-    accentColor1: #fffacd,
-    accentColor2: #ffd700,
-    activeColor: #f89406,
-    cardColor: #343a40,
-  ),
-);
-
-/// Slightly lighten a color
-/// @access public
-/// @param {Color} $color - color to tint
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
+:root {
+  --background-color: #dadfe1;
+  --text-color: #000000;
+  --accent-color: #0000a0;
+  --accent-color-alternate: #800080;
+  --active-color: #00ffff;
+  --card-color: #adb5bd;
 }
 
-/// Slightly darken a color
-/// @access public
-/// @param {Color} $color - color to shade
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
-}
-
-/*
- * Implementation of themes
- */
-@mixin themify($themes) {
-
-  @each $theme,
-  $map in $themes {
-    .theme-#{$theme} & {
-      $theme-map: () !global;
-
-      @each $key,
-      $submap in $map {
-        $value: map-get(map-get($themes, $theme), '#{$key}');
-        $theme-map: map-merge($theme-map, ($key: $value)) !global;
-      }
-
-      @content;
-      $theme-map: null !global;
-    }
-  }
-}
-
-@function themed($key) {
-  @return map-get($theme-map, $key);
+[data-theme="dark"] {
+  --background-color: #282828;
+  --text-color: #dadfe1;
+  --accent-color: #fffacd;
+  --accent-color-alternate: #ffd700;
+  --active-color: #f89406;
+  --card-color: #343a40;
 }
 
 /*******************************************************/
@@ -89,11 +47,8 @@ body {
   background-image: url("../../assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);
   font-family: $font-stack;
 
-  padding-top: 60px;
-
-  @include themify($themes) {
-    color: themed('textColor');
-  }
+  padding-top: 70px;
+  color: var(--text-color);
 }
 
 h1,
@@ -103,44 +58,25 @@ h3 {
 }
 
 h5.faq {
-  @include themify($themes) {
-    color: themed('accentColor2');
-  }
+  color: var(--accent-color-alternate)
 }
 
 a {
-  @include themify($themes) {
-    &:link {
-      color: themed('accentColor1');
-    }
-
-    &:visited {
-      color: themed('accentColor1');
-    }
-
-    &:hover {
-      color: themed('accentColor2');
-    }
-
-    &:active {
-      color: themed('activeColor');
-    }
+  &:link {
+    color: var(--accent-color);
   }
-}
 
-/*******************************************************/
-/* For the banner image used at the top and the navbar */
-/*******************************************************/
-.banner-image {
-  background-image: url("../../assets/images/mhq_splash.jpeg");
+  &:visited {
+    color: var(--accent-color);
+  }
 
-  /* Set a specific height */
-  height: 350px;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: 0;
+  &:hover {
+    color: var(--accent-color-alternate);
+  }
+
+  &:active {
+    color: var(--active-color);
+  }
 }
 
 /* Make the navbar semi-transparent */
@@ -148,24 +84,11 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
-.navbar a {
-  font-size: 1.1em;
-}
-
 /********************************/
 /** Adjustments to containers  **/
 /********************************/
-.container-fluid {
-  /* So that the banner image goes all the way to the edges */
-  padding: 0;
-}
-
-.container {
-  padding: 15px;
-}
 
 .container.footer {
-  padding-top: 0;
   color: #dadfe1;
 }
 
@@ -173,15 +96,12 @@ a {
 .container.top {
   border-radius: 25px;
   margin-top: 10px;
-
-  @include themify($themes) {
-    color: themed('textColor');
-    background-color: themed('backgroundColor');
-  }
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 /* custom container for faq answers */
-.container.faq {
+.blockquote.faq {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 5px;
@@ -189,85 +109,49 @@ a {
   border-radius: 20px;
   border: 2px inset;
 
-  @include themify($themes) {
-    color: themed('textColor');
-    background-color: tint(themed('backgroundColor'), 10%);
-  }
+  color: var(--text-color);
+  background-color: tint(var(--background-color), 10%);
 }
 
 /*******************************************/
 /* A special class for the download button */
 /*******************************************/
-.btn {
-  border: 10px;
+a.download_link {
+  text-decoration: none;
   color: #dadfe1;
   background-image: linear-gradient(#000000, #434343, #000000);
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   border-radius: 8px;
+  border: 5px solid var(--accent-color);
+  display: block;
 
-  @include themify($themes) {
-    border: 5px solid themed('accentColor1');
+  img {
+    float: left;
+    height: 100px;
   }
-}
 
-/* Make the text shine */
-.btn:hover {
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #FFFFFF;
-  -webkit-fill-color: #FFFFFF;
-  stroke-width: 5.3px;
+  span {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &:hover {
+    stroke-width: 5.3px;
 
     color: #dadfe1;
-
-  @include themify($themes) {
-    text-shadow: 1px 0px 20px themed('accentColor2');
-    border: 5px solid themed('accentColor2');
+    text-shadow: 1px 0 20px var(--accent-color-alternate);
+    border: 5px solid var(--accent-color-alternate);
   }
-}
 
-.btn:active {
-  @include themify($themes) {
-    background: themed('activeColor');
+  &:active {
+    background: var(--active-color);
   }
-}
-
-.img-btn {
-  float: left;
-  height: 100px;
-}
-
-.btn span {
-  line-height: 14px;
-  font-size: 14px;
-  padding: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/****************************************************/
-/* styling for color switching                      */
-/****************************************************/
-.choose-dark {
-  background-color: #555555;
-  border: 1px solid grey;
-  padding: 15px;
-  display: inline-block;
-}
-
-.choose-light {
-  background-color: #dadfe1;
-  border: 1px solid grey;
-  padding: 15px;
-  display: inline-block;
-}
-
-.tooltip-switch {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 /****************************************************/
@@ -275,30 +159,7 @@ a {
 /****************************************************/
 ul {
   list-style-type: none;
-
-  li:before {
-    font-family: 'FontAwesome';
-    content: '\f05b';
-    margin: 0 5px 0 -20px;
-
-    @include themify($themes) {
-      color: themed('textColor');
-    }
-  }
-
-  li.news:before {
-    font-family: 'FontAwesome';
-    content: '\f1ea';
-    margin: 0 5px 0 -20px;
-
-    @include themify($themes) {
-      color: themed('textColor');
-    }
-  }
 }
-
-
-
 
 /*********************************************************************/
 /* Screenshot carousel                                               */
@@ -372,10 +233,8 @@ div.post-meta {
 /*********************************************************************/
 
 .dl-card {
-  @include themify($themes) {
-    background-color: themed('cardColor');
-    color: themed('textColor');
-  }
+  background-color: var(--card-color);
+  color: var(--text-color);
 }
 
 /*********************************************************************/
@@ -392,8 +251,66 @@ code.highlighter-rouge {
   border-radius: 5px;
   padding: 0;
 
-  @include themify($themes) {
-    color: themed('accentColor2');
-    font-weight: 600;
+  color: var(--accent-color-alternate);
+  font-weight: 600;
+}
+
+/* Nav Bar Dark Mode Toggle Switch */
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
   }
+}
+.theme-switch {
+  display: inline-block;
+  height: 17px;
+  position: relative;
+  width: 30px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 13px;
+  left: 2px;
+  position: absolute;
+  transition: .4s;
+  width: 13px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(13px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
