@@ -4,7 +4,7 @@ title: A First Campaign of MekHQ
 author: Taharqa (0.44.0 Guide), Windchild (Prefix)
 ---
 
-### First Campaign of MekHQ
+### A First Campaign of MekHQ
 We recommend reading the Against the Bot Starter Guide, located in the docs/AtB Stuff folder, and using it to get started with MekHQ. This holds true even if you are not playing an Against the Bot campaign, as that is our most up to date document on setting up and running MekHQ.
 
 ### A First Campaign of non-Against the Bot MekHQ in 0.44.0
