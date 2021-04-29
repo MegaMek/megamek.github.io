@@ -1,12 +1,16 @@
 ---
 layout: info_page
 title: A First Campaign of MekHQ
-author: Taharqa
+author: Taharqa (0.44.0 Guide), Windchild (Prefix)
 ---
 
 ### A First Campaign of MekHQ
+We recommend reading the Against the Bot Starter Guide, located in the docs/AtB Stuff folder, and using it to get started with MekHQ. This holds true even if you are not playing an Against the Bot campaign, as that is our most up to date document on setting up and running MekHQ.
 
-In this step-by-step tutorial, I outline how to start up a very simple MekhQ campaign, assign units and pilots, and run a first scenario. For this example, I am going to go classic and run a [Refusal War](https://www.sarna.net/wiki/Refusal_War) campaign as Clan Wolf that is loosely based on the excellent [*The Falcon and the Wolf* scenario pack](https://www.drivethrurpg.com/product/107737/BattleTech-The-Falcon-and-the-Wolf?cPath=4328_4541).
+### A First Campaign of non-Against the Bot MekHQ in 0.44.0
+Prefix: This tutorial was written for 0.44.0, and is thus somewhat out of date for the current version of MekHQ.
+
+In this step-by-step tutorial, I outline how to start up a very simple MekHQ campaign, assign units and pilots, and run a first scenario. For this example, I am going to go classic and run a [Refusal War](https://www.sarna.net/wiki/Refusal_War) campaign as Clan Wolf that is loosely based on the excellent [*The Falcon and the Wolf* scenario pack](https://www.drivethrurpg.com/product/107737/BattleTech-The-Falcon-and-the-Wolf?cPath=4328_4541).
 
 1. When you first start up MekHQ, choose `Start a New Campaign`. You will then be presented with a dialog to choose the start date of your campaign. Since I will be playing the Refusal War, I will start my campaign on 24 September 3057.
 2. You will now be presented with several different preset campaign types from which you can select an option. These campaign types will set many of the game options for you, although you will still have the opportunity to customize as you like later. For this tutorial, we are going to choose the `Simple Presets` option so that we can get going quickly.<br>
