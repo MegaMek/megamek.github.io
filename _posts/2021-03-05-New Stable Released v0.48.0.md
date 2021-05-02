@@ -25,7 +25,7 @@ So what's coming up in the next dev cycle? To be honest, with the current global
 
 I can't stress how important this is going forward. This Stable will support Java 8 but going forward you must have **Java 11** to use the **0.49.x Development branch**. This stable will run on Java 11 with countless players seeing huge improvements in performance and visual quality on high DPI monitors (i.e. 4k).
 
-Due to changes in downloading Java that Oracle has made, we are recommending players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page [for windows](https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK) and [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you sohuld be able to user your package manager to install OpenJDK from their repositories.
+Due to changes in downloading Java that Oracle has made, we are recommending players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page [for windows](https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK) and [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able to user your package manager to install OpenJDK from their repositories.
 
 ## I want to help
 
@@ -37,7 +37,7 @@ If you have art skills, we really need someone to tackle sprites for the Aerospa
 
 What a busy development cycle for MegaMek - 218 Bug fixes, 66 data improvements, and 35 Pull Requests (PR’s) with major bug fixes or improvements. Some of the big ones include:
 
-Princess spent a year at the Blackjack School of Conflict. In the process she developed the ability to multi-target, fly aerospace and use air strikes, master basic infantry tactics and field gun use, fire and counter-battery with artillery (you can counter battery as well), started to learn the basics of turrets and fortifications, learned to use a compass to improve her Pathfinding, and we tried teaching her little mercy.
+Princess spent a year at the Blackjack School of Conflict. In the process she developed the ability to multi-target, fly aerospace and use air strikes, master basic infantry tactics and field gun use, fire and counter-battery with artillery (you can counter battery as well), started to learn the basics of turrets and fortifications, learned to use a compass to improve her pathfinding, and we tried teaching her little mercy.
 
 As a process of improving the Record sheet printing, we’ve made significant improvements on equipment validation and as an extension of that building all units in MegaMekLab.
 
