@@ -16,13 +16,13 @@ In MekHQ we've been teasing it for months and the Alpha is here.
 
 ## MegaMek
 Before I get to the lobby here are a few other things this release.
-*IP address showing is now blocked by default in the lobby.
-*You can refresh the unit cache in game.
-*Offboard arty can disengage.
-*Air launched Arrow IV's anyone?
-*Irregular TRO units have been added.
-*Testbot is largely retired and not available.
-*Tons of data fixes, new sprites, and some new boards.
+* IP address showing is now blocked by default in the lobby.
+* You can refresh the unit cache in game.
+* Offboard arty can disengage.
+* Air launched Arrow IV's anyone?
+* Irregular TRO units have been added.
+* Testbot is largely retired and not available.
+* Tons of data fixes, new sprites, and some new boards.
 
 Princess has been doing obstacle courses at Blackjack and learning when to stand or not stand after getting knocked down. We know she loves melee so one of her instructors pointed out that when you don't have anything to do grabbing a club can come in handy down the road.
 
