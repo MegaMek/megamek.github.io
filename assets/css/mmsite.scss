@@ -159,6 +159,17 @@ a.download_link {
 /****************************************************/
 ul {
   list-style-type: none;
+
+  li:before {
+    content: "\f05b";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+    margin-left: -20px;
+  }
+
+  li.news:before {
+    content: "\f1ea";
+  }
 }
 
 /*********************************************************************/
@@ -229,7 +240,7 @@ div.post-meta {
 }
 
 /*********************************************************************/
-/* boostrap cards                                                    */
+/* Bootstrap cards                                                    */
 /*********************************************************************/
 
 .dl-card {

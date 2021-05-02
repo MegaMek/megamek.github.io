@@ -26,6 +26,7 @@ github_username:  MegaMek
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

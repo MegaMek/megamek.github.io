@@ -47,7 +47,6 @@ can come in handy down the road.
 Main Lobby Changes:
 
 * Unifies the tooltip in the lobby and game (while still enabling different views, e.g. the pilot info can be omitted as is done in the lobby mek table) and moves the code out of Entity; the tooltip now shows a different symbol for capital armor. I've introduced many unicode symbols, these require the Java "Dialog" logic font, I hope they work on other systems besides Win10 as well.
-
 * Adds a general GUI scaling float value (neutral value = 1) that is accessible in the Client Settings and, unless a modal dialog is up, with CTRL Numpad+ and CTRL Numpad- . This currently scales mainly the lobby and some dialogs in the lobby that have been revamped.
 * Completely revamps the info in the lobby Mektable, obviously. I've tried using colors that are desaturated in the hope this will make the colors readable for everyone. Also, the main colors come from methods that return different colors based on whether the current UI theme is light or dark.
 * Allows sorting the Mektable by various algorithms
@@ -90,7 +89,7 @@ multiple custom rank system support, varied import/export capabilities, file
 refresh, full validation, and expanded professions. Note that individual ranks
 were not handled as part of this rework, just the systems and professions.
 
-[Ranks Preview Pic](https://i.imgur.com/AX05snY.png)
+![Ranks Preview Pic](/assets/images/screenshots/ranks-1.png "Ranks Preview"){:class="img-fluid rounded"}
 
 The Personnel Options Tab was completely rewritten and reorganized, as the sheer
 number of options was making it hard to use and tell the difference between areas.
