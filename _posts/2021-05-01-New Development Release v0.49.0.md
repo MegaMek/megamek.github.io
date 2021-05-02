@@ -12,7 +12,7 @@ In MekHQ we've been teasing it for months and the Alpha is here.
 
 [STRATCON!](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781)
 
-[Imgur](https://i.imgur.com/e6JVmpz.png)
+[Stratcon Preview Pic](https://i.imgur.com/e6JVmpz.png)
 
 ## MegaMek
 Before I get to the lobby here are a few other things this release.
@@ -65,7 +65,7 @@ Only a few bug fixes in the lab. Things will likely be quite with the lab for a 
 ## MekHQ
 We've already mentioned Stratcon. Rank Systems were also completely rewritten and modernized. They are now implemented with full user data folder merge capability, multiple custom rank system support, varied import/export capabilities, file refresh, full validation, and expanded professions. Note that individual ranks were not handled as part of this rework, just the systems and professions.
 
-[Imgur](https://i.imgur.com/AX05snY.png)
+[Ranks Preview Pic](https://i.imgur.com/AX05snY.png)
 
 The Personnel Options Tab was completely rewritten and reorganized, as the sheer number of options was making it hard to use and tell the difference between areas. Personnel Roles were also heavily modified, part of which was adding the LAM Pilot and Dependent primary role. The latter of which will replace our current handling of dependents (the swap over is done, but the old dependents and the flag do not migrate until the next release).
 
