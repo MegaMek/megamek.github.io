@@ -8,7 +8,7 @@ title: Installation
     <h3>Installation Instructions</h3>
   </div>
 </div>
-<div class="row row-cols-2">
+<div class='row'>
   <div class='col mb-4'>
     <div class='card dl-card'>
       <div class='card-header'>
@@ -28,6 +28,73 @@ title: Installation
         <p class='card-text'>
           Instructions for <a href='https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK'>Windows</a>
           and <a href="/wiki/mac_issues.html">macOS</a> are available.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-3">
+  <div class='col mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        macOS and MegaMek
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          For those of us using macOS, there are some additional things that
+          we need to be aware of. We're making this more prominent in hopes
+          to reduce the number of questions we get that can be solved by
+          going <a href="/wiki/mac_issues.html">here</a>.
+        </p>
+        <p class='card-text'>
+          Make sure OpenJDK 11 is installed. Recommended way is in the link
+          above.
+        </p>
+        <p class='card-text'>
+          Make sure the decompressed files are <em><strong>NOT</strong></em>
+          in the <strong>Documents</strong>, <strong>Downloads</strong>,
+          or <strong>Desktop</strong> folders. These are
+          <em><strong>protected</strong></em> folders and macOS will not
+          let it run.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class='col mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        Windows
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          To run the programs from Windows, just double-click on the given
+          program icon from within the folder you unzipped.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class='col mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        Unix/Linux
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          The Unix/Linux releases do not include application binaries, but
+          you can run the programs directly from the included JAR files. On
+          some desktops, you may just be able to double-click these JAR
+          files in order to run the programs. you can also run the programs
+          (MegaMek, in the example below) from the command line with the
+          command:
+
+        <div class="language-bash highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
+          </div>
+        </div>
         </p>
       </div>
     </div>
@@ -82,60 +149,6 @@ title: Installation
           On Windows, do <strong>NOT</strong> use the built in utility for
           decompression zip files as it has been known to cause issues.
           We recommend using <a href='https://www.7-zip.org'>7-Zip</a>.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Windows
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          To run the programs from Windows, just double-click on the given
-          program icon from within the folder you unzipped.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Unix/Linux
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          The Unix/Linux releases do not include application binaries, but
-          you can run the programs directly from the included JAR files. On
-          some desktops, you may just be able to double-click these JAR
-          files in order to run the programs. you can also run the programs
-          (MegaMek, in the example below) from the command line with the
-          command:
-
-        <div class="language-bash highlighter-rouge">
-          <div class="highlight">
-            <pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
-          </div>
-        </div>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        macOS
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          The Mac OSX installation now uses the same download as the
-          Unix/Linux version. You just need to double-click the JAR file to
-          run the program. You may have to also allow the opening of these
-          files in your security preferences.
         </p>
       </div>
     </div>
