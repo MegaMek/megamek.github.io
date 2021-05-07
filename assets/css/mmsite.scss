@@ -79,6 +79,24 @@ a {
   }
 }
 
+a.footer-link {
+  &:link {
+    color: #A57E54;
+  }
+
+  &:visited {
+    color: #A57E54;
+  }
+
+  &:hover {
+    color: #A57E54;
+  }
+
+  &:active {
+    color: #A57E54;
+  }
+}
+
 /* Make the navbar semi-transparent */
 .navbar.transparent {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
