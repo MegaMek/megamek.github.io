@@ -10,7 +10,7 @@ title: FAQ
 {% for item in site.data.faq.faq_tech %}
 <div class='row mb-2'>
   <div class='col'>
-    <h5 class="faq"><i class="fas fa-question"></i> {{ item.question }}</h5>
+    <h5 class="faq">{{ item.question }}</h5>
     <blockquote class="faq blockquote p-2">
       <p>
         {% capture answer %}{{ item.answer }}{% endcapture %}
@@ -30,7 +30,7 @@ title: FAQ
 {% for item in site.data.faq.faq_unit %}
 <div class='row mb-2'>
   <div class='col'>
-    <h5 class="faq"><i class="fas fa-question"></i> {{ item.question }}</h5>
+    <h5 class="faq">{{ item.question }}</h5>
     <blockquote class="faq blockquote p-2">
       <p>
         {% capture answer %}{{ item.answer }}{% endcapture %}
@@ -50,7 +50,7 @@ title: FAQ
 {% for item in site.data.faq.faq_misc %}
 <div class='row mb-2'>
   <div class='col'>
-    <h5 class="faq"><i class="fas fa-question"></i> {{ item.question }}</h5>
+    <h5 class="faq">{{ item.question }}</h5>
     <blockquote class="faq blockquote p-2">
       <p>
         {% capture answer %}{{ item.answer }}{% endcapture %}
