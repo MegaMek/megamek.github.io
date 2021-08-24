@@ -29,11 +29,11 @@ MegaMekLab has had a bugfix, but has otherwise been quiet as the dev focused on 
 ## MekHQ
 The Advance Days Dialog is complete and replaces the old popout for the daily log while expanding its former functionality. It is designed to be left open if desired while handling ones day advancement needs.
 
-![Advanced Days Dialog](https://i.imgur.com/quPVXOPm.png)
+![Advanced Days Dialog](https://i.imgur.com/quPVXOPl.png)
 
 
 The Unit Market has been rewritten, and because of that is now available outside of Against the Bot based on one's Campaign Options.
-![Unit Market Dialog](https://i.imgur.com/O58fxgJm.png)
+![Unit Market Dialog](https://i.imgur.com/O58fxgJl.png)
 
  
 However, these were both coded before 0.49.2. The focus for MekHQ over the past two months has been in bugfixes, bug prevention, and code improvement.
