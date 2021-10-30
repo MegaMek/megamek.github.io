@@ -1,6 +1,6 @@
 # New Development Release 0.49.3
 
-Welcome to 0.49.2 this release is back to a mix of big fixes and some cool new features. 
+Welcome to 0.49.3 this release is back to a mix of big fixes and some cool new features. 
 
 But first a word from one of our sponsors; Are you tired of fighting super-strength meks, are those Tau Zombies getting you down, try the new fully functioning Anti-TSM spray available in SRM and LRM varieties. Available at fine weapons dealer near you. 
 
