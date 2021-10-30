@@ -24,6 +24,7 @@ Windchild's glad to (finally) announce the New Campaign Project, a complete rewo
 ![Create Campaign Preset](https://i.imgur.com/m0BBFEB.png)
 
 There's now a menu to assign personnel to a unit from the hangar tab, all of pre-existing menus relating to person/tech to unit assignment and vice versa have been standardized, and the assignment is now based solely on personnel roles. This is outside of Crewmembers (Vehicle and Vessel), Console Commanders, and Tech Officers, which will be handled in the future due to pre-existing internal implementation oddities. Note that the image is from a test campaign, where the camouflage being broken shows that camouflage is working properly.
+
 ![Assign Personnel Updates](https://i.imgur.com/2MbRfXy.png)
 
 We've also added support for Tripod BattleMechs, properly layered force camouflage (Windchild - my bad on that not being implemented from the start of the camouflage changes), total XP earnings tracking, the Maintainer unofficial SPA, a few new minor campaign options, and moved era definitions to a data file (albeit in their barely used state).
