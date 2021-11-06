@@ -37,9 +37,8 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 ## Change Logs (Release Specific) and Download Links
 ###MegaMek
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.5)
-
-+Bug: Fix for Whitelist issues around MekHQ launching Megamek.
-+Data: New sprites and unit fixes and fluff. 
++ Bug: Fix for Whitelist issues around MekHQ launching Megamek.
++ Data: New sprites and unit fixes and fluff. 
 
 
 ### MegaMekLab
