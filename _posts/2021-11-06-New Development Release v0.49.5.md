@@ -15,6 +15,10 @@ Few new sprites and unit fluff and fixes. Plus the fix for the MekHQ whitelist.
 No changes since 0.49.5
 
 ## MekHQ
+0.49.5 sees the addition of the Procreation Module, adding a bunch of new options for procreation, and improving the display in the Campaign Options Dialog. This is the first of the Personnel Modules, a project I'm running to isolate personnel functionality into individual modules on a specific topic, like Procreation, Death, and Retirement. The goal of this project is initially to make the current code easier to bugfix and enhance, but the later modules will be large-scale overhauls (Retirement) or large new features (Death). The next two modules, Marriage and Divorce, are already open, while the third, Death, is in progress.
+
+Otherwise, the RAT options are now their own grouping, as they are not just used in AtB but are also used in the Unit Market and GM Tools.
+
 
 ## MekHQ StratCon Alpha
 StratCon has seen a bunch of bugfixes since 0.49.3.
