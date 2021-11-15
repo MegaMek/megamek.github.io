@@ -25,7 +25,7 @@ Once installed, the following command will install OpenJDK 11.
 brew install openjdk@11
 ```
 
-This won't take long to install. This next command WILL require administrator privileges but will make running Java programs easier.
+This won't take long to install. This next command WILL require administrator privileges but will make running Java programs easier. The exact line may be different for your setup but will be stated in the output of Homebrew. It'll be listed just after the `For the system Java wrappers to find this JDK, symlink it with` statement.
 
 ```bash
 sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
