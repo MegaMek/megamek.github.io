@@ -30,8 +30,8 @@ You can find us on [Twitter](https://twitter.com/MegaMekTeam) and
 #### Getting Involved with Development
 
 We are an open source project so anyone is welcome to help. Consider what
-you can offer and also join our [Slack channel.](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY)
-It's important for us to be able to easily communicate and Slack allows us to do that.
+you can offer and also join our [Discord.](https://discord.gg/u2vJ5U2QpD)
+It's important for us to be able to easily communicate and Discord allows us to do that.
 
 <hr />
 
@@ -70,7 +70,7 @@ something art-wise for the project, please reach out to us.
 ##### I'm a data person
 
 We do have several ongoing data projects. If you have the time and want to help,
-the best way is to join the Slack channel and look for Hammer. He coordinates the
+the best way is to join the Discord server and look for Hammer. He coordinates the
 data stuff and can provide guidance.
 
 <hr />
@@ -79,7 +79,7 @@ data stuff and can provide guidance.
 
 If your interested in setting up and running a dedicated server one of our
 contributors (TapEnvy.us LLC) has set up a page with a list of
-[dedicated servers](https://megamek.games/) and a how to.
+[dedicated servers](https://megamek.games/) and a how-to.
 
 <hr />
 

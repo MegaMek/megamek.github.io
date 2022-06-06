@@ -73,7 +73,7 @@ You can register your game when you start it up. This will list your game on our
 
 If you have problems connecting to your machine, you can also try running your game on a dedicated server. We do not run any official dedicated servers, but several members of the community run dedicated servers that you can connect to in order to play a game. In this case, both players will use the "Connect to a Game" option to connect to the dedicated server. If you would like to run your own dedicated server, you can follow our [instructions](/wiki/ded_servers.html) for setting one up.
 
-Once connected, you can chat with other players using the pop-up chat system from within MegaMek. You can also join [MegaMek Slack](https://join.slack.com/t/megamek-public/shared_invite/enQtMzU1MTE1MDA2MTM0LWQ1YTMwN2Y5NTY0MDc4ZmU0NDNkNzE3ZDY0YWE1ZjE3MzJmYjdjODc4NTI3YzhjOGE0YjI4NWRmMjFiY2ZlZGY) for chat.
+Once connected, you can chat with other players using the pop-up chat system from within MegaMek. You can also join [MegaMek Discord](https://discord.gg/u2vJ5U2QpD) for chat.
 
 #### Customizing Units
 
