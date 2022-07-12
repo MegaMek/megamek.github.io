@@ -16,16 +16,20 @@ jQuery(document).ready(function () {
 
     updateDownloadLinks(version, url, platform);
   }
+
+  loadDownloadStats("megamek-download-stats", "megamek");
+  loadDownloadStats("megameklab-download-stats", "megameklab");
+  loadDownloadStats("mekhq-download-stats", "mekhq");
 });
 
 function updateDownloadLinks(version, url, platform) {
   var downloadLink = document.getElementById('download_link');
   var versionText = document.getElementById('version_display');
-  var plaformText = document.getElementById('version_platform');
+  var platformText = document.getElementById('version_platform');
 
   downloadLink.href = url;
   versionText.innerHTML = version;
-  plaformText.innerHTML = platform;
+  platformText.innerHTML = platform;
 }
 
 function isDarkModeEnabled() {
@@ -69,4 +73,35 @@ if (currentTheme) {
     toggleSwitch.checked = true
     document.documentElement.setAttribute('data-theme', 'dark');
   }
+}
+
+function loadDownloadStats(elementId, repoName) {
+  var element = document.getElementById(elementId);
+
+  if (element) {
+    fetch("https://api.github.com/repos/megamek/" + repoName + "/releases")
+      .then((response) => response.json())
+      .then((response) => addStatsToElement(element, response))
+      .catch((error) => console.log(error));
+  }
+}
+
+function addStatsToElement(element, releases) {
+  while (element.lastChild) { element.removeChild(element.lastChild) };
+
+  releases.forEach((release) => {
+    var child = document.createElement("li");
+    var text = "<strong>" + release.tag_name + "</strong>";
+    var totalDownloads = 0;
+
+    release.assets.forEach((asset) => {
+      totalDownloads += asset.download_count;
+    })
+
+    text += ": <span class='float-right'>" + totalDownloads + "</span>";
+
+    child.className = "list-group-item";
+    child.innerHTML = text;
+    element.appendChild(child);
+  });
 }

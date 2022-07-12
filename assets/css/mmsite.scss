@@ -178,7 +178,7 @@ a.download_link {
 ul {
   list-style-type: none;
 
-  li:before {
+  li:before:not([list-group-item]) {
     content: "\f05b";
     font-family: "Font Awesome 5 Free";
     padding-right: 5px;
@@ -188,6 +188,10 @@ ul {
   li.news:before {
     content: "\f1ea";
   }
+li.list-group-item {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
 }
 
 /*********************************************************************/
