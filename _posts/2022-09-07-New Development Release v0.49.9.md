@@ -89,7 +89,6 @@ We thank everyone who's been part of this community and for those that haven't p
 ## Change Logs (Release Specific) and Download Links
 
 ### MegaMek Change Log
-[DOWNLOAD](https://github.com/MegaMek/megamek/releases/tag/v0.49.9)
 + Data: Updating Tags on Board Files
 + Issue #3662: Draw "Target Movement Modifier" on final legal step of current movement path
 + PR #3672: Removed No Torso Twist & updated quirks per BMM v6 errata
@@ -173,7 +172,6 @@ We thank everyone who's been part of this community and for those that haven't p
 + Updating to JUnit 5.9.0 from 5.8.2
 
 ### MegaMekLab Change Log
-[DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.9)
 + Issue #1099: Stop at 0 tons when Selecting "Use Remaining Tonnage" for Armour
 + Issue #1040: Adding Save Option to MML Exit Dialog
 + Issue #1111: Physical Attack Table Encoding Error (Push attack)
@@ -201,7 +199,6 @@ We thank everyone who's been part of this community and for those that haven't p
 + Updating to Log4j 2.18.0 from 2.17.2
 
 ### MekHQ Change Log
-[DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.9)
 + PR #3306: Swapping to a Single Retirement Campaign Report
 + PR #3311: MHQXMLUtility: Fixing Refit Filename and Campaign XML Custom Unit Name escaping
 + PR #3261: Fixing all Assert Usages
