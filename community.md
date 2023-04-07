@@ -15,8 +15,9 @@ to find other players? There are several options.
 - The most direct approach is to [join our Discord community](https://discord.gg/u2vJ5U2QpD) where you can chat directly with other players as well as developers.
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
-- Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment.
-- There are also two active BattleTech Discords with MegaMek channels - [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52)
+- Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment. They also have a [Discord](https://discord.gg/CQ5uvkEkdk)
+- There are also two active BattleTech Discords with MegaMek channels - [Helm Memory Core](https://discord.gg/gyXMWjT) and [BattleTech](https://discord.gg/D9jFn52)
+- There is a new community that is trying to expand and connect MegaMek players - [MRC Hub](https://discord.gg/WUvbXQRRfW).
 
 ___
 
