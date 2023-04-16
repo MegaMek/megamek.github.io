@@ -24,7 +24,7 @@ to get started.
 - To learn about many of the optional settings available in MegaMek, you should get the [*Tactical Operations: Advanced Rules* rulebook](https://store.catalystgamelabs.com/products/battletech-tactical-operations-advanced-rules?variant=32091242463266).
 - To learn about using warships in large scale space-battles, you should get the [*Strategic Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-strategic-operations?variant=28800101970).
 - More information about campaign options used in MekHQ is available in and the [*Strategic Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-strategic-operations?variant=28800101970) and the [*Campaign Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-campaign-operations-pdf?variant=28800076626).
-- Lastly check out YouTube. A good starting point is StrategosLevel3 videos found [here](https://www.youtube.com/playlist?list=PLHXHV2JDcebr4J3VyJlmU-Yp3cZp_OhWV)
+- We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/megamek-games/video-tutorials-for-megamek/). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
 
 #### A First Game of MegaMek
 
