@@ -14,17 +14,16 @@ players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page
 to user your package manager to install OpenJDK from their repositories.
 
 
-## MegaMek
+
 As mentioned nothing but bug fixes and some new sprites and maps.
 
 ## MegaMekLab
+
 No changes from Stable 0.48.0
 
-
 ## MekHQ
-Bug fixes and continued improvements to Stratcon. Not sure what Stratcon is [SEE HERE](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781) 
 
-
+Bug fixes and continued improvements to Stratcon. Not sure what Stratcon is [SEE HERE](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781)
 
 ## SOCIAL MEDIA
 
@@ -61,7 +60,7 @@ Another reminder when moving between versions:
 + PR #2825: Fixing Mek Tree Sorter NPEs
 + PR #2829: Fixing Mek Table Model Potential NPEs
 + Issue #2818: Placeholder Image on Destroyed Condor
-+ Issue #2819: Fixing Left Click Targetting Issues
++ Issue #2819: Fixing Left Click Targeting Issues
 + PR #2831: FovHighlightingAndDarkening Null Handling Improvements
 + PR #2835: ReadMe Java recommendation update and accessibility improvements
 + Issue #2820: Improved initial sizing of game options popup

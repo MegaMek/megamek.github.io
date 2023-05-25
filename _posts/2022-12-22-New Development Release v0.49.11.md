@@ -1,4 +1,4 @@
-### Welcome all to 0.49.11! 
+### Welcome all to 0.49.11!
 
 It's been a while since our last Dev release. Things had slowed as people took some much needed breaks.
 
@@ -6,18 +6,20 @@ But we have got a lot of exciting things in this release. We've had a couple of 
 
 ### Alpha Strike Support!
 
-OK that's tackle the elephant first..this is **NOT** a playable version of Alpha Strike (Which if it every happened would be MegaStrike) it's strictly support for Alpha Strike. 
+OK that's tackle the elephant first..this is **NOT** a playable version of Alpha Strike (Which if it every happened would be MegaStrike) it's strictly support for Alpha Strike.
 
-Please see [Alpha Strike Card Support in Megamek](https://bg.battletech.com/forums/alpha-strike-101/alpha-strike-card-support-in-megamek-coming-soon)
+Please see [Alpha Strike Card Support in MegaMek](https://bg.battletech.com/forums/alpha-strike-101/alpha-strike-card-support-in-megamek-coming-soon)
 
-We've also added support for Java 17 starting with this release but please see below for some cautions. 
+We've also added support for Java 17 starting with this release but please see below for some cautions.
 
-We found that the 49.10 release had more stability and general improvements around connectivity but we still aren't 100% where we want to be. We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.10) you just need to keep them in seperate folders. 
+We found that the 49.10 release had more stability and general improvements around connectivity but we still aren't 100% where we want to be. We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.10) you just need to keep them in separate folders.
 
-Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference. 
+Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
 ### MegaMek
+
 In addition to Alpha Strike Support there are lots of UI/UIX improvements
+
 + Scale the Client GUI using the GUI scale
 + Add a non-tabbed Unit Display for users with high-resolution monitors
 + Add an overlay for Planetary Conditions
@@ -35,38 +37,47 @@ In addition to Alpha Strike Support there are lots of UI/UIX improvements
 + Turn timer in seconds
 + TO Infantry Movement on Pavement optional rule
 + CI Field Guns and Artillery are now destroyed with trooper loss according to TO:AUE[/li]
-+ Data wise - Deadborder continues to fix and improve sprites, and we'll got lots of unit fixes and RecGuide 26 units in. 
-plus bug fixes see change log for details. 
++ Data wise - Deadborder continues to fix and improve sprites, and we'll got lots of unit fixes and RecGuide 26 units in.
+plus bug fixes see change log for details.
 
 ### MegaMekLab
+
 We got a few fixes and we've made some improvements to record sheets this includes engine ratings, improved visibility of armor type, and internal structure
 
 ### MekHQ
-We have quite a few fixes and improvements to the company generator. 
+
+We have quite a few fixes and improvements to the company generator.
 
 ### MekHQ StratCon Alpha
-Stratcon remains a key part of MekHQ but the main developer on it (Nickargua) is taking a well earned break from the projects. This will largely stop new features being added until his return. We'll address bug fixes as identified. 
+
+StratCon remains a key part of MekHQ but the main developer on it (Nickargua) is taking a well earned break from the projects. This will largely stop new features being added until his return. We'll address bug fixes as identified.
 
 ## Stable 0.50.0 Status Update
-We are still working on the development portion of the current dev cycle. We've been able to implement a new version of Gradle (our build language) starting with this release (0.49.11) we've added support for Java 17. This will require more testing and we encourage players to use the programs with Java 17, Java 11 at this time remains our recommened choice. We are still working on the connection stability issues. Until we resolve these issues and confirm Java 17 stability we can't move ahead with a new Stable, and we have no ETA for this. With a milestone of 0.50.0 we need to make sure we get it right. 
+
+We are still working on the development portion of the current dev cycle. We've been able to implement a new version of Gradle (our build language) starting with this release (0.49.11) we've added support for Java 17. This will require more testing and we encourage players to use the programs with Java 17, Java 11 at this time remains our recommended choice. We are still working on the connection stability issues. Until we resolve these issues and confirm Java 17 stability we can't move ahead with a new Stable, and we have no ETA for this. With a milestone of 0.50.0 we need to make sure we get it right.
 
 Until we resolve these issues we can't move ahead with a new Stable, and we have no ETA for this. With a milestone of 0.50.0 we need to make sure we get it right.
 
 ## Java 11 and Java 17
+
 We've updated to Java 11, which means you'll need to update to use the [b]0.49.x development branches[/b]. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) We have a help page [for Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html]). Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
 
-This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version. 
+This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version.
 
 ## Social Media
+
 We are also happy to announce we have an [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). This is now our primary community location for the suite, providing superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games).  There are also the following community Discords with regular MegaMek channels, namely [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). We are also on Facebook, at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek) for our group and page respectively.
 
 ## Mac Users
+
 [Please](https://megamek.org/wiki/mac_issues.html) check out this workaround for Mac Operating Systems.
 
 ## Contributing
+
 [Please](https://megamek.org/wiki/I-want-to-help) check out this document for contributing to the suite. Deadborder has us covered from land unit sprites and camos. But we desperately need sprites for aerospace units.
 
 ## Updating Your Campaign
+
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
 3. Do not copy MegaMek saves nor any preference file from a different version.
@@ -74,12 +85,14 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 ## Change Logs (Release Specific) and Download Links
 
 ### MegaMek Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/megamek/releases/tag/v0.49.11)
+
 + Issue #3776: Add 0 as a selectable weapon/equipment quantity in advanced search
 + PR #3908: Connections Rework: Logging Modernization
 + PR #3910: Remove unused modes from TAG weapons
 + PR #3929: Fix slots used by engines in Conventional Fighters
-+ PR #3927: Improve the info shown in the unit tooltip for Conventional Infantry 
++ PR #3927: Improve the info shown in the unit tooltip for Conventional Infantry
 + PR #3925: Fix loading damaged CI and BA from a .MUL file
 + PR #3932, 3940, 3942: Advanced search can now filter on weapon class
 + PR #3935: CI Field Guns and Artillery are now destroyed with trooper loss according to TO:AUE
@@ -142,7 +155,9 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Updating to Mockito 4.10.0 from 4.6.1
 
 ### MegaMekLab Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.11)
+
 + Issue #910: Fix SV Fission and TL C Fusion Engine Minimum Weight
 + PR #1168: Fixing Tripod Leg and Mech Spike Dagger Character Uses
 + PR #1181: Infantry refactor adaptation
@@ -151,7 +166,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #1176: Improve visibility of armor type on many Record Sheets
 + Issue #1197: Allow split weapons between CT and H
 + Issue #1196: Improve visibility of the structure type on RS and resize the armor type
-+ PR #1201: Add the AS Card to MML's Preview Panel  
++ PR #1201: Add the AS Card to MML's Preview Panel
 + PR #1206: Java 17 CI
 + Updating to Apache PDFBox 2.0.27 from 2.0.26
 + Updating to FlatLAF 2.6 from 2.4
@@ -160,7 +175,9 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Updating to Log4j 2.19.0 from 2.18.0
 
 ### MekHQ Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.11)
+
 + PR #3453: Remove restriction limiting generated/dynamic Scenarios to the current Campaign Week
 + PR #3450: Base Components: DefaultMHQScrollablePanel
 + PR #3482: Infantry refactor adaptation
@@ -189,7 +206,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #3373: Company Generator: Parts No Longer Go Missing After Unit Removal Before Reload
 + Issue #3435: Company Generator: Fixing Preset System
 + PR #3538: Data Loading: Don't Override the Selected Date
-+ Issue #3389: Personnel Table: Sort Age Using Birthdate
++ Issue #3389: Personnel Table: Sort Age Using Birth date
 + Updating to Apache Commons Text 1.10.0 from 1.9
 + Updating to Commonmark 0.21.0 from 0.19.0
 + Updating to FlatLAF 2.6 from 2.4

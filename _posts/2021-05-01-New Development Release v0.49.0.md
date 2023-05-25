@@ -14,12 +14,15 @@ players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page
 to user your package manager to install OpenJDK from their repositories.
 
 ## MegaMek
-As mentioned numerous bug fixes. 
+
+As mentioned numerous bug fixes.
 
 ## MegaMekLab
+
 No changes to MegaMekLab
 
 ## MekHQ
+
 Numerous bug fixes and improvements to Stratcon. If you haven't heard of Stratcon [see here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781)
 
 
@@ -58,7 +61,7 @@ Another reminder when moving between versions:
 * PR #2825: Fixing Mek Tree Sorter NPEs
 * PR #2829: Fixing Mek Table Model Potential NPEs
 * Issue #2818: Placeholder Image on Destroyed Condor
-* Issue #2819: Fixing Left Click Targetting Issues
+* Issue #2819: Fixing Left Click Targeting Issues
 * PR #2831: FovHighlightingAndDarkening Null Handling Improvements
 * PR #2835: ReadMe Java recommendation update and accessibility improvements
 * Issue #2820: Improved initial sizing of game options popup
@@ -78,10 +81,10 @@ Another reminder when moving between versions:
 
 * No changes to MegaMekLab this release
 
-
 ### MekHQ Release Notes
 
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.1)
+
 * Data: Fixing Aerospace Tech Portrait Folder Names
 * PR #2571: Fixing MechWarrior Salary
 * Issue #2569: Adding userdata to the build script
@@ -93,7 +96,7 @@ Another reminder when moving between versions:
 * PR #2587: Re-enable force deployment from TO&E
 * PR #2590: Take a breather after sending entities to MegaMek before trying to load transports
 * PR #2586: Fixing LAM Pilot Skill Level Calculation
-* PR #2599: Fixed multiple issues with deploying grounded dropships from MekHQ to MegaMek; 
+* PR #2599: Fixed multiple issues with deploying grounded dropships from MekHQ to MegaMek;
  Prevent putting scenario into error state when editing a non-resolved scenario in briefing room
 * Issue #2594: Allowing Scenario Date Nullable Comparison
 * Issue #2588: Fixing unmarketable check value for personnel table filter support check
@@ -101,12 +104,10 @@ Another reminder when moving between versions:
 * PR #2583: Dependent Swapover: Removing Parental and Spousal Abandonment, Fixing None Primary Role
 * Issue #2566: Ranks Warning Expansion and Change Tracking
 * Multiple StratCon stability and data fixes:
- 	* scenario data updates 	
+ 	* scenario data updates
  	* phantom scenarios no longer display in briefing room; fixed objective scenarios remain on tracks until encountered
 	* logic update for force deployment right click menu
- 	* map size rerolls no longer generate tiny maps	
+ 	* map size rerolls no longer generate tiny maps
 	* descriptive text updates
 * Issue #2607: Fixing Payment Overage Option Implementation
 * PR #2581: Modernizing Presets to 0.49.1 Standards
-
-

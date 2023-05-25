@@ -1,10 +1,10 @@
 # New Development Release 0.49.2
 
-Welcome to 0.49.2 this release is back to a mix of big fixes and some cool new features. 
+Welcome to 0.49.2 this release is back to a mix of big fixes and some cool new features.
 
-But first a word from one of our sponsors; Are you tired of fighting super-strength meks, are those Tau Zombies getting you down, try the new fully functioning Anti-TSM spray available in SRM and LRM varieties. Available at fine weapons dealer near you. 
+But first a word from one of our sponsors; Are you tired of fighting super-strength meks, are those Tau Zombies getting you down, try the new fully functioning Anti-TSM spray available in SRM and LRM varieties. Available at fine weapons dealer near you.
 
-There are a lot of fixes, big additions, and subtle changes in this release. Please give the change logs a close look for everything. But some highlights: 
+There are a lot of fixes, big additions, and subtle changes in this release. Please give the change logs a close look for everything. But some highlights:
 
 ## MegaMek and Java 11
 
@@ -19,20 +19,20 @@ to user your package manager to install OpenJDK from their repositories.
 
 
 ## MegaMek
-We've got some more fixes to the map editor. SeaVee's camo pack has been retired and replaced by DeadBorders pack, which is a larger pack and look darn good with his sprites. Speaking of camo we added a layered underlay to the sprites and you'll notice another improvement in there look. Some improvements in game like indicating if a unit is narc'd, and show which units can move on the facing arrow. 
 
-The minimap [has had an overhaul](https://github.com/MegaMek/megamek/pull/2948]minimap) - the Strat Ops are now the standard, and the old version the icons have been redone. While Princess was at Blackjack she picked up some options - Introduction to avoiding mines, Ordering allies to flee, and her BattleArmor instructors reminded her when you climb on something to tear it up. 
+We've got some more fixes to the map editor. SeaVee's camo pack has been retired and replaced by DeadBorders pack, which is a larger pack and look darn good with his sprites. Speaking of camo we added a layered underlay to the sprites and you'll notice another improvement in there look. Some improvements in game like indicating if a unit is narc'd, and show which units can move on the facing arrow.
 
-We've also implemented the errata for level 1 buildings. Lastly a ton of new sprites, Rec Guide 14, and more units with fluff text. 
+The minimap [has had an overhaul](https://github.com/MegaMek/megamek/pull/2948]minimap) - the Strat Ops are now the standard, and the old version the icons have been redone. While Princess was at Blackjack she picked up some options - Introduction to avoiding mines, Ordering allies to flee, and her BattleArmor instructors reminded her when you climb on something to tear it up.
 
+We've also implemented the errata for level 1 buildings. Lastly a ton of new sprites, Rec Guide 14, and more units with fluff text.
 
 ## MegaMekLab
-The lab got some bug fixes, a chunk of these impact printing Record sheets, and improvements to how we validate certain equipment.  
 
+The lab got some bug fixes, a chunk of these impact printing Record sheets, and improvements to how we validate certain equipment.
 
 ## MekHQ
-Nickargua has been working hard on the Stratcon Alpha and this release as numerous fixes (see change log below). Windchild has been busy improving various dialogs and reports. We also have added colours customizability in the MekHQ options. Extra time for maintenance is available for those needing help in the Third Succession War. Improvements to the rank sorting. The GM tools dialog is completely rewritten. We continue to chip away at refit issues.
 
+Nickargua has been working hard on the Stratcon Alpha and this release as numerous fixes (see change log below). Windchild has been busy improving various dialogs and reports. We also have added colours customizability in the MekHQ options. Extra time for maintenance is available for those needing help in the Third Succession War. Improvements to the rank sorting. The GM tools dialog is completely rewritten. We continue to chip away at refit issues.
 
 ## SOCIAL MEDIA
 
@@ -72,7 +72,7 @@ Another reminder when moving between versions:
 + PR #2898: Princess will now do her best to avoid known minefields
 + PR #2896: Base Components: Using proper locale
 + PR #2903: Camouflage: Layered Overlay
-+ Issue #2883: Can once again issue flee command to allied bots, but need to specify an edge (see docs); 
++ Issue #2883: Can once again issue flee command to allied bots, but need to specify an edge (see docs);
 	Can set bot destination edge to 'nearest', causing its units to move to the nearest board edge
 + PR #2912: Show all locations for spreadable equipment in summary view
 + PR #2916: CommonMenuBar maintenance (checkbox items)

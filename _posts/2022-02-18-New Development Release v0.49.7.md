@@ -1,4 +1,4 @@
-# Welcome all to 0.49.7 Development Release.
+# Welcome all to 0.49.7 Development Release
 
 ### Happy Birthday to MegaMek!
 
@@ -16,96 +16,119 @@ Before we get to the new stuff. The Dev Team would like to sincerely thank the f
 But on to the good stuff! Check out the new splash screens and launch icons for the programs. We've also had some fun and made some digital medallions that players can use. But the biggest item here is <drumroll>.
 
 ### Company Generator (New Campaign Project Wave Two)
+
 The Company Generator is a MekHQ change that adds the ability to take a campaign (ideally new, although that's not required) and creates a full mercenary company with the forces, personnel, units, and parts already generated and assigned. Further, it's fully integrated with Campaign Pre-sets, MekHQ Options, and the UserData folder. Customizability was core to the design, with the following being its individual options setup. Note that anything not specified uses the currently selected campaign options, while unimplemented provide hints to what's coming waves of this project (of which there are currently seven planned). The following images depict the current options setup.
 
-![alt text](http://i.imgur.com/kx4dJ4Pl.png)
-![alt text](http://i.imgur.com/gmIlANwl.png)
-![alt text](http://i.imgur.com/2h78kW6l.png)
-
+![alt text](http://i.imgur.com/kx4dJ4Pl.png){:.img-fluid}
+![alt text](http://i.imgur.com/gmIlANwl.png){:.img-fluid}
+![alt text](http://i.imgur.com/2h78kW6l.png){:.img-fluid}
 
 These options were used in 3025 to generate the following company.
 
 TO&E Tab: Automatically created, named, and iconed forces with automatically assigned personnel
-![alt text](http://i.imgur.com/bH9XNrTl.png)
+
+![alt text](http://i.imgur.com/bH9XNrTl.png){:.img-fluid}
 
 Personnel Tab: Founding personnel, some of which have families because of the starting simulations.
-![Personnel Tab: Founding personnel, some of which have families because of the starting simulations.](http://i.imgur.com/C3IvlCYl.png)
+
+![Personnel Tab: Founding personnel, some of which have families because of the starting simulations.](http://i.imgur.com/C3IvlCYl.png){:.img-fluid}
 
 Hangar Tab: Units with their pilots, forces, and techs already assigned.
-![alt text](http://i.imgur.com/O8lPNU9l.png)
+
+![alt text](http://i.imgur.com/O8lPNU9l.png){:.img-fluid}
 
 Warehouse Tab: Automatically filled at a rate of 1 part per 3 in the input units, rounded normally.
-![alt text](http://i.imgur.com/8TXCPHPl.png)
+
+![alt text](http://i.imgur.com/8TXCPHPl.png){:.img-fluid}
 
 Some general notes on this release.
 ### MegaMek
-This release has largely focused on bug fixes and stability improvements. They are joined by the TacOps AR Bracing Rule and huge amount of data has been added including updated Map packs, all Rec Guides are included, as well has more and more units have been getting fluff text.
- 
-### MegaMekLab
-The Lab has had a lot of improvements and bug fixes as we continue our journey to become the best builder out there. Some of the biggest changes you'll see in this release are a rewrite of the equipment view, it now uses a natural sorting method and can be popped out to be on the assign crit tab. 
 
-![alt text](http://i.imgur.com/ZAX2FlRl.png)
+This release has largely focused on bug fixes and stability improvements. They are joined by the TacOps AR Bracing Rule and huge amount of data has been added including updated Map packs, all Rec Guides are included, as well has more and more units have been getting fluff text.
+
+### MegaMekLab
+
+The Lab has had a lot of improvements and bug fixes as we continue our journey to become the best builder out there. Some of the biggest changes you'll see in this release are a rewrite of the equipment view, it now uses a natural sorting method and can be popped out to be on the assign crit tab.
+
+![alt text](http://i.imgur.com/ZAX2FlRl.png){:.img-fluid}
 
 Popped Out
 
-![Popped Out](http://i.imgur.com/wN2ebwol.png)
+![Popped Out](http://i.imgur.com/wN2ebwol.png){:.img-fluid}
 
 The Export to PDF Print Queue dialog has been rewritten.
-![alt text](http://i.imgur.com/6bc9jZsl.png)
-There are improvements to how equipment is being drag and dropped in the works as well. 
+
+![alt text](http://i.imgur.com/6bc9jZsl.png){:.img-fluid}
+
+There are improvements to how equipment is being drag and dropped in the works as well.
 
 ### MekHQ
+
 The AtB starter guide and pre-sets have been updated for all of the latest changes, including covering using the Company Generator.
 The Personnel Randomization, Retirement, and Dependent options have seen major changes for 0.49.7.
-![alt text](http://i.imgur.com/A3vyzH5l.png)
+
+![alt text](http://i.imgur.com/A3vyzH5l.png){:.img-fluid}
 
 The Personnel Randomization setup takes the previous setup and expands upon it to handle central system and clanner options properly. This is a long-term setup, while the new Retirement and Dependent formats are both temporarily stopgap setups to improve the option availability and their organization until we can get to their full internal implementation.
 This is in addition to the Company Generator and a whole host of bugfixes.
 
 ### MekHQ StratCon Alpha
+
 StratCon has seen a few bugfixes since 0.49.6.
 
-###Dry Technical (but important) Internal Changes
+### Dry Technical (but important) Internal Changes
+
 We've focused this release on suite-wide internal changes, tons of bugfixes, errata, and new MegaMek, MegaMekLab, and MekHQ features with some of the longest testing duration we've ever done for a non-release candidate. This is especially notable given that after this release things will likely become more unstable. But its required changes required to handle underlying issues relating to MegaMek save games, MegaMek connections, and player Java 17 support.
 
-We've added uncaught exception handling, meaning we can fix hidden or otherwise missed issues. This has already led to multiple important fixes thanks to QA and nightly build finds. We believe the current fixes handle any known causes, but new reports because of this dialog will be critical for fixing long-term pre-existing issues including currently unknown issues. If you see this dialog it will be important to open a bug report for it. 
+We've added uncaught exception handling, meaning we can fix hidden or otherwise missed issues. This has already led to multiple important fixes thanks to QA and nightly build finds. We believe the current fixes handle any known causes, but new reports because of this dialog will be critical for fixing long-term pre-existing issues including currently unknown issues. If you see this dialog it will be important to open a bug report for it.
 
-![alt text](http://i.imgur.com/VIw5nFPl.png)
+![alt text](http://i.imgur.com/VIw5nFPl.png){:.img-fluid}
 
 Second, and technically expanding on the above, we've continued reworking our logging setup. Namely, we've created a legacy logging setup to temporarily handle MegaMek's remaining ancient logging formats and to handle anything current and the above logging has missed.
 
-![alt text](http://i.imgur.com/sJNobHYl.png)
+![alt text](http://i.imgur.com/sJNobHYl.png){:.img-fluid}
 
 Third, we continue to update our remaining dependencies to their latest releases. There are five remaining dependency updates, two of which are new updates. This leaves the three pre-existing, nasty, and extremely difficult issues. Specifically, the latter means that XStream (MegaMek's save game setup, and extremely outdated) needs a complete replacement before our next stable, JAXB (some internal XML setups) needs difficult internal updates, and JUnit (Unit Testing) needs to be migrated from release 4.* to latest 5.*. The XStream and two recent updates will be handled before the next stable release, while JAXB and JUnit are unlikely to be handled in the near future.
 
 Fourth, we've rewritten the MekHQ readme file to explain suite status and dependencies. This is primarily for developer use, but also provides an external view into our internals. MekHQ has implemented everything outside of Javadocs (currently these are broken builds suite wide, albeit with fixes open). MegaMek has implemented everything outside of Javadocs and the Code Coverage setup (both being immediate goals). MegaMekLab is in the worst state, and we are currently unsure as to whether it's a bug, the internal code, or the current design setup causing the current issues.
+
 Finally, we continue to clean up more of our internal underlying code issues, primarily in MegaMek.
 
 ### Stable 0.50.0 Status Update
+
 While we are still in the portion of the current dev cycle and don't have an anticipated date for it. But we have some big things still to address before the Stable. Including adding Java 17 support, update the player save game issues, and continue to improve connection stability issues.
 
 ### Java 11
+
 We've updated to Java 11, which means you'll need to update to use the **0.49.x development branches**. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). We have a help page [for Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html). Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
 
 ### Social Media
+
 We are also happy to announce we have an [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). This is now our primary community location for the suite, providing superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games). We do still have the legacy [Slack channel](https://bit.ly/2KSu5yQ), which is rarely used outside of the developers. There are also the following community Discords with regular MegaMek channels, namely [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). We are also on Facebook, at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek) for our group and page respectively.
 
 ### Solaris VII Tourney
-UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord that is always looking for new players. You can join in the next week, and otherwise join between cycles. Join the [Discord](https://discord.gg/u2vJ5U2QpD) for more information. 
+
+UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord that is always looking for new players. You can join in the next week, and otherwise join between cycles. Join the [Discord](https://discord.gg/u2vJ5U2QpD) for more information.
 ### Mac Users
+
 [Please check out this workaround for Mac Operating Systems](https://megamek.org/wiki/mac_issues.html)
 
 ### Contributing
+
 [Please check out this document for contributing to the suite](https://megamek.org/wiki/I-want-to-help)
 
 ### Updating Your Campaign:
+
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
 3. Do not copy MegaMek saves nor any preference file from a different version.
 
 ### Change Logs (Release Specific) and Download Links
-### MegaMek
+
+#### MegaMek
+
 [DOWNLOAD](https://github.com/MegaMek/megamek/releases/tag/v0.49.7)
+
 + Issue #504: Adding View Active Unit keybind, to view active unit in Unit Display and target previously viewed unit
 + PR #3347: TacOps: AR bracing rule (mechs and protomechs can brace to get a bonus to hit on some shots, but are a lot easier to hit themselves)
 + PR #3346: Logging: Default Global Exception Handler and Standardized Legacy Logging
@@ -118,20 +141,20 @@ UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord
 + Updating to Apache FreeMarker 2.3.31 from 2.3.28
 + Updating to Jackson Core 2.13.1 from 2.9.8
 + Issue #3357: Updating to Jakarta.Mail 2.0.1 from Javax.Mail 1.6.2
-+ Data: Equipment Name fixes/standardizations identified with recent changes to MML equipment tab.  Biggest change was removing duplicate C3 Master entries and consolidating them in a C3 weapons folder. Includes fixes to impacted unit files. 
++ Data: Equipment Name fixes/standardizations identified with recent changes to MML equipment tab.  Biggest change was removing duplicate C3 Master entries and consolidating them in a C3 weapons folder. Includes fixes to impacted unit files.
 + Issue #3371: Fixing TurnOrdered NPEs for null Entity game and null Player team
 + Data: Updated EVS Map Pack (I like big maps I cannot lie)
 + Issue: #3384: Swarm LRMs not available, but Swarm-I are
 + Data: Cleaning up some missing equipment flags
 + PR #3389: TAG flag correction, unused ISLightTag removed
 + Issue: #3393: Inner Sphere AC/2s Use Wrong Aerospace Range
-+ Data: New Sprites. 
++ Data: New Sprites.
 + Issue #3365: Removing Force Generator's Broken 2786 Setup
 + Issue #3343: Improving the Forced Victory Phase Skip tool tip
 + Issue #3394: Restoring Save Mul Menu Item in Top Bar
 + Issues #1896 and #3378: Adding MapTextColor and WarningColor to the advanced client options
 + PR #3391: SuiteOptions: Naming standardization and finishing initial setup
-+ Data: Removing Hawk SRM and Phoenix LRMs. They were ammo only and no weapon could use them. Allow a few more requested Tech Progression Fixes. 
++ Data: Removing Hawk SRM and Phoenix LRMs. They were ammo only and no weapon could use them. Allow a few more requested Tech Progression Fixes.
 + PR #3402: Updating FlatLaf from 1.6.5 to 2.0.1
 + MekHQ Issue #3072: Fixing (primarily) Early Era Force Generator Faction Record NPE Due to blank being parsed as a faction code.
 + Issue #2505: Fixing Prosthetic Leg MASC To Hit and Movement mods
@@ -148,8 +171,10 @@ UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord
 + Issue #3444: Clan Tech base can have Artillery pieces but Ammo for them is not available.
 + Data: Updated Force Generator to include RecGuide 16, Updated Flynn, SimonLandmine, Ulysses Map Packs, Updated Camos and new sprites.
 
-### MegaMekLab
+#### MegaMekLab
+
 [DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.7)
+
 + Issue #901: Fixing Manual BV
 + PR #995: Adding ilClan era image to record sheets, correcting era dates
 + PR #993: Logging: Default Global Exception Handler and Standardized Legacy Logging
@@ -175,8 +200,10 @@ UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord
 + Updating Apache FOP from 2.6 to 2.7
 + Issue #1026: Added Coolant Pod to Other category check in EquipmentDatabaseCategory
 
-### MekHQ
+#### MekHQ
+
 [DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.7)
+
 + PR #3043: Logging: Default Global Exception Handler and Standardized Legacy Logging
 + Issue #3040: Fixing Unit Icon Filename Write Copy/paste Error
 + Issue #3038: Fixing missing Personnel Table Integer Comparators

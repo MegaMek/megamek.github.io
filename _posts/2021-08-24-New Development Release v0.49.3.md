@@ -1,10 +1,10 @@
 # New Development Release 0.49.3
 
-Welcome to 0.49.3 this release is back to a mix of big fixes and some cool new features. 
+Welcome to 0.49.3 this release is back to a mix of big fixes and some cool new features.
 
-But first a word from one of our sponsors; Are you tired of fighting super-strength meks, are those Tau Zombies getting you down, try the new fully functioning Anti-TSM spray available in SRM and LRM varieties. Available at fine weapons dealer near you. 
+But first a word from one of our sponsors; Are you tired of fighting super-strength meks, are those Tau Zombies getting you down, try the new fully functioning Anti-TSM spray available in SRM and LRM varieties. Available at fine weapons dealer near you.
 
-There are a lot of fixes, big additions, and subtle changes in this release. Please give the change logs a close look for everything. But some highlights: 
+There are a lot of fixes, big additions, and subtle changes in this release. Please give the change logs a close look for everything. But some highlights:
 
 ## Java 11 and the 0.49.x Releases.
 
@@ -16,6 +16,7 @@ Due to changes in downloading Java that Oracle has made, As Java is now open sou
 
 
 ## MegaMek
+
 We've added board tagging, Adds the "tag" key word for board files so boards can be tagged, e.g. tag "Forest (Auto)", tag "Roads (Auto)" , tag "I like this map" for more details on this feature see [HERE](https://github.com/MegaMek/megamek/pull/2955). We've modernized the princess configuration dialog and it has numerous improvements see [HERE](https://github.com/MegaMek/megamek/pull/3041) for details. We've also added additional unit label [display options](https://github.com/MegaMek/megamek/pull/3017).
 
 Players now have option to provide their email address to the server (which is not shared with the other players). If the server has a local SMTP server configured, round reports can be emailed to players.
@@ -23,25 +24,29 @@ Players now have option to provide their email address to the server (which is n
 Hidden Units now default to on to reduce issues coming out of MekHQ. The RAT generator now includes space stations. We have added all the Rec Guides up to 18, and Deadborder continues to pump out updated and new sprites. Finally we think we've taught princess that crossing water with holes in your armor is bad.
 
 ## MegaMekLab
+
 MegaMekLab has had a bugfix, but has otherwise been quiet as the dev focused on it is currently taking a break.
 
 
 ## MekHQ
+
 The Advance Days Dialog is complete and replaces the old popout for the daily log while expanding its former functionality. It is designed to be left open if desired while handling ones day advancement needs.
 
-![Advanced Days Dialog](https://i.imgur.com/quPVXOPl.png)
+![Advanced Days Dialog](https://i.imgur.com/quPVXOPl.png){:.img-fluid}
 
 
 The Unit Market has been rewritten, and because of that is now available outside of Against the Bot based on one's Campaign Options.
-![Unit Market Dialog](https://i.imgur.com/O58fxgJl.png)
 
- 
+![Unit Market Dialog](https://i.imgur.com/O58fxgJl.png){:.img-fluid}
+
+
 However, these were both coded before 0.49.2. The focus for MekHQ over the past two months has been in bugfixes, bug prevention, and code improvement.
 
 ## Stratcon Alpha
+
 StratCon has seen yet more bugfixes and balance changes, plus facility implementations, GM StratCon campaign state management options, customizabile chance of generating a user made map, and potential player DropShip use in DropShip defense scenarios.
 
-If you aren't familar with Stratcon see [HERE](https://github.com/MegaMek/mekhq/pull/2144)
+If you aren't familiar with StratCon see [HERE](https://github.com/MegaMek/mekhq/pull/2144)
 
 ## SOCIAL MEDIA
 
@@ -74,7 +79,7 @@ Another reminder when moving between versions:
 + PR #2971: Fixing the Magistracy of Canopus Planetary Militia Force Generator Faction
 + PR #2987: Remove unwanted water terrain exits from boards
 + PR #2990, 2993: Fix errors discovered while play-testing on potato-grade computer:
-	-prevent tooltip errors when mousing over non-unit spotting target	
+	-prevent tooltip errors when mousing over non-unit spotting target
 	-prevent player camo color related force rendering error in lobby due to slow MekHQ-MegaMek data transfer
 	-improved bot ability to avoid flying off-board on space maps in newtonian flight model
 	-prevent ejected aerospace pilots from crashing the server when drifting off-board on space map
@@ -135,7 +140,7 @@ Another reminder when moving between versions:
 	-more abstractly: capability to substitute player units for bot units in designated scenario force templates
 	-prevent "regenerate bot forces" button from displaying when editing completed scenarios
 	-allow contract completion for scenarios with remaining "fixed" objectives (useful for when the enemy morale goes to rout or you win a base of operations attack)
-	-explicitly show that objectives in defensive contracts must be held until contract completion	
+	-explicitly show that objectives in defensive contracts must be held until contract completion
     -fix clicked hex detection on StratCon map when viewing anything other than top left corner when map doesn't fit on single screen (smaller resolutions/bigger maps)
     -added scroll pane to info panel in case it has more data than can be displayed (important on smaller resolutions)
     	do not un-deploy force from track if it's assigned to a scenario on the track until the scenario is resolved one way or another

@@ -1,8 +1,9 @@
 ### Welcome all to 0.49.13!
 
-This release marks a significant milestone for Megamek as we finish the second year of 0.49.x development. It features numerous fixes and quality-of-life improvements. The breadth of exciting additions is extensive, making it challenging to decide where to begin. We recommend reviewing the complete list to see all changes. However, we'll highlight a few noteworthy ones for now. It's important to note that this release, being the 13th in the cycle, may still contain a few new bugs due to all the awesome new stuff.
+This release marks a significant milestone for MegaMek as we finish the second year of 0.49.x development. It features numerous fixes and quality-of-life improvements. The breadth of exciting additions is extensive, making it challenging to decide where to begin. We recommend reviewing the complete list to see all changes. However, we'll highlight a few noteworthy ones for now. It's important to note that this release, being the 13th in the cycle, may still contain a few new bugs due to all the awesome new stuff.
 
 Here we go...
+
 + [Client settings had a massive overhaul](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1928052/#msg1928052)
 + [Major improvements to how min/max visual and sensor ranges are display in game](https://github.com/MegaMek/megamek/pull/4430)
 + [Improvements to the Detail Unit Counts in the Initiative Phase](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1931189/#msg1931189)
@@ -12,75 +13,88 @@ Here we go...
 + [Weapons Quirks now show in the unit selector](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1928818/#msg1928818)
 + Improvements in showing multiple units in the same hex
 + Princess and her off board artillery can no longer hide in double blind! Counter-battery fire to off board targets now works in double blind.
-+ BattleArmor with Indirect fire weapons can well... fire indirectly now. Conventional Infantry is trickier and not implemented.  
++ BattleArmor with Indirect fire weapons can well... fire indirectly now. Conventional Infantry is trickier and not implemented.
 + Numerous fixes to Alphas Strike Conversion
 
-We have a few of **VERY** important things to be aware of in this release especially around the units. 
+We have a few of **VERY** important things to be aware of in this release especially around the units.
 
 1. Anti-aliasing is now an option and if you’re having graphic slow downs or “chugging on the map” trying to change the option in client settings.
-2. We have made changes to the unit files to align them with the MUL by removing the term "(Standard)". This was a significant data task and resulted in the removal of nearly 1000 instances of "(Standard)". Our Quality Assurance (QA) team has thoroughly tested these name changes by creating campaigns and loading them with every unit. However, there is a potential risk in MekHQ with CPNX files, as they rely on unit names for matching. If you encounter any errors while loading your campaign file, we apologize for the inconvenience and kindly refer to the [following post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units) for further assistance. 
+2. We have made changes to the unit files to align them with the MUL by removing the term "(Standard)". This was a significant data task and resulted in the removal of nearly 1000 instances of "(Standard)". Our Quality Assurance (QA) team has thoroughly tested these name changes by creating campaigns and loading them with every unit. However, there is a potential risk in MekHQ with CPNX files, as they rely on unit names for matching. If you encounter any errors while loading your campaign file, we apologize for the inconvenience and kindly refer to the [following post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units) for further assistance.
 3. Lastly we’ve ripped the unofficial unit band aid off. We've moved the unofficial units zip out of this release. The reasons and poll for this was [discussed here](https://bg.battletech.com/forums/megamek-games/how-often-do-you-use-the-units-from-the-unsupported-or-unofficial-folders/). Between our Discord and this poll 75% of players were good with us removing them. It allows us to have the releases be focused on canon units.
 
-The file is still available but players will need to add the zip file manually. We have no plans to further support or add units into that zip. It would be safe to just set it up in a customs folder and move that folder between releases. 
+The file is still available but players will need to add the zip file manually. We have no plans to further support or add units into that zip. It would be safe to just set it up in a customs folder and move that folder between releases.
 
 To add the units back:
+
 1. Download the zip file from the [MegaMek Extras](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
 2. You need to right click and use the "Save link as"
-3. Save this as a zip to the data\mechfiles folder of the program.
-     -As a suggestion save this to a customs folder in the data\mechfiles
-4. On restart they will be added. 
+3. Save this as a zip to the `data\mechfiles` folder of the program. - As a suggestion save this to a customs folder in the `data\mechfiles`
+4. On restart they will be added.
 
-We continue to find small improvements in stability over 49.12 but we still aren't 100% where we want to be. We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.12) you just need to keep them in separate folders. We need players to use Dev releases. 
+We continue to find small improvements in stability over 49.12 but we still aren't 100% where we want to be. We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.12) you just need to keep them in separate folders. We need players to use Dev releases.
 
-Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference. 
+Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
-**MegaMek**
-See the notes above and below for specific things. 
+#### MegaMek
 
-**MegaMekLab**
+See the notes above and below for specific things.
+
+#### MegaMekLab
+
 A big option to the unofficial record sheets, On record sheets, hit location and cluster tables can now be printed in place of the fluff image; activate this option in the record sheet settings. You can see an [example here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1922237/#msg1922237).
 
-Remember to check the FILE-Configuration for all sorts of options for Record Sheets. 
+Remember to check the FILE-Configuration for all sorts of options for Record Sheets.
 
-**MekHQ**
-There isn't a lot of MekHQ outside of some fixes, but we do have Stratcon fixes. 
+#### MekHQ
 
-**MekHQ StratCon Alpha**
-Stratcon is starting to get a little more work and bug fixes (see below). Nickargua the dev is looking for help and see here for [how to help](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1935360/#msg1935360). It sounds complicated but it's quite easy to make the files he's looking for. 
+There isn't a lot of MekHQ outside of some fixes, but we do have StratCon fixes.
 
-**Stable 0.50.0 Status Update**
-We are still in the development portion of the current cycle. We've been able to implement a new version of Gradle (our build language) starting with the 0.49.11 release. As well as adding support for Java 17. This is still undergoing testing and we encourage players to use the programs with Java 17 but Java 11 remains our recommended choice for the .49.x Dev cycle. We are still working on the connection stability issues. 
+#### MekHQ StratCon Alpha
+
+StratCon is starting to get a little more work and bug fixes (see below). Nickargua the dev is looking for help and see here for [how to help](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1935360/#msg1935360). It sounds complicated but it's quite easy to make the files he's looking for.
+
+#### Stable 0.50.0 Status Update
+
+We are still in the development portion of the current cycle. We've been able to implement a new version of Gradle (our build language) starting with the 0.49.11 release. As well as adding support for Java 17. This is still undergoing testing and we encourage players to use the programs with Java 17 but Java 11 remains our recommended choice for the .49.x Dev cycle. We are still working on the connection stability issues.
 
 We've found the primary cause of these disconnects is the use the Unofficial "Simultaneous" options. These options create a host of issues and while they worked in 0.48.0 Stable the changes in this Dev Branch have made them problematic. As a fair warning we are considering removing them when we get to 0.50.0 Stable. These are the options we are referring too.
-![Sim Options](https://i.imgur.com/GCpqZdo.png)
 
-We are getting to a point where we are starting to talk about 0.50.0 Stable but we still have some significant things we need to complete and don't anticipate a new Stable anytime soon. At this point we have some really good solid development releases and for security alone I'd recommend upgrading to Java 11 from Java 8. 
+![Sim Options](https://i.imgur.com/GCpqZdo.png){:.img-fluid}
 
-Once that is done [we'd recommend trying a dev release like 0.49.12.](https://megamek.org/2023/03/04/New-Development-Release-v0.49.12.html)  With a milestone of 0.50.0 we need to make sure we get it right. 
+We are getting to a point where we are starting to talk about 0.50.0 Stable but we still have some significant things we need to complete and don't anticipate a new Stable anytime soon. At this point we have some really good solid development releases and for security alone I'd recommend upgrading to Java 11 from Java 8.
 
-## Java 11 and Java 17
-We've updated to Java 11, which means you'll need to update to use the [b]0.49.x development branches[/b]. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) We have a help page [for Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html]). Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
+Once that is done [we'd recommend trying a dev release like 0.49.12.](https://megamek.org/2023/03/04/New-Development-Release-v0.49.12.html)  With a milestone of 0.50.0 we need to make sure we get it right.
 
-This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version. 
+#### Java 11 and Java 17
 
-## Social Media
+We've updated to Java 11, which means you'll need to update to use the **0.49.x development branches**. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) We have a help page [for Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html]). Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
+
+This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version.
+
+#### Social Media
+
 We are also happy to announce we have an [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). This is now our primary community location for the suite, providing superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games).  There are also the following community Discords with regular MegaMek channels, namely [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). We are also on Facebook, at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek) for our group and page respectively.
 
-## Mac Users
+#### Mac Users
+
 [Please](https://megamek.org/wiki/mac_issues.html) check out this workaround for Mac Operating Systems.
 
-## Contributing
+#### Contributing
+
 [Please](https://megamek.org/wiki/I-want-to-help) check out this document for contributing to the suite. Deadborder has us covered from land unit sprites and camos. But we desperately need sprites for aerospace units.
 
-## Updating Your Campaign
+#### Updating Your Campaign
+
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
 3. Do not copy MegaMek saves nor any preference file from a different version.
 
-## Change Logs (Release Specific) and Download Links
+#### Change Logs (Release Specific) and Download Links
 
-### MegaMek Change Log
+##### MegaMek Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/megamek/releases/tag/v0.49.13)
+
 + Fix #3914: LAM fuel tanks will now correctly provide fuel to the LAM
 + Fix #3951: Solar engine powered fixed wing support vehicles are now able to move and don't require fuel
 + Fix #3696: Altitude values no longer inadvertently influence space combat
@@ -114,16 +128,16 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + PR #4289: A pure text stats summary of Alpha Strike elements can now be copied to the Clipboard
 + PR #4282: Symbols on the minimap can now be hidden; the minimap also now has a context menu
 + PR #4284, #4296, #4313: Substantial updates to the client settings dialog
-+ PR #4295: System/java/Megamek information can now be copied in the About dialog
++ PR #4295: System/java/MegaMek information can now be copied in the About dialog
 + Fix #4293: Off-board entities are now properly visible to players
 + PR #4292: The -quick command line flag can now be combined with other flags
 + PR #4290: The lobby chat window now shows a text placeholder when empty to improve its visibility
 + Fix #4302: The wind direction shown in the Planetary Conditions is now correct
-+ PR #4294: Megamek now has random and constant skill generation values for The Society (WoRS)
++ PR #4294: MegaMek now has random and constant skill generation values for The Society (WoRS)
 + PR #4319: The unit tooltip now shows original armor and internal structure values
 + PR #4310: Show a chat message when changing settings
-+ Fix #4334: Correctly display heat capacity on unit tool tip to match unit card when TO Heatsink Coolant Failure is used
-+ Fix #4221: Flares now correctly despawn when blown off the map
++ Fix #4334: Correctly display heat capacity on unit tool tip to match unit card when TO Heat-sink Coolant Failure is used
++ Fix #4221: Flares now correctly de-spawn when blown off the map
 + Fix #2333: Show Weapon Quirks in various tool tips
 + Fix MML 881: Problem with PPC Capacitors in Mixed Tech Mechs and Vehicles (adding missing PPCs)
 + Issue #2972: Add team BV totals to round report
@@ -162,30 +176,33 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Fix #4446: Show teams before players on BV count report section
 + Data: Fixing #4223, #4206, #4371, #4398, #4377, #4272, #4257, #4244 ,#4312
 + PR #4430: Highlight min/max visual and sensor ranges
-+ PR #4450: When tacops sensors is not on, dont show sensor rings
-+ PR #4451: When tacops sensors is not on, show visual range in tool tip 
++ PR #4450: When TacOps sensors is not on, don't show sensor rings
++ PR #4451: When TacOps sensors is not on, show visual range in tool tip
 
-### MegaMekLab Change Log
+##### MegaMekLab Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.13)
+
 + PR #1241: On record sheets, hit location and cluster tables can now be printed in place of the fluff image; activate this option in the record sheet settings
 + Issue #1247: BA pop-up mines now show up under "other equipment"
 + Issue #1238: Battle Armor tube artillery now only allowed on battle armor
 
-### MekHQ Change Log
+##### MekHQ Change Log
+
 [DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.13)
-+ Data: updates to the Stratcon FAQ now version 2.3 in docs\atb folder.
+
++ Data: updates to the StratCon FAQ now version 2.3 in docs\atb folder.
 + PR #3618: Campaign Options: Properly Disable Retirement and Dependent Options On Preset Load
 + PR #3619: Campaign Options: Properly Disable Contract Market Pane based on AtB Selection
 + Issue #3634: Re-enable Mass Mothball dialog
-+ Issue #3654: Engines can be swapped again in meklab
++ Issue #3654: Engines can be swapped again in MekLab
 + Issue #3652/3629: Addressed errors loading campaigns with pending special AtB scenarios
 + Data: Improvements to FedCom Civil War Planetary Control
 + Issue #3502: Campaign Options: Improve Maximum Acquisition Per Day Text and Tool Tip Text
 + PR #3662: Update refit classes based on CamOps
-+ Issue #3632: [Stratcon] Text clarification regarding airborne dropship modifier
++ Issue #3632: [StratCon] Text clarification regarding airborne dropship modifier
 + PR #3663: Properly classify CASE refits
-+ Issue #3600: [Stratcon] Regenerating bot forces no longer duplicates displayed scenario objectives
-+ PR #3665: Stratcon Hidden Facility Modifier Fix
++ Issue #3600: [StratCon] Regenerating bot forces no longer duplicates displayed scenario objectives
++ PR #3665: StratCon Hidden Facility Modifier Fix
 
 Enjoy everyone!
-
