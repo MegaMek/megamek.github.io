@@ -115,7 +115,7 @@ UlyssesSockdrawer has been running a popular Solaris VII campaign on our Discord
 
 ### Contributing
 
-[Please check out this document for contributing to the suite](https://megamek.org/wiki/I-want-to-help)
+[Please check out this document for contributing to the suite]({{ site.baseurl }} {% link wiki/i_want_to_help.md %})
 
 ### Updating Your Campaign:
 

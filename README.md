@@ -96,12 +96,20 @@ example, for a PDF:
 
 ## Development
 
-To test out changes to a local repository, you need to install [Jekyll](https://jekyllrb.com/). Then
+To test out changes to a local repository, you need to install [Docker](https://www.docker.com/). Then
 from the command line within the repository run:
 
 ```Shell
-jekyll serve
+docker build -t jekyll .
 ```
+to build a local Docker image containing all the tools needed to compile and host the site.
+Once the image is built, just use:
+
+```
+docker run -it --rm -p "4000:4000" jekyll
+```
+
+to start the local site host.
 
 The website should then be viewable at [localhost:4000](http://localhost:4000).
 

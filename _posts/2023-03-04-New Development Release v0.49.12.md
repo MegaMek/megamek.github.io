@@ -70,7 +70,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 
 ## Contributing
 
-[Please](https://megamek.org/wiki/I-want-to-help) check out this document for contributing to the suite. Deadborder has us covered from land unit sprites and camos. But we desperately need sprites for aerospace units.
+[Please]({{ site.baseurl }} {% link wiki/i_want_to_help.md %}) check out this document for contributing to the suite. Deadborder has us covered from land unit sprites and camos. But we desperately need sprites for aerospace units.
 
 ## Updating Your Campaign
 
