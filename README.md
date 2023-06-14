@@ -105,7 +105,7 @@ docker build -t jekyll .
 to build a local Docker image containing all the tools needed to compile and host the site.
 Once the image is built, just use:
 
-```
+```Shell
 docker run -it --rm -p "4000:4000" jekyll
 ```
 
