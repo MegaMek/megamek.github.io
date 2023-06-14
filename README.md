@@ -106,7 +106,7 @@ to build a local Docker image containing all the tools needed to compile and hos
 Once the image is built, just use:
 
 ```Shell
-docker run -it --rm -p "4000:4000" jekyll
+docker run -it --rm -v ${PWD}:${PWD} -w ${PWD} -p "4000:4000" jekyll
 ```
 
 to start the local site host.
