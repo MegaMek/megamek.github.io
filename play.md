@@ -26,7 +26,8 @@ to get started.
 - More information about campaign options used in MekHQ is available in and the [*Strategic Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-strategic-operations?variant=28800101970) and the [*Campaign Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-campaign-operations-pdf?variant=28800076626).
 
 #### Video Tutorials
-- We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/megamek-games/video-tutorials-for-megamek/). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
+
+We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/megamek-games/video-tutorials-for-megamek/). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
 
 #### A First Game of MegaMek
 
