@@ -180,18 +180,20 @@ ul {
 
   li:before:not([list-group-item]) {
     content: "\f05b";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     padding-right: 5px;
     margin-left: -20px;
   }
 
   li.news:before {
+    font-family: "Font Awesome 6 Free";
     content: "\f1ea";
   }
-li.list-group-item {
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
+
+  li.list-group-item {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
 }
 
 /*********************************************************************/
