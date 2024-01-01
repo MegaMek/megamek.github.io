@@ -7,7 +7,7 @@ title: Submit a Bug
 
 Submitting quality bug reports is important to get bugs fixed and to not waste developer time. Once a bug is reported, a dev will have to verify that the report is actually a bug. Once it has been verified, a dev has to hunt down the cause of the bug, and then fix it.
 
-##### Issue Tracker
+#### Issue Tracker
 
 The GitHub Issue tracker keeps track of all issues, including bug reports, feature requests etc.
 Once a report has been submitted, a team member can add labels to it to help categorize the issue (ie., bug, enhancement, etc.).
@@ -25,7 +25,7 @@ Quicklinks for the GitHub Issue trackers:
 
 The first step in creating a bug report is to search the bug tracker to see if the bug has already been reported.
 
-##### One Issue Per Ticket 
+##### One Issue Per Ticket
 
 Please only put one issue in each issue ticket. This allows each separate issues to be worked on individually, and the ticket for each issue closed as it has been worked on. This helps team members, any 3rd party contributors, and also the ticket filer.
 
@@ -51,11 +51,11 @@ It is also important to only report one issue per ticket. Creating a new ticket 
 
 Additionally, when reporting a bug about rules it is very important to give references to the rules and to first check errata. BattleTech is a complex game with a large number of optional rules. The devs may not know all of the rules by heart and often have to spend a lot of time looking up and cross checking rules.
 
-##### Attach a logfile
+##### Attach a log file
 
-Version information is also important, and the easiest way to convey this is by attaching a logfile from MegaMek. When running, MegaMek logs messages to logs/megameklog.txt by default (this can be changed with the -log flag when running MegaMek). The log file will contain basic system information (like operating system) as well as the version of MegaMek that is running. Frequently it also contains stack traces that can be immensely helpful in hunting down a bug.
+Version information is also important, and the easiest way to convey this is by attaching a log file from MegaMek. When running, MegaMek logs messages to `logs/megameklog.txt`` by default (this can be changed with the -log flag when running MegaMek). The log file will contain basic system information (like operating system) as well as the version of MegaMek that is running. Frequently it also contains stack traces that can be immensely helpful in hunting down a bug.
 
-Under no circumstances should excerpts from a logfile be posted into the ticket. This clutters up the ticket and can screw with the page formatting. Logfiles are generally not that large and easy to attach to the ticket. There can also be multiple pieces of useful information in the logfile that can be missed when the reporter posts what they think is relevant. To attach multiple files, either zip up all files into one file and attach that, or attach a file and make the post and then edit the post to attach further files. Unfortunately there is no great way to make multiple attachments to our knowledge.
+Under no circumstances should excerpts from a log file be posted into the ticket. This clutters up the ticket and can screw with the page formatting. Log files are generally not that large and easy to attach to the ticket. There can also be multiple pieces of useful information in the log file that can be missed when the reporter posts what they think is relevant. To attach multiple files, either zip up all files into one file and attach that, or attach a file and make the post and then edit the post to attach further files. Unfortunately there is no great way to make multiple attachments to our knowledge.
 
 ##### Attach a saved game
 

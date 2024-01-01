@@ -16,12 +16,11 @@ to find other players? There are several options.
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
 - Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment. They also have a [Discord](https://discord.gg/CQ5uvkEkdk)
-- There are also two active BattleTech Discords with MegaMek channels - [Helm Memory Core](https://discord.gg/gyXMWjT) and [BattleTech](https://discord.gg/D9jFn52)
-- There is a new community that is trying to expand and connect MegaMek players - [MRC Hub](https://discord.gg/WUvbXQRRfW).
+- There are also two active BattleTech Discords with MegaMek channels - [MRC Hub](https://discord.gg/WUvbXQRRfW) and [BattleTech](https://discord.gg/D9jFn52)
 
 ___
 
-<iframe src="https://discord.com/widget?id=458705327911731231&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class='float-right m-3'></iframe>
+<iframe src="https://discord.com/widget?id=458705327911731231&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class='float-end m-3'></iframe>
 
 #### Find Us On Social Media
 

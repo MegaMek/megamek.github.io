@@ -1,31 +1,38 @@
 /* Get correct download button by OS */
-jQuery(document).ready(function () {
-  var downloader = document.getElementById('downloader');
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
 
-  if (downloader) {
-    var version = downloader.dataset.version;
+ready(() => {
+  var downloader = document.getElementsByClassName('downloader');
+
+  for (var element of downloader) {
+    var version = element.dataset.version;
     var url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/mekhq-" + version + ".tar.gz";
     var platform = "<i class='fab fa-linux'></i> Linux/Unix";
 
-    if (navigator.appVersion.indexOf("Win") != -1) {
+    if (navigator.userAgent.indexOf("Win") != -1) {
       url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/mekhq-windows-" + version + ".zip";
       platform = "<i class='fab fa-windows'></i> Windows";
     } else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
       platform = "<i class='fab fa-apple'></i> Mac OSX";
     }
 
-    updateDownloadLinks(version, url, platform);
+    updateDownloadLinks(element, version, url, platform);
   }
 
   loadDownloadStats("megamek-download-stats", "megamek");
   loadDownloadStats("megameklab-download-stats", "megameklab");
   loadDownloadStats("mekhq-download-stats", "mekhq");
+
+  setInterval(function () { loadXMLDoc(); }, 1000);
 });
 
-function updateDownloadLinks(version, url, platform) {
-  var downloadLink = document.getElementById('download_link');
-  var versionText = document.getElementById('version_display');
-  var platformText = document.getElementById('version_platform');
+function updateDownloadLinks(element, version, url, platform) {
+  var downloadLink = element.getElementsByClassName('download_link')[0];
+  var versionText = element.getElementsByClassName('version_display')[0];
+  var platformText = element.getElementsByClassName('version_platform')[0];
 
   downloadLink.href = url;
   versionText.innerHTML = version;
@@ -104,4 +111,15 @@ function addStatsToElement(element, releases) {
     child.innerHTML = text;
     element.appendChild(child);
   });
+}
+
+function loadXMLDoc() {
+  var servers = document.getElementById("servers")
+  if (servers) {
+    fetch('https://api.megamek.org/servers.js')
+      .then((response) => response.text())
+      .then((response) => {
+        servers.innerHTML = response;
+      })
+  }
 }

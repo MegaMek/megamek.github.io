@@ -9,7 +9,7 @@ title: Home
       The MegaMek organization maintains a series of programs that try to
       implement the published rules for the tabletop BattleTech game
       published by <a href='https://www.catalystgamelabs.com/'>
-        Catalyst Game Labs</a> as faithfully as is practical. These programs
+      Catalyst Game Labs</a> as faithfully as is practical. These programs
       are designed with the idea of being accessible, both in portability
       across various operating systems and across various hardware
       configurations.
@@ -32,20 +32,39 @@ title: Home
   </div>
   <div class="col-md-6">
     <div class="row">
-      <div class="col text-center" id="downloader" data-version="{{ site.data.current_releases.stable }}">
-        <a href="" id='download_link' class='download_link'>
+      <div class="col text-center downloader" data-version="{{ site.data.current_releases.stable }}">
+        <a href="" class='download_link'>
           <span>
             <img src="assets/images/icons/megamek.png" />
           </span>
           <span>
-            <i class="fas fa-download fa-2x"></i>
+            Stable
             <br />
-            version <span id='version_display'></span>
+            version <span class='version_display'></span>
             <br />
-            <span id='version_platform'></span>
+            <span class='version_platform'></span>
           </span>
         </a>
         <br />
+      </div>
+
+      <div class="col text-center downloader" data-version="{{ site.data.current_releases.dev }}">
+        <a href="" class='download_link'>
+          <span>
+            <img src="assets/images/icons/megamek.png" />
+          </span>
+          <span>
+            Development
+            <br />
+            version <span class='version_display'></span>
+            <br />
+            <span class='version_platform'></span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
         <a href="/downloads.html"><small>Other versions and platforms</small></a>
       </div>
     </div>
@@ -54,7 +73,7 @@ title: Home
         <span class="align-top">
           <h4>Recent News</h4>
           <ul>
-            {% for post in site.posts limit:6 %}
+            {% for post in site.posts limit:3 %}
             <li class="news">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </li>
@@ -108,14 +127,13 @@ title: Home
   <div class="col-md-12">
     <div class="container">
       <h3>Screenshots</h3>
-      <div id='carousel-single' class='carousel slide carousel-fade' data-ride='carousel'>
+      <div id='carousel-screenshots' class='carousel slide carousel-fade'>
         <div class='carousel-inner'>
           {% assign first_time = true %}
           {% for screenshot in site.data.screenshots %}
           {% if first_time==true %}
           <div class='carousel-item active'>
-            <img class='d-block w-100' src="{{ site.baseurl }}/assets/images/screenshots/{{ screenshot.file }}"
-              alt="image" />
+            <img class='d-block w-100' src="{{ site.baseurl }}/assets/images/screenshots/{{ screenshot.file }}" alt="image" />
             <div class="carousel-caption mx-auto d-none d-sm-block">
               <h5>{{ screenshot.program }}</h5>
               <p>{{ screenshot.caption }}</p>
@@ -134,14 +152,14 @@ title: Home
           {% endif %}
           {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#carousel-single" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-screenshots" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-single" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-screenshots" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" ></span>
           <span class="sr-only">Next</span>
-        </a>
+        </button>
       </div>
     </div>
   </div>

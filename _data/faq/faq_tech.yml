@@ -23,10 +23,10 @@
     The `-n` argument tells macOS to open up a new instance of the application.
 - question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
   answer: >
-    Apple has increased security measures on their system over the years
-    and requires additional steps to make the process as simple as possible. Use
-    the Unix/Linux distribution and follow
-    [these instructions](wiki/mac_issues.html) to get things working on a Mac.
+    Use the `pkg` installer on Adoptium to install either the JRE or JDK version of
+    Java you need (either 11 or 17, 11 is currently recommended). For example, the
+    version for the Apple Silicon (M-Series) Macs can be found [here](https://adoptium.net/temurin/releases/?os=mac&arch=aarch64&version=11).
+    Additional information can be found on the [macOS Issues](wiki/mac_issues.html) page.
 - question: "How do I use more, or less, memory?"
   answer: >
     By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory.
