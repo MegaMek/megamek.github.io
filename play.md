@@ -27,7 +27,7 @@ to get started.
 
 #### Video Tutorials
 
-We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/megamek-games/video-tutorials-for-megamek/). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
+We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/index.php/topic,72636.0.html). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
 
 #### A First Game of MegaMek
 

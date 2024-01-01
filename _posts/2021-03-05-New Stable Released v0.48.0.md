@@ -29,7 +29,7 @@ Due to changes in downloading Java that Oracle has made, we are recommending pla
 
 ## I want to help
 
-We often get people ask how they can help the projects. Give [our community page](https://megamek.org/community.html). The biggest thing we need right now is people to help with documentation. For example, write the steps for how to do something in a way we can use on our wiki. We have old manuals that need updating with modern screen shots. Got a talent for videos? We'd love to see more videos like [these](https://bg.battletech.com/forums/megamek-games/video-tutorials-for-megamek/), but for MekHQ and MegaMekLab.
+We often get people ask how they can help the projects. Give [our community page](https://megamek.org/community.html). The biggest thing we need right now is people to help with documentation. For example, write the steps for how to do something in a way we can use on our wiki. We have old manuals that need updating with modern screen shots. Got a talent for videos? We'd love to see more videos like [these](https://bg.battletech.com/forums/index.php/topic,72636.0.html), but for MekHQ and MegaMekLab.
 
 If you have art skills, we really need someone to tackle sprites for the Aerospace units. Deadborder has his hands full keeping up with the ground units.
 
