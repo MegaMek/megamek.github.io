@@ -79,6 +79,24 @@ a {
   }
 }
 
+.navbar-nav a.nav-link {
+  &:link {
+    color: #fffacd;
+  }
+
+  &:visited {
+    color: #fffacd;
+  }
+
+  &:hover {
+    color: #ffd700;
+  }
+
+  &:active {
+    color: #f89406;
+  }
+}
+
 a.footer-link {
   &:link {
     color: #A57E54;
