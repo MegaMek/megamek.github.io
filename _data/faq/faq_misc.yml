@@ -26,3 +26,6 @@
     possible on a computer. To put it another way, every time the virtual die is
     rolled, it stands a one-in-six chance of generating each number, one through
     six, and each roll is independent of previous rolls.
+- question: "I keep hearing about looking at the Wiki. Where is the Wiki?!?!"
+  answer: |
+    That can be found on GitHub [here](https://github.com/MegaMek/megamek/wiki).
