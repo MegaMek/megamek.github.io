@@ -1,13 +1,30 @@
 file,program,caption
-dropships.png,MegaMek,A battle with dropships on the tarmac
-night_battle.png,MegaMek,A battle at night with illumination
-interstellar_map.png,MekHQ,Interstellar map
-movement_helper.png,MegaMek,Visual aid for movement choice
-range_brackets.png,MegaMek,Showing range brackets for weapons
-mml_firsttab.png,MegaMekLab,Desiging a Mek
-mhq_fdm.png,MekHQ,A TO&E with custom portraits
-terrain3d_volcano.png,MegaMek,3D terrain changes on a volcano
-arty_turrets.png,MegaMek,A battle with artillery targeting and turrets
-MMDarkMode.png,MegaMek,Sample of Dark Mode Theme
-MMLDarkMode.png,MegaMekLab,Sample of Dark Mode Theme
-stratcon-1.png,MekHQ,StratCon Has Been Released!
+MM_dropships.png,MegaMek ,A battle with dropships on the tarmac
+MM_Night_Battle.png,MegaMek ,A battle at night with illumination
+MM_Arty_Turrets.png,MegaMek ,A battle with artillery targeting and turrets
+MM_InGame_Tooltip.png,MegaMek ,Improved in game unit tool tip
+MM_Movement_Helper.png,MegaMek ,Visual aid for movement choice
+MM_Range_Brackets.png,MegaMek ,Showing range brackets for weapons
+MM_Unit_Selector.png,MegaMek ,Detailed unit selector (fluff images not included)
+MM_Lobby_Camo.png,MegaMek ,Lobby with update camo choices and selector
+MM_Advanced_Search_1.png,MegaMek ,MegaMek Advanced Search 
+MM_Advanced_Search_2.png,MegaMek ,MegaMek Advanced Search - Unit
+MM_Advanced_Search_3.png,MegaMek ,MegaMek Advanced Search - Quirk Search
+MM_Imp_BV_Reporting.png,MegaMek ,Improved BV Reporting and Calculation
+MM_RAT_Generator.png,MegaMek ,Ability to build custom RATS based on canon data 
+MM_Force_Generator_Structure.png,MegaMek ,Ability to generate forces to play
+MM_AS_Card_Support.png,MegaMek ,Alpha Strike Card Support (including MegaMekLab)
+MM_SBF_Support.png,MegaMek ,Strategic BattleForce Support
+MM_DarkMode.png,MegaMek ,Sample of Dark Mode Theme
+MekHQ_Interstellar_Map.png,MekHQ,Interstellar map
+MekHQ_Stratcon_CC.png,MekHQ,StratCon Alpha new map and enviromental system
+MekHQ_1.png,MekHQ,Company Generator - Structure
+MekHQ_2.png,MekHQ,Company Generator - Options
+MekHQ_3.png,MekHQ,Company Generator - Produced ToE
+MekHQ_FDM.png,MekHQ,Custom ToE
+MekHQ_Ranks.png,MekHQ,A TO&E with custom portraits
+MekHQ_Stratcon.png,MekHQ,StratCon Pre-Alpha
+MML_UI_Improvements.png,MegaMekLab,Desiging a Mek
+MML_Detachable_Equipment.png,MegaMekLab,Detachable Equipment Table for crit assignment
+MML_Quirk_Management.png,MegaMekLab,Manage Quirks and Roles in MegaMekLab
+MML_DarkMode.png,MegaMekLab,Sample of Dark Mode Theme
