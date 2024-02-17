@@ -1,6 +1,6 @@
 **Welcome All to 0.49.18!**
 
-This release is MASSIVE. We've managed to push a ton of code in the last six weeks. We have a big mix of new stuff, bug fixes and general improvements. Being the first release since the State of the Universe (read here if you missed it) it's too early to tell if this is a MILESTONE. We have too much stuff in all three programs to highlight everything so we recommend giving the change log a good look. But some highlights in no particular order.
+This release is MASSIVE. We've managed to push a ton of code in the last six weeks. We have a big mix of new stuff, bug fixes and general improvements. Being the first release since the [State of the Universe (read here if you missed it)](https://megamek.org/2024/01/19/State-of-the-Universe!.html) it's too early to tell if this is a MILESTONE. We have too much stuff in all three programs to highlight everything so we recommend giving the change log a good look. But some highlights in no particular order.
 
 **MegaMek**  
 + Fixes for AS conversions
