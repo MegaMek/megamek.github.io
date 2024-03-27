@@ -1,14 +1,15 @@
-**Welcome All to 0.49.18!**
+# Welcome All to 0.49.18
 
 This release is MASSIVE. We've managed to push a ton of code in the last six weeks. We have a big mix of new stuff, bug fixes and general improvements. Being the first release since the [State of the Universe (read here if you missed it)](https://megamek.org/2024/01/19/State-of-the-Universe!.html) it's too early to tell if this is a MILESTONE. We have too much stuff in all three programs to highlight everything so we recommend giving the change log a good look. But some highlights in no particular order.
 
-**MegaMek**  
+## MegaMek
+
 + Fixes for AS conversions
 + Fixes to the new User Directory
 + Implement the Internal Bomb Bay Quirk (fear the Torrent)
 + Added gyro/NUL ID/ to the advanced search
 + Improvements to Aerospace flight paths and how shortcuts interact with them
-+ Anti-Mek infantry now properly matches construction rules. 
++ Anti-Mek infantry now properly matches construction rules.
 + Start of a major rework on how we manage armor types
 + TAG-phase Torso Twist returns
 + Major rework around Mek Clan Chassis Names (this could impact MekHQ)
@@ -24,88 +25,99 @@ This release is MASSIVE. We've managed to push a ton of code in the last six wee
 
 ![alt text](https://i.imgur.com/9qgaJ3hl.png)
 
+Princess has successfully graduated from [Blackjack's advanced munitions course](https://bg.battletech.com/forums/index.php?topic=57647.msg1990758#msg1990758). You will see more ammo switching, making MML and ATM's more effective. If the players give her alternate ammo types she will use them. As an example give her TAG units, and Artillery with homing ammos.
 
+## MegaMekLab
 
-
-
-Princess has successfully graduated from [Blackjack's advanced munitions course](https://bg.battletech.com/forums/index.php?topic=57647.msg1990758#msg1990758). You will see more ammo switching, making MML and ATM's more effective. If the players give her alternate ammo types she will use them. As an example give her TAG units, and Artillery with homing ammos. 
-
-**MegaMekLab**
 + Numerous bug fixes
 + Expanding the Summary view information including showing earliest year possible
 + Numerous improvements to record sheets
-+ [Implements Anti-Mek Equipment](https://github.com/MegaMek/megameklab/pull/1396) (If your an infantry user give this a read) 
++ [Implements Anti-Mek Equipment](https://github.com/MegaMek/megameklab/pull/1396) (If your an infantry user give this a read)
 
-**MekHQ**
+## MekHQ
+
 + Bug fixes
 + Repair bay unit list show if unit is in repair or salvage mode
 + add max contract salvage percentage to campaign options
 + manually set TO&E force commander
 
-**MekHQ StratCon Alpha**  
+### MekHQ StratCon Alpha
+
 + [Updated Stratcon Modifiers](https://github.com/MegaMek/mekhq/pull/3801)
 + [StratCon Heavy Battles](https://github.com/MegaMek/mekhq/pull/3840)
 
-**A Few Reminders:**
+## A Few Reminders
 
-1. **Unit File Alignment with MUL:**  
+1. **Unit File Alignment with MUL:**
    We aligned unit files with the MUL by removing the term "(Standard)", resulting in the removal of nearly 1000 instances. Our Quality Assurance (QA) team has thoroughly tested these changes. There's a potential risk in MekHQ with CPNX files due to their reliance on unit names. If errors occur while loading your campaign file, we apologize for the inconvenience. For assistance, please refer to [this post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units).
 
-2. **Removal of Unofficial Units Zip:**  
-   Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.  
-   
+2. **Removal of Unofficial Units Zip:**
+   Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.
+
    To reintegrate the units:
-   - Download the zip file from [MegaMek Extras HERE](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
-   - Right-click and use the "save link as" option.
-   - Save it as a zip to the data\mechfiles folder of the program.
-     - We suggest saving it to a customs folder within data\mechfiles.
-   - They will be added upon restart.
 
-3. **User Data Directory for MegaMek, MegaMekLab, and MekHQ:**  
-   We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.  
-   
-   **Key Points:**
-   - **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
-   - **File Placement:**
-     - Fonts and units (`.mtf`, `.blk`) can be placed anywhere within this directory.
-     - Camo images in `/data/images/camo/`
-     - Portrait images in `/data/images/portraits/`
-     - Unit fluff images in `/data/images/fluff/<unit type>/`
-     - Rank and award definition files (`.xml`) in `/data/universe/`
-   - **Consistent Access:** Resources in this directory are usable across different game versions and modules without needing to relocate them for each new install.
-   - **Implementation:** Set up this directory via the client settings. A game restart is required for changes to take effect.
+- Download the zip file from [MegaMek Extras HERE](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
+- Right-click and use the "save link as" option.
+- Save it as a zip to the data\mechfiles folder of the program.
+   - We suggest saving it to a customs folder within data\mechfiles.
+- They will be added upon restart.
 
-4. **MekHQ Campaign Files:**  
+3. **User Data Directory for MegaMek, MegaMekLab, and MekHQ:**
+   We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
+
+## Key Points
+
+- **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
+- **File Placement:**
+   - Fonts and units (`.mtf`, `.blk`) can be placed anywhere within this directory.
+   - Camo images in `/data/images/camo/`
+   - Portrait images in `/data/images/portraits/`
+   - Unit fluff images in `/data/images/fluff/<unit type>/`
+   - Rank and award definition files (`.xml`) in `/data/universe/`
+- **Consistent Access:** Resources in this directory are usable across different game versions and modules without needing to relocate them for each new install.
+- **Implementation:** Set up this directory via the client settings. A game restart is required for changes to take effect.
+
+4. **MekHQ Campaign Files:**
    Remember, MekHQ campaign files **are NOT** backward compatible. Moving your campaign to a newer version prevents reverting to an older one, but keeping backups allows play in both versions for comparison.
 
-**Stable release**
+## Stable release
+
 Please review the [State of the Universe](url=https://bg.battletech.com/forums/index.php?topic=83774.0
 
-**Java 11 and 17**
+## Java 11 and 17
+
 We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 
-**Social Media**
+## Social Media
+
 Join our [official MegaMek Discord](https://discord.gg/megamek), our primary community hub for the suite. We offer superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games). We're also part of community Discords [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). Find us on Facebook at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek).
 
-**Mac Users**
+## Mac Users
+
 [Check out this workaround for Mac Operating Systems](https://megamek.org/wiki/mac_issues.html).
 
-**Contributing**
+## Contributing
+
 Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-to-help).
 
-**Updating Your Campaign:**
+## Updating Your Campaign
+
 1. Make backups of your campaigns and customs.
 2. Treat each release as stand-alone; copy your data forward from older versions, never backward.
 3. Do not copy MegaMek saves or any preference file from a different version.
 
 ---
-**Change Logs (Release Specific) and Download Links**
 
-**MegaMek Change Log**  
+## Change Logs (Release Specific) and Download Links
+
+### MegaMek Change Log
+
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.18)
-**0.49.18 (2024-02-16 1900 UTC)**
+
+#### 0.49.18 (2024-02-16 1900 UTC)
+
 + Fix #5004: Prevents an error when configuring LAMs or quadvees in the lobby
 + PR #5002, #5001: AS conversion: fix BA medium and long range damage with SSW, STOL units and aerodyne DS/SC now receive VSTOL
 + PR #4993: Alpha Strike aero support vehicles (fixced wing support) will now find and display their fluff images if there are any
@@ -133,12 +145,12 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #5059: Unit tooltip pilot updates
 + PR #5057: Lobby force updates
 + PR #5041: Princess Ice & Infantry On Ice Fix
-+ PR #5069: Reset forces when resetting game 
-+ Fix #5064, Fix #5065: Aero movement cenvelope and acc/dec next optimizations.
++ PR #5069: Reset forces when resetting game
++ Fix #5064, Fix #5065: Aero movement envelope and acc/dec next optimizations.
 + PR #5071: MUL parser updates
 + PR #5075: Laser-guided bombs now receive a -2 bonus on tagged units
 + PR #5074: Infantry no longer incorrectly applies a BV unit type modifier
-+ PR #5040: Units with TAG weapons should now be able to torso twist in the Offboard / TAG phases in accordance with recent errata
++ PR #5040: Units with TAG weapons should now be able to torso twist in the Off board / TAG phases in accordance with recent errata
 + PR #5083: Misc Code stuff
 + Fix #4941: MechView Ammo Block
 + Fix #5070: CI Anti-Mek Gear - Implements proper Anti-Mek set up for Infantry
@@ -152,29 +164,32 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + Fix #5103: Check for not dusk dawn for searchlight penalty reduction
 + PR #5121: Bot command updates
 + Fix #4878: Princess non-combat PSR reduction
-+ Fix #5103, #5030, #5072: Correct issues with BAP targeting to hit bonus 
++ Fix #5103, #5030, #5072: Correct issues with BAP targeting to hit bonus
 + Fix #5073: Brings Quirks in line with Campaign Ops 4th printing table.
 + PR #5126: turn timer updates
 + PR #5132: Fix Long Tom Cannon not dealing damage to flying dropship
 + Fix #5104: To-hit calculation bug when shooting at VTOLs
-+ PR #5146: planetary conditions weather updates 
-+ PR #5140: BA tech advancement for Exoskeltons.
-+ PR #5147: Fix weather restrictions around wind 
++ PR #5146: planetary conditions weather updates
++ PR #5140: BA tech advancement for Exo-skeltons.
++ PR #5147: Fix weather restrictions around wind
 + Data: Implement Shrapnel #9 Laser Weapons.
 + PR #5159: Light and Heavy Machine Gun Ammo is mislabeled
 + Fix #5149, #5151: fix NPE in getHexTip(), fix NPE in doEntityDisplacement()
-+ PR #5173 Add bot command for dishonored players 
-+ Fix #4670: Hide entity statblocks from the hex tooltip when entity is hidden
-+ PR #5170: Use IGame in TurnOrdered 
++ PR #5173 Add bot command for dishonored players
++ Fix #4670: Hide entity stat blocks from the hex tooltip when entity is hidden
++ PR #5170: Use IGame in TurnOrdered
 + PR #5169: Code cleanup #5169
 + Fix #5155: Add checkbox to turn off showing player deployment on map preview
 + Fix #4952: Princess does not select alt ammo
 + Fix #5174: Quick Fix for structure not loading correctly
 + Fix #5112: Allow editing pilot hits in the lobby
 
-**MegaMekLab Change Log**   
+### MegaMekLab Change Log
+
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.18)
-**0.49.18 (2024-02-16 1900 UTC)**
+
+#### 0.49.18 (2024-02-16 1900 UTC)
+
 + Fix #1370: Closing a unit selection dialog without selecting a unit no longer leads to an error message displayed
 + Fix #1309: Cargo containers can no longer be added to battle meks (they remain available to industrial meks)
 + Fix #1358: Record sheets for beast-mounted infantry now show additional movement information
@@ -206,34 +221,37 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + Fix #1405: Fixed a bug with resetting system crits that lead to what seemed conflicts between XLFE, NullSig, and CLPS
 + Fix #1192: Fixed a bug with internal weapon and equipment linkage that lead to laser insulators sometimes affecting multiple lasers
 + PR #1402, #1412, #1417: Rework of the internal representation of Armor
-+ PR #1410: Adaptation to Mek Clan name separation in MM; Adds a clan chassis name field for Meks; for units such as the Mad Cat, 
++ PR #1410: Adaptation to Mek Clan name separation in MM; Adds a clan chassis name field for Meks; for units such as the Mad Cat,
             the IS name and clan name can be reordered on record sheets
 + PR #1411: StatusBar: calculate the correct total max weight for BA
 + Fix #1400: VTOLS print with an incorrect Hit chart
 + Fix #1203: Allow construction of BA exoskeleton before 2710
 + PR #1428: Use the configurable unit summary in MML
-+ PR #1427: Debug helper update  
++ PR #1427: Debug helper update
 + Fix #1419: Fix automatic placement of armors without crit requirement
-+ Fix #1421: Remove misc heat duplication in the status bar 
++ Fix #1421: Remove misc heat duplication in the status bar
 
-**MekHQ Change Log**   
+### MekHQ Change Log
+
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.18)
-**0.49.18 (2024-02-16 1900 UTC)**
+
+#### 0.49.18 (2024-02-16 1900 UTC)
+
 + PR #3805: Adaptations for the Internal Bomb Bay quirk
 + PR #3801: New StratCon Scenario Modifiers (Thanks Thom293)
 + PR #3788: Adjust campaign creation dialogs to have correct jdialod owner
 + Fix #3540: Manually set TO&E force commander
 + PR #3818: MUL parser updates
-+ PR #3816: Show if unit is in repair or salvage mode in repair bay. 
++ PR #3816: Show if unit is in repair or salvage mode in repair bay.
 + PR #3823, #3827, #3833: Rework of the internal representation of Armor
 + PR #3826: Adaptation to Mek Clan name separation in MM
 + Fix #3740: Consistent messaging in Daily Activity Log: ComStar bill vs. C-Bill
 + PR #3821: Add max contract salvage percentage to campaign options
 + Fix #3763: Reversing quality names in unit set quality GM menu
-+ Fix #3194: Awarding non-stackable medals to multiple people 
++ Fix #3194: Awarding non-stackable medals to multiple people
 + Issue #3781: Force commanders can be picked from among highest-ranking individuals
 + Fix #3843: Fix chassis lookup
-+ Fix #3842: Can't load prefab campaigns  
++ Fix #3842: Can't load prefab campaigns
 + PR #3849: StratCon Heavy Battles, by PhoenixHeart.
 
-Cheers! 
+Cheers!

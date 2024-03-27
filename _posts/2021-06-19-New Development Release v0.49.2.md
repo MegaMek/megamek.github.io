@@ -17,7 +17,6 @@ players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page
 [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able
 to user your package manager to install OpenJDK from their repositories.
 
-
 ## MegaMek
 
 We've got some more fixes to the map editor. SeaVee's camo pack has been retired and replaced by DeadBorders pack, which is a larger pack and look darn good with his sprites. Speaking of camo we added a layered underlay to the sprites and you'll notice another improvement in there look. Some improvements in game like indicating if a unit is narc'd, and show which units can move on the facing arrow.
@@ -32,7 +31,7 @@ The lab got some bug fixes, a chunk of these impact printing Record sheets, and 
 
 ## MekHQ
 
-Nickargua has been working hard on the Stratcon Alpha and this release as numerous fixes (see change log below). Windchild has been busy improving various dialogs and reports. We also have added colours customizability in the MekHQ options. Extra time for maintenance is available for those needing help in the Third Succession War. Improvements to the rank sorting. The GM tools dialog is completely rewritten. We continue to chip away at refit issues.
+Nickargua has been working hard on the Stratcon Alpha and this release as numerous fixes (see change log below). Windchild has been busy improving various dialogs and reports. We also have added colors customizability in the MekHQ options. Extra time for maintenance is available for those needing help in the Third Succession War. Improvements to the rank sorting. The GM tools dialog is completely rewritten. We continue to chip away at refit issues.
 
 ## SOCIAL MEDIA
 
@@ -65,7 +64,7 @@ Another reminder when moving between versions:
 + Issue #2878: Princess configuration dialog no longer locks up when trying to click Ok
 + Issue #2886: Wreck sprites display correctly when zoomed; removed wreck sprite labels; indicator of what's wrecked shows up in tooltip popup
 + PR #2887: Menu bar scales with the rest of the GUI
-+ PR #2885: Fix "weird" keybind defaults
++ PR #2885: Fix "weird" key-bind defaults
 + Issue #2884: preventing Array Index Out of Bound error when adding bombs to a LAM
 + PR #2880: "De-hexed" water and pavement (partial-looking water and pavement hexes that are functionally water and pavement, but look more "realistic" like the recent physical CGL hex maps)
 + PR #2869: Camouflage: Deadborder Pack, Base Component Swapover
@@ -82,7 +81,7 @@ Another reminder when moving between versions:
 + PR #2923: Prototype TSM
 + Issue #2672: Fuel Tank Magnitude Tooltip Correction
 + PR #2915: Improved unit image scaling in the lobby
-+ Issue #929: Narced status on unit tooltip
++ Issue #929: NARCed status on unit tooltip
 + Issue #2920: Prevent lock-up when resolving homing artillery attacks vs tagged hex
 + PR #2929: Players can now skip deploying minefields
 + Issue #2543: Board images save at current zoom, game summary at zoom 1
@@ -101,7 +100,7 @@ Another reminder when moving between versions:
 
 + Issue #912: Changing AMS, A-Pod, and B-Pod display text from PD to PB
 + Issue #905: Preventing Full Head Ejection NPE
-+ PR #917: Remove prototype heatsinks from equipment tab
++ PR #917: Remove prototype heat-sinks from equipment tab
 + PR #918: Show unused tonnage in the status bar
 + PR #919: Show multiple equipment locations on the record sheet
 + Issue #870: Wrong aerospace fighter speed in clipboard export
@@ -112,7 +111,7 @@ Another reminder when moving between versions:
 + Issue #884: Reengineered laser damage type
 + PR #926: Enable infantry field guns to use HVACs, if you wanted to do that for some reason
 + Issue #888: Artemis IV Validation
-+ Issue #890: Mixed Tech QuaddVee Compact Heat Sinks multiple problems
++ Issue #890: Mixed Tech QuadVee Compact Heat Sinks multiple problems
 + Issue #897: Additional peculiar entry for Clan Machine-Gun Ammo
 + Bug: IS MASC not filtered out with Clan tech base
 
@@ -128,7 +127,7 @@ Another reminder when moving between versions:
   - Updated arrival altitude for aerospace fighter reinforcement modifiers (they were showing up on the ground)
   - Standardized "recon" type scenarios to have the same criteria as Tukayyid scenarios
   - Various briefing text clarifications
-  - Store artillery offboard status between campaign saves
+  - Store artillery off-board status between campaign saves
   - On Integrated command, don't immediately and incorrectly undeploy lances after generating scenarios
   - Adjusted manual force deployment rules (unlimited stacking on allied facilities, one per hex otherwise, no manual deployment under integrated command)
   - Tighten up reinforcement restrictions (can't deploy units that can't actually deploy; can't double deploy units; can now only deploy fight lances or have to use a support point/VP)
@@ -148,10 +147,10 @@ Another reminder when moving between versions:
 + Issue #2642: StratCon Tab: Force Table Background Doesn't Work Properly in Nimbus
 + Issue #2610: Adding Tech Officer migration from the reference class
 + Issue #2534: Fixing Missing Clan Check For Endo Steel Location Repairs
-+ Issue #2382: Large Vessel Clan Repair and Maintenance modifier no longer applies to Clanners
++ Issue #2382: Large Vessel Clan Repair and Maintenance modifier no longer applies to Clan
 + PR #2667: Preventing NONE Primary Role Hiring
 + Issue #2485: Default Subcontract Name, Briefing Tab Mission Tracking
-+ PR #2284: MHQ Options: Adding Colours Customizability
++ PR #2284: MHQ Options: Adding Colors Customizability
 + Issue #2491: Allow extra time for maintenance per StratOps/New CamOps repair/maintenance rules.
 + Issue #2661: Can no longer select the same unit across multiple selectors in StratCon scenario management UI.
 + Issue #2548: Making ROM Designation and Manei Domini Class and Rank part of the rank system data
@@ -163,7 +162,7 @@ Another reminder when moving between versions:
 + PR #2634: AtB Enum (Morale, Contract Type, Lance Role) tooltips
 + PR #2691: ResolveScenarioWizardDialog Uses Standardized Entity Readout Dialog for Unit Views
 + Issues #2116 and #2589: Improving Rank and Title Sorting
-+ PR #2694: Hangar Tab: Maintenance Colour No Longer Shows with Maintenance Disabled
++ PR #2694: Hangar Tab: Maintenance Color No Longer Shows with Maintenance Disabled
 + PR #2693: GM Tools Dialog Rewrite
 + PR #2422: Improve simple accessibility faults
 + Issue #2703: Defend against parts without campaigns after Refit

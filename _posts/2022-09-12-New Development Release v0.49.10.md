@@ -1,4 +1,4 @@
-### Welcome all to 0.49.10!
+# Welcome all to 0.49.10
 
 This is release is quick release to address a couple of major bugs in 49.9. Please see [the release notes for 49.9](https://megamek.org/2022/09/07/New-Development-Release-v0.49.9.html) for everything added in 0.49.9.
 
@@ -6,15 +6,15 @@ Going to reiterate this comment.  As mentioned in the [49.9](https://megamek.org
 
 We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.7) you just need to keep them in separate folders. Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
-### MegaMek
+## MegaMek
 
 As mentioned 49.9 had a couple of critical bugs (Ammo crash and Mini-Map issues) in it and this release addresses those.
 
-### MegaMekLab
+## MegaMekLab
 
 No Changes in this release
 
-### MekHQ
+## MekHQ
 
 No Changes in this release
 

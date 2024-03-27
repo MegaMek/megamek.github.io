@@ -20,7 +20,7 @@ But wait, there's more. You may have noticed that I wrote "planetary system" and
 
 ![planetary system view](/assets/images/planetary_system/planetary_system_view.png){:class="img-fluid w-75"}
 
-That's right, you are looking at a map of the planetary system, complete with markers indicating the current unit's course and diretion of travel, and indicators for recharge stations at the zenith and nadir points.
+That's right, you are looking at a map of the planetary system, complete with markers indicating the current unit's course and direction of travel, and indicators for recharge stations at the zenith and nadir points.
 
 All of this is made possible by a massive undertaking involving a legion of contributors to refactor all of our "planet" data into "planetary system" data. As a baseline, we used the *Campaign Operations* rules for generating star systems to flesh out each star system circa [FedCom Civil War](https://www.sarna.net/wiki/FedCom_Civil_War) and then used a lot of math to project values forward and backwards in time. You can read all about the gory details of the project [here](https://github.com/AaronGullickson/system_generation).
 
@@ -33,7 +33,7 @@ Well looking cool is almost reason enough, but the planetary system approach wil
 * Allowing units to use pirate jump points
 * Allowing travel to other planets in a planetary system
 * Helping to generate information on manufacturing facilities
-* Using socio-industrial codes of planetary systems to help resolve acquistion of parts and equipment (see the planetary acquisition rules currently in MekHQ for an example of this)
+* Using socio-industrial codes of planetary systems to help resolve acquisition of parts and equipment (see the planetary acquisition rules currently in MekHQ for an example of this)
 * Calculating the expected time of an HPG transmission
 
 #### But Its Not Canon!
@@ -55,4 +55,4 @@ Some users may have made changes to the underlying planet data for their campaig
 1. You may have used the in-game planetary editor to add custom events to a particular planet like faction changes. These custom planetary events *should* load correctly into the new system in 0.47.1 and be saved correctly into the new system when you save a game. However, this is a development version so please post a bug report if you have problems.
 2. You may have edited the planets.xml or planet_events.xml file in the data folder itself to create an AU dataset. This is a more difficult situation. At present, custom planets.xml and planet_events.xml will not load into MekHQ 0.47.1 because we use a new XML structure in which the `planet` tag is wrapped inside a `system` tag. If you are XML savvy, you can make your custom XML work by wrapping each of your `planet` objects in a `system` object and then wrapping the whole thing in a `systems` tag. However, you will only have one planet per system. At some point, we hope to make the code for generating systems available as executable which will make it easier for those with AU campaigns to transition to the new system, but that is farther down the road so you may want to hold off on 0.47.1.
 
-The system in 0.47.1 has also disabled the ability to add custom events to planets. This is temporary. In future development releases in this cycle we plan to add back in the ability to add custom events for planets and systems. 
+The system in 0.47.1 has also disabled the ability to add custom events to planets. This is temporary. In future development releases in this cycle we plan to add back in the ability to add custom events for planets and systems.

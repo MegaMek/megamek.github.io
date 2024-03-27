@@ -59,7 +59,7 @@ We think we now have a [workaround for Mac Operating Systems](https://megamek.or
 
 ## Change Logs (Release Specific) and Download Links
 
-###MegaMek
+### MegaMek
 
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.4)
 
@@ -144,7 +144,7 @@ We think we now have a [workaround for Mac Operating Systems](https://megamek.or
 + Issue #2865: Specialist Infantry Salary Multiplier
 + PR #2844: AbstractIcon: Force Camouflage: Layering and Properly Sending to MegaMek
 + Data: Adding UlyssessSockdrawer's excellent Co-op guide to docs folder.
-+ Issue #2873: Part doesn't serlialize brandNew flag
++ Issue #2873: Part doesn't serialize brandNew flag
 + Issue #2878: Prevent dropship bay doors from continuously breaking down when loading saves
 + Issue #1236: Adding full support for Tripod 'Mechs
 + Issue #1420: Can No Longer Deploy a Person Multiple Times

@@ -7,14 +7,6 @@
           <i class="fas fa-calendar"></i>
           <time>{{ page.date | date_to_string }}</time>
         </div>
-        <!-- disable until I figure out tags
-        http://longqian.me/2017/02/09/github-jekyll-tag/
-        <ul>
-          {% for tag in page.tags %}
-            <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
-        -->
       </div>
       <div class="post-content">
         {{ content }}

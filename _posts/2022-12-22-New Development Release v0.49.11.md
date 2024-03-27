@@ -1,10 +1,10 @@
-### Welcome all to 0.49.11!
+# Welcome all to 0.49.11
 
 It's been a while since our last Dev release. Things had slowed as people took some much needed breaks.
 
 But we have got a lot of exciting things in this release. We've had a couple of new and returning contributors and they've really worked on lots of fixes and improvements. We have the usual bug fixes in all three programs, see below for the detailed list but the big one in this release is...
 
-### Alpha Strike Support!
+## Alpha Strike Support
 
 OK that's tackle the elephant first..this is **NOT** a playable version of Alpha Strike (Which if it every happened would be MegaStrike) it's strictly support for Alpha Strike.
 
@@ -16,7 +16,7 @@ We found that the 49.10 release had more stability and general improvements arou
 
 Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
-### MegaMek
+## MegaMek
 
 In addition to Alpha Strike Support there are lots of UI/UIX improvements
 
@@ -40,11 +40,11 @@ In addition to Alpha Strike Support there are lots of UI/UIX improvements
 + Data wise - Deadborder continues to fix and improve sprites, and we'll got lots of unit fixes and RecGuide 26 units in.
 plus bug fixes see change log for details.
 
-### MegaMekLab
+## MegaMekLab
 
 We got a few fixes and we've made some improvements to record sheets this includes engine ratings, improved visibility of armor type, and internal structure
 
-### MekHQ
+## MekHQ
 
 We have quite a few fixes and improvements to the company generator.
 

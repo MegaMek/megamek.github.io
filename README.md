@@ -102,6 +102,7 @@ from the command line within the repository run:
 ```Shell
 docker build -t jekyll .
 ```
+
 to build a local Docker image containing all the tools needed to compile and host the site.
 Once the image is built, just use:
 

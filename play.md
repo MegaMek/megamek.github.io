@@ -16,7 +16,7 @@ things work, we do assume that players are familiar with the rules.
 
 If you are not familiar with the Battletech rules but would like to try
 MegaMek, you can download the
-[free quickstart rules](http://bg.battletech.com/wp-content/uploads/2011/10/BattleTechQuick-Start-Rules.pdf?x64300)
+[free quick-start rules](http://bg.battletech.com/wp-content/uploads/2011/10/BattleTechQuick-Start-Rules.pdf?x64300)
 to get started.
 
 - To learn more about the core rules, you should get the [*Total Warfare* core rulebook](https://store.catalystgamelabs.com/products/battletech-total-warfare-pdf).
@@ -54,8 +54,8 @@ are extensive, so we won't review them all here, but the list below will direct
 you to areas for further exploration.
 
 - The `Game Options` button in the upper left of the game lobby contains a wide variety of options that you can use in your game. Many of these options are based on official game rules, but many are also unofficial rules based on commonly requested feature enhancements. Mouse over an option to learn more about it.
-- On the "Select Map" tab, you can select different `planetary conditions` that will change game play. These conditions include weather and lighting, as well as other conditions such as electro-magnetic interference. More information about these planetary conditions and how they affect gameplay is available in the [*Tactical Operations: Advanced Rules* rulebook](https://store.catalystgamelabs.com/products/battletech-tactical-operations-advanced-rules?variant=32091242463266).
-- Double-clicking on a unit in the unit list in the lobby will bring up a unit dialog with a variety of `unit and pilot options`. You can change the pilot's name, skill levels, and even add a portrait. If you enable special abilities or quirks in the game options, you can add them here. You can also change ammo loadouts, and set options for how the unit deploys.
+- On the "Select Map" tab, you can select different `planetary conditions` that will change game play. These conditions include weather and lighting, as well as other conditions such as electro-magnetic interference. More information about these planetary conditions and how they affect game play is available in the [*Tactical Operations: Advanced Rules* rulebook](https://store.catalystgamelabs.com/products/battletech-tactical-operations-advanced-rules?variant=32091242463266).
+- Double-clicking on a unit in the unit list in the lobby will bring up a unit dialog with a variety of `unit and pilot options`. You can change the pilot's name, skill levels, and even add a portrait. If you enable special abilities or quirks in the game options, you can add them here. You can also change ammo load outs, and set options for how the unit deploys.
 - You can use the `Random Skills` dialog in the lobby to assign skills to pilots using randomization, based on an overall skill level for your force.
 - You can use the `Random Name` dialog in the lobby to randomize names based on a Battletech faction.
 - You can use the `Create Random Army` dialog to generate a selection of units for yourself or for the bot. You can base this on matching a certain level of battle value, pull from official random assignment tables (RAT), or use the force generator to generate an entire force, complete with a TO&E.
@@ -70,7 +70,7 @@ When you start up a game of MegaMek, you also start up a server that other playe
 1. You will need to know your external IP address. You can get this from your router, from websites like [What is My IP](https://www.whatismyip.com/), or by simply googling "what is my IP address?"
 2. In most situations, you will need to configure your router to forward requests to port 2346 (or a different port if you changed the default) to the computer you are actually playing on in order for other players to connect over the internet. This will vary by router, but typically involves using the router's web-based software to add [port forwarding](https://portforward.com/).
 
-You can also run the game "hotseat" on the same computer. In this case, you want to open up two instances of MegaMek. Start the game with one instance and connect to `localhost` from the second instance.
+You can also run the game "hot seat" on the same computer. In this case, you want to open up two instances of MegaMek. Start the game with one instance and connect to `localhost` from the second instance.
 
 You can register your game when you start it up. This will list your game on our [list of servers](/servers.html) and make it easier for other players to find. It will also list your external IP address. You will still need to ensure that port forwarding is working properly in order for other players to connect.
 

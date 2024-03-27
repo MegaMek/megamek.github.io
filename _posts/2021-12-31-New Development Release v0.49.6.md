@@ -5,7 +5,7 @@ Welcome all to 0.49.6, and Happy New Year!
 This release is a nice mixture of suite-wide internal changes, bugfixes, errata, and new MegaMek, MegaMekLab, and MekHQ features. This release is also the first one that has seen some testing by our newly created QA team. Please join the
 [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD)  if you'd like more information or to volunteer to join the QA team.
 
-## Java 11 and the 0.49.x Releases.
+## Java 11 and the 0.49.x Releases
 
 We have made the change to Java 11, meaning you'll need to update to use the **0.49.x Development Releases**. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) (the name change is solely a rebrand on their side, and no changes are required if you've already downloaded OpenJDK 11).  We have a help page [for windows](https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK) and
 [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able to user your package manager to install OpenJDK from their repositories.
@@ -62,7 +62,7 @@ UlyssesSockdrawer is running a popular Solaris VII campaign on our Discord that 
 
 We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround for Mac Operating Systems[/url].
 
-## Updating Your Campaign:
+## Updating Your Campaign
 
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
@@ -70,7 +70,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 
 ## Change Logs (Release Specific) and Download Links
 
-###MegaMek
+### MegaMek
 
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.6)
 
@@ -82,7 +82,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 + PR #3228: Base Components: PlayerSettingsDialog Update
 + Issue #3231: Detachable Unit Detail Tweaks
 + Data: Updating Deadborder Map Pack and some quirk fixes and surname fixes.
-+ PR #3243: Add Separate KeyBind for ingame Undo Last Step
++ PR #3243: Add Separate KeyBind for in game Undo Last Step
 + PR #3248: Preventing Conditional Ejection on Cockpit Crit
 + Issue #3245: Prevent concurrent modification exception when sending out player turn updates
 + Issue #3237: Prevent VTOLs from getting stuck in a swamp while going up and down in the air
@@ -99,11 +99,11 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 + PR #3292: Quad Mechs no longer swap cover and aiming mode when doing a head hit edge reroll
 + PR #3289: Upgrading Mockito to 4.1.0
 + Issue #3240: Fixing JumpShip no Grav Deck Crit Handling
-+ Issue #3273: Fixing Offboard Artillery NPE
++ Issue #3273: Fixing Off-board Artillery NPE
 + PR #3301: Fixing Quirk NPE and Quirk Tool VTOL Handling
 + Data: Rec Guide 19, various unit fixes and fluff.
 + PR #3305: Adding CodeQL GitHub Action - Automated Code Insights
-+ PR #3297: Rewriting Telemissile AMS to handle LGTM, Performance, and Code Issues
++ PR #3297: Rewriting Tele-missile AMS to handle LGTM, Performance, and Code Issues
 + PR #3299: LGTM Code Issues: Fixes Round 1
 + PR #3310: JUnit Update to 4.13.2 from 4.12
 + Issue #3312, 3313: Prevent bot units from spotting aerospace fighters and sensor contacts for indirect fire
@@ -131,7 +131,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 + Issue #908: Corrections to the Aero reference tables
 + Issue #943: Add CASE info to ammo on non-Mech Record Sheets
 + Issues #646, #953: Show Ammo Shots and Weapon Maximum Damage in tooltips
-+ Issue #785: Tab-based Scrollpanes
++ Issue #785: Tab-based Scroll panes
 + PR #961: Preserve expanded state of Large Aero Weapon Bays
 + PR #960, 963: Large Aero Crit Visual Improvements
 + PR #864: Update to Apache FOP 2.5: Modern Font Support Improvements
@@ -166,7 +166,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 + PR #2986: Fixing Unit Market Preference Copy/Paste Error
 + PR #3002: Log4j2 2.17.1 Swapover from Log4j1 1.2.17
 + PR #3004: JUnit Update to 4.13.2 from 4.12
-+ Issue #2863: Adding Dates Personnel Tab Filter, Displaying Dates, and adding Pregnancy Colour
++ Issue #2863: Adding Dates Personnel Tab Filter, Displaying Dates, and adding Pregnancy Color
 + PR #2851: Personnel Modules: Marriage: Modularization and Expanded Options
 + PR #2908: Personnel Modules: Divorce: Modularization, Random Divorce, Expanded Options, and Bulk Manual Divorce
 + PR #3017: PersonnelTableModelColumn Enum: Improved Personnel Comparator Usage, Other Personnel Tab Filter, Improved Column Uses for the Batch XP and Personnel Market Tables
