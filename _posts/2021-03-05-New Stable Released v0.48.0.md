@@ -86,7 +86,7 @@ There have been significant Personnel Improvements since stable. These improveme
 
 We’ve had Numerous QoL improvements such as keyboard shortcuts, natural order sorting, and improved bulk selection options. This includes numerous UI improvements and filtering options while we work on improving the backend code to improve the performance. We've also implemented an autosave, added campaign subset exports, standardized the unit selector with MegaMek, and added dark mode. Further, customizations in general have had improvements with the new MekHQ Options adding fully customizable date formats and more.
 
-The GM Tools have been upgraded allowing you access to this dialog to roll for unit, bloodname, callsign, origin planet, and their name, or just access it from the Manage Campaign/GM Tools Dialog in the top bar. We’ve also added Hangar Tab Colours to better show what’s happening to units. The light purple displays any uncrewed units, while orange shows for any units missing a tech that requires one. Also, in the hanger we added the battle damage decals to show on the MekHQ sprites.
+The GM Tools have been upgraded allowing you access to this dialog to roll for unit, bloodname, callsign, origin planet, and their name, or just access it from the Manage Campaign/GM Tools Dialog in the top bar. We’ve also added Hangar Tab Colors to better show what’s happening to units. The light purple displays any uncrewed units, while orange shows for any units missing a tech that requires one. Also, in the hanger we added the battle damage decals to show on the MekHQ sprites.
 
 AtB continues to be a huge part of MekHQ and in the last year seen a huge increase in players using it. All of the changes impact AtB in some way, plus we’ve had fixes and improvements to it scattered all through this dev cycle, two notable ones being mission conclusion improvements and non-combatant forces.
 
@@ -94,7 +94,7 @@ Data-wise, we've had significant added lots of new news stories, a few new facti
 
 ## SOCIAL MEDIA
 
-We are also happy to announce we are starting up an [Official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). It will function like our Slack but gives us better voice support for those who use the [offical public servers](https://megamek.games).
+We are also happy to announce we are starting up an [Official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). It will function like our Slack but gives us better voice support for those who use the [official public servers](https://megamek.games).
 
 Also a reminder to drop into the [Slack channel](https://bit.ly/2KSu5yQ) to meet other players and harass the Devs that drop in and out. If Slack isn't your thing check out these Discords with MegaMek channels - [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52).
 

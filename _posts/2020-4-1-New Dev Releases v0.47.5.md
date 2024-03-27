@@ -18,10 +18,10 @@ MegaMek
 Lots of bug fixes, some errata implemented - looking at you Narrow/Low profile. But a couple of big new things. Fuel-air Explosives for when you just gotta kill that Clan Elemental Cluster. Princess has graduated the next level of artillery school, she can counter-battery fire and so can you. Thanks to Simon Landmine's testing of the new map editor there have been a bunch of bugfixes and further improvements to the map editor.
 
 MegaMekLab
-There is a staggering amount of bug fixes and the record sheet project has completed new Aerospace Sheets and conventional Infantry sheets. We are targetting BA and Protomeks in the next wave but no ETA.
+There is a staggering amount of bug fixes and the record sheet project has completed new Aerospace Sheets and conventional Infantry sheets. We are targeting BA and Protomeks in the next wave but no ETA.
 
 MekHQ.
-MekHQ has finally gone to the dark side with the dark mode implementation complete. Windchild's has done a lot of work on Personnel. These improvements add Random Marriages, divides names into Given Names and Surnames while adding trailing honourifics, Former Spouse Tracking, expanding Family Displays, and a few new marriage and divorce options relating to how names are changed. 
+MekHQ has finally gone to the dark side with the dark mode implementation complete. Windchild's has done a lot of work on Personnel. These improvements add Random Marriages, divides names into Given Names and Surnames while adding trailing honorifics, Former Spouse Tracking, expanding Family Displays, and a few new marriage and divorce options relating to how names are changed.
 
 Additionally, there are fourteen new options to campaigns (which can now be reach in existing campaigns through keyboard shortcuts: hold ALT, then press 'F' followed by 'C'), under the Personnel tab in the Family Options tab. These are a mixture of new and additional customization, plus a few new features.
 

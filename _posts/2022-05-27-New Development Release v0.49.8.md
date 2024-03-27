@@ -30,7 +30,7 @@ We do have some good new stuff in MegaMek. Some highlights are:
 Juliez continues to work on improving the look and feel of the lab. This includes:
 
 - Reworking the Mek drag-n-drop logic,
-- Reversed the equipment filter toogle,
+- Reversed the equipment filter toggle,
 - Fixed some RS printing things,
 - LAMs have fuel tanks,
 - The menu bar has been reworked,
@@ -42,7 +42,7 @@ The Death Module has been merged, adding Random Death to MekHQ. There are three 
 
 ![Random Death](https://i.imgur.com/CINmqaM.png)
 
-We've also added a bunch of new MekHQ Options to improve MegaMek launch stability on low resource systems, unit status colouring to the personnel unit assignment menus (this is theme-dependant), conventional fighters to the unit market, standardized potential asset terms with loan terms, and added the semiannual term for assets and loans. This is in addition to a whole host of bugfixes.
+We've also added a bunch of new MekHQ Options to improve MegaMek launch stability on low resource systems, unit status coloring to the personnel unit assignment menus (this is theme-dependant), conventional fighters to the unit market, standardized potential asset terms with loan terms, and added the semiannual term for assets and loans. This is in addition to a whole host of bugfixes.
 
 ## MekHQ StratCon Alpha
 
@@ -117,8 +117,8 @@ We thank everyone who's been part of this community and for those that haven't p
 - PR #3452: Mech melee equipment validation update
 - PR #3454: Hull-down vehicles can indirectly fire body-mounted LRMs per errata
 - PR #3458: Rat Generator Editor UI Updates
-- Issue #3460: Preventing Gun Emplacement Offboard Deployment and NPEs
-- PR #3423: Increasing the chat levels for some useful princess gameplay messages
+- Issue #3460: Preventing Gun Emplacement Off-board Deployment and NPEs
+- PR #3423: Increasing the chat levels for some useful princess game-play messages
 - PR #3445: Fixing MegaMek's Javadoc Build
 - Issue #3413: Command Line Flags and Argument Improvements
 - Data: Force Generator updates. In the process of adding missing units and updating units.
@@ -127,7 +127,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - Issue #3484: Per errata, Battle Armor and infantry no longer allowed to set MGs to burst fire mode.
 - Issue #3386: Per TW, Aerodyne DropShips and small craft can now hover, but can no longer vertically land or take off, except in vacuum.
 - Data: New Sprites and a few new camos.
-- Issue #3400: Introduced new pre-movement and pre-firing phases; currently they allow eligible units to unhide (rather than having to select an option via arcane dropdown in the Extras tab on the previous turn).
+- Issue #3400: Introduced new pre-movement and pre-firing phases; currently they allow eligible units to un-hide (rather than having to select an option via arcane dropdown in the Extras tab on the previous turn).
 - Issue #3505: Improved bot valuation of attacks by variable-damage infantry weapons (e.g. support lasers)
 - Issue #3448: Display unit cost in mech summary without counting ammo.
 - Issue #3502: Disable Jump Button when prone
@@ -156,7 +156,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - PR #3584: Make a cost calculation report available for all unit types
 - PR #3591: Fixing MegaMek log paths
 - PR #3600: Enable Gun Emplacement ToolTips
-- PR #3614: Fixing Athmosphere typos
+- PR #3614: Fixing Atmosphere typos
 - Issue #3607: Fixing Null Swarming Entity Unit ToolTip NPE
 - Issue #3607: Prevent Entities from Fleeing While Swarming a Unit
 - PR #3606: Logging Modernization: Updating a Bunch More System.out, System.err, and printStackTraces
@@ -167,12 +167,12 @@ We thank everyone who's been part of this community and for those that haven't p
 - Issue #3641: Fixing Server Game End ConMod
 - PR #3636: Standardizing Minimap Spelling
 - PR #3643: Trimming Trailing Whitespace from Service IP Address
-- Data: New Sprites, Updated board folder formating and added new maps.
+- Data: New Sprites, Updated board folder formatting and added new maps.
 - Data: Added Rec Guide 16 to RAT Generator.
 - Data: Added Factions from Tamar Rising to RAT Generator.
     These are set as Minor factions and given limited information RAT are based on the faction they derive from.
 - Moving Outdated Board Editor docs to docs/Archive Stuff
-- Issue #3613: Princess: Adding Stop Swarm Behaviour For Fleeing
+- Issue #3613: Princess: Adding Stop Swarm Behavior For Fleeing
 - Updating to FlatLaf 2.2 from 2.0.1
 - Updating to Jackson XML 2.13.3 from 2.13.1
 - Updating to JAXB 4.0.0 from 2.3.2
@@ -258,8 +258,8 @@ We thank everyone who's been part of this community and for those that haven't p
 - Issue #3224: Personnel Modules: Death
 - PR #3238: Fixing MekHQ's log paths
 - Issue #3173: Hangar Table: Adding Crew State and Condition columns
-- Issue #2696: Adding Colouring to the Personnel Unit Assignment Menus
-- PR #3245: PersonnelTable: Fixing Dead and Absent Personnel Colour Usage
+- Issue #2696: Adding Coloring to the Personnel Unit Assignment Menus
+- PR #3245: PersonnelTable: Fixing Dead and Absent Personnel Color Usage
 - MML Issue #1094: Export/Print to PDF Results in Exception in Full Suite Build
 - Issue #3167: Fixing Board Utilities Exception on Scenario Start
 - Issue #3252: Fixing Retirement Table Column Pay Bonus Sorters and Default Return Values
@@ -281,7 +281,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - PR #3292: Prevent StratCon from generating scenarios on the strategic map when enemy morale is "rout".
 - Issue #3294: Unit Is Properly Removed after Black Market Swindle
 - Issue #3160: Stratcon - Prevent "Good Intel" modifier from removing units that are scenario objectives
-- Issue #3289: AtB/StratCon - added adjustable setting to control likelyhood of opposing force special pilot abilities (range from none to "everyone")
+- Issue #3289: AtB/StratCon - added adjustable setting to control likelihood of opposing force special pilot abilities (range from none to "everyone")
 - Issue #2612: Expanded StratCon FAQ Documentation
 - Issue #2973: StratCon - integrated command contracts no longer generate objectives other than "positive VPs"
 - Updating to JAXB 4.0.0 from 2.3.2

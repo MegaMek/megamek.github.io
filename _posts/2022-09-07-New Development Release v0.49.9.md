@@ -1,4 +1,4 @@
-### Welcome all to 0.49.9!
+# Welcome all to 0.49.9
 
 Going to start this off with a very important statement. As mentioned in the [49.8](https://bg.battletech.com/forums/megamek-games/new-development-snapshot-0-49-8-for-megamek-megameklab-and-mekhq) Dev release notes this release is improved for stability but still isn't where we want it.
 
@@ -8,7 +8,7 @@ What we need most is players to continue to test multiplayer in MegaMek specific
 
 While development in general slowed over the summer we do have a lot of stuff done in the last three months. Some highlights are:
 
-### MegaMek
+## MegaMek
 
 - We've removed No Torso Twist per the new errata and but left the quirk as unofficial for those wanting it.
 - Deadfire Missiles now have correct range brackets
@@ -46,11 +46,11 @@ Lastly I think Single Blind is one of the biggest and funnest changes to MegaMek
 
 ![Princess Hunting](https://i.imgur.com/PyInuJbl.png){:.img-fluid}
 
-### MegaMekLab
+## MegaMekLab
 
 Work on the lab continues to be focused on bug fixes and a few fixes to Record Sheet printing. But we did finally add a save option to the MML exit dialog.
 
-### MekHQ
+## MekHQ
 
 Things have been slow developmentally with with a focus on bug fixes. But we do have one big addition - Scenario templates can now load force definition from fixed MUL file. [See here for more details](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1856680/#msg1856680)
 
@@ -114,13 +114,13 @@ We thank everyone who's been part of this community and for those that haven't p
 + PR #3707: Fixing MM's Try With Resources Resource Leaks
 + Issue #3699 Deadfire LRMs and SRMs have incorrect range brackets
 + PR #3721: Adding Dragon's Teeth and Burned/Felled Woods Rough Terrain Fluff Sprites
-+ Issue #3688: Adding Colour to Heat Reports
++ Issue #3688: Adding Color to Heat Reports
 + Issue #3722: Princess will do a better job not targeting ignored units with artillery
 + Issue #3729: Any button click on map now brings up menu, improving usability on single-button machines
 + PR #3734: Fixing Nowhwere Typos
 + PR #3733: Change border colors on the minimap for moved units
 + Issue #3599: Unjam/clear turret buttons update properly after canceling pending firing orders
-+ Issue #3711: Female mechwarriors are now able to have a beer after ejecting from their mech
++ Issue #3711: Female MechWarriors are now able to have a beer after ejecting from their mech
 + Data: New Sprites including the return of 'Royal' sprites (Thanks to UlyssesSockdrawer)
 + Data: Battle Armor moving to new MUL conventions (4,5,6 unit squads).
 + Issue #3695: Increased amount and usefulness of data displayed in the General tab of the unit display.
@@ -128,14 +128,14 @@ We thank everyone who's been part of this community and for those that haven't p
 + Issue #3742: Errata - Infantry Heat Suit environment type
 + PR #1134: Improvements to Fluff Image folders (see Wiki for specifics).
 + Issue #3715: Zero pad auto-board save image filenames
-+ Issue #3743: Fixing ToolTip TMM Yellow Colours
++ Issue #3743: Fixing ToolTip TMM Yellow Colors
 + Issue #3731: Save Lobby Map Settings during Save
 + Issue #3757: Minimum Range for Clan LRM
 + PR #3771: UnitDisplay: Lobby-style Quirk Text
 + Issue #1852: More flexible deployment zones; improvements to deployment zone rendering; defunct 'deep deployment zone' feature as it's now redundant
 + Issue #3753: Vehicles with Vehicle Grenade Launchers no longer lock up the game during firing phase when VGL firing arc goes off board
 + Issue #470: Display weapon fields of fire during TAG phase
-+ Issue #3730: Savegame Planetary settings are not persistent if in Lobby
++ Issue #3730: Save game Planetary settings are not persistent if in Lobby
 + Issue #3744: Mast Mount not in Support Vee equipment for VTOL
 + Issue #203, #3780: Introduced a chat command to allow individual bot player to see entire board in double blind mode
 + Issue #3564: Board validation will now find all invalid connected building hexes of different classes
@@ -172,7 +172,7 @@ We thank everyone who's been part of this community and for those that haven't p
 + PR #3853: Base Components: Adding AbstractScrollablePanel
 + PR #3855: Add a unit browser to the main menu
 + Issues #2397, #2675, #3135: Fixing Shadow Rendering Issues
-+ PR #3859: Unit specifid deployment zone width/offset now persist to and load from MUL
++ PR #3859: Unit specified deployment zone width/offset now persist to and load from MUL
 + PR #3840: BV calculation report for BA
 + PR #3823: Consolidate MASC/SC Target Number lookup
 + PR #3879 (MML Issue #1165): Improve handling of illegal armor on BA units in the TRO View

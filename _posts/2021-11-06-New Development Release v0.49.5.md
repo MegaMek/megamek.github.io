@@ -4,7 +4,7 @@ Welcome all to 0.49.5.
 
 As most are aware 0.49.4 had a very nasty bug when launching MegaMek from MekHQ. In addition to the fix we added a couple of things for MekHQ for this release. Windchild will be along to explain in more detail. Given the short time 0.49.4 was available its release notes still stand [SEE HERE](https://megamek.org/2021/10/30/New-Development-Release-v0.49.4.html)
 
-## Java 11 and the 0.49.x Releases.
+## Java 11 and the 0.49.x Releases
 
 We have made the change to Java 11, meaning you'll need to update to use the **0.49.x Development Releases**. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) (the name change is solely a rebrand on their side, and no changes are required if you've already downloaded OpenJDK 11).  We have a help page [for windows](https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK) and
 [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able to user your package manager to install OpenJDK from their repositories.
@@ -39,7 +39,7 @@ UlyssesSockdrawer is running a popular Solaris VII campaign on our Discord that 
 
 We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround for Mac Operating Systems[/url].
 
-## Updating Your Campaign:
+## Updating Your Campaign
 
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
@@ -47,7 +47,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 
 ## Change Logs (Release Specific) and Download Links
 
-###MegaMek
+### MegaMek
 
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.5)
 

@@ -1,4 +1,4 @@
-### Welcome all to 0.49.13!
+# Welcome all to 0.49.13
 
 This release marks a significant milestone for MegaMek as we finish the second year of 0.49.x development. It features numerous fixes and quality-of-life improvements. The breadth of exciting additions is extensive, making it challenging to decide where to begin. We recommend reviewing the complete list to see all changes. However, we'll highlight a few noteworthy ones for now. It's important to note that this release, being the 13th in the cycle, may still contain a few new bugs due to all the awesome new stuff.
 
@@ -35,25 +35,25 @@ We continue to find small improvements in stability over 49.12 but we still aren
 
 Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
-#### MegaMek
+## MegaMek
 
 See the notes above and below for specific things.
 
-#### MegaMekLab
+## MegaMekLab
 
 A big option to the unofficial record sheets, On record sheets, hit location and cluster tables can now be printed in place of the fluff image; activate this option in the record sheet settings. You can see an [example here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1922237/#msg1922237).
 
 Remember to check the FILE-Configuration for all sorts of options for Record Sheets.
 
-#### MekHQ
+## MekHQ
 
 There isn't a lot of MekHQ outside of some fixes, but we do have StratCon fixes.
 
-#### MekHQ StratCon Alpha
+### MekHQ StratCon Alpha
 
 StratCon is starting to get a little more work and bug fixes (see below). Nickargua the dev is looking for help and see here for [how to help](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1935360/#msg1935360). It sounds complicated but it's quite easy to make the files he's looking for.
 
-#### Stable 0.50.0 Status Update
+## Stable 0.50.0 Status Update
 
 We are still in the development portion of the current cycle. We've been able to implement a new version of Gradle (our build language) starting with the 0.49.11 release. As well as adding support for Java 17. This is still undergoing testing and we encourage players to use the programs with Java 17 but Java 11 remains our recommended choice for the .49.x Dev cycle. We are still working on the connection stability issues.
 
@@ -65,33 +65,33 @@ We are getting to a point where we are starting to talk about 0.50.0 Stable but 
 
 Once that is done [we'd recommend trying a dev release like 0.49.12.](https://megamek.org/2023/03/04/New-Development-Release-v0.49.12.html)  With a milestone of 0.50.0 we need to make sure we get it right.
 
-#### Java 11 and Java 17
+## Java 11 and Java 17
 
 We've updated to Java 11, which means you'll need to update to use the **0.49.x development branches**. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11) We have a help page [for Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html]). Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
 
 This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version.
 
-#### Social Media
+## Social Media
 
 We are also happy to announce we have an [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD). This is now our primary community location for the suite, providing superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games).  There are also the following community Discords with regular MegaMek channels, namely [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). We are also on Facebook, at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek) for our group and page respectively.
 
-#### Mac Users
+## Mac Users
 
 [Please](https://megamek.org/wiki/mac_issues.html) check out this workaround for Mac Operating Systems.
 
-#### Contributing
+## Contributing
 
 [Please]({{ site.baseurl }} {% link wiki/i_want_to_help.md %}) check out this document for contributing to the suite. Deadborder has us covered from land unit sprites and camos. But we desperately need sprites for aerospace units.
 
-#### Updating Your Campaign
+## Updating Your Campaign
 
 1. Make backups of your campaigns and customs.
 2. Always treat each release as a stand alone release and only copy your data forward from older versions, never backwards.
 3. Do not copy MegaMek saves nor any preference file from a different version.
 
-#### Change Logs (Release Specific) and Download Links
+## Change Logs (Release Specific) and Download Links
 
-##### MegaMek Change Log
+### MegaMek Change Log
 
 [DOWNLOAD](https://github.com/MegaMek/megamek/releases/tag/v0.49.13)
 
@@ -179,7 +179,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + PR #4450: When TacOps sensors is not on, don't show sensor rings
 + PR #4451: When TacOps sensors is not on, show visual range in tool tip
 
-##### MegaMekLab Change Log
+### MegaMekLab Change Log
 
 [DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.13)
 
@@ -187,7 +187,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #1247: BA pop-up mines now show up under "other equipment"
 + Issue #1238: Battle Armor tube artillery now only allowed on battle armor
 
-##### MekHQ Change Log
+### MekHQ Change Log
 
 [DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.13)
 

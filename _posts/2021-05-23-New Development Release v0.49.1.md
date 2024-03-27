@@ -13,8 +13,6 @@ players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page
 [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able
 to user your package manager to install OpenJDK from their repositories.
 
-
-
 As mentioned nothing but bug fixes and some new sprites and maps.
 
 ## MegaMekLab

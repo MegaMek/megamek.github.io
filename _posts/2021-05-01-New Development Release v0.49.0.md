@@ -104,7 +104,7 @@ Another reminder when moving between versions:
 * PR #2583: Dependent Swapover: Removing Parental and Spousal Abandonment, Fixing None Primary Role
 * Issue #2566: Ranks Warning Expansion and Change Tracking
 * Multiple StratCon stability and data fixes:
- 	* scenario data updates
+	* scenario data updates
  	* phantom scenarios no longer display in briefing room; fixed objective scenarios remain on tracks until encountered
 	* logic update for force deployment right click menu
  	* map size rerolls no longer generate tiny maps

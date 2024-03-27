@@ -1,4 +1,4 @@
-### Welcome all to 0.49.12!
+# Welcome all to 0.49.12
 
 This is one massive release with lots of stuff across the programs. We have so much new exciting stuff in here I don't know where to start. You'll have to give the full list a review. But these in my opinion are some of the major ones.
 
@@ -12,7 +12,7 @@ We found that the 49.11 release had more stability and general improvements arou
 
 Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
-### MegaMek
+## MegaMek
 
 + Numerous Alpha Strike conversion fixes.
 + Ability to Print AS Cards
@@ -31,13 +31,13 @@ Remember that MekHQ campaign files **aren't** backwards compatible so if move yo
 + Numerous data fixes and Rec Guides additions.
 + New SPA's - Cross Country SPA, Environmental Specialist, Terrain Master (Nightwalker)
 
-### MegaMekLab
+## MegaMekLab
 
 + Preview BA AS stats
 + Fixes to VTOL Record sheets
 + Adding Role, fixing AP check boxes of BA Record Sheets
 
-### MekHQ
+## MekHQ
 
 + Numerous Bug fixes
 + Improvements to StratCon presets
@@ -87,7 +87,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + PR #4062: OS Thunderbolt Weapons are now available for construction and use
 + PR #4118: The Cross Country SPA is now available for vehicle pilots (effects on water movement is not yet implemented)
 + Issue #4149: Fix an error with the readme file for Princess
-+ Issues #4169, #3568: Fixing a bug with firing weapons after having moved offboard
++ Issues #4169, #3568: Fixing a bug with firing weapons after having moved off-board
 + Issue #2652: TacOps BA crits
 + Issue #2945: RHS failure chance errata
 + PR #4166: Company-sized forces can now be converted to Strategic Battle Force Formations

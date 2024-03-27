@@ -1,6 +1,6 @@
-**Welcome All to 0.49.17!**
+# Welcome All to 0.49.17
 
-You might notice something unusual: we jumped from 0.49.15 directly to 0.49.17. What happened? A major bug surfaced at the last minute, one that only appears after the releases are built. Therefore, while 49.16 does exist, it will never be officially released, and if you find it *DO NOT USE IT*. 
+You might notice something unusual: we jumped from 0.49.15 directly to 0.49.17. What happened? A major bug surfaced at the last minute, one that only appears after the releases are built. Therefore, while 49.16 does exist, it will never be officially released, and if you find it *DO NOT USE IT*.
 
 As we close this year, let's welcome version 49.17. Looking back on 2023, we started with version 0.49.11. Although we've had only six releases this year, significant progress was made across all three programs. Highlights include major UI enhancements, Alpha Strike Support, updates to Record Sheet style, Stratcon enhancements, a complete overhaul of Advanced Search, enhanced Unit tooltips, the ability to display the game board in all phases, Strategic BattleForce conversions, a full overhaul of Client settings, Unit Mekview improvements, the introduction of a basic GM mode, along with numerous bug fixes and data additions. A special mention to Deadborder for their continuous efforts in creating and improving sprites.
 
@@ -8,7 +8,8 @@ We are still not close to a .50 Stable release. We are rethinking how we present
 
 For detailed information, ensure you click the links in some of the list items below. The full release notes are at the end of this section. Here's what's new:
 
-**MegaMek**  
+## MegaMek
+
 - Let's welcome Beast mounted infantry to MegaMek. Cry Havoc and let slip the Branths of War!
 - Unit Roles and Quirks have been moved to the unit files, meaning they now need to be managed via MegaMekLab. **Important: quirk saving in MegaMek no longer works.**
 - Numerous improvements to various reports and Unit Tooltips.
@@ -21,92 +22,112 @@ For detailed information, ensure you click the links in some of the list items b
 - [Structure collapse warning feature for deployment and movement.](https://github.com/MegaMek/megamek/pull/4984)
 - Numerous data fixes, new fluff, and new sprites.
 
-**MegaMekLab**
+## MegaMekLab
+
 - [Significant improvements to the MML interface.](https://github.com/MegaMek/megameklab/pull/1352)
 - Enhanced version controls for units created in MegaMekLab.
 - Quirks and Roles are now managed through MegaMekLab.
 - The MML splash startup screen now displays the menu bar.
 - Implementation of various bug fixes.
 
-**MekHQ**
+## MekHQ
+
 - Introduction of a new filter for children.
 - Support for beast-mounted infantry.
 
-**MekHQ StratCon Alpha**  
+### MekHQ StratCon Alpha
+
 No new updates in this release.
 
-**A Few Reminders:**
+## A Few Reminders
 
-1. **Unit File Alignment with MUL:**  
-   We aligned unit files with the MUL by removing the term "(Standard)", resulting in the removal of nearly 1000 instances. Our Quality Assurance (QA) team has thoroughly tested these changes. There's a potential risk in MekHQ with CPNX files due to their reliance on unit names. If errors occur while loading your campaign file, we apologize for the inconvenience. For assistance, please refer to [this post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units).
+### Unit File Alignment with MUL
 
-2. **Removal of Unofficial Units Zip:**  
-   Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.  
-   
-   To reintegrate the units:
-   - Download the zip file from [MegaMek Extras HERE](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
-   - Right-click and use the "save link as" option.
-   - Save it as a zip to the data\mechfiles folder of the program.
-     - We suggest saving it to a customs folder within data\mechfiles.
-   - They will be added upon restart.
+We aligned unit files with the MUL by removing the term "(Standard)", resulting in the removal of nearly 1000 instances. Our Quality Assurance (QA) team has thoroughly tested these changes. There's a potential risk in MekHQ with CPNX files due to their reliance on unit names. If errors occur while loading your campaign file, we apologize for the inconvenience. For assistance, please refer to [this post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units).
 
-3. **User Data Directory for MegaMek, MegaMekLab, and MekHQ:**  
-   We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.  
-   
-   **Key Points:**
-   - **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
-   - **File Placement:**
-     - Fonts and units (`.mtf`, `.blk`) can be placed anywhere within this directory.
-     - Camo images in `/data/images/camo/`
-     - Portrait images in `/data/images/portraits/`
-     - Unit fluff images in `/data/images/fluff/<unit type>/`
-     - Rank and award definition files (`.xml`) in `/data/universe/`
-   - **Consistent Access:** Resources in this directory are usable across different game versions and modules without needing to relocate them for each new install.
-   - **Implementation:** Set up this directory via the client settings. A game restart is required for changes to take effect.
+### Removal of Unofficial Units Zip
 
-4. **MekHQ Campaign Files:**  
-   Remember, MekHQ campaign files **are NOT** backward compatible. Moving your campaign to a newer version prevents reverting to an older one, but keeping backups allows play in both versions for comparison.
+Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.
 
+To reintegrate the units:
 
-**Regarding Simultaneous (Sim) Stuff:**
+- Download the zip file from [MegaMek Extras HERE](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
+- Right-click and use the "save link as" option.
+- Save it as a zip to the data\mechfiles folder of the program.
+- We suggest saving it to a customs folder within data\mechfiles.
+- They will be added upon restart.
+
+### User Data Directory for MegaMek, MegaMekLab, and MekHQ
+
+We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
+
+#### Key Points
+
+- **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
+- **File Placement:**
+   - Fonts and units (`.mtf`, `.blk`) can be placed anywhere within this directory.
+   - Camo images in `/data/images/camo/`
+   - Portrait images in `/data/images/portraits/`
+   - Unit fluff images in `/data/images/fluff/<unit type>/`
+   - Rank and award definition files (`.xml`) in `/data/universe/`
+- **Consistent Access:** Resources in this directory are usable across different game versions and modules without needing to relocate them for each new install.
+- **Implementation:** Set up this directory via the client settings. A game restart is required for changes to take effect.
+
+#### MekHQ Campaign Files
+
+Remember, MekHQ campaign files **are NOT** backward compatible. Moving your campaign to a newer version prevents reverting to an older one, but keeping backups allows play in both versions for comparison.
+
+## Regarding Simultaneous (Sim) Stuff
+
 The issue with skipping units is largely resolved. We're aware of and investigating the issue where two players can cancel each other's weapon selections, but there's no ETA for a fix.
 
 The future of Sim Stuff is under review. If our fixes prove effective, Sim Movement is **likely** to be the only feature removed, as it's poorly coded and doesn't adhere to TT rules used in Double Blind. Thus, Sim Deployment, Sim Targeting, Sim Firing, and Sim Physical are **likely** to remain. The term **likely** is used as defined by Merriam-Webster: "having a high probability of occurring or being true: very probable".
 
-**Stable 0.50.0 Status Update**
+## Stable 0.50.0 Status Update
+
 We're not yet at the point of releasing a Stable 0.5.0. March 5th, 2024, will mark three years of development. We are exploring different ways to present Stable vs. Development releases and hope to provide updates soon.
 
 In the meantime, we recommend players move to a good Dev release, like 0.49.15, which had a manageable bug from MegaMek to MekHQ. [See here for details](https://bg.battletech.com/forums/index.php/topic,82935.0.html). Note that using a dev release requires Java 11 or 17 (see the next section).
 
-**Java 11 and 17**
+## Java 11 and 17
+
 We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 
-**Social Media**
+## Social Media
+
 Join our [official MegaMek Discord](https://discord.gg/u2vJ5U2QpD), our primary community hub for the suite. We offer superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games). We're also part of community Discords [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). Find us on Facebook at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek).
 
-**Mac Users**
+## Mac Users
+
 [Check out this workaround for Mac Operating Systems](https://megamek.org/wiki/mac_issues.html).
 
-**Contributing**
+## Contributing
+
 Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-to-help).
 
-**Updating Your Campaign:**
+## Updating Your Campaign
+
 1. Make backups of your campaigns and customs.
 2. Treat each release as stand-alone; copy your data forward from older versions, never backward.
 3. Do not copy MegaMek saves or any preference file from a different version.
 
 ---
-**Change Logs (Release Specific) and Download Links**
 
-**MegaMek Change Log**  
+## Change Logs (Release Specific) and Download Links
+
+### MegaMek Change Log
+
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.17)
-**0.49.17 (2023-12-31 1900 UTC)**
-+ Fix #1031: Show structure collapse warning when deploying and moving.
-+ PR #4990: FixedWingSupport: automatically set SI when walk MPs are set 
 
-**0.49.16 (2023-12-30 2200 UTC)**
+#### 0.49.17 (2023-12-31 1900 UTC)
+
++ Fix #1031: Show structure collapse warning when deploying and moving.
++ PR #4990: FixedWingSupport: automatically set SI when walk MPs are set
+
+#### 0.49.16 (2023-12-30 2200 UTC)
+
 + Fix #4769: BA Tube Artillery should support smoke rounds
 + Fix #4854: Fix multiple end-of-game and end-of-phase hangs
 + Fix #4541: Natural piloting SPA applies to physical attacks
@@ -150,7 +171,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #4921: Background colors for the unit tooltip can now be configured in the client settings
 + PR #4954: Add the MM version and date when saving unit files
 + PR #4955: MechSummaryCache BV calculation: ignore pilot skill
-+ Data #4933: Megamek tacops ammo BV error (Partial Fix - work still needed on Dead Fire and LK)
++ Data #4933: Megamek TacOps ammo BV error (Partial Fix - work still needed on Dead Fire and LK)
 + PR #4956: Use foot/jump type modifier for beast-mounted infantry
 + PR #4963: In the heat report, heat effects are now shown after the affected unit (instead of before)
 + PR #4966: The mtf file format for Meks now uses chassis: and model: qualifiers and no longer includes the mtf version
@@ -162,12 +183,16 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #4977: Add a split pane lobby between player and unit panels
 + PR #4980: Allow gm to configure spas in game[/code]
 
-**MegaMekLab Change Log**
+### MegaMekLab Change Log
+
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.17)
-**0.49.17 (2023-12-31 1900 UTC)**
+
+#### 0.49.17 (2023-12-31 1900 UTC)
+
 + PR #1352 MML interface changes
 
-**0.49.16 (2023-12-30 2200 UTC)**
+#### 0.49.16 (2023-12-30 2200 UTC)
+
 + PR #1338 - Allow unit role selection in MML
 + Fix #145: Quirks can now be edited in MML and are part of the unit files
 + PR #1337: The BA manipulator size can now be set in MML
@@ -182,21 +207,22 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #1355: StatusBar: correct free slot displays
 + PR #1352: Adds an option to start MML in its splash screen (current behavior) or directly load the most recent unit or start on a new unit of a choosable type;
             Most file choosers now use Swing's JFileChooser and remember their size and position as well as the last directory; also file extension filters have been added where applicable;
-            Recent files will now behave as such 
+            Recent files will now behave as such
             All unit type main UIs now individually remember their size and position; there is a menu item to reset all window positions;
-            It is now possible to import settings from another MML setup. 
-            Save As now uses the accelerator Ctrl-Shift-S instead of Ctrl-A (which doesnt work as it does a select-all)
-[/code]
+            It is now possible to import settings from another MML setup.
+            Save As now uses the accelerator Ctrl-Shift-S instead of Ctrl-A (which doesn't work as it does a select-all)
 
-**MekHQ Change Log**
+### MekHQ Change Log
+
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.17)
-**0.49.17 (2023-12-31 1900 UTC)**
+
+#### 0.49.17 (2023-12-31 1900 UTC)
+
 + No code added
 
-**0.49.16 (2023-12-30 2200 UTC)**
+#### 0.49.16 (2023-12-30 2200 UTC)
+
 + PR #3771: Add "children" filter to personnel tab
 + PR #3780: Support for Beast Mounted Infantry[/code]
 
-On behalf of the MegaMek team, we wish everyone a safe and successful 2024. Cheers! 
-
-
+On behalf of the MegaMek team, we wish everyone a safe and successful 2024. Cheers!

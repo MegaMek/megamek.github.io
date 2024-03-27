@@ -21,7 +21,7 @@ author: MegaMek CMS
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://megamek.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MegaMekTeam
-github_username:  MegaMek
+github_username: MegaMek
 
 # Build settings
 markdown: kramdown
@@ -45,4 +45,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-exclude: ['README.md', 'LICENSE']
+exclude: ["README.md", "LICENSE"]

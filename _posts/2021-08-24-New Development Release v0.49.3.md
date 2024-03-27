@@ -6,14 +6,13 @@ But first a word from one of our sponsors; Are you tired of fighting super-stren
 
 There are a lot of fixes, big additions, and subtle changes in this release. Please give the change logs a close look for everything. But some highlights:
 
-## Java 11 and the 0.49.x Releases.
+## Java 11 and the 0.49.x Releases
 
 We've have officially made the change to **Java 11**, meaning to use the
 **0.49.x Development branch** you'll need to update.
 
 Due to changes in downloading Java that Oracle has made, As Java is now open source, we are recommending players use [OpenJDK 11](https://adoptopenjdk.net/). We have a help page [for windows](https://github.com/MegaMek/megamek/wiki/Updating-to-OpenJDK) and
 [macOS.](https://megamek.org/wiki/mac_issues.html) For Linux, you should be able to user your package manager to install OpenJDK from their repositories.
-
 
 ## MegaMek
 
@@ -27,24 +26,21 @@ Hidden Units now default to on to reduce issues coming out of MekHQ. The RAT gen
 
 MegaMekLab has had a bugfix, but has otherwise been quiet as the dev focused on it is currently taking a break.
 
-
 ## MekHQ
 
 The Advance Days Dialog is complete and replaces the old popout for the daily log while expanding its former functionality. It is designed to be left open if desired while handling ones day advancement needs.
 
 ![Advanced Days Dialog](https://i.imgur.com/quPVXOPl.png){:.img-fluid}
 
-
 The Unit Market has been rewritten, and because of that is now available outside of Against the Bot based on one's Campaign Options.
 
 ![Unit Market Dialog](https://i.imgur.com/O58fxgJl.png){:.img-fluid}
-
 
 However, these were both coded before 0.49.2. The focus for MekHQ over the past two months has been in bugfixes, bug prevention, and code improvement.
 
 ## Stratcon Alpha
 
-StratCon has seen yet more bugfixes and balance changes, plus facility implementations, GM StratCon campaign state management options, customizabile chance of generating a user made map, and potential player DropShip use in DropShip defense scenarios.
+StratCon has seen yet more bugfixes and balance changes, plus facility implementations, GM StratCon campaign state management options, customizable chance of generating a user made map, and potential player DropShip use in DropShip defense scenarios.
 
 If you aren't familiar with StratCon see [HERE](https://github.com/MegaMek/mekhq/pull/2144)
 
@@ -104,7 +100,7 @@ Another reminder when moving between versions:
 + Issue #3031: Bot will no longer attempt to cross water in "long range pathfinding mode" when doing so would cause an armor breach
 + Issue #3052: Fix for server lockup when firing infantry-scale weapons off of small support vehicles; fixes for multiple errors processing non-existent passenger units.
 + Issue #3048: Hits on hull-down (non-superheavy) vehicles without turrets now land on proper location.
-+ PR #3017: Additional unit label display options (toggled with the unit label display keybind) to show abbreviated and really abbreviated unit names.
++ PR #3017: Additional unit label display options (toggled with the unit label display key-bind) to show abbreviated and really abbreviated unit names.
 + PR #3050: Players now have option to provide their email address to the server (which is not shared with the other players). If the server has a local SMTP server configured, round reports can be emailed to players.
 + PR #3072: Hidden Units is now Enabled by default
 + Issue #3065: Prevent units from winding up with an illegal facing as a result of a fish tail, and in general.
@@ -117,7 +113,7 @@ Another reminder when moving between versions:
 + Issue #3094: Double Blind: Fixing Unjam Turret Action Report
 + Unofficial Equipment Documentation
 + Data: Adding Rec Guides 15-18 includes Unit Roles, some Fluff, and canon quirks. New Camos and new sprites
-+ Data: Fixing some weapon name types and a missing princess behaviour(Ambusher) and some sprite errors.
++ Data: Fixing some weapon name types and a missing princess behavior(Ambusher) and some sprite errors.
 
 ### MegaMekLab Release Notes
 
@@ -153,7 +149,7 @@ Another reminder when moving between versions:
 + PR #2756, 2802: StratCon
 	- Fix incorrect bot configuration in pursuit scenario that would cause it to bee-line for the opposite edge
 	- When objective scenarios move, they will take their objectives with them
-	- Strategic objective display improvement - colorcoding and symbols to indicate in-progress/complete/failed.
+	- Strategic objective display improvement - color-coding and symbols to indicate in-progress/complete/failed.
 	- Prevent phantom scenarios from showing up in TO&E deploy menu for both forces and individual units
 	- Removing a force that's assigned to a StratCon track will no longer cause the strategic map to fail to render
 + Issue #1098: Fixing Repair Tab Tech Order Options
