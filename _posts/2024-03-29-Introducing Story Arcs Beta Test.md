@@ -46,4 +46,4 @@ This release also supports Java 17, which has undergone some testing. More playe
 
 ### DOWNLOAD LINK
 **MekHQ - Story Arcs**
-[0.49.19.02-Story Arcs](https://github.com/AaronGullickson/mekhq/releases/tag/v0.2-storyarcs)
+[0.49.19.3-Story Arcs](https://github.com/AaronGullickson/mekhq/releases/tag/v0.3-storyarcs)
