@@ -109,7 +109,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 **MegaMekLab Change Log**  
 [Download](https://github.com/MegaMekLab/megameklab/releases/tag/v0.49.19)
 
-**MegaMek Change Log**  
+**MekHQ Change Log**  
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.19)
    
    
