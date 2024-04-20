@@ -107,7 +107,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.19)
 
 **MegaMekLab Change Log**  
-[Download](https://github.com/MegaMekLab/megameklab/releases/tag/v0.49.19)
+[Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.19)
 
 **MekHQ Change Log**  
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.19)
