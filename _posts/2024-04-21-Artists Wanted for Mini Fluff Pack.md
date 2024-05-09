@@ -23,4 +23,6 @@ Contributors' rights will be acknowledged by watermarking the images with the ar
 
 If you’re interested in contributing, please contact Hammer through the MegaMek Discord, The [official CGL forums at](https://bg.battletech.com/forums/), or email us at [megamekteam@gmail.com](mailto:megamekteam@gmail.com). Alternatively, you can add the images directly to the following issue on GitHub: [RFE: Mini Fluff Pack List](https://github.com/MegaMek/megamek/issues/5382). A GitHub account is required to submit images.
 
+Update: We now have a dedicated channel on the [MegaMek Discord](https://discord.gg/megamek) server for submitting images. Please join the server and navigate to the #mek-bay channel. Post your images and give us permission to use them. 
+
 Submitting an image does not guarantee its inclusion; the decision of which images are used in the Fluff Pack is solely at the discretion of the MegaMek Dev Team.
