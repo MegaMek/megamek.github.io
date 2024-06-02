@@ -22,9 +22,17 @@ Here's our current plan:
 
 ### **End of the 0.49.x Development Cycle**
 
-| Required to Play | Development on |
-|------------------|----------------|
-| Java 11          | Java 11        |
+<table>
+  <tr>
+    <th>Required to Play</th>
+    <th>Development on</th>
+  </tr>
+  <tr>
+    <td>Java 11</td>
+    <td>Java 11</td>
+  </tr>
+</table>
+
 
 Estimated for the end of June 2024, this will be the last version supporting **Java 11**. Once released, this will end the 0.49.x-Development cycle.
 
@@ -32,9 +40,17 @@ Estimated for the end of June 2024, this will be the last version supporting **J
 
 ### **0.50.x Development Cycle:**
 
-| Required to Play | Development on |
-|------------------|----------------|
-| Java 17          | Java 17        |
+<table>
+  <tr>
+    <th>Required to Play</th>
+    <th>Development on</th>
+  </tr>
+  <tr>
+    <td>Java 17</td>
+    <td>Java 17</td>
+  </tr>
+</table>
+
 
 We anticipate the release of **0.50.0-Development Release** and the start of the **0.50.x-Development** cycle, which requires **Java 17**, to occur later in the summer (August/September 2024).
 
@@ -45,9 +61,17 @@ Additionally, at some point in the 0.50.x series, we will be adding [Sentry](htt
 
 ### **0.51.x Development Cycle: (Estimated Summer/Fall 2026)**
 
-| Required to Play | Development on |
-|------------------|----------------|
-| Java 21          | Java 21        |
+<table>
+  <tr>
+    <th>Required to Play</th>
+    <th>Development on</th>
+  </tr>
+  <tr>
+    <td>Java 21</td>
+    <td>Java 21</td>
+  </tr>
+</table>
+
 
 To be clear, this isn't likely to hit until **Java 17** reaches end of life (September 2026). This cycle would code on **Java 21** and require **Java 21** to play.
 
