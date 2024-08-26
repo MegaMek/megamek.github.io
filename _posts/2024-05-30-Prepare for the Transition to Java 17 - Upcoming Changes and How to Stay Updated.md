@@ -77,7 +77,8 @@ To be clear, this isn't likely to hit until **Java 17** reaches end of life (Sep
 
 ### **What do you need to do today?**
 
-If you’re comfortable with **Java 11**, you can stay on **Java 11** until we start the 0.50.x Development Cycle. If you are comfortable with upgrading to **Java 17**, we encourage you to make the upgrade. The upgrade would would follow the same process as updating to Java 11, but selection Java 17. For a refresher see the [Updating to Adoptium](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) guide.
+If you’re comfortable with **Java 11**, you can stay on **Java 11** until we start the 0.50.x Development Cycle. If you are comfortable with upgrading to **Java 17**, we encourage you to make the upgrade. The upgrade would would follow the same process as updating to Java 11, but selection Java 17. For a refresher see the [Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) guide.
+
 
 There will be an announcement once we've switched to **Java 17**. Once you see releases labeled with **0.50.x-Development or 0.50.x-Milestone**, you will require **Java 17**.
 

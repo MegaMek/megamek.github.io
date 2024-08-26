@@ -56,7 +56,8 @@ Java 8 from Oracle 'helpfully' points out the need for an upgrade if you try to 
 
 To be able to use any of the programs in the 0.49.x cycle you must have Java 11 or 17. To install follow the directions from this post:
 
-[Updating to Adoptium](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium)
+[Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) guide.
+
 
 Given the age of Java 8, people should move to Java 11 or 17 anyway just for security reasons. Remember the programs **ONLY** officially support Java 11 or 17.
 
@@ -205,7 +206,8 @@ One final recommendation unless you ONLY use one of the programs we recommend pl
 The MILESTONE represents considerable improvements over 0.48.0 but will require players to update to Java 11. Remember if you are on Java 8 and try to run the MILESTONE it will say you need Java 11, then but you into the Oracle upgrade loop.
 
 Please ONLY use these instructions and make sure to follow them EXACTLY, especially the reboots and Step 6.
-[Updating to Adoptium](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium)
+[Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) guide.
+
 
 ## The Future
 
