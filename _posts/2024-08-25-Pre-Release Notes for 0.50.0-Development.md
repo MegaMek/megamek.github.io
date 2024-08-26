@@ -8,7 +8,7 @@ First and foremost, please remember that the 0.50.0 Development release is **NOT
 
 # Key Changes coming in 0.50.0
 
-As I discussed in the recent Sarna interview ([Community Outreach – Dropping The Hammer On MegaMek | Sarna.net](https://sarna.net)), we’ve reached a point where we’ve moved from considering modernizing our code to needing to modernize our code. The first steps of this transition are included in the 0.50.0 release. Let’s go over some of the key changes you can expect.
+As I discussed in the recent [Sarna interview](https://www.sarna.net/news/community-outreach-dropping-the-hammer-on-megamek/), we’ve reached a point where we’ve moved from considering modernizing our code to needing to modernize our code. The first steps of this transition are included in the 0.50.0 release. Let’s go over some of the key changes you can expect.
 
 ## Single/Unified Package Release
 
