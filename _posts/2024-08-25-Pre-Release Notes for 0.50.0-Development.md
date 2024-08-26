@@ -1,11 +1,3 @@
-```markdown
----
-layout: post
-title: "Pre-Release Notes for 0.50.0-Development"
-date: 2024-08-25
-categories: news release
----
-
 # Pre-Release Notes for 0.50.0-Development
 
 Hi Everyone,
@@ -68,8 +60,7 @@ Here's a quick guide on how to extract `.tar.gz` files on different operating sy
 
 ## Java 17 Will Now Be Required
 
-Starting with version 0.50.0-Development, **Java 17 will be REQUIRED** to play. We've updated our guide to [Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) guide.
-with more detailed instructions.
+Starting with version 0.50.0-Development, **Java 17 will be REQUIRED** to play. We've updated our guide to [Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java) with more detailed instructions.
 
 It's crucial to read the directions carefully, especially **Step 6**, which covers a recent change to the Adoptium installer. Make sure to select "Install for all users of this machine" in the Installation Scope.
 
@@ -82,7 +73,7 @@ While 0.50.0 is a Development release, and the jump to 0.50.0 marks the move us 
 ### MegaMek
 
 - Numerous bug fixes, including what we believe are final fixes for SimFire issues.
-- Princess AI has been enhanced with a heat mapping feature to better forecast future moves and learn from past rounds, allowing it to move intelligently towards enemy positions even under double-blind conditions. AKA...she can use double-blind now. 
+- Princess AI has been enhanced with a heat mapping feature to better forecast future moves and learn from past rounds, allowing it to move intelligently towards enemy positions even under double-blind conditions. AKA...she can use double-blind now.
 - Improved tools for Princess to generate and select munitions based on faction, era, and game settings.
 - Enhanced markers for hit, drifted, and missed artillery and bomb attacks.
   ![Imgur](https://i.imgur.com/2sK7cb6.png)
@@ -96,7 +87,7 @@ While 0.50.0 is a Development release, and the jump to 0.50.0 marks the move us 
 
 ### MekHQ
 
-- Expanded and developed the [Education Module](https://github.com/MegaMek/mekhq/blob/master/MekHQ/docs/Personnel%20Modules/Turnover%20%26%20Retention%20Module.pdf) 
+- Expanded and developed the [Education Module](https://github.com/MegaMek/mekhq/blob/master/MekHQ/docs/Personnel%20Modules/Turnover%20%26%20Retention%20Module.pdf)
 - Added execution and jettison options for prisoners, marking the first steps toward implementing a war crimes rating that will impact unit ratings.
 - Improvements to [Autoawards](https://github.com/MegaMek/mekhq/blob/master/MekHQ/docs/Personnel%20Modules/Awards%20Module.pdf) and [Turnover & Retention](https://github.com/MegaMek/mekhq/blob/master/MekHQ/docs/Personnel%20Modules/Turnover%20%26%20Retention%20Module.pdf)
 - Enhanced Force Generator role functions.
@@ -134,4 +125,3 @@ The best way to stay up to date with the latest news, get technical support, and
 - [State of the Universe!](https://megamek.org/2024/01/19/State-of-the-Universe!.html)
 - [Prepare for the Transition to Java 17: Upcoming Changes and How to Stay Updated](https://megamek.org/2024/05/30/Prepare-for-the-Transition-to-Java-17-Upcoming-Changes-and-How-to-Stay-Updated.html)
 - [Sarna Community Outreach – Dropping the Hammer on MegaMek](https://www.sarna.net/news/community-outreach-dropping-the-hammer-on-megamek/)
-```
