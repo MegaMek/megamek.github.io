@@ -77,14 +77,17 @@ While 0.50.0 is a Development release, and the jump to 0.50.0 marks the move us 
 - Princess AI has been enhanced with a heat mapping feature to better forecast future moves and learn from past rounds, allowing it to move intelligently towards enemy positions even under double-blind conditions. AKA...she can use double-blind now. 
 - Improved tools for Princess to generate and select munitions based on faction, era, and game settings.
 - Enhanced markers for hit, drifted, and missed artillery and bomb attacks.
+
   ![Imgur](https://i.imgur.com/2sK7cb6.png)
 
 - Significantly improved Princess's ability to handle hazardous terrain.
 - Implemented the ability to place and carry cargo objects (currently for Mechs and ProtoMechs only).
 
+
 ### MegaMekLab:
 - Improved record sheet shading.
 - Record sheets now display in the unit viewer.
+
 
 ### MekHQ:
 - Expanded and developed the [Education Module](https://github.com/MegaMek/mekhq/blob/master/MekHQ/docs/Personnel%20Modules/Turnover%20%26%20Retention%20Module.pdf) 
