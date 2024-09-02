@@ -91,7 +91,7 @@ In the meantime, we recommend players move to a good Dev release, like 0.49.15, 
 
 ## Java 11 and 17
 
-We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
+We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 

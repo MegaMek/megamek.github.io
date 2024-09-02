@@ -89,7 +89,7 @@ We are getting to a point where we are starting to talk about 0.50.0 Stable but 
 
 ## Java 11 and Java 17
 
-We've updated to Java 11, which means you'll need to update to use the [b]0.49.x development branches[/b]. As Java is now open source, we recommend [url=https://adoptium.net/index.html?variant=openjdk11]Adoptium Temurin 11[/url]. We have a help page [url=https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium]for Windows[/url] and [url=https://megamek.org/wiki/mac_issues.html]Mac[/url]. Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
+We've updated to Java 11, which means you'll need to update to use the [b]0.49.x development branches[/b]. As Java is now open source, we recommend [url=https://adoptium.net/index.html?variant=openjdk11]Adoptium Temurin 11[/url]. We have a help page [url=https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)]for Windows[/url] and [url=https://megamek.org/wiki/mac_issues.html]Mac[/url]. Further, for Linux, you should be able to use your package manager to install Adoptium Temurin from their repository. Finally, all our automated tests (with the exception of MegaMekLab) are done with Temurin 11.
 
 This release implements support for Java 17. We need to stress this has had some testing and needs more players to use the programs with Java 17. But Java 11 remains our recommended version.
 

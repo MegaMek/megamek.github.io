@@ -1,125 +1,124 @@
 /* Get correct download button by OS */
-var ready = (callback) => {
-  if (document.readyState != "loading") callback();
-  else document.addEventListener("DOMContentLoaded", callback);
+let ready = ( callback ) => {
+  if ( document.readyState != "loading" ) callback();
+  else document.addEventListener( "DOMContentLoaded", callback );
 }
 
-ready(() => {
-  var downloader = document.getElementsByClassName('downloader');
+ready( () => {
+  let downloader = document.getElementsByClassName( 'downloader' );
 
-  for (var element of downloader) {
-    var version = element.dataset.version;
-    var url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/mekhq-" + version + ".tar.gz";
-    var platform = "<i class='fab fa-linux'></i> Linux/Unix";
+  for ( let element of downloader ) {
+    let version = element.dataset.version;
 
-    if (navigator.userAgent.indexOf("Win") != -1) {
-      url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/mekhq-windows-" + version + ".zip";
-      platform = "<i class='fab fa-windows'></i> Windows";
-    } else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
-      platform = "<i class='fab fa-apple'></i> Mac OSX";
+    if ( version == '0.49.19.1' ) {
+      let url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/MekHQ-" + version + ".tar.gz";
+      let platform = "<i class='fab fa-linux'></i> Linux/Unix";
+
+      if ( navigator.userAgent.indexOf( "Win" ) != -1 ) {
+        url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/mekhq-windows-" + version + ".zip";
+        platform = "<i class='fab fa-windows'></i> Windows";
+      } else if ( navigator.userAgent.indexOf( "Mac OS X" ) != -1 ) {
+        platform = "<i class='fab fa-apple'></i> Mac OSX";
+      }
+
+      updateDownloadLinks( element, version, url, platform );
+    } else {
+      let url = "https://github.com/MegaMek/mekhq/releases/download/v" + version + "/MekHQ-" + version + ".tar.gz";
+      updateDownloadLinks( element, version, url, null );
     }
 
-    updateDownloadLinks(element, version, url, platform);
   }
 
-  loadDownloadStats("megamek-download-stats", "megamek");
-  loadDownloadStats("megameklab-download-stats", "megameklab");
-  loadDownloadStats("mekhq-download-stats", "mekhq");
+  loadDownloadStats( "megamek-download-stats", "megamek" );
+  loadDownloadStats( "megameklab-download-stats", "megameklab" );
+  loadDownloadStats( "mekhq-download-stats", "mekhq" );
 
-  setInterval(function () { loadXMLDoc(); }, 1000);
-});
+  setInterval( function () { loadXMLDoc(); }, 1000 );
+} );
 
-function updateDownloadLinks(element, version, url, platform) {
-  var downloadLink = element.getElementsByClassName('download_link')[0];
-  var versionText = element.getElementsByClassName('version_display')[0];
-  var platformText = element.getElementsByClassName('version_platform')[0];
+function updateDownloadLinks( element, version, url, platform ) {
+  let downloadLink = element.getElementsByClassName( 'download_link' )[ 0 ];
+  let versionText = element.getElementsByClassName( 'version_display' )[ 0 ];
+  let platformText = element.getElementsByClassName( 'version_platform' )[ 0 ];
 
   downloadLink.href = url;
   versionText.innerHTML = version;
-  platformText.innerHTML = platform;
+
+  if ( platformText ) {
+    platformText.innerHTML = platform;
+  }
 }
 
 function isDarkModeEnabled() {
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  return window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches
 }
 
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const toggleSwitch = document.querySelector( '.theme-switch input[type="checkbox"]' );
+toggleSwitch.addEventListener( 'change', switchTheme, false );
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+function switchTheme( e ) {
+  if ( e.target.checked ) {
+    document.documentElement.setAttribute( 'data-theme', 'dark' );
+    localStorage.setItem( 'theme', 'dark' ); //add this
   }
   else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute( 'data-theme', 'light' );
+    localStorage.setItem( 'theme', 'light' ); //add this
   }
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+const currentTheme = localStorage.getItem( 'theme' ) ? localStorage.getItem( 'theme' ) : null;
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark'); //add this
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light'); //add this
-  }
-}
+if ( currentTheme ) {
+  document.documentElement.setAttribute( 'data-theme', currentTheme );
 
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
-
-  if (currentTheme === 'dark') {
+  if ( currentTheme === 'dark' ) {
     toggleSwitch.checked = true;
   }
-} else {
-  if (isDarkModeEnabled()) {
-    toggleSwitch.checked = true
-    document.documentElement.setAttribute('data-theme', 'dark');
+} else if ( isDarkModeEnabled() ) {
+  toggleSwitch.checked = true
+  document.documentElement.setAttribute( 'data-theme', 'dark' );
+}
+
+function loadDownloadStats( elementId, repoName ) {
+  let element = document.getElementById( elementId );
+
+  if ( element ) {
+    fetch( "https://api.github.com/repos/megamek/" + repoName + "/releases" )
+      .then( ( response ) => response.json() )
+      .then( ( response ) => addStatsToElement( element, response ) )
+      .catch( ( error ) => console.log( error ) );
   }
 }
 
-function loadDownloadStats(elementId, repoName) {
-  var element = document.getElementById(elementId);
+function addStatsToElement( element, releases ) {
+  while ( element.lastChild ) { element.removeChild( element.lastChild ) };
 
-  if (element) {
-    fetch("https://api.github.com/repos/megamek/" + repoName + "/releases")
-      .then((response) => response.json())
-      .then((response) => addStatsToElement(element, response))
-      .catch((error) => console.log(error));
-  }
-}
+  releases.forEach( ( release ) => {
+    let child = document.createElement( "li" );
+    let text = "<strong>" + release.tag_name + "</strong>";
+    let totalDownloads = 0;
 
-function addStatsToElement(element, releases) {
-  while (element.lastChild) { element.removeChild(element.lastChild) };
-
-  releases.forEach((release) => {
-    var child = document.createElement("li");
-    var text = "<strong>" + release.tag_name + "</strong>";
-    var totalDownloads = 0;
-
-    release.assets.forEach((asset) => {
+    release.assets.forEach( ( asset ) => {
       totalDownloads += asset.download_count;
-    })
+    } )
 
     text += ": <span class='float-right'>" + totalDownloads + "</span>";
 
     child.className = "list-group-item";
     child.innerHTML = text;
-    element.appendChild(child);
-  });
+    element.appendChild( child );
+  } );
 }
 
 function loadXMLDoc() {
-  var servers = document.getElementById("servers")
-  if (servers) {
-    fetch('https://api.megamek.org/servers.js')
-      .then((response) => response.text())
-      .then((response) => {
+  let servers = document.getElementById( "servers" )
+
+  if ( servers ) {
+    fetch( 'https://api.megamek.org/servers.js' )
+      .then( ( response ) => response.text() )
+      .then( ( response ) => {
         servers.innerHTML = response;
-      })
+      } )
   }
 }

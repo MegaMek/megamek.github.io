@@ -49,12 +49,12 @@ If you're someone that likes to read the change logs you'll notice there is lots
 
 **A Few Reminders:**
 
-**State of the Universe (January 19, 2024):**  
-If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant. 
+**State of the Universe (January 19, 2024):**
+If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
 
-**User Data Directory for MegaMek, MegaMekLab, and MekHQ:**  
-We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.  
-   
+**User Data Directory for MegaMek, MegaMekLab, and MekHQ:**
+We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
+
    - **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
    - **File Placement:**
      - Fonts and units (`.mtf`, `.blk`) can be placed anywhere within this directory.
@@ -65,17 +65,17 @@ We've added a customizable **User Data Directory** feature. This allows you to s
    - **Consistent Access:** Resources in this directory are usable across different game versions and modules without needing to relocate them for each new install.
    - **Implementation:** Set up this directory via the client settings. A game restart is required for changes to take effect.
 
-**Removal of Unofficial Units Zip:**  
-Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.  
-   
+**Removal of Unofficial Units Zip:**
+Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.
+
    To reintegrate the units:
    - Download the zip file from [MegaMek Extras HERE](https://github.com/MegaMek/megamek-extras/tree/master/data/mechfiles).
    - Right-click and use the "save link as" option.
    - Save it as a zip to the data\mechfiles folder of the program.
    - We suggest saving it to a customs folder within data\mechfiles.
    - They will be added upon restart.
-   
-**MekHQ Campaign Files:**  
+
+**MekHQ Campaign Files:**
 Remember, MekHQ campaign files **are NOT** backwards compatible. Moving your campaign to a newer version prevents reverting to an older one, but keeping backups allows play in both versions for comparison.
 
 **When is the next Stable release?**
@@ -83,7 +83,7 @@ Remember, MekHQ campaign files **are NOT** backwards compatible. Moving your cam
 Please review the [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0)
 
 **Java 11 and 17**
-We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
+We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 
@@ -103,16 +103,11 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 
 ### Change Logs (Release Specific) and Download Links
 
-**MegaMek Change Log**  
+**MegaMek Change Log**
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.19)
 
-**MegaMekLab Change Log**  
+**MegaMekLab Change Log**
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.19)
 
-**MekHQ Change Log**  
+**MekHQ Change Log**
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.19)
-   
-   
-   
-   
-   

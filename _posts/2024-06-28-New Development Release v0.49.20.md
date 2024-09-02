@@ -1,6 +1,6 @@
 Hi Everyone,
 
-The development cycle for 49.20 has been incredibly busy! It's one of the largest we've ever done, with 277 specific pushes to the various repositories. As you’ll see, there’s some amazing stuff coming your way. It's so massive that we've had to change the format of the release notes to avoid it being a release novel! 
+The development cycle for 49.20 has been incredibly busy! It's one of the largest we've ever done, with 277 specific pushes to the various repositories. As you’ll see, there’s some amazing stuff coming your way. It's so massive that we've had to change the format of the release notes to avoid it being a release novel!
 
 Before I get into specifics I want to give a shout out to the entire Dev team and all our contributors, new and old for the sheer amount of work in this release. If you're a fan of the programs make sure to drop a thanks for them on our [Discord](https://discord.gg/megamek) or here.
 
@@ -47,7 +47,7 @@ But let's get into all the new stuff.
 - **Font Color Options**: Added new font color options for negative, positive, and warning events, improving readability and customization.
 
 ### Java 11 and 17 is _Required_ for all 0.49.x releases
-We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
+We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 

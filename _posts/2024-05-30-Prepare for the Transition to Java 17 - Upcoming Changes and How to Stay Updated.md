@@ -82,7 +82,7 @@ If you’re comfortable with **Java 11**, you can stay on **Java 11** until we s
 
 There will be an announcement once we've switched to **Java 17**. Once you see releases labeled with **0.50.x-Development or 0.50.x-Milestone**, you will require **Java 17**.
 
-If you want to prepare and help us out, [upgrade to Java 17](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) now and continue playing. Report any issues you find [on our GitHub Trackers](https://github.com/MegaMek/megamek/wiki/Creating-an-Issue-%28Bug-Report%2C-Request-for-Enhancement%2C-Errata%29).
+If you want to prepare and help us out, [upgrade to Java 17](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) now and continue playing. Report any issues you find [on our GitHub Trackers](https://github.com/MegaMek/megamek/wiki/Creating-an-Issue-%28Bug-Report%2C-Request-for-Enhancement%2C-Errata%29).
 
 ### Stay Connected with our Discord.
 One final thing, if you aren't a remember of our Discord please join to keep up to date with the latest news and updates. You can join [here](https://discord.gg/megamek).

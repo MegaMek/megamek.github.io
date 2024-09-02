@@ -35,12 +35,12 @@ If you find a specific bug or error, please report this as an issue to the [STOR
 If you have overall feedback on the story arc itself that goes beyond a simple bug such as a comment on the narrative, difficulty of the scenarios, etc., we would also appreciate your feedback. You can either provide that feedback on this pinned forum topic of the [MegaMek subforum on the CGL Battletech forums](https://bg.battletech.com/forums/index.php?board=29.0), or on the Story Arcs channel of the [official MegaMek Discord](https://discord.gg/megamek).
 
 **How can I help?**
-Looking ahead, we'll want players to write and share the Story Arcs they create. We understand that initially hand crafting these will be a challenge, but we intend to support this over time with an editor. 
+Looking ahead, we'll want players to write and share the Story Arcs they create. We understand that initially hand crafting these will be a challenge, but we intend to support this over time with an editor.
 
 We also want to build an art library for people to use. We cannot use any art produced for or in any official products. If you are interested in helping contribute to or build the art library, please join [our Discord](https://discord.gg/megamek) and DM Hammer.
 
 **Story Arcs requires Java 11 or 17 only**
-We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
+We've updated to Java 11. To use the **0.49.x development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 

@@ -23,14 +23,14 @@ One more thing...If you're a [mini painter please check out this post](https://m
 
 **A Few Reminders:**
 
-**State of the Universe (January 19, 2024):**  
+**State of the Universe (January 19, 2024):**
 If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
 
 ---
 
 **The Milestone System Summary**
 
-*Introducing the Milestone System*  
+*Introducing the Milestone System*
 To better serve our players and development team, we are transitioning from the traditional ‘Stable’ / ‘Development’ scheme to a more dynamic ‘Milestone’ system.
 
 **Key Aspects of the Milestone System**
@@ -52,12 +52,12 @@ To better serve our players and development team, we are transitioning from the 
 - **Nature of Updates:** Bug fix-focused releases are more likely to achieve ‘Milestone’ status.
 - **Frequency:** Milestones are anticipated every 6-9 months, but this may vary.
 
-**Rationale for Change**  
+**Rationale for Change**
 This system promotes continuous development and encourages users to stay current with recent releases, bridging the gap between Stable and Development versions. It helps shift the mindset from viewing ‘Stable’ versions as superior and fosters an understanding that the software is in continuous development.
 
 ---
 
-**User Data Directory for MegaMek, MegaMekLab, and MekHQ:**  
+**User Data Directory for MegaMek, MegaMekLab, and MekHQ:**
 We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
 
 **Key Points:**
@@ -74,7 +74,7 @@ We've added a customizable **User Data Directory** feature. This allows you to s
 
 ---
 
-**Removal of Unofficial Units Zip:**  
+**Removal of Unofficial Units Zip:**
 Based on feedback from our Discord and a poll where 75% of players favored this decision, we've removed the unofficial units zip from this release. This change allows us to focus on canon units.
 
 To reintegrate the units:
@@ -87,30 +87,30 @@ To reintegrate the units:
 
 ---
 
-**MekHQ Campaign Files:**  
+**MekHQ Campaign Files:**
 Remember, MekHQ campaign files **are NOT** backwards compatible. Moving your campaign to a newer version prevents reverting to an older one, but keeping backups allows play in both versions for comparison.
 
 ---
 
-**When is the next Stable release?**  
+**When is the next Stable release?**
 These are no longer a thing. Please give above or this a read [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0)
 
 ---
 
-**Java 11 and 17 is *Required* for all 0.49.x releases**  
-We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
+**Java 11 and 17 is *Required* for all 0.49.x releases**
+We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.
 
 This release also supports Java 17, which has undergone some testing. More player usage is needed, but Java 11 remains our recommended version.
 
 ---
 
-**Social Media**  
+**Social Media**
 Join our [official MegaMek Discord](https://discord.gg/megamek), our primary community hub for the suite. We offer superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games). We're also part of community Discords [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). Find us on Facebook at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek).
 
-**Mac Users**  
+**Mac Users**
 [Check out this workaround for Mac Operating Systems](https://megamek.org/wiki/mac_issues.html).
 
-**Contributing**  
+**Contributing**
 Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-to-help).
 
 ---
@@ -124,7 +124,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 ---
 ## **Change Logs (Release Specific) and Download Links**
 
-**MegaMek Change Log**  
+**MegaMek Change Log**
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.49.19.1)
 
 - Fix #5415: Implement RFE #5408: update Princess ammo conservation values
@@ -136,12 +136,12 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 - PR #5391: RaozSpas Turret Rework Phase 1
 - Data Updates
 
-**MegaMekLab Change Log**  
+**MegaMekLab Change Log**
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.19.1)
 - Fix #1498: Add separate handling for BA PW jump bonus tooltip
 - Fix for Commando filename collisions
 
-**MekHQ Change Log**  
+**MekHQ Change Log**
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.19.1)
 - Fix #4023: Save boardType to XML
 - Fix #4052: Move modifiedTemperature to AtBScenario
