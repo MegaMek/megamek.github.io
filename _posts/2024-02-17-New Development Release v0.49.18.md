@@ -123,7 +123,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #4993: Alpha Strike aero support vehicles (fixced wing support) will now find and display their fluff images if there are any
 + Fix #4998: ZIP files in the user directory will no longer generate errors when they contain files other than unit files
 + PR #5003: Implements the Internal Bomb Bay quirk
-+ PR #5024: Mech summary invalid
++ PR #5024: Mek summary invalid
 + PR #5023: Correct conversion exception causing search to not work
 + Fix #5015: Add advanced search for gyro
 + PR #5014: Fix CF warning sprite to work with isometric view
@@ -152,7 +152,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #5074: Infantry no longer incorrectly applies a BV unit type modifier
 + PR #5040: Units with TAG weapons should now be able to torso twist in the Off board / TAG phases in accordance with recent errata
 + PR #5083: Misc Code stuff
-+ Fix #4941: MechView Ammo Block
++ Fix #4941: MekView Ammo Block
 + Fix #5070: CI Anti-Mek Gear - Implements proper Anti-Mek set up for Infantry
 + Fix #5078: BA LB-X should get flak bonus against airborne targets
 + Fix #5088: Inaccurate Movement Envelope for Aerospace Fighters on Ground Maps

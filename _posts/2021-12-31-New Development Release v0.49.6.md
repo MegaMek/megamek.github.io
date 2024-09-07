@@ -22,13 +22,13 @@ If you weren't aware we have two versions of tech progression built into MegaMek
 
 ## MegaMekLab
 
-The lab hasn't had a lot of stuff done in the last couple of years. But Juliez our dev that likes improving look at feel of the programs decided to work on the lab a bit. You'll notice big changes to the UI and UIX - showing ammo and max damage on tooltips, tab-based scroll panes, improved readability on the large craft crit tabs, and improvements to the Mech crit display. Additional improvements are planned see [here for more](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1792648/#msg1792648). Our goal to keep moving MegaMekLab from the ugly ducking of designers to the premier one. Lastly, all of the MegaMekLab dependencies have been updated and a few bugs have been fixed.
+The lab hasn't had a lot of stuff done in the last couple of years. But Juliez our dev that likes improving look at feel of the programs decided to work on the lab a bit. You'll notice big changes to the UI and UIX - showing ammo and max damage on tooltips, tab-based scroll panes, improved readability on the large craft crit tabs, and improvements to the Mek crit display. Additional improvements are planned see [here for more](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1792648/#msg1792648). Our goal to keep moving MegaMekLab from the ugly ducking of designers to the premier one. Lastly, all of the MegaMekLab dependencies have been updated and a few bugs have been fixed.
 
 ## MekHQ
 
 Force icons have been completely reworked, with the Kailan pack replacing the former MekHQ pack and the graphical components updated to be consistent with Portraits and Camouflage. There's also a ton of new options for pieces added in this swap over, including the new operational status indicators shown in the examples below.
 
-![A fully operational Clan Snow Raven headquarters assault OmniMech supernova trinary](https://i.imgur.com/IKmKBpNl.png){:.img-fluid}
+![A fully operational Clan Snow Raven headquarters assault OmniMek supernova trinary](https://i.imgur.com/IKmKBpNl.png){:.img-fluid}
 
 ![A marginally operational pirate cruiser lance.](https://i.imgur.com/e7M8z58l.png){:.img-fluid}
 
@@ -89,14 +89,14 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 + PR #3249: Ammo/Weapon techbase mismatch fixes + one instance of missing ammo
 + Increasing MegaMek's base RAM allocation to 2 GB
 + Data: Updating mechfiles (fluff, some errata) new sprites updated quirks (includes fix for #3253).
-+ Updating Mechview to have a line break between fluff text.
++ Updating MekView to have a line break between fluff text.
 + Issue #3255: Add missing TSM BV modifier (x2) to Claws
 + PR #3625: Don't show ECM bubbles for hidden hostile units
 + PR #3270: Updating Flat Look and Feel from 0.26 to 1.6.5
 + PR #3281: Updating Commons-Text to 1.9 from 1.8
 + PR #3261: Allows active probes to reveal hidden units "on the move" as per TacOps Active Probe rules.
 + PR #3288: princess: ignoreTarget: unitID
-+ PR #3292: Quad Mechs no longer swap cover and aiming mode when doing a head hit edge reroll
++ PR #3292: Quad Meks no longer swap cover and aiming mode when doing a head hit edge reroll
 + PR #3289: Upgrading Mockito to 4.1.0
 + Issue #3240: Fixing JumpShip no Grav Deck Crit Handling
 + Issue #3273: Fixing Off-board Artillery NPE
@@ -129,7 +129,7 @@ We think we now have a [url=https://megamek.org/wiki/mac_issues.html]workaround 
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.49.6)
 
 + Issue #908: Corrections to the Aero reference tables
-+ Issue #943: Add CASE info to ammo on non-Mech Record Sheets
++ Issue #943: Add CASE info to ammo on non-Mek Record Sheets
 + Issues #646, #953: Show Ammo Shots and Weapon Maximum Damage in tooltips
 + Issue #785: Tab-based Scroll panes
 + PR #961: Preserve expanded state of Large Aero Weapon Bays

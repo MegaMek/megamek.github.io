@@ -43,7 +43,7 @@ As a process of improving the Record sheet printing, we’ve made significant im
 
 The terrain we fight has also improved as we’ve added more maps including some amazing ones from Simon Landmine and Derv. To help with these maps we’ve overhauled the Map Editor, swapped to the Saxarba Theme, added SirMegaV building fluff and implemented inclines/cliffs/level 1 terrain. We also had a large texture overhaul from Ahne.
 
-Other graphical improvements include the addition of [‘Damage Decals’](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1625891/#msg1625891) for 'Mechs and vehicles. Destroyed vehicles/ASFs now look like the unit that was destroyed (unless there is an ammo explosion, then it looks like a crater).
+Other graphical improvements include the addition of [‘Damage Decals’](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1625891/#msg1625891) for 'Meks and vehicles. Destroyed vehicles/ASFs now look like the unit that was destroyed (unless there is an ammo explosion, then it looks like a crater).
 
 Data-wise we’ve got new sprites based on the Kickstarter, and Deadborder has finished the vehicle project. This means every current land unit in the game has a sprite down to the chassis-model level. Unit-wise, every unit playable up to Rec Guide 12 is in this release. For fun, GreekFire has helped add Fluff text to a selection of units.
 
@@ -55,7 +55,7 @@ Lastly two words - Dark Mode.
 
 This development cycle the focus has been on making MegaMekLab more robust and able to support almost all types of unit construction. We’ve have 200 bug fixes and 34 PR’s for additions. At the end of this cycle we are happy to say that we can and print the following:
 
-* 'Mechs. (Normal, IM, Tripod, Super Heavy, LAMs, QuadVee) - Building and printing (except handheld weapons)
+* 'Meks. (Normal, IM, Tripod, Super Heavy, LAMs, QuadVee) - Building and printing (except handheld weapons)
 * Combat Vehicles - Building and printing (including Naval units)
 * Battle Armor - Building and printing
 * Aerospace Fighters - Building and printing
@@ -65,7 +65,7 @@ This development cycle the focus has been on making MegaMekLab more robust and a
 * JumpShips - Building and printing
 * WarShips - Building and printing
 * Space Stations - Building and printing
-* ProtoMechs - Building and printing
+* ProtoMeks - Building and printing
 * Support Vehicles (standard support vehicles from TW/TM except Airships but including Rail) printing still to come.
 
 A few notes on printing record sheets, you will find that using the “export to PDF” then printing the PDF will give you better results. The official sheets used by CGL have a different font than the ones you’ll print. During this development cycle we removed that font due to concerns around licensing and distributing it. Added lots of options for unit design and print configurations under the File-Configuration. This includes things like including optional tables, roles, quirks, heat profiles, table-top mini scale, and color or Black and white sheets.

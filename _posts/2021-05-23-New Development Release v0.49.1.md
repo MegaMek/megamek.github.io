@@ -83,7 +83,7 @@ Another reminder when moving between versions:
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.49.1)
 
 + Data: Fixing Aerospace Tech Portrait Folder Names
-+ PR #2571: Fixing MechWarrior Salary
++ PR #2571: Fixing MekWarrior Salary
 + Issue #2569: Adding userdata to the build script
 + Issue #2574: Fixing Experience Tab Custom Skill Costs Formatting Type
 + PR #2584: MekHQ Options: New Day: Auto-hiring Pool Options

@@ -139,7 +139,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Fix #4334: Correctly display heat capacity on unit tool tip to match unit card when TO Heat-sink Coolant Failure is used
 + Fix #4221: Flares now correctly de-spawn when blown off the map
 + Fix #2333: Show Weapon Quirks in various tool tips
-+ Fix MML 881: Problem with PPC Capacitors in Mixed Tech Mechs and Vehicles (adding missing PPCs)
++ Fix MML 881: Problem with PPC Capacitors in Mixed Tech Meks and Vehicles (adding missing PPCs)
 + Issue #2972: Add team BV totals to round report
 + PR #4348: Add weapon location to tooltips if appropriate client setting is on
 + Issue #2569: Ability to change certain color palettes in client settings to improve accessibility

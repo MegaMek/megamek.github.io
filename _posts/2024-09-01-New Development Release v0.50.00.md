@@ -34,7 +34,7 @@ Since you've read the links above, you know about Java 17, the new unified relea
 
 ![Artillery Markers](https://i.imgur.com/2sK7cb6.png)
 
-- Implemented the ability to place and carry cargo objects (currently for Mechs and ProtoMechs only). Capture the flag anyone?
+- Implemented the ability to place and carry cargo objects (currently for Meks and ProtoMeks only). Capture the flag anyone?
 - [Ammo Autoconfig anyone?](https://github.com/Sleet01/megamek/blob/90f17dd865bdc49476f16f711f15e7da4975df05/megamek/docs/Automatic%20Ammunition%20Configuration%20tool%20doc%200.50.0.pdf)
 
 Here's an update on our favorite Sociopath - Princess
@@ -147,13 +147,13 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 
 For this release the change logs are too large for the forum, please see them at the download links provided.
 
-**MegaMek Change Log**  
+**MegaMek Change Log**
 [Download](https://github.com/MegaMek/megamek/releases/tag/v0.50.0)
 
-**MegaMekLab Change Log**  
+**MegaMekLab Change Log**
 [Download](https://github.com/MegaMek/megameklab/releases/tag/v0.50.0)
 
-**MekHQ Change Log**  
+**MekHQ Change Log**
 [Download](https://github.com/MegaMek/mekhq/releases/tag/v0.50.0)
 
 Thanks!

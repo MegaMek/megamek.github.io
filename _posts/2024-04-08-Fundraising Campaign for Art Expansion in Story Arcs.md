@@ -12,12 +12,12 @@ At a minimum, we need to commission 2 new splash screens and 4 pieces of charact
 3. **Frontline Ceasefire Talks**: Precarious negotiations under the shadow of war.
 
 ### Conflict and Warfare
-4. **Urban Combat**: Mechs and infantry clashing within the heart of besieged cities.
+4. **Urban Combat**: Meks and infantry clashing within the heart of besieged cities.
 5. **Espionage/Sabotage Mission**: Covert operations threatening the balance of power.
 
 ### Training and Maintenance
-6. **Pilot Training Facility**: Next-gen MechWarriors honing their combat prowess.
-7. **Mech Hangar**: The lifeline of any Mech regiment.
+6. **Pilot Training Facility**: Next-gen MekWarriors honing their combat prowess.
+7. **Mek Hangar**: The lifeline of any Mek regiment.
 
 ### Space Operations
 8. **Space Battle**: The run in system, when all the forces are most at risk.
@@ -37,6 +37,6 @@ The development team has started funding internally, with each piece of art rang
 
 The fundraiser will conclude once we hit our target. If we are unable to acheive our target we'll continue and do what we can with the funds raised. The priority being the art we need to finish "Young Wolves". All Contributors will be recognized in the MegaMek contributors file, with the final artwork being integrated into MegaMek and available through our repositories and releases.
 
-We will strictly adhere to our open-source licensing terms. All donations received are optional and will be directed entirely to third-party artists for the development of new artwork in compliance with licensing agreements from relevant rights holders. 
+We will strictly adhere to our open-source licensing terms. All donations received are optional and will be directed entirely to third-party artists for the development of new artwork in compliance with licensing agreements from relevant rights holders.
 
 The artwork will be distributed under a license compatible with MegaMek's existing open-source license, ensuring it can be freely used, modified, and shared within the community, in line with our project's open-source principles.

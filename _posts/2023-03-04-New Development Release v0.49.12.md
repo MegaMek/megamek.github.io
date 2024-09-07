@@ -171,7 +171,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 
 [DOWNLOAD](https://github.com/MegaMek/mekhq/releases/tag/v0.49.12)
 
-+ Issue #3345: Rename Gunnery/Protomech to Gunnery/ProtoMech
++ Issue #3345: Rename Gunnery/Protomech to Gunnery/ProtoMek
 + Issue #3541: Maintenance Extra Time Doesn't Show For Mothballing, Activating, and Mothballed Units
 + Issue #3542: Remove Unit Market Offers That Fail to Parse
 + Issue #3553: Migrate Turn Timer Game Option
@@ -184,7 +184,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #2482: Interstellar Map: Add Contract Search and Planetary Acquisition Radius Options
 + PR #3546: Campaign Options: Move Contract Search Radius and Variable Contract Length to Contract Market
 + PR #3551: Campaign Options: Fixing Financial Year Tool Tip Option Typo
-+ Issue #3554: Null Protecting MechSummaryCache Return
++ Issue #3554: Null Protecting MekSummaryCache Return
 + PR #3557: Yearly Retirement Nag Now Follows Campaign Options
 + PR #3561: Campaign Options Dialog: Fixing Random Retirement Panel Name
 + PR #3563: Base Components: Moving JDisableablePanel to MM

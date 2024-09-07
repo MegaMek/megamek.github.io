@@ -139,7 +139,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #1552: Added Arrow IV air defense missiles; Princess can use them if available
 + Issue #4782: Argotera now has full-head ejection system
 + Fix #4780: Players can once again fire during the point blank phase
-+ Fix #4779: Mechs can once again sprint
++ Fix #4779: Meks can once again sprint
 + Fix #4768: Improved gauss rifles nerfed - take a +1 penalty to the TN when fired from small aeros
 + Issue #4550: Improve Princess logic regarding placement of units in deep water
 + Issue #2698: Attempt to reduce bot speed in low gravity
@@ -189,7 +189,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 + Issue #3725: Improve performance when searching for parts using "planetary acquisition"
 + Issue #2854: Implemented CamOps errata for avionics repair times
 + PR #3756: Tech level filtering in the unit selector dialog has been corrected
-+ Issue #3747: Unable to Assign Pilots to Tripod Mechs
++ Issue #3747: Unable to Assign Pilots to Tripod Meks
 + PR #3766: weight calculation for spare mech locations
 + PR #3768: Arano Restoration Campaign - Planetary Control
 

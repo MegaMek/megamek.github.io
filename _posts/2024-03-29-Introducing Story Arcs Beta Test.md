@@ -3,7 +3,7 @@ Hi Everyone,
 **We are thrilled to announce the special Beta launch of Story Arcs - A feature we've envisioned and talked about for years!**
 ![Story Arcs Beta Launch](http://i.imgur.com/jIhqijjl.jpg)
 
-In the beginning, MekHQ was primarily for managing tabletop campaigns and creating missions in MegaMek. Then back in 2014, when MekHQ was five years old we implemented the "Against the Bot" (AtB) spreadsheet into MekHQ. This, followed by Stratcon, has led to countless Merc units being born, destroyed, and born again. But early on, there was a clear demand for a branching narrative tool in MekHQ, which would enable users to craft Starterbooks-style campaigns or their own Mech-based adventures they could play and share.
+In the beginning, MekHQ was primarily for managing tabletop campaigns and creating missions in MegaMek. Then back in 2014, when MekHQ was five years old we implemented the "Against the Bot" (AtB) spreadsheet into MekHQ. This, followed by Stratcon, has led to countless Merc units being born, destroyed, and born again. But early on, there was a clear demand for a branching narrative tool in MekHQ, which would enable users to craft Starterbooks-style campaigns or their own Mek-based adventures they could play and share.
 
 This concept languished as an idea for years, sporadically receiving attention but lacking solid development. Then, in 2021, Taharqa, the creator of MekHQ, took significant steps by starting to code this feature, leading to the creation of the "Young Wolves" campaign, which delves into the Refusal War of 3057.
 

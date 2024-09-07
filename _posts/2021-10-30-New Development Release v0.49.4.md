@@ -31,7 +31,7 @@ There's now a menu to assign personnel to a unit from the hangar tab, all of pre
 
 ![Assign Personnel Updates](https://i.imgur.com/2MbRfXyl.png){:.img-fluid}
 
-We've also added support for Tripod BattleMechs, properly layered force camouflage (Windchild - my bad on that not being implemented from the start of the camouflage changes), total XP earnings tracking, the Maintainer unofficial SPA, a few new minor campaign options, and moved era definitions to a data file (albeit in their barely used state).
+We've also added support for Tripod BattleMeks, properly layered force camouflage (Windchild - my bad on that not being implemented from the start of the camouflage changes), total XP earnings tracking, the Maintainer unofficial SPA, a few new minor campaign options, and moved era definitions to a data file (albeit in their barely used state).
 
 Finally, there have also been a bunch of bugfixes.
 
@@ -86,7 +86,7 @@ We think we now have a [workaround for Mac Operating Systems](https://megamek.or
 + PR #3159: Per errata, primary infantry weapons doing more than .6 damage per trooper have been nerfed to .6; infantry burst fire trait added for those
 + Data: Various Unit file fixes
 + Issue #3128: Restore bot ability to unload infantry/BA from transports.
-+ PR #3167: Tripod 'Mech Center Leg Actuator Damage Customization
++ PR #3167: Tripod 'Mek Center Leg Actuator Damage Customization
 + PR #3168: Array bounds protecting Entity::getCritical
 + Issue #3133: Adding before round 1 deployment option
 + PR #3170: Fix NPE preventing loading MULs containing transported units
@@ -134,7 +134,7 @@ We think we now have a [workaround for Mac Operating Systems](https://megamek.or
 + Issue #2825: Individual Camouflage Bulk Assignment from Same Original Camouflage
 + Issue #2521: Star League Caches No Longer Generate in Pre-Spaceflight, Early Spaceflight, and Age of War Eras
 + Issue #2838: Turrets now generate with the proper faction and thus names
-+ Issue #2841: Properly hide the MechWarriors grouping when using individual role filters
++ Issue #2841: Properly hide the MekWarriors grouping when using individual role filters
 + Issue #2747: Fixing StratCon Scenario Template Path Capitalization
 + PR #2847: Preventing Null Force Template Addition
 + PR #2849, 2846: Addressed multiple errors resulting in failure to generate aerospace scenarios
@@ -146,7 +146,7 @@ We think we now have a [workaround for Mac Operating Systems](https://megamek.or
 + Data: Adding UlyssessSockdrawer's excellent Co-op guide to docs folder.
 + Issue #2873: Part doesn't serialize brandNew flag
 + Issue #2878: Prevent dropship bay doors from continuously breaking down when loading saves
-+ Issue #1236: Adding full support for Tripod 'Mechs
++ Issue #1236: Adding full support for Tripod 'Meks
 + Issue #1420: Can No Longer Deploy a Person Multiple Times
 + Issue #2867: Making the default unit market type the Open market instead of the Employer Market
 + PR #2869: Serializing StratCon OpFor Skill and Quality

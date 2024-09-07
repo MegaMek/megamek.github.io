@@ -114,7 +114,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - Issues #2749 and #3418: Proper Supercharger Implementation and Improved MASC/Supercharger Hex Movement Display
 - PR #3446: Adding the Legendary SkillLevel
 - PR #3427: Properly Loading All Fonts in MegaMek
-- PR #3452: Mech melee equipment validation update
+- PR #3452: Mek melee equipment validation update
 - PR #3454: Hull-down vehicles can indirectly fire body-mounted LRMs per errata
 - PR #3458: Rat Generator Editor UI Updates
 - Issue #3460: Preventing Gun Emplacement Off-board Deployment and NPEs
@@ -233,7 +233,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - Issue #3097: Adding Medical Dialog Handwriting Font Selection Option
 - PR #3137: Fixing the final two LGTM issues
 - PR #3113: AbstractIcon: MekHQ's Preferences Now Write to MekHQ's File
-- PR #3123: Company Generator: Adding MechWarrior Callsign Generation Option
+- PR #3123: Company Generator: Adding MekWarrior Callsign Generation Option
 - Issue #3132: Adding Entity Generation Null Protection for Officer Duel Scenario
 - PR #3105: Base Components: CompleteMissionDialog Rewrite
 - Issue #2877: Part XML File I/O using MHQXMLUtility
@@ -251,7 +251,7 @@ We thank everyone who's been part of this community and for those that haven't p
 - PR #3181: TransactionType: Alphabetical Options Rework
 - Data: Adding UlyssesSockdrawer Chaos Campaign Guide.
 - Issue #3196: Fixing Remove Unit NPE
-- Issue #3207: Hangar Report: Adding Missing Ultralight IndustrialMech Category
+- Issue #3207: Hangar Report: Adding Missing Ultralight IndustrialMek Category
 - Issue #3211: Handling UnitTableMouseAdapter Bomb Bay Null Munition Types NPE
 - PR #3220: Fixing VTOL Pilot Assignment
 - PR #3221: Increasing Maximum Bulk Part and Personnel Purchase Quantity to 10k

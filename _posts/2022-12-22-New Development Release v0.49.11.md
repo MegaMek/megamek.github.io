@@ -159,7 +159,7 @@ We are also happy to announce we have an [official MegaMek Discord](https://disc
 [DOWNLOAD](https://github.com/MegaMek/megameklab/releases/tag/v0.49.11)
 
 + Issue #910: Fix SV Fission and TL C Fusion Engine Minimum Weight
-+ PR #1168: Fixing Tripod Leg and Mech Spike Dagger Character Uses
++ PR #1168: Fixing Tripod Leg and Mek Spike Dagger Character Uses
 + PR #1181: Infantry refactor adaptation
 + Issue #1169: Add the engine rating and type to more Record Sheets
 + Issue #1179: Remove (IS) label from Plasma Rifle on Mixed Tech units

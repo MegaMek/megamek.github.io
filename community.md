@@ -14,7 +14,7 @@ to find other players? There are several options.
 
 - The most direct approach is to [join our Discord community](https://discord.gg/megamek) where you can chat directly with other players as well as developers.
 - You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
-- For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MechWarrior...&channels=Battletech&prompt=1).
+- For the IRC inclined, you can check out an IRC channel (#Battletech) on [irc.esper.net](http://webchat.esper.net/?nick=MekWarrior...&channels=Battletech&prompt=1).
 - Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment. They also have a [Discord](https://discord.gg/CQ5uvkEkdk)
 - There are also two active BattleTech Discords with MegaMek channels - [MRC Hub](https://discord.gg/WUvbXQRRfW) and [BattleTech](https://discord.gg/D9jFn52)
 

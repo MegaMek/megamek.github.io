@@ -143,7 +143,7 @@ Another reminder when moving between versions:
 + PR #2622: Camouflage: Deadborder Pack, Base Component Swapover
 + PR #2653: Expanding File/Refresh Capabilities
 + PR #2652: Personnel Table Expanded Randomization Functionality
-+ Issue #2659: Hangar Report: Adding IndustrialMech Section and Missing Combat Vehicle Super Heavy Nodes
++ Issue #2659: Hangar Report: Adding IndustrialMek Section and Missing Combat Vehicle Super Heavy Nodes
 + Issue #2642: StratCon Tab: Force Table Background Doesn't Work Properly in Nimbus
 + Issue #2610: Adding Tech Officer migration from the reference class
 + Issue #2534: Fixing Missing Clan Check For Endo Steel Location Repairs

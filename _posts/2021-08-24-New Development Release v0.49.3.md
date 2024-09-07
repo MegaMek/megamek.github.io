@@ -105,7 +105,7 @@ Another reminder when moving between versions:
 + PR #3072: Hidden Units is now Enabled by default
 + Issue #3065: Prevent units from winding up with an illegal facing as a result of a fish tail, and in general.
 + Issue #3042: Properly Set Anti-Mek Skill For Battle Armour and Infantry
-+ PR #3082: AbstractUnitSelectorDialog: Properly Catching NPEs and other MechFileParser Exceptions in getSelectedEntity
++ PR #3082: AbstractUnitSelectorDialog: Properly Catching NPEs and other MekFileParser Exceptions in getSelectedEntity
 + PR #2980: Do not use GUIPreferences from Board
 + Issue #2951: Update to-hit modifiers for weapon and physicals attacks against grounded dropships and other superheavy units.
 + Data: Updated Boards including MegaMek Invitational Boards

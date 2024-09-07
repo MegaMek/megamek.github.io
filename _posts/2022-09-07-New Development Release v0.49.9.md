@@ -117,10 +117,10 @@ We thank everyone who's been part of this community and for those that haven't p
 + Issue #3688: Adding Color to Heat Reports
 + Issue #3722: Princess will do a better job not targeting ignored units with artillery
 + Issue #3729: Any button click on map now brings up menu, improving usability on single-button machines
-+ PR #3734: Fixing Nowhwere Typos
++ PR #3734: Fixing Nowhere Typos
 + PR #3733: Change border colors on the minimap for moved units
 + Issue #3599: Unjam/clear turret buttons update properly after canceling pending firing orders
-+ Issue #3711: Female MechWarriors are now able to have a beer after ejecting from their mech
++ Issue #3711: Female MekWarriors are now able to have a beer after ejecting from their mech
 + Data: New Sprites including the return of 'Royal' sprites (Thanks to UlyssesSockdrawer)
 + Data: Battle Armor moving to new MUL conventions (4,5,6 unit squads).
 + Issue #3695: Increased amount and usefulness of data displayed in the General tab of the unit display.

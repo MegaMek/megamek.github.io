@@ -78,7 +78,7 @@ While 0.50.0 is a Development release, and the jump to 0.50.0 marks the move us 
 - Enhanced markers for hit, drifted, and missed artillery and bomb attacks.
   ![Imgur](https://i.imgur.com/2sK7cb6.png)
 - Significantly improved Princess's ability to handle hazardous terrain.
-- Implemented the ability to place and carry cargo objects (currently for Mechs and ProtoMechs only).
+- Implemented the ability to place and carry cargo objects (currently for Meks and ProtoMeks only).
 
 ### MegaMekLab
 

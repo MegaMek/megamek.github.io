@@ -170,7 +170,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + Fix #4935: Torpedoes no longer think they're crossing dry land when in fact they are fired through open water
 + PR #4921: Background colors for the unit tooltip can now be configured in the client settings
 + PR #4954: Add the MM version and date when saving unit files
-+ PR #4955: MechSummaryCache BV calculation: ignore pilot skill
++ PR #4955: MekSummaryCache BV calculation: ignore pilot skill
 + Data #4933: Megamek TacOps ammo BV error (Partial Fix - work still needed on Dead Fire and LK)
 + PR #4956: Use foot/jump type modifier for beast-mounted infantry
 + PR #4963: In the heat report, heat effects are now shown after the affected unit (instead of before)
@@ -198,7 +198,7 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 + PR #1337: The BA manipulator size can now be set in MML
 + Fix #1005: Fixed issues with conventional infantry where the GUI was not updating correctly after changes to the number of infantry in a squad or the primary weapon
 + Fix #1154: Protomech Armor Limits Inconsistent 0.49.8
-+ Fix #1345: Some ProtoMech arm armor maximums were incorrect
++ Fix #1345: Some ProtoMek arm armor maximums were incorrect
 + Fix #1341: Clan ferro-aluminum armor no takes up the right number of slots on Aerospace units
 + Issue #1061: Add 'Generator' key to .mtf format, MM/MML can now load .mtf files exported from SSW
 + Fix #1334: Adding a oneshot launcher no longer removes ammo for other weapons from the equipment list
