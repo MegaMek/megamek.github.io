@@ -31,11 +31,11 @@ By moving to GitHub Templates it allows us to:
 
 ## 🔍 How to Submit a Request or Issue
 
-<img src="https://i.imgur.com/nM2yUmZ.png" alt="How to Submit a Request" width="600"/>
+<img src="https://i.imgur.com/nM2yUmZ.png" alt="How to Submit a Request" style="max-width: 100%; height: auto;"/>
 
 1. Head over to our GitHub tracker.
 2. Look for the **Issues** button (as usual).  
-   <img src="https://i.imgur.com/ccVxKja.png" alt="Issues button example" width="400"/>
+   <img src="https://i.imgur.com/ccVxKja.png" alt="Issues button example" style="max-width: 100%; height: auto;"/>
 3. Select the appropriate issue type:
     - **Request for Enhancement (RFE)** for new features or improvements.
     - **Bug Report** for issues you’ve encountered in the game.
