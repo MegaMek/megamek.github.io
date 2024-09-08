@@ -31,11 +31,12 @@ By moving to GitHub Templates it allows us to:
 
 ## 🔍 How to Submit a Request or Issue
 
+<img src="https://i.imgur.com/nM2yUmZ.png" alt="How to Submit a Request" width="600"/>
+
 1. Head over to our GitHub tracker.
-2. Look for the **Issues** button (as usual).
-   ![Issues button example](https://i.imgur.com/ccVxKja.png)
+2. Look for the **Issues** button (as usual).  
+   <img src="https://i.imgur.com/ccVxKja.png" alt="Issues button example" width="400"/>
 3. Select the appropriate issue type:
-   ![How to Submit a Request](https://i.imgur.com/nM2yUmZ.png)
     - **Request for Enhancement (RFE)** for new features or improvements.
     - **Bug Report** for issues you’ve encountered in the game.
 4. Follow the steps in the form to provide details such as version info, a description, and relevant screenshots or logs.
@@ -43,5 +44,4 @@ By moving to GitHub Templates it allows us to:
 ## 📄 What You Need to Know
 
 - The new forms have mandatory fields (marked with `*`) to ensure we get the key details needed to help you.
-![Imgur](https://i.imgur.com/VD1sxeI.png)
 - If you’re submitting a Request for Enhancement (RFE), please make sure you’ve checked the [Content Policy](https://github.com/MegaMek/megamek/wiki/Unofficial-or-Non%E2%80%90Canon-Content-Policy) and verified that your request aligns with the project’s guidelines.
