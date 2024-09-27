@@ -111,7 +111,7 @@ For those interested in the underlying calculation, the formula for Generic BV i
 Math.round(Math.exp(B0 + B1 * Math.log(getWeight())))
 ```
 
-Here, `B0` and `B1` are coefficients derived from our database of units.
+Here, `B0` and `B1` are coefficients derived from our database of units. For those that want the Ultimate in [BattleMath](https://gleeful-croquembouche-32c070.netlify.app/) gives this a read, but its not for the faint of heart.
 
 By implementing this approach, Force Generation 3 ensures that battles are not only balanced but also unpredictable and reflective of authentic BattleTech dynamics, enhancing the overall gameplay experience.
 
