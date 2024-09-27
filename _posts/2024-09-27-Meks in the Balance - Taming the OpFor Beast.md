@@ -129,14 +129,19 @@ After generating its units, MekHQ uses the Generic BV and compares the total BV 
 
 ## Example: The Impact on Aerospace Scenarios
 
-A lance of Flying Drakøns (Legendary pilots, 0/1) generated an unbalanced scenario under the old system. As you can see, they are likely to be overwhelmed by numbers.
+A lance of Flying Drakøns (Legendary pilots, 0/1).
 
-<img src="https://i.imgur.com/iTUJZkC.png" alt="Flying Drakøns Unbalanced" style="max-width: 100%; height: auto;">
+<img src="https://i.imgur.com/iTUJZkC.png" alt="Flying Drakøns" style="max-width: 100%; height: auto;">
 
+
+Generated an unbalanced scenario under the old system. As you can see, they are likely to be overwhelmed by numbers.
+
+<img src="https://i.imgur.com/GQ9KZD8.png" alt="UnBalanced Scenario" style="max-width: 100%; height: auto;">
 
 Using the revised generation, the scenario felt more balanced, showcasing the improvements.
 
-<img src="https://i.imgur.com/GQ9KZD8.png" alt="Balanced Scenario" style="max-width: 100%; height: auto;">
+<img src="https://i.imgur.com/KdvmvwH.png" alt="Balanced Scenario" style="max-width: 100%; height: auto;">
+
 
 ### You Dare To Refuse My Batchall!?
 
