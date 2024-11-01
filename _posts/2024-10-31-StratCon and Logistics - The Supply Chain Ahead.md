@@ -8,9 +8,12 @@ tags: [megamek, stratcon, logistics, development]
 ---
 
 ## StratCon and Logistics
-<a href="https://imgur.com/75rdHKS">
-  <img src="https://i.imgur.com/75rdHKS.jpg" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
+<div style="text-align: center;">
+  <a href="https://imgur.com/75rdHKS">
+    <img src="https://i.imgur.com/75rdHKS.jpg" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
+
 
 > "The strength of our warriors lies not only in their skill, nor in the power of their BattleMechs, but in the lifelines that sustain them. Every ration, every round of ammunition, and every wrench in a technician's hand is a testament to the relentless and unseen force of logistics. Without it, even the mightiest lance would falter. Let those who seek victory never forget that battles are won on the front lines, but wars are sustained in the shadows—by those who toil to ensure we endure."
 >
@@ -40,10 +43,11 @@ In the days before MekHQ, when mercenary commanders tracked their units via the 
 
 Looking back at the original AtB spreadsheet, post-battle bonuses followed a structured table system:
 
-<a href="https://imgur.com/mp0cBem">
-  <img src="https://i.imgur.com/mp0cBem.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
-
+<div style="text-align: center;">
+  <a href="https://imgur.com/mp0cBem">
+    <img src="https://i.imgur.com/mp0cBem.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 Even in these early rules, there were clear restrictions: while parts could be from any availability level, they explicitly could not be LosTech, and commanders still had to pay standard market prices. For civilian vehicles and 'Mechs, commanders could opt to receive their C-bill value instead.
 
@@ -62,10 +66,11 @@ The problems with Bonus Parts have become as obvious as a Atlas trying to sneak 
 
 ## Introducing Resupplies
 
-<a href="https://imgur.com/ImQtl3r">
-  <img src="https://i.imgur.com/ImQtl3r.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
-
+<div style="text-align: center;">
+  <a href="https://imgur.com/ImQtl3r">
+    <img src="https://i.imgur.com/ImQtl3r.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 Enter the Resupply system – a new approach to how mercenary units receive their critical supplies. Under this system, your employer will dispatch monthly Resupplies tailored specifically to your unit's needs and capabilities. Think of it as having a dedicated quartermaster who intimately knows your force composition.
 
@@ -73,41 +78,48 @@ Enter the Resupply system – a new approach to how mercenary units receive thei
 
 Your Resupply Drops are determined by analyzing your active combat units (excluding mothballed units and those marked for salvage). The system creates a weighted pool of all parts currently in use across your force. For example, if your unit fields five Medium Lasers but only one Large Laser, Medium Lasers will appear five times more frequently in your Resupplies.
 
-<a href="https://imgur.com/t4Rv2t6">
-  <img src="https://i.imgur.com/t4Rv2t6.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
-
+<div style="text-align: center;">
+  <a href="https://imgur.com/t4Rv2t6">
+    <img src="https://i.imgur.com/t4Rv2t6.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 ### What's going on with the Supply Convoy?
 
-<a href="https://imgur.com/YJYdOWq">
-  <img src="https://i.imgur.com/YJYdOWq.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
-
+<div style="text-align: center;">
+  <a href="https://imgur.com/YJYdOWq">
+    <img src="https://i.imgur.com/YJYdOWq.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 Your Resupply convoys don't just follow predetermined supply routes – they navigate through active war zones. During transit, your convoy commander may contact you with situation reports, drawing from over 100 possible encounters. The intensity of your contract plays a role too, with an additional 200 events triggered by enemy morale levels.
 
 ### Did we bring enough trucks?
 
-<a href="https://imgur.com/YJYdOWq">
-  <img src="https://i.imgur.com/YJYdOWq.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
+<div style="text-align: center;">
+  <a href="https://imgur.com/YJYdOWq">
+    <img src="https://i.imgur.com/YJYdOWq.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 On Independent Contracts the player will have the opportunity to designate forces in their TO&E as Resupply Convoys. These convoys will have events happen to them and may be intercepted. The efficiency of the convoy will be based on its Cargo capacity. With each scale of Resupply requiring 25 tons.
 
 ### Smugglers
 
-<a href="https://imgur.com/WnK2zJp">
-  <img src="https://i.imgur.com/WnK2zJp.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
+<div style="text-align: center;">
+  <a href="https://imgur.com/WnK2zJp">
+    <img src="https://i.imgur.com/WnK2zJp.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 On Guerrilla Contracts the player does not have the luxury of organized resupplies - either from their employer, or their own convoys. Instead, players will need to rely on the 'generosity' of local smugglers. Each month the player will be presented with an offer from a local smuggler.
 
 ## In Development: LosTech
-<a href="https://imgur.com/nM3cdxW">
-  <img src="https://i.imgur.com/nM3cdxW.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
-</a>
-
+<div style="text-align: center;">
+  <a href="https://imgur.com/nM3cdxW">
+    <img src="https://i.imgur.com/nM3cdxW.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
 ### The Hunt for Lost Technology
 
@@ -127,8 +139,6 @@ Should fortune favor your expedition, you may receive an enigmatic transmission:
     <img src="https://i.imgur.com/qe7wy6J.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
   </a>
 </div>
-
-
 
 ### With Great Rewards come Great Risks
 
