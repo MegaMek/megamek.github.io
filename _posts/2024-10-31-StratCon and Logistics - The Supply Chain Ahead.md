@@ -152,6 +152,8 @@ Should fortune favor your expedition, you may receive an enigmatic transmission:
 ## Be a Test Pilot!
 We have an Alpha Version of this based on the 0.50.01-Development codebase. If you want to help test this new feature, you can download the [Artifact here](https://github.com/MegaMek/mekhq/actions/runs/11622017545/artifacts/2131272913)  
 
+**You'll need a GitHub Account and be logged in to download the Artifact.**
+
 It's very important that the Artifact sit in its own folder. All campaigns from 0.50.0 campaigns can be transferred to test **BUT** once a campaign is using this Artifact it can't go back to **ANY** other version. 
 
 We have a dedicated channel to this on our [Discord](https://discord.gg/megamek) and we strongly recommend joining to stay up to date. 
