@@ -142,29 +142,12 @@ Should fortune favor your expedition, you may receive an enigmatic transmission:
 
 ### With Great Rewards come Great Risks
 
----BEGIN TRANSMISSION---
+<div style="text-align: center;">
+  <a href="https://imgur.com/6cYMQLD">
+    <img src="https://i.imgur.com/6cYMQLD.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
 
-Transmission Code: @##$%@!&^***
-
-Date: Fe$#uary 18, 30@%
-
-TO: Precentor Gid@on Tha#&s
-
-FROM: Agent &h!a Vo$$
-
-RE: O-erat*-n ^(*y Sh!o7d, File 78^0RAM
-
-*Pe# st@r^ng orders, infiltra^&on of mercenary unit [##@%@^!&] is compl@#ed. Int!i^l recon rep%ts L_sT^ch d!sc@ver#d at su@-cted S-/r L#&gue depot. Ope!&tives have embe#%ed with t#ir log+%tics, and soft inte$tion has begun.
-
-*Det_%ted sig^&ficant activity ar*#nd access point. LosTech spo$$ include var^%us Me#%s and eq*%pment of S*a# L#@gue origin. Recomm@#d moving to Phase T^& to neut#!ize risk of tec$logical redis#@ery.
-
-Sab#%age preps und_#way. Comms interfe^%ce eff!@tive, fal@% morale amo*% unit maint*#ned by so#%ed faults in eq()ment. Delays rep%#ted as _per*%ives ins@#e doubt reg$#ding 'curse' of LosT%#h.
-
-Approval needed for Phase T@^ escal*#ion. Use of ^_(#&&( for cache destr#@ion is re&om$#ed. Risk e+tim#te within -cce@%ble parameters.
-
-The Peace of Blake be w^%h you.
-
----END TRANSMISSION-
 
 ## Be a Test Pilot!
 We have an Alpha Version of this based on the 0.50.01-Development codebase. If you want to help test this new feature, you can download the [Artifact here](https://github.com/MegaMek/mekhq/actions/runs/11622017545/artifacts/2131272913)  
