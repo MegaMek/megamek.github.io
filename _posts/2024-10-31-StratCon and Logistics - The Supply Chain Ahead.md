@@ -122,7 +122,13 @@ Victory in these missions doesn't guarantee discovery. Sometimes the rumors lead
 #### Mysterious Offers
 Should fortune favor your expedition, you may receive an enigmatic transmission:
 
-<a href="https://imgur.com/qe7wy6J"><img src="https://i.imgur.com/qe7wy6J.png" title="source: imgur.com" /></a>
+<div style="text-align: center;">
+  <a href="https://imgur.com/qe7wy6J">
+    <img src="https://i.imgur.com/qe7wy6J.png" style="width: 100%; max-width: 600px; height: auto;" alt="Responsive Image">
+  </a>
+</div>
+
+
 
 ### With Great Rewards come Great Risks
 
