@@ -1,3 +1,4 @@
+---
 layout: post
 title: "MegaMek, MegaMekLab, and MekHQ 0.50.01 Release Notes"
 date: 2024-11-10
