@@ -42,10 +42,14 @@ Keep in mind these are just highlights and you'd need to look at the change logs
 - Corrected cargo bay minimum doors ([#6322](https://github.com/MegaMek/megamek/pull/6322))
 - Updated aerospace takeoff logic and landing rules ([#6302](https://github.com/MegaMek/megamek/pull/6302))
 - Fixed ECM effects on sensor spotting ([#6238](https://github.com/MegaMek/megamek/pull/6238))
+
 ---
+
 ## Release Highlights for MegaMekLab
 - There hasn't been much work on MegaMekLab this cycle other than a couple of fixes to support the new MegaMek features.
+
 ---
+
 ## Release Highlights for MekHQ
 ## Major Features and Improvements
 
