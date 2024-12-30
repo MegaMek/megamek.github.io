@@ -1,0 +1,481 @@
+---
+layout: post
+title: "MegaMek, MegaMekLab, and MekHQ 0.50.02 Release Notes"
+date: 2024-12-30
+categories: release
+---
+
+<h2>Hi Everyone,</h2>
+<p>
+  Welcome to 0.50.02; this is another massive release. With so much code comes
+  challenges: while fixing bugs, modernizing code, and introducing new
+  features, new issues can emerge. We anticipate the next few releases will
+  have some issues, but don't let that deter you from using the
+  releases—just remember to keep backups of your files. In fact, we encourage
+  you to use this release to help us find and squash the bugs!
+</p>
+
+<hr>
+
+<h3>Let's dive into all the details!</h3>
+<p>
+  Keep in mind these are just highlights and you'd need to look at the change
+  logs below for everything.
+</p>
+
+<h2>Release Highlights for MegaMek</h2>
+
+<h3>Game Experience Improvements</h3>
+<ul>
+  <li>
+    New and Improved Game Master Tools
+    (<a href="https://github.com/MegaMek/megamek/pull/6183">#6183</a>),
+    (<a href="https://github.com/MegaMek/megamek/pull/6223">#6223</a>),
+    (<a href="https://github.com/MegaMek/megamek/pull/6245">#6245</a>)
+  </li>
+  <li>
+    You can now pause Princess-only games for better control
+    (<a href="https://github.com/MegaMek/megamek/pull/6186">#6186</a>)
+  </li>
+  <li>
+    Advanced board search with board tagging added to the lobby - finding that
+    perfect map just got easier!
+    (<a href="https://github.com/MegaMek/megamek/pull/6196">#6196</a>),
+    (<a href="https://github.com/MegaMek/megamek/pull/6216">#6216</a>)
+  </li>
+  <li>
+    Strategic retreat option at movement phase end
+    (<a href="https://github.com/MegaMek/megamek/pull/6230">#6230</a>)
+  </li>
+  <li>
+    Added heat indicators in weapon display to help with heat management
+    (<a href="https://github.com/MegaMek/megamek/pull/6321">#6321</a>)
+  </li>
+  <li>
+    Improved path visibility under units
+    (<a href="https://github.com/MegaMek/megamek/pull/6312">#6312</a>)
+  </li>
+  <li>
+    Team information now shown in BV reports
+    (<a href="https://github.com/MegaMek/megamek/pull/6222">#6222</a>)
+  </li>
+  <li>
+    Unit list printing capability added
+    (<a href="https://github.com/MegaMek/megamek/pull/6190">#6190</a>)
+  </li>
+  <li>
+    RISC laser pulse module now available
+    (<a href="https://github.com/MegaMek/megamek/pull/6209">#6209</a>)
+  </li>
+  <li>
+    Dirt and gravel roads with proper effects (no maps with this yet)
+    (<a href="https://github.com/MegaMek/megamek/pull/6246">#6246</a>)
+  </li>
+  <li>
+    Updated partial cover and hull down bonuses
+    (<a href="https://github.com/MegaMek/megamek/pull/6307">#6307</a>)
+  </li>
+  <li>
+    Battle Armor Plasma Rifles now properly apply TacOps rules
+    (<a href="https://github.com/MegaMek/megamek/pull/6237">#6237</a>)
+  </li>
+  <li>
+    Corrected IR Sensor rules per TO:AR errata
+    (<a href="https://github.com/MegaMek/megamek/pull/6227">#6227</a>)
+  </li>
+  <li>
+    Updated force generator calculations
+    (<a href="https://github.com/MegaMek/megamek/pull/6244">#6244</a>)
+  </li>
+  <li>
+    Princess went back to Blackjack to run the obstacle course to better
+    understand ways to kill without breaking herself
+    (<a href="https://github.com/MegaMek/megamek/pull/6311">#6311</a>)
+  </li>
+</ul>
+
+<h3>Bug Fixes</h3>
+<ul>
+  <li>
+    Fixed deployment issues with combined arms
+    (<a href="https://github.com/MegaMek/megamek/pull/6292">#6292</a>)
+  </li>
+  <li>
+    Corrected aerospace unit placement and movement
+    (<a href="https://github.com/MegaMek/megamek/pull/6269">#6269</a>)
+  </li>
+  <li>
+    Fixed Nova CEWS BV calculations
+    (<a href="https://github.com/MegaMek/megamek/pull/6304">#6304</a>)
+  </li>
+  <li>
+    Flak weapons can no longer make aimed shots at immobile targets
+    (<a href="https://github.com/MegaMek/megamek/pull/6298">#6298</a>)
+  </li>
+  <li>
+    Offboard artillery can't unjam critted weapons anymore
+    (<a href="https://github.com/MegaMek/megamek/pull/6286">#6286</a>)
+  </li>
+  <li>
+    Fixed infantry field weapons restoration
+    (<a href="https://github.com/MegaMek/megamek/pull/6291">#6291</a>)
+  </li>
+  <li>
+    Corrected cargo bay minimum doors
+    (<a href="https://github.com/MegaMek/megamek/pull/6322">#6322</a>)
+  </li>
+  <li>
+    Updated aerospace takeoff logic and landing rules
+    (<a href="https://github.com/MegaMek/megamek/pull/6302">#6302</a>)
+  </li>
+  <li>
+    Fixed ECM effects on sensor spotting
+    (<a href="https://github.com/MegaMek/megamek/pull/6238">#6238</a>)
+  </li>
+</ul>
+
+<hr>
+
+<h2>Release Highlights for MegaMekLab</h2>
+<p>
+  There hasn't been much work on MegaMekLab this cycle other than a couple of
+  fixes to support the new MegaMek features.
+</p>
+
+<hr>
+
+<h2>Release Highlights for MekHQ</h2>
+
+<h2>Major Features and Improvements</h2>
+<h3>New Resupply System</h3>
+<ul>
+  <li>
+    Automated stock management with customizable thresholds
+    (<a href="https://github.com/MegaMek/mekhq/pull/5158">#5158</a>)
+  </li>
+  <li>
+    Smart part ordering based on your unit configurations
+    (<a href="https://github.com/MegaMek/mekhq/pull/5382">#5382</a>)
+  </li>
+  <li>
+    Improved cargo capacity calculations
+    (<a href="https://github.com/MegaMek/mekhq/pull/5339">#5339</a>)
+  </li>
+</ul>
+
+<h3>Auto-Resolve Improvements (ACARS)</h3>
+<ul>
+  <li>
+    Princess AI now handles battlefield resolution
+    (<a href="https://github.com/MegaMek/mekhq/pull/5155">#5155</a>)
+  </li>
+  <li>
+    Added Auto Combat Auto Resolve (ACAR) documentation
+    (<a href="https://github.com/MegaMek/mekhq/pull/5532">#5532</a>)
+  </li>
+</ul>
+
+<h3>Strategic Command (StratCon) Enhancements</h3>
+<h4>Combat Teams System (formerly Strategic Formations)</h4>
+<ul>
+  <li>
+    Refined role-based organization with new combat roles
+    (<a href="https://github.com/MegaMek/mekhq/pull/5558">#5558</a>)
+  </li>
+  <li>
+    Improved deployment mechanics
+    (<a href="https://github.com/MegaMek/mekhq/pull/5395">#5395</a>)
+  </li>
+  <li>
+    Added "In Reserve" designation for better force management
+    (<a href="https://github.com/MegaMek/mekhq/pull/5364">#5364</a>)
+  </li>
+  <li>
+    New comprehensive guide for Combat Teams &amp; Support Forces
+    (<a href="https://github.com/MegaMek/mekhq/pull/5428">#5428</a>)
+  </li>
+</ul>
+
+<h4>Enhanced Contract Management</h4>
+<ul>
+  <li>
+    Re-enabled Campaign Operations Contract Market
+    (<a href="https://github.com/MegaMek/mekhq/pull/5206">#5206</a>)
+  </li>
+  <li>
+    Monthly support points generation for sustained operations
+    (<a href="https://github.com/MegaMek/mekhq/pull/5228">#5228</a>)
+  </li>
+  <li>
+    Improved scenario objectives and force generation
+    (<a href="https://github.com/MegaMek/mekhq/pull/5290">#5290</a>)
+  </li>
+</ul>
+
+<h4>StratCon Tab layout</h4>
+<ul>
+  <li>
+    Improved StratCon tab layout and UI design
+    (<a href="https://github.com/MegaMek/mekhq/pull/5361">#5361</a>)
+  </li>
+</ul>
+
+<h3>Personnel Management Improvements</h3>
+<h4>Personnel Development</h4>
+<ul>
+  <li>
+    Refined relationship simulation behavior
+    (<a href="https://github.com/MegaMek/mekhq/pull/5240">#5240</a>)
+  </li>
+  <li>
+    Better handling of marriages and personnel status changes
+    (<a href="https://github.com/MegaMek/mekhq/pull/5313">#5313</a>)
+  </li>
+  <li>
+    Improved starting age calculations for different backgrounds
+    (<a href="https://github.com/MegaMek/mekhq/pull/5540">#5540</a>)
+  </li>
+</ul>
+
+<h4>Training and Education</h4>
+<ul>
+  <li>
+    Added missing Anti-Mek training for Battle Armor crews
+    (<a href="https://github.com/MegaMek/mekhq/pull/5476">#5476</a>)
+  </li>
+  <li>
+    Enhanced in-house training programs
+    (<a href="https://github.com/MegaMek/mekhq/pull/5561">#5561</a>)
+  </li>
+  <li>
+    Better skill level management in mass training
+    (<a href="https://github.com/MegaMek/mekhq/pull/5421">#5421</a>)
+  </li>
+  <li>
+    Updated personnel modules and unit markets documentation
+    (<a href="https://github.com/MegaMek/mekhq/pull/5496">#5496</a>)
+  </li>
+</ul>
+
+<h3>Game Balance</h3>
+<ul>
+  <li>
+    Adjusted scenario modifiers for better balance
+    (<a href="https://github.com/MegaMek/mekhq/pull/5436">#5436</a>)
+  </li>
+  <li>
+    Reduced scenario sizes for house and integrated commands
+    (<a href="https://github.com/MegaMek/mekhq/pull/5524">#5524</a>)
+  </li>
+  <li>
+    Improved force generation and unit substitution
+    (<a href="https://github.com/MegaMek/mekhq/pull/5314">#5314</a>)
+  </li>
+</ul>
+
+<p>
+  <strong>Bug Fixes &amp; Technical Improvements:</strong> Far too many to list
+  here. Please see the full change log for details.
+</p>
+
+<ul>
+  <li>
+    <strong>Force Generation Improvements:</strong> Numerous Force Generation 3
+    (FG3) updates, including difficulty adjustments and infantry generation
+    improvements, enhancing engagement dynamics.
+    (<a href="https://github.com/MegaMek/mekhq/pull/5113">#5113</a>),
+    (<a href="https://github.com/MegaMek/mekhq/pull/5120">#5120</a>),
+    (<a href="https://github.com/MegaMek/mekhq/pull/5167">#5167</a>).
+  </li>
+</ul>
+
+<hr>
+
+<h1>Technical Stuff and Social Media</h1>
+
+<hr>
+
+<h2>Java 17 is <strong>Required</strong> for all 0.50.x Releases</h2>
+<p>
+  Starting with version 0.50.0-Development, Java 17 will be
+  <strong>REQUIRED</strong> to play. We’ve updated our guide to
+  <a href="https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)">Updating
+  to Adoptium (Eclipse Temurin Open Source Java)</a> with more detailed
+  instructions.
+</p>
+<p>
+  It’s crucial to read the directions carefully, especially Step 6, which
+  covers a recent change to the Adoptium installer. Make sure to select
+  “Install for all users of this machine” in the Installation Scope.
+</p>
+<p>
+  We will continue using Java 17 until Fall 2026. If you choose to use a Java
+  version beyond 17, it isn’t officially supported, and our standard response
+  for issues will be to revert to Java 17. We recommend upgrading to Java 17
+  before the new release; if you are running 0.49.12-Development or later, it
+  will run on Java 17.
+</p>
+
+<hr>
+
+<h2>User Data Directory for MegaMek, MegaMekLab, and MekHQ</h2>
+<p>
+  We’ve added a customizable <strong>User Data Directory</strong> feature. This
+  allows you to set a single external directory for storing game resources like
+  units, camos, and fonts, which is accessible across different installations
+  and versions of MegaMek, MegaMekLab, and MekHQ.
+</p>
+
+<h3>Key Points:</h3>
+<ul>
+  <li>
+    <strong>Set a Custom Directory:</strong> Choose any location on your
+    computer (e.g., <code>D:/myMMStuff</code>) to keep your game resources.
+  </li>
+  <li>
+    <strong>File Placement:</strong>
+    <ul>
+      <li>Fonts and units (.mtf, .blk) can be placed anywhere within this directory.</li>
+      <li>Camo images in <code>/data/images/camo/</code>.</li>
+      <li>Portrait images in <code>/data/images/portraits/</code>.</li>
+      <li>Unit fluff images in <code>/data/images/fluff/&lt;unit type&gt;/</code>.</li>
+      <li>Rank and award definition files (.xml) in <code>/data/universe/</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Consistent Access:</strong> Resources in this directory are usable
+    across different game versions and modules without needing to relocate them
+    for each new install.
+  </li>
+  <li>
+    <strong>Implementation:</strong> Set up this directory via the client
+    settings. A game restart is required for changes to take effect.
+  </li>
+</ul>
+
+<hr>
+
+<h2>Important: MekHQ Campaign Update Instructions</h2>
+<p>
+  It is critical to follow these steps to ensure the integrity of your MekHQ
+  campaign when updating between versions. Failure to follow these steps can
+  result in the corruption of your campaign file.
+</p>
+<p>
+  Treat each release as stand-alone; <strong>Copy, never Move</strong> your
+  data forward from older versions. MekHQ is <strong>NOT</strong> backward
+  compatible.
+</p>
+
+<ol>
+  <li>
+    You <strong>MUST</strong> complete all ongoing contracts in your current
+    campaign, save, and exit the program.
+  </li>
+  <li>
+    <strong>Make a backup</strong> of your campaign and custom files. This is a
+    critical step to prevent data loss!
+  </li>
+  <li>
+    <strong>DO NOT COPY</strong> MegaMek saves or any preference file from a
+    different version to avoid compatibility issues.
+  </li>
+  <li>
+    Update MekHQ to the latest version. <strong>NEVER</strong> overwrite the
+    existing folder; always keep each version in its own folder.
+  </li>
+  <li>
+    In the new version, load your save file in MekHQ and advance the game by
+    one day.
+  </li>
+  <li>
+    Re-save any custom presets to ensure they are updated with the new version's
+    settings.
+  </li>
+  <li>
+    Exit MekHQ and restart the application to complete the update process.
+  </li>
+</ol>
+
+<p>
+  Following these steps will ensure that your campaign data initializes
+  correctly and avoids potential issues. This process is essential for
+  maintaining campaign stability.
+</p>
+
+<hr>
+
+<h2>A Few Reminders</h2>
+<h3>The Milestone System Summary</h3>
+<p>
+  Please see
+  <a href="https://github.com/MegaMek/megamek/wiki/Milestone-Releases">this link</a>
+  for details on the replacement for the old Stable and Development cycle.
+</p>
+
+<h3>Pre-Release Notes for 0.50.0-Development Cycle (August 25, 2024)</h3>
+<p>
+  This post covers some of the key changes that are happening as we go into the
+  0.50.xx-Development cycle. Read more
+  <a href="https://megamek.org/2024/08/25/Pre-Release-Notes-for-0.50.0-Development.html">here</a>.
+</p>
+
+<h3>State of the Universe (January 19, 2024)</h3>
+<p>
+  If you haven't given the
+  <a href="https://bg.battletech.com/forums/index.php?topic=83774.0">State of
+  the Universe</a> a read, please do. There's lots of information in there that
+  is still recent and relevant.
+</p>
+
+<hr>
+
+<h2>Social Media</h2>
+<p>
+  Join our
+  <a href="https://discord.gg/megamek">official MegaMek Discord</a>, our
+  primary community hub for the suite. We offer superior voice support,
+  individual channels, and assistance for the
+  <a href="https://megamek.games">official public servers</a>. We're also part
+  of community Discords
+  <a href="https://discord.gg/gyXMWjT">Everything BattleTech</a> and
+  <a href="https://discord.gg/D9jFn52">Classic BattleTech</a>. Find us on
+  Facebook at
+  <a href="https://www.facebook.com/groups/5124394675">MegaMek BattleTech</a>
+  and <a href="https://www.facebook.com/MegaMek">MegaMek</a>.
+</p>
+
+<hr>
+
+<h3>Contributing</h3>
+<p>
+  Interested in contributing? <a href="https://megamek.org/wiki/I-want-to-help">Find out how here</a>.
+</p>
+
+<hr>
+
+<h2>Change Logs (Release Specific) and Download Links</h2>
+
+<h3>MegaMek Change Log</h3>
+<p>
+  <strong>Full Changelog</strong>:
+  <a href="https://github.com/MegaMek/megamek/compare/v0.50.01...v0.50.02">v0.50.01...v0.50.02</a>  
+  <br>
+  <a href="https://github.com/MegaMek/megamek/releases/download/v0.50.02/MegaMek-0.50.02.tar.gz">Download</a>
+</p>
+
+<h3>MegaMekLab Change Log</h3>
+<p>
+  <strong>Full Changelog</strong>:
+  <a href="https://github.com/MegaMek/megameklab/compare/v0.50.01...v0.50.02">v0.50.01...v0.50.02</a>  
+  <br>
+  <a href="https://github.com/MegaMek/megameklab/releases/download/v0.50.02/MegaMekLab-0.50.02.tar.gz">Download</a>
+</p>
+
+<h3>MekHQ Change Log</h3>
+<p>
+  <strong>Full Changelog</strong>:
+  <a href="https://github.com/MegaMek/mekhq/compare/v0.50.01...v0.50.02">v0.50.01...v0.50.02</a>  
+  <br>
+  <a href="https://github.com/MegaMek/mekhq/releases/download/v0.50.02/MekHQ-0.50.02.tar.gz">Download</a>
+</p>
