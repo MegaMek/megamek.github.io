@@ -60,7 +60,7 @@ Keep in mind these are just highlights and you'd need to look at the change logs
 
 - **Auto-Resolve Improvements (ACARS)**
   - Princess AI now handles battlefield resolution ([#5155](https://github.com/MegaMek/mekhq/pull/5155))
-  - Added Auto Combat Auto Resolve (ACAR) documentation ([#5532](https://github.com/MegaMek/mekhq/pull/5532))
+  - Added Abstract Combat Auto Resolution (ACAR) notes and documentation ([#5532](https://github.com/MegaMek/mekhq/pull/5532)),([#5389](https://github.com/MegaMek/mekhq/pull/5389))
 
 ### 🎯 Strategic Command (StratCon) Enhancements
 
