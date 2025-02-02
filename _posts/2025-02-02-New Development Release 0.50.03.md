@@ -43,7 +43,8 @@ Welcome to 0.50.03; Keeping with the recent pattern this is a massive release. W
 
 ### MekHQ
 - Implemented Campaign Options IIC ([#4963](https://github.com/MegaMek/mekhq/pull/4963))
-- <img src="https://private-user-images.githubusercontent.com/103902653/403146806-f8a8ffd1-d3e1-4a0e-9c1c-46e70345aa4f.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg1MzIyMDAsIm5iZiI6MTczODUzMTkwMCwicGF0aCI6Ii8xMDM5MDI2NTMvNDAzMTQ2ODA2LWY4YThmZmQxLWQzZTEtNGEwZS05YzFjLTQ2ZTcwMzQ1YWE0Zi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIwMlQyMTMxNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZWUwNTJlY2IxNzZhZDAwMzQzZGY4NDE3MjhkY2JkY2EyMzE1NjQwNjI2NDQzOGQxNzJjNTI5NDg2MTRhZWM0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.iUDnC-Yuw3JfdWsXlA_94j4HjQZTuNf-WijyL1rwuHY" alt="Dynamic Image" style="max-width:100%; height:auto;">
+- <img src="assets/images/gifs/co iic.gif" alt="Dynamic Image" style="max-width:100%; height:auto;">
+
 
 - Issue 3650 – RFE Add Ability to Link Units in MekHQ ([#5634](https://github.com/MegaMek/mekhq/pull/5634))
 - Numerous bug fixes for some bigger MekHQ issues.
