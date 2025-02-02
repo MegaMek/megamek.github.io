@@ -151,15 +151,15 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 
 ### MegaMek Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megamek/compare/v0.50.02...v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megamek/releases/tag/v0.50.03)  
 [Download](https://github.com/MegaMek/megamek/releases/download/v0.50.03/MegaMek-0.50.03.tar.gz)
 
 ### MegaMekLab Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megameklab/compare/v0.50.02...v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megameklab/releases/tag/v0.50.03)  
 [Download](https://github.com/MegaMek/megameklab/releases/download/v0.50.03/MegaMekLab-0.50.03.tar.gz)
 
 ### MekHQ Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/mekhq/compare/v0.50.02...v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/mekhq/releases/tag/v0.50.03)  
 [Download](https://github.com/MegaMek/mekhq/releases/download/v0.50.03/MekHQ-0.50.03.tar.gz)
