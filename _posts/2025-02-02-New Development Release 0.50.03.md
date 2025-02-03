@@ -10,11 +10,14 @@ Hi Everyone,
 Welcome to 0.50.03; Keeping with the recent pattern this is a massive release. We have a record number of developers and contributors working on the projects. In fact the most I've seen in my 13 years with the projects. As I've mentioned in the past we can only highlight some of the really big ticket items for each project, and the change logs are too large to include in the posts. Please take a look at the individual change log links, or look at the complete changes in the change log section links.  But let me call out some of the big stuff.
 
 ---
+
 ## Release Highlights
 
 ### MegaMek
+
 - Numerous improvements to the Minimap including an improved preview, display sensor ranges and facing, and added some customization options.([#6436](https://github.com/MegaMek/megamek/pull/6436)),([#6446](https://github.com/MegaMek/megamek/pull/6446)),([#6471](https://github.com/MegaMek/megamek/pull/6471))
 - Added headless client and Commander GUI ([#6418](https://github.com/MegaMek/megamek/pull/6418))
+
 <div style="display:flex; flex-wrap:wrap; gap:10px;">
   <a href="https://imgur.com/wfoEdVt" target="_blank">
     <img src="https://i.imgur.com/wfoEdVt.jpg" alt="Image 1" style="max-width:100%; height:auto;">
@@ -36,15 +39,15 @@ Welcome to 0.50.03; Keeping with the recent pattern this is a massive release. W
 - You may have noticed the MegaMek theme had a nasty habit of defaulting to the Capellan theme and then occasionally resetting itself back to Capellan. Well, the Chancellor has been ousted.
 
 ### MegaMekLab
+
 - A huge amount of bug fixes and improvements.
 - This is a huge game changer for MegaMeklab - Allow opening multiple units in tabs ([#1673](https://github.com/MegaMek/megameklab/pull/1673))
   <img src="https://i.imgur.com/5tQcQ38.jpg" alt="Tabbed MegaMekLab" style="max-width:100%; height:auto;">
 
-
 ### MekHQ
-- Implemented Campaign Options IIC ([#4963](https://github.com/MegaMek/mekhq/pull/4963))
-- <img src="/assets/images/gifs/co iic.gif" alt="Dynamic Image" style="max-width:100%; height:auto;">
 
+- Implemented Campaign Options IIC ([#4963](https://github.com/MegaMek/mekhq/pull/4963))
+- <img src="/assets/images/GIFS/CO IIC.gif" alt="Dynamic Image" style="max-width:100%; height:auto;">
 
 - Issue 3650 – RFE Add Ability to Link Units in MekHQ ([#5634](https://github.com/MegaMek/mekhq/pull/5634))
 - Numerous bug fixes for some bigger MekHQ issues.
@@ -57,8 +60,11 @@ Welcome to 0.50.03; Keeping with the recent pattern this is a massive release. W
 - MegaMek Issue 6416: Ghostbusting – Reset isDestroyed for entities when returning to MekHQ ([#5803](https://github.com/MegaMek/mekhq/pull/5803))
 
 # Technical Stuff and Social Media
+
 ---
+
 ## Java 17 is **Required** for all 0.50.x Releases
+
 ---
 
 Starting with version 0.50.0-Development, Java 17 will be **REQUIRED** to play. We’ve updated our guide to [Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) with more detailed instructions.
@@ -73,7 +79,7 @@ We will continue using Java 17 until Fall 2026. If you choose to use a Java vers
 
 We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
 
-### Key Points:
+### Key Points
 
 - **Set a Custom Directory**: Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
 
@@ -151,15 +157,15 @@ Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-
 
 ### MegaMek Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megamek/releases/tag/v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megamek/releases/tag/v0.50.03)
 [Download](https://github.com/MegaMek/megamek/releases/download/v0.50.03/MegaMek-0.50.03.tar.gz)
 
 ### MegaMekLab Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megameklab/releases/tag/v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/megameklab/releases/tag/v0.50.03)
 [Download](https://github.com/MegaMek/megameklab/releases/download/v0.50.03/MegaMekLab-0.50.03.tar.gz)
 
 ### MekHQ Change Log
 
-**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/mekhq/releases/tag/v0.50.03)  
+**Full Changelog**: [v0.50.02...v0.50.03](https://github.com/MegaMek/mekhq/releases/tag/v0.50.03)
 [Download](https://github.com/MegaMek/mekhq/releases/download/v0.50.03/MekHQ-0.50.03.tar.gz)
