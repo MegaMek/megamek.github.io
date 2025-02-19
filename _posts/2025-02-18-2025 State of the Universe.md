@@ -196,28 +196,15 @@ Beyond these immediate improvements, we're undertaking a significant code refact
 
 ### MegaMek Community: A Shared Vision
 
-The true strength of our project lies in the diverse talents and dedication of everyone who contributes in any capacity. From MegaMek's early days, our community has grown through the combined efforts of programmers, artists, writers, play-testers, and enthusiastic players.
+The true strength of our project lies in the diverse talents and dedication of everyone who contributes in any capacity." From MegaMek's early days, our community has grown through the combined efforts of programmers, artists, writers, play-testers, and enthusiastic players. Each artist, Play Tester (Test Pilots), writer, and RFE/bug reporter has helped shape what we see today.
 
-### Ways to Get Involved
+Our current community continues to thrive through this variety of contributions - whether it's creating new art assets, refining game balance through extensive gameplay testing, improving documentation, reporting bugs, or developing code. Looking ahead, we're excited to welcome new contributors of all kinds, knowing that fresh perspectives and diverse talents will help MegaMek evolve in ways we haven't yet imagined. Whether you're writing code, creating art, testing units, or simply sharing your gaming experiences to help identify issues, every contribution enriches this project.
 
-If you share our passion for BattleTech and want to be part of this journey, here are some ways you can contribute:
+### Our Vision and Progress
 
-#### Development
-For those comfortable with Java, our GitHub issue tracker has various opportunities to help. We value our codebase's stability, so we encourage starting with smaller issues before tackling core systems.
+Our vision of fully recreating 40 years of Tabletop development in digital form remains ambitious yet achievable. Although the timeline may be uncertain, the dedication of our coders and the enthusiasm of the MegaMek community instill confidence in our ability to reach this goal.
 
-#### Documentation & Writing
-Help make MegaMek more accessible by contributing to reference materials, whether through traditional documentation or innovative approaches like video tutorials.
-
-#### Artistic Contributions
-We welcome artists interested in creating aerospace unit sprites and new map tilesets. (Note: ground unit sprites remain Deadborder's domain.)
-
-#### Quality Assurance
-Join our Test Pilots in using nightly releases to test new features and verify bug fixes. Your feedback helps ensure stable releases for everyone.
-
-#### Technical Content
-If you enjoy BattleTech lore and have experience with XML, help us enhance our technical readouts and unit data.
-
-### Join the Community
+We are deeply grateful for your continued support and participation in this journey. The programs have evolved beyond their original vision, creating new opportunities for BattleTech enthusiasts everywhere." As we progress, we look forward to sharing more achievements and milestones with all of you.
 
 Drop by our [Discord](https://discord.gg/megamek) to chat about what interests you. Whether you're sharing battle stories, reporting bugs, or ready to dive into development, there's a place for you in our community. Together, we're building something special that honors the rich legacy of BattleTech while creating new possibilities for players everywhere.
 
