@@ -10,14 +10,42 @@ date: 2025-02-18
   <img src="/assets/images/SOU/MMek_Awardceremony_finfull.jpg" 
        alt="MegaMek Award Ceremony" 
        class="responsive-image">
+  <style>
+    .container {
+      width: 100%;
+      max-width: 1200px; /* Adjust this to your preferred maximum width */
+      margin: 0 auto;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+  </style>
 </div>
 
 Following the warm reception of [our first State of the Universe](https://megamek.org/2024/01/19/State-of-the-Universe!.html), we're excited to share another comprehensive update on MegaMek. As well as wish it a Happy 23rd Birthday!
 
-<div class="container" style="max-width: 25%;">
+<div class="container-small">
   <img src="/assets/images/SOU/MegaMek%2023%20Year.png" 
        alt="MegaMek 23 Year Anniversary" 
        class="responsive-image">
+  <style>
+    .container-small {
+      width: 100%;
+      max-width: 25%;
+      margin: 0 auto;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+  </style>
 </div>
 
 Traditionally when we do these we don't like to use "I", because MegaMek is a team...and yes there is no "I" in team. But I'd like to take a moment to provide some context.
