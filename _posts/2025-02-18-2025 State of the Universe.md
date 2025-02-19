@@ -185,7 +185,9 @@ A major focus is the ongoing improvement and polish of StratCon, which has now r
 
 We've recently completed the transition of the system data from XML to YAML, so each system has its own file complete with data. YAML is a text-editable file which will allow the return of a system editor (more on that in the future). But players can modify, and even create their own systems. It also opens the door for us to include more data in the future like battles, garrisons, etc. But I need to stress these last ones are years away and will require significant volunteer support to do.
 
-Beyond these immediate improvements, we're undertaking a significant code refactoring effort, with the long-term goal of retiring the deprecated Against the Bot system (while maintaining StratCon). A big part of the refactoring was completed with the new Campaign Options rework. We will be looking at ways to reduce the number of options without removing them; in hindsight, we created too many options within an option. In some cases, we'd have an option you'd activate then 5-6 sub-options to set. This combined with options being all over the place made for less than optimal experience. We'll continue to restructure things to help ensure MekHQ's continued stability and maintainability as we add new f
+Beyond these immediate improvements, we're undertaking a significant code refactoring effort, with the long-term goal of retiring the deprecated Against the Bot system (while maintaining StratCon). A big part of the refactoring was completed with the new Campaign Options rework. We will be looking at ways to reduce the number of options without removing them; in hindsight, we created too many options within an option. In some cases, we'd have an option you'd activate then 5-6 sub-options to set. This combined with options being all over the place made for less than optimal experience. This combined with options being all over the place made for less than optimal experience. We'll continue to restructure things to help ensure MekHQ's continued stability and maintainability as we
+add new features and capabilities.
+
 ## Hammer's closing reflections
 
 <div class="container">
