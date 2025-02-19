@@ -153,18 +153,39 @@ This means players now have a variety of ways to play:
 
 We approach development with flexibility rather than rigid plans. Our developers and contributors work on what inspires them, creating an organic evolution of the software. While we may not have traditional roadmaps, we maintain a clear vision for each component's future, aiming to encompass the full scope of the BattleTech universe and play experience. For me, it's about recreating Operation LIBERATION and playing it from Space to Surface.
 
+As a 23-year-old codebase, MegaMek requires careful attention to performance. Even as we transform, we focus on performance optimization, ensuring improvements don't compromise efficiency, and allow for new contributors to enter the codebase. Balancing visual appeal, functionality, and performance remains a key priority.
+
 ### MegaMek
 
 Currently, we've just made improvements to trailers and allow them to be set up in the lobby and we are looking at ensuring they have all the kinks worked out (no pun intended).
 
+There are plans to further refine ACAR and PACAR as we continue to support multiple ways to play. This will be a big change as we've traditionally looked at play as a recreation of Tabletop BattleTech. I'll stress that MegaMek will not become an abstract tool only, and we'll make sure the core experience is a faithful recreation of the Tabletop BattleTech experience. But we are excited to support the ultimate in AccountTech.
+
+Meanwhile, Princess continues to evolve, with focused efforts on improving her efficiency and addressing various quirks. We're particularly excited about an upcoming bot-related project from one of our contributors - expect a major announcement on this front very soon.
+
+A particularly significant undertaking is the comprehensive update of our force generation and RAT Generator files. A long time contributor is spearheading this effort, not only updating the XML files but also enhancing the underlying code to improve generation quality and enable units from the RecGuides to appear in-game. Originally implemented in 2018, these files provide powerful tools for generating opposition forces and units. However, the past seven years have brought substantial new information via the Master Unit List and various sourcebooks that we haven't yet incorporated. One of the key points of going through unit availability reviews is to ensure there is a gradient between A-rated (best) and F-rated (worst) forces. This way the Opfor and its rating will have meaningful impacts on the types of units you fight and what you might salvage. Want some of that sweet, high-performance tech and models? That means having to go up against the A/B-rated OpFors that will be fielding them.
+
+The Fluff Pack project, announced last year, remains a priority, though the overwhelming number of entries has extended our timeline. At this time we plan to focus on the [CamoSpec artists](Camo Specs – A guide to regimental paint schemes) that have given us permission to use their images.
+
+Additionally, my own super-secret project which I hope will be revealed in the 50.04 release, which I hope will generate some major wow factor.
+
 ### MegaMekLab
 
-For MegaMekLab, our vision remains clear: to provide the ultimate BattleTech builder. While there aren't any major projects currently in development, this provides an excellent opportunity for community-driven improvements.
+For MegaMekLab, our vision remains clear: to provide the ultimate BattleTech builder. While there aren't any major projects currently in development, this provides an excellent opportunity for community-driven improvements. We are actively seeking suggestions to enhance the Lab's functionality and user experience. It's worth noting that while we can't yet implement certain unit types like buildings, large naval craft, or mobile structures (as these need to be established in MegaMek first), we're exploring other exciting possibilities.
+
+Among these possibilities are FrankenMeks and handheld weapons - complex features that require significant development effort but are looking into how they can be done within the current code structure. As MegaMek continues to evolve and as we look at new unit types, MegaMekLab will adapt and expand to support them.
 
 ### MekHQ
 
-MekHQ's development is entering an exciting phase, we currently have an increased development capacity allowing us to pursue more ambitious goals and maintain a clearer development direction than ever before.
+MekHQ's development is entering an exciting phase, we currently have an increased development capacity allowing us to pursue more ambitious goals and maintain a clearer development direction than ever before. We are phasing out Field Manual: Mercenaries (Revised) options, as it has been replaced by Campaign Operations. To avoid confusion and reference outdated rules, Campaign Operations will now be our core rulebook.
 
+Player agency remains at the heart of our development philosophy. We want to introduce more meaningful choices throughout the experience, ensuring that each decision feels impactful and contributes to your unique campaign story. We're planning to announce some major updates that will fundamentally change how players experience StratCon - though we're keeping the details under wraps for now.
+
+A major focus is the ongoing improvement and polish of StratCon, which has now reached Beta status with its core systems in place. We're working on refining various aspects of the gameplay experience, including a comprehensive overhaul of the prisoner system, a LosTech Module, continued improvements to logistics and convoy operations. Force generation is also receiving attention, with new developments aimed at providing more dynamic and balanced Opfors.
+
+We've recently completed the transition of the system data from XML to YAML, so each system has its own file complete with data. YAML is a text-editable file which will allow the return of a system editor (more on that in the future). But players can modify, and even create their own systems. It also opens the door for us to include more data in the future like battles, garrisons, etc. But I need to stress these last ones are years away and will require significant volunteer support to do.
+
+Beyond these immediate improvements, we're undertaking a significant code refactoring effort, with the long-term goal of retiring the deprecated Against the Bot system (while maintaining StratCon). A big part of the refactoring was completed with the new Campaign Options rework. We will be looking at ways to reduce the number of options without removing them; in hindsight, we created too many options within an option. In some cases, we'd have an option you'd activate then 5-6 sub-options to set. This combined with options being all over the place made for less than optimal experience. We'll continue to restructure things to help ensure MekHQ's continued stability and maintainability as we add new f
 ## Hammer's closing reflections
 
 <div class="container">
