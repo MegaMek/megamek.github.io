@@ -7,8 +7,11 @@ date: 2025-02-23
 "For the soldiers who had fought for Amaris, the prospect of captivity was not as terrifying as what came after. They could not fathom how they might ever walk free again, how they could return to a world that saw them as traitors and butchers. How could they step into the light of day and pretend to be ordinary men once more? How could they look their fellow Terrans in the eye after the orders they had followed, the cities they had burned, the executions they had carried out? It was not the grand betrayals or the battlefield horrors that haunted them most, but the small, everyday things—the idea of sitting at a café table without fear, of hearing laughter without flinching, of touching a white linen cloth with hands that had only known the grip of a rifle. The great crimes of war could be hidden behind ideology, but in the quiet moments, when there was nothing left but memory, there was no place to hide."
 
 Title: After the Fall: The Fate of Amaris' Loyalists After Terra's Liberation
+
 Author: Dr. Elias R. Voss
+
 Publisher: Tharkad University Press
+
 Publication Date: 18th March 3012
 
 <div class="container">
