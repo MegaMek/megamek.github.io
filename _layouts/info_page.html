@@ -1,17 +1,15 @@
 {% include header.html %}
 
-  <main role="main">
-    <div class="container top">
-      <div class="row">
-        <div class="col-md-12">
-          {% if page.splash %}
-            <img class="rounded float-end d-sm-none d-md-block m-3" width=350px src="/assets/images/{{ page.splash }}" alt="image">
-          {% endif %}
-          {{ content }}
-        </div>
+<main role="main">
+  <div class="container top">
+    <div class="row">
+      <div class="col-md-12">
+        {% if page.splash %}
+          <img class="rounded float-end d-sm-none d-md-block m-3" width=350px src="/assets/images/{{ page.splash }}" alt="image">
+        {% endif %}
+        {{ content }}
       </div>
     </div>
-  </main>
-  {% include footer.html %}
-</body>
-</html>
+  </div>
+</main>
+{% include footer.html %}

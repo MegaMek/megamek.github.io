@@ -35,6 +35,14 @@ We are an open source project so anyone is welcome to help. Consider what
 you can offer and also join our [Discord.](https://discord.gg/u2vJ5U2QpD)
 It's important for us to be able to easily communicate and Discord allows us to do that.
 
+We've recently published the code documentation through GitHub Actions. We're still working
+to expand our documentation more and make it easier for newer developers to get quickly up
+to date with what we're doing and more. You can find the documentation at their respective
+locations at [MegaMek](https://megamek.org/megamek/), [MegaMekLab](https://megamek.org/megameklab/),
+and [MekHQ](https://megamek.org/mekhq/).
+
+A note of warning, this documentation is for the absolutely bleeding edge and unreleased code.
+
 ___
 
 ##### I know how to code

@@ -1,18 +1,16 @@
 {% include header.html %}
-  <main role="main">
-    <div class="container top pb-2 pt-2">
-      <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
-      <div class="post-meta">
-        <div class="post-time">
-          <i class="fas fa-calendar"></i>
-          <time>{{ page.date | date_to_string }}</time>
-        </div>
-      </div>
-      <div class="post-content">
-        {{ content }}
+<main role="main">
+  <div class="container top pb-2 pt-2">
+    <h4><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h4>
+    <div class="post-meta">
+      <div class="post-time">
+        <i class="fas fa-calendar"></i>
+        <time>{{ page.date | date_to_string }}</time>
       </div>
     </div>
-  </main>
-  {% include footer.html %}
-  </body>
-</html>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</main>
+{% include footer.html %}

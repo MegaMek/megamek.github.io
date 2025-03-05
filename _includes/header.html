@@ -37,11 +37,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto me-auto">
             {% for menu_page in site.data.menu_pages %}
-            {% if menu_page.name == page.title %}
-            <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-            {% else %}
-            <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
-            {% endif %}
+              {% if menu_page.name == page.title %}
+                <a class="nav-item nav-link active" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{{ menu_page.address | relative_url }}">{{ menu_page.name}}</a>
+              {% endif %}
             {% endfor %}
           </ul>
           <ul class="navbar-nav d-flex">
