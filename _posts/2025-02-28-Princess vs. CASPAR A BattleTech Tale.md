@@ -3,7 +3,6 @@ layout: post
 title: "Princess vs. CASPAR: A BattleTech Tale"
 date: 2025-02-28
 author: Blackjack Chronicles
-categories: [fiction, battletech]
 tags: [princess, caspar, tactical-ai, megamek]
 excerpt: "Red Ink on the Ares Conventions: The Unauthorized Memoirs of Princess'"
 ---

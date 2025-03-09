@@ -2,7 +2,6 @@
 layout: post
 title: "Taming the OpFor Beast: Opfor Balancing"
 date: 2024-09-27
-categories: [MekHQ, Game Development]
 tags: [OpFor, Balancing, MekHQ, BattleTech]
 ---
 
