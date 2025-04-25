@@ -87,10 +87,6 @@ Looking ahead, please be aware that our next release cycle for version 0.50.06 w
     * Improved type safety with wildcard types
 * **Asynchronous Record Sheet Rendering** ([#1827](https://github.com/MegaMek/megameklab/pull/1827)): Implemented per-page asynchronous rendering for record sheets, significantly improving performance and responsiveness when viewing complex units. Added print dialog preview functionality.
 
-### Bug Fixes
-* Bug fix 1: Description of the issue that was fixed
-* Bug fix 2: Description of another resolved issue
-
 ## MekHQ
 
 ### Important Information
