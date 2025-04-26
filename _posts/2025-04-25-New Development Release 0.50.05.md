@@ -237,7 +237,6 @@ The next generation tactical system codenamed CASPAR has officially entered acti
     - [Find the Settings here](https://imgur.com/RCN2U7a)
 
 3. Play **ground combat games only** that meet these requirements:
-    - No custom units
     - Must include human players (all-bot games aren't suitable)
     - Human vs. human games are especially valuable
 
