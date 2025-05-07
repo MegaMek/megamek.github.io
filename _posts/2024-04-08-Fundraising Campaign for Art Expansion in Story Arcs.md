@@ -33,7 +33,7 @@ At a minimum, we need to commission 2 new splash screens and 4 pieces of charact
 
 To ensure consistency in our visual storytelling, we've reached out to SpO0ky777 and PhearTheHam, who have kindly agreed to collaborate with us again, but at a slightly increased rate.
 
-The development team has started funding internally, with each piece of art ranging from $25 USD to $100 USD depending on the size and complexity. We estimate a total of $750 USD would complete the list. Those interested in contributing will need to join our [Discord](https://discord.gg/u2vJ5U2QpD) and DM @Hammer (MegaMek Dev) for PayPal information.
+The development team has started funding internally, with each piece of art ranging from $25 USD to $100 USD depending on the size and complexity. We estimate a total of $750 USD would complete the list. Those interested in contributing will need to join our [Discord](https://discord.gg/megamek) and DM @Hammer (MegaMek Dev) for PayPal information.
 
 The fundraiser will conclude once we hit our target. If we are unable to acheive our target we'll continue and do what we can with the funds raised. The priority being the art we need to finish "Young Wolves". All Contributors will be recognized in the MegaMek contributors file, with the final artwork being integrated into MegaMek and available through our repositories and releases.
 
