@@ -1,11 +1,12 @@
+---
 layout: post
-title:  "MegaMek, MegaMekLab, and MekHQ 0.50.06 Released"
-date:   2025-05-19
+title: "MegaMek, MegaMekLab, and MekHQ 0.50.06 Released"
+date: 2025-05-19
 tags:
-  - Releases
-  - MegaMek
-  - MegaMekLab
-  - MekHQ
+- Releases
+- MegaMek
+- MegaMekLab
+- MekHQ
 ---
 
 Hi Everyone!
@@ -23,8 +24,8 @@ It's important to note that "Milestone" doesn't mean completely bug-free—rathe
 **Best for: Players that want a stay on a release with a low risk of bugs, good for new players.**
 
 #### Development Builds
-Development builds are like prototype 'Mechs fresh from the factory—packed with new features but not fully battle-tested. While generally stable, they may have occasional quirks or unexpected behavior, similar to a temperamental targeting computer.
-**Best for: Veteran players that crave the rush of new stuff, not to be confused with Necrosia infused players that want the nightly releases for that you need the [Discord](https://discord.gg/megamek)
+Development builds are like prototype 'Meks fresh from the factory—packed with new features but not fully battle-tested. While generally stable, they may have occasional quirks or unexpected behavior, similar to a temperamental targeting computer.
+**Best for: Veteran players that crave the rush of new stuff, not to be confused with Necrosia infused players that want the nightly releases for that you need the [Discord](https://discord.gg/megamek)**
 
 #### Moving to a new Milestone (Critical step if on Java 11)
 Currently, most players are using either the previous Milestone (0.49.19.1) or a recent Development release. With version 0.50.06 now being designated as a Milestone, we're providing a new Milestone for all players to move from 0.49.19.1 to 0.50.06.
@@ -57,10 +58,8 @@ Around 27 Bug fixes, with a major focus on the printing the record sheets. But a
 * [Force Builder view - build and print from MML by @exeea](https://github.com/MegaMek/megameklab/pull/1835)
 * [Heat view now displays also total dissipation and total heat by @exeea](https://github.com/MegaMek/megameklab/pull/1871)
 * [Print Damaged Units in RS preview/print by @exeea](https://github.com/MegaMek/megameklab/pull/1836)
-* [Various RS fixes + Large Craft ammo amount allocation dialog by @exeea](https://github.com/MegaMek/megameklab/pull/1887)
-
 ### MekHQ
-There are 170 bug fixes and improvements for this release. This is a very small highlight of them.
+There are 170 bug fixes and improvements for this release. This is a small sample of them.
 
 * [Added Support for Mission and Scenario Hyperlinking by @IllianiBird](https://github.com/MegaMek/mekhq/pull/6643)
 * [Made Injuries Appear More Serious By Changing Terms by @IllianiBird](https://github.com/MegaMek/mekhq/pull/6670)
@@ -73,8 +72,6 @@ There are 170 bug fixes and improvements for this release. This is a very small 
 * [Improvement: Updated Campaign Options to Use Civilian Instead of Dependent Terminology by @IllianiBird](https://github.com/MegaMek/mekhq/pull/6928)
 * [Improvement: Reworked Integrated Command Rights to No Longer AutoAssign Forces and to Allow Interactions with StratCon by @IllianiBird](https://github.com/MegaMek/mekhq/pull/6813)
 * [Improvement: Extended Tutorialization Links & Glossary to Cover Most Tabs by @IllianiBird](https://github.com/MegaMek/mekhq/pull/7041)
-
-and many many more.
 
 ### Looking Ahead: The Road to Version 50.07 and Beyond
 #### Extended Development Cycle
@@ -101,8 +98,6 @@ One of our key initiatives is to thoroughly evaluate what equipment rules MegaMe
 * Invite community feedback to identify gaps we may have missed
 * Gather thoughts on prioritization and implementation approaches
 
-We'll provide more specific details when we open this thread and encourage broad community participation.
-
 ### A Note on MegaMek's Future
 I know some aspects of this post might prompt speculation, but we want to be clear: there is nothing concerning happening with MegaMek/MegaMekLab/MekHQ. We simply finally have the resources and team to start digging in and taking the programs to the next level.
 
@@ -112,7 +107,7 @@ Don't expect dramatic visual changes—the programs will always maintain its cla
 * Fixes for long-standing pain points in gameplay
 * Positioning ourselves for long-requested features and improvements
 
-All of these improvements will take time, and we view 50.06 as both a launching point and the next step for players to move too. It allows us to focus on the development cycle without the pressure of an aging Milestone release (0.49.19.1) using a Java version (Java 11) that we have moved past. 
+All of these improvements will take time, and we view 50.06 as both a launching point and the next step for players to move too. It allows us to focus on the development cycle without the pressure of an aging Milestone release (0.49.19.1) using a Java version (Java 11) that we have moved past.
 
 ### Player Options Going Forward
 Version 0.50.06 serves as a good point for players who prefer reliability while we embark on our next development releases. Players have two paths forward:
@@ -123,8 +118,6 @@ Version 0.50.06 serves as a good point for players who prefer reliability while 
 ## Technical Stuff
 
 ### Java 17 is *Required* for all 0.50.x Releases
-
-Starting with version 0.50.0-Development, Java 17 will be **REQUIRED** to play. We've updated our guide to [Updating to Adoptium (Eclipse Temurin Open Source Java)](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) with more detailed instructions.
 
 It's crucial to read the directions carefully, especially Step 6, which covers a recent change to the Adoptium installer. Make sure to select "Install for all users of this machine" in the Installation Scope.
 We will continue using Java 17 until Fall 2026. If you choose to use a Java version beyond 17, it isn't officially supported, and our standard response for issues will be to revert to Java 17. We recommend upgrading to Java 17 before the new release; if you are running 0.49.12-Development or later, it will run on Java 17.
@@ -145,8 +138,6 @@ Treat each release as stand-alone; **Copy, never Move** your data forward from o
 6. Re-save any custom presets to ensure they are updated with the new version's settings.
 7. Exit MekHQ and restart the application to complete the update process.
 
-Following these steps will ensure that your campaign data initializes correctly and avoids potential issues. This process is essential for maintaining campaign stability.
-
 ## A Few Reminders and Stuff
 
 ### The Milestone System Summary
@@ -162,15 +153,13 @@ To maintain optimal performance in your MegaMek missions, we've integrated Sentr
 
 📝 **How to Enable Sentry if you want to help**:
 1. Open the sentry.properties file (located in the root of the program folder) in a text editor of your choice
-![Sentry 1](/assets/images/Sentry/Sentry%201.jpg)
+   ![Sentry 1](/assets/images/Sentry/Sentry%201.jpg)
 
 2. Once open, change the line `enabled=false` to `enabled=true` and save the file
-![Sentry 2](/assets/images/Sentry/Sentry%202.jpg)
+   ![Sentry 2](/assets/images/Sentry/Sentry%202.jpg)
 
 The other information in the file is the Server information where Sentry sends its bug reports. We have a channel on our Discord where only Developers/Engineers get notified of the reports. Here is an example:
 ![Sentry 3](/assets/images/Sentry/Sentry%203.jpg)
-
-This will allow Sentry to start tracking errors and bugs in the game. If you encounter any issues, Sentry will automatically send a report to our development team, helping us identify and resolve problems quickly.
 
 ### State of the Universe (February 18, 2025)
 If you haven't given the [State of the Universe (read here if you missed it)](https://megamek.org/2025/02/18/2025-State-of-the-Universe.html) a read, please do. There's lots of information in there that is still recent and relevant.
@@ -188,8 +177,6 @@ For more information about the planetary system rework, visit: [Planetary System
 
 ## User Data Directory for MegaMek, MegaMekLab, and MekHQ
 
-We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
-
 #### Key Points:
 - **Set a Custom Directory:** Choose any location on your computer (e.g., `D:/myMMStuff`) to keep your game resources.
 - **File Placement:**
@@ -206,8 +193,6 @@ We've added a customizable **User Data Directory** feature. This allows you to s
 Join our [official MegaMek Discord](https://discord.gg/megamek), our primary community hub for the suite. We offer superior voice support, individual channels, and assistance for the [official public servers](https://megamek.games). We're also part of community Discords [Everything BattleTech](https://discord.gg/gyXMWjT) and [Classic BattleTech](https://discord.gg/D9jFn52). Find us on Facebook at [MegaMek BattleTech](https://www.facebook.com/groups/5124394675) and [MegaMek](https://www.facebook.com/MegaMek).
 
 ### Contributing
-
-Interested in contributing? [Find out how here](https://megamek.org/wiki/I-want-to-help).
 
 ## Change Logs (Release Specific) and Download Links
 
