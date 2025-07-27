@@ -27,13 +27,14 @@ Faction Standing is your individual relationship with every major House, minor P
 
 After all, you can be the best mercenary unit in the business and still be hated.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding00.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
+
 
 ### Standing Is Always Shifting
 
@@ -48,11 +49,11 @@ Faction Standing—measured in **Regard**, from **-60** (hated) to **+60** (belo
 
 Contracts don’t just pay bills—they change your political reality.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding01.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
 
@@ -60,11 +61,11 @@ Contracts don’t just pay bills—they change your political reality.
 
 The galaxy doesn’t wait. Over time, each faction’s attitude toward your campaign will evolve based on lore events, from the Ronin War to the FedCom Civil War. That means your reputation may rise or fall just by surviving the times.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding02.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
 
@@ -77,15 +78,13 @@ Ultimatums create permanent consequences for your campaign’s political path, a
 
 Your unit may win the battle… but lose its soul.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding03.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
-
-
 ---
 
 ## Accolades, Censures, and Going Rogue
@@ -102,14 +101,13 @@ Fall out of favor and you’ll face escalating consequences: fines, leadership p
 
 Change sides? Defect? Turn pirate? Your loyal crew might abandon you—or die in the transition. Your old faction will wipe your reputation and blacklist you. And your campaign’s narrative will change forever.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding04.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
-
 ---
 
 ## Impacts Across the System
@@ -125,14 +123,13 @@ Your Standing Level (1–9) directly affects:
 - **Contract Pay**: slight pay bump for trusted units
 - **StratCon Support Points**: more Support Points from friends in high places
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding05.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
-
 ---
 
 ## Special Campaigns: Mercs & Pirates
@@ -141,15 +138,13 @@ Your Standing Level (1–9) directly affects:
 
 **Pirate Campaigns** use the “Piracy Success Index” instead of standard factions—and risk legal crackdown if they lose momentum.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding06.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
-
-
 ---
 
 ## You Wanted Impact? You Got It.
@@ -158,14 +153,13 @@ With Faction Standings, your campaign is no longer just a string of missions—i
 
 Choose your friends wisely. Betrayal has consequences. And loyalty? Loyalty just might get you a statue.
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding07.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
-
 ---
 
 ## FAQ
@@ -231,10 +225,10 @@ Sometimes—slowly. To rebuild trust:
 - Hover over a faction to view the unique effects for that faction
 - Watch out for Censure, Accolade, or Ultimatum events
 
-<div class="container">
+<div style="max-width: 800px; margin: auto;">
   <img
     src="{{ '/assets/images/Faction_Standings/factionStanding08.png' | relative_url }}"
     alt="Faction standings overview"
-    class="responsive-image"
+    style="width: 100%; height: auto;"
   />
 </div>
