@@ -232,3 +232,7 @@ Sometimes—slowly. To rebuild trust:
     style="width: 100%; height: auto;"
   />
 </div>
+---
+<a href="{{ '/assets/images/Faction_Standings/Faction Standings.pdf' | relative_url }}" target="_blank" rel="noopener">
+  Download the Faction Standings PDF
+</a>
