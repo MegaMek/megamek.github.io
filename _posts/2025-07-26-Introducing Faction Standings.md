@@ -11,11 +11,9 @@ title: "MekHQ Faction Standings Promo"
 >
 > — Precentor Adept Tobias Marrek, *Word of Blake Inner Doctrine Review*, 3071
 
-**The Inner Sphere is watching.**
-
 ---
 
-## Faction Standings System
+## Introducing the Faction Standings System
 
 In 50.07 we are proud to introduce one of our most ambitious features yet: the **Faction Standings** system—a dynamic, persistent web of loyalties, grudges, and political memory that tracks your campaign’s standing with every major power in the galaxy.
 
@@ -34,7 +32,6 @@ After all, you can be the best mercenary unit in the business and still be hated
     style="width: 100%; height: auto;"
   />
 </div>
-
 
 ### Standing Is Always Shifting
 
@@ -233,6 +230,9 @@ Sometimes—slowly. To rebuild trust:
   />
 </div>
 ---
-<a href="{{ '/assets/images/Faction_Standings/Faction Standings.pdf' | relative_url }}" target="_blank" rel="noopener">
-  Download the Faction Standings PDF
+<a href="{{ '/assets/images/Faction_Standings/Faction Standings.pdf' | relative_url }}"
+   target="_blank" rel="noopener"
+   style="display: inline-block; padding: 1em 1.5em; background-color: #004c99; color: white; text-decoration: none; font-size: 1.2em; border-radius: 8px; font-weight: bold;">
+  📄 Download the Faction Standings PDF
 </a>
+
