@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "MekHQ Faction Standings Promo"
+title: "Introducing Faction Standings - The Politics of War""
 ---
 
 # The Cost of Choosing Sides in 50.07
