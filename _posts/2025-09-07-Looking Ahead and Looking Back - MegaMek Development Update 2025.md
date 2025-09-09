@@ -244,7 +244,9 @@ folder="/assets/images/MekHQ_09_2025/AToW/" %}
 
 #### Company Generator Rewrite
 
-Currently focused on creating Mech companies, players want generation of larger, multi-unit-type forces. The new generator (in design phase) will use MegaMek's Force Generator systems. This will allow for more diverse and realistic force compositions.
+The current company generator in MekHQ was originally designed as a standalone feature for the 0.49.7 release. While it does use some of the MegaMek RAT Generator data, it's quite limited compared to the robust force generation capabilities available through MegaMek's built-in Force Generator tools. Currently, we can only generate basic Mech companies, but players have been consistently requesting the ability to create combined arms forces - something our current system simply can't handle.
+
+We're designing a completely new generator for MekHQ that will leverage MegaMek's powerful Force Generator systems. This rewrite will allow us to generate detailed, realistic combined arms commands with diverse unit compositions including vehicles, infantry, aerospace units, and more. If you haven't explored MegaMek's force generation capabilities yet, fire up MegaMek, go to "Create Random Army," and check out the 4th tab - you'll get a taste of the kind of forces you could generate in MekHQ! This project is currently in the design phase, so stay tuned for updates as development progresses.
 
 ### Awaiting Resources
 
