@@ -67,25 +67,43 @@ This will take a few years to complete, but we're well underway. The bad news: p
 
 ### In The Coming Release (0.50.07-Development)
 
-We've added a new Tip of the Day system, which helps both new and experienced players discover features they might have missed. These tips now support HTML formatting, making them more visually appealing and informative. We've also significantly expanded keyboard shortcuts throughout the game, adding keybinds for game commands, deployment phase actions, and phase report navigation. You can now even remove specific keybinds by pressing Esc, giving you full control over your setup.
+We've added a new Tip of the Day system, which helps both new and experienced players discover features they might have missed. These tips now support HTML formatting, making them more visually appealing and informative. 
+
+<div style="max-width: 800px; margin: auto;">
+  <video 
+    width="100%" 
+    height="auto" 
+    controls 
+    preload="metadata"
+    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+  >
+    <source src="{{ '/assets/images/MegaMek_09_2025/Tool_Tip.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
+  <em>Tool Tip demonstration - click play to start</em>
+</p>
+
+We've also significantly expanded keyboard shortcuts throughout the game, adding keybinds for game commands, deployment phase actions, and phase report navigation. You can now even remove specific keybinds by pressing Esc, giving you full control over your setup.
 
 Visual improvements include better Force Display functionality, enhanced Phase Report layout with keyword filtering, and improved zoom controls that let you zoom toward your mouse cursor or toggle between zoom levels with keyboard shortcuts. The Board Editor gets Deployment Zone painting capabilities, while the overall interface benefits from ultrawide monitor support for splash screens and various UI refinements.
 
 For the data enthusiasts, we've done considerable rework on the Mech View and added a new Faction Availability tab that shows our interpretation of unit availability data. While our underlying data uses the Master Unit List, this represents our own analysis and interpretation of that information, making unit selection more historically accurate.
 
 <div style="max-width: 1200px; margin: auto; display: flex; gap: 20px;">
-  <a href="{{ '/assets/images/AToW_Builder/Mekview_1.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/MegaMek_09_2025/Mekview_1.png' | relative_url }}" target="_blank" style="flex: 1;">
     <img
-      src="{{ '/assets/images/AToW_Builder/Mekview_1.png' | relative_url }}"
+      src="{{ '/assets/images/MegaMek_09_2025//Mekview_1.png' | relative_url }}"
       alt="Personnel market overview 1"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
       onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"
     />
   </a>
-  <a href="{{ '/assets/images/AToW_Builder/Mekview_2.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/MegaMek_09_2025/Mekview_2.png' | relative_url }}" target="_blank" style="flex: 1;">
     <img
-      src="{{ '/assets/images/AToW_Builder/Mekview_2.png' | relative_url }}"
+      src="{{ '/assets/images/MegaMek_09_2025/Mekview_2.png' | relative_url }}"
       alt="Personnel market overview 2"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -167,9 +185,9 @@ The system ensures all necessary professions are available (no more missing Admi
 We've implemented a comprehensive [Faction Standings system](https://megamek.org/2025/07/26/Introducing-Faction-Standings.html) that brings political consequences to your campaign decisions. This system is distinct from Force Reputation—while reputation measures your professional prestige, Faction Standing is about trust, loyalty, and politics.
 
 <div style="max-width: 800px; margin: auto; text-align: center;">
-  <a href="{{ '/assets/images/AToW_Builder/Faction_Standings.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/MekHQ_09_2025/Faction_Standings.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/AToW_Builder/Faction_Standings.png' | relative_url }}"
+      src="{{ '/assets/images/MekHQ_09_2025/Faction_Standings.png' | relative_url }}"
       alt="Faction Standings"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -221,7 +239,7 @@ It's our hope that bringing RPG elements into MekHQ—especially the character b
 
 {% include carousel.html
 id="atow-carousel"
-folder="/assets/images/AToW_Builder/" %}
+folder="/assets/images/MekHQ_09_2025/AToW/" %}
 
 #### Company Generator Rewrite
 
