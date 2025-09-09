@@ -4,7 +4,8 @@ title: "Looking Ahead and Looking Back: MegaMek Development Update 2025"
 date: 2025-08-15
 ---
 
-# Looking Ahead and Looking Back: MegaMek Development Update 2025
+# Looking Ahead and Looking Back: 
+## MegaMek Development Update 2025
 
 *By Hammer*
 
