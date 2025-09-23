@@ -121,7 +121,7 @@ Full unit construction capabilities with complete MegaMek compatibility. Units b
 Expanded support for MUL and other file formats to ensure maximum compatibility with the MegaMek suite of programs.
 
 ### Built in GATOR Calculator
-In development a built-in GATOR calculator that will tell you odds
+In development a built-in GATOR calculator that will tell you odds.
 
 ## Beta Status and Community Involvement
 
