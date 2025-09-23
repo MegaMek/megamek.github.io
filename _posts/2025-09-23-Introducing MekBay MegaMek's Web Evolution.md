@@ -137,7 +137,7 @@ A note for people wanting to contribute to MekBay. We'll need your feedback to m
 
 Whether you're a veteran commander who's been with us since 2002 or a new recruit discovering the Inner Sphere, MekBay opens new possibilities for how you engage with BattleTech. We're excited to see how you use these tools to enhance your tabletop campaigns.
 
-As an official MegaMek project, MekBay will receive ongoing development support and continue evolving based on community needs and feedback. This represents our commitment to making BattleTech more accessible to players regardless of their platform or technical setup. By expanding beyond our traditional Java environment, we're opening doors to new possibilities while still staying true the MegaMek experience.
+As an official MegaMek project, MekBay will receive ongoing development support and continue evolving based on community needs and feedback. This represents our commitment to making BattleTech more accessible to players regardless of their platform or technical setup. By expanding beyond our traditional Java environment, we're opening doors to new possibilities while still staying true to the MegaMek experience.
 
 Join us and help us build the future of portable BattleTech tools.
 
