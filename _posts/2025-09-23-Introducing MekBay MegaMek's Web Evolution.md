@@ -41,62 +41,51 @@ MekBay represents our fourth official project and a significant milestone in the
 ## Current Features
 
 ### Complete MML Unit Database
-    Access the full MegaMek unit database directly from your browser or mobile device. Every unit that MegaMek can build and print is available with complete technical specifications.
+Access the full MegaMek unit database directly from your browser or mobile device. Every unit that MegaMek can build and print is available with complete technical specifications.
 
-<div style="max-width: 800px; margin: auto;">
-  <video 
-    width="100%" 
-    height="auto" 
-    controls 
-    preload="metadata"
-    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-  >
-    <source src="{{ site.baseurl }}/assets/images/MekBay/video/Filtering.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+<div style="max-width:800px;margin:auto">
+  <video controls preload="metadata" playsinline
+         style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
+    <source src="{{ '/assets/images/MekBay/video/Filtering.mp4' | relative_url }}" type="video/mp4">
+    Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
-  <em>Tool Tip demonstration - click play to start</em>
+<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
+  <em>Tool Tip demonstration — click play to start</em><br>
+  <a href="{{ '/assets/images/MekBay/video/Filtering.mp4' | absolute_url }}">Open video directly (debug)</a>
 </p>
 
 ### Force Builder with Cloud Saving
-    Build and manage your forces with automatic cloud synchronization. Start building on your desktop, continue on your phone, and finalize on your tablet-all seamlessly synced.
+Build and manage your forces with automatic cloud synchronization. Start building on your desktop, continue on your phone, and finalize on your tablet-all seamlessly synced.
 
-<div style="max-width: 800px; margin: auto;">
-  <video 
-    width="100%" 
-    height="auto" 
-    controls 
-    preload="metadata"
-    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-  >
-    <source src="{{ site.baseurl }}/assets/images/MekBay/video/TRO_Sample.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+<div style="max-width:800px;margin:auto">
+  <video controls preload="metadata" playsinline
+         style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
+    <source src="{{ '/assets/images/MekBay/video/TRO_Sample.mp4' | relative_url }}" type="video/mp4">
+    Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
-  <em>Tool Tip demonstration - click play to start</em>
+<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
+  <em>Tool Tip demonstration — click play to start</em><br>
+  <a href="{{ '/assets/images/MekBay/video/TRO_Sample.mp4' | absolute_url }}">Open video directly (debug)</a>
 </p>
 
 ### Printable Record Sheets
-    Generate clean, printable record sheets for tabletop play. 
+Generate clean, printable record sheets for tabletop play. 
   - Note: there is a known issue with iOS devices where record sheets may split across pages due to automatic footer insertion by Safari and other iOS browsers. We're investigating workarounds for this Apple platform limitation.
 
-<div style="max-width: 800px; margin: auto;">
-  <video 
-    width="100%" 
-    height="auto" 
-    controls 
-    preload="metadata"
-    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-  >
-    <source src="{{ site.baseurl }}/assets/images/MekBay/video/RS_Sample.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+<div style="max-width:800px;margin:auto">
+  <video controls preload="metadata" playsinline
+         style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
+    <source src="{{ '/assets/images/MekBay/video/RS_Sample.mp4' | relative_url }}" type="video/mp4">
+    Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
-  <em>Tool Tip demonstration - click play to start</em>
+<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
+  <em>Tool Tip demonstration — click play to start</em><br>
+  <a href="{{ '/assets/images/MekBay/video/RS_Sample.mp4' | absolute_url }}">Open video directly (debug)</a>
 </p>
+
 
 >**Important:** MekBay **IS NOT** a canon source - these are functional game sheets designed for practical use, not official publication materials. As some of you know, MegaMekLab helps produce record sheets for official BattleTech products. When official record sheets are available through Catalyst Game Labs' products, those will always be considered the official sheets.
 
@@ -109,13 +98,13 @@ MekBay represents our fourth official project and a significant milestone in the
 - **Visual elements:** Focuses on hit tables and functional gameplay elements
 
 ### Advanced Search Engine
-    Powerful filtering capabilities let you search by unit type, statistics, factions, eras, and equipment using logical operators. Find exactly the units you need for your scenario or campaign.
+Powerful filtering capabilities let you search by unit type, statistics, factions, eras, and equipment using logical operators. Find exactly the units you need for your scenario or campaign.
 
 ### Interactive Unit Sheets
-    View and interact with unit data in an intuitive interface designed for quick reference during gameplay.
+View and interact with unit data in an intuitive interface designed for quick reference during gameplay.
 
 ### TRO Browser
-    Browse through units in a MechWarrior-style interface, complete with improved UI elements and bug fixes from community feedback.
+Browse through units in a MechWarrior-style interface, complete with improved UI elements and bug fixes from community feedback.
 
 ### Technical Implementation:
 
@@ -131,19 +120,19 @@ Currently using static SVG exports from MegaMekLab for record sheets, with plans
 As we continue developing MekBay, several exciting features are planned for upcoming releases:
 
 ### Real-Time Sync
-    Multi-device real-time synchronization ensures your sheets stay current whether you're using your phone, tablet, or desktop browser-an upgrade from the current cloud sync system.
+Multi-device real-time synchronization ensures your sheets stay current whether you're using your phone, tablet, or desktop browser-an upgrade from the current cloud sync system.
 
 ## Multiplayer Read-Only Sheets
-    Share unit sheets with opponents in read-only mode, allowing them to view your units while maintaining data integrity through real-time sync.
+Share unit sheets with opponents in read-only mode, allowing them to view your units while maintaining data integrity through real-time sync.
 
 ### Unit Construction
-    Full unit construction capabilities with complete MegaMek compatibility. Units built in MekBay will work seamlessly with MegaMekLab and vice versa.
+Full unit construction capabilities with complete MegaMek compatibility. Units built in MekBay will work seamlessly with MegaMekLab and vice versa.
 
 ### Enhanced File Format Support
-    Expanded support for MUL and other file formats to ensure maximum compatibility with the MegaMek suite of programs.
+Expanded support for MUL and other file formats to ensure maximum compatibility with the MegaMek suite of programs.
 
 ### Built in GATOR Calculator
-    A built-in GATOR calculator will tell you odds
+In development a built-in GATOR calculator that will tell you odds
 
 ## Beta Status and Community Involvement
 
