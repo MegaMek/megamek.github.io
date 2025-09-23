@@ -50,10 +50,6 @@ Access the full MegaMek unit database directly from your browser or mobile devic
     Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
-  <em>Tool Tip demonstration — click play to start</em><br>
-  <a href="{{ '/assets/images/MekBay/video/Filtering.mp4' | absolute_url }}">Open video directly (debug)</a>
-</p>
 
 ### Force Builder with Cloud Saving
 Build and manage your forces with automatic cloud synchronization. Start building on your desktop, continue on your phone, and finalize on your tablet-all seamlessly synced.
@@ -65,10 +61,6 @@ Build and manage your forces with automatic cloud synchronization. Start buildin
     Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
-  <em>Tool Tip demonstration — click play to start</em><br>
-  <a href="{{ '/assets/images/MekBay/video/TRO_Sample.mp4' | absolute_url }}">Open video directly (debug)</a>
-</p>
 
 ### Printable Record Sheets
 Generate clean, printable record sheets for tabletop play. 
@@ -81,10 +73,7 @@ Generate clean, printable record sheets for tabletop play.
     Sorry—your browser can’t play this video.
   </video>
 </div>
-<p style="text-align:center;color:#666;font-size:14px;margin-top:10px">
-  <em>Tool Tip demonstration — click play to start</em><br>
-  <a href="{{ '/assets/images/MekBay/video/RS_Sample.mp4' | absolute_url }}">Open video directly (debug)</a>
-</p>
+
 
 
 >**Important:** MekBay **IS NOT** a canon source - these are functional game sheets designed for practical use, not official publication materials. As some of you know, MegaMekLab helps produce record sheets for official BattleTech products. When official record sheets are available through Catalyst Game Labs' products, those will always be considered the official sheets.
