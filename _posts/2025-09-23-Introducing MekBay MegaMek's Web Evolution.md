@@ -103,7 +103,7 @@ Browse through units in a MechWarrior-style interface, complete with improved UI
 - Your data syncs across all devices (with real-time sync planned for future releases)
 - All unit data, factions, eras, quirks, and equipment pull from MegaMek's databases with automatic updates when online
 
-Currently using static SVG exports from MegaMekLab for record sheets, with plans for dynamic sheet generation in future versions..
+Currently using static SVG exports from MegaMekLab for record sheets, with plans for dynamic sheet generation in future versions.
 
 ## Future Roadmap
 As we continue developing MekBay, several exciting features are planned for upcoming releases:
