@@ -40,7 +40,7 @@ MekBay represents our fourth official project and a significant milestone in the
 
 ## Current Features
 
-- ### Complete MML Unit Database
+### Complete MML Unit Database
     Access the full MegaMek unit database directly from your browser or mobile device. Every unit that MegaMek can build and print is available with complete technical specifications.
 
 <div style="max-width: 800px; margin: auto;">
@@ -51,7 +51,7 @@ MekBay represents our fourth official project and a significant milestone in the
     preload="metadata"
     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
   >
-    <source src="{{ '/assets/images/MekBay/video/Filtering.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ site.baseurl }}/assets/images/MekBay/video/Filtering.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -59,7 +59,7 @@ MekBay represents our fourth official project and a significant milestone in the
   <em>Tool Tip demonstration - click play to start</em>
 </p>
 
-- ### Force Builder with Cloud Saving
+### Force Builder with Cloud Saving
     Build and manage your forces with automatic cloud synchronization. Start building on your desktop, continue on your phone, and finalize on your tablet-all seamlessly synced.
 
 <div style="max-width: 800px; margin: auto;">
@@ -70,7 +70,7 @@ MekBay represents our fourth official project and a significant milestone in the
     preload="metadata"
     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
   >
-    <source src="{{ '/assets/images/MekBay/video/TRO_Sample.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ site.baseurl }}/assets/images/MekBay/video/TRO_Sample.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -78,7 +78,7 @@ MekBay represents our fourth official project and a significant milestone in the
   <em>Tool Tip demonstration - click play to start</em>
 </p>
 
-- ### Printable Record Sheets
+### Printable Record Sheets
     Generate clean, printable record sheets for tabletop play. 
   - Note: there is a known issue with iOS devices where record sheets may split across pages due to automatic footer insertion by Safari and other iOS browsers. We're investigating workarounds for this Apple platform limitation.
 
@@ -90,7 +90,7 @@ MekBay represents our fourth official project and a significant milestone in the
     preload="metadata"
     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
   >
-    <source src="{{ '/assets/images/MekBay/video/RS_Sample.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ site.baseurl }}/assets/images/MekBay/video/RS_Sample.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -106,15 +106,15 @@ MekBay represents our fourth official project and a significant milestone in the
 - **Heat scale display:** Uses arrows instead of asterisks on heat scales
 - **Equipment inventory:** Each equipment piece listed on separate lines without quantity columns for cleaner mobile viewing
 - **Hit modifier tables:** Includes hit modifier tables adjacent to inventory sections
-- **Visual elements:** Focuses on hit tables and functional gameplay elements 
+- **Visual elements:** Focuses on hit tables and functional gameplay elements
 
-- ### Advanced Search Engine
+### Advanced Search Engine
     Powerful filtering capabilities let you search by unit type, statistics, factions, eras, and equipment using logical operators. Find exactly the units you need for your scenario or campaign.
 
-- ### Interactive Unit Sheets
+### Interactive Unit Sheets
     View and interact with unit data in an intuitive interface designed for quick reference during gameplay.
 
-- ### TRO Browser
+### TRO Browser
     Browse through units in a MechWarrior-style interface, complete with improved UI elements and bug fixes from community feedback.
 
 ### Technical Implementation:
@@ -130,19 +130,19 @@ Currently using static SVG exports from MegaMekLab for record sheets, with plans
 ## Future Roadmap
 As we continue developing MekBay, several exciting features are planned for upcoming releases:
 
-- ### Real-Time Sync
+### Real-Time Sync
     Multi-device real-time synchronization ensures your sheets stay current whether you're using your phone, tablet, or desktop browser-an upgrade from the current cloud sync system.
 
-- ## Multiplayer Read-Only Sheets
+## Multiplayer Read-Only Sheets
     Share unit sheets with opponents in read-only mode, allowing them to view your units while maintaining data integrity through real-time sync.
 
-- ### Unit Construction
+### Unit Construction
     Full unit construction capabilities with complete MegaMek compatibility. Units built in MekBay will work seamlessly with MegaMekLab and vice versa.
 
-- ### Enhanced File Format Support
+### Enhanced File Format Support
     Expanded support for MUL and other file formats to ensure maximum compatibility with the MegaMek suite of programs.
 
-- ### Built in GATOR Calculator
+### Built in GATOR Calculator
     A built-in GATOR calculator will tell you odds
 
 ## Beta Status and Community Involvement
@@ -154,14 +154,12 @@ A note for people wanting to contribute to MekBay. We'll need your feedback to m
 **Feedback Channels:** All feedback should be directed through our established MegaMek channels:
 - **Discord:** Join our community at [discord.gg/megamek](https://discord.gg/megamek)
 - **Coming Soon GitHub Repository and Trackers:**
-- 
+ 
 ## Looking Forward
 
 Whether you're a veteran commander who's been with us since 2002 or a new recruit discovering the Inner Sphere, MekBay opens new possibilities for how you engage with BattleTech. We're excited to see how you use these tools to enhance your tabletop campaigns.
 
 As an official MegaMek project, MekBay will receive ongoing development support and continue evolving based on community needs and feedback. This represents our commitment to making BattleTech more accessible to players regardless of their platform or technical setup. By expanding beyond our traditional Java environment, we're opening doors to new possibilities while still staying true the MegaMek experience.
-
-
 
 Join us and help us build the future of portable BattleTech tools.
 
