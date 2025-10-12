@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MegaMek, MegaMekLab, and MekHQ 0.50.07 Released"
-date: 2025-10-XX
+date: 2025-10-12
 tags:
   - Releases
   - MegaMek
