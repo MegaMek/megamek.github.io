@@ -59,7 +59,7 @@ If you experience any issues while running on Java 21, our first troubleshooting
 
 ## MekBay Update: For Those Who Missed the Launch
 
-In addition to all the changes in the core programs, we've been steadily developing MekBay. If you missed the announcement or haven't checked it out yet, I encourage you to read [Introducing MekBay](https://megamek.org/2025/07/08/Introducing-MekBay-MegaMek-Web-Evolution.html). Drake and cat/dev/random continue to do phenomenal work, steadily pushing out update after update to improve the functionality. We have really big plans for this tool's future.
+In addition to all the changes in the core programs, we've been steadily developing MekBay. If you missed the announcement or haven't checked it out yet, I encourage you to read [Introducing MekBay](https://megamek.org/announcements/development/mekbay/2025/09/23/Introducing-MekBay-MegaMek's-Web-Evolution.html). Drake and cat/dev/random continue to do phenomenal work, steadily pushing out update after update to improve the functionality. We have really big plans for this tool's future.
 
 ### MekBay's Different Release Model
 
