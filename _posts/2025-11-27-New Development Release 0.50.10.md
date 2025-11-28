@@ -291,7 +291,7 @@ Many new features now include "Options Changed" dialogs that help existing campa
 
 ### Quality of Life Improvements
 
-**Deployment**: Deploying from the TO&E or Briefing Room (right-click on scenario) now works properly. Force type can be changed directly in the TO&E, forces remember their assigned force types, and a new "Cadre" force type distinguishes between forces training allies versus your own personnel.
+**Deployment**: Deploying from the TO&E or Briefing Room (right-click on scenario) is now available. Force remember their assigned Combat Roles, and a new "Cadre" Combat Role distinguishes between forces training allies versus your own personnel.
 
 **Daily Report**: Now supports tabs for filtering and organizing information.
 
