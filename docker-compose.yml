@@ -1,0 +1,12 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+      - /app/vendor
+      - /app/.jekyll-cache
+      - /app/_site
+    environment:
+      - JEKYLL_ENV=development

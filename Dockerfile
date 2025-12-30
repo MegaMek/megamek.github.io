@@ -1,9 +1,9 @@
-FROM ruby:2.7-alpine
-RUN apk update
-RUN apk add --no-cache build-base gcc cmake git
-RUN gem update --system && gem update bundler && gem install bundler jekyll:3.9.3
+FROM ruby:3.1-alpine
+RUN apk update && apk add --no-cache build-base gcc cmake git
+RUN gem install bundler
 WORKDIR /app
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
 COPY . ./
-RUN bundle add webrick
-RUN bundle install && bundle update
-CMD bundle exec jekyll serve --watch --incremental --force_polling --host 0.0.0.0 -P 4000
+EXPOSE 4000
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "4000", "--force_polling", "--livereload"]
