@@ -7,6 +7,8 @@ splash: splash-postbattle.jpg
 progress: 100
 prev_page: /wiki/first_campaign_mhq_stratcon
 prev_title: StratCon Guide
+next_page: /wiki/glossary
+next_title: Glossary
 ---
 
 <section id="client-settings">

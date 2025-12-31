@@ -160,16 +160,11 @@
 
 .guide-splash-img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  max-height: 300px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 65%;
   display: block;
-}
-
-@media (min-width: 768px) {
-  .guide-splash-img {
-    height: 250px;
-  }
 }
 
 /* Table of Contents */

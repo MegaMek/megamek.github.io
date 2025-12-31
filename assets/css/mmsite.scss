@@ -120,6 +120,21 @@ a.footer-link {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
+/* Site header carousel */
+#header-carousel {
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 250, 205, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  background-image: url("/assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);
+}
+
+/* Site header splash image */
+.site-header-splash {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
 /********************************/
 /** Adjustments to containers  **/
 /********************************/
@@ -278,6 +293,15 @@ div.post-meta {
   .post-time {
     display: inline;
   }
+}
+
+/*********************************************************************/
+/* Download page program images                                       */
+/*********************************************************************/
+
+.download-program-img {
+  max-height: 150px;
+  width: auto;
 }
 
 /*********************************************************************/

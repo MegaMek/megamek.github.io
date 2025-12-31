@@ -63,10 +63,21 @@
       </div>
     </nav>
   </header>
-  <div class='container'>
-    <div class='row'>
-      <div class='col'>
-        <img src="{{ '/assets/images/SOU/mm-background.jpg' | relative_url }}" class='rounded img-fluid mx-auto d-block' alt="MegaMek - BattleTech combat simulation" />
+  <div class='container-fluid px-0'>
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ '/assets/images/SOU/mm-background.jpg' | relative_url }}" class="d-block w-100 site-header-splash" alt="MegaMek - Tactical Combat">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ '/assets/images/SOU/MekHQ Start_uhd.png' | relative_url }}" class="d-block w-100 site-header-splash" alt="MekHQ - Command Post">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ '/assets/images/SOU/mml_load_uhd.jpg' | relative_url }}" class="d-block w-100 site-header-splash" alt="MegaMekLab - Unit Design">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ '/assets/images/SOU/MekHQ Load_uhd.png' | relative_url }}" class="d-block w-100 site-header-splash" alt="MekHQ - Salvage Operations">
+        </div>
       </div>
     </div>
   </div>
