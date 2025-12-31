@@ -125,11 +125,11 @@ toc: |
     <div class="col-md-6">
       <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
         <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
-          <i class="fas fa-bug"></i> Anonymous Error Reporting
+          <i class="fas fa-bug"></i> {% include glossary_term.html id="sentry" text="Anonymous Error Reporting" %}
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Help developers by sending anonymous error data.</p>
-          <p class="mb-0">Edit <code>sentry.properties</code> and change the line from <code>false</code> to <code>true</code>.</p>
+          <p>Help developers fix bugs by enabling {% include glossary_term.html id="sentry" text="Sentry" %}, our anonymous error reporting system.</p>
+          <p class="mb-0">Edit <code>sentry.properties</code> and change <code>enabled=false</code> to <code>enabled=true</code>.</p>
         </div>
       </div>
     </div>

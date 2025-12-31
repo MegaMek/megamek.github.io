@@ -546,6 +546,14 @@
   definition: |
     When StratCon generates a scenario, it picks a Seed Force from your Combat Forces. The Seed Force's BV serves to balance the scenario. Auxiliary and Reserve forces are only picked as last resort.
 
+- id: sentry
+  title: Sentry
+  short: Anonymous error reporting system that helps developers fix bugs quickly.
+  definition: |
+    Sentry is an integrated bug tracking and error monitoring system that automatically captures and reports issues encountered during gameplay. It monitors in real time and generates detailed bug reports, helping developers fix problems swiftly.
+    <p><strong>Privacy:</strong> Sentry respects your privacy and does not track any personal information - only technical error data.</p>
+    <p><strong>To enable:</strong> Edit <code>sentry.properties</code> in the program folder and change <code>enabled=false</code> to <code>enabled=true</code>.</p>
+
 - id: skill_types
   title: Skill Types
   short: "Four skill categories: Combat, Support, Roleplay, and Utility."
