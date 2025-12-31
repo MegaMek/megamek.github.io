@@ -160,7 +160,7 @@ toc: |
   <div class="guide-callout guide-callout-info mt-4">
     <div class="callout-title"><i class="fas fa-book"></i> Documentation & Rules</div>
     <p>The <code>docs</code> folder contains extensive documentation on MekHQ features, especially those not covered in official rulebooks (like personnel turnover and StratCon).</p>
-    <p><strong>MegaMek</strong> and <strong>MegaMekLab</strong> implement rules from the core BattleTech rulebooks: <em>Total Warfare</em>, <em>TechManual</em>, <em>Tactical Operations</em>, <em>Strategic Operations</em>, <em>Interstellar Operations</em>, and <em>Campaign Operations</em>. These programs stay extremely close to the official rules.</p>
+    <p><strong>MegaMek</strong> and <strong>MegaMekLab</strong> implement rules from the core BattleTech rulebooks: <em>Total Warfare</em>, <em>TechManual</em>, <em>BattleMech Manual</em>, <em>Tactical Operations</em>, <em>Strategic Operations</em>, <em>Interstellar Operations</em>, and <em>Campaign Operations</em>. These programs stay extremely close to the official rules.</p>
     <p><strong>MekHQ</strong> draws primarily from <em>Campaign Operations</em>, supplemented by systems inspired by <em>A Time of War</em> (the RPG), various sourcebooks, and canon from the novels.</p>
     <p class="mb-0"><strong>Important:</strong> Due to copyright, we cannot reproduce the rules themselves—though we include tooltips with page references where possible. These programs assume familiarity with BattleTech tabletop rules. Without that foundation, the already steep learning curve becomes significantly steeper.</p>
   </div>
