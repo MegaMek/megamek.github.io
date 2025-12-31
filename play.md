@@ -43,7 +43,7 @@ of the ways in which you could make use of MekHQ here. Many players enjoy using
 the community built Against the Bot rules which will automate many of the
 processes such as selection of missions, scenarios, and OpFor.
 
-This [step-by-step tutorial](/wiki/first_campaign_mhq.html) outlines how to
+This [step-by-step tutorial](/wiki/first_campaign_mhq_installation) outlines how to
 start up a very simple campaign, assign units and pilots and run a first scenario.
 
 #### Options, Options, and More Options

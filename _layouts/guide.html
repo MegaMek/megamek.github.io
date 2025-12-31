@@ -1,0 +1,260 @@
+{% include header.html %}
+
+<main role="main">
+  <div class="container-fluid guide-container">
+    <div class="row">
+      <!-- Sidebar Navigation -->
+      <nav class="col-md-3 col-lg-2 d-md-block guide-sidebar collapse" id="guideSidebar">
+        <div class="sidebar-sticky">
+          <div class="guide-logo text-center mb-3">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h5 class="mt-2">MekHQ Guide</h5>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="guide-progress mb-3">
+            <div class="progress-label d-flex justify-content-between">
+              <small>Progress</small>
+              <small class="progress-percent">0%</small>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: {{ page.progress | default: 0 }}%"></div>
+            </div>
+          </div>
+
+          <ul class="nav flex-column guide-nav">
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'installation' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_installation' | relative_url }}">
+                <span class="section-number">1</span> Installation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'setup' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_setup' | relative_url }}">
+                <span class="section-number">2</span> Campaign Setup
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'company' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_company' | relative_url }}">
+                <span class="section-number">3</span> Your First Company
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'contract' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_contract' | relative_url }}">
+                <span class="section-number">4</span> Your First Contract
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'stratcon' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_stratcon' | relative_url }}">
+                <span class="section-number">5</span> StratCon
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'tips' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_tips' | relative_url }}">
+                <span class="section-number">6</span> Tips & Resources
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if page.guide_section == 'glossary' %}active{% endif %}" href="{{ '/wiki/glossary' | relative_url }}">
+                <i class="fas fa-book"></i> Glossary
+              </a>
+            </li>
+          </ul>
+
+          <hr class="my-3">
+
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h6><i class="fas fa-link"></i> Quick Links</h6>
+            <ul class="nav flex-column small">
+              <li class="nav-item">
+                <a class="nav-link" href="https://megamek.org" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> megamek.org
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://discord.gg/megamek" target="_blank">
+                  <i class="fab fa-discord"></i> Discord
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/MegaMek/mekhq/wiki" target="_blank">
+                  <i class="fab fa-github"></i> Wiki
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 guide-content">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="guide-breadcrumb mt-3">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ '/wiki/first_campaign_mhq_installation' | relative_url }}">MekHQ Guide</a></li>
+            {% if page.guide_section != 'installation' %}
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+            {% endif %}
+          </ol>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="guide-header mb-4">
+          <h1 class="guide-title">{{ page.title }}</h1>
+          {% if page.description %}
+          <p class="lead guide-description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+
+        <!-- Table of Contents (if page has sections) -->
+        {% if page.toc %}
+        <div class="guide-toc card mb-4">
+          <div class="card-header" data-bs-toggle="collapse" data-bs-target="#tocContent" style="cursor: pointer;">
+            <i class="fas fa-list"></i> On This Page
+            <i class="fas fa-chevron-down float-end"></i>
+          </div>
+          <div class="collapse show" id="tocContent">
+            <div class="card-body">
+              {{ page.toc }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Main Content -->
+        <div class="guide-body">
+          {{ content }}
+        </div>
+
+        <!-- Navigation Footer -->
+        <nav class="guide-nav-footer mt-5 mb-4">
+          <div class="row">
+            <div class="col-6">
+              {% if page.prev_page %}
+              <a href="{{ page.prev_page | relative_url }}" class="btn btn-outline-secondary btn-nav-prev">
+                <i class="fas fa-arrow-left"></i>
+                <span class="nav-label">Previous</span>
+                <span class="nav-title">{{ page.prev_title }}</span>
+              </a>
+              {% endif %}
+            </div>
+            <div class="col-6 text-end">
+              {% if page.next_page %}
+              <a href="{{ page.next_page | relative_url }}" class="btn btn-outline-primary btn-nav-next">
+                <span class="nav-label">Next</span>
+                <span class="nav-title">{{ page.next_title }}</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </nav>
+
+      </main>
+    </div>
+  </div>
+</main>
+
+<!-- Image Modal for Lightbox -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-light" id="imageModalLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center p-0">
+        <img src="" id="modalImage" class="img-fluid" alt="">
+      </div>
+      <div class="modal-footer border-0">
+        <small class="text-muted" id="imageCaption"></small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Glossary Modal for Full Definitions -->
+<div class="modal fade" id="glossaryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: #1a1a1a; border: 1px solid rgba(255, 250, 205, 0.3);">
+      <div class="modal-header" style="border-bottom: 1px solid rgba(255, 250, 205, 0.2);">
+        <h5 class="modal-title" style="color: #fffacd;">
+          <i class="fas fa-book"></i> <span id="glossaryModalTitle"></span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: #ccc; line-height: 1.7;">
+        <div id="glossaryModalContent"></div>
+      </div>
+      <div class="modal-footer" style="border-top: 1px solid rgba(255, 250, 205, 0.2);">
+        <a href="" id="glossaryModalLink" class="btn btn-sm btn-outline-warning">
+          <i class="fas fa-external-link-alt"></i> View in Glossary
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Image lightbox functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.guide-image');
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const modalLabel = document.getElementById('imageModalLabel');
+  const caption = document.getElementById('imageCaption');
+
+  images.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function() {
+      modalImg.src = this.src;
+      modalLabel.textContent = this.dataset.title || '';
+      caption.textContent = this.alt || '';
+      new bootstrap.Modal(modal).show();
+    });
+  });
+
+  // Glossary term click handler
+  const glossaryTerms = document.querySelectorAll('.glossary-term-link');
+  const glossaryModal = document.getElementById('glossaryModal');
+  const glossaryTitle = document.getElementById('glossaryModalTitle');
+  const glossaryContent = document.getElementById('glossaryModalContent');
+  const glossaryLink = document.getElementById('glossaryModalLink');
+
+  glossaryTerms.forEach(term => {
+    term.style.cursor = 'pointer';
+    term.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.dataset.glossaryId;
+      const title = this.dataset.glossaryTitle;
+      const definition = this.dataset.glossaryDefinition;
+
+      if (glossaryTitle) glossaryTitle.textContent = title;
+      if (glossaryContent) glossaryContent.innerHTML = definition;
+      if (glossaryLink) glossaryLink.href = '{{ "/wiki/glossary" | relative_url }}#' + id;
+
+      if (glossaryModal) {
+        new bootstrap.Modal(glossaryModal).show();
+      }
+    });
+  });
+
+  // Update progress bar based on scroll
+  const progressBar = document.querySelector('.guide-progress .progress-bar');
+  const progressPercent = document.querySelector('.progress-percent');
+
+  window.addEventListener('scroll', function() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+    if (progressPercent) {
+      progressPercent.textContent = Math.round(scrolled) + '%';
+    }
+  });
+});
+</script>
+
+{% include footer.html %}

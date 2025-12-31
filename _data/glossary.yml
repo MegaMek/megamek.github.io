@@ -1,0 +1,664 @@
+# MekHQ Glossary Terms
+# Complete extraction from MekHQ's GlossaryEntry.properties
+
+# ### A ###
+
+- id: advanced_scouting
+  title: Advanced Scouting
+  short: Uses character Scouting Skills to reveal hexes when exploring the Area of Operations in StratCon.
+  definition: |
+    If 'Advanced Scouting' is enabled in Campaign Options, characters will use their Scouting Skills when exploring the Area of Operations in StratCon. The hex a Combat Team is deployed to will always be revealed, but adjacent hexes require passing a scouting check.
+    <p>The five scouting skills are: Communications, Perception, Sensor Operations, Stealth, and Tracking. Unit weight and speed affect the scouting check modifier.</p>
+
+- id: aging
+  title: Aging
+  short: Characters gradually suffer skill penalties as they grow older, based on A Time of War rules.
+  definition: |
+    As characters grow older, their skills change based on the aging rules from A Time of War. There are ten aging milestones that adjust skills depending on their Linked Attributes. In Clan campaigns, aging also imposes penalties on Reputation.
+
+- id: alt_advanced_medical
+  title: Alternate Advanced Medical (AAM)
+  short: A modernized medical system with prosthetics, advanced surgeries, and detailed injury tracking.
+  definition: |
+    Alternate Advanced Medical (AAM) builds on the core Advanced Medical systems while adding modernization. It includes advanced surgeries, prosthetics, and better integration with newer systems like SPAs, Fatigue, and Attribute Scores.
+    <p>Characters with certain implants (VDNI, Enhanced Imaging) suffer periodic physical and mental degradation.</p>
+
+- id: area_of_operations
+  title: Area of Operations
+  short: The collection of Sectors assigned to your unit in StratCon, containing objectives, scenarios, and facilities.
+  definition: |
+    In StratCon, the Area of Operations doesn't represent the entire planet. Instead, it includes a collection of Sectors assigned to your unit. These Sectors contain objectives, scenarios, and sometimes special Facilities.
+
+- id: atb
+  title: "Digital GM: Legacy Against the Bot"
+  short: The original Digital GM system, now deprecated and replaced by StratCon.
+  definition: |
+    Against the Bot (AtB) was one of the oldest systems in MekHQ, serving as an early Digital GM. In late 2024, it was officially succeeded by StratCon and marked as Deprecated. In 50.10 it was retired entirely.
+
+- id: atow_traits
+  title: A Time of War Traits
+  short: Character traits from A Time of War (Connections, Wealth, Reputation, Edge, Unlucky).
+  definition: |
+    In A Time of War, many SPAs are actually 'Traits.' Some traits were implemented as SPAs, while others (Connections, Wealth, Reputation, Unlucky, and Edge) are handled separately in MekHQ.
+
+- id: attribute_scores
+  title: Attribute Scores
+  short: The seven attributes (STR, BDY, RFL, DEX, INT, WIL, EDG) that influence skill Target Numbers.
+  definition: |
+    In A Time of War there are seven Attribute Scores: Strength, Body, Reflexes, Dexterity, Intelligence, Willpower, and Edge. Each skill is assigned 1-2 of these Attributes as its Linked Attributes, which influence the skill's final Target Number.
+
+- id: autoinfirmary
+  title: AutoInfirmary
+  short: Automatically assigns injured personnel to qualified doctors with a single click.
+  definition: |
+    AutoInfirmary lets you instantly assign all injured personnel to qualified doctors. It prioritizes the most critically injured personnel to your most qualified doctors, working down the list until you run out of Hospital Beds.
+
+# ### B ###
+
+- id: bloodmark
+  title: Bloodmark
+  short: A Trait that increases the chance of assassination attempts by bounty hunters.
+  definition: |
+    The higher a character's Bloodmark, the greater the chance a Bloodhunt occurs. When this happens, a bounty hunter will make an attempt on the character's life. The Alternative ID SPA halves the chance of a Bloodhunt occurring.
+
+# ### C ###
+
+- id: capital_systems
+  title: Capital Systems
+  short: A faction's capital system, marked with a special ring on the interstellar map.
+  definition: |
+    On the interstellar map, a faction's capital system is marked by a special ring. Each faction has only a single capital. Navigating there increases the likelihood of receiving contracts for that faction.
+
+- id: challenge_skulls
+  title: Challenge Skulls
+  short: A 1-5 skull rating estimating contract difficulty by comparing your forces to the OpFor.
+  definition: |
+    Contract Skulls estimate contract difficulty by comparing your combat forces against the OpFor's available units. Each half-skull represents roughly a 20% difference in strength.
+    <ul>
+      <li><b>1.5 skulls:</b> Your forces are ~40% stronger</li>
+      <li><b>2.5 skulls:</b> Roughly equal strength</li>
+      <li><b>5 skulls:</b> OpFor is ~2x as powerful - expect heavy losses</li>
+    </ul>
+
+- id: changing_filters_hangar
+  title: Changing Filters in the Hangar Tab
+  short: Use dropdowns to filter units by type and change what information is displayed.
+  definition: |
+    Click on the 'Unit Type' dropdown at the top of the Hangar Tab to display only the units you're interested in. The 'View' dropdown lets you change what kind of information is available for each unit.
+
+- id: changing_filters_personnel
+  title: Changing Filters in the Personnel Tab
+  short: Use dropdowns to filter personnel by profession and change what information is displayed.
+  definition: |
+    Click on the 'Personnel Type' dropdown at the top of the Personnel Tab to display only the professions you're interested in. The 'View' dropdown lets you change what kind of information is available for each character.
+
+- id: changing_filters_warehouse
+  title: Changing Filters in the Warehouse Tab
+  short: Use dropdowns to filter parts by type and status.
+  definition: |
+    Click on the 'Part Type' dropdown at the top of the Warehouse Tab to display only the parts you're interested in. The 'Part Status' dropdown lets you further filter what parts are displayed.
+
+- id: combat_roles
+  title: Combat Roles
+  short: Strategic designations that determine how forces behave in StratCon (Frontline, Patrol, Maneuver, etc.).
+  definition: |
+    Combat Roles are used in StratCon to declare what kind of strategic actions a force is taking. There are seven Combat Roles:
+    <ul>
+      <li><b>Frontline:</b> Deploy defensive minefields or infantry before battle</li>
+      <li><b>Maneuver:</b> Roll reinforcement checks twice, use best result</li>
+      <li><b>Training:</b> Senior personnel train the next generation</li>
+      <li><b>Patrol:</b> Scout the AO, reveal adjacent hexes</li>
+      <li><b>Cadre:</b> Training local forces (for Cadre Duty contracts)</li>
+      <li><b>Auxiliary:</b> Forces for piecemeal reinforcement</li>
+      <li><b>Reserve:</b> Forces not deployed to combat theater</li>
+    </ul>
+
+- id: combat_teams
+  title: Combat Teams
+  short: Cohesive groups of forces designed to fight together (Lance, Star, Company, etc.).
+  definition: |
+    Combat Teams are cohesive groups of forces designed to fight together. A Combat Team could be a single Lance, Star, or another regional variant, or it could be a larger group like a Company.
+    <p>By default, any force without child forces and containing at least one unit is automatically considered a Combat Team. You can adjust this via the right-click menu.</p>
+
+- id: complete_mission_guidance
+  title: Complete Mission Guidance
+  short: Guidelines for marking contracts as success, partial success, failure, or breach.
+  definition: |
+    When completing a mission, select Success if all Strategic Objectives were completed, Partial Success if any objectives failed, Failure if all objectives failed, or Contract Breach if ending early without completing objectives.
+
+- id: connections
+  title: Connections
+  short: A Trait that increases Force Reputation and can provide monthly funds and recruits.
+  definition: |
+    Connections is a Trait that provides multiple benefits if the character is the campaign commander. It increases Force Reputation and, if monthly rolls are enabled, can provide bonus funds and additional recruits in the Personnel Market.
+
+- id: contract_victory_points
+  title: Contract Victory Points
+  short: An abstract measure of your contract's overall strategic success. Most contracts require positive CVP.
+  definition: |
+    Contract Victory Points (CVP) represent an abstract measure of your contract's overall strategic success. Most contracts require a positive CVP to be considered successful. Even if all other objectives are met, having a neutral or negative CVP will result in a failure or Partial Success.
+
+- id: crew_requirements
+  title: Crew Requirements
+  short: The personnel needed to fully crew a unit before it can be used.
+  definition: |
+    All units in MekHQ need to be fully crewed before they may be used. To see exact crew requirements, switch the 'View' filter to 'Status' and hover over the Crew entry for each unit.
+
+- id: crisis_scenario
+  title: Crisis Scenarios
+  short: Special scenarios requiring immediate attention; losing one costs 1 CVP, but winning awards nothing.
+  definition: |
+    Crisis scenarios represent important moments that can define strategic stability. Failing to win a Crisis costs 1 Contract Victory Point, even if the scenario is a Draw. However, winning a Crisis does not award CVP.
+
+# ### D ###
+
+- id: damaged_parts
+  title: Damaged Parts
+  short: Parts in your warehouse that need repair, usually from stripping salvaged units.
+  definition: |
+    Damaged parts usually come from stripping salvaged units. To repair a part, select it in the warehouse, select a tech, and choose 'Do Task.' Alternatively, use Mass Repair to quickly repair all damaged parts.
+
+- id: delivery_times
+  title: Delivery Times
+  short: How long it takes for ordered parts and units to arrive (usually months, not days).
+  definition: |
+    In the BattleTech universe, acquiring replacement parts isn't quick. Orders are placed via HPG, processed, then shipped when holds are full enough. Expect to wait months for deliveries. Plan 2-3 months between contracts for restocking.
+
+- id: deprecated
+  title: Deprecated
+  short: A system or option no longer actively developed and scheduled for removal.
+  definition: |
+    A deprecated system or option is no longer actively developed or supported. While these systems remain available, they will eventually be removed.
+
+- id: diseases
+  title: Diseases
+  short: Contagious diseases that characters can contract if Alternative Advanced Medical and Random Diseases are enabled.
+  definition: |
+    If both Alternative Advanced Medical and Random Diseases are enabled, characters may occasionally contract contagious diseases. Characters can be protected via vaccinations when landing on a planet.
+
+- id: digital_gm
+  title: Digital GM
+  short: Any system designed to replace a human GM in campaign play (currently only StratCon).
+  definition: |
+    A Digital GM refers to any system designed to replace a human GM in campaign play. Currently, there is only one Digital GM available: StratCon, with three modes to match different playstyles.
+
+# ### E ###
+
+- id: edge
+  title: Edge
+  short: A resource that can be spent to reroll negative events like failed skill checks or head hits.
+  definition: |
+    In certain circumstances, Edge may be used to reroll negative events, like failing a skill check or suffering a head hit in combat. To change when Edge triggers, right-click on a character in the Personnel Tab and navigate to Edge Triggers.
+    <p>Each point in the 'Unlucky' Trait reduces available Edge by 1.</p>
+
+- id: education
+  title: Education
+  short: The Education Module lets you enroll personnel in academies and training programs.
+  definition: |
+    The Education Module empowers you to enroll personnel in various educational programs. There are three types: Prestigious Academies (canonical), Local Academies (assumed to exist), and In-Unit Education (free but inferior).
+
+- id: empty_systems
+  title: Empty Systems
+  short: Abandoned systems visible only if the 'Empty Systems' option is enabled; generally dangerous to visit.
+  definition: |
+    Empty or abandoned systems are only visible if the 'Empty Systems' option is enabled. These systems have no population and are generally avoided by JumpShip Captains. Becoming stranded in one could be disastrous.
+
+- id: experience_costs
+  title: Experience Costs
+  short: XP costs for skill improvements, based on A Time of War rather than Total Warfare.
+  definition: |
+    Both the New and Veteran Player presets model XP costs on A Time of War, which are higher than older versions based on Total Warfare. Use the 'Advancement Multiplier' in Campaign Options to adjust the pace.
+
+- id: experience_rating
+  title: Experience Rating
+  short: A measure of your campaign's veterancy based on Campaign Operations rules.
+  definition: |
+    Experience Rating is a measure of your campaign's veterancy. MekHQ uses the rules found in Campaign Operations to determine this value. Only combat personnel assigned to Combat Forces in your TO&E are factored into this calculation.
+
+- id: extra_income
+  title: Extra Income
+  short: A Trait that rewards (or debits) the character with monthly funds.
+  definition: |
+    Extra Income is a Trait that modifies finances monthly. Positive means gaining money, negative acts as a debit. If the character is the Campaign Commander, it affects campaign finances; otherwise, it modifies Total Earnings.
+
+# ### F ###
+
+- id: fatigue
+  title: Fatigue
+  short: A measure of how exhausted a character is, affecting performance and retention.
+  definition: |
+    Fatigue measures how exhausted a character is from their experiences. It is typically accumulated through exploring the Area of Operations, sustaining injuries, and participating in scenarios.
+    <p>High fatigue can affect performance in scenarios and increase the likelihood of resignation.</p>
+
+- id: field_control
+  title: Field Control Explanation
+  short: Determines whether you can salvage the field and recover lost units after a scenario.
+  definition: |
+    At the end of a StratCon scenario, field control determines whether you can salvage and recover lost units or crew. Each scenario has field control predetermined based on strategic context.
+
+- id: field_kitchens
+  title: Field Kitchens
+  short: Special vehicle equipment that reduces Fatigue accumulation for your forces.
+  definition: |
+    Field Kitchens are special equipment found on some vehicles. To count, the unit must be fully crewed, fully repaired, and placed in your TO&E. Field Kitchen effects are described in the Fatigue section of Campaign Operations.
+
+- id: force_generation
+  title: StratCon Force Generation
+  short: How StratCon generates enemy forces - either FG2.5 (scaled) or FG3 (unscaled using GBV).
+  definition: |
+    StratCon uses two force generation methods: FG2.5 (default BV2-based, scales with your forces) and FG3 (uses Generic Battle Value for an unscaled experience). FG3 provides better progression but some contracts may be unwinnable.
+
+- id: force_reputation
+  title: Force Reputation
+  short: How well-known your unit is and whether others trust your ability to complete missions.
+  definition: |
+    Reputation reflects how well-known your unit is and whether others trust your ability to complete missions. Higher reputation unlocks better contracts and improves negotiations.
+
+- id: force_type_combat
+  title: Combat Forces
+  short: The default force type, considered for contract pay and may be drawn into scenarios.
+  definition: |
+    This is the default force type. A combat force is meant for general combat and is the only type considered when determining contract pay. Forces marked as Combat may be drawn into scenarios.
+
+- id: force_type_convoy
+  title: Convoy Forces
+  short: Forces performing logistical support behind front lines, used during Resupplies.
+  definition: |
+    Convoy Forces perform logistical support behind front lines. In StratCon, they can be used during monthly Resupplies, but larger convoys (over 200t) increase the chance of enemy interception.
+
+- id: force_type_security
+  title: Security Forces
+  short: Forces responsible for managing Prisoner Capacity.
+  definition: |
+    Forces assigned to Security duties are responsible for managing Prisoners. Units assigned to Security Forces contribute to the campaign's Prisoner Capacity.
+
+- id: force_type_support
+  title: Support Forces
+  short: Forces not typically deployed in combat (support vehicles, civilians, DropShips).
+  definition: |
+    A Support Force is any force not typically deployed in combat scenarios. Ideal for support vehicles, civilians, or non-combat units. Consider placing DropShips and JumpShips here unless you have aerospace protection.
+
+- id: force_type_salvage
+  title: Salvage Forces
+  short: Forces assigned to perform salvage operations after scenarios conclude.
+  definition: |
+    A Salvage Force is assigned to scenarios during deployment to perform salvage operations after the scenario concludes, rather than being deployed in combat.
+
+# ### G ###
+
+- id: generic_battle_value
+  title: Generic Battle Value
+  short: An alternative to BV2 that assigns the same value to all units of the same type and weight.
+  definition: |
+    Generic Battle Value (GBV) assigns the same value to all units of the same type and weight, regardless of equipment or pilot skill. This means forces with better pilots and equipment are genuinely more powerful.
+
+- id: group_by_unit
+  title: Group by Unit
+  short: A Personnel Tab option that hides crew members except the unit commander.
+  definition: |
+    Group by Unit hides all crews of multi-personnel units except the unit commander, reducing clutter in the Personnel Tab. Deselect the option to show them again.
+
+# ### H ###
+
+- id: hospital_beds
+  title: "Doctor & MASH Theater Capacity"
+  short: The maximum number of injured personnel that can be tended to at once.
+  definition: |
+    Doctor Capacity is normally 25 patients per Doctor. With MASH Theater Tracking enabled, maximum patients is limited by MASH Theater-equipped units. The Administration skill can modify these values.
+
+- id: how_to_deploy
+  title: How to Deploy to a Scenario
+  short: Instructions for deploying forces to scenarios in StratCon or non-StratCon contexts.
+  definition: |
+    For StratCon: right-click on the scenario in the Area of Operations, select 'Manage Deployment,' and pick your force. For non-StratCon: right-click on the force in your TO&E and select deploy to the scenario.
+
+- id: how_to_reinforce
+  title: How to Reinforce a Scenario
+  short: How to call for reinforcements in StratCon scenarios using Support Points.
+  definition: |
+    Right-click on the scenario in the Area of Operations and select 'Manage Reinforcements.' Reinforcing costs 1 Support Point. Failing the reinforcement check can cause late arrivals or interception.
+
+- id: hr_strain
+  title: HR Strain
+  short: Administrative overload that increases turnover when you lack sufficient admin capacity.
+  definition: |
+    HR Strain reflects extra paperwork needed for larger campaigns. Each person adds 1 point of strain (with exceptions for civilians, AsTechs, and Medics). Insufficient HR Capacity increases turnover target numbers.
+
+# ### I ###
+
+- id: infantry_gunnery_skills
+  title: Infantry Gunnery Skills
+  short: Alternative skills that can be used for Conventional Infantry gunnery calculations.
+  definition: |
+    For Conventional Infantry skill calculations, each soldier uses their best skill from: Archery, Demolitions, Martial Arts, Melee Weapons, Small Arms, Support Weapons, or Thrown Weapons.
+
+# ### J ###
+
+- id: jump_cost_calculations
+  title: Jump Cost Calculations
+  short: How MekHQ calculates the cost of transporting units, cargo, and personnel during jumps.
+  definition: |
+    When traveling, MekHQ calculates transport costs for excess units, passengers, and cargo based on Campaign Operations values. The calculation considers unit bays, passenger transport, cargo DropShips, and JumpShip collar rentals.
+
+# ### L ###
+
+- id: leadership_units
+  title: Leadership Units
+  short: Additional units that commanders with Leadership skill can bring into scenarios.
+  definition: |
+    When deploying to a StratCon scenario, if the force leader has ranks in Leadership, they can deploy extra Leadership Units. Each level in Leadership (up to 5) adds 500 BV to the budget.
+
+- id: linked_attributes
+  title: Linked Attributes
+  short: The 1-2 Attributes assigned to each skill that influence its Target Number.
+  definition: |
+    In A Time of War, each skill is assigned 1-2 'Linked Attributes' which influence the final Target Number of the skill.
+
+- id: loyalty
+  title: Loyalty
+  short: How committed a character is to your cause, affecting resignation likelihood.
+  definition: |
+    Loyalty measures how committed a character is to your cause. Characters with higher loyalty are less likely to resign. Loyalty can fluctuate due to decisions and personal life events like marriage or children.
+
+# ### M ###
+
+- id: maintenance
+  title: Maintenance
+  short: Regular upkeep required to keep units operational, performed by assigned technicians.
+  definition: |
+    If enabled in Campaign Options, all units require maintenance per Campaign Operations rules. Maintenance requirements may be lower on certain contracts.
+
+- id: management_skill
+  title: Management Skill
+  short: How commanding officers' Leadership skill affects turnover target numbers.
+  definition: |
+    For each role group (Aerospace, Vehicle, Infantry, etc.), the highest-ranked member's Leadership skill becomes the Management Skill, applied to turnover target numbers of all personnel in that role.
+
+- id: mass_repair_mass_salvage
+  title: Mass Repair/Mass Salvage
+  short: Automated system to repair units and strip salvage with configurable settings.
+  definition: |
+    Mass Repair/Mass Salvage (MRMS) automates repair and salvage. Configure Min TN and Max TN to control what tasks techs attempt. Save settings as default to run automatically each day.
+
+- id: missing_in_action
+  title: Missing in Action
+  short: Personnel who went MIA, with daily automatic attempts to track them down.
+  definition: |
+    When personnel go MIA, daily attempts are made to track them down. MIA characters are abandoned if you leave the planet where they went missing.
+
+- id: missing_limbs
+  title: Replacing Missing Limbs
+  short: How to replace missing limbs with prosthetics via the right-click menu.
+  definition: |
+    With Advanced Medical enabled, personnel may lose limbs. Right-click on the character to access limb replacement. Requires payment and either a qualified doctor or finding one locally.
+
+- id: missions_and_contracts
+  title: Missions and Contracts
+  short: Two categories for grouping scenarios - Missions (loose groups) and Contracts (formal agreements).
+  definition: |
+    Missions are loose groups of related scenarios. Contracts represent formal agreements with employers. When using a Digital GM, Contracts are the primary category you'll interact with.
+
+- id: morale
+  title: Morale
+  short: The enemy's willingness and ability to fight, ranging from Routed to Overwhelming.
+  definition: |
+    MekHQ's Morale system reflects both enemy willingness to fight and their capacity to resist. Levels range from Routed (full retreat) to Overwhelming (total dominance). Monthly checks determine if morale changes.
+
+# ### N ###
+
+- id: navigation_infirmary
+  title: Infirmary Shortcuts
+  short: Keyboard shortcuts for navigating the Infirmary tab efficiently.
+  definition: |
+    Double Left Click jumps to the character in Personnel Tab. Right Click shows the character's medical history.
+
+- id: navigation_interstellar_map
+  title: Interstellar Map Navigation
+  short: Controls for navigating the interstellar map (dragging, zooming, plotting routes).
+  definition: |
+    Left Drag moves the camera. Middle Mouse zooms. Single Left Click selects a system. Double Left Click opens solar system view. Alt+Left Click calculates jump path. Shift+Left Click adds waypoints.
+
+- id: new_player_guide
+  title: "The New & Returning Player Guide"
+  short: Documentation for new players or those who've missed recent development releases.
+  definition: |
+    If you're new to MekHQ or have missed recent Development releases, check out the New Player Guide. "Information is Ammunition!"
+
+# ### P ###
+
+- id: parts_availability
+  title: Parts Availability
+  short: Modifier to procurement based on contract type, representing resource difficulty.
+  definition: |
+    If enabled, procurement attempts are modified by your current contract. Guerrilla Warfare has +2 modifier (hardest), while Garrison contracts have -2 (easiest). Higher modifiers make parts harder to acquire.
+
+- id: parts_in_use
+  title: Parts in Use
+  short: Dialog showing all spare parts used across your campaign with surplus and weight info.
+  definition: |
+    This dialog shows all types of parts used across your campaign. Set 'Requested Stock Percentage' for AutoLogistics to automatically maintain surplus. Enable weekly restocking to automate part orders.
+
+- id: prisoner_capacity
+  title: Prisoner Capacity
+  short: How many prisoners your security personnel can effectively manage.
+  definition: |
+    Prisoner Capacity measures how many prisoners your security personnel can manage without risking a crisis. Each prisoner typically occupies one unit of capacity.
+
+- id: prisoners_of_war
+  title: Prisoners of War
+  short: Captured enemy personnel who can be ransomed, held, or may defect.
+  definition: |
+    Prisoners appear in the roster with a special 'Prisoner' title. Those willing to defect are marked with an asterisk. With MekHQ Capture Style, prisoners are ransomed during special events.
+
+- id: professions
+  title: Professions
+  short: The various jobs personnel can be assigned to (Combat, Support, or Civilian).
+  definition: |
+    There are three profession types: Combat (for crewing combat units), Support (campaign-level mechanics like MekTech), and Civilian (flavor with no mechanical impact). Each has a tooltip explaining required skills.
+
+- id: prosthetics
+  title: "Prosthetics & Advanced Surgeries"
+  short: Medical procedures available with Alternate Advanced Medical enabled.
+  definition: |
+    Prosthetics and Advanced Surgeries follow A Time of War rules and require Alternate Advanced Medical to be enabled. Access via right-click menu or the Infirmary. Surgery availability depends on era, faction, and planetary tech level.
+
+# ### Q ###
+
+- id: quick_train
+  title: Quick Train
+  short: Automated XP spending that improves profession skills to a selected milestone.
+  definition: |
+    Quick Train automatically spends XP to improve profession skills (marked with a star). Characters train their lowest profession skills first. Can be run manually from Personnel Tab or automatically each month.
+
+# ### R ###
+
+- id: release_type_development
+  title: Development Releases
+  short: Regular releases containing latest features; generally stable with occasional quirks.
+  definition: |
+    Development builds are frequent releases with the latest features and bug fixes. Generally stable but may have minor issues. Great for staying current with changes.
+
+- id: release_type_milestone
+  title: Milestone Releases
+  short: Development releases proven stable after community testing; recommended for most players.
+  definition: |
+    Milestone builds are Development releases that have proven stable after real-world testing. Expected roughly every 6-9 months. The recommended choice for most players.
+
+- id: release_type_nightly
+  title: Nightly Releases
+  short: Cutting-edge builds assembled nightly; powerful but unpredictable.
+  definition: |
+    Nightly builds offer cutting-edge features at the expense of stability. Not recommended for general play. Report bugs immediately and keep frequent save backups.
+
+- id: release_types
+  title: Release Types
+  short: MegaMek's three-stage release process (Nightly, Development, Milestone).
+  definition: |
+    MegaMek uses three release stages: Nightly (assembled daily), Development (every few months), and Milestone (proven stable). When in doubt, choose Milestone.
+
+- id: random_personalities
+  title: Random Personalities
+  short: Feature that assigns random personality traits and quirks to personnel.
+  definition: |
+    Random Personalities assigns characters with traits and quirks for flavor. Traits include Aggression, Ambition, Greed, Social, Talent, and Quirks. Talent can influence XP costs if enabled.
+
+- id: remain_deployed
+  title: Remain Deployed
+  short: Option to keep a force deployed to the AO until manually recalled.
+  definition: |
+    To have a force remain in the Area of Operations, deploy it normally then right-click the hex and select 'Remain Deployed.' Training forces must use this option. Deployed forces attract enemy attacks.
+
+- id: reloading_field_guns
+  title: Reloading Infantry Field Guns
+  short: Conventional Infantry maintain their own field guns; attempt task without selecting a tech.
+  definition: |
+    Conventional Infantry maintain their own equipment. To reload field guns, select the task and attempt it without selecting a tech. The unit must have performed no other tasks that day.
+
+- id: repair_site
+  title: Repair Site
+  short: Facility level assigned to units based on contract type and Experience Rating.
+  definition: |
+    When arriving at a contract, units are assigned to Repair Sites based on contract type. Guerrilla Warfare gets Improvised, Garrison gets Maintenance Facility. Veteran+ rating increases facility level by 1.
+
+- id: repairing_damaged_hip_shoulder
+  title: Repairing Damaged Hips or Shoulders
+  short: Critical hits to hips or shoulders require fully replacing the limb.
+  definition: |
+    If a Mek suffers a critical hit to hip or shoulder, you must fully replace the limb. Set the unit to Strip, remove all parts from the limb, scrap it, then switch to Repair and replace everything.
+
+- id: resupply
+  title: Resupplies
+  short: Monthly supply deliveries from your employer based on strategic situation.
+  definition: |
+    Monthly Resupplies are the primary way to receive supplies on contract. Contents depend on your TO&E's combat units with emphasis on damaged equipment. Player Convoys increase supply by 400% but risk interception.
+
+# ### S ###
+
+- id: scenario_victory_points
+  title: Scenario Victory Points
+  short: Points determining individual scenario outcome (negative=Defeat, neutral=Draw, positive=Victory).
+  definition: |
+    Scenario Victory Points (SVP) determine individual scenario outcomes. Negative SVP results in Defeat, neutral in Draw, positive in Victory. Many scenarios offer multiple paths to victory.
+
+- id: seed_forces
+  title: Seed Forces
+  short: The Combat Force whose BV is used to balance a generated StratCon scenario.
+  definition: |
+    When StratCon generates a scenario, it picks a Seed Force from your Combat Forces. The Seed Force's BV serves to balance the scenario. Auxiliary and Reserve forces are only picked as last resort.
+
+- id: skill_types
+  title: Skill Types
+  short: "Four skill categories: Combat, Support, Roleplay, and Utility."
+  definition: |
+    Skills are broken into four types: Combat (used in scenarios), Support (campaign-level mechanics), Roleplay (flavor only), and Utility (limited mechanical implementation).
+
+- id: stratcon
+  title: "Digital GM: StratCon"
+  short: The premier Digital GM system for single-player campaigns, featuring strategic objectives and area control.
+  definition: |
+    Introduced in 2021, StratCon is the premier Digital GM in MekHQ. It allows you to engage in battles across an entire Area of Operations, tackle challenging scenarios, collect salvage, and complete strategic objectives.
+    <p>StratCon has three modes: normal (default), Mapless, and Single Drop.</p>
+
+- id: stratcon_facilities
+  title: StratCon Facilities
+  short: Special locations in the AO that apply unique modifiers to scenarios.
+  definition: |
+    The Area of Operations may contain special Facilities controlled by you or the enemy. Enemy-controlled facilities apply negative scenario modifiers. Locate and neutralize or capture them when possible.
+
+- id: stratcon_mapless
+  title: StratCon (Mapless)
+  short: StratCon mode without the Area of Operations map, similar to the old AtB experience.
+  definition: |
+    In Mapless Mode, the Area of Operations is removed. Scenarios are generated but there's no map interaction. This offers a comparable experience to the old Against the Bot system.
+
+- id: stratcon_single_drop
+  title: StratCon (Single Drop)
+  short: StratCon mode that generates one weekly scenario balanced against all combat forces.
+  definition: |
+    Single Drop generates one scenario per week, balanced against all combat forces in your TO&E. Designed for multiplayer campaigns where everyone drops together. Reinforcements are free and immediate.
+
+- id: strategic_objectives
+  title: Strategic Objectives
+  short: Goals you must complete during a StratCon contract, such as maintaining positive CVP or controlling facilities.
+  definition: |
+    In StratCon you will frequently be required to complete several Strategic Objectives. This usually means ensuring you end the contract with a positive Contract Victory Point (CVP) score, but might also include destroying or retaining control of a specific Facility.
+
+- id: stripping_and_repairing
+  title: "Stripping & Repairing a Unit"
+  short: Toggle between Repair mode (fix/replace parts) and Strip mode (remove parts).
+  definition: |
+    Units must be in Repair or Strip mode. In Repair mode, damaged parts are repaired and replaced. In Strip mode, techs remove parts. Always verify the correct mode before ending the day if using automated MRMS.
+
+- id: support_points
+  title: Support Points
+  short: A resource representing your employer's willingness to support your strategic actions.
+  definition: |
+    In StratCon you have access to 'Support Points,' representing how willing your employer is to support your actions at a strategic level. Support Points are usually spent reinforcing scenarios, but sometimes special events will give you other opportunities.
+
+# ### T ###
+
+- id: tech_time
+  title: Technician Time
+  short: The limited minutes each tech has available for repairs and maintenance each day (usually 480).
+  definition: |
+    Each technician only has a limited number of minutes for jobs per day. Normally 480 minutes for primary technicians, or 240 minutes for secondary profession techs. The Administration skill can modify these values.
+
+- id: temp_personnel
+  title: "Temporary Astechs & Medics"
+  short: Abstracted support personnel hired from the Marketplace pools.
+  definition: |
+    AsTechs and Medics are abstracted. Hire them via Marketplace > Astech Pool or Medic Pool. Limited by active Medical and Tech teams per Campaign Operations. Can auto-fill when advancing days.
+
+- id: toe
+  title: "The TO&E"
+  short: Table of Organization and Equipment - your unit's military structure and equipment.
+  definition: |
+    Your TO&E is a living representation of your unit's staffing and equipment. Units outside the TO&E are not considered for contract pay or Field Kitchen availability. Keep non-combat units in Support Forces.
+
+- id: turning_point
+  title: Turning Points
+  short: Strategically important scenarios that award or deduct CVP based on victory or defeat.
+  definition: |
+    Turning Points are scenarios of significant strategic importance. Winning grants 1 Contract Victory Point. Losing deducts 1 CVP and may push your score negative.
+
+- id: training_combat_teams
+  title: Training Combat Teams
+  short: Combat Teams dedicated to improving personnel skills while deployed.
+  definition: |
+    Training Combat Teams improve skills of personnel under their command. Commanders use Training skill each Monday while deployed. Only profession and scouting skills can be taught, up to level 3.
+
+- id: turnover
+  title: Turnover
+  short: The rate at which personnel leave your unit due to various factors.
+  definition: |
+    Turnover determines when personnel leave. Causes include Fatigue, contract expiration, retirement, resignation, and defection. Target numbers are influenced by Fatigue, Admin Strain, Management Skill, age, Loyalty, and faction relations.
+
+# ### U ###
+
+- id: unable_to_start_scenario
+  title: "Unable to Start a Scenario?"
+  short: Checklist for troubleshooting when you can't start a scenario.
+  definition: |
+    If you can't start a scenario, check that you've deployed units and that your campaign date matches the scenario date. You cannot fight past or future scenarios.
+
+# ### V ###
+
+- id: vehicle_crews
+  title: "Vehicle & Vessel Crews"
+  short: Professions that can fill crew seats beyond drivers and gunners.
+  definition: |
+    Some vehicles require crew beyond drivers and gunners. These seats can be filled by various professions including AeroTek, admin roles, Astech, techs, Doctor, Medic, Mechanic, Chef, Soldier, and others.
+
+- id: vocational_xp
+  title: Vocational XP
+  short: Monthly XP representing experience gained from doing one's job, both on and off screen.
+  definition: |
+    Vocational XP represents experience gained from doing one's job - not just on-screen activities but also off-screen duties like patrolling, paperwork, and drilling. This flattens XP gain to prevent favored characters from snowballing.
+
+# ### W ###
+
+- id: winter_holiday
+  title: Winter Holiday
+  short: A canonical Inner Sphere holiday celebrated December 17-27.
+  definition: |
+    Winter Holiday is a canonical Inner Sphere holiday celebrated December 17th to 27th. Created to be inclusive, merging aspects from multiple cultures. In later years, it evolved to include Clan culture. See Shrapnel #7.
