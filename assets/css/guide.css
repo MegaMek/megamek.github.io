@@ -648,6 +648,105 @@ kbd {
   .step-number {
     margin: 0 auto;
   }
+
+  /* Tables - horizontal scroll */
+  .guide-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .guide-table th,
+  .guide-table td {
+    white-space: nowrap;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Pre/code blocks - horizontal scroll */
+  .guide-body pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  /* Callouts - reduce padding */
+  .guide-callout {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  /* Nested callouts in cards */
+  .card .guide-callout {
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  /* Cards - ensure proper stacking */
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-header {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  /* Glossary tooltips - full width on mobile */
+  .glossary-tooltip {
+    width: 280px;
+    left: 0;
+    transform: none;
+    font-size: 0.8rem;
+  }
+
+  .glossary-tooltip::after {
+    left: 20px;
+    transform: none;
+  }
+
+  /* Section headers */
+  .guide-body h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding-top: 15px;
+  }
+
+  .guide-body h3 {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+
+  /* Divider */
+  .guide-divider {
+    margin: 35px 0 20px;
+    gap: 15px;
+  }
+
+  .guide-divider span {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  /* TOC */
+  .guide-toc .card-body {
+    padding: 12px;
+  }
+
+  .guide-toc ul {
+    font-size: 0.9rem;
+  }
+
+  /* Video embeds */
+  .guide-video .video-header {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Smooth Scrolling */
