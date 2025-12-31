@@ -3,6 +3,7 @@ layout: guide
 title: "Tips & Resources"
 description: "Useful settings, keyboard shortcuts, and additional resources"
 guide_section: tips
+splash: splash-postbattle.jpg
 progress: 100
 prev_page: /wiki/first_campaign_mhq_stratcon
 prev_title: StratCon Guide

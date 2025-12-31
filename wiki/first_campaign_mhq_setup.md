@@ -3,6 +3,7 @@ layout: guide
 title: "Campaign Setup"
 description: "Configuring your campaign rules and options for MekHQ"
 guide_section: setup
+splash: splash-ceremony.jpg
 progress: 30
 prev_page: /wiki/first_campaign_mhq_installation
 prev_title: Installation

@@ -3,6 +3,7 @@ layout: guide
 title: "Installation"
 description: "How to download, install, and configure MekHQ on Windows and Mac"
 guide_section: installation
+splash: splash-repairs.jpg
 progress: 15
 next_page: /wiki/first_campaign_mhq_setup
 next_title: Campaign Setup

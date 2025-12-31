@@ -3,6 +3,7 @@ layout: guide
 title: "Starting Your First Company"
 description: "Building your mercenary company from the ground up"
 guide_section: company
+splash: splash-liftoff.jpg
 progress: 45
 prev_page: /wiki/first_campaign_mhq_setup
 prev_title: Campaign Setup

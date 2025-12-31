@@ -3,6 +3,7 @@ layout: guide
 title: "Your First Contract"
 description: "Taking on your first contract in MekHQ"
 guide_section: contract
+splash: splash-convoy.jpg
 progress: 60
 prev_page: /wiki/first_campaign_mhq_company
 prev_title: Your First Company

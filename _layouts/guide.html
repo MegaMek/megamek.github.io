@@ -100,6 +100,11 @@
 
         <!-- Page Header -->
         <div class="guide-header mb-4">
+          {% if page.splash %}
+          <div class="guide-splash mb-4">
+            <img src="{{ '/assets/images/SOU/' | append: page.splash | relative_url }}" alt="{{ page.title }}" class="guide-splash-img">
+          </div>
+          {% endif %}
           <h1 class="guide-title">{{ page.title }}</h1>
           {% if page.description %}
           <p class="lead guide-description">{{ page.description }}</p>

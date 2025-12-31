@@ -290,6 +290,38 @@ div.post-meta {
 }
 
 /*********************************************************************/
+/* Program cards with splash art                                      */
+/*********************************************************************/
+.program-card {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 250, 205, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card-title {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/*********************************************************************/
 /* Code formatting                                                  */
 /*********************************************************************/
 pre {

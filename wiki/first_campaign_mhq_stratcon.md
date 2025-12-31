@@ -3,6 +3,7 @@ layout: guide
 title: "StratCon Guide"
 description: "Understanding the StratCon system for single-player campaigns"
 guide_section: stratcon
+splash: splash-fight.jpg
 progress: 80
 prev_page: /wiki/first_campaign_mhq_contract
 prev_title: Your First Contract
