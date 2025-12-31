@@ -154,14 +154,23 @@ toc: |
 
   <div class="card" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 215, 0, 0.2);">
     <div class="card-body">
-<pre style="color: #ffd700; margin: 0;"><code>MegaMek/
-├── MekHQ.exe
-├── MegaMek.exe
-├── MegaMekLab.exe
-├── <span style="color: #28a745;">docs/</span>           ← Documentation (important!)
-├── <span style="color: #17a2b8;">data/</span>           ← Game data files
-├── <span style="color: #ffc107;">campaigns/</span>      ← Save files go here
-└── ...</code></pre>
+<pre style="color: #ffd700; margin: 0;"><code>MekHQ/
+<span style="color: #ffc107;">├── bin/</span>                  Program binaries
+<span style="color: #ffc107;">├── campaigns/</span>            <span style="color: #28a745;">← Save files go here</span>
+<span style="color: #ffc107;">├── data/</span>                 Game data files
+<span style="color: #ffc107;">├── docs/</span>                 <span style="color: #28a745;">← Documentation (important!)</span>
+<span style="color: #ffc107;">├── lib/</span>                  Java libraries
+<span style="color: #ffc107;">├── logs/</span>                 Log files for troubleshooting
+<span style="color: #ffc107;">├── mmconf/</span>               Configuration files
+<span style="color: #ffc107;">├── userdata/</span>             User customizations
+├── MegaMek.exe           Tactical battle simulator
+├── MegaMek.l4j.ini       MegaMek memory settings
+├── MegaMekLab.exe        Unit editor
+├── MegaMekLab.l4j.ini    MegaMekLab memory settings
+├── MekHQ.exe             <span style="color: #28a745;">← Campaign manager (start here)</span>
+├── MekHQ.l4j.ini         MekHQ memory settings
+├── {% include glossary_term.html id="sentry" text="sentry.properties" %}      <span style="color: #28a745;">← Error reporting (opt-in)</span>
+└── SubmitBug.html        Bug reporting instructions</code></pre>
     </div>
   </div>
 
