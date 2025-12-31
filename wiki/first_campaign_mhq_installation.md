@@ -33,7 +33,7 @@ toc: |
           <i class="fab fa-windows"></i> Windows
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Follow the Java installation instructions on <a href="https://megamek.org" target="_blank">megamek.org</a> (displayed prominently on the download page).</p>
+          <p>Follow the Java installation instructions on the <a href="{{ '/downloads' | relative_url }}">Downloads page</a> (displayed prominently).</p>
           <p class="mb-0"><strong>Tip:</strong> The <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> installer is recommended.</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ toc: |
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
 
-  <p>Download the MekHQ Suite from <a href="https://megamek.org" target="_blank"><strong>megamek.org</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
+  <p>Download the MekHQ Suite from our <a href="{{ '/downloads' | relative_url }}"><strong>Downloads page</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
 
   <h3>Release Types</h3>
 
@@ -250,7 +250,7 @@ toc: |
         </div>
         <div class="card-body" style="color: var(--text-color);">
           <p>Increase memory allocation if needed for larger games.</p>
-          <p class="mb-0">Edit the <code>.l4j.ini</code> files. See the <a href="https://megamek.org" target="_blank">FAQ on megamek.org</a> for details.</p>
+          <p class="mb-0">Edit the <code>.l4j.ini</code> files. See the <a href="{{ '/faq' | relative_url }}">FAQ</a> for details.</p>
         </div>
       </div>
     </div>
