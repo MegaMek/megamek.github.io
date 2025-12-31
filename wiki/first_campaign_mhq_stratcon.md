@@ -251,6 +251,10 @@ toc: |
 
   <p>Scout unscouted hexes to reveal objectives and enemy positions.</p>
 
+  <div class="ratio ratio-16x9 mb-4">
+    <iframe src="https://www.youtube.com/embed/Y7s298Td3U0?si=eCNy5_zjhHpaaQKR" title="StratCon Reconnaissance Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
   <figure class="guide-figure">
     <img src="{{ '/assets/images/first_campaign_mhq/Recon.png' | relative_url }}" alt="Recon Example" class="guide-image" data-title="Reconnaissance">
     <figcaption class="guide-caption">Reconnaissance revealing enemy positions</figcaption>
