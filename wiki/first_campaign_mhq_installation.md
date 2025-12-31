@@ -13,6 +13,7 @@ toc: |
     <li><a href="#configuration">Optional Configuration</a></li>
     <li><a href="#folder-structure">Folder Structure</a></li>
     <li><a href="#user-files">User Files Directory</a></li>
+    <li><a href="#migrating">Moving Campaigns Between Versions</a></li>
     <li><a href="#reporting">Reporting Issues</a></li>
   </ul>
 ---
@@ -81,8 +82,13 @@ toc: |
     <div class="step-number">2</div>
     <div class="step-content">
       <h4>Extract the Archive</h4>
-      <p>Use <a href="https://www.7-zip.org/" target="_blank">7-Zip</a> rather than Windows' built-in extractor.</p>
-      <p>Extract to a simple path like <code>C:\Games\MegaMek</code></p>
+      <p>MegaMek uses <code>.tar.gz</code> archives—a single download that works on Windows, Mac, and Linux.</p>
+      <div class="guide-callout guide-callout-warning">
+        <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Use 7-Zip on Windows</div>
+        <p>The Windows built-in extractor struggles with MekHQ's 16,000+ files and can fail or corrupt the extraction.</p>
+        <p class="mb-0">Download <a href="https://www.7-zip.org/" target="_blank"><strong>7-Zip</strong></a> (free)—it's significantly faster, more stable, and handles large archives properly.</p>
+      </div>
+      <p>Extract to a simple path like <code>C:\Games\MekHQ</code> (avoid paths with spaces or special characters).</p>
     </div>
   </div>
 
@@ -183,64 +189,103 @@ toc: |
 <section id="user-files">
   <h2><i class="fas fa-user-cog"></i> User Files Directory</h2>
 
-  <p>You can set up a custom folder for your personal content (camos, portraits, custom units) that persists between MekHQ updates:</p>
+  <div class="guide-callout guide-callout-tip">
+    <div class="callout-title"><i class="fas fa-star"></i> Highly Recommended</div>
+    <p>Setting up a User Files Directory is <strong>one of the most helpful things you can do</strong> when using MegaMek. It makes upgrading between versions painless—just point your new installation to the same folder and all your custom content is instantly available.</p>
+    <p class="mb-0">Take 5 minutes to set this up now and save yourself hours of frustration later!</p>
+  </div>
 
-  <div class="guide-step">
-    <div class="step-number">1</div>
-    <div class="step-content">
-      <h4>Open Settings</h4>
-      <p>Go to <strong>File &gt; MekHQ Options &gt; Miscellaneous</strong></p>
+  <p>Set up a custom folder for your personal content (camos, portraits, custom units) that persists between updates and works across all three programs.</p>
+
+  <h3>Why Use a User Directory?</h3>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(40, 167, 69, 0.3);">
+        <div class="card-body" style="color: var(--text-color);">
+          <h5 style="color: #28a745;"><i class="fas fa-folder-open"></i> Centralized Storage</h5>
+          <p class="mb-0">Keep all customizations in one place instead of scattered across multiple installations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(0, 123, 255, 0.3);">
+        <div class="card-body" style="color: var(--text-color);">
+          <h5 style="color: #007bff;"><i class="fas fa-sync-alt"></i> Easy Upgrades</h5>
+          <p class="mb-0">Point new installations to your user folder—no need to copy files each time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 193, 7, 0.3);">
+        <div class="card-body" style="color: var(--text-color);">
+          <h5 style="color: #ffc107;"><i class="fas fa-share-alt"></i> Multi-Version Access</h5>
+          <p class="mb-0">Share resources across different versions without duplication.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(23, 162, 184, 0.3);">
+        <div class="card-body" style="color: var(--text-color);">
+          <h5 style="color: #17a2b8;"><i class="fas fa-cloud"></i> Cloud Compatible</h5>
+          <p class="mb-0">Works with OneDrive, Dropbox, or Google Drive (files must sync locally).</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="guide-step">
-    <div class="step-number">2</div>
-    <div class="step-content">
-      <h4>Set User Files Directory</h4>
-      <p>Set a <strong>User Files Directory</strong> outside your MekHQ folder (e.g., <code>C:\Games\MegaMek_DATA</code>)</p>
-    </div>
-  </div>
-
-  <h3>File Placement in User Directory</h3>
+  <h3>Configuration by Program</h3>
 
   <table class="guide-table">
     <thead>
       <tr>
-        <th>Content Type</th>
-        <th>Location</th>
+        <th>Program</th>
+        <th>How to Set</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Fonts, units (.mtf, .blk)</td>
-        <td>Anywhere in directory</td>
+        <td><strong>MekHQ</strong></td>
+        <td><strong>File &gt; MekHQ Options &gt; Miscellaneous</strong> &gt; User Files Directory</td>
       </tr>
       <tr>
-        <td>Camo images</td>
-        <td><code>/data/images/camo/</code></td>
+        <td><strong>MegaMek</strong></td>
+        <td><strong>View &gt; Client Settings</strong> &gt; User Files Directory</td>
       </tr>
       <tr>
-        <td>Portrait images</td>
-        <td><code>/data/images/portraits/</code></td>
-      </tr>
-      <tr>
-        <td>Unit fluff images</td>
-        <td><code>/data/images/fluff/&lt;unit type&gt;/</code></td>
-      </tr>
-      <tr>
-        <td>Rank/award definitions</td>
-        <td><code>/data/universe/</code></td>
-      </tr>
-      <tr>
-        <td>Campaign presets</td>
-        <td><code>/data/campaignPresets/</code></td>
+        <td><strong>MegaMekLab</strong></td>
+        <td><strong>File &gt; Options</strong> &gt; User Files Directory</td>
       </tr>
     </tbody>
   </table>
 
-  <div class="guide-callout guide-callout-info">
-    <div class="callout-title"><i class="fas fa-sync-alt"></i> Easy Upgrades</div>
-    <p class="mb-0">This makes upgrading between versions much easier—just point the new installation to your user folder.</p>
+  <p>Set the path to a folder outside your installation (e.g., <code>C:\Games\MegaMek_UserData</code>). Restart the program after changing.</p>
+
+  <h3>Required Folder Structure</h3>
+
+  <div class="card" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 215, 0, 0.2);">
+    <div class="card-body">
+<pre style="color: #ffd700; margin: 0;"><code>MegaMek_UserData/
+├── <span style="color: #aaa;">*.ttf</span>                       Fonts (anywhere in root)
+├── <span style="color: #aaa;">*.mtf, *.blk</span>                Custom units (anywhere in root)
+└── <span style="color: #ffc107;">data/</span>
+    ├── <span style="color: #ffc107;">campaignPresets/</span>        Campaign preset files
+    ├── <span style="color: #ffc107;">images/</span>
+    │   ├── <span style="color: #ffc107;">camo/</span>               Camouflage patterns
+    │   ├── <span style="color: #ffc107;">portraits/</span>          Personnel portraits
+    │   └── <span style="color: #ffc107;">fluff/</span>
+    │       ├── <span style="color: #ffc107;">Mek/</span>            Mek fluff images
+    │       ├── <span style="color: #ffc107;">Vehicle/</span>        Vehicle fluff images
+    │       └── <span style="color: #ffc107;">...</span>             Other unit types
+    └── <span style="color: #ffc107;">universe/</span>
+        ├── ranks.xml           Custom rank definitions
+        └── <span style="color: #ffc107;">awards/</span>             Custom award .xml files</code></pre>
+    </div>
+  </div>
+
+  <div class="guide-callout guide-callout-warning mt-4">
+    <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Limitation</div>
+    <p class="mb-0">Map boards cannot be stored in the user directory due to program load mechanics. Keep boards in your installation's <code>data/boards/</code> folder.</p>
   </div>
 
   <h3>Video Tutorial: Upgrading MekHQ</h3>
@@ -252,6 +297,83 @@ toc: |
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/WwEDhCmDV-I?si=aRv5OtroIninwJb4" title="MekHQ Tutorial -- Upgrading MekHQ versions" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+  </div>
+</section>
+
+<section id="migrating">
+  <h2><i class="fas fa-exchange-alt"></i> Moving Campaigns Between Versions</h2>
+
+  <div class="guide-callout guide-callout-danger">
+    <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Critical: COPY, Never Move</div>
+    <p><strong>MekHQ is NOT backward compatible.</strong> Once a campaign is loaded in a newer version, it cannot be opened in older versions.</p>
+    <p class="mb-0">Always keep your original campaign files intact. Copy them to the new version—never move or overwrite.</p>
+  </div>
+
+  <h3>Step-by-Step Migration</h3>
+
+  <div class="guide-step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Finish Current Work</h4>
+      <p>Complete any ongoing contracts, save your campaign, and exit MekHQ completely.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Backup Your Files</h4>
+      <p><strong>This step is critical to prevent data loss.</strong> Copy your campaign files (<code>.cpnx</code>) to a safe backup location before proceeding.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Install New Version Separately</h4>
+      <p>Extract the new version to a <strong>different folder</strong>—don't overwrite your existing installation. This lets you keep the old version as a fallback.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Copy Campaign Files</h4>
+      <p>Copy (not move!) your <code>.cpnx</code> files to the new version's <code>campaigns</code> folder.</p>
+      <div class="guide-callout guide-callout-warning">
+        <div class="callout-title"><i class="fas fa-ban"></i> Do NOT Copy These</div>
+        <p class="mb-0">Never copy MegaMek saves or preference/config files between versions—they can cause serious stability issues.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Initialize in New Version</h4>
+      <p>Load your campaign in the new version and <strong>advance at least one game day</strong>. This lets MekHQ update internal data structures.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">6</div>
+    <div class="step-content">
+      <h4>Re-save Custom Presets</h4>
+      <p>If you use custom campaign presets, re-save them in the new version to update their format.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">7</div>
+    <div class="step-content">
+      <h4>Restart</h4>
+      <p>Exit and restart MekHQ to finalize the migration.</p>
+    </div>
+  </div>
+
+  <div class="guide-callout guide-callout-info">
+    <div class="callout-title"><i class="fas fa-shield-alt"></i> Best Practice</div>
+    <p class="mb-0">Keep your old installation until you've verified everything works in the new version. This gives you a fallback if anything goes wrong.</p>
   </div>
 </section>
 
