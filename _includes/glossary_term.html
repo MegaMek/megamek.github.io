@@ -1,0 +1,14 @@
+{% comment %}
+  Glossary Term Tooltip Include
+  Usage: {% include glossary_term.html id="stratcon" text="StratCon" %}
+
+  Parameters:
+    id: The glossary term ID (from _data/glossary.yml)
+    text: The display text (optional, defaults to term title)
+{% endcomment %}
+{% assign term = site.data.glossary | where: "id", include.id | first %}
+{% if term %}
+<span class="glossary-term-link" tabindex="0" data-glossary-id="{{ term.id }}" data-glossary-title="{{ term.title }}" data-glossary-definition="{{ term.definition | strip_newlines | escape }}">{{ include.text | default: term.title }}<span class="glossary-tooltip"><span class="glossary-tooltip-title"><i class="fas fa-book"></i> {{ term.title }}</span><span class="glossary-tooltip-text">{{ term.short }}</span><span class="glossary-tooltip-more">Click for full definition</span></span></span>
+{% else %}
+{{ include.text }}
+{% endif %}
