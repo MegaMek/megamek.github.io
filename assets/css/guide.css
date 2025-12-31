@@ -314,6 +314,15 @@
   color: #dc3545;
 }
 
+.guide-callout-success {
+  background: rgba(40, 167, 69, 0.15);
+  border-color: #28a745;
+}
+
+.guide-callout-success .callout-title {
+  color: #28a745;
+}
+
 .callout-title {
   font-weight: 700;
   margin-bottom: 10px;
@@ -644,6 +653,51 @@ kbd {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Section Divider */
+.guide-divider {
+  display: flex;
+  align-items: center;
+  margin: 50px 0 30px;
+  gap: 20px;
+}
+
+.guide-divider::before,
+.guide-divider::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 250, 205, 0.4), transparent);
+}
+
+.guide-divider span {
+  color: rgba(255, 250, 205, 0.7);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+/* TOC Divider */
+.guide-toc .toc-divider {
+  list-style: none;
+  margin: 15px 0 10px;
+  padding: 0;
+}
+
+.guide-toc .toc-divider hr {
+  border: none;
+  border-top: 1px solid rgba(255, 250, 205, 0.2);
+  margin: 0 0 8px;
+}
+
+.guide-toc .toc-divider span {
+  color: rgba(255, 250, 205, 0.5);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Animation for sections */

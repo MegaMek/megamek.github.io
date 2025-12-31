@@ -8,25 +8,59 @@ next_page: /wiki/first_campaign_mhq_setup
 next_title: Campaign Setup
 toc: |
   <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#downloading">Downloading MekHQ</a></li>
-    <li><a href="#installation">Installation Steps</a>
-      <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#mac">Mac</a></li>
-      </ul>
-    </li>
-    <li><a href="#configuration">Optional Configuration</a></li>
+    <li><a href="#extracting">Extracting the Archive</a></li>
     <li><a href="#folder-structure">Folder Structure</a></li>
+    <li><a href="#first-launch">First Launch</a></li>
+    <li class="toc-divider"><hr><span>After Installation</span></li>
+    <li><a href="#configuration">Optional Configuration</a></li>
     <li><a href="#user-files">User Files Directory</a></li>
     <li><a href="#migrating">Moving Campaigns Between Versions</a></li>
     <li><a href="#reporting">Reporting Issues</a></li>
   </ul>
 ---
 
+<section id="prerequisites">
+  <h2><i class="fas fa-java"></i> Prerequisites</h2>
+
+  <p>MekHQ requires <strong>Java 17</strong> or newer to run. Install Java before downloading MekHQ.</p>
+
+  <div class="row g-4 mb-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(0, 120, 215, 0.3);">
+        <div class="card-header" style="background: rgba(0, 120, 215, 0.2); color: #0078d7;">
+          <i class="fab fa-windows"></i> Windows
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p>Follow the Java installation instructions on <a href="https://megamek.org" target="_blank">megamek.org</a> (displayed prominently on the download page).</p>
+          <p class="mb-0"><strong>Tip:</strong> The <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> installer is recommended.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(128, 128, 128, 0.3);">
+        <div class="card-header" style="background: rgba(128, 128, 128, 0.2); color: #a0a0a0;">
+          <i class="fab fa-apple"></i> Mac
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p>Install Java 17 LTS via the <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> package installer.</p>
+          <p class="mb-0">Supports both <strong>Intel (x64)</strong> and <strong>Apple Silicon M-Series (aarch64)</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-callout guide-callout-warning">
+    <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 32-bit Systems</div>
+    <p class="mb-0">32-bit machines must use Java 17 LTS specifically. Java 21+ dropped 32-bit support entirely.</p>
+  </div>
+</section>
+
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
 
-  <p>Download the MekHQ Suite (which includes MegaMek and MegaMekLab) from <a href="https://megamek.org" target="_blank">megamek.org</a>.</p>
+  <p>Download the MekHQ Suite from <a href="https://megamek.org" target="_blank"><strong>megamek.org</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
 
   <h3>Release Types</h3>
 
@@ -41,17 +75,17 @@ toc: |
     <tbody>
       <tr>
         <td><strong><i class="fas fa-star text-warning"></i> Milestone</strong></td>
-        <td>A stable, polished version considered the most reliable by developers</td>
+        <td>Stable, polished version considered most reliable by developers</td>
         <td>Most players</td>
       </tr>
       <tr>
         <td><strong><i class="fas fa-code-branch"></i> Development</strong></td>
-        <td>Feature-complete releases with newer features, but may contain bugs</td>
+        <td>Feature-complete with newer features, may contain bugs</td>
         <td>Testing new features</td>
       </tr>
       <tr>
         <td><strong><i class="fas fa-moon"></i> Nightly Builds</strong></td>
-        <td>Latest development versions from <a href="https://github.com/MegaMek/mekhq/releases" target="_blank">GitHub</a></td>
+        <td>Latest development from <a href="https://github.com/MegaMek/mekhq/releases" target="_blank">GitHub</a></td>
         <td>Advanced users reporting bugs</td>
       </tr>
     </tbody>
@@ -59,171 +93,42 @@ toc: |
 
   <div class="guide-callout guide-callout-tip">
     <div class="callout-title"><i class="fas fa-thumbs-up"></i> Recommendation</div>
-    <p class="mb-0">If you're following this guide, we recommend starting with the latest <strong>Milestone</strong> or <strong>Development</strong> build.</p>
+    <p class="mb-0">If you're following this guide, start with the latest <strong>Milestone</strong> or <strong>Development</strong> build.</p>
   </div>
 </section>
 
-<section id="installation">
-  <h2><i class="fas fa-cogs"></i> Installation Steps</h2>
+<section id="extracting">
+  <h2><i class="fas fa-file-archive"></i> Extracting the Archive</h2>
 
-  <h3 id="windows"><i class="fab fa-windows"></i> Windows</h3>
-
-  <div class="guide-step">
-    <div class="step-number">1</div>
-    <div class="step-content">
-      <h4>Install Java 17 (Required)</h4>
-      <p>Follow the instructions on megamek.org (usually displayed prominently).</p>
-      <div class="guide-callout guide-callout-warning">
-        <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Important</div>
-        <p class="mb-0">32-bit machines must use Java 17 LTS. Java 21+ dropped 32-bit support entirely.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">2</div>
-    <div class="step-content">
-      <h4>Extract the Archive</h4>
-      <p>MegaMek uses <code>.tar.gz</code> archives—a single download that works on Windows, Mac, and Linux.</p>
-      <div class="guide-callout guide-callout-warning">
-        <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Use 7-Zip on Windows</div>
-        <p>The Windows built-in extractor struggles with MekHQ's 16,000+ files and can fail or corrupt the extraction.</p>
-        <p class="mb-0">Download <a href="https://www.7-zip.org/" target="_blank"><strong>7-Zip</strong></a> (free)—it's significantly faster, more stable, and handles large archives properly.</p>
-      </div>
-      <p>Extract to a simple path like <code>C:\Games\MekHQ</code> (avoid paths with spaces or special characters).</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">3</div>
-    <div class="step-content">
-      <h4>Run the Executables</h4>
-      <table class="guide-table">
-        <thead>
-          <tr>
-            <th>Executable</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>MekHQ.exe</code></td>
-            <td>Campaign management</td>
-          </tr>
-          <tr>
-            <td><code>MegaMek.exe</code></td>
-            <td>Tactical battles</td>
-          </tr>
-          <tr>
-            <td><code>MegaMekLab.exe</code></td>
-            <td>Unit customization</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <h3 id="mac"><i class="fab fa-apple"></i> Mac</h3>
-
-  <div class="guide-step">
-    <div class="step-number">1</div>
-    <div class="step-content">
-      <h4>Install Java 17 (Required)</h4>
-      <p>Install Java 17 LTS via the <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> package installer. Choose between JDK (for development) or JRE (runtime only).</p>
-      <p>The installer supports both <strong>Intel (x64)</strong> and <strong>Apple Silicon M-Series (aarch64)</strong> processors.</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">2</div>
-    <div class="step-content">
-      <h4>Extract to a Safe Location</h4>
-      <div class="guide-callout guide-callout-danger">
-        <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Avoid Protected Folders</div>
-        <p>macOS security restrictions prevent MegaMek from running in protected folders.</p>
-        <p class="mb-0"><strong>Do NOT use:</strong> <code>Downloads</code>, <code>Documents</code>, or <code>Desktop</code> folders. These are macOS protected locations and MegaMek will not run from them.</p>
-      </div>
-      <p>Create a <code>Games</code> folder in your home directory (e.g., <code>~/Games/MekHQ</code>) and extract the archive there.</p>
-      <div class="guide-callout guide-callout-warning">
-        <div class="callout-title"><i class="fas fa-cloud"></i> iCloud Warning</div>
-        <p class="mb-0">If iCloud syncs your protected folders, files may be deleted locally—causing issues even if MegaMek could otherwise launch.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">3</div>
-    <div class="step-content">
-      <h4>First Launch (Gatekeeper)</h4>
-      <p>On the first run, macOS Gatekeeper will block the application. To bypass this:</p>
-      <ol>
-        <li><strong>Right-click</strong> (or Control-click) the JAR file</li>
-        <li>Select <strong>"Open"</strong> from the context menu</li>
-        <li>Click <strong>"Open"</strong> in the security dialog that appears</li>
-      </ol>
-      <p>After this initial approval, you can double-click to launch normally.</p>
-      <div class="guide-callout guide-callout-info">
-        <div class="callout-title"><i class="fas fa-sync-alt"></i> After Updates</div>
-        <p class="mb-0">You'll need to repeat the right-click process each time you install a new version.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">4</div>
-    <div class="step-content">
-      <h4>Run the Applications</h4>
-      <table class="guide-table">
-        <thead>
-          <tr>
-            <th>File</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>MekHQ.jar</code></td>
-            <td>Campaign management</td>
-          </tr>
-          <tr>
-            <td><code>MegaMek.jar</code></td>
-            <td>Tactical battles</td>
-          </tr>
-          <tr>
-            <td><code>MegaMekLab.jar</code></td>
-            <td>Unit customization</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section id="configuration">
-  <h2><i class="fas fa-sliders-h"></i> Optional Configuration</h2>
-
-  <p>Before opening the program, you can optionally configure:</p>
+  <p>MekHQ uses <code>.tar.gz</code> archives—a single download that works on Windows, Mac, and Linux.</p>
 
   <div class="row g-4">
     <div class="col-md-6">
-      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
-        <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
-          <i class="fas fa-bug"></i> {% include glossary_term.html id="sentry" text="Anonymous Error Reporting" %}
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(0, 120, 215, 0.3);">
+        <div class="card-header" style="background: rgba(0, 120, 215, 0.2); color: #0078d7;">
+          <i class="fab fa-windows"></i> Windows
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Help developers fix bugs by enabling {% include glossary_term.html id="sentry" text="Sentry" %}, our anonymous error reporting system.</p>
-          <p class="mb-0">Edit <code>sentry.properties</code> and change <code>enabled=false</code> to <code>enabled=true</code>.</p>
+          <div class="guide-callout guide-callout-warning mb-3">
+            <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Use 7-Zip</div>
+            <p class="mb-0">The Windows built-in extractor struggles with MekHQ's 16,000+ files and can fail or corrupt the extraction. Download <a href="https://www.7-zip.org/" target="_blank"><strong>7-Zip</strong></a> (free).</p>
+          </div>
+          <p class="mb-0">Extract to a simple path like <code>C:\Games\MekHQ</code> (avoid paths with spaces or special characters).</p>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
-        <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
-          <i class="fas fa-memory"></i> Memory Allocation
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(128, 128, 128, 0.3);">
+        <div class="card-header" style="background: rgba(128, 128, 128, 0.2); color: #a0a0a0;">
+          <i class="fab fa-apple"></i> Mac
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Increase memory allocation if needed for larger games.</p>
-          <p class="mb-0">Edit the <code>.ini</code> files. See the <a href="https://megamek.org" target="_blank">FAQ on megamek.org</a> for details.</p>
+          <div class="guide-callout guide-callout-danger mb-3">
+            <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Avoid Protected Folders</div>
+            <p class="mb-0"><strong>Do NOT use:</strong> <code>Downloads</code>, <code>Documents</code>, or <code>Desktop</code>. macOS security prevents MegaMek from running in these locations.</p>
+          </div>
+          <p>Create a <code>Games</code> folder in your home directory: <code>~/Games/MekHQ</code></p>
+          <p class="mb-0"><strong>iCloud Warning:</strong> If iCloud syncs protected folders, files may be deleted locally.</p>
         </div>
       </div>
     </div>
@@ -260,6 +165,95 @@ toc: |
   <div class="guide-callout guide-callout-tip mt-4">
     <div class="callout-title"><i class="fas fa-book"></i> Documentation</div>
     <p class="mb-0">The <code>docs</code> folder contains extensive documentation on MekHQ features, especially those not covered in official rulebooks (like personnel turnover and StratCon).</p>
+  </div>
+</section>
+
+<section id="first-launch">
+  <h2><i class="fas fa-play-circle"></i> First Launch</h2>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(0, 120, 215, 0.3);">
+        <div class="card-header" style="background: rgba(0, 120, 215, 0.2); color: #0078d7;">
+          <i class="fab fa-windows"></i> Windows
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p>Double-click the executable to launch:</p>
+          <table class="guide-table mb-0">
+            <tbody>
+              <tr>
+                <td><code>MekHQ.exe</code></td>
+                <td>Campaign management</td>
+              </tr>
+              <tr>
+                <td><code>MegaMek.exe</code></td>
+                <td>Tactical battles</td>
+              </tr>
+              <tr>
+                <td><code>MegaMekLab.exe</code></td>
+                <td>Unit customization</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(128, 128, 128, 0.3);">
+        <div class="card-header" style="background: rgba(128, 128, 128, 0.2); color: #a0a0a0;">
+          <i class="fab fa-apple"></i> Mac
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p><strong>First run requires Gatekeeper bypass:</strong></p>
+          <ol class="mb-3">
+            <li><strong>Right-click</strong> (or Control-click) the JAR file</li>
+            <li>Select <strong>"Open"</strong> from the menu</li>
+            <li>Click <strong>"Open"</strong> in the security dialog</li>
+          </ol>
+          <p class="mb-0"><strong>After updates:</strong> Repeat this process for each new version.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-callout guide-callout-success mt-4">
+    <div class="callout-title"><i class="fas fa-check-circle"></i> You're Ready!</div>
+    <p class="mb-0">MekHQ should now launch. Continue to <a href="{{ '/wiki/first_campaign_mhq_setup' | relative_url }}">Campaign Setup</a> to start your first campaign, or explore the optional configuration sections below.</p>
+  </div>
+</section>
+
+<div class="guide-divider">
+  <span>After Installation</span>
+</div>
+
+<section id="configuration">
+  <h2><i class="fas fa-sliders-h"></i> Optional Configuration</h2>
+
+  <p>These settings can be configured at any time:</p>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
+        <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
+          <i class="fas fa-bug"></i> {% include glossary_term.html id="sentry" text="Anonymous Error Reporting" %}
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p>Help developers fix bugs by enabling {% include glossary_term.html id="sentry" text="Sentry" %}, our anonymous error reporting system.</p>
+          <p class="mb-0">Edit <code>sentry.properties</code> and change <code>enabled=false</code> to <code>enabled=true</code>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
+        <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
+          <i class="fas fa-memory"></i> Memory Allocation
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p>Increase memory allocation if needed for larger games.</p>
+          <p class="mb-0">Edit the <code>.l4j.ini</code> files. See the <a href="https://megamek.org" target="_blank">FAQ on megamek.org</a> for details.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
