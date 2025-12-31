@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: "Installation"
-description: "How to download, install, and configure MekHQ on Windows"
+description: "How to download, install, and configure MekHQ on Windows and Mac"
 guide_section: installation
 progress: 15
 next_page: /wiki/first_campaign_mhq_setup
@@ -9,7 +9,12 @@ next_title: Campaign Setup
 toc: |
   <ul>
     <li><a href="#downloading">Downloading MekHQ</a></li>
-    <li><a href="#installation">Installation Steps</a></li>
+    <li><a href="#installation">Installation Steps</a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#mac">Mac</a></li>
+      </ul>
+    </li>
     <li><a href="#configuration">Optional Configuration</a></li>
     <li><a href="#folder-structure">Folder Structure</a></li>
     <li><a href="#user-files">User Files Directory</a></li>
@@ -17,11 +22,6 @@ toc: |
     <li><a href="#reporting">Reporting Issues</a></li>
   </ul>
 ---
-
-<div class="guide-callout guide-callout-info">
-  <div class="callout-title"><i class="fab fa-windows"></i> Windows Installation</div>
-  <p class="mb-0">This section covers installation on Windows machines. For other operating systems, please see the <a href="https://github.com/MegaMek/megamek/wiki" target="_blank">MegaMek Wiki</a>.</p>
-</div>
 
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
@@ -65,6 +65,8 @@ toc: |
 
 <section id="installation">
   <h2><i class="fas fa-cogs"></i> Installation Steps</h2>
+
+  <h3 id="windows"><i class="fab fa-windows"></i> Windows</h3>
 
   <div class="guide-step">
     <div class="step-number">1</div>
@@ -114,6 +116,81 @@ toc: |
           </tr>
           <tr>
             <td><code>MegaMekLab.exe</code></td>
+            <td>Unit customization</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3 id="mac"><i class="fab fa-apple"></i> Mac</h3>
+
+  <div class="guide-step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Install Java 17 (Required)</h4>
+      <p>Install Java 17 LTS via the <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> package installer. Choose between JDK (for development) or JRE (runtime only).</p>
+      <p>The installer supports both <strong>Intel (x64)</strong> and <strong>Apple Silicon M-Series (aarch64)</strong> processors.</p>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Extract to a Safe Location</h4>
+      <div class="guide-callout guide-callout-danger">
+        <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Avoid Protected Folders</div>
+        <p>macOS security restrictions prevent MegaMek from running in protected folders.</p>
+        <p class="mb-0"><strong>Do NOT use:</strong> <code>Downloads</code>, <code>Documents</code>, or <code>Desktop</code> folders. These are macOS protected locations and MegaMek will not run from them.</p>
+      </div>
+      <p>Create a <code>Games</code> folder in your home directory (e.g., <code>~/Games/MekHQ</code>) and extract the archive there.</p>
+      <div class="guide-callout guide-callout-warning">
+        <div class="callout-title"><i class="fas fa-cloud"></i> iCloud Warning</div>
+        <p class="mb-0">If iCloud syncs your protected folders, files may be deleted locally—causing issues even if MegaMek could otherwise launch.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>First Launch (Gatekeeper)</h4>
+      <p>On the first run, macOS Gatekeeper will block the application. To bypass this:</p>
+      <ol>
+        <li><strong>Right-click</strong> (or Control-click) the JAR file</li>
+        <li>Select <strong>"Open"</strong> from the context menu</li>
+        <li>Click <strong>"Open"</strong> in the security dialog that appears</li>
+      </ol>
+      <p>After this initial approval, you can double-click to launch normally.</p>
+      <div class="guide-callout guide-callout-info">
+        <div class="callout-title"><i class="fas fa-sync-alt"></i> After Updates</div>
+        <p class="mb-0">You'll need to repeat the right-click process each time you install a new version.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Run the Applications</h4>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>MekHQ.jar</code></td>
+            <td>Campaign management</td>
+          </tr>
+          <tr>
+            <td><code>MegaMek.jar</code></td>
+            <td>Tactical battles</td>
+          </tr>
+          <tr>
+            <td><code>MegaMekLab.jar</code></td>
             <td>Unit customization</td>
           </tr>
         </tbody>
