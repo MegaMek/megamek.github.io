@@ -11,17 +11,6 @@
             <h5 class="mt-2">MekHQ Guide</h5>
           </div>
 
-          <!-- Progress Bar -->
-          <div class="guide-progress mb-3">
-            <div class="progress-label d-flex justify-content-between">
-              <small>Progress</small>
-              <small class="progress-percent">0%</small>
-            </div>
-            <div class="progress" style="height: 8px;">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: {{ page.progress | default: 0 }}%"></div>
-            </div>
-          </div>
-
           <ul class="nav flex-column guide-nav">
             <li class="nav-item">
               <a class="nav-link {% if page.guide_section == 'installation' %}active{% endif %}" href="{{ '/wiki/first_campaign_mhq_installation' | relative_url }}">
@@ -91,8 +80,10 @@
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="guide-breadcrumb mt-3">
           <ol class="breadcrumb">
+            {% if page.guide_section == 'installation' %}
+            <li class="breadcrumb-item active" aria-current="page">MekHQ Guide</li>
+            {% else %}
             <li class="breadcrumb-item"><a href="{{ '/wiki/first_campaign_mhq_installation' | relative_url }}">MekHQ Guide</a></li>
-            {% if page.guide_section != 'installation' %}
             <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
             {% endif %}
           </ol>
@@ -100,29 +91,39 @@
 
         <!-- Page Header -->
         <div class="guide-header mb-4">
-          {% if page.splash %}
-          <div class="guide-splash mb-4">
-            <img src="{{ '/assets/images/SOU/' | append: page.splash | relative_url }}" alt="{{ page.title }}" class="guide-splash-img">
-          </div>
-          {% endif %}
           <h1 class="guide-title">{{ page.title }}</h1>
           {% if page.description %}
           <p class="lead guide-description">{{ page.description }}</p>
           {% endif %}
         </div>
 
-        <!-- Table of Contents (if page has sections) -->
+        <!-- Table of Contents with Splash Image -->
         {% if page.toc %}
-        <div class="guide-toc card mb-4">
-          <div class="card-header" data-bs-toggle="collapse" data-bs-target="#tocContent" style="cursor: pointer;">
-            <i class="fas fa-list"></i> On This Page
-            <i class="fas fa-chevron-down float-end"></i>
-          </div>
-          <div class="collapse show" id="tocContent">
-            <div class="card-body">
-              {{ page.toc }}
+        <div class="row mb-4">
+          <div class="{% if page.splash %}col-lg-7{% else %}col-12{% endif %}">
+            <div class="guide-toc card h-100">
+              <div class="card-header" data-bs-toggle="collapse" data-bs-target="#tocContent" style="cursor: pointer;">
+                <i class="fas fa-list"></i> On This Page
+                <i class="fas fa-chevron-down float-end"></i>
+              </div>
+              <div class="collapse show" id="tocContent">
+                <div class="card-body">
+                  {{ page.toc }}
+                </div>
+              </div>
             </div>
           </div>
+          {% if page.splash %}
+          <div class="col-lg-5 mt-3 mt-lg-0">
+            <div class="guide-splash h-100">
+              <img src="{{ '/assets/images/SOU/' | append: page.splash | relative_url }}" alt="{{ page.title }}" class="guide-splash-img">
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        {% elsif page.splash %}
+        <div class="guide-splash mb-4">
+          <img src="{{ '/assets/images/SOU/' | append: page.splash | relative_url }}" alt="{{ page.title }}" class="guide-splash-img">
         </div>
         {% endif %}
 
@@ -244,21 +245,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Update progress bar based on scroll
-  const progressBar = document.querySelector('.guide-progress .progress-bar');
-  const progressPercent = document.querySelector('.progress-percent');
-
-  window.addEventListener('scroll', function() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    if (progressBar) {
-      progressBar.style.width = scrolled + '%';
-    }
-    if (progressPercent) {
-      progressPercent.textContent = Math.round(scrolled) + '%';
-    }
-  });
 });
 </script>
 

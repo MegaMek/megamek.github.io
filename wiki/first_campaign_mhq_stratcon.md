@@ -306,25 +306,32 @@ toc: |
 <section id="resupply">
   <h2><i class="fas fa-truck"></i> Resupply and Convoys</h2>
 
-  <p>Getting supplies during deployment is challenging—normal procurement takes weeks or months.</p>
+  <div class="row">
+    <div class="col-lg-7">
+      <p>Getting supplies during deployment is challenging—normal procurement takes weeks or months.</p>
 
-  <h3>Employer Resupply</h3>
+      <h3>Employer Resupply</h3>
 
-  <p>Periodic supply drops from your employer:</p>
-  <ul>
-    <li>Parts and equipment</li>
-    <li>Ammunition</li>
-    <li>Replacement personnel</li>
-  </ul>
+      <p>Periodic supply drops from your employer:</p>
+      <ul>
+        <li>Parts and equipment</li>
+        <li>Ammunition</li>
+        <li>Replacement personnel</li>
+      </ul>
 
-  <h3>Convoys</h3>
+      <h3>Convoys</h3>
 
-  <p>Use <strong>Convoy</strong> forces to transport supplies:</p>
-  <ul>
-    <li>Assign vehicles with cargo capacity to Convoy designation</li>
-    <li>Convoys can be intercepted by enemy, generating combat scenarios</li>
-    <li>Essential for moving SP-purchased items</li>
-  </ul>
+      <p>Use <strong>Convoy</strong> forces to transport supplies:</p>
+      <ul>
+        <li>Assign vehicles with cargo capacity to Convoy designation</li>
+        <li>Convoys can be intercepted by enemy, generating combat scenarios</li>
+        <li>Essential for moving SP-purchased items</li>
+      </ul>
+    </div>
+    <div class="col-lg-5">
+      <img src="{{ '/assets/images/SOU/splash-convoy.jpg' | relative_url }}" alt="Supply convoy" class="img-fluid rounded" style="width: 100%;">
+    </div>
+  </div>
 </section>
 
 <section id="scenarios">
@@ -522,6 +529,10 @@ toc: |
     <li><strong>Turning Points</strong> may be completed</li>
   </ul>
 </section>
+
+<div class="guide-art-break my-5">
+  <img src="{{ '/assets/images/SOU/splash-formation.jpg' | relative_url }}" alt="Military formation in mech bay" class="img-fluid rounded" style="width: 100%;">
+</div>
 
 <section id="completion">
   <h2><i class="fas fa-flag-checkered"></i> Contract Completion</h2>

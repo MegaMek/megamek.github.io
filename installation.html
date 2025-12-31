@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation
+title: Installation and Updating
 ---
 
 <div class='row'>
@@ -29,12 +29,45 @@ title: Installation
           Instructions for <a href='https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)'>Windows</a>
           and <a href="/wiki/mac_issues.html">macOS</a> are available.
         </p>
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe src="https://www.youtube.com/embed/le43AxvqHTc?si=ll1bZMBLMZ-IgysG" title="MekHQ Tutorial - Installing Java" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row row-cols-3">
+<div class="row mt-4">
+  <div class="col">
+    <div class="card dl-card" style="border: 3px solid #ffc107; border-radius: 12px;">
+      <div class="card-header" style="border-bottom: 2px solid #ffc107;">
+        <h4 class="mb-0" style="color: #ffc107;"><i class="fas fa-exclamation-triangle"></i> Updating Between Versions</h4>
+      </div>
+      <div class="card-body">
+        <!-- Critical Warning Banner -->
+        <div class="text-center p-3 mb-4" style="border: 2px solid #dc3545; border-radius: 8px;">
+          <p class="mb-0" style="color: #e0e0e0;">
+            <strong style="color: #dc3545;"><i class="fas fa-exclamation-circle"></i> CRITICAL:</strong> Always extract each version to its own folder — never unzip a new version over an old one (e.g., don't extract 0.50.11 into your 0.50.06 folder). Overwriting <strong style="color: #dc3545;">will corrupt saves and campaigns</strong>. Campaigns are also <strong style="color: #dc3545;">NOT backward compatible</strong>; if a newer campaign opens in an older version, consider yourself lucky.
+          </p>
+        </div>
+
+        <!-- Steps -->
+        <p style="color: #e0e0e0; margin-bottom: 1rem;">
+          Follow these steps to protect your MekHQ campaign data:
+        </p>
+        <ol style="color: #e0e0e0; line-height: 1.8;">
+          <li><strong style="color: #fff;">Back up your campaign and custom files</strong> — critical to prevent data loss</li>
+          <li><strong style="color: #fff;">Extract the new version to a fresh folder</strong> — never overwrite the old installation</li>
+          <li><strong style="color: #fff;">COPY</strong> (don't move) your campaigns and custom data to the new folder</li>
+          <li><strong style="color: #fff;">Do NOT copy</strong> MegaMek saves or preference files between versions</li>
+          <li><strong style="color: #fff;">Re-save custom presets</strong> to update them for the new version</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-3 mt-4">
   <div class='col mb-4'>
     <div class='card dl-card'>
       <div class='card-header'>
@@ -104,24 +137,6 @@ title: Installation
             <pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
           </div>
         </div>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Updating Between Versions
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          When updating between versions, it is important to always use a
-          new folder for the new version, make backups of all campaigns and
-          custom files, and <strong><em>COPY</em></strong> campaigns and
-          custom files to the new folder. Updating to a newer version is
-          <strong><em>NOT</em></strong> backwards compatible and could
-          break things.
         </p>
       </div>
     </div>

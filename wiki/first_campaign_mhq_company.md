@@ -89,6 +89,16 @@ toc: |
     <figcaption class="guide-caption">Interstellar Map showing the Inner Sphere</figcaption>
   </figure>
 
+  <div class="guide-callout guide-callout-info">
+    <div class="callout-title"><i class="fas fa-lightbulb"></i> Did You Know?</div>
+    <p class="mb-0">Double-click on any planet to see detailed system information, including all planets in the system, their characteristics, and historical data.</p>
+  </div>
+
+  <figure class="guide-figure">
+    <img src="{{ '/assets/images/planetary_system/planetary_system_view.png' | relative_url }}" alt="System View" class="guide-image" data-title="System View">
+    <figcaption class="guide-caption">System view showing planets and detailed information</figcaption>
+  </figure>
+
   <div class="guide-callout guide-callout-tip">
     <div class="callout-title"><i class="fas fa-location-arrow"></i> Relocating</div>
     <p class="mb-0">To relocate your company: Click a planet &gt; Right-click &gt; GM Tools &gt; Move there.</p>

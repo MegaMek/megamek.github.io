@@ -156,14 +156,16 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 250, 205, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .guide-splash-img {
   width: 100%;
-  height: auto;
-  max-height: 300px;
+  height: 100%;
   object-fit: cover;
-  object-position: center 65%;
   display: block;
 }
 
@@ -258,7 +260,11 @@
   border-collapse: collapse;
   background: var(--card-color);
   border-radius: 8px;
-  overflow: hidden;
+}
+
+.guide-table td,
+.guide-table th {
+  position: relative;
 }
 
 .guide-table thead {
