@@ -72,7 +72,7 @@ toc: |
       <p>Follow the instructions on megamek.org (usually displayed prominently).</p>
       <div class="guide-callout guide-callout-warning">
         <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Important</div>
-        <p class="mb-0">Do NOT use Java 24+ on 32-bit machines, as those are no longer supported.</p>
+        <p class="mb-0">32-bit machines must use Java 17 LTS. Java 21+ dropped 32-bit support entirely.</p>
       </div>
     </div>
   </div>

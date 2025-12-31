@@ -30,7 +30,7 @@ progress: 100
 
   <div id="glossary-list">
     {% for term in site.data.glossary %}
-    <div class="glossary-entry" id="{{ term.id }}" data-title="{{ term.title | downcase }}" data-definition="{{ term.short | downcase }}">
+    <div class="glossary-entry" id="{{ term.id }}" data-title="{{ term.title | downcase }}" data-definition="{{ term.short | downcase }} {{ term.definition | strip_html | downcase }}">
       <div class="glossary-term">
         <h3>{{ term.title }}</h3>
         <a href="#{{ term.id }}" class="glossary-anchor" title="Link to this term"><i class="fas fa-link"></i></a>

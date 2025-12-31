@@ -23,6 +23,9 @@
     referrerpolicy="no-referrer" />
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+  {% if page.layout == 'guide' %}
+  <link href="{{ '/assets/css/guide.css' | relative_url }}" rel="stylesheet">
+  {% endif %}
   {% seo %}
 </head>
 

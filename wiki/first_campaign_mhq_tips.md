@@ -169,7 +169,7 @@ prev_title: StratCon Guide
   <h3>Official Documentation</h3>
 
   <div class="row g-4 mb-4">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
         <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
           <i class="fas fa-folder-open"></i> docs folder
@@ -179,29 +179,44 @@ prev_title: StratCon Guide
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
         <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
           <i class="fab fa-github"></i> MegaMek Wiki
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p class="mb-0"><a href="https://github.com/MegaMek/megamek/wiki" target="_blank">Comprehensive documentation</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 215, 0, 0.2);">
-        <div class="card-header" style="background: rgba(255, 215, 0, 0.1); color: var(--accent-color);">
-          <i class="fas fa-globe"></i> megamek.org
-        </div>
-        <div class="card-body" style="color: var(--text-color);">
-          <p class="mb-0"><a href="https://megamek.org" target="_blank">Official website with downloads and news</a></p>
+          <p class="mb-0"><a href="https://github.com/MegaMek/megamek/wiki" target="_blank">Answers to common questions</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <h3>Community</h3>
+  <h3>Official BattleTech</h3>
+
+  <div class="row g-4 mb-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 87, 34, 0.3);">
+        <div class="card-header" style="background: rgba(255, 87, 34, 0.2); color: #ff5722;">
+          <i class="fas fa-globe"></i> BattleTech.com
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p class="mb-0"><a href="https://battletech.com/" target="_blank">Official BattleTech website</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(255, 87, 34, 0.3);">
+        <div class="card-header" style="background: rgba(255, 87, 34, 0.2); color: #ff5722;">
+          <i class="fas fa-shopping-cart"></i> Catalyst Game Labs Store
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p class="mb-0"><a href="https://store.catalystgamelabs.com/" target="_blank">Official BattleTech store</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Community Discord Servers</h3>
 
   <div class="row g-4 mb-4">
     <div class="col-md-4">
@@ -210,7 +225,7 @@ prev_title: StratCon Guide
           <i class="fab fa-discord"></i> MegaMek Discord
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p class="mb-0"><a href="https://discord.gg/megamek" target="_blank">Primary community hub</a></p>
+          <p class="mb-0"><a href="https://discord.gg/megamek" target="_blank">Primary MegaMek community hub</a></p>
         </div>
       </div>
     </div>
