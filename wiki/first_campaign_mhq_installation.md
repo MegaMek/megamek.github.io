@@ -90,11 +90,6 @@ toc: |
       </tr>
     </tbody>
   </table>
-
-  <div class="guide-callout guide-callout-tip">
-    <div class="callout-title"><i class="fas fa-thumbs-up"></i> Recommendation</div>
-    <p class="mb-0">If you're following this guide, start with the latest <strong>Milestone</strong> or <strong>Development</strong> build.</p>
-  </div>
 </section>
 
 <section id="extracting">
