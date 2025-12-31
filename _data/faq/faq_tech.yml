@@ -9,7 +9,7 @@
     including Windows, macOS, and Linux. Although it will run on later versions
     of Java, your experience will vary. Starting with the 0.50.x Development
     branch MegaMek will require Java 17 to run. Please
-    [see these instructions](wiki/adopt_open_java.html) for details.
+    [see these instructions](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) for details.
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: >
     By default, macOS applications will only open a single instance. To open up
@@ -26,34 +26,21 @@
     Use the `pkg` installer on Adoptium to install either the JRE or JDK version of
     Java you need (17). For example, the
     version for the Apple Silicon (M-Series) Macs can be found [here](https://adoptium.net/temurin/releases/?os=mac&arch=aarch64&version=17).
-    Additional information can be found on the [macOS Issues](wiki/mac_issues.html) page.
+    Additional information can be found on the [macOS Issues](/wiki/mac_issues.html) page.
 - question: "How do I use more, or less, memory?"
   answer: >
     By default, MegaMek uses up to 1024 megabytes (1 gigabyte) of memory.
     This amount of memory is sufficient for most games, but when playing
     large games against the bot, higher amounts of memory can boost
-    performance. How you change the maximum memory allowed varies by
-    operating system.
-
-
-    On Windows, open up the MegaMek.l4j.ini file and change the line that says
-    `-Xmx1024m` to the amount of memory you want. For example, if you want
-    512 megabytes of memory, you would change this line to `-Xmx512m`.
-
-
-    On macOS, you want to right-click on the MegaMek icon and choose Show
-    Package Contents. Then open up Contents/Info.plist. Look for the line
-    that says `-Xmx1024m` and edit this as above.
-
-
-    On a Linux/Unix system, you will need to edit the startup.sh file's last
-    line, or just add the memory argument directly to your java command if
-    launching manually. For example:
-
-
-    ```bash
-    java -Xmx512m -jar MegaMek.jar &
-    ```
+    performance. See our [detailed instructions](https://github.com/MegaMek/megamek/wiki/Increasing-Memory-%28Can-help-with-the-bot%29)
+    for how to change memory settings on Windows, macOS, and Linux.
+- question: "I'm seeing weird artifacts or screen distortions. How do I fix this?"
+  answer: >
+    Visual glitches like rendering artifacts, screen distortions, or UI scaling
+    issues are usually caused by Java's graphics pipeline. These can be fixed
+    by adding specific Java flags to your configuration files. See our
+    [troubleshooting guide](https://github.com/MegaMek/megamek/wiki/Weird-artifacts-Screen-Distortions)
+    for detailed instructions on fixing these display issues.
 - question: "Why can't I host a game?"
   answer: >
     If you are hosting a game over the internet, and other people

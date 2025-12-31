@@ -138,6 +138,56 @@
   definition: |
     Contract Victory Points (CVP) represent an abstract measure of your contract's overall strategic success. Most contracts require a positive CVP to be considered successful. Even if all other objectives are met, having a neutral or negative CVP will result in a failure or Partial Success.
 
+- id: command_rights_house
+  title: House Command Rights
+  short: Autonomy over allied forces while balancing loyalty to House interests. Allies join around a third of scenarios.
+  definition: |
+    House command rights empower noble scions and military leaders with autonomy over allied forces, enabling them to strategize and expand their House's power while balancing loyalty to their lineage and House interests.
+    <ul>
+      <li>Keep your Campaign Victory Points (CVP) positive by completing Turning Point and Crisis scenarios.</li>
+      <li>Allies will join you in scenarios around a third of the time.</li>
+      <li>Roughly a third of scenarios are considered Turning Points.</li>
+      <li>You must complete the full contract duration, even if all objectives are completed.</li>
+    </ul>
+
+- id: command_rights_independent
+  title: Independent Command Rights
+  short: Full autonomy over your forces to achieve objectives efficiently. Allies rarely join scenarios.
+  definition: |
+    Independent command rights afford skilled commanders autonomy over their forces, enabling them to make critical decisions and adapt swiftly to achieve objectives efficiently. However, this autonomy necessitates balancing personal discretion with the employer's broader goals.
+    <ul>
+      <li>Keep your Campaign Victory Points (CVP) positive by completing Turning Point and Crisis scenarios.</li>
+      <li>Complete any additional objectives listed in the Area of Operations tab.</li>
+      <li>Allies will only rarely join you on scenarios.</li>
+      <li>Roughly a third of scenarios are considered Turning Points.</li>
+      <li>You may end the contract the moment all objectives are complete, so long as you are not on a Garrison Duty, Cadre Duty, Relief Duty, or Riot-Duty contract.</li>
+    </ul>
+
+- id: command_rights_liaison
+  title: Liaison Command Rights
+  short: Coordinate cooperation between allied factions with moderate independence. Allies join around a third of scenarios.
+  definition: |
+    Liaison command rights empower trusted officers to coordinate cooperation between allied factions, streamlining communication and joint operations on the battlefield. These officers serve as crucial links between factions, enhancing unity and effectiveness against shared adversaries.
+    <ul>
+      <li>Keep your Campaign Victory Points (CVP) positive by completing Turning Point and Crisis scenarios.</li>
+      <li>Complete any additional objectives listed in the Area of Operations tab.</li>
+      <li>Allies will join you in scenarios around a third of the time.</li>
+      <li>Roughly a third of scenarios are considered Turning Points.</li>
+      <li>You may end the contract the moment all objectives are complete, so long as you are not on a Garrison Duty, Cadre Duty, Relief Duty, or Riot-Duty contract.</li>
+    </ul>
+
+- id: command_rights_integrated
+  title: Integrated Command Rights
+  short: Standard for government forces with streamlined command and control. Allies join all scenarios.
+  definition: |
+    Integrated command rights, standard for government forces, streamline command and control, particularly in large-scale operations involving multiple forces, ensuring effective collaboration without inter-service rivalry or confusion over command authority.
+    <ul>
+      <li>Keep your Campaign Victory Points (CVP) positive by completing Turning Point and Crisis scenarios.</li>
+      <li>Allies will join you in all scenarios.</li>
+      <li>Most scenarios are considered Turning Points.</li>
+      <li>You must complete the full contract duration, even if all objectives are completed.</li>
+    </ul>
+
 - id: crew_requirements
   title: Crew Requirements
   short: The personnel needed to fully crew a unit before it can be used.

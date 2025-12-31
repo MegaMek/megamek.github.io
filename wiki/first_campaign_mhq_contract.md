@@ -3,6 +3,7 @@ layout: guide
 title: "Your First Contract"
 description: "Taking on your first contract in MekHQ"
 guide_section: contract
+splash: Mmek_StrategyMeeting_500x350.jpg
 progress: 60
 prev_page: /wiki/first_campaign_mhq_company
 prev_title: Your First Company
@@ -209,20 +210,20 @@ toc: |
     </thead>
     <tbody>
       <tr>
-        <td><strong>Integrated</strong></td>
-        <td>Part of employer's force; employer provides objectives</td>
+        <td><strong>{% include glossary_term.html id="command_rights_integrated" text="Integrated" %}</strong></td>
+        <td>Part of employer's force; allies join all scenarios</td>
       </tr>
       <tr>
-        <td><strong>House</strong></td>
-        <td>Limited independence; employer sets broad goals</td>
+        <td><strong>{% include glossary_term.html id="command_rights_house" text="House" %}</strong></td>
+        <td>Limited independence; allies join ~1/3 of scenarios</td>
       </tr>
       <tr>
-        <td><strong>Liaison</strong></td>
-        <td>Moderate independence; coordination with allies</td>
+        <td><strong>{% include glossary_term.html id="command_rights_liaison" text="Liaison" %}</strong></td>
+        <td>Moderate independence; allies join ~1/3 of scenarios</td>
       </tr>
       <tr>
-        <td><strong>Independent</strong></td>
-        <td>Full freedom; accomplish objectives your way</td>
+        <td><strong>{% include glossary_term.html id="command_rights_independent" text="Independent" %}</strong></td>
+        <td>Full freedom; allies rarely join scenarios</td>
       </tr>
     </tbody>
   </table>

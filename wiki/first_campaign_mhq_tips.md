@@ -165,6 +165,10 @@ next_title: Glossary
   </table>
 </section>
 
+<div class="guide-art-break my-5">
+  <img src="{{ '/assets/images/SOU/splash-postbattle.jpg' | relative_url }}" alt="Post-battle scene" class="img-fluid rounded" style="width: 100%;">
+</div>
+
 <section id="resources">
   <h2><i class="fas fa-book"></i> Additional Resources</h2>
 
@@ -288,6 +292,10 @@ next_title: Glossary
 
   <p>Available from <a href="https://store.catalystgamelabs.com/" target="_blank">Catalyst Game Labs</a>.</p>
 </section>
+
+<div class="guide-art-break my-5">
+  <img src="{{ '/assets/images/SOU/Mmek_Tensediplomacy_500x350.jpg' | relative_url }}" alt="Command center briefing" class="img-fluid rounded" style="width: 100%;">
+</div>
 
 <section id="loop">
   <h2><i class="fas fa-sync-alt"></i> Gameplay Loop Summary</h2>

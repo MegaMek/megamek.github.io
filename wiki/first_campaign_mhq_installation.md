@@ -3,6 +3,7 @@ layout: guide
 title: "Installation"
 description: "How to download, install, and configure MekHQ on Windows and Mac"
 guide_section: installation
+splash: splash-repairs.jpg
 progress: 15
 next_page: /wiki/first_campaign_mhq_setup
 next_title: Campaign Setup
@@ -54,6 +55,17 @@ toc: |
   <div class="guide-callout guide-callout-warning">
     <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 32-bit Systems</div>
     <p class="mb-0">32-bit machines must use Java 17 LTS specifically. Java 21+ dropped 32-bit support entirely.</p>
+  </div>
+
+  <h3>Video Tutorial: Installing Java</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Installing Java
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/le43AxvqHTc?si=sVzwlk0J1QeyMM4c" title="MekHQ Tutorial -- Installing Java" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 

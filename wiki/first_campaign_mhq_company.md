@@ -3,6 +3,7 @@ layout: guide
 title: "Starting Your First Company"
 description: "Building your mercenary company from the ground up"
 guide_section: company
+splash: splash-liftoff.jpg
 progress: 45
 prev_page: /wiki/first_campaign_mhq_setup
 prev_title: Campaign Setup
@@ -86,6 +87,16 @@ toc: |
   <figure class="guide-figure">
     <img src="{{ '/assets/images/first_campaign_mhq/Interstellar map.png' | relative_url }}" alt="Interstellar Map" class="guide-image" data-title="Interstellar Map">
     <figcaption class="guide-caption">Interstellar Map showing the Inner Sphere</figcaption>
+  </figure>
+
+  <div class="guide-callout guide-callout-info">
+    <div class="callout-title"><i class="fas fa-lightbulb"></i> Did You Know?</div>
+    <p class="mb-0">Double-click on any planet to see detailed system information, including all planets in the system, their characteristics, and historical data.</p>
+  </div>
+
+  <figure class="guide-figure">
+    <img src="{{ '/assets/images/planetary_system/planetary_system_view.png' | relative_url }}" alt="System View" class="guide-image" data-title="System View">
+    <figcaption class="guide-caption">System view showing planets and detailed information</figcaption>
   </figure>
 
   <div class="guide-callout guide-callout-tip">

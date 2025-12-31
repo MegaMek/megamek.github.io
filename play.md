@@ -1,7 +1,7 @@
 ---
 layout: info_page
 title: Play
-splash: old_mhq_splash.jpeg
+splash: SOU/splash-fight.jpg
 ---
 
 ### Playing the Game

@@ -3,6 +3,7 @@ layout: guide
 title: "Campaign Setup"
 description: "Configuring your campaign rules and options for MekHQ"
 guide_section: setup
+splash: splash-ceremony.jpg
 progress: 30
 prev_page: /wiki/first_campaign_mhq_installation
 prev_title: Installation
@@ -124,28 +125,35 @@ toc: |
 <section id="hr">
   <h2><i class="fas fa-users"></i> Human Resources</h2>
 
-  <p>These settings control personnel management.</p>
+  <div class="row mb-4">
+    <div class="col-lg-7">
+      <p>These settings control personnel management.</p>
 
-  <h3>Personnel - General</h3>
+      <h3>Personnel - General</h3>
 
-  <table class="guide-table">
-    <thead>
-      <tr>
-        <th>Option</th>
-        <th>Recommendation</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>{% include glossary_term.html id="edge" text="Edge" %}</strong></td>
-        <td>Optional "luck" points from A Time of War. Disable for grittier gameplay.</td>
-      </tr>
-      <tr>
-        <td><strong>SPAs</strong></td>
-        <td>Special Pilot Abilities add variety. Enable with a limit (2-3 per character).</td>
-      </tr>
-    </tbody>
-  </table>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>{% include glossary_term.html id="edge" text="Edge" %}</strong></td>
+            <td>Optional "luck" points from A Time of War. Disable for grittier gameplay.</td>
+          </tr>
+          <tr>
+            <td><strong>SPAs</strong></td>
+            <td>Special Pilot Abilities add variety. Enable with a limit (2-3 per character).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-5">
+      <img src="{{ '/assets/images/SOU/Mmek_Mercpeace_500x350.jpg' | relative_url }}" alt="MechWarriors meeting" class="img-fluid rounded" style="width: 100%;">
+    </div>
+  </div>
 
   <h3>Personnel - Awards</h3>
   <p>Keep defaults. If you disable Edge, set award bonuses to XP only.</p>
@@ -253,16 +261,23 @@ toc: |
 
   <h3>{% include glossary_term.html id="maintenance" text="Maintenance" %} and Repairs</h3>
 
-  <p>If {% include glossary_term.html id="maintenance" text="maintenance" %} feels too punishing:</p>
-  <ul>
-    <li>Set <strong>Maintenance Modifier</strong> to -2 (easier rolls)</li>
-    <li>Increase maintenance cycle beyond 7 days</li>
-    <li>Untick "Use Era Modifiers" for repairs</li>
-  </ul>
+  <div class="row">
+    <div class="col-lg-7">
+      <p>If {% include glossary_term.html id="maintenance" text="maintenance" %} feels too punishing:</p>
+      <ul>
+        <li>Set <strong>Maintenance Modifier</strong> to -2 (easier rolls)</li>
+        <li>Increase maintenance cycle beyond 7 days</li>
+        <li>Untick "Use Era Modifiers" for repairs</li>
+      </ul>
 
-  <div class="guide-callout guide-callout-warning">
-    <div class="callout-title"><i class="fas fa-balance-scale"></i> Balance</div>
-    <p class="mb-0">Making everything too easy removes challenge. Try defaults first.</p>
+      <div class="guide-callout guide-callout-warning">
+        <div class="callout-title"><i class="fas fa-balance-scale"></i> Balance</div>
+        <p class="mb-0">Making everything too easy removes challenge. Try defaults first.</p>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <img src="{{ '/assets/images/SOU/splash-guard.jpg' | relative_url }}" alt="Meks on patrol" class="img-fluid rounded" style="width: 100%;">
+    </div>
   </div>
 </section>
 
@@ -447,34 +462,42 @@ toc: |
   </ul>
 
   <h3>Combat Rules</h3>
-  <p>Search "TacOps" in the options for the full list. Notable options:</p>
 
-  <table class="guide-table">
-    <thead>
-      <tr>
-        <th>Option</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Careful Stand</td>
-        <td>Slower but more reliable standing</td>
-      </tr>
-      <tr>
-        <td>Starting Fires</td>
-        <td>Lasers can ignite forests</td>
-      </tr>
-      <tr>
-        <td>Backward Movement</td>
-        <td>Move backwards on slopes</td>
-      </tr>
-      <tr>
-        <td>Minefields</td>
-        <td>Enable minefield use</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div class="col-lg-7">
+      <p>Search "TacOps" in the options for the full list. Notable options:</p>
+
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Careful Stand</td>
+            <td>Slower but more reliable standing</td>
+          </tr>
+          <tr>
+            <td>Starting Fires</td>
+            <td>Lasers can ignite forests</td>
+          </tr>
+          <tr>
+            <td>Backward Movement</td>
+            <td>Move backwards on slopes</td>
+          </tr>
+          <tr>
+            <td>Minefields</td>
+            <td>Enable minefield use</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-5">
+      <img src="{{ '/assets/images/SOU/splash-demolition.jpg' | relative_url }}" alt="Urban combat" class="img-fluid rounded" style="width: 100%;">
+    </div>
+  </div>
 
   <h3>Miscellaneous</h3>
   <ul>

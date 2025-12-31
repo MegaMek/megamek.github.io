@@ -120,6 +120,21 @@ a.footer-link {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
+/* Site header carousel */
+#header-carousel {
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 250, 205, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  background-image: url("/assets/images/backgrounds/hexellence.png"), linear-gradient(#000000, #000000);
+}
+
+/* Site header splash image */
+.site-header-splash {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
 /********************************/
 /** Adjustments to containers  **/
 /********************************/
@@ -281,12 +296,53 @@ div.post-meta {
 }
 
 /*********************************************************************/
+/* Download page program images                                       */
+/*********************************************************************/
+
+.download-program-img {
+  max-height: 150px;
+  width: auto;
+}
+
+/*********************************************************************/
 /* Bootstrap cards                                                    */
 /*********************************************************************/
 
 .dl-card {
   background-color: var(--card-color);
   color: var(--text-color);
+}
+
+/*********************************************************************/
+/* Program cards with splash art                                      */
+/*********************************************************************/
+.program-card {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 250, 205, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card-title {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
 
 /*********************************************************************/
