@@ -304,9 +304,32 @@ toc: |
   <h2><i class="fas fa-exchange-alt"></i> Moving Campaigns Between Versions</h2>
 
   <div class="guide-callout guide-callout-danger">
-    <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Critical: COPY, Never Move</div>
-    <p><strong>MekHQ is NOT backward compatible.</strong> Once a campaign is loaded in a newer version, it cannot be opened in older versions.</p>
-    <p class="mb-0">Always keep your original campaign files intact. Copy them to the new version—never move or overwrite.</p>
+    <div class="callout-title"><i class="fas fa-exclamation-circle"></i> Critical: Treat Each Release as Stand-Alone</div>
+    <p><strong>MekHQ is NOT backward compatible.</strong> Once a campaign is loaded in a newer version, it cannot be opened in older versions. Copy, never move your data forward.</p>
+    <p class="mb-0">Always keep your original campaign files intact—never move or overwrite them.</p>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(40, 167, 69, 0.3);">
+        <div class="card-header" style="background: rgba(40, 167, 69, 0.2); color: #28a745;">
+          <i class="fas fa-check-circle"></i> MekHQ Campaigns
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p class="mb-0"><strong>ARE transferable</strong> between versions when you follow the migration steps below. Campaigns can move forward to newer versions (but never backward).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(220, 53, 69, 0.3);">
+        <div class="card-header" style="background: rgba(220, 53, 69, 0.2); color: #dc3545;">
+          <i class="fas fa-times-circle"></i> MegaMek Saves
+        </div>
+        <div class="card-body" style="color: var(--text-color);">
+          <p class="mb-0"><strong>Are generally NOT transferable</strong> between versions. Complete any in-progress battles before upgrading—don't expect to continue MegaMek saves in a new version.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <h3>Step-by-Step Migration</h3>
@@ -314,60 +337,36 @@ toc: |
   <div class="guide-step">
     <div class="step-number">1</div>
     <div class="step-content">
-      <h4>Finish Current Work</h4>
-      <p>Complete any ongoing contracts, save your campaign, and exit MekHQ completely.</p>
+      <h4>Make a Backup</h4>
+      <p><strong>This is the most critical step to prevent data loss!</strong> Copy your campaign files (<code>.cpnx</code>) and any custom files to a safe backup location before proceeding.</p>
     </div>
   </div>
 
   <div class="guide-step">
     <div class="step-number">2</div>
     <div class="step-content">
-      <h4>Backup Your Files</h4>
-      <p><strong>This step is critical to prevent data loss.</strong> Copy your campaign files (<code>.cpnx</code>) to a safe backup location before proceeding.</p>
+      <h4>Install New Version Separately</h4>
+      <p><strong>NEVER overwrite the existing folder.</strong> Extract the new version to a different location—always keep each version in its own folder.</p>
     </div>
   </div>
 
   <div class="guide-step">
     <div class="step-number">3</div>
     <div class="step-content">
-      <h4>Install New Version Separately</h4>
-      <p>Extract the new version to a <strong>different folder</strong>—don't overwrite your existing installation. This lets you keep the old version as a fallback.</p>
+      <h4>Copy Campaign Files</h4>
+      <p>Copy (not move!) your <code>.cpnx</code> files to the new version's <code>campaigns</code> folder.</p>
+      <div class="guide-callout guide-callout-warning">
+        <div class="callout-title"><i class="fas fa-ban"></i> Do NOT Copy These</div>
+        <p class="mb-0"><strong>Never copy MegaMek saves or any preference files</strong> from a different version—they cause compatibility issues and can corrupt your installation.</p>
+      </div>
     </div>
   </div>
 
   <div class="guide-step">
     <div class="step-number">4</div>
     <div class="step-content">
-      <h4>Copy Campaign Files</h4>
-      <p>Copy (not move!) your <code>.cpnx</code> files to the new version's <code>campaigns</code> folder.</p>
-      <div class="guide-callout guide-callout-warning">
-        <div class="callout-title"><i class="fas fa-ban"></i> Do NOT Copy These</div>
-        <p class="mb-0">Never copy MegaMek saves or preference/config files between versions—they can cause serious stability issues.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">5</div>
-    <div class="step-content">
-      <h4>Initialize in New Version</h4>
-      <p>Load your campaign in the new version and <strong>advance at least one game day</strong>. This lets MekHQ update internal data structures.</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">6</div>
-    <div class="step-content">
       <h4>Re-save Custom Presets</h4>
-      <p>If you use custom campaign presets, re-save them in the new version to update their format.</p>
-    </div>
-  </div>
-
-  <div class="guide-step">
-    <div class="step-number">7</div>
-    <div class="step-content">
-      <h4>Restart</h4>
-      <p>Exit and restart MekHQ to finalize the migration.</p>
+      <p>If you use custom campaign presets, re-save them in the new version to ensure they're updated with the new version's settings.</p>
     </div>
   </div>
 
@@ -381,6 +380,18 @@ toc: |
   <h2><i class="fas fa-bug"></i> Reporting Issues</h2>
 
   <p>If you find a bug or want to suggest an enhancement:</p>
+
+  <div class="guide-callout guide-callout-tip">
+    <div class="callout-title"><i class="fas fa-magic"></i> MekHQ: Use the Built-In Bug Reporter</div>
+    <p>MekHQ includes a <strong>"Report a Bug"</strong> button that makes submitting issues easy. Access it via <strong>Help &gt; Report a Bug</strong>.</p>
+    <p>This feature creates a special save file that automatically bundles:</p>
+    <ul class="mb-2">
+      <li>Your campaign save file</li>
+      <li>All log files from your session</li>
+      <li>Any custom unit files used in your campaign</li>
+    </ul>
+    <p class="mb-0">This means you no longer need to manually gather and upload custom units separately—everything developers need is packaged automatically!</p>
+  </div>
 
   <div class="guide-step">
     <div class="step-number">1</div>
@@ -414,6 +425,10 @@ toc: |
             <td>Campaign management bugs</td>
             <td><a href="https://github.com/MegaMek/mekhq/issues" target="_blank">MekHQ Issues</a></td>
           </tr>
+          <tr>
+            <td>Unit data errors (stats, costs)</td>
+            <td><a href="https://github.com/MegaMek/megamek-data/issues" target="_blank">MegaMek-Data Issues</a></td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -427,6 +442,7 @@ toc: |
         <li><strong>Check for duplicates</strong> before submitting</li>
         <li><strong>Follow the template</strong> - Clear information helps resolve issues faster</li>
         <li><strong>Tag feature requests</strong> with "RFE" in the title</li>
+        <li><strong>Attach files</strong> - Campaign saves, log files, and screenshots help tremendously</li>
       </ul>
     </div>
   </div>
