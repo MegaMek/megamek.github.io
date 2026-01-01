@@ -517,6 +517,8 @@ toc: |
 
   <h3>Salvage</h3>
 
+  <img src="{{ '/assets/images/old_mhq_load.jpeg' | relative_url }}" alt="Military formation in mech bay" class="img-fluid rounded" style="float: right; width: 33%; margin-left: 1rem; margin-bottom: 1rem;">
+
   <p>Select salvage from defeated enemies:</p>
   <ul>
     <li>Limited by salvage rights in contract</li>
@@ -534,9 +536,7 @@ toc: |
   </ul>
 </section>
 
-<div class="guide-art-break my-5">
-  <img src="{{ '/assets/images/SOU/splash-formation.jpg' | relative_url }}" alt="Military formation in mech bay" class="img-fluid rounded" style="width: 100%;">
-</div>
+<div style="clear: both;"></div>
 
 <section id="completion">
   <h2><i class="fas fa-flag-checkered"></i> Contract Completion</h2>

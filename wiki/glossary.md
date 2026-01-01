@@ -13,41 +13,6 @@ progress: 100
   </div>
 </div>
 
-<section id="search">
-  <div class="mb-4">
-    <div class="input-group">
-      <span class="input-group-text" style="background: var(--card-color); border-color: rgba(255, 250, 205, 0.3); color: var(--text-color);">
-        <i class="fas fa-search"></i>
-      </span>
-      <input type="text" id="glossary-search" class="form-control" placeholder="Search terms..."
-             style="background: var(--card-color); border-color: rgba(255, 250, 205, 0.3); color: var(--text-color);">
-    </div>
-  </div>
-</section>
-
-<section id="terms">
-  <h2><i class="fas fa-list-alt"></i> Terms</h2>
-
-  <div id="glossary-list">
-    {% for term in site.data.glossary %}
-    <div class="glossary-entry" id="{{ term.id }}" data-title="{{ term.title | downcase }}" data-definition="{{ term.short | downcase }} {{ term.definition | strip_html | downcase }}">
-      <div class="glossary-term">
-        <h3>{{ term.title }}</h3>
-        <a href="#{{ term.id }}" class="glossary-anchor" title="Link to this term"><i class="fas fa-link"></i></a>
-      </div>
-      <div class="glossary-definition">
-        {{ term.definition }}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  <div id="no-results" class="guide-callout guide-callout-warning" style="display: none;">
-    <div class="callout-title"><i class="fas fa-search"></i> No Results</div>
-    <p class="mb-0">No terms match your search. Try a different keyword.</p>
-  </div>
-</section>
-
 <section id="categories">
   <h2><i class="fas fa-tags"></i> Quick Links by Category</h2>
 
@@ -118,6 +83,42 @@ progress: 100
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="search">
+  <h2><i class="fas fa-search"></i> Search</h2>
+  <div class="mb-4">
+    <div class="input-group">
+      <span class="input-group-text" style="background: var(--card-color); border-color: rgba(255, 250, 205, 0.3); color: var(--text-color);">
+        <i class="fas fa-search"></i>
+      </span>
+      <input type="text" id="glossary-search" class="form-control" placeholder="Search terms..."
+             style="background: var(--card-color); border-color: rgba(255, 250, 205, 0.3); color: var(--text-color);">
+    </div>
+  </div>
+</section>
+
+<section id="terms">
+  <h2><i class="fas fa-list-alt"></i> Terms</h2>
+
+  <div id="glossary-list">
+    {% for term in site.data.glossary %}
+    <div class="glossary-entry" id="{{ term.id }}" data-title="{{ term.title | downcase }}" data-definition="{{ term.short | downcase }} {{ term.definition | strip_html | downcase | escape }}">
+      <div class="glossary-term">
+        <h3>{{ term.title }}</h3>
+        <a href="#{{ term.id }}" class="glossary-anchor" title="Link to this term"><i class="fas fa-link"></i></a>
+      </div>
+      <div class="glossary-definition">
+        {{ term.definition }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div id="no-results" class="guide-callout guide-callout-warning" style="display: none;">
+    <div class="callout-title"><i class="fas fa-search"></i> No Results</div>
+    <p class="mb-0">No terms match your search. Try a different keyword.</p>
   </div>
 </section>
 
