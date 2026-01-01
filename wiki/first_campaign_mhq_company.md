@@ -218,6 +218,7 @@ toc: |
     <div class="step-number"><i class="fas fa-crown"></i></div>
     <div class="step-content">
       <h4>Setting Up Leadership</h4>
+      <img src="{{ '/assets/images/first_campaign_mhq/Setting Up Leadership.png' | relative_url }}" alt="Personnel Flags Menu" class="img-fluid rounded" style="float: right; width: 80%; margin-left: 1rem; margin-bottom: 0.5rem;">
       <ol>
         <li>Select your commander</li>
         <li>Right-click &gt; <strong>Flags</strong> &gt; Select Commander</li>
@@ -225,11 +226,7 @@ toc: |
       </ol>
     </div>
   </div>
-
-  <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Personnel Flags.png' | relative_url }}" alt="Personnel Flags Menu" class="guide-image" data-title="Personnel Flags">
-    <figcaption class="guide-caption">Setting Commander and Founder flags via right-click menu</figcaption>
-  </figure>
+  <div style="clear: both;"></div>
 
   <div class="guide-callout guide-callout-tip">
     <div class="callout-title"><i class="fas fa-star"></i> Founders</div>
