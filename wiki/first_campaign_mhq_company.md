@@ -12,6 +12,7 @@ next_title: Your First Contract
 toc: |
   <ul>
     <li><a href="#quickstart">Quick Start Generator</a></li>
+    <li><a href="#combat-forces">Understanding Combat Forces</a></li>
     <li><a href="#manual">Manual Company Creation</a></li>
     <li><a href="#funds">Funds and Money</a></li>
     <li><a href="#personnel">Staff and Personnel</a></li>
@@ -52,6 +53,23 @@ toc: |
       <iframe src="https://www.youtube.com/embed/ltcnOOQyfr4?si=oekKloA4zxrOmPxM" title="MekHQ Tutorial -- Company Generation and Assigning Support Forces" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
+</section>
+
+<section id="combat-forces">
+  <h2><i class="fas fa-chess"></i> Understanding Combat Forces</h2>
+
+  <p>Before building your force, it helps to understand the different types of combat units available in BattleTech and their tactical roles.</p>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Understanding Combat Forces
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/goIci3dOW5U?si=oTKT2HTq9Ml6EurX" title="MekHQ Tutorial -- Understanding Combat Forces" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <p>This video covers the types of combat forces (BattleMeks, vehicles, infantry, aerospace, and more), where to find additional information on each, and the advantages they bring to your company.</p>
 </section>
 
 <section id="manual">
@@ -382,6 +400,19 @@ toc: |
       </tr>
     </tbody>
   </table>
+
+  <h3>Video Tutorial: Training New Pilots</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Training New Mek Pilots
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Vyocx8a-1hk?si=Z0ysGBs5BWiW9LPu" title="MekHQ Tutorial -- Training New Mek Pilots" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <p>This video demonstrates how to use training forces to develop new MekWarriors for your company.</p>
 </section>
 
 <section id="procurement">
