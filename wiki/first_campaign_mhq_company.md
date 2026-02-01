@@ -251,6 +251,19 @@ toc: |
     <p class="mb-0">Flag founding members (Right-click &gt; Flags &gt; Founder). Founders have lower {% include glossary_term.html id="turnover" text="turnover" %}.</p>
   </div>
 
+  <h3>Video Tutorial: Custom Ranks</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Custom Ranks
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/_jXPTj2eEiM?si=tK-riw55JnQKaAis" title="MekHQ Tutorial -- Custom Ranks" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <p>This video demonstrates how to create and customize rank structures for your mercenary company.</p>
+
   <h3>Required Staff</h3>
 
   <table class="guide-table">
@@ -720,6 +733,19 @@ toc: |
       </tr>
     </tbody>
   </table>
+
+  <h3>Video Tutorial: Support Forces</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Support Forces (Types and Assigning)
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Q-SWIKhroaM?si=LYiKdLSYvSTJWnzk" title="MekHQ Tutorial -- Support Forces (Types and Assigning)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <p>This video covers the different types of support forces and how to assign them within your organization.</p>
 </section>
 
 <section id="overview">
