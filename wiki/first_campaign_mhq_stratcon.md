@@ -151,6 +151,17 @@ toc: |
       </div>
     </div>
   </div>
+
+  <h3>Video Tutorial: Support Points</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Support Points on Contract
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/xRkXbRFTgP8?si=0p2SnvBqdgiUFY2K" title="MekHQ Tutorial -- Support Points on Contract" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <section id="facilities">
@@ -336,6 +347,17 @@ toc: |
       <img src="{{ '/assets/images/SOU/splash-convoy.jpg' | relative_url }}" alt="Supply convoy" class="img-fluid rounded" style="width: 100%;">
     </div>
   </div>
+
+  <h3>Video Tutorial: Resupply and Convoys</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Resupply / Convoy Operations
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/mLffOa0loeQ?si=lakuZnMzYHXcQ3I-" title="MekHQ Tutorial -- Resupply / Convoy Operations" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <section id="scenarios">
@@ -434,6 +456,17 @@ toc: |
     <li>Commander's <strong>Tactics</strong> skill reduces interception chance</li>
     <li>Intercepted reinforcements must fight their way through</li>
   </ul>
+
+  <h3>Video Tutorial: Reinforcements</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Reinforcements
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/v9fIFQMtOQI?si=EJodBMRJFRLbT50w" title="MekHQ Tutorial -- Reinforcements" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <section id="battles">
