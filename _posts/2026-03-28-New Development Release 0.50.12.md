@@ -8,7 +8,7 @@ tags:
   - MegaMekLab
   - MekHQ
 ---
-# MegaMek, MegaMekLab, and MekHQ 0.50.12 Release Notes — DRAFT
+# MegaMek, MegaMekLab, and MekHQ 0.50.12 Release Notes
 
 ---
 
