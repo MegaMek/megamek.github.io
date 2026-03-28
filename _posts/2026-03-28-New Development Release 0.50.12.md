@@ -528,7 +528,7 @@ Various faction and campaign data improvements including updated ranks data, cor
 
 ### Coming in 0.50.13: March SUCS Data
 
-For those following our collaboration with the [SUCS team on Sarna](https://www.sarna.net/wiki/Sarna_Unified_Cartography_Society), we're excited to share that the March SUCS data drop will be incorporated into the 0.50.13 release. This means updated system ownership, coordinates, and faction data flowing into the [Interstellar Map](https://megamek.org/interstellar-map.html). If you haven't checked out the interactive map on our website, give it a look.
+For those following our collaboration with the [SUCS team on Sarna](https://www.sarna.net/wiki/Information:System_coordinates#External_References), we're excited to share that the March SUCS data drop will be incorporated into the 0.50.13 release. This means updated system ownership, coordinates, and faction data flowing into the [Interstellar Map](https://megamek.org/interstellar-map.html). If you haven't checked out the interactive map on our website, give it a look.
 
 ---
 
