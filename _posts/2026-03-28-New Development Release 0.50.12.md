@@ -311,7 +311,7 @@ Unit readout tables have been improved, and the spotting field of view now corre
 * **C3M BV Bonus**: Fixed incorrect BV bonus calculation when C3 Master is connected to C3 Master Master
 * **Nova Link**: Fixed a crash in the /nova link command. As a reminder, players should be using the Nova CEWS GUI during the end phase rather than the command line
 * **Boosted C3 and AECM**: Prevented infinite loop when a boosted C3 master is affected by Angel ECM
-* **ARAD and ECM**: Active Radar Decoy is no longer incorrectly affected by ECM
+* **ARAD and ECM**: Anti-Radiation missiles are no longer incorrectly affected by ECM
 
 #### Handheld Weapons
 
