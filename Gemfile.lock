@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.8)
+    addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bigdecimal (4.0.1)
@@ -19,7 +19,7 @@ GEM
       ffi (>= 1.15.0)
       logger
     eventmachine (1.2.7)
-    faraday (2.14.1)
+    faraday (2.14.2)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -37,8 +37,8 @@ GEM
     ffi (1.17.3-x86_64-linux-gnu)
     ffi (1.17.3-x86_64-linux-musl)
     forwardable-extended (2.6.0)
-    github-pages-health-check (1.19.1)
-      addressable (~> 2.8.7)
+    github-pages-health-check (1.19.2)
+      addressable (~> 2.9)
       dnsruby (~> 1.60)
       octokit (>= 4, < 10)
       public_suffix (>= 3.0, < 7.0)
@@ -80,7 +80,7 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.19.2)
+    json (2.19.5)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     kramdown-parser-gfm (1.1.0)
