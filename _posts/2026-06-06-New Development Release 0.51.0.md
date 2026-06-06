@@ -205,7 +205,7 @@ Handheld Weapons continue to receive stability fixes since their 0.50.10 debut:
 
 #### FrankenMek Construction
 
-The other half of the FrankenMek story: you can now build FrankenMeks directly in MegaMekLab, at the Unofficial tech level, and take them into play over in MegaMek.
+The other half of the FrankenMek story: you can now build FrankenMeks directly in MegaMekLab, at the Experimental tech level, and take them into play over in MegaMek.
 
 {% include carousel.html
 id="frankenmek-carousel"
