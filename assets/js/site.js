@@ -33,6 +33,8 @@ ready( () => {
   loadDownloadStats( "megameklab-download-stats", "megameklab" );
   loadDownloadStats( "mekhq-download-stats", "mekhq" );
 
+  loadDownloadChart();
+
   setInterval( function () { loadXMLDoc(); }, 1000 );
 } );
 
@@ -108,6 +110,77 @@ function addStatsToElement( element, releases ) {
     child.className = "list-group-item";
     child.innerHTML = text;
     element.appendChild( child );
+  } );
+}
+
+function loadDownloadChart() {
+  let canvas = document.getElementById( "download-chart" );
+
+  if ( !canvas || typeof Chart === "undefined" ) {
+    return;
+  }
+
+  fetch( "/assets/data/download_history.json" )
+    .then( ( response ) => response.json() )
+    .then( ( history ) => renderDownloadChart( canvas, history ) )
+    .catch( ( error ) => console.log( error ) );
+}
+
+function renderDownloadChart( canvas, history ) {
+  let repos = history.repos || {};
+  let colors = {
+    megamek: "#d9534f",
+    megameklab: "#5bc0de",
+    mekhq: "#5cb85c"
+  };
+
+  // Build the sorted union of every snapshot date across all repos.
+  let dateSet = {};
+  Object.keys( repos ).forEach( ( repo ) => {
+    ( repos[ repo ] || [] ).forEach( ( point ) => { dateSet[ point.date ] = true; } );
+  } );
+  let dates = Object.keys( dateSet ).sort();
+
+  // A daily delta needs a previous snapshot, so the chart starts on day two.
+  let labels = dates.slice( 1 );
+
+  let datasets = Object.keys( repos ).map( ( repo ) => {
+    let totalsByDate = {};
+    ( repos[ repo ] || [] ).forEach( ( point ) => { totalsByDate[ point.date ] = point.total; } );
+
+    let data = labels.map( ( label, index ) => {
+      let previousDate = dates[ index ]; // dates[index] is the snapshot before labels[index]
+      let current = totalsByDate[ label ];
+      let previous = totalsByDate[ previousDate ];
+
+      if ( current == null || previous == null ) {
+        return null;
+      }
+
+      // Clamp at zero so a re-tagged release can never show a negative day.
+      return Math.max( 0, current - previous );
+    } );
+
+    return {
+      label: repo,
+      data: data,
+      borderColor: colors[ repo ] || "#888888",
+      backgroundColor: colors[ repo ] || "#888888",
+      tension: 0.2,
+      spanGaps: true
+    };
+  } );
+
+  new Chart( canvas, {
+    type: "line",
+    data: { labels: labels, datasets: datasets },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: "bottom" } },
+      scales: {
+        y: { beginAtZero: true, title: { display: true, text: "Downloads per day" } }
+      }
+    }
   } );
 }
 

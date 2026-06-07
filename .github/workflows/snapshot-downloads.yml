@@ -1,0 +1,87 @@
+# Records a daily snapshot of cumulative GitHub release download counts so the
+# website can show downloads-per-day. Only aggregate integers are stored; no
+# visitor or personal data is involved.
+name: Snapshot download counts
+
+on:
+  # Runs once a day. Time is off the hour to be polite to shared runners.
+  schedule:
+    - cron: "17 6 * * *"
+
+  # Allows a manual run from the Actions tab.
+  workflow_dispatch:
+
+# Needs write access to commit the updated data file back to the repo.
+permissions:
+  contents: write
+
+# Never run two snapshots at once.
+concurrency:
+  group: "download-snapshot"
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Record release download totals
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'assets/data/download_history.json';
+            const repos = ['megamek', 'megameklab', 'mekhq'];
+            const today = new Date().toISOString().slice(0, 10);
+
+            let data = { updated: null, repos: {} };
+            if (fs.existsSync(path)) {
+              data = JSON.parse(fs.readFileSync(path, 'utf8'));
+            }
+            if (!data.repos) {
+              data.repos = {};
+            }
+
+            for (const repo of repos) {
+              const releases = await github.paginate(
+                github.rest.repos.listReleases,
+                { owner: 'MegaMek', repo, per_page: 100 }
+              );
+
+              let total = 0;
+              for (const release of releases) {
+                for (const asset of release.assets) {
+                  total += asset.download_count;
+                }
+              }
+
+              if (!data.repos[repo]) {
+                data.repos[repo] = [];
+              }
+              const series = data.repos[repo];
+              const last = series[series.length - 1];
+
+              if (last && last.date === today) {
+                // A re-run on the same day overwrites that day's value.
+                last.total = total;
+              } else {
+                series.push({ date: today, total: total });
+              }
+            }
+
+            data.updated = today;
+            fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+
+      - name: Commit updated history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data/download_history.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update download history ($(date -u +%Y-%m-%d))"
+            git push
+          fi
