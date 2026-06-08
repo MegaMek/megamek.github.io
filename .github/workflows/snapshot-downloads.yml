@@ -4,11 +4,6 @@
 name: Snapshot download counts
 
 on:
-  # TEMPORARY: lets the workflow be tested on a feature branch before merge.
-  # Remove this push trigger before merging to master.
-  push:
-    branches: [Daily-Download-Stats]
-
   # Runs once a day. Time is off the hour to be polite to shared runners.
   schedule:
     - cron: "17 6 * * *"
