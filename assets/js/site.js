@@ -33,6 +33,9 @@ ready( () => {
   loadDownloadStats( "megameklab-download-stats", "megameklab" );
   loadDownloadStats( "mekhq-download-stats", "mekhq" );
 
+  loadDownloadChart();
+  loadVersionCharts();
+
   setInterval( function () { loadXMLDoc(); }, 1000 );
 } );
 
@@ -108,6 +111,158 @@ function addStatsToElement( element, releases ) {
     child.className = "list-group-item";
     child.innerHTML = text;
     element.appendChild( child );
+  } );
+}
+
+function loadDownloadChart() {
+  let canvas = document.getElementById( "download-chart" );
+
+  if ( !canvas || typeof Chart === "undefined" ) {
+    return;
+  }
+
+  fetch( "/assets/data/download_history.json" )
+    .then( ( response ) => response.json() )
+    .then( ( history ) => renderDownloadChart( canvas, history ) )
+    .catch( ( error ) => console.log( error ) );
+}
+
+function renderDownloadChart( canvas, history ) {
+  let repos = history.repos || {};
+  let colors = {
+    megamek: "#d9534f",
+    megameklab: "#5bc0de",
+    mekhq: "#5cb85c"
+  };
+
+  // Build the sorted union of every snapshot date across all repos.
+  let dateSet = {};
+  Object.keys( repos ).forEach( ( repo ) => {
+    ( repos[ repo ] || [] ).forEach( ( point ) => { dateSet[ point.date ] = true; } );
+  } );
+  let dates = Object.keys( dateSet ).sort();
+
+  // A daily delta needs a previous snapshot, so the chart starts on day two.
+  let labels = dates.slice( 1 );
+
+  let datasets = Object.keys( repos ).map( ( repo ) => {
+    let totalsByDate = {};
+    ( repos[ repo ] || [] ).forEach( ( point ) => { totalsByDate[ point.date ] = point.total; } );
+
+    let data = labels.map( ( label, index ) => {
+      let previousDate = dates[ index ]; // dates[index] is the snapshot before labels[index]
+      let current = totalsByDate[ label ];
+      let previous = totalsByDate[ previousDate ];
+
+      if ( current == null || previous == null ) {
+        return null;
+      }
+
+      // Clamp at zero so a re-tagged release can never show a negative day.
+      return Math.max( 0, current - previous );
+    } );
+
+    return {
+      label: repo,
+      data: data,
+      borderColor: colors[ repo ] || "#888888",
+      backgroundColor: colors[ repo ] || "#888888",
+      tension: 0.2,
+      spanGaps: true
+    };
+  } );
+
+  new Chart( canvas, {
+    type: "line",
+    data: { labels: labels, datasets: datasets },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: "bottom" } },
+      scales: {
+        y: { beginAtZero: true, title: { display: true, text: "Downloads per day" } }
+      }
+    }
+  } );
+}
+
+function loadVersionCharts() {
+  let charts = [
+    { canvasId: "megamek-version-chart", repo: "megamek" },
+    { canvasId: "megameklab-version-chart", repo: "megameklab" },
+    { canvasId: "mekhq-version-chart", repo: "mekhq" }
+  ];
+
+  let hasCanvas = charts.some( ( chart ) => document.getElementById( chart.canvasId ) );
+  if ( !hasCanvas || typeof Chart === "undefined" ) {
+    return;
+  }
+
+  fetch( "/assets/data/download_history.json" )
+    .then( ( response ) => response.json() )
+    .then( ( history ) => {
+      charts.forEach( ( chart ) => {
+        let canvas = document.getElementById( chart.canvasId );
+        if ( canvas ) {
+          renderVersionChart( canvas, history, chart.repo );
+        }
+      } );
+    } )
+    .catch( ( error ) => console.log( error ) );
+}
+
+function renderVersionChart( canvas, history, repo ) {
+  let series = ( history.repos || {} )[ repo ] || [];
+
+  // A daily delta needs a previous snapshot, so two snapshots are required.
+  if ( series.length < 2 ) {
+    return;
+  }
+
+  let palette = [ "#d9534f", "#5bc0de", "#5cb85c", "#f0ad4e", "#9b59b6", "#34495e" ];
+
+  let dates = series.map( ( point ) => point.date );
+  let labels = dates.slice( 1 );
+
+  // Collect every version that appears across this repo's snapshots.
+  let versionSet = {};
+  series.forEach( ( point ) => {
+    Object.keys( point.versions || {} ).forEach( ( version ) => { versionSet[ version ] = true; } );
+  } );
+  let versions = Object.keys( versionSet ).sort();
+
+  let datasets = versions.map( ( version, index ) => {
+    let data = labels.map( ( label, labelIndex ) => {
+      let current = ( series[ labelIndex + 1 ].versions || {} )[ version ];
+      let previous = ( series[ labelIndex ].versions || {} )[ version ];
+
+      if ( current == null || previous == null ) {
+        return null;
+      }
+
+      // Clamp at zero so a re-tagged release can never show a negative day.
+      return Math.max( 0, current - previous );
+    } );
+
+    return {
+      label: version,
+      data: data,
+      borderColor: palette[ index % palette.length ],
+      backgroundColor: palette[ index % palette.length ],
+      tension: 0.2,
+      spanGaps: true
+    };
+  } );
+
+  new Chart( canvas, {
+    type: "line",
+    data: { labels: labels, datasets: datasets },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: "bottom" } },
+      scales: {
+        y: { beginAtZero: true, title: { display: true, text: "Downloads per day" } }
+      }
+    }
   } );
 }
 

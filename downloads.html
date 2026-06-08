@@ -280,3 +280,51 @@ title: Downloads
     </div>
   </div>
 </div>
+
+<hr />
+
+<!-- Downloads Per Day Section -->
+<div class="row pb-3">
+  <div class="col-12">
+    <h4>Downloads Per Day</h4>
+    <p>
+      Daily downloads are worked out from the day-to-day change in the
+      cumulative GitHub totals. The chart starts the day after tracking began.
+      It counts release downloads, not unique users.
+    </p>
+    <canvas id="download-chart" height="120"></canvas>
+  </div>
+</div>
+
+<hr />
+
+<!-- Downloads Per Day by Version Section -->
+<div class="row pb-3">
+  <div class="col-12">
+    <h4>Downloads Per Day by Version</h4>
+    <p>
+      Daily downloads broken down by version, covering the current milestone
+      release and the three most recently published releases for each program.
+    </p>
+  </div>
+</div>
+<div class="row pb-3">
+  <div class="col-12">
+    <h5>MegaMek</h5>
+    <canvas id="megamek-version-chart" height="120"></canvas>
+  </div>
+</div>
+<div class="row pb-3">
+  <div class="col-12">
+    <h5>MegaMekLab</h5>
+    <canvas id="megameklab-version-chart" height="120"></canvas>
+  </div>
+</div>
+<div class="row pb-3">
+  <div class="col-12">
+    <h5>MekHQ</h5>
+    <canvas id="mekhq-version-chart" height="120"></canvas>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
