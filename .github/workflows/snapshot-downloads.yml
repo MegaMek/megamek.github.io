@@ -41,6 +41,15 @@ jobs:
             const repos = ['megamek', 'megameklab', 'mekhq'];
             const today = new Date().toISOString().slice(0, 10);
 
+            // The milestone version is the site's own "stable" pointer. The
+            // per-version charts track this plus the three most recent releases.
+            const releasesYml = fs.readFileSync('_data/current_releases.yml', 'utf8');
+            const milestoneMatch = releasesYml.match(/^stable:\s*(.+?)\s*$/m);
+            const milestone = milestoneMatch ? milestoneMatch[1].trim() : null;
+
+            // Strip a leading "v" so tags (v0.50.11) match yml values (0.50.11).
+            const normalize = (tag) => tag.replace(/^v/, '');
+
             let data = { updated: null, repos: {} };
             if (fs.existsSync(path)) {
               data = JSON.parse(fs.readFileSync(path, 'utf8'));
@@ -56,9 +65,28 @@ jobs:
               );
 
               let total = 0;
+              const downloadsByVersion = {};
               for (const release of releases) {
+                let releaseDownloads = 0;
                 for (const asset of release.assets) {
-                  total += asset.download_count;
+                  releaseDownloads += asset.download_count;
+                }
+                total += releaseDownloads;
+                downloadsByVersion[normalize(release.tag_name)] = releaseDownloads;
+              }
+
+              // Track the milestone plus the three most recently published
+              // releases, de-duplicated (the milestone is often among them).
+              const recent = [...releases]
+                .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
+                .slice(0, 3)
+                .map((release) => normalize(release.tag_name));
+              const tracked = [...new Set([milestone, ...recent].filter(Boolean))];
+
+              const versions = {};
+              for (const version of tracked) {
+                if (downloadsByVersion[version] != null) {
+                  versions[version] = downloadsByVersion[version];
                 }
               }
 
@@ -71,8 +99,9 @@ jobs:
               if (last && last.date === today) {
                 // A re-run on the same day overwrites that day's value.
                 last.total = total;
+                last.versions = versions;
               } else {
-                series.push({ date: today, total: total });
+                series.push({ date: today, total: total, versions: versions });
               }
             }
 
