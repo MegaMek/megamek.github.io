@@ -11,6 +11,13 @@ on:
   push:
     branches: ["master"]
 
+  # Runs after the daily download snapshot commits new data. The snapshot bot
+  # pushes with GITHUB_TOKEN, which does not trigger the push event above, so
+  # without this the live site would never pick up the new download data.
+  workflow_run:
+    workflows: ["Snapshot download counts"]
+    types: [completed]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -29,6 +36,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    # Always build on push / manual runs; for snapshot-triggered runs, only
+    # deploy when that snapshot actually succeeded.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
