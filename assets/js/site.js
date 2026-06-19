@@ -114,6 +114,9 @@ function addStatsToElement( element, releases ) {
   } );
 }
 
+// Most recent days of daily deltas to plot, so the x-axis does not grow without bound.
+const DOWNLOAD_CHART_DAYS = 14;
+
 function loadDownloadChart() {
   let canvas = document.getElementById( "download-chart" );
 
@@ -143,14 +146,18 @@ function renderDownloadChart( canvas, history ) {
   let dates = Object.keys( dateSet ).sort();
 
   // A daily delta needs a previous snapshot, so the chart starts on day two.
-  let labels = dates.slice( 1 );
+  let allLabels = dates.slice( 1 );
+
+  // Keep only the most recent days so the axis stays a fixed-width rolling window.
+  let firstLabelIndex = Math.max( 0, allLabels.length - DOWNLOAD_CHART_DAYS );
+  let labels = allLabels.slice( firstLabelIndex );
 
   let datasets = Object.keys( repos ).map( ( repo ) => {
     let totalsByDate = {};
     ( repos[ repo ] || [] ).forEach( ( point ) => { totalsByDate[ point.date ] = point.total; } );
 
     let data = labels.map( ( label, index ) => {
-      let previousDate = dates[ index ]; // dates[index] is the snapshot before labels[index]
+      let previousDate = dates[ firstLabelIndex + index ]; // the snapshot before labels[index]
       let current = totalsByDate[ label ];
       let previous = totalsByDate[ previousDate ];
 
@@ -221,7 +228,11 @@ function renderVersionChart( canvas, history, repo ) {
   let palette = [ "#d9534f", "#5bc0de", "#5cb85c", "#f0ad4e", "#9b59b6", "#34495e" ];
 
   let dates = series.map( ( point ) => point.date );
-  let labels = dates.slice( 1 );
+  let allLabels = dates.slice( 1 );
+
+  // Keep only the most recent days so the axis stays a fixed-width rolling window.
+  let firstLabelIndex = Math.max( 0, allLabels.length - DOWNLOAD_CHART_DAYS );
+  let labels = allLabels.slice( firstLabelIndex );
 
   // Collect every version that appears across this repo's snapshots.
   let versionSet = {};
@@ -232,8 +243,9 @@ function renderVersionChart( canvas, history, repo ) {
 
   let datasets = versions.map( ( version, index ) => {
     let data = labels.map( ( label, labelIndex ) => {
-      let current = ( series[ labelIndex + 1 ].versions || {} )[ version ];
-      let previous = ( series[ labelIndex ].versions || {} )[ version ];
+      let seriesIndex = firstLabelIndex + labelIndex; // labels[labelIndex] is series[seriesIndex + 1]
+      let current = ( series[ seriesIndex + 1 ].versions || {} )[ version ];
+      let previous = ( series[ seriesIndex ].versions || {} )[ version ];
 
       if ( current == null || previous == null ) {
         return null;
