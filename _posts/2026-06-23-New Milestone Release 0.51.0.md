@@ -9,8 +9,6 @@ tags:
 - MekHQ
 ---
 
-<!-- FLAG: date above set to 2026-06-23 as a placeholder. Change to the actual designation/ship date. Filename date should match. -->
-
 <style>
 .hex-logo {
   float: left;
@@ -130,6 +128,7 @@ Here are the known issues we're tracking as of this post, grouped by program. No
 **MekHQ**
 
 * The Curse of Blandness: every newly generated character arrives with a 5 in every attribute and no Traits. It's like a strictly worse Thanos Snap, where everyone comes out perfectly balanced (as all things should be™).
+* While we've put in a concerted effort to fix some of the system oddities, some existing system errors may still remain. We'll continue to work through them.
 
 We're working these for upcoming Development releases. For the current live lists, and to report anything you run into yourself, see the issue trackers for [MegaMek](https://github.com/MegaMek/megamek/issues), [MegaMekLab](https://github.com/MegaMek/megameklab/issues), and [MekHQ](https://github.com/MegaMek/mekhq/issues).
 
