@@ -45,6 +45,11 @@ It's official: after its time out in the wild, version 0.51.0 has earned its Mil
 
 This is also the first Milestone to run on our new **Java 21** baseline. That's the single most important thing in this post, so before you do anything else, read the Technical section below. If you're moving up from an older release, you will need to upgrade Java to run this one.
 
+<div style="background-color: #1a3a1a; border: 2px solid #4a9f4a; border-radius: 10px; padding: 15px 20px; margin: 20px 0;">
+  <strong style="color: #7fcf7f; font-size: 1.15em; display: block; margin-bottom: 8px; text-align: center;">Heads-up: We've Repacked the Release with Data Fixes</strong>
+  As part of the Milestone designation, we've repacked 0.51.0 with some data fixes. If you downloaded 0.51.0 between June 6 and yesterday and want those fixes, you can re-download the release using the links at the bottom of this post. <strong>Unzip it to its own folder and transfer your campaigns across.</strong> Do <strong>not</strong> unzip it into your existing folder. Like all our releases, this one needs to be treated as standalone.
+</div>
+
 ## What a Milestone Actually Is
 
 We get asked this a lot, so here's the short version. Every release we put out is tagged **Development**. We retired the old "Stable" label years ago. The next build we'd ever call truly Stable is version 1.0, which is currently slated for sometime before the end of the century. A Milestone is not a separate kind of build, and it isn't a return of "Stable." It's a Development release that has proven itself.
