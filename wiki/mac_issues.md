@@ -5,7 +5,7 @@ title: Mac Issues
 
 ### Java On Mac
 
-This has gotten simpler over the years. previously you would have had to install Homebrew and walk through a process to get it setup. Now, it is as simple as running a Package Installer. The recommended installer can be found [here](https://adoptium.net/temurin/releases/?os=mac&version=17) and this is preset to use the recommended version of Java for the latest development release (17 LTS). If you intend to do Java Development, get the JDK (Java Development Kit) version, otherwise get the JRE (Java Runtime Environment) version. As of 03/27/2024 there are 2 active processor platforms for macOS, x64 for Intel and aarch64 for M-Series.
+This has gotten simpler over the years. previously you would have had to install Homebrew and walk through a process to get it setup. Now, it is as simple as running a Package Installer. The recommended installer can be found [here](https://adoptium.net/temurin/releases/?os=mac&version=21) and this is preset to use the recommended version of Java for the latest development release (21 LTS). If you intend to do Java Development, get the JDK (Java Development Kit) version, otherwise get the JRE (Java Runtime Environment) version. As of 03/27/2024 there are 2 active processor platforms for macOS, x64 for Intel and aarch64 for M-Series.
 
 ### MegaMek Installation
 

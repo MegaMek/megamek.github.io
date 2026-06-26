@@ -25,7 +25,7 @@ toc: |
 <section id="prerequisites">
   <h2><i class="fas fa-java"></i> Prerequisites</h2>
 
-  <p>MekHQ requires <strong>Java 17</strong> or newer to run. Install Java before downloading MekHQ.</p>
+  <p>MekHQ requires <strong>Java 21</strong> or newer to run. Install Java before downloading MekHQ.</p>
 
   <div class="row g-4 mb-4">
     <div class="col-md-6">
@@ -45,7 +45,7 @@ toc: |
           <i class="fab fa-apple"></i> Mac
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Install Java 17 LTS via the <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> package installer.</p>
+          <p>Install Java 21 LTS via the <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> package installer.</p>
           <p class="mb-0">Supports both <strong>Intel (x64)</strong> and <strong>Apple Silicon M-Series (aarch64)</strong>.</p>
         </div>
       </div>
@@ -54,7 +54,7 @@ toc: |
 
   <div class="guide-callout guide-callout-warning">
     <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 32-bit Systems</div>
-    <p class="mb-0">32-bit machines must use Java 17 LTS specifically. Java 21+ dropped 32-bit support entirely.</p>
+    <p class="mb-0">Java 21 dropped 32-bit support entirely, so 32-bit machines cannot run 0.51.0 or later. The last release that runs on 32-bit is the 0.50.x series with Java 17 LTS.</p>
   </div>
 
   <h3>Video Tutorial: Installing Java</h3>
