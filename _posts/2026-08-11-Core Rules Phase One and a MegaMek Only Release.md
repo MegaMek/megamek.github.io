@@ -124,9 +124,10 @@ tags: [megamek, development, rules, core-rules, release]
   max-width: none;
   margin: 0;
 }
-/* Paired videos share one box size; differing sources letterbox inside it */
+/* Paired videos share one box size; differing sources letterbox inside it.
+   Each pair sets --pair-ratio to whichever of its two videos is tallest. */
 .corerules-figure-pair video {
-  aspect-ratio: 1640 / 1396;
+  aspect-ratio: var(--pair-ratio, 1640 / 1396);
   height: auto;
   object-fit: contain;
   background-color: var(--card-color);
@@ -322,6 +323,33 @@ The other half of that work was speed, and this one's worth a number. C3, C3i an
 We've also started work on resurrecting CASPAR. It isn't player-facing yet and there's nothing to try in this release. It won't be the original vision for it either. More on that when we've got something worth showing.
 
 **Game Master mode, rebuilt.** The Edit Damage dialog is now the unit's own armor diagram, and it's a gamemaster's console rather than three columns of checkboxes. Click a location to damage it, set heat, crew hits and ammo, toggle unit conditions, hand a unit to another player, destroy it or restore it. There are temporary skill modifiers too, "+1 gunnery for 3 rounds", and combat, PSRs and the bots all respect them and they reverse themselves cleanly on expiry. The GM role is granted by vote, one player at a time. Alongside it there's a **Commands** button at the top right of the game window, giving you mouse access to the chat commands you actually use, with confirm dialogs on the dangerous ones.
+
+<div class="corerules-figure-pair" style="--pair-ratio: 1344 / 1056;">
+  <div class="corerules-figure">
+    <video
+      width="1344"
+      height="1056"
+      controls
+      preload="metadata"
+    >
+      <source src="{{ '/assets/images/Core_is_Here/GM_Mode.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="corerules-caption">The damage editor as a gamemaster's console, built on the unit's own armor diagram.</p>
+  </div>
+  <div class="corerules-figure">
+    <video
+      width="2034"
+      height="1460"
+      controls
+      preload="metadata"
+    >
+      <source src="{{ '/assets/images/Core_is_Here/Pre_Existing_Damage.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="corerules-caption">Rolling pre-existing damage onto a unit from the same dialog.</p>
+  </div>
+</div>
 
 **Generate Battlefield.** It's a button in the lobby's Select Map tab, and it makes the server build the real board immediately and send it to everyone. Until now, the board a generated map would use didn't exist until the game started, so every player's preview was their own private random roll. Press the button and everyone previews the exact hexes you'll fight on. A custom board that only the host has on disk now works for every connected player, without them having the file.
 
