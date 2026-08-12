@@ -13,6 +13,9 @@ tags: [megamek, development, rules, core-rules, release]
  * Every box and figure uses the same frame: card background, 8px radius,
  * 4px accent bar on the left. Variants differ by typography only.
  * Colours come from the site theme variables so light and dark both work.
+ * The one deliberate exception is the version chips below, which use fixed
+ * colours - the whole point of them is that the two release numbers read as
+ * different at a glance, so they must not shift with the theme.
  */
 .corerules-callout {
   background-color: var(--card-color);
@@ -161,7 +164,7 @@ tags: [megamek, development, rules, core-rules, release]
 </div>
 
 <div class="corerules-callout">
-  <h3><i class="fas fa-bolt"></i> Read The Whole Blog</h3>
+  <h3><i aria-hidden="true" class="fas fa-bolt"></i> Read The Whole Blog</h3>
   <p class="corerules-lede"><strong>Phase 1 of the Core Rules is merged, and a MegaMek-only release lands Friday.</strong></p>
   <ul>
     <li>It's in the nightlies tonight, if you don't want to wait for Friday.</li>
@@ -481,7 +484,7 @@ We're also looking at converting a couple of the dedicated servers over to Core,
 If you can't wait until Friday, Phase 1 is in the nightlies now. The new Game Options dialog isn't, so that one you'll have to wait for.
 
 <div class="corerules-callout">
-  <h3><i class="fas fa-moon"></i> What A Nightly Is</h3>
+  <h3><i aria-hidden="true" class="fas fa-moon"></i> What A Nightly Is</h3>
   <p>If you haven't run a nightly before, here's what you're getting into. A nightly is built automatically at 3:00 AM UTC every night, straight from the most recent code, so it carries the latest features, fixes and improvements and none of the testing a stable release gets. Expect bugs, and expect features that aren't finished yet. They're for the people who enjoy running the bleeding edge and reporting what breaks.</p>
 </div>
 
@@ -494,7 +497,7 @@ Three practical rules if you do run one:
 - Two nightlies from different days can't play against each other.
 
 <div class="corerules-callout">
-  <h3><i class="fas fa-bug"></i> Where To Take It</h3>
+  <h3><i aria-hidden="true" class="fas fa-bug"></i> Where To Take It</h3>
   <ul>
     <li><strong>A bug in MegaMek.</strong> The <a href="https://github.com/MegaMek/megamek/issues">MegaMek tracker</a>, with the build number and enough detail for us to reproduce it.</li>
     <li><strong>A question about how a Core rule works.</strong> The <a href="https://www.battletech.com/forums/index.php/board,109.0.html">Core Rulebook forum</a>, not our tracker. We're learning these rules alongside everyone else, and we're in no position to hand out rulings.</li>
