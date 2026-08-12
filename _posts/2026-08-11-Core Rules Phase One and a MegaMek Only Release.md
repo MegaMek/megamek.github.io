@@ -124,9 +124,10 @@ tags: [megamek, development, rules, core-rules, release]
   max-width: none;
   margin: 0;
 }
-/* Paired videos share one box size; differing sources letterbox inside it.
-   Each pair sets --pair-ratio to whichever of its two videos is tallest. */
-.corerules-figure-pair video {
+/* Paired media share one box size; differing sources letterbox inside it.
+   Each pair sets --pair-ratio to whichever of its two sources is tallest. */
+.corerules-figure-pair video,
+.corerules-figure-pair img {
   aspect-ratio: var(--pair-ratio, 1640 / 1396);
   height: auto;
   object-fit: contain;
@@ -412,7 +413,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
 
 **Engineering gear that finally does something.** Bridge-Layer (AVLB) equipment, bridge-building engineers, firefighting engineers, trench and fieldworks engineers, industrial elevators, and the bulldozer, which now clears rubble over several turns, changes charge damage, and lets a backhoe-equipped 'Mech build field fortifications the way vehicles do.
 
-<div class="corerules-figure-pair">
+<div class="corerules-figure-pair" style="--pair-ratio: 601 / 529;">
   <div class="corerules-figure">
     <img
       src="{{ '/assets/images/Core_is_Here/AVLB.png' | relative_url }}"
