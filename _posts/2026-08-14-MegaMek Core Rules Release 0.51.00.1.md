@@ -80,6 +80,46 @@ tags:
 .corerules-callout.corerules-warning h3 {
   color: #d32f2f;
 }
+/*
+ * Hazard-tape box. Used for the one workflow we are telling people they may try
+ * but that we have not validated - it is neither a plain note nor a hard "do not
+ * do this", so it gets its own yellow-and-black treatment. Colours are fixed
+ * across themes, same reasoning as the red box above.
+ */
+.corerules-callout.corerules-caution {
+  position: relative;
+  overflow: hidden;
+  border-left-color: #f2b705;
+  border-top: 1px solid #f2b705;
+  border-right: 1px solid #f2b705;
+  border-bottom: 1px solid #f2b705;
+  /* Room for the hazard tape that sits across the top edge */
+  padding-top: 1.75rem;
+}
+.corerules-callout.corerules-caution::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f2b705 0,
+    #f2b705 14px,
+    #1a1a1a 14px,
+    #1a1a1a 28px
+  );
+}
+.corerules-callout.corerules-caution h3 {
+  /* Shrink-to-fit block so the chip hugs the text but still centres */
+  display: table;
+  margin: 0 auto 0.9rem;
+  background-color: #f2b705;
+  color: #1a1a1a;
+  padding: 0.3rem 0.85rem;
+  border-radius: 4px;
+}
 
 /*
  * Version chips. The two release numbers differ by one character, so they get
@@ -185,13 +225,14 @@ It's here. **MegaMek <span class="corerules-ver corerules-ver-now">0.51.00.1</sp
 
 MegaMek on its own, without MegaMekLab and MekHQ beside it. We've done that before, but it's been a very long time, and it's rare enough that it comes with strings attached. We told you on Monday it was coming, and here it is, on the day we said.
 
-Before anything else, the one thing you cannot afford to skim past.
+Before anything else, what this release is, what it isn't, and when the rest of the suite catches up.
 
 <div class="corerules-callout corerules-warning">
-  <h3><i aria-hidden="true" class="fas fa-triangle-exclamation"></i> This Release Is MegaMek Only and Does Not Work With MekHQ</h3>
-  <p class="corerules-announce">The Core Rules Edition is MegaMek and nothing else.<br>It is <u>not compatible</u> with MekHQ.</p>
-  <p>There is no matching MegaMekLab or MekHQ build, and there won't be one. Don't launch it from MekHQ, don't point a campaign at it, and don't copy it into a folder any other program is using. If you run campaigns, MekHQ stays on 0.51.0 with its own MegaMek 0.51.0 beside it, exactly as it is today, and this release sits in a separate folder of its own.</p>
-  <p>Making the Core Rules work properly with MegaMekLab and MekHQ is still in progress. That's a large part of why this went out standalone, and it's what <span class="corerules-ver corerules-ver-later">0.51.01</span> is for.</p>
+  <h3><i aria-hidden="true" class="fas fa-triangle-exclamation"></i> There Won't Be a MekHQ and MegaMekLab Release Until October/November</h3>
+  <p class="corerules-announce">The Core Rules Edition is MegaMek and nothing else.</p>
+  <p>MekHQ is what's holding <span class="corerules-ver corerules-ver-later">0.51.01</span> back. We are in the middle of a massive rework of a whole range of campaign systems, and at this exact moment MekHQ is limping along in pieces. Putting it back together is what takes us into October or November. MegaMek, on the other hand, is in really good shape, so rather than sit on it we let it out early and put the Core Rules in your hands where you can actually play them.</p>
+  <p>There is no MegaMekLab or MekHQ build to go with this one. If you run campaigns, you stay on the 0.51.0 Milestone &mdash; MekHQ 0.51.0 with its own MegaMek 0.51.0 beside it, exactly as it is today. Installing this one alongside it takes some care, and <a href="#before-you-install">Before You Install</a> below tells you exactly how.</p>
+  <p>MegaMekLab and MekHQ catch up with <span class="corerules-ver corerules-ver-later">0.51.01</span>, end of October at the earliest and more realistically into November, as a full suite release. This build exists so Phase One gets played and tested before we get there.</p>
 </div>
 
 Read the whole thing before you install it. Every question we got asked the last time is answered somewhere below, and this release has more sharp edges than most. If it isn't answered here, come and ask us on [the Discord](https://discord.gg/megamek).
@@ -217,19 +258,27 @@ Here's how to read it. Our numbering runs 0.51.00, 0.51.01, 0.51.02 and so on, s
 
 Check it against the main menu when you launch. If the number under the logo doesn't read 0.51.00.1, you're not in this build.
 
-The timeline for <span class="corerules-ver corerules-ver-later">0.51.01</span> is the one we gave you in July and it hasn't changed: end of October at the earliest, more realistically into the middle of November, carrying the rest of the MegaMek work along with the MekHQ contract rewrite and everything else.
-
 ---
 
 ## Before You Install
 
 Three things, and they matter more than usual with this release.
 
-**It has to be in its own folder.** Unzip it somewhere new. Not into your 0.51.0 folder, not over the top of an existing install, not into anything another program is pointed at. These are separate folders, and that isn't a suggestion. What you should end up with is a MegaMek Core folder sitting by itself, and your 0.51.0 install untouched beside it.
+**DO NOT unzip MegaMek Core into a MekHQ release.** Not your 0.51.0 folder, not any other MekHQ install, not over the top of anything. MekHQ carries its own copy of MegaMek inside its folder, and dropping this build on top of that is how you break all three programs at once. Don't cross the streams. It would be bad.
 
-**Don't point MekHQ at it.** This build is not compatible with MekHQ, and that isn't a caution, it's a statement of fact. MegaMekLab and MekHQ are still on 0.51.0 and they stay there. Don't set this as MekHQ's MegaMek path and don't launch a scenario into it. Monday's post sets out the one route we're comfortable with for getting campaign units in front of the Core Rules, and what we expect of you if you try it. Read it there.
+Unzip it somewhere new instead. What you should end up with is a MegaMek Core folder sitting by itself, and your MekHQ 0.51.0 install untouched beside it. These are separate folders, and that isn't a suggestion.
+
+**Don't point MekHQ at it either.** We haven't confirmed whether this build is fully compatible with MegaMekLab and MekHQ, and we didn't have the runway to check before release. Until we have, treat it as though it isn't. MegaMekLab and MekHQ are still on 0.51.0 and they stay there. Don't set this as MekHQ's MegaMek path and don't automatically launch a scenario into it.
 
 **Don't carry preference files forward.** Treat this as a stand-alone install, the same way you'd treat a nightly.
+
+There is one route we're comfortable with for getting campaign units in front of the Core Rules, and it's the same one we set out on Monday.
+
+<div class="corerules-callout corerules-caution">
+  <h3><i aria-hidden="true" class="fas fa-triangle-exclamation"></i> Putting Campaign Units Through the Core Rules</h3>
+  <p>If you want to try it, we suspect you can export MUL files out of MekHQ, fight the battle in the Core release, and resolve the results manually back in MekHQ. All of it by hand, with no connection between the two programs. We're fine with you testing that.</p>
+  <p>Go in understanding there may be issues, because <strong>we haven't validated that workflow end to end.</strong> If you run into problems, tell us. Finding them now is useful to us.</p>
+</div>
 
 If stability is what you're after, stay on 0.51.0 and sit this one out. We'd rather say that plainly now than field the complaints later.
 
@@ -238,7 +287,7 @@ If stability is what you're after, stay on 0.51.0 and sit this one out. We'd rat
 ## The Core Rules
 
 <div class="corerules-callout corerules-announce">
-  MegaMek now defaults to Core Rules.
+  A reminder that MegaMek now defaults to Core Rules.
 </div>
 
 Open Game Options, look at the Basic tab, and there's a drop-down for the rule system. Core is what's selected when you get there. Total Warfare hasn't gone anywhere and switching back takes one click.
