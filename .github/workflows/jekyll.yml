@@ -7,11 +7,9 @@
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch. Both names are listed while the
-  # default branch is renamed from master to main, so the site keeps building
-  # either side of the rename; master can be dropped once it is done.
+  # Runs on pushes targeting the default branch
   push:
-    branches: ["master", "main"]
+    branches: ["main"]
 
   # Runs after the daily download snapshot commits new data. The snapshot bot
   # pushes with GITHUB_TOKEN, which does not trigger the push event above, so
