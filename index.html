@@ -42,6 +42,22 @@ title: Home
         <br />
       </div>
 
+      {% if site.data.current_releases.corerules %}
+      <div class="col text-center">
+        <a class='download_link corerules-download'
+          href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.corerules }}/MegaMek-{{ site.data.current_releases.corerules }}.tar.gz">
+          <span>
+            <img src="assets/images/icons/megamek.png" alt="MegaMek Icon" />
+          </span>
+          <span>
+            Core Rules
+            <br />
+            <span class='version_display'>{{ site.data.current_releases.corerules }}</span>
+          </span>
+          <span class='corerules-spray' aria-hidden="true">Core Rules Edition</span>
+        </a>
+      </div>
+      {% else %}
       <div class="col text-center downloader" data-version="{{ site.data.current_releases.dev }}">
         <a href="" class='download_link'>
           <span>
@@ -54,6 +70,7 @@ title: Home
           </span>
         </a>
       </div>
+      {% endif %}
     </div>
     <div class="row">
       <div class="col text-center">

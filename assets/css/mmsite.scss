@@ -204,6 +204,58 @@ a.download_link {
   }
 }
 
+/**********************************************************************/
+/* Core Rules release button                                          */
+/* Carries the same flair as the MegaMek splash screen: the edition    */
+/* tag sprayed across the button in red Rubik Spray Paint lettering,   */
+/* outlined in black and tilted a few degrees off level.               */
+/**********************************************************************/
+a.download_link.corerules-download {
+  position: relative;
+  overflow: hidden;
+  border-color: #a51c1c;
+
+  /* Tighter than the standard button so "Core Rules" still fits beside the
+     icon rather than wrapping underneath it */
+  padding-left: 18px;
+  padding-right: 18px;
+
+  /* Lets the sprayed tag size itself against the button rather than the
+     viewport, so it spans the button at every screen width */
+  container-type: inline-size;
+
+  &:hover {
+    border-color: #e2231a;
+    text-shadow: 1px 0 20px #e2231a;
+  }
+
+  .corerules-spray {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    bottom: 10px;
+    z-index: 2;
+
+    display: block;
+    padding: 0;
+    color: #e2231a;
+    font-family: "Rubik Spray Paint", $font-stack;
+    font-size: 1.1rem; /* fallback where container queries are unsupported */
+    font-size: 8cqw;
+    line-height: 1.15;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: rotate(-5deg);
+    text-shadow:
+      -1px -1px 0 #000000,
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+      1px 1px 0 #000000,
+      0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+}
+
 /****************************************************/
 /* Override default lists to use Font Awesome icons */
 /****************************************************/
