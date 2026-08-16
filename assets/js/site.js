@@ -241,14 +241,43 @@ function renderVersionChart( canvas, history, repo ) {
   } );
   let versions = Object.keys( versionSet ).sort();
 
+  // The snapshot follows the milestone plus the three newest releases, so a
+  // version can appear late (a new release) or drop out and come back later.
+  // Only the first of those two is safe to treat as starting from zero, so
+  // record where each version is first seen.
+  let firstSeenIndex = {};
+  series.forEach( ( point, index ) => {
+    Object.keys( point.versions || {} ).forEach( ( version ) => {
+      if ( firstSeenIndex[ version ] == null ) {
+        firstSeenIndex[ version ] = index;
+      }
+    } );
+  } );
+
   let datasets = versions.map( ( version, index ) => {
     let data = labels.map( ( label, labelIndex ) => {
       let seriesIndex = firstLabelIndex + labelIndex; // labels[labelIndex] is series[seriesIndex + 1]
       let current = ( series[ seriesIndex + 1 ].versions || {} )[ version ];
       let previous = ( series[ seriesIndex ].versions || {} )[ version ];
 
-      if ( current == null || previous == null ) {
+      if ( current == null ) {
         return null;
+      }
+
+      if ( previous == null ) {
+        // A brand new release has no day before it, so its first snapshot is
+        // the whole first-day count. Without this it plots nothing at all on
+        // launch day, which is when people most want to see it. A version that
+        // merely dropped out of tracking and returned is left as a gap - its
+        // stored figure is cumulative, so assuming zero would draw a spike of
+        // the entire download history.
+        let isFirstSnapshotForVersion = firstSeenIndex[ version ] === seriesIndex + 1;
+
+        if ( !isFirstSnapshotForVersion ) {
+          return null;
+        }
+
+        previous = 0;
       }
 
       // Clamp at zero so a re-tagged release can never show a negative day.
