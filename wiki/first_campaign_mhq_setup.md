@@ -28,7 +28,7 @@ toc: |
   <p>When you first start MekHQ, click <strong>New Campaign</strong>. After a brief loading screen, you'll see the Campaign Preset selection.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Campaign setup.png' | relative_url }}" alt="Campaign Preset Selection" class="guide-image" data-title="Campaign Preset Selection">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Campaign setup.png' | relative_url }}" alt="Campaign Preset Selection" class="guide-image" data-title="Campaign Preset Selection">
     <figcaption class="guide-caption">Campaign Preset Selection dialog</figcaption>
   </figure>
 
@@ -75,7 +75,7 @@ toc: |
   <h2><i class="fas fa-cog"></i> General Settings</h2>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/general section.png' | relative_url }}" alt="General Settings" class="guide-image" data-title="General Settings">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/general section.png' | relative_url }}" alt="General Settings" class="guide-image" data-title="General Settings">
     <figcaption class="guide-caption">General Settings tab</figcaption>
   </figure>
 
@@ -151,7 +151,7 @@ toc: |
       </table>
     </div>
     <div class="col-lg-5">
-      <img src="{{ '/assets/images/SOU/Mmek_Mercpeace_500x350.jpg' | relative_url }}" alt="MechWarriors meeting" class="img-fluid rounded" style="width: 100%;">
+      <img src="{{ '/assets/images/wiki/first_campaign_mhq/Mmek_Mercpeace_500x350.jpg' | relative_url }}" alt="MechWarriors meeting" class="img-fluid rounded" style="width: 100%;">
     </div>
   </div>
 
@@ -228,7 +228,7 @@ toc: |
   <h3>Supplies and Acquisition</h3>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Logistics.png' | relative_url }}" alt="Logistics Settings" class="guide-image" data-title="Logistics Settings">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Logistics.png' | relative_url }}" alt="Logistics Settings" class="guide-image" data-title="Logistics Settings">
     <figcaption class="guide-caption">Logistics Settings tab</figcaption>
   </figure>
 
@@ -276,7 +276,7 @@ toc: |
       </div>
     </div>
     <div class="col-lg-5">
-      <img src="{{ '/assets/images/SOU/splash-guard.jpg' | relative_url }}" alt="Meks on patrol" class="img-fluid rounded" style="width: 100%;">
+      <img src="{{ '/assets/images/wiki/first_campaign_mhq/splash-guard.jpg' | relative_url }}" alt="Meks on patrol" class="img-fluid rounded" style="width: 100%;">
     </div>
   </div>
 </section>
@@ -323,7 +323,7 @@ toc: |
   <h3>Digital GMs (StratCon)</h3>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Configuring Campaign Rules.png' | relative_url }}" alt="StratCon Settings" class="guide-image" data-title="StratCon Settings">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Configuring Campaign Rules.png' | relative_url }}" alt="StratCon Settings" class="guide-image" data-title="StratCon Settings">
     <figcaption class="guide-caption">StratCon Settings</figcaption>
   </figure>
 
@@ -495,7 +495,7 @@ toc: |
       </table>
     </div>
     <div class="col-lg-5">
-      <img src="{{ '/assets/images/SOU/splash-demolition.jpg' | relative_url }}" alt="Urban combat" class="img-fluid rounded" style="width: 100%;">
+      <img src="{{ '/assets/images/wiki/first_campaign_mhq/splash-demolition.jpg' | relative_url }}" alt="Urban combat" class="img-fluid rounded" style="width: 100%;">
     </div>
   </div>
 

@@ -217,7 +217,7 @@ It's here. **MegaMek <span class="corerules-ver corerules-ver-now">0.51.00.1</sp
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_is_Here/Splash_Core_Rules_Edition.jpg' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-08-14-megamek-core-rules-release-0.51.00.1/Splash_Core_Rules_Edition.jpg' | relative_url }}"
     alt="The MegaMek launcher with Core Rules Edition sprayed across the logo"
   />
   <p class="corerules-caption">You'll know which build you're in the moment it opens.</p>

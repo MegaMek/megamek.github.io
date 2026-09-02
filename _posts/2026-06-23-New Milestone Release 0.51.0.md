@@ -28,7 +28,7 @@ h3, h4, h5, h6 {
 </style>
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto 20px auto;">
-  <img src="/assets/images/SOU/MMek_Awardceremony_finfull.jpg" alt="MegaMek, MegaMekLab, and MekHQ 0.51.0 Milestone Release" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2025/2025-02-18-2025-state-of-the-universe/MMek_Awardceremony_finfull.jpg" alt="MegaMek, MegaMekLab, and MekHQ 0.51.0 Milestone Release" style="width: 100%; height: auto; display: block;">
 </div>
 
 Hi Everyone!
@@ -73,7 +73,7 @@ Over the observation period, it held up. A couple of features remain more beta t
 
 Because this is the same 0.51.0 build, the complete feature list, with screenshots and videos, already lives in the [0.51.0 release notes](https://megamek.org/2026/06/06/New-Development-Release-0.51.0.html). Here's the short version of what you're getting.
 
-<img src="/assets/images/SOU/MegaMek.png" alt="MegaMek Logo" class="hex-logo">
+<img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/MegaMek.png" alt="MegaMek Logo" class="hex-logo">
 
 ### MegaMek
 
@@ -81,7 +81,7 @@ Because this is the same 0.51.0 build, the complete feature list, with screensho
 
 **FrankenMeks** have arrived: cobbled-together 'Meks rebuilt from mismatched salvage, now buildable in MegaMekLab and playable in MegaMek. We also added a batch of rules straight from the manuals, including Mountain Troops, Chainsaws and Dual Saws, Ghost Targets, and geysers that now factor into line of sight. On top of that you'll find new on-board toast notifications so important events are harder to miss, a reworked Ruler and line-of-sight tool, and a big cleanup pass on the lobby equipment dialog.
 
-<img src="/assets/images/SOU/MegaMekLab.png" alt="MegaMekLab Logo" class="hex-logo">
+<img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/MegaMekLab.png" alt="MegaMekLab Logo" class="hex-logo">
 
 ### MegaMekLab
 
@@ -89,7 +89,7 @@ Because this is the same 0.51.0 build, the complete feature list, with screensho
 
 The other half of the FrankenMek story: you can now build them directly in MegaMekLab at the Experimental tech level and take them into play. Record sheets also gained some useful options, including the ability to hide the rules level, proper Radical Heat Sink display, and an improved total-heat readout.
 
-<img src="/assets/images/SOU/MekHQ.png" alt="MekHQ Logo" class="hex-logo">
+<img src="/assets/images/site/MekHQ.png" alt="MekHQ Logo" class="hex-logo">
 
 ### MekHQ
 
@@ -108,7 +108,7 @@ For all the details, head to the [full 0.51.0 release notes](https://megamek.org
 ## Known Issues
 
 <div style="width: 100%; max-width: 600px; margin: 20px auto;">
-  <img src="/assets/images/SOU/splash-rescue.jpg" alt="Known Issues" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/splash-rescue.jpg" alt="Known Issues" style="width: 100%; height: auto; display: block;">
 </div>
 
 Here are the known issues we're tracking as of this post, grouped by program. None are show-stoppers, but they're worth knowing about going in.
@@ -137,7 +137,7 @@ We're working these for upcoming Development releases. For the current live list
 ## Looking Ahead to 0.51.01
 
 <div style="width: 100%; max-width: 600px; margin: 20px auto;">
-  <img src="/assets/images/SOU/splash-liftoff.jpg" alt="Looking Ahead to 0.51.01" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/site/splash-liftoff.jpg" alt="Looking Ahead to 0.51.01" style="width: 100%; height: auto; display: block;">
 </div>
 
 First, the question everyone asks: when? We don't have a date for 0.51.01. What we can tell you is that it likely won't drop until early fall. We also want to set some expectations, especially on the MekHQ side, because some massive changes are coming.
@@ -169,7 +169,7 @@ That said, we want to be straight with you. This is an almost 25-year-old progra
 ## Technical Stuff
 
 <div style="width: 100%; max-width: 600px; margin: 20px auto;">
-  <img src="/assets/images/SOU/splash-repairs.jpg" alt="Technical Stuff" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/site/splash-repairs.jpg" alt="Technical Stuff" style="width: 100%; height: auto; display: block;">
 </div>
 
 <div style="background-color: #4a1a1a; border: 3px solid #e03030; border-radius: 10px; padding: 18px 22px; margin: 25px 0; text-align: center;">
@@ -231,5 +231,5 @@ Thank you, as always, for playing, testing, and reporting. A Milestone only happ
 Seyla!
 
 <div style="width: 100%; max-width: 800px; margin: 30px auto;">
-  <img src="/assets/images/SOU/splash-ceremony.jpg" alt="MegaMek 0.51.0 Milestone" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/site/splash-ceremony.jpg" alt="MegaMek 0.51.0 Milestone" style="width: 100%; height: auto; display: block;">
 </div>

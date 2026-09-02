@@ -130,7 +130,7 @@ tags: [megamek, mekhq, megameklab, mekbay, development, rules, core-rules]
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_Rules/core-products-lineup.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/core-products-lineup.png' | relative_url }}"
     alt="The BattleTech Starter Box, Core Box, and Core Rulebook"
   />
   <p class="corerules-caption">The new Core product line: <a href="https://www.catalystgamelabs.com/news/catalyst-game-labs-battletech-refit-redeployment">Starter Box, Core Box, and Core Rulebook</a>.</p>
@@ -258,7 +258,7 @@ If you go check the official Catalyst forums, you'll notice they are now stating
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_Rules/end-of-an-era-tw-errata.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/end-of-an-era-tw-errata.png' | relative_url }}"
     alt="Catalyst forum announcement: End of an Era - TW Errata"
   />
   <p class="corerules-caption">The announcement on the official BattleTech forums.</p>
@@ -288,7 +288,7 @@ Here's a concrete example. One of the features of the Damage Interrupt Circuit (
 
 <div class="corerules-figure corerules-figure-narrow">
   <img
-    src="{{ '/assets/images/Core_Rules/core-rulebook-cover.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/core-rulebook-cover.png' | relative_url }}"
     alt="BattleTech Core Rulebook cover"
   />
   <p class="corerules-caption">The first of the refreshed rulebooks.</p>
@@ -335,7 +335,7 @@ You'll notice on the official record sheets that there's no tech level anymore. 
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_Rules/core-record-sheet.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/core-record-sheet.png' | relative_url }}"
     alt="Core Rules BattleMech record sheet 'Mech Data block, with no tech level listed"
   />
   <p class="corerules-caption">Tech Base is still there. Rules level isn't.</p>

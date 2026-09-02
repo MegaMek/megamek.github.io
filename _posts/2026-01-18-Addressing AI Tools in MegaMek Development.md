@@ -21,7 +21,7 @@ Let's be specific: the only AI-generated art in MegaMek consists of the pilot po
 The portrait packs came at a time when we needed a few thousand faces. People were creating packs using images of movie stars and other recognizable faces, which raised legal concerns. We sourced these images as ethically as we could manage—I sought out an image generation service that used licensed source images for training (not stolen art) and was licensed for our intended use. These images were paid for out of my own pocket and donated to the project. A human artist, Saxarba, then refined them into the final images you've been using since 2020—[we even said at the time](https://megamek.org/2020/11/08/New-Dev-Releases-v0.47.12.html): "A big thanks to Saxarba for taking generic computer generated faces and turning them into a BattleTech feel."
 
 <div style="width: 100%; max-width: 800px; margin: 20px auto;">
-  <img src="/assets/images/AI_Blog/Saxarba Email.png" alt="Saxarba Email about portrait refinement" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2026/2026-01-18-addressing-ai-tools-in-megamek-development/Saxarba Email.png" alt="Saxarba Email about portrait refinement" style="width: 100%; height: auto; display: block;">
 </div>
 
 The PACAR resolution screen was contributed by a developer who is no longer with the project. It was simply a placeholder until we could commission a proper replacement—[we've now removed it](https://github.com/MegaMek/mm-data/commit/75db62a444ee733ae5926289d5378a0cc4e49d57).
@@ -66,7 +66,7 @@ We are an open-source project. Our [code, processes, and licensing are all publi
 There's nothing hidden here—we intentionally label pull requests involving AI tools so we can track that code for future reference if needed. Ironically, the only unlabeled AI code is when a human forgets to tag it.
 
 <div style="width: 100%; max-width: 800px; margin: 20px auto;">
-  <img src="/assets/images/AI_Blog/SamplePR.png" alt="Sample Pull Request showing AI label" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2026/2026-01-18-addressing-ai-tools-in-megamek-development/SamplePR.png" alt="Sample Pull Request showing AI label" style="width: 100%; height: auto; display: block;">
 </div>
 
 ---

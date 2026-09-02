@@ -13,18 +13,18 @@ author: Hammer, Project Lead
 As a lot of you know, MegaMek has been around since 2002. And since its inception, we have introduced MegaMekLab and MekHQ, which have become incredibly successful parts of the MegaMek suite. All of our projects have always been built in Java, but we've watched in the last few years as things have moved online, more cloud-based. We consistently hear two big requests from the community: a web-based way to play MegaMek, and having a web-based tool for searching units, building forces, and then generating record sheets. MekBay addresses the second request as our first move into web-based tools, and represents our first full project that's not Java.
 
 <div style="max-width: 1200px; margin: auto; display: flex; gap: 20px;">
-  <a href="{{ '/assets/images/MekBay/Overview.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/screenshots/Mekbay_Overview.png' | relative_url }}" target="_blank" style="flex: 1;">
     <img
-      src="{{ '/assets/images/MekBay/Overview.png' | relative_url }}"
+      src="{{ '/assets/images/screenshots/Mekbay_Overview.png' | relative_url }}"
       alt="MekBay Overview"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
       onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"
     />
   </a>
-  <a href="{{ '/assets/images/MekBay/Record_Sheet_1.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/screenshots/MekBay_RS.png' | relative_url }}" target="_blank" style="flex: 1;">
     <img
-      src="{{ '/assets/images/MekBay/Record_Sheet_1.png' | relative_url }}"
+      src="{{ '/assets/images/screenshots/MekBay_RS.png' | relative_url }}"
       alt="Example of Record Sheet with Damage"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -46,7 +46,7 @@ Access the full MegaMek unit database directly from your browser or mobile devic
 <div style="max-width:800px;margin:auto">
   <video controls preload="metadata" playsinline
          style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
-    <source src="{{ '/assets/images/MekBay/video/Filtering.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2025/2025-09-23-introducing-mekbay-megameks-web-evolution/Filtering.mp4' | relative_url }}" type="video/mp4">
     Sorry—your browser can’t play this video.
   </video>
 </div>
@@ -57,7 +57,7 @@ Build and manage your forces with automatic cloud synchronization. Start buildin
 <div style="max-width:800px;margin:auto">
   <video controls preload="metadata" playsinline
          style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
-    <source src="{{ '/assets/images/MekBay/video/TRO_Sample.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2025/2025-09-23-introducing-mekbay-megameks-web-evolution/TRO_Sample.mp4' | relative_url }}" type="video/mp4">
     Sorry—your browser can’t play this video.
   </video>
 </div>
@@ -69,7 +69,7 @@ Generate clean, printable record sheets for tabletop play.
 <div style="max-width:800px;margin:auto">
   <video controls preload="metadata" playsinline
          style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)">
-    <source src="{{ '/assets/images/MekBay/video/RS_Sample.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2025/2025-09-23-introducing-mekbay-megameks-web-evolution/RS_Sample.mp4' | relative_url }}" type="video/mp4">
     Sorry—your browser can’t play this video.
   </video>
 </div>

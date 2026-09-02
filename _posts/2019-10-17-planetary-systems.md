@@ -8,17 +8,17 @@ tags:
 
 When you open up MekHQ 0.47.1, you may notice a big change in the interstellar map panel. First, when you click on the menu at the bottom to get color-coded information, you will notice something like this:
 
-![population view](/assets/images/planetary_system/pop_now.png){:class="img-fluid w-75"}
+![population view](/assets/images/posts/2019/2019-10-17-planetary-systems/pop_now.png){:class="img-fluid w-75"}
 
 Thats a full display of the relative population size of *every* planetary system in the data. There are no more missing grey dots. Thats true of all the elements selectable from that menu.
 
 It gets even better, though! The data for each planetary system dynamically adjust from the point a colony is founded through to 3145. So, you can get realistic planetary data for any time period you play in. Here, for example, is the same (much brighter population map) at the height of the Star League (2765):
 
-![population view in 2765](/assets/images/planetary_system/pop_2765.png){:class="img-fluid w-75"}
+![population view in 2765](/assets/images/posts/2019/2019-10-17-planetary-systems/pop_2765.png){:class="img-fluid w-75"}
 
 But wait, there's more. You may have noticed that I wrote "planetary system" and not "planet." If you double-click on any dot on the interstellar map, you will switch to a view like this:
 
-![planetary system view](/assets/images/planetary_system/planetary_system_view.png){:class="img-fluid w-75"}
+![planetary system view](/assets/images/wiki/first_campaign_mhq/planetary_system_view.png){:class="img-fluid w-75"}
 
 That's right, you are looking at a map of the planetary system, complete with markers indicating the current unit's course and direction of travel, and indicators for recharge stations at the zenith and nadir points.
 

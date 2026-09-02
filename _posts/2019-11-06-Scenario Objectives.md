@@ -18,7 +18,7 @@ It's an experimental feature, so expect bugs and inconsistencies. Feedback is ap
 
 The objective UI looks like this:
 
-![ScenarioObjectives](/assets/images/ScenarioObjectives.jpg){:class="img-fluid"}
+![ScenarioObjectives](/assets/images/posts/2019/2019-11-06-scenario-objectives/ScenarioObjectives.jpg){:class="img-fluid"}
 
 Short Description should be a text description of the objective. It can be as long as you want, but longer ones may start to look weird in the scenario UI.
 

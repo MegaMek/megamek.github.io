@@ -186,7 +186,7 @@ Until the release of the 0.50.04 (which will include built-in tools for contribu
 5. Note the build number (e.g., "MekHQ Nightly CI #454")
 6. Download the non-Mac release from the Artifacts section
 
-<img src="/assets/images/CASPAR/nightly.gif" alt="CASPAR Nightly Build Demo" style="max-width: 100%; height: auto;" />
+<img src="/assets/images/posts/2025/2025-02-28-princess-vs-caspar-a-battletech-tale/nightly.gif" alt="CASPAR Nightly Build Demo" style="max-width: 100%; height: auto;" />
 
 #### IF YOU ENCOUNTER ISSUES:
 
@@ -206,11 +206,11 @@ For detailed information about nightly builds, visit: [https://github.com/MegaMe
 
 2. Use the nightly build to enable the "log all game actions (server only)" option, which creates detailed records of your games.
 
-<img src="/assets/images/CASPAR/enable_game_actions.png" alt="CASPAR Enable Game Actions" style="max-width: 100%; height: auto;" />
+<img src="/assets/images/posts/2025/2025-02-28-princess-vs-caspar-a-battletech-tale/enable_game_actions.png" alt="CASPAR Enable Game Actions" style="max-width: 100%; height: auto;" />
 
 **PRIVACY NOTE:** No personal identification data is collected through these game logs—unless you deliberately incorporate such information into unit names.
 
-<img src="/assets/images/CASPAR/TSV_Sample.gif" alt="CASPAR TSV Sample" style="max-width: 100%; height: auto;" />
+<img src="/assets/images/posts/2025/2025-02-28-princess-vs-caspar-a-battletech-tale/TSV_Sample.gif" alt="CASPAR TSV Sample" style="max-width: 100%; height: auto;" />
 
 #### DATASET REQUIREMENTS:
 

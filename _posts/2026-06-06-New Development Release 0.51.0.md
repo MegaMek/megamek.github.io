@@ -53,9 +53,9 @@ FrankenMeks have arrived. These cobbled-together 'Meks, rebuilt from salvaged an
 A new toast notification overlay puts in-game alerts directly on the board, making important events much harder to miss.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_51_0/Toast.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Toast.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/Releases/0_51_0/Toast.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Toast.png' | relative_url }}"
       alt="Board toast notification"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -74,9 +74,9 @@ A new toast notification overlay puts in-game alerts directly on the board, maki
 Building on the elevation cross-section work from 0.50.12, the Ruler/LOS tool gets further refinement: the LOS elevation diagram and ruler have been reworked, POV labels and compare-table headers now show chassis names, and the LOS line is now aware of the active ruler mode.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_51_0/Ruler_Improvements.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Ruler_Improvements.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/Releases/0_51_0/Ruler_Improvements.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Ruler_Improvements.png' | relative_url }}"
       alt="Ruler and line-of-sight tool improvements"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -110,7 +110,7 @@ Building on the elevation cross-section work from 0.50.12, the Ruler/LOS tool ge
     preload="metadata"
     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
   >
-    <source src="{{ '/assets/images/Releases/0_51_0/Equipment_Tab.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Equipment_Tab.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -209,7 +209,7 @@ The other half of the FrankenMek story: you can now build FrankenMeks directly i
 
 {% include carousel.html
 id="frankenmek-carousel"
-folder="/assets/images/Releases/0_51_0/FrankenMek/" %}
+folder="/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/FrankenMek/" %}
 <p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;"><em>Building a FrankenMek in MegaMekLab.</em></p>
 
 ### Improvements
@@ -257,7 +257,7 @@ This is the one you've been asking for, for years: an in-game planetary system e
     preload="metadata"
     style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
   >
-    <source src="{{ '/assets/images/Releases/0_51_0/PSE_Demo.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/PSE_Demo.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
@@ -285,11 +285,11 @@ This is the one you've been asking for, for years: an in-game planetary system e
 The MekHQ interface saw significant work this release, including a brand-new Briefing Room tab and an updated top panel. More is planned, including a significant rework to campaign options in a future release.
 
 <div style="max-width: 800px; margin: auto; display: flex; flex-direction: column; gap: 20px;">
-  <a href="{{ '/assets/images/Releases/0_51_0/Top_Bar.png' | relative_url }}" target="_blank">
-    <img src="{{ '/assets/images/Releases/0_51_0/Top_Bar.png' | relative_url }}" alt="MekHQ updated top bar" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;" onmouseover="this.style.borderColor='#0066cc'" onmouseout="this.style.borderColor='transparent'" />
+  <a href="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Top_Bar.png' | relative_url }}" target="_blank">
+    <img src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/Top_Bar.png' | relative_url }}" alt="MekHQ updated top bar" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;" onmouseover="this.style.borderColor='#0066cc'" onmouseout="this.style.borderColor='transparent'" />
   </a>
-  <a href="{{ '/assets/images/Releases/0_51_0/briefingRoom.png' | relative_url }}" target="_blank">
-    <img src="{{ '/assets/images/Releases/0_51_0/briefingRoom.png' | relative_url }}" alt="MekHQ Briefing Room tab" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;" onmouseover="this.style.borderColor='#0066cc'" onmouseout="this.style.borderColor='transparent'" />
+  <a href="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/briefingRoom.png' | relative_url }}" target="_blank">
+    <img src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/briefingRoom.png' | relative_url }}" alt="MekHQ Briefing Room tab" style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;" onmouseover="this.style.borderColor='#0066cc'" onmouseout="this.style.borderColor='transparent'" />
   </a>
 </div>
 <p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
@@ -311,9 +311,9 @@ Illiani's main focus this release was the "Spit & Polish" project: a wave of qua
 - **Procurement Priority**: You can now see and change the priority of parts and units in the procurement list, so there's no more cancelling every order just to grab a left leg in a hurry.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_51_0/procurementPriority.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/procurementPriority.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/Releases/0_51_0/procurementPriority.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-06-06-new-development-release-0.51.0/procurementPriority.png' | relative_url }}"
       alt="Procurement priority"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"

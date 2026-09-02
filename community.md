@@ -1,7 +1,7 @@
 ---
 layout: info_page
 title: Community
-splash: SOU/Mmek_StrategyMeeting_500x350.jpg
+splash: Mmek_StrategyMeeting_500x350.jpg
 ---
 
 ### Connecting with the Community

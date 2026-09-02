@@ -12,7 +12,7 @@ Watch faction ownership change across the BattleTech universe from 2100 to 3152:
 
 <div class="ratio ratio-16x9 my-4">
   <video controls autoplay muted loop>
-    <source src="/assets/images/sucs-2026/sucs-2026.mp4" type="video/mp4">
+    <source src="/assets/images/site/sucs-2026.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>

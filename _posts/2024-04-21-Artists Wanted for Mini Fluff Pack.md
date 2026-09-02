@@ -12,13 +12,13 @@ For this project, we aim to include:
 We want images that look like they belong in a war book, images that resemble their counterparts on the battlefield or within the universe. They will serve as visual representations in the unit selector and match the style of TRO art.
 
 <div class='text-center m-3'>
-  <img src='/assets/images/fluff-pack/sample-ui.png' class='img-fluid img-thumbnail' />
+  <img src='/assets/images/posts/2024/2024-04-21-artists-wanted-for-mini-fluff-pack/sample-ui.png' class='img-fluid img-thumbnail' />
 </div>
 
 Contributors' rights will be acknowledged by watermarking the images with the artist’s name, a statement of permission, and a notice that all rights belong to the image owner.
 
 <div class='text-center m-3'>
-  <img src='/assets/images/fluff-pack/sample-fluff-image.png' class='img-fluid img-thumbnail' />
+  <img src='/assets/images/posts/2024/2024-04-21-artists-wanted-for-mini-fluff-pack/sample-fluff-image.png' class='img-fluid img-thumbnail' />
 </div>
 
 If you’re interested in contributing, please contact Hammer through the MegaMek Discord, The [official CGL forums at](https://www.battletech.com/forums/), or email us at [megamekteam@gmail.com](mailto:megamekteam@gmail.com). Alternatively, you can add the images directly to the following issue on GitHub: [RFE: Mini Fluff Pack List](https://github.com/MegaMek/megamek/issues/5382). A GitHub account is required to submit images.

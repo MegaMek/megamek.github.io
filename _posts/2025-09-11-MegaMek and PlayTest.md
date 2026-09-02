@@ -70,9 +70,9 @@ Nightly builds are generated at 3:00 AM UTC. Here's when that translates to in y
 Playtest options are **turned off by default**. Enable them in Game Options > Basic Options > "Playtest Package One Survivability Rules" (about 3/4 down the list).
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Playtest/Game_Options.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-09-11-megamek-and-playtest/Game_Options.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/Playtest/Game_Options.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2025/2025-09-11-megamek-and-playtest/Game_Options.png' | relative_url }}"
       alt="Playtest Package One Game Options"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"
@@ -87,9 +87,9 @@ Playtest options are **turned off by default**. Enable them in Game Options > Ba
 The changes may be subtle - for example, ammo explosions will look different, but you'll need to look closely to see the implemented modifications.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Playtest/Damage_Example.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-09-11-megamek-and-playtest/Damage_Example.png' | relative_url }}" target="_blank">
     <img
-      src="{{ '/assets/images/Playtest/Damage_Example.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2025/2025-09-11-megamek-and-playtest/Damage_Example.png' | relative_url }}"
       alt="Playtest Package One Damage Example"
       style="width: 100%; height: auto; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; border-radius: 4px;"
       onmouseover="this.style.borderColor='#0066cc'; this.style.transform='scale(1.02)'"

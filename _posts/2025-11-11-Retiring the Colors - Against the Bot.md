@@ -22,7 +22,7 @@ Here are some legacy screenshots showing how far we've come
 
 {% include carousel.html
 id="ATB_Retirement"
-folder="/assets/images/AtB_Retirement/" %}
+folder="/assets/images/posts/2025/2025-11-11-retiring-the-colors-against-the-bot/" %}
 
 
 ## The Legacy

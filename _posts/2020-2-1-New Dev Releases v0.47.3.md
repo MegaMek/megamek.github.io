@@ -17,7 +17,7 @@ Numerous bug fixes in this release, including the pesky trailer fix. But some go
 
 So this change to the map editor is based of the unfinished work of a former contributor and one of our new contributors (Windchild) has polished it up. Major word of warning: this needs testing and needs testing by people who have experience with the map editor. There is NO documentation for it (Hint hint... if someone wants to update the Board tutorial doc let us know).
 
-![New Map GUI](/assets/images/Map_Editor/MapEditor.png){:class="img-fluid w-75"}
+![New Map GUI](/assets/images/posts/2020/2020-2-1-new-dev-releases-v0.47.3/MapEditor.png){:class="img-fluid w-75"}
 
 MegaMekLab
 Lots and Lots of bug fixes especially around large craft. But the big stuff you'll start to see is a massive overhaul on the record sheets. As part of this we are working towards being able to print all unit types. BUT we aren't there yet.

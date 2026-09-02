@@ -27,7 +27,7 @@ After all, you can be the best mercenary unit in the business and still be hated
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding00.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding00.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -48,7 +48,7 @@ Contracts don’t just pay bills—they change your political reality.
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding01.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding01.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -60,7 +60,7 @@ The galaxy doesn’t wait. Over time, each faction’s attitude toward your camp
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding02.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding02.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -77,7 +77,7 @@ Your unit may win the battle… but lose its soul.
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding03.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding03.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -100,7 +100,7 @@ Change sides? Defect? Turn pirate? Your loyal crew might abandon you—or die in
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding04.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding04.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -122,7 +122,7 @@ Your Standing Level (1–9) directly affects:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding05.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding05.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -137,7 +137,7 @@ Your Standing Level (1–9) directly affects:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding06.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding06.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -152,7 +152,7 @@ Choose your friends wisely. Betrayal has consequences. And loyalty? Loyalty just
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding07.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding07.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
@@ -224,13 +224,13 @@ Sometimes—slowly. To rebuild trust:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Faction_Standings/factionStanding08.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/factionStanding08.png' | relative_url }}"
     alt="Faction standings overview"
     style="width: 100%; height: auto;"
   />
 </div>
 ---
-<a href="{{ '/assets/images/Faction_Standings/Faction Standings.pdf' | relative_url }}"
+<a href="{{ '/assets/images/posts/2025/2025-07-26-introducing-faction-standings/Faction Standings.pdf' | relative_url }}"
    target="_blank" rel="noopener"
    style="display: inline-block; padding: 1em 1.5em; background-color: #004c99; color: white; text-decoration: none; font-size: 1.2em; border-radius: 8px; font-weight: bold;">
   📄 Download the Faction Standings PDF

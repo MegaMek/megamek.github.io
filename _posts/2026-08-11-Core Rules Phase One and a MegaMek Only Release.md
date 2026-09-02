@@ -157,7 +157,7 @@ tags: [megamek, development, rules, core-rules, release]
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_Rules/core-products-lineup.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/core-products-lineup.png' | relative_url }}"
     alt="The BattleTech Starter Box, Core Box, and Core Rulebook"
   />
   <p class="corerules-caption">The <a href="https://www.catalystgamelabs.com/news/catalyst-game-labs-battletech-refit-redeployment">Core product line</a>. Phase 1 is the gameplay rules out of these books.</p>
@@ -194,7 +194,7 @@ Before we go any further, get these two straight, because they're close enough t
 
 <div class="corerules-figure corerules-figure-narrow">
   <img
-    src="{{ '/assets/images/Core_Rules/core-rulebook-cover.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-07-30-battletech-core-rules-and-the-old-ones/core-rulebook-cover.png' | relative_url }}"
     alt="BattleTech Core Rulebook cover"
   />
   <p class="corerules-caption">Phase 1 covers the core gameplay rules from this book.</p>
@@ -314,7 +314,7 @@ It's also where the Core Rules drop-down and those greyed-out options from earli
     controls
     preload="metadata"
   >
-    <source src="{{ '/assets/images/Core_is_Here/New_MegaMek_Options.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/New_MegaMek_Options.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p class="corerules-caption">The rebuilt Game Options dialog: pages, search, and the rule badges.</p>
@@ -336,7 +336,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
       controls
       preload="metadata"
     >
-      <source src="{{ '/assets/images/Core_is_Here/GM_Mode.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/GM_Mode.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p class="corerules-caption">The damage editor as a gamemaster's console, built on the unit's own armor diagram.</p>
@@ -348,7 +348,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
       controls
       preload="metadata"
     >
-      <source src="{{ '/assets/images/Core_is_Here/Pre_Existing_Damage.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Pre_Existing_Damage.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p class="corerules-caption">Rolling pre-existing damage onto a unit from the same dialog.</p>
@@ -361,7 +361,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_is_Here/Analysis_1.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Analysis_1.png' | relative_url }}"
     alt="The Analysis tab showing damage vs range, damage per direction, and weapon reach for an Albatross C"
     width="1327" height="1387"
   />
@@ -378,7 +378,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
       controls
       preload="metadata"
     >
-      <source src="{{ '/assets/images/Core_is_Here/Pilot_Options.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Pilot_Options.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p class="corerules-caption">The Pilot tab, with the full CamOps SPA catalog and what MegaMek does with each one.</p>
@@ -390,7 +390,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
       controls
       preload="metadata"
     >
-      <source src="{{ '/assets/images/Core_is_Here/Quirks_Rework.mp4' | relative_url }}" type="video/mp4">
+      <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Quirks_Rework.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p class="corerules-caption">Searching the Quirks tab, with the implementation status on every entry.</p>
@@ -408,7 +408,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
     controls
     preload="metadata"
   >
-    <source src="{{ '/assets/images/Core_is_Here/Trailers_and_Trains.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Trailers_and_Trains.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p class="corerules-caption">Hitching a train in the lobby, then moving the whole thing on one turn.</p>
@@ -419,7 +419,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
 <div class="corerules-figure-pair" style="--pair-ratio: 601 / 529;">
   <div class="corerules-figure">
     <img
-      src="{{ '/assets/images/Core_is_Here/AVLB.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/AVLB.png' | relative_url }}"
       alt="A combat support vehicle with its bridge laid across a Depth 1 stream"
       width="685" height="573"
     />
@@ -427,7 +427,7 @@ We've also started work on resurrecting CASPAR. It isn't player-facing yet and t
   </div>
   <div class="corerules-figure">
     <img
-      src="{{ '/assets/images/Core_is_Here/Fire_Fighting.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Fire_Fighting.png' | relative_url }}"
       alt="Combat report showing three firefighting platoons working the same hex"
       width="601" height="529"
     />
@@ -439,7 +439,7 @@ You also don't have to spend the first several turns of a game digging any more.
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_is_Here/Trenchworks.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Trenchworks.png' | relative_url }}"
     alt="A defensive line of dug-in infantry and hull down Manticores in fortified hexes"
     width="1494" height="639"
   />
@@ -450,7 +450,7 @@ You also don't have to spend the first several turns of a game digging any more.
 
 <div class="corerules-figure">
   <img
-    src="{{ '/assets/images/Core_is_Here/Disposable_Weapons.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-08-11-core-rules-phase-one-and-a-megamek-only-release/Disposable_Weapons.png' | relative_url }}"
     alt="Combat report of a jump infantry platoon firing LAWs into a Wasp"
     width="1337" height="789"
   />

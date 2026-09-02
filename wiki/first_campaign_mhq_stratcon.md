@@ -36,7 +36,7 @@ toc: |
   <p>The {% include glossary_term.html id="area_of_operations" text="Area of Operations" %} tab shows the strategic situation for your contract.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Area of Operations.png' | relative_url }}" alt="Area of Operations" class="guide-image" data-title="Area of Operations">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Area of Operations.png' | relative_url }}" alt="Area of Operations" class="guide-image" data-title="Area of Operations">
     <figcaption class="guide-caption">Area of Operations showing the strategic map</figcaption>
   </figure>
 
@@ -268,7 +268,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Recon.png' | relative_url }}" alt="Recon Example" class="guide-image" data-title="Reconnaissance">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Recon.png' | relative_url }}" alt="Recon Example" class="guide-image" data-title="Reconnaissance">
     <figcaption class="guide-caption">Reconnaissance revealing enemy positions</figcaption>
   </figure>
 
@@ -344,7 +344,7 @@ toc: |
       </ul>
     </div>
     <div class="col-lg-5">
-      <img src="{{ '/assets/images/SOU/splash-convoy.jpg' | relative_url }}" alt="Supply convoy" class="img-fluid rounded" style="width: 100%;">
+      <img src="{{ '/assets/images/wiki/first_campaign_mhq/splash-convoy.jpg' | relative_url }}" alt="Supply convoy" class="img-fluid rounded" style="width: 100%;">
     </div>
   </div>
 
@@ -366,7 +366,7 @@ toc: |
   <p>StratCon generates scenarios (battles) based on your deployments and contract requirements.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Scenario Details.png' | relative_url }}" alt="Scenario List" class="guide-image" data-title="Scenario List">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Scenario Details.png' | relative_url }}" alt="Scenario List" class="guide-image" data-title="Scenario List">
     <figcaption class="guide-caption">Scenario list in the Briefing Room</figcaption>
   </figure>
 
@@ -550,7 +550,7 @@ toc: |
 
   <h3>Salvage</h3>
 
-  <img src="{{ '/assets/images/old_mhq_load.jpeg' | relative_url }}" alt="Military formation in mech bay" class="img-fluid rounded" style="float: right; width: 33%; margin-left: 1rem; margin-bottom: 1rem;">
+  <img src="{{ '/assets/images/site/old_mhq_load.jpeg' | relative_url }}" alt="Military formation in mech bay" class="img-fluid rounded" style="float: right; width: 33%; margin-left: 1rem; margin-bottom: 1rem;">
 
   <p>Select salvage from defeated enemies:</p>
   <ul>

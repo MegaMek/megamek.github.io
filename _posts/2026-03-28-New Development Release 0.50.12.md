@@ -19,10 +19,10 @@ Welcome to version 0.50.12! It's been about three months since the 0.50.11 Miles
 First, a heads-up for those still on 0.50.11: after declaring it a Milestone, we discovered a nasty bug involving ECM and C3 interactions. That bug is fixed in this release. However, we don't anticipate 0.50.12 achieving Milestone status. There are too many big-ticket items in MegaMek that will need time to settle and stabilize.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_12/splash-ceremony.jpg' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/site/splash-ceremony.jpg' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/splash-ceremony.jpg' | relative_url }}"
+        src="{{ '/assets/images/site/splash-ceremony.jpg' | relative_url }}"
         alt="MegaMek 0.50.12 Release"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -69,10 +69,10 @@ The good news is that a lot of the Playtest rules are already implemented, and i
 In [0.50.11 we laid the foundation](https://megamek.org/2025/12/30/New-Development-Release-0.50.11.html) for a multi-stage rework of how MegaMek handles buildings. Proper fortresses, functional turrets, gun emplacements done the right way. This release delivers on that promise. TO:AR Advanced Buildings have arrived in MegaMek, and they bring a complete rethink of how defensive structures work across the suite. If you've ever been frustrated in MekHQ base attack missions where the game expects you to either ignore or crew-kill those old legacy Gun Emplacements, this is the fix we've been working toward.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_12/Advanced_Buildings1.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Advanced_Buildings1.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/Advanced_Buildings1.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Advanced_Buildings1.png' | relative_url }}"
         alt="Advanced Buildings in MegaMek"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -127,10 +127,10 @@ The Manei Domini's work continues. Building on the [significant cybernetic impla
 There is still additional work needed on the MekHQ side to fully integrate these prosthetics and augmentations into campaign play. With Iliani's departure from the project, there's no ETA on when that work will land. The MegaMek and MegaMekLab sides are functional now.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_12/TauZombie.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/TauZombie.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/TauZombie.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/TauZombie.png' | relative_url }}"
         alt="Prosthetics and Augmentations"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -145,10 +145,10 @@ There is still additional work needed on the MekHQ side to fully integrate these
 We've implemented several cockpit modifications from Interstellar Operations. The Direct Neural Interface and Damage Interrupt Circuit (IO p.39) are now fully functional, with DNI providing direct neural control and the DIC giving pilots a buffer against cockpit damage feedback. Enhanced Imaging has been updated to properly follow IO p.69/p.77 rules, and all three systems (DNI, EI Interface, and DIC) now have full integration across applicable unit types.
 
 <div style="max-width: 1000px; margin: auto; display: flex; gap: 16px;">
-  <a href="{{ '/assets/images/Releases/0_50_12/DNI.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/DNI.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/DNI.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/DNI.png' | relative_url }}"
         alt="Direct Neural Interface"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -156,10 +156,10 @@ We've implemented several cockpit modifications from Interstellar Operations. Th
       />
     </div>
   </a>
-  <a href="{{ '/assets/images/Releases/0_50_12/DNI_Hardware.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/DNI_Hardware.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/DNI_Hardware.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/DNI_Hardware.png' | relative_url }}"
         alt="DNI Hardware Tracking"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -209,10 +209,10 @@ We've implemented several cockpit modifications from Interstellar Operations. Th
 Some players just want to watch the world burn. Incendiary LRM munitions are now available and properly included in autoconfig selections. We've also added EMP Mines, which can now be deployed on the battlefield.
 
 <div style="max-width: 1000px; margin: auto; display: flex; gap: 16px;">
-  <a href="{{ '/assets/images/Releases/0_50_12/Incendary.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Incendary.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/Incendary.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Incendary.png' | relative_url }}"
         alt="Incendiary LRM Munitions"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -220,10 +220,10 @@ Some players just want to watch the world burn. Incendiary LRM munitions are now
       />
     </div>
   </a>
-  <a href="{{ '/assets/images/Releases/0_50_12/Incendary_Results.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Incendary_Results.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/Incendary_Results.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/Incendary_Results.png' | relative_url }}"
         alt="Incendiary LRM Results"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -231,10 +231,10 @@ Some players just want to watch the world burn. Incendiary LRM munitions are now
       />
     </div>
   </a>
-  <a href="{{ '/assets/images/Releases/0_50_12/EMP_Mine.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/EMP_Mine.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/EMP_Mine.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/EMP_Mine.png' | relative_url }}"
         alt="EMP Mine Deployment"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -259,7 +259,7 @@ Handheld Weapons continue to receive stability fixes from their 0.50.10 debut (s
 
 <div style="max-width: 800px; margin: auto;">
   <video controls style="width: 100%;">
-    <source src="/assets/images/Releases/0_50_12/LOS.mp4" type="video/mp4">
+    <source src="/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/LOS.mp4" type="video/mp4">
   </video>
 </div>
 
@@ -368,10 +368,10 @@ Fixed aerospace units returning to battle after being told not to, along with a 
 MegaMekLab now has full construction support for the new Interstellar Operations prosthetics and augmentations implemented in MegaMek this release, including prosthetic enhancements and extraneous prosthetic limbs for conventional infantry (IO p.84). The augmentation view also received validation and UX improvements with clearer feedback when something doesn't fit.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_12/MML_Augmentation.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/MML_Augmentation.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/MML_Augmentation.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/MML_Augmentation.png' | relative_url }}"
         alt="MegaMekLab Augmentation Construction"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -390,10 +390,10 @@ MegaMekLab construction support added for the DNI, EI Interface, and Damage Inte
 * **CASE Selector**: New CASE selector makes it easier to assign and manage CASE protection across locations
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_12/MML_Case.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/MML_Case.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_12/MML_Case.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-03-28-new-development-release-0.50.12/MML_Case.png' | relative_url }}"
         alt="MegaMekLab CASE Selector"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
