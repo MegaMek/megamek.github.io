@@ -19,7 +19,7 @@ As always when using a Development release.
 
 #### Megamek
 
-Bug fixes is the name of the game. The only major new thing is adding an option to output game summary images during various phases. See the coming soon post [here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1673607/#msg1673607). We look forward to seeing what people come up. But a word of warning, this is hard drive space intensive and off by default.
+Bug fixes is the name of the game. The only major new thing is adding an option to output game summary images during various phases. See the coming soon post [here](https://www.battletech.com/forums/index.php?msg=1673607). We look forward to seeing what people come up. But a word of warning, this is hard drive space intensive and off by default.
 
 #### MegaMekLab
 

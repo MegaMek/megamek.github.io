@@ -313,7 +313,7 @@ This post covers some of the key changes that are happening as we go into the 0.
 
 ### State of the Universe (January 19, 2024)
 
-If you haven't given the [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0) a read, please do. There's lots of information in there that is still recent and relevant.
+If you haven't given the [State of the Universe](https://www.battletech.com/forums/index.php?topic=83774.0) a read, please do. There's lots of information in there that is still recent and relevant.
 
 ---
 

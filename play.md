@@ -9,17 +9,17 @@ splash: SOU/splash-fight.jpg
 #### Learning the Rules
 
 MegaMek uses the rules from the
-[*Total Warfare* series of books](https://bg.battletech.com/books/core_rulebooks/)
+[*BattleTech Core Rules*](https://battletech.com/tabletop/)
 from [Catalyst Game Labs](https://www.catalystgamelabs.com/).
 Although we provide a variety of instructions within the programs of how
 things work, we do assume that players are familiar with the rules.
 
 If you are not familiar with the Battletech rules but would like to try
 MegaMek, you can download the
-[free quick-start rules](http://bg.battletech.com/wp-content/uploads/2011/10/BattleTechQuick-Start-Rules.pdf?x64300)
+[free quick-start rules](https://battletech.com/wp-content/uploads/sites/6/2025/06/Beginner-Box-Quick-Start-Rules.pdf)
 to get started.
 
-- To learn more about the core rules, you should get the [*Total Warfare* core rulebook](https://store.catalystgamelabs.com/products/battletech-total-warfare-pdf).
+- To learn the core rules, you should get the [*BattleTech Core Rulebook*](https://battletech.com/tabletop/). It replaces *Total Warfare*, which MegaMek still supports as an option but now treats as deprecated.
 - To learn the rules of unit construction used by MegaMekLab, you should get the [*Tech Manual*](https://store.catalystgamelabs.com/products/battletech-techmanual-book-pdf?variant=16148462534690). Additional rules for advanced and experimental technology and a few advanced unit types are in the [*Tactical Operations: Advanced Units &amp; Equipment* rulebook](https://store.catalystgamelabs.com/products/battletech-tactical-operations-advanced-units-equipement?variant=32091258191906) and the [*Strategic Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-strategic-operations?variant=28800101970).
 - To learn about many of the optional settings available in MegaMek, you should get the [*Tactical Operations: Advanced Rules* rulebook](https://store.catalystgamelabs.com/products/battletech-tactical-operations-advanced-rules?variant=32091242463266).
 - To learn about using warships in large scale space-battles, you should get the [*Strategic Operations* rulebook](https://store.catalystgamelabs.com/products/battletech-strategic-operations?variant=28800101970).
@@ -27,7 +27,7 @@ to get started.
 
 #### Video Tutorials
 
-We do have video tutorials. A good starting point is found [here](https://bg.battletech.com/forums/index.php/topic,72636.0.html). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
+We do have video tutorials. A good starting point is found [here](https://www.battletech.com/forums/index.php/topic,72636.0.html). You can also search [YouTube in general](https://www.youtube.com/results?search_query=megamek+tutorial) for MegaMek or [MekHQ](https://www.youtube.com/results?search_query=mekhq+tutorial&sp=CAI%253D)
 
 #### A First Game of MegaMek
 

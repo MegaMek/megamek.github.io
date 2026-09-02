@@ -4,13 +4,13 @@ This release marks a significant milestone for MegaMek as we finish the second y
 
 Here we go...
 
-+ [Client settings had a massive overhaul](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1928052/#msg1928052)
++ [Client settings had a massive overhaul](https://www.battletech.com/forums/index.php?msg=1928052)
 + [Major improvements to how min/max visual and sensor ranges are display in game](https://github.com/MegaMek/megamek/pull/4430)
-+ [Improvements to the Detail Unit Counts in the Initiative Phase](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1931189/#msg1931189)
-+ [Allow sprites on reports in Double Blind](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1932258/#msg1932258)
++ [Improvements to the Detail Unit Counts in the Initiative Phase](https://www.battletech.com/forums/index.php?msg=1931189)
++ [Allow sprites on reports in Double Blind](https://www.battletech.com/forums/index.php?msg=1932258)
 + [Major improvements to the Create Random army menus](https://github.com/MegaMek/megamek/pull/4228)
 + Expanded the Display FOV Darken/Highlight and Field of Fire to all non-report phases, it also shows the optional weapon Field of Fire during the deployment phase
-+ [Weapons Quirks now show in the unit selector](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1928818/#msg1928818)
++ [Weapons Quirks now show in the unit selector](https://www.battletech.com/forums/index.php?msg=1928818)
 + Improvements in showing multiple units in the same hex
 + Princess and her off board artillery can no longer hide in double blind! Counter-battery fire to off board targets now works in double blind.
 + BattleArmor with Indirect fire weapons can well... fire indirectly now. Conventional Infantry is trickier and not implemented.
@@ -20,7 +20,7 @@ We have a few of **VERY** important things to be aware of in this release especi
 
 1. Anti-aliasing is now an option and if you’re having graphic slow downs or “chugging on the map” trying to change the option in client settings.
 2. We have made changes to the unit files to align them with the MUL by removing the term "(Standard)". This was a significant data task and resulted in the removal of nearly 1000 instances of "(Standard)". Our Quality Assurance (QA) team has thoroughly tested these name changes by creating campaigns and loading them with every unit. However, there is a potential risk in MekHQ with CPNX files, as they rely on unit names for matching. If you encounter any errors while loading your campaign file, we apologize for the inconvenience and kindly refer to the [following post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units) for further assistance.
-3. Lastly we’ve ripped the unofficial unit band aid off. We've moved the unofficial units zip out of this release. The reasons and poll for this was [discussed here](https://bg.battletech.com/forums/megamek-games/how-often-do-you-use-the-units-from-the-unsupported-or-unofficial-folders/). Between our Discord and this poll 75% of players were good with us removing them. It allows us to have the releases be focused on canon units.
+3. Lastly we’ve ripped the unofficial unit band aid off. We've moved the unofficial units zip out of this release. The reasons and poll for this was [discussed here](https://www.battletech.com/forums/index.php?topic=78169.0). Between our Discord and this poll 75% of players were good with us removing them. It allows us to have the releases be focused on canon units.
 
 The file is still available but players will need to add the zip file manually. We have no plans to further support or add units into that zip. It would be safe to just set it up in a customs folder and move that folder between releases.
 
@@ -41,7 +41,7 @@ See the notes above and below for specific things.
 
 ## MegaMekLab
 
-A big option to the unofficial record sheets, On record sheets, hit location and cluster tables can now be printed in place of the fluff image; activate this option in the record sheet settings. You can see an [example here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1922237/#msg1922237).
+A big option to the unofficial record sheets, On record sheets, hit location and cluster tables can now be printed in place of the fluff image; activate this option in the record sheet settings. You can see an [example here](https://www.battletech.com/forums/index.php?msg=1922237).
 
 Remember to check the FILE-Configuration for all sorts of options for Record Sheets.
 
@@ -51,7 +51,7 @@ There isn't a lot of MekHQ outside of some fixes, but we do have StratCon fixes.
 
 ### MekHQ StratCon Alpha
 
-StratCon is starting to get a little more work and bug fixes (see below). Nickargua the dev is looking for help and see here for [how to help](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1935360/#msg1935360). It sounds complicated but it's quite easy to make the files he's looking for.
+StratCon is starting to get a little more work and bug fixes (see below). Nickargua the dev is looking for help and see here for [how to help](https://www.battletech.com/forums/index.php?msg=1935360). It sounds complicated but it's quite easy to make the files he's looking for.
 
 ## Stable 0.50.0 Status Update
 

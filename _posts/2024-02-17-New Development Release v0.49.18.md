@@ -25,7 +25,7 @@ This release is MASSIVE. We've managed to push a ton of code in the last six wee
 
 ![alt text](https://i.imgur.com/9qgaJ3hl.png)
 
-Princess has successfully graduated from [Blackjack's advanced munitions course](https://bg.battletech.com/forums/index.php?topic=57647.msg1990758#msg1990758). You will see more ammo switching, making MML and ATM's more effective. If the players give her alternate ammo types she will use them. As an example give her TAG units, and Artillery with homing ammos.
+Princess has successfully graduated from [Blackjack's advanced munitions course](https://www.battletech.com/forums/index.php?topic=57647.msg1990758#msg1990758). You will see more ammo switching, making MML and ATM's more effective. If the players give her alternate ammo types she will use them. As an example give her TAG units, and Artillery with homing ammos.
 
 ## MegaMekLab
 
@@ -82,7 +82,7 @@ Princess has successfully graduated from [Blackjack's advanced munitions course]
 
 ## Stable release
 
-Please review the [State of the Universe](url=https://bg.battletech.com/forums/index.php?topic=83774.0
+Please review the [State of the Universe](https://www.battletech.com/forums/index.php?topic=83774.0)
 
 ## Java 11 and 17
 

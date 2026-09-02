@@ -13,7 +13,7 @@ to try your hand against a real live human opponent. So where should you go
 to find other players? There are several options.
 
 - The most direct approach is to [join our Discord community](https://discord.gg/megamek) where you can chat directly with other players as well as developers.
-- You can also check out discussions in the [MegaMek sub-forum](https://bg.battletech.com/forums/index.php?board=29.0) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
+- You can also check out discussions in the [MegaMek sub-forum](https://www.battletech.com/forums/index.php/board,29.0.html) of the official Battletech forums. Just be aware that these are the official forums for Catalyst Game Labs, and we are guests.
 - Many people also play MegaMek on one of the various [MekWars servers](http://www.mekwars.org/mwtracker.html). [MekWars](http://www.mekwars.org/) is an online campaign for MegaMek that allows players to join factions and play battles against one another in a multiplayer environment. They also have a [Discord](https://discord.gg/CQ5uvkEkdk)
 - There are also two active BattleTech Discords with MegaMek channels - [MRC Hub](https://discord.gg/WUvbXQRRfW) and [BattleTech](https://discord.gg/D9jFn52)
 

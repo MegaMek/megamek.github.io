@@ -1,6 +1,6 @@
 # Welcome all to 0.49.9
 
-Going to start this off with a very important statement. As mentioned in the [49.8](https://bg.battletech.com/forums/megamek-games/new-development-snapshot-0-49-8-for-megamek-megameklab-and-mekhq) Dev release notes this release is improved for stability but still isn't where we want it.
+Going to start this off with a very important statement. As mentioned in the [49.8](https://www.battletech.com/forums/index.php?topic=77744.0) Dev release notes this release is improved for stability but still isn't where we want it.
 
 We know from experience that when we say this players generally stay away. But you can run both a stable release (0.48.0 or good dev release 0.49.7) you just need to keep them in separate folders. Remember that MekHQ campaign files **aren't** backwards compatible so if move your campaign from an earlier version to this you can't go back. But you can keep backups and play in both versions to see the difference.
 
@@ -27,7 +27,7 @@ Here is an example of the new General Tab.
 
 ![New General Tab](https://i.imgur.com/fUQXTd9l.png){:.img-fluid}
 
-The flexible deployment zone is a huge improvement and is [detailed here.](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek)
+The flexible deployment zone is a huge improvement and is [detailed here.](https://www.battletech.com/forums/index.php?topic=57647.0)
 
 ![Flexible Deployment Zone](https://i.imgur.com/bOJvjKBl.png){:.img-fluid}
 
@@ -52,7 +52,7 @@ Work on the lab continues to be focused on bug fixes and a few fixes to Record S
 
 ## MekHQ
 
-Things have been slow developmentally with with a focus on bug fixes. But we do have one big addition - Scenario templates can now load force definition from fixed MUL file. [See here for more details](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1856680/#msg1856680)
+Things have been slow developmentally with with a focus on bug fixes. But we do have one big addition - Scenario templates can now load force definition from fixed MUL file. [See here for more details](https://www.battletech.com/forums/index.php?msg=1856680)
 
 ### MekHQ StratCon Alpha
 

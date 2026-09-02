@@ -31,7 +31,7 @@ Bug fixes.
 
 Bug fixes.
 
-For a detailed change log see [HERE](https://bg.battletech.com/forums/megamek-games/new-development-snapshot-0-47-17-rc3-for-megamek-megameklab-and-mekhq/)
+For a detailed change log see [HERE](https://www.battletech.com/forums/index.php?topic=72638.0)
 
 Also a reminder to drop into the Slack channel to meet other players and harass the Devs that drop in and out. If Slack isn't your thing check out these Discords with Megamek channels - Everything BattleTech and Classic BattleTech
 

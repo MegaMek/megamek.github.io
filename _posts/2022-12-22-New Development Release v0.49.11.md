@@ -8,7 +8,7 @@ But we have got a lot of exciting things in this release. We've had a couple of 
 
 OK that's tackle the elephant first..this is **NOT** a playable version of Alpha Strike (Which if it every happened would be MegaStrike) it's strictly support for Alpha Strike.
 
-Please see [Alpha Strike Card Support in MegaMek](https://bg.battletech.com/forums/alpha-strike-101/alpha-strike-card-support-in-megamek-coming-soon)
+Please see [Alpha Strike Card Support in MegaMek](https://www.battletech.com/forums/index.php?topic=78823.0)
 
 We've also added support for Java 17 starting with this release but please see below for some cautions.
 

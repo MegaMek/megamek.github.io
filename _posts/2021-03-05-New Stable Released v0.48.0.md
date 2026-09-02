@@ -16,7 +16,7 @@ There is a perception that Stable releases are bug free and Development (Dev) re
 
 So what's coming up in the next dev cycle? To be honest, with the current global situation we don't have any firm plans. A few things we do know about and/or hoping for.
 
-1) The new [Lobby](https://bg.battletech.com/forums/megamek-games/preview-of-new-lobby-and-request-for-feedback/), we don't have a date for it, but if you have ideas for it please post in that thread. No guarantees but we are open to ideas.
+1) The new [Lobby](https://www.battletech.com/forums/index.php?topic=72557.0), we don't have a date for it, but if you have ideas for it please post in that thread. No guarantees but we are open to ideas.
 2) [StratCon](https://github.com/MegaMek/mekhq/pull/2144) - The replacement for AtB. We'd consider this pre-Alpha but we are very excited for it.
 3) More personnel options in MekHQ. You think its annoying when your people die in combat, how about old age or in pregnancy &lt;evil gri&gt;.
 4) Continue to implement missing rules, quirks, terrains, and unit types to be playable and buildable. Railways, Airships, and one day Mobile Structures. Steiner Recon lance versus Rattler anyone?
@@ -29,7 +29,7 @@ Due to changes in downloading Java that Oracle has made, we are recommending pla
 
 ## I want to help
 
-We often get people ask how they can help the projects. Give [our community page](https://megamek.org/community.html). The biggest thing we need right now is people to help with documentation. For example, write the steps for how to do something in a way we can use on our wiki. We have old manuals that need updating with modern screen shots. Got a talent for videos? We'd love to see more videos like [these](https://bg.battletech.com/forums/index.php/topic,72636.0.html), but for MekHQ and MegaMekLab.
+We often get people ask how they can help the projects. Give [our community page](https://megamek.org/community.html). The biggest thing we need right now is people to help with documentation. For example, write the steps for how to do something in a way we can use on our wiki. We have old manuals that need updating with modern screen shots. Got a talent for videos? We'd love to see more videos like [these](https://www.battletech.com/forums/index.php/topic,72636.0.html), but for MekHQ and MegaMekLab.
 
 If you have art skills, we really need someone to tackle sprites for the Aerospace units. Deadborder has his hands full keeping up with the ground units.
 
@@ -43,11 +43,11 @@ As a process of improving the Record sheet printing, we’ve made significant im
 
 The terrain we fight has also improved as we’ve added more maps including some amazing ones from Simon Landmine and Derv. To help with these maps we’ve overhauled the Map Editor, swapped to the Saxarba Theme, added SirMegaV building fluff and implemented inclines/cliffs/level 1 terrain. We also had a large texture overhaul from Ahne.
 
-Other graphical improvements include the addition of [‘Damage Decals’](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1625891/#msg1625891) for 'Meks and vehicles. Destroyed vehicles/ASFs now look like the unit that was destroyed (unless there is an ammo explosion, then it looks like a crater).
+Other graphical improvements include the addition of [‘Damage Decals’](https://www.battletech.com/forums/index.php?msg=1625891) for 'Meks and vehicles. Destroyed vehicles/ASFs now look like the unit that was destroyed (unless there is an ammo explosion, then it looks like a crater).
 
 Data-wise we’ve got new sprites based on the Kickstarter, and Deadborder has finished the vehicle project. This means every current land unit in the game has a sprite down to the chassis-model level. Unit-wise, every unit playable up to Rec Guide 12 is in this release. For fun, GreekFire has helped add Fluff text to a selection of units.
 
-Lastly some odds and ends. We've added a Graphical Editor for the RAT generator (read me in docs). Fuel-air Explosives for when you just gotta kill that Clan Elemental Cluster. A Random Callsign generator. The ability to output [game summary images](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1673607/#msg1673607) during various phases. Significant improvements to the camouflage and portrait selectors. And we've redone a huge amount of the default settings in MegaMek - for a detailed list see [here](https://github.com/MegaMek/megamek/pull/2334). Anyone notice something missing from MegaMek on new installs going forward?
+Lastly some odds and ends. We've added a Graphical Editor for the RAT generator (read me in docs). Fuel-air Explosives for when you just gotta kill that Clan Elemental Cluster. A Random Callsign generator. The ability to output [game summary images](https://www.battletech.com/forums/index.php?msg=1673607) during various phases. Significant improvements to the camouflage and portrait selectors. And we've redone a huge amount of the default settings in MegaMek - for a detailed list see [here](https://github.com/MegaMek/megamek/pull/2334). Anyone notice something missing from MegaMek on new installs going forward?
 
 Lastly two words - Dark Mode.
 
