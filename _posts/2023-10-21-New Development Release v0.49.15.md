@@ -38,7 +38,7 @@ We've got more Stratcon fixes in this release.
 
 1. We have made changes to the unit files to align them with the MUL by removing the term "(Standard)". This was a significant data task and resulted in the removal of nearly 1000 instances of "(Standard)". Our Quality Assurance (QA) team has thoroughly tested these name changes by creating campaigns and loading them with every unit. However, there is a potential risk in MekHQ with CPNX files, as they rely on unit names for matching. If you encounter any errors while loading your campaign file, we apologize for the inconvenience and kindly refer to the [following post](https://github.com/MegaMek/megamek/wiki/Name-Issues-with-Units) for further assistance.
 
-2. Lastly we’ve ripped the unofficial unit band aid off. We've moved the unofficial units zip out of this release. The reasons and poll for this was [discussed here](https://bg.battletech.com/forums/megamek-games/how-often-do-you-use-the-units-from-the-unsupported-or-unofficial-folders/). Between our Discord and this poll 75% of players were good with us removing them. It allows us to have the releases be focused on canon units.
+2. Lastly we’ve ripped the unofficial unit band aid off. We've moved the unofficial units zip out of this release. The reasons and poll for this was [discussed here](https://www.battletech.com/forums/index.php?topic=78169.0). Between our Discord and this poll 75% of players were good with us removing them. It allows us to have the releases be focused on canon units.
 
 The file is still available but players will need to add the zip file manually. We have no plans to further support or add units into that zip. It would be safe to just set it up in a customs folder and move that folder between releases.
 

@@ -22,7 +22,7 @@ If you weren't aware we have two versions of tech progression built into MegaMek
 
 ## MegaMekLab
 
-The lab hasn't had a lot of stuff done in the last couple of years. But Juliez our dev that likes improving look at feel of the programs decided to work on the lab a bit. You'll notice big changes to the UI and UIX - showing ammo and max damage on tooltips, tab-based scroll panes, improved readability on the large craft crit tabs, and improvements to the Mek crit display. Additional improvements are planned see [here for more](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1792648/#msg1792648). Our goal to keep moving MegaMekLab from the ugly ducking of designers to the premier one. Lastly, all of the MegaMekLab dependencies have been updated and a few bugs have been fixed.
+The lab hasn't had a lot of stuff done in the last couple of years. But Juliez our dev that likes improving look at feel of the programs decided to work on the lab a bit. You'll notice big changes to the UI and UIX - showing ammo and max damage on tooltips, tab-based scroll panes, improved readability on the large craft crit tabs, and improvements to the Mek crit display. Additional improvements are planned see [here for more](https://www.battletech.com/forums/index.php?msg=1792648). Our goal to keep moving MegaMekLab from the ugly ducking of designers to the premier one. Lastly, all of the MegaMekLab dependencies have been updated and a few bugs have been fixed.
 
 ## MekHQ
 

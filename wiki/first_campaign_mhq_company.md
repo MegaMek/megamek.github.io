@@ -121,6 +121,19 @@ toc: |
     <div class="callout-title"><i class="fas fa-location-arrow"></i> Relocating</div>
     <p class="mb-0">To relocate your company: Click a planet &gt; Right-click &gt; GM Tools &gt; Move there.</p>
   </div>
+
+  <h3>Video Tutorial: Planetary System Editor</h3>
+
+  <p>Since 0.51.0 you can edit planetary systems in-game. This tutorial walks through the editor.</p>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Planetary Editor (New for 0.51.0)
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/HgQE1j4fdIs?si=5y3iGX3pr4t1v_9p" title="MekHQ Tutorial -- Planetary Editor (New for 0.51.0)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <section id="funds">

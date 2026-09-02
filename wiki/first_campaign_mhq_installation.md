@@ -57,14 +57,14 @@ toc: |
     <p class="mb-0">Java 21 dropped 32-bit support entirely, so 32-bit machines cannot run 0.51.0 or later. The last release that runs on 32-bit is the 0.50.x series with Java 17 LTS.</p>
   </div>
 
-  <h3>Video Tutorial: Installing Java</h3>
+  <h3>Video Tutorial: Installing Java and MegaMek</h3>
 
   <div class="guide-video">
     <div class="video-header">
-      <i class="fab fa-youtube"></i> MekHQ Tutorial — Installing Java
+      <i class="fab fa-youtube"></i> MegaMek Tutorial — Updating / Installing Java and Installing MegaMek
     </div>
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/le43AxvqHTc?si=sVzwlk0J1QeyMM4c" title="MekHQ Tutorial -- Installing Java" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/L06q5aLRdgQ?si=R1vkbmPHgwa95ja8" title="MegaMek Tutorial -- Updating / Installing Java and Installing MegaMek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -367,6 +367,17 @@ toc: |
   <div class="guide-callout guide-callout-warning mt-4">
     <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Limitation</div>
     <p class="mb-0">Map boards cannot be stored in the user directory due to program load mechanics. Keep boards in your installation's <code>data/boards/</code> folder.</p>
+  </div>
+
+  <h3>Video Tutorial: Setting Up a User Files Directory</h3>
+
+  <div class="guide-video">
+    <div class="video-header">
+      <i class="fab fa-youtube"></i> MekHQ Tutorial — Setting Up a Customs User Folder (0.51.00 and 0.51.01)
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/i4CMhw8Vniw?si=XS9iJx_nAmKbXe7Q" title="MekHQ Tutorial -- Setting up a Customs User Folder (v 0.51.00 AND 0.51.01)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 
   <h3>Video Tutorial: Upgrading MekHQ</h3>

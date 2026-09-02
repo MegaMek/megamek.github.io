@@ -12,7 +12,7 @@ This is quick turn around from 47.8 which as expected had a couple of major bugs
 1) Make backups of your campaigns and customs.
 2) Always treat each release as a stand alone release and only copy your data forward from older versions.
 
-If you haven't see the list of new stuff in 0.47.8 see [here](https://bg.battletech.com/forums/index.php?topic=70438.0)
+If you haven't see the list of new stuff in 0.47.8 see [here](https://www.battletech.com/forums/index.php?topic=70438.0)
 
 #### MegaMek
 

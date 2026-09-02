@@ -21,7 +21,7 @@ No changes from Stable 0.48.0
 
 ## MekHQ
 
-Bug fixes and continued improvements to Stratcon. Not sure what Stratcon is [SEE HERE](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781)
+Bug fixes and continued improvements to Stratcon. Not sure what Stratcon is [SEE HERE](https://www.battletech.com/forums/index.php?msg=1719781)
 
 ## SOCIAL MEDIA
 

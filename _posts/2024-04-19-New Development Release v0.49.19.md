@@ -10,7 +10,7 @@ There is one major thing you'll notice on opening MegaMek and MegaMekLab - they 
 
 The big advantage is with standard themes and code between the programs we can start to look at improving things in MekHQ's UI. This will be a long project but a needed one.
 
-If you're someone that likes to read the change logs you'll notice there is lots of prep work for [StoryArcs](https://bg.battletech.com/forums/index.php?topic=84536.0) which we anticipate will be officially released in the next release (0.49.20). But here is a small bit of some of the new stuff.
+If you're someone that likes to read the change logs you'll notice there is lots of prep work for [StoryArcs](https://www.battletech.com/forums/index.php?topic=84536.0) which we anticipate will be officially released in the next release (0.49.20). But here is a small bit of some of the new stuff.
 
 **MegaMek**
   - We now have Black Ice
@@ -50,7 +50,7 @@ If you're someone that likes to read the change logs you'll notice there is lots
 **A Few Reminders:**
 
 **State of the Universe (January 19, 2024):**
-If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
+If you haven't given the [State of the Universe (read here if you missed it)](https://www.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
 
 **User Data Directory for MegaMek, MegaMekLab, and MekHQ:**
 We've added a customizable **User Data Directory** feature. This allows you to set a single external directory for storing game resources like units, camos, and fonts, which is accessible across different installations and versions of MegaMek, MegaMekLab, and MekHQ.
@@ -80,7 +80,7 @@ Remember, MekHQ campaign files **are NOT** backwards compatible. Moving your cam
 
 **When is the next Stable release?**
 
-Please review the [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0)
+Please review the [State of the Universe](https://www.battletech.com/forums/index.php?topic=83774.0)
 
 **Java 11 and 17**
 We've updated to Java 11. To use the **0.49.x Development branches**, an update is needed. As Java is now open source, we recommend [Adoptium Temurin 11](https://adoptium.net/index.html?variant=openjdk11). Help pages for [Windows](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) and [Mac](https://megamek.org/wiki/mac_issues.html) users are available. Linux users should use their package manager to install Adoptium Temurin.

@@ -24,7 +24,7 @@ One more thing...If you're a [mini painter please check out this post](https://m
 **A Few Reminders:**
 
 **State of the Universe (January 19, 2024):**
-If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
+If you haven't given the [State of the Universe (read here if you missed it)](https://www.battletech.com/forums/index.php?topic=83774.0) a read please do. Lots of information in there that is still recent and relevant.
 
 ---
 
@@ -93,7 +93,7 @@ Remember, MekHQ campaign files **are NOT** backwards compatible. Moving your cam
 ---
 
 **When is the next Stable release?**
-These are no longer a thing. Please give above or this a read [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0)
+These are no longer a thing. Please give above or this a read [State of the Universe](https://www.battletech.com/forums/index.php?topic=83774.0)
 
 ---
 

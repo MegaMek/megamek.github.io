@@ -23,7 +23,7 @@ No changes to MegaMekLab
 
 ## MekHQ
 
-Numerous bug fixes and improvements to Stratcon. If you haven't heard of Stratcon [see here](https://bg.battletech.com/forums/megamek-games/coming-soon-to-megamek/msg1719781/#msg1719781)
+Numerous bug fixes and improvements to Stratcon. If you haven't heard of Stratcon [see here](https://www.battletech.com/forums/index.php?msg=1719781)
 
 
 ## SOCIAL MEDIA

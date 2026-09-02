@@ -113,7 +113,7 @@ Details on the replacement of the Stable/Development approach are available [her
 
 ### State of the Universe (January 19, 2024)
 
-If you haven't read the [State of the Universe](https://bg.battletech.com/forums/index.php?topic=83774.0), please do so. It's packed with relevant information.
+If you haven't read the [State of the Universe](https://www.battletech.com/forums/index.php?topic=83774.0), please do so. It's packed with relevant information.
 
 ---
 

@@ -87,7 +87,7 @@ The future of Sim Stuff is under review. If our fixes prove effective, Sim Movem
 
 We're not yet at the point of releasing a Stable 0.5.0. March 5th, 2024, will mark three years of development. We are exploring different ways to present Stable vs. Development releases and hope to provide updates soon.
 
-In the meantime, we recommend players move to a good Dev release, like 0.49.15, which had a manageable bug from MegaMek to MekHQ. [See here for details](https://bg.battletech.com/forums/index.php/topic,82935.0.html). Note that using a dev release requires Java 11 or 17 (see the next section).
+In the meantime, we recommend players move to a good Dev release, like 0.49.15, which had a manageable bug from MegaMek to MekHQ. [See here for details](https://www.battletech.com/forums/index.php/topic,82935.0.html). Note that using a dev release requires Java 11 or 17 (see the next section).
 
 ## Java 11 and 17
 

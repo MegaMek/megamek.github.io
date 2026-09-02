@@ -53,7 +53,7 @@ This release also supports Java 17, which has undergone some testing. More playe
 
 ## A Few Reminders:
 ### State of the Universe (January 19, 2024):
-If you haven't given the [State of the Universe (read here if you missed it)](https://bg.battletech.com/forums/index.php?topic=83774.0) a read, please do. There's lots of information in there that is still recent and relevant.
+If you haven't given the [State of the Universe (read here if you missed it)](https://www.battletech.com/forums/index.php?topic=83774.0) a read, please do. There's lots of information in there that is still recent and relevant.
 
 ### The Milestone System Summary
 Please see [this link](https://github.com/MegaMek/megamek/wiki/Milestone-Releases) for details on the replacement for the old Stable and Development cycle.
