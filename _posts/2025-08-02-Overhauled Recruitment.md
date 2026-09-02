@@ -40,7 +40,7 @@ Our goals were clear:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket00.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket00.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -58,7 +58,7 @@ Choose how deep you want to go:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket01.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket01.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -76,7 +76,7 @@ Strategic travel and downtime between contracts just became essential.
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket02.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket02.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -92,7 +92,7 @@ attracting better applicants without breaking game balance.
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket03.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket03.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -109,7 +109,7 @@ automatically knowing a recruit’s deepest secrets.
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket04.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket04.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -126,7 +126,7 @@ This system isn’t just about who you hire—it’s about how you plan:
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket05.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket05.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -140,7 +140,7 @@ mattered more. And remember: a good ‘Mek is just scrap without the right pilot
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket06.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket06.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
@@ -218,13 +218,13 @@ Yes—for now. But the legacy systems will be deprecated in future releases. Mek
 
 <div style="max-width: 800px; margin: auto;">
   <img
-    src="{{ '/assets/images/Personnel_Market/personnelMarket08.png' | relative_url }}"
+    src="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/personnelMarket08.png' | relative_url }}"
     alt="Personnel market overview"
     style="width: 100%; height: auto;"
   />
 </div>
 ---
-<a href="{{ '/assets/images/Personnel_Market/Recruitment.pdf' | relative_url }}"
+<a href="{{ '/assets/images/posts/2025/2025-08-02-overhauled-recruitment/Recruitment.pdf' | relative_url }}"
    target="_blank" rel="noopener"
    style="display: inline-block; padding: 1em 1.5em; background-color: #004c99; color: white; text-decoration: none; font-size: 1.2em; border-radius: 8px; font-weight: bold;">
   📄 Download the Personnel Market Documentation

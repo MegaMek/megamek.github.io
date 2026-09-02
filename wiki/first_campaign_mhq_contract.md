@@ -42,7 +42,7 @@ toc: |
   <h2><i class="fas fa-handshake"></i> Contract Market Overview</h2>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Contract Market Table overview.png' | relative_url }}" alt="Contract Market" class="guide-image" data-title="Contract Market">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Contract Market Table overview.png' | relative_url }}" alt="Contract Market" class="guide-image" data-title="Contract Market">
     <figcaption class="guide-caption">Contract Market showing available contracts</figcaption>
   </figure>
 
@@ -146,7 +146,7 @@ toc: |
   <p>Click a contract to see detailed information in the right panel.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Contract details.png' | relative_url }}" alt="Contract Details" class="guide-image" data-title="Contract Details">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Contract details.png' | relative_url }}" alt="Contract Details" class="guide-image" data-title="Contract Details">
     <figcaption class="guide-caption">Contract details panel</figcaption>
   </figure>
 
@@ -322,7 +322,7 @@ toc: |
   <p>The <strong>Briefing Room</strong> tab shows your active contracts and missions.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Briefing, requirements, assignments.png' | relative_url }}" alt="Briefing Room" class="guide-image" data-title="Briefing Room">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Briefing, requirements, assignments.png' | relative_url }}" alt="Briefing Room" class="guide-image" data-title="Briefing Room">
     <figcaption class="guide-caption">Briefing Room showing active contracts</figcaption>
   </figure>
 
@@ -458,7 +458,7 @@ toc: |
   </table>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Concluding the contract.png' | relative_url }}" alt="Scenario Resolution" class="guide-image" data-title="Scenario Resolution">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Concluding the contract.png' | relative_url }}" alt="Scenario Resolution" class="guide-image" data-title="Scenario Resolution">
     <figcaption class="guide-caption">Scenario Resolution dialog</figcaption>
   </figure>
 </section>

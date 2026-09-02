@@ -18,4 +18,4 @@ Prepare to universally receive: we’re adding blood types to MekHQ. Complete wi
 
 After all, how can you pick your campaign commander if you don’t know their Ketsueki-gata alignment?
 
-![Blood Type Panel](/assets/images/2025/04/bloodtype.png)
+![Blood Type Panel](/assets/images/posts/2025/2025-04-01-the-blood-is-life/bloodtype.png)

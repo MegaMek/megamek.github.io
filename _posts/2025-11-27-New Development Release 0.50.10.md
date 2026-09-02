@@ -34,10 +34,10 @@ After being construction-only in MegaMekLab for several releases, Handheld Weapo
 But that's not all - with the TO:AR "picking up stuff" option enabled, 'Mechs can now carry very small vehicles or Battle Armor squads in their arms. Think of it as giving your Atlas its own Tonka toy. While you can't throw them yet (that's a future goal), the foundation is in place for some interesting tactical possibilities down the road.
 
 <div style="max-width: 1000px; margin: auto; display: flex; gap: 16px;">
-  <a href="{{ '/assets/images/Releases/0_50_10/HHW1.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/HHW1.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/HHW1.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/HHW1.png' | relative_url }}"
         alt="Handheld Weapons Example 1"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -45,10 +45,10 @@ But that's not all - with the TO:AR "picking up stuff" option enabled, 'Mechs ca
       />
     </div>
   </a>
-  <a href="{{ '/assets/images/Releases/0_50_10/HHW2.png' | relative_url }}" target="_blank" style="flex: 1;">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/HHW2.png' | relative_url }}" target="_blank" style="flex: 1;">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/HHW2.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/HHW2.png' | relative_url }}"
         alt="Handheld Weapons Example 2"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -76,10 +76,10 @@ As always, we're an open-source, fan-based project. If you provide feedback to C
 We've implemented Anti-Radiation Ammunition (ARAD) for SRMs, LRMs, and MMLs. These missiles home in on active electronic systems, providing a tactical option against units relying on electronic warfare equipment. Unlike Listen-Kill missiles, ARAD missiles maintain their full range and damage potential and aren't easily confused by ECM. However, they're incompatible with Streak or Artemis systems. ARAD ammo is included in autoconfig support.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/ARAD_Damage.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/ARAD_Damage.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/ARAD_Damage.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/ARAD_Damage.png' | relative_url }}"
         alt="Anti-Radiation Ammunition Damage"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -95,10 +95,10 @@ We've implemented Anti-Radiation Ammunition (ARAD) for SRMs, LRMs, and MMLs. The
 We've delivered a comprehensive implementation of Nova Composite Electronic Warfare System (Nova CEWS) rules per Interstellar Operations: Alternate Eras. This includes BV cap enforcement (the 35% bonus cap was previously missing), lobby network persistence fixes (networks configured in lobby now properly persist when game starts), a new in-game network management dialog for the End Phase, and C3 connection line display fixes across all game phases.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/Nova_Management.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Nova_Management.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/Nova_Management.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Nova_Management.png' | relative_url }}"
         alt="Nova CEWS Network Management"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -175,10 +175,10 @@ This new optional system adds expanded injury types with detailed effects, full 
 AAM will see significant expansion in coming versions - this is just the foundation.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/Alt_Advanced_Medical.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Alt_Advanced_Medical.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/Alt_Advanced_Medical.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Alt_Advanced_Medical.png' | relative_url }}"
         alt="Alternative Advanced Medical System"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -195,10 +195,10 @@ New optional salvage rules bring MekHQ in line with Campaign Operations. When en
 This is a fairly involved system - we recommend reading the official CamOps rules and experimenting before using it in an active campaign.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/CamOps_Salvage.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/CamOps_Salvage.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/CamOps_Salvage.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/CamOps_Salvage.png' | relative_url }}"
         alt="Campaign Operations Salvage Rules"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -216,10 +216,10 @@ When accepting contracts, you can now rent facilities instead of maintaining per
 You can also rent Maintenance Bays and "Factory Conditions" for your units while off-contract or on garrison contracts (any contract ending in "Duty" except Relief Duty, plus Temporary Retainer contracts).
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/Facility_Rentals.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Facility_Rentals.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/Facility_Rentals.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Facility_Rentals.png' | relative_url }}"
         alt="Facility Rentals System"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -246,10 +246,10 @@ When a character reaches Veteran rank, they now receive a free Special Pilot Abi
 This reflects our design philosophy: free power comes with risk. One character might get Natural Aptitude/Gunnery; another might get Combat Paralysis. Such is the cost of spinning the wheel.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/Veterancy_Awards.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Veterancy_Awards.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/Veterancy_Awards.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Veterancy_Awards.png' | relative_url }}"
         alt="Veterancy Awards System"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"
@@ -272,10 +272,10 @@ This reflects our design philosophy: free power comes with risk. One character m
 **Diplomacy Report**: A new report in the Command Center shows faction standings and diplomatic relationships at a glance.
 
 <div style="max-width: 800px; margin: auto;">
-  <a href="{{ '/assets/images/Releases/0_50_10/Diplomacy_Alert.png' | relative_url }}" target="_blank">
+  <a href="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Diplomacy_Alert.png' | relative_url }}" target="_blank">
     <div style="width: 100%; aspect-ratio: 16/9; background: #1a1a1a; border-radius: 4px; overflow: hidden;">
       <img
-        src="{{ '/assets/images/Releases/0_50_10/Diplomacy_Alert.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2025/2025-11-27-new-development-release-0.50.10/Diplomacy_Alert.png' | relative_url }}"
         alt="Diplomacy Report"
         style="width: 100%; height: 100%; object-fit: contain; cursor: pointer; transition: all 0.3s;"
         onmouseover="this.style.transform='scale(1.02)'"

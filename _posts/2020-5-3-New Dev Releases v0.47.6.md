@@ -14,14 +14,14 @@ We got bug fixes. Abandon ship! Large spacecraft can now launch escape pods, giv
 
 #### New official Tileset (Saxarba Tileset)
 
-![Saxarba](/assets/images/TileSet/Sax1.PNG){:class="img-fluid w-75"}
+![Saxarba](/assets/images/posts/2020/2020-04-24-tilesets-and-stuff/Sax1.PNG){:class="img-fluid w-75"}
 
 #### Old Default Tileset - Atmospheric
 
-![Atmospheric](/assets/images/TileSet/Atmos1.PNG){:class="img-fluid w-75"}
+![Atmospheric](/assets/images/posts/2020/2020-04-24-tilesets-and-stuff/Atmos1.PNG){:class="img-fluid w-75"}
 
 If you want to explore and experiment with themes and other graphic options they are under View-Client Settings-Graphics
-![options](/assets/images/TileSet/Options.PNG){:class="img-fluid w-75"}
+![options](/assets/images/posts/2020/2020-04-24-tilesets-and-stuff/Options.PNG){:class="img-fluid w-75"}
 
 Also changing the theme under View-Change Tileset theme can had a feel of seasons to the Tilesets.
 

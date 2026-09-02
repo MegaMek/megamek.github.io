@@ -66,13 +66,13 @@ To maintain optimal performance in your MegaMek missions, we've integrated Sentr
 
 📝 **How to Enable Sentry if you want to help**:
 1. Open the sentry.properties file (located in the root of the program folder) in a text editor of your choice
-   ![Sentry 1](/assets/images/Sentry/Sentry%201.jpg)
+   ![Sentry 1](/assets/images/posts/2025/2025-05-19-new-milestone-release-0.50.06/Sentry%201.jpg)
 
 2. Once open, change the line `enabled=false` to `enabled=true` and save the file
-   ![Sentry 2](/assets/images/Sentry/Sentry%202.jpg)
+   ![Sentry 2](/assets/images/posts/2025/2025-05-19-new-milestone-release-0.50.06/Sentry%202.jpg)
 
 The other information in the file is the Server information where Sentry sends its bug reports. We have a channel on our Discord where only Developers/Engineers get notified of the reports. Here is an example:
-![Sentry 3](/assets/images/Sentry/Sentry%203.jpg)
+![Sentry 3](/assets/images/posts/2025/2025-05-19-new-milestone-release-0.50.06/Sentry%203.jpg)
 
 ### State of the Universe (February 18, 2025)
 If you haven't given the [State of the Universe (read here if you missed it)](https://megamek.org/2025/02/18/2025-State-of-the-Universe.html) a read, please do. There's lots of information in there that is still recent and relevant.

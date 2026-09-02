@@ -166,7 +166,7 @@ next_title: Glossary
 </section>
 
 <div class="guide-art-break my-5">
-  <img src="{{ '/assets/images/SOU/splash-postbattle.jpg' | relative_url }}" alt="Post-battle scene" class="img-fluid rounded" style="width: 100%;">
+  <img src="{{ '/assets/images/wiki/first_campaign_mhq/splash-postbattle.jpg' | relative_url }}" alt="Post-battle scene" class="img-fluid rounded" style="width: 100%;">
 </div>
 
 <section id="resources">
@@ -294,7 +294,7 @@ next_title: Glossary
 </section>
 
 <div class="guide-art-break my-5">
-  <img src="{{ '/assets/images/SOU/Mmek_Tensediplomacy_500x350.jpg' | relative_url }}" alt="Command center briefing" class="img-fluid rounded" style="width: 100%;">
+  <img src="{{ '/assets/images/wiki/first_campaign_mhq/Mmek_Tensediplomacy_500x350.jpg' | relative_url }}" alt="Command center briefing" class="img-fluid rounded" style="width: 100%;">
 </div>
 
 <section id="loop">

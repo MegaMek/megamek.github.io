@@ -17,12 +17,12 @@ There isn't a Mac release and you'll have to use the Unix release. We are having
 MegaMek
 As mentioned really only bug releases. But to enable dark mode go to View-Client Settings-Graphics and change using the UI Theme.
 Sample of Dark Mode
-![New Map GUI](/assets/images/screenshots/MMDarkMode.png){:class="img-fluid w-75"}
+![New Map GUI](/assets/images/screenshots/MM_DarkMode.png){:class="img-fluid w-75"}
 
 MegaMekLab
 To enable Dark Mode in MegaMekLab. Start the program then go to File-Themes and choose which one. On restart you should end up with this.
 
-![New Map GUI](/assets/images/screenshots/MMLDarkMode.png){:class="img-fluid w-75"}
+![New Map GUI](/assets/images/screenshots/MML_DarkMode.png){:class="img-fluid w-75"}
 
 MekHQ
 Again lots of bug fixes and some QoL stuff.

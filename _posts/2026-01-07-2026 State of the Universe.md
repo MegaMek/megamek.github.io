@@ -25,7 +25,7 @@ h3, h4, h5, h6 {
 # 2026 State of the Universe
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto 20px auto;">
-  <img src="/assets/images/SOU/MMek_Awardceremony_finfull.jpg" alt="MegaMek 2026 State of the Universe" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2025/2025-02-18-2025-state-of-the-universe/MMek_Awardceremony_finfull.jpg" alt="MegaMek 2026 State of the Universe" style="width: 100%; height: auto; display: block;">
 </div>
 
 *By Hammer*
@@ -64,7 +64,7 @@ On behalf of the Dev team, thank you to everyone who's contributed to these prog
 - Most importantly, our players—your engagement, feedback, bug reports, and shared stories keep these programs alive. You are the heart of MegaMek.
 
 <div style="width: 100%; max-width: 500px; margin: 20px auto;">
-  <img src="/assets/images/SOU/Mmek_Mercpeace_500x350.jpg" alt="MekWarriors shaking hands" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/wiki/first_campaign_mhq/Mmek_Mercpeace_500x350.jpg" alt="MekWarriors shaking hands" style="width: 100%; height: auto; display: block;">
 </div>
 
 Our [Discord](https://discord.gg/megamek) server now stands at **5,109 members** and continues to grow. We're one of the larger BattleTech communities out there, and while the Discord server is heavily focused on MegaMek, some of the most active conversations we have are around the universe, the tabletop rules, and everything happening with the Renaissance of BattleTech in general.
@@ -164,7 +164,7 @@ MegaMek reached players in **166 countries** in 2025. Our biggest audiences came
 
 ---
 
-<img src="/assets/images/SOU/MegaMek.png" alt="MegaMek Logo" class="hex-logo">
+<img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/MegaMek.png" alt="MegaMek Logo" class="hex-logo">
 
 ## MegaMek: The Digital Battlefield
 
@@ -189,7 +189,7 @@ At broad strokes, what we've been really happy to see is a general improvement i
 
 ---
 
-<img src="/assets/images/SOU/MegaMekLab.png" alt="MegaMekLab Logo" class="hex-logo">
+<img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/MegaMekLab.png" alt="MegaMekLab Logo" class="hex-logo">
 
 ## MegaMekLab: The Engineering Bay
 
@@ -222,7 +222,7 @@ Yes, we have decided internally that we will support Gothic. But for us to fully
 
 ---
 
-<img src="/assets/images/SOU/MekHQ.png" alt="MekHQ Logo" class="hex-logo">
+<img src="/assets/images/site/MekHQ.png" alt="MekHQ Logo" class="hex-logo">
 
 ## MekHQ: The Command Center
 
@@ -261,7 +261,7 @@ We're bringing the game closer to A Time of War with an evolving advanced charac
 
 Many systems we've introduced address the **power curve problem**. Campaign Operations doesn't cover everything, and the automation in MekHQ lets you play games quickly and accumulate C-Bills and experience at phenomenal rates. Our homegrown systems—medical, logistics, convoys—are designed to give you agency through meaningful choices.
 
-<img src="/assets/images/SOU/Mmek_StrategyMeeting_500x350.jpg" alt="Strategy Meeting" style="float: left; width: 250px; height: auto; margin: 0 20px 10px 0; border-radius: 5px;">
+<img src="/assets/images/site/Mmek_StrategyMeeting_500x350.jpg" alt="Strategy Meeting" style="float: left; width: 250px; height: auto; margin: 0 20px 10px 0; border-radius: 5px;">
 
 We're trying to create a sense of command—and the most difficult choice a commander faces is whether to fight at all. History is full of battles that should or shouldn't have been fought, decisions that ultimately shaped outcomes far beyond the battlefield. That's what we're evolving MekHQ to model: the weight of command, where sometimes the only winning move is not to play. When you see it that way, everything starts to link together.
 
@@ -328,7 +328,7 @@ For the record, we have no plans for a web-based MegaMek.
 ## Technical Updates
 
 <div style="width: 100%; max-width: 600px; margin: 20px auto;">
-  <img src="/assets/images/SOU/splash-repairs.jpg" alt="Technical Updates" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/site/splash-repairs.jpg" alt="Technical Updates" style="width: 100%; height: auto; display: block;">
 </div>
 
 Now for the stuff that makes the techs happy.
@@ -374,7 +374,7 @@ Some changes are invisible to most players but represent significant code improv
 It's important to reflect on the year, acknowledge what we missed, and learn from those experiences. 
 
 <div style="width: 100%; max-width: 600px; margin: 20px auto;">
-  <img src="/assets/images/SOU/splash-rescue.jpg" alt="2025 Misses" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/posts/2026/2026-01-07-2026-state-of-the-universe/splash-rescue.jpg" alt="2025 Misses" style="width: 100%; height: auto; display: block;">
 </div>
 
 ### CASPAR
@@ -442,7 +442,7 @@ But as we look way out into 2027, I'm hopeful and optimistic that we'll have som
 ## Closing Reflections
 
 <div style="width: 100%; max-width: 500px; margin: 20px auto;">
-  <img src="/assets/images/SOU/Mmek_Tensediplomacy_500x350.jpg" alt="Closing Reflections" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/wiki/first_campaign_mhq/Mmek_Tensediplomacy_500x350.jpg" alt="Closing Reflections" style="width: 100%; height: auto; display: block;">
 </div>
 
 Looking back on 2025, I'm proud of what we've built and how the community has grown alongside it. BattleTech's resurgence is [Catalyst's](https://www.catalystgamelabs.com/) celebration, but knowing MegaMek plays a part in that success means a lot.
@@ -458,7 +458,7 @@ Drop by our [Discord](https://discord.gg/megamek) to share your battle stories, 
 Seyla!
 
 <div style="width: 100%; max-width: 800px; margin: 30px auto;">
-  <img src="/assets/images/SOU/splash-ceremony.jpg" alt="MegaMek Closing" style="width: 100%; height: auto; display: block;">
+  <img src="/assets/images/site/splash-ceremony.jpg" alt="MegaMek Closing" style="width: 100%; height: auto; display: block;">
 </div>
 
 ---

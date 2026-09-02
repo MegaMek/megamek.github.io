@@ -7,7 +7,7 @@ date: 2025-02-18
 # 2025 State of the Universe
 
 <div class="container">
-  <img src="/assets/images/SOU/MMek_Awardceremony_finfull.jpg" 
+  <img src="/assets/images/posts/2025/2025-02-18-2025-state-of-the-universe/MMek_Awardceremony_finfull.jpg" 
        alt="MegaMek Award Ceremony" 
        class="responsive-image">
   <style>
@@ -29,7 +29,7 @@ date: 2025-02-18
 Following the warm reception of [our first State of the Universe](https://megamek.org/2024/01/19/State-of-the-Universe!.html), we're excited to share another comprehensive update on MegaMek. As well as wish it a Happy 23rd Birthday!
 
 <div class="container-small">
-  <img src="/assets/images/SOU/MegaMek%2023%20Year.png" 
+  <img src="/assets/images/posts/2025/2025-02-18-2025-state-of-the-universe/MegaMek%2023%20Year.png" 
        alt="MegaMek 23 Year Anniversary" 
        class="responsive-image">
   <style>
@@ -57,7 +57,7 @@ My journey with MegaMek predates MekHQ, going back to the era of MegaMek Solo Wa
 ## Some Thank You's
 
 <div class="container">
-  <img src="/assets/images/SOU/Mmek_Mercpeace_500x350.jpg" 
+  <img src="/assets/images/wiki/first_campaign_mhq/Mmek_Mercpeace_500x350.jpg" 
        alt="MegaMek Merc Peace" 
        class="responsive-image">
 </div>
@@ -87,7 +87,7 @@ We entered 2024 with ambitious goals, including transitioning from our tradition
 ### Development by the Numbers
 
 <div class="container">
-  <img src="/assets/images/SOU/Mmek_StrategyMeeting_500x350.jpg" 
+  <img src="/assets/images/site/Mmek_StrategyMeeting_500x350.jpg" 
        alt="MegaMek Strategy Meeting" 
        class="responsive-image">
 </div>
@@ -128,7 +128,7 @@ MekHQ saw substantial updates and improvements throughout 2024. Repair bay unit 
 ### Introducing ACAR and PACAR
 
 <div class="container">
-  <img src="/assets/images/SOU/Mmek_Tensediplomacy_500x350.jpg" 
+  <img src="/assets/images/wiki/first_campaign_mhq/Mmek_Tensediplomacy_500x350.jpg" 
        alt="MegaMek Tense Diplomacy" 
        class="responsive-image">
 </div>
@@ -144,7 +144,7 @@ This means players now have a variety of ways to play:
 ## Looking Ahead to 2025
 
 <div class="container">
-  <img src="/assets/images/SOU/splash-liftoff.jpg" 
+  <img src="/assets/images/site/splash-liftoff.jpg" 
        alt="MegaMek Liftoff" 
        class="responsive-image">
 </div>
@@ -191,7 +191,7 @@ add new features and capabilities.
 ## Hammer's closing reflections
 
 <div class="container">
-  <img src="/assets/images/SOU/splash-ceremony.jpg" 
+  <img src="/assets/images/site/splash-ceremony.jpg" 
        alt="MegaMek Ceremony" 
        class="responsive-image">
 </div>

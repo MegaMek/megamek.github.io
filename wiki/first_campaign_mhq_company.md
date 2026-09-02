@@ -103,7 +103,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Interstellar map.png' | relative_url }}" alt="Interstellar Map" class="guide-image" data-title="Interstellar Map">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Interstellar map.png' | relative_url }}" alt="Interstellar Map" class="guide-image" data-title="Interstellar Map">
     <figcaption class="guide-caption">Interstellar Map showing the Inner Sphere</figcaption>
   </figure>
 
@@ -113,7 +113,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/planetary_system/planetary_system_view.png' | relative_url }}" alt="System View" class="guide-image" data-title="System View">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/planetary_system_view.png' | relative_url }}" alt="System View" class="guide-image" data-title="System View">
     <figcaption class="guide-caption">System view showing planets and detailed information</figcaption>
   </figure>
 
@@ -169,7 +169,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Funds and Money.png' | relative_url }}" alt="Finances Tab" class="guide-image" data-title="Finances Tab">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Funds and Money.png' | relative_url }}" alt="Finances Tab" class="guide-image" data-title="Finances Tab">
     <figcaption class="guide-caption">Finances Tab showing transaction history</figcaption>
   </figure>
 </section>
@@ -211,7 +211,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/personnel market.png' | relative_url }}" alt="Hire Personnel" class="guide-image" data-title="Hire Personnel">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/personnel market.png' | relative_url }}" alt="Hire Personnel" class="guide-image" data-title="Hire Personnel">
     <figcaption class="guide-caption">Hire Personnel dialog</figcaption>
   </figure>
 
@@ -225,7 +225,7 @@ toc: |
   </ul>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Edit Person.png' | relative_url }}" alt="Edit Statistics" class="guide-image" data-title="Edit Statistics">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Edit Person.png' | relative_url }}" alt="Edit Statistics" class="guide-image" data-title="Edit Statistics">
     <figcaption class="guide-caption">Edit Statistics dialog</figcaption>
   </figure>
 
@@ -241,7 +241,7 @@ toc: |
   <p>The Personnel tab shows all your employees with sorting and filtering options.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Personnel Roster.png' | relative_url }}" alt="Personnel Tab" class="guide-image" data-title="Personnel Tab">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Personnel Roster.png' | relative_url }}" alt="Personnel Tab" class="guide-image" data-title="Personnel Tab">
     <figcaption class="guide-caption">Personnel Tab with filtering options</figcaption>
   </figure>
 
@@ -249,7 +249,7 @@ toc: |
     <div class="step-number"><i class="fas fa-crown"></i></div>
     <div class="step-content">
       <h4>Setting Up Leadership</h4>
-      <img src="{{ '/assets/images/first_campaign_mhq/Setting Up Leadership.png' | relative_url }}" alt="Personnel Flags Menu" class="img-fluid rounded" style="float: right; width: 80%; margin-left: 1rem; margin-bottom: 0.5rem;">
+      <img src="{{ '/assets/images/wiki/first_campaign_mhq/Setting Up Leadership.png' | relative_url }}" alt="Personnel Flags Menu" class="img-fluid rounded" style="float: right; width: 80%; margin-left: 1rem; margin-bottom: 0.5rem;">
       <ol>
         <li>Select your commander</li>
         <li>Right-click &gt; <strong>Flags</strong> &gt; Select Commander</li>
@@ -357,7 +357,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Education.png' | relative_url }}" alt="Education Options" class="guide-image" data-title="Education Options">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Education.png' | relative_url }}" alt="Education Options" class="guide-image" data-title="Education Options">
     <figcaption class="guide-caption">Education submenu options</figcaption>
   </figure>
 
@@ -479,7 +479,7 @@ toc: |
   </div>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Direct Purchase.png' | relative_url }}" alt="Purchase Units" class="guide-image" data-title="Purchase Units">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Direct Purchase.png' | relative_url }}" alt="Purchase Units" class="guide-image" data-title="Purchase Units">
     <figcaption class="guide-caption">Purchase Units dialog</figcaption>
   </figure>
 
@@ -527,7 +527,7 @@ toc: |
   </table>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Assigning Personnel.png' | relative_url }}" alt="Hangar Tab" class="guide-image" data-title="Hangar Tab">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Assigning Personnel.png' | relative_url }}" alt="Hangar Tab" class="guide-image" data-title="Hangar Tab">
     <figcaption class="guide-caption">Hangar Tab showing unit assignments</figcaption>
   </figure>
 
@@ -554,7 +554,7 @@ toc: |
   </ul>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/AutoLogistics2.png' | relative_url }}" alt="Parts in Use" class="guide-image" data-title="Parts in Use">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/AutoLogistics2.png' | relative_url }}" alt="Parts in Use" class="guide-image" data-title="Parts in Use">
     <figcaption class="guide-caption">Parts in Use Report</figcaption>
   </figure>
 
@@ -624,7 +624,7 @@ toc: |
   <p>Damaged units appear in the <strong>Repair Bay</strong> tab.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Mass Repair Mass Salvage.png' | relative_url }}" alt="Repair Bay" class="guide-image" data-title="Repair Bay">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Mass Repair Mass Salvage.png' | relative_url }}" alt="Repair Bay" class="guide-image" data-title="Repair Bay">
     <figcaption class="guide-caption">Repair Bay showing damaged units</figcaption>
   </figure>
 
@@ -688,7 +688,7 @@ toc: |
   <p>The <strong>TO&amp;E tab</strong> (Table of Organization and Equipment) structures your forces.</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Table of Organization.png' | relative_url }}" alt="TO&E Tab" class="guide-image" data-title="TO&E Tab">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Table of Organization.png' | relative_url }}" alt="TO&E Tab" class="guide-image" data-title="TO&E Tab">
     <figcaption class="guide-caption">TO&amp;E Tab showing force structure</figcaption>
   </figure>
 
@@ -769,7 +769,7 @@ toc: |
   <p>The <strong>Command Center</strong> tab provides an overview of your company:</p>
 
   <figure class="guide-figure">
-    <img src="{{ '/assets/images/first_campaign_mhq/Command Center.png' | relative_url }}" alt="Command Center" class="guide-image" data-title="Command Center">
+    <img src="{{ '/assets/images/wiki/first_campaign_mhq/Command Center.png' | relative_url }}" alt="Command Center" class="guide-image" data-title="Command Center">
     <figcaption class="guide-caption">Command Center overview</figcaption>
   </figure>
 
