@@ -26,8 +26,8 @@ contain local paths and other technical information.
 
 ## Connections made by the launcher
 
-The launcher automatically contacts GitHub on startup to check whether a newer
-launcher release is available.
+When installed using the official installers, the launcher automatically checks
+GitHub on startup for newer launcher releases.
 
 The launcher can also check for game updates on startup when automatic checks
 are enabled for a managed installation. Manual release browsing, update checks,
@@ -53,8 +53,8 @@ for their data-handling practices.
 ## Your choices
 
 Automatic game-update checks can be enabled or disabled for each managed
-installation. These settings do not affect the launcher's own update check,
-which always runs on startup and has no setting to disable it.
+installation. These settings do not control the launcher's own startup update
+check, which has no setting to disable it.
 
 ## Questions
 
