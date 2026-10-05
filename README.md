@@ -22,6 +22,31 @@ download links that show on the website depend on this file. For the download
 links to work properly, each release should just include the number of the
 release without a "v."
 
+### Launcher Policies and Signing
+
+The public pages are `/launcher-privacy.html`, `/code-signing.html`, and
+`/credits.html`. The privacy contact uses the existing `email` in `_config.yml`.
+The signing policy is launcher-scoped and currently uses pre-approval wording;
+it does not claim that signing is active or that other programs are signed.
+The shared footer links to all three pages. Launcher promotion, installation
+guides, and release-channel download changes are not part of this addition.
+
+Keep the artists' credits and any applicable notices in `credits.md` up to date
+when artwork is added or changed.
+Before activating signing, confirm the named roles and implement these
+operational requirements:
+
+- Team members must use multi-factor authentication for GitHub and SignPath.
+- Changes from contributors who are not trusted committers require review.
+- Each signing request requires manual approval by a listed signing approver.
+- Signed artifacts must be built from the official source repository in a
+  verifiable way.
+
+After the first signed Windows MSI is verified and published, update the signing
+status and service attribution in `code_signing.md` and any launcher download
+notices added later; do not imply older installers,
+game archives, or Linux/macOS packages were signed by that Windows integration.
+
 ### Page Content
 
 Page content is stored in markdown files in the `wiki` directory, and in the
@@ -29,6 +54,9 @@ root directory. Here is a list of the files that currently exist and what
 content they change:
 
 - In root directory:
+  - `launcher_privacy.md`: Launcher-specific privacy policy.
+  - `code_signing.md`: Launcher signing status, responsible maintainers, and policy.
+  - `credits.md`: Artwork, project contributors, and dependency notices.
   - `community.md`: Information about the MegaMek community. Shows on its own page.
   - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
   - `downloads.html`: Download information
