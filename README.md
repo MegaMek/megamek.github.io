@@ -31,8 +31,8 @@ it does not claim that signing is active or that other programs are signed.
 The shared footer links to all three pages. Launcher promotion, installation
 guides, and release-channel download changes are not part of this addition.
 
-Before completing the SignPath application, replace the artwork-credit TODO in
-`credits.md` with the artists' agreed attribution and applicable notices.
+Keep the artists' credits and any applicable notices in `credits.md` up to date
+when artwork is added or changed.
 Before activating signing, confirm the named roles and implement these
 operational requirements:
 

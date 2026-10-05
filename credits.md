@@ -13,7 +13,9 @@ and is used with permission under our commissioning agreements. This includes
 the launcher artwork and its derived installer crops. We thank the artists who
 created it.
 
-Art by TODO
+- Modern splash artwork by [Eldon Cowgur](https://www.artstation.com/eldoniousrex).
+- Other splash artwork by [spooky777](https://www.deviantart.com/spooky777).
+- Unit sprites by Deadborder.
 
 ## Contributors and dependencies
 
