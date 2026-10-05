@@ -2,7 +2,7 @@
   <div class="container footer">
     <div class='row'>
       <div class='col'>
-        &copy; 2025 MegaMek
+        &copy; {{ 'now' | date: '%Y' }} MegaMek
       </div>
       <div class='col text-end'>
         <a class="text-light" href="https://www.facebook.com/MegaMek"><i class="fab fa-facebook"><span
@@ -29,6 +29,13 @@
         MechWarrior © Microsoft Corporation. MegaMek was created under Microsoft's "<a href='https://www.xbox.com/en-US/developers/rules'
           class="footer-link">Game Content Usage Rules</a>" and it is not endorsed by or
         affiliated with Microsoft.
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <a class="footer-link" href="{{ '/launcher-privacy.html' | relative_url }}">Launcher privacy policy</a>
+        &middot; <a class="footer-link" href="{{ '/code-signing.html' | relative_url }}">Code signing policy</a>
+        &middot; <a class="footer-link" href="{{ '/credits.html' | relative_url }}">Credits and artwork</a>
       </div>
     </div>
   </div>
