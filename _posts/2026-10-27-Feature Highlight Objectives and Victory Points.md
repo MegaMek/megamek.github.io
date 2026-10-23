@@ -395,7 +395,7 @@ date: 2026-10-27
   <p>"They're not even firing, Captain," Lieutenant Hale said.</p>
   <p>"They don't need to. They're a cork in a bottle, and every second they sit up there, that ridge gets a little more theirs." Behind the jamming, Kurita would already be calling for help. "Their relief column's three minutes out, maybe less. They want that yard kept secret. Fine. We make sure there's nothing left worth hiding."</p>
   <p>"Orders?"</p>
-  <p>"Fire and Battle Lances, advance on that ridge. Push that lance off it and cover Raven's withdrawal. Command Lance, on me. We're pushing to the yard. Sergeant Voss, get your battle armor mounted up on Command Lance. While we hold and engage their relief column, you get inside and finish it. Damage as much as you can. Your priority is the technicians and engineers. Nobody leaves that yard. Every second we've got anyone inside that wire, their grip on it slips." She finally looked up from the display. "Let's go earn it."</p>
+  <p>"Fire and Battle Lances, advance on that ridge. Push that lance off it and cover Raven One's withdrawal. Command Lance, on me. We're pushing to the yard. Sergeant Voss, get your battle armor mounted up on Command Lance. While we hold and engage their relief column, you get inside and finish it. Damage as much as you can. Your priority is the technicians and engineers. Nobody leaves that yard. Every second we've got anyone inside that wire, their grip on it slips." She finally looked up from the display. "Let's go earn it."</p>
 </div>
 
 ## The Short Version
@@ -444,7 +444,7 @@ A lot of that playing was done by the Test Pilots QA group. They've had their he
 
 ## Playing an Objectives Game
 
-Here's a game with objectives from start to finish, in the order you'll meet it. The first time you set one up, keep this page open in the lobby.
+The battle at the top of this post was built with objectives. The five steps below show you how to set up a game of your own, in the order you'll meet it. Along the way, the yellow "In the story" lines and the scheme tabs point back to Reyes's battle, to show how each piece of it was made. You don't need to follow along: read it, then build your own. The first time you do, keep this page open in the lobby.
 
 <div class="corerules-figure">
   <video controls preload="metadata">
@@ -537,7 +537,7 @@ Press OK to place the point, or **Remove Flag** to take it back. Click one of yo
 
 Every point has a scoring scheme. Standard, Raid and Scan come straight from the rulebooks. Hold, Defend and Capture are MegaMek missions, there for players who want something different. Our plan has always been to capture the primary methods from the books, and also to offer players alternative ways to score.
 
-Each tab follows one thread of Reyes's battle from the story at the top: who places the point, how it scores, and how the fight for it plays out. Put together, they make one mission you can set up and play with a friend. The screenshot beside each one shows that scheme's properties dialog.
+Each tab follows one thread of Reyes's battle from the story at the top: who places the point, how it scores, and how the fight for it plays out. Put together, they make the opening battle, and you can set it up yourself if you'd like to try it. The screenshot beside each one shows that scheme's properties dialog.
 
 <div class="corerules-callout corerules-warning">
   <h3><i aria-hidden="true" class="fas fa-triangle-exclamation"></i> Read This Before You Set Up the Story</h3>
@@ -683,7 +683,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
         <div class="scheme-text">
           <h3>Capture: The River Crossing</h3>
           <blockquote class="scheme-quote">
-            <p>"We've got the high ground. Fire Lance, take the ford below us and hold it until Raven's across. We'll cover you."</p>
+            <p>"We've got the high ground. Fire Lance, take the ford below us and hold it until Raven One's across. We'll cover you."</p>
             <footer>&mdash; Battle Lance leader, on the ridge</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> attackers fill a progress meter by controlling the zone, and the owner pushes it back by retaking it. A tie freezes it.</p>
