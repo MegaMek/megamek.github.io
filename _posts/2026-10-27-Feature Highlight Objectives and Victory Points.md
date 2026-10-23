@@ -700,6 +700,7 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
             <div class="scheme-text">
               <h4>1. Set up</h4>
               <p>Turn limit 10, scouts stay until turn 5. Team 1 places a Scan point on its own depot: Belongs to Team 1, Scanned by Team 2, 1 point, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> it writes "A hidden depot". Nobody else can read that until Team 2's scan succeeds.</p>
+              <pre><code>Gbxllm droo xszmtv gsv dzb blf kozb - Szmw lu Hgziormt</code></pre>
             </div>
           </div>
         </div>
