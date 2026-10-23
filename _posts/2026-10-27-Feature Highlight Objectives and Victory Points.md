@@ -383,7 +383,7 @@ date: 2026-10-27
   <p>On her display, four red icons had climbed onto the ridge above the river crossing the moment Okafor's sensors lit up, and stopped dead: a full Kurita lance, sitting right across his only way home. "Raven One, hold your position. Once that ridge is ours, you've got cover until you're clear. Nobody gets left behind."</p>
   <p>"Raven One copies. Holding for your mark."</p>
   <p>"They're not even firing, Captain," Lieutenant Hale said.</p>
-  <p>"They don't need to. They're a cork in a bottle, and every second they sit up there, that ridge gets a little more theirs." She looked past the ridge to the yard itself. Behind it, a cargo DropShip was already spooling up to haul out whatever Kurita could load in time. Four minutes, maybe less. "They want that yard kept secret. Fine. We make sure there's nothing left worth hiding."</p>
+  <p>"They don't need to. They're a cork in a bottle, and every second they sit up there, that ridge gets a little more theirs." Behind the jamming, Kurita would already be calling for help. "Their relief column's three minutes out, maybe less. They want that yard kept secret. Fine. We make sure there's nothing left worth hiding."</p>
   <p>"Orders?"</p>
   <p>"Fire and Battle Lances, advance on the ridge. Push that lance off it and cover Raven's withdrawal. Command Lance, on me. We're going into the yard. Wreck every gantry and every chassis we can reach. Sergeant Voss, your battle armor is off standby. Get inside those halls and finish what we can't reach. Every second we've got anyone inside that wire, their grip on it slips." She finally looked up from the display. "Let's go earn it."</p>
 </div>
