@@ -529,7 +529,7 @@ Then each scheme adds its own settings:
 | **Hold** | **Turns to secure**: how many turns a side must hold the point. **Turns counted**: *Consecutively* means losing the point resets the count, and *Cumulatively* means the turns add up over the game. |
 | **Defend** | **Starting grip**: how strong the owner's hold is. **Grip drained per turn**: how much it drops for each turn an enemy stands in the zone. It never recovers. |
 | **Capture** | **Points to capture**: the size of the progress meter. **Progress per turn**: how far a side moves it for each turn it controls the zone. |
-| **Scan** | **Belongs to**: whose it is, which sets the flag's colour; "Nobody" is a valid choice. **Victory points are paid**: *On the scan*, *On the scan, lost if the scout is destroyed*, or *When the reading gets home*. **The scan reveals**: what the scanning side reads when its scan succeeds; a game master's field in 0.51.01. **Scanned by**, the side that scans it and scores it, arrives in the next release. A Scan point is read, not held, so it has no zone and no control settings. |
+| **Scan** | **Belongs to**: whose it is, which sets the flag's colour; "Nobody" is a valid choice. **Victory points are paid**: *On the scan*, *On the scan, lost if the scout is destroyed*, or *When the reading gets home*. **The scan reveals**: what the scanning side reads when its scan succeeds; a game master's field in 0.51.01. **Scanned by**, the side that scans it and scores it, arrives in 0.51.02. A Scan point is read, not held, so it has no zone and no control settings. |
 
 Press OK to place the point, or **Remove Flag** to take it back. Click one of your own points to change it. When you're finished, press **Done** and the next player takes their turn. If you press Done without placing anything, MegaMek checks that you meant to.
 
@@ -545,7 +545,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
   <ul>
     <li><strong>What works in 0.51.01:</strong> every value on the <strong>Set up</strong> lines below. The turn limit, the schemes, points, radius, Turns to secure, grip, the capture meter, Keep control when empty and the payouts are all real settings. So are the control rules the <strong>In play</strong> lines lean on: majorities, ties, and units that don't count.</li>
     <li><strong>What's only story:</strong> the relief column is just the turn limit; nothing actually arrives. Wrecking the gantries and the technicians isn't scored; a Demolish scheme is on the roadmap. The half-stripped 'Meks on the gantries are only there if you add them as units yourself.</li>
-    <li><strong>What arrives in the next release:</strong> Scanned by, and writing the scan note as a player. In 0.51.01, only a game master can write the note.</li>
+    <li><strong>What arrives in 0.51.02:</strong> Scanned by, and writing the scan note as a player. In 0.51.01, only a game master can write the note.</li>
     <li><strong>Each point needs its own hex.</strong> The Scan point and the Defend point both sit in the yard, so put them on different hexes.</li>
     <li><strong>The In play lines are one way the battle could go,</strong> not a promise. The dice decide the rest, and as an alpha, objectives may still surprise you.</li>
     <li><strong>You'll need a human opponent or a game master.</strong> Princess doesn't play objectives yet.</li>
@@ -702,7 +702,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <footer>&mdash; Sergeant Okafor</footer>
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> the point isn't held, it's read. A scout scans it, and the points are paid the moment the scan succeeds, paid but taken back if the scout dies, or paid only once the scout gets home. <strong>Scanned by</strong> picks the side that scans and scores it: your own, or the other side, when you hide something for them to find. <strong>Belongs to</strong> is whose it is, and sets the flag's colour.</p>
-          <p class="scheme-aside">Scanned by, and writing the note as a player rather than a game master, arrive in the release after 0.51.01.</p>
+          <p class="scheme-aside">Scanned by, and writing the note as a player rather than a game master, arrive in 0.51.02.</p>
         </div>
         <ul class="nav nav-pills scheme-variants" role="tablist" aria-label="A scan from start to finish">
         <li class="nav-item" role="presentation">
@@ -726,7 +726,11 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             </div>
             <div class="scheme-text">
               <h4>1. Set up</h4>
-              <p>Scouts stay until turn 5. A Scan point goes on the refit yard for Reyes's side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
+              <blockquote class="scheme-quote">
+                <p>"Briefing says supply dump. Get close, get a reading, get home. Raven's a scout, not a brawler. Nobody's supposed to know I was ever here."</p>
+                <footer>&mdash; Sergeant Okafor</footer>
+              </blockquote>
+              <p>Scouts stay until turn 5. Reyes places a Scan point on the warehouse at the heart of the yard for her own side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
               <pre><code>Gbxllm droo xszmtv gsv dzb blf kozb - Szmw lu Hgziormt</code></pre>
             </div>
           </div>
@@ -738,6 +742,10 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             </div>
             <div class="scheme-text">
               <h4>2. The scan</h4>
+              <blockquote class="scheme-quote">
+                <p>"Sensors up. The jamming hits like a wall of static. And every Kurita display in this valley just saw a Raven light up beside their warehouse."</p>
+                <footer>&mdash; Sergeant Okafor</footer>
+              </blockquote>
               <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. That's how Kurita knew to put a lance on the ridge.</p>
             </div>
           </div>
@@ -749,6 +757,10 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             </div>
             <div class="scheme-text">
               <h4>3. The reveal</h4>
+              <blockquote class="scheme-quote">
+                <p>"Crates, like we thought. Then the gantries. A dozen chassis, half of them stripped to the frame. That's no supply dump. Six, Raven One. We found it."</p>
+                <footer>&mdash; Sergeant Okafor</footer>
+              </blockquote>
               <p>The sensor check is rolled in the End Phase against Piloting skill +3, and range, line of sight, probes, ECM and stealth all apply, so Kurita's jamming makes Okafor's job harder. He passes, and only his side reads what the scan reveals. If your table prefers the Tactical Operations: Advanced Rules version, tick <strong>TacOps Scanning</strong> in Game Options.</p>
             </div>
           </div>
@@ -760,6 +772,10 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             </div>
             <div class="scheme-text">
               <h4>4. Not home yet</h4>
+              <blockquote class="scheme-quote">
+                <p>"Holding for your mark. Four of them on that ridge, and the only way home runs right underneath it. Come on, Fire Lance."</p>
+                <footer>&mdash; Sergeant Okafor</footer>
+              </blockquote>
               <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. Okafor's Raven is free to leave once the scouts' stay is up, but the only way out runs past the ridge and over the ford. He crosses the moment the ford opens, and leaves over his home edge a couple of turns later. If he dies first, the reading dies with him. Nobody gets left behind. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
             </div>
           </div>
@@ -827,7 +843,7 @@ Scenario files can go further. A scenario can place its own points, give a side 
 <div class="corerules-callout">
   <h3><i aria-hidden="true" class="fas fa-user-shield"></i> Game Masters</h3>
   <p>A game master can set up any side's points, take a setup turn without any units, and place, edit or remove points in the middle of a game. Running a campaign night? Move the objective when the story calls for it. If a player joins a scenario late, they still get their setup turn.</p>
-  <p>A game master also sees one extra field on Scan points: <strong>The scan reveals</strong>. Write what the scout discovers there, and only the scanning player reads it when the scan succeeds. "The warehouse is full of PPC capacitors" is a lot more fun than "+2 VP". From the next release, the player placing a Scan point can write it too, as in the Scan tab in Step 3.</p>
+  <p>A game master also sees one extra field on Scan points: <strong>The scan reveals</strong>. Write what the scout discovers there, and only the scanning player reads it when the scan succeeds. "The warehouse is full of PPC capacitors" is a lot more fun than "+2 VP". From 0.51.02, the player placing a Scan point can write it too, as in the Scan tab in Step 3.</p>
 </div>
 
 <div class="corerules-callout corerules-warning">
@@ -838,7 +854,7 @@ Scenario files can go further. A scenario can place its own points, give a side 
 
 ## What's Next
 
-Everything above is the foundation. Here's what comes next, in the order we plan to bring it to you. The first three are already built and are waiting for the release after 0.51.01; the variants and the Raid change have been through QA, and the scanning change is being tested now. The rest are planned. As always, plans can change.
+Everything above is the foundation. Here's what comes next, in the order we plan to bring it to you. The first three are already built and are waiting for 0.51.02; the variants and the Raid change have been through QA, and the scanning change is being tested now. The rest are planned. As always, plans can change.
 
 ### Objective Variants: Coming Soon
 
@@ -849,7 +865,7 @@ The Core Rulebook has four variants for objective counters, and all four are alr
 - **Fragile.** Damage in its hex, from fire, artillery or a building collapse, can destroy it.
 - **Mobile.** A 'Mek with a working hand can pick it up and carry it, and drops it if it falls. Carry it off the map and it goes with you.
 
-QA has already played every one of these. They finished too late to go into a release this size, so they'll arrive in the release after 0.51.01.
+QA has already played every one of these. They finished too late to go into a release this size, so they'll arrive in 0.51.02.
 
 <!--
   SHOT 6: carrying a Mobile flag. CAPTURED as two stills in mobile/ (pickup, then carried).
@@ -884,13 +900,13 @@ QA has already played every one of these. They finished too late to go into a re
 
 ### The Objective Raid Mission
 
-In the Core Rulebook's Objective Raid mission, each side scores for every objective it holds, **every End Phase**, not just once at the end. The next release brings our Raid in line with the book, and QA has already played it. Raid points will pay every End Phase by default, as printed. A new setting, "Victory points are paid: Once at game end", keeps today's behaviour for anyone who prefers it, and saved games keep paying the way they were set up. It's the same principle again: the book's method first, with alternatives available.
+In the Core Rulebook's Objective Raid mission, each side scores for every objective it holds, **every End Phase**, not just once at the end. 0.51.02 brings our Raid in line with the book, and QA has already played it. Raid points will pay every End Phase by default, as printed. A new setting, "Victory points are paid: Once at game end", keeps today's behaviour for anyone who prefers it, and saved games keep paying the way they were set up. It's the same principle again: the book's method first, with alternatives available.
 
 The next step after that is a mission preset that sets up an Objective Raid for you: rolling the number of counters, enforcing the spacing, and rolling their variants.
 
 ### Scanning: Hide Something for Them to Find
 
-Scanning gets the same treatment as everything else in this post: we keep playing it, and we keep polishing it. The next release adds a way to hide something for the other side to find. Choose who will scan it, write what they'll discover, and it stays a secret until they do. You've already had a glimpse of it in the Scan tab in Step 3.
+Scanning gets the same treatment as everything else in this post: we keep playing it, and we keep polishing it. 0.51.02 adds a way to hide something for the other side to find. Choose who will scan it, write what they'll discover, and it stays a secret until they do. You've already had a glimpse of it in the Scan tab in Step 3.
 
 ### What About Capture the Flag?
 
@@ -952,7 +968,7 @@ The rest of the plan for 0.51.03, the release where we aim to have the whole set
 
 <!--
   OPTIONAL SHOT 8: a roadmap graphic.
-  A simple timeline: 0.51.01 (objectives, Victory Setup, the six schemes, scanning); next release
+  A simple timeline: 0.51.01 (objectives, Victory Setup, the six schemes, scanning); 0.51.02
   (variants, Objective Raid, Scanned by and private notes); planned (setting the stakes, named flags);
   further out (the roadmap list above, bots last). Can be a screenshot of GitHub Project 36 filtered to
   the series, or a small drawn graphic. File: roadmap.png.
