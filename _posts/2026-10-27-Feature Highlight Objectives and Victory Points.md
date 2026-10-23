@@ -256,6 +256,16 @@ date: 2026-10-27
   font-size: 0.85em;
   opacity: 0.8;
 }
+/* "In the story" lines under each Step: the opening story's yellow edge, so they read as part of it */
+.story-link {
+  max-width: 900px;
+  padding: 0.35rem 0 0.35rem 0.9rem;
+  border-left: 3px solid #f2b705;
+  font-style: italic;
+}
+.story-link strong {
+  font-style: normal;
+}
 .scheme-text .scheme-aside {
   font-size: 0.9em;
   font-style: italic;
@@ -446,6 +456,8 @@ Here's a game with objectives from start to finish, in the order you'll meet it.
 
 ### Step 1: Switch It On in the Lobby
 
+<p class="story-link"><strong>In the story:</strong> Kurita's relief column, three minutes out, is the turn limit: 18 turns at ten seconds a turn. Tick <strong>Sudden death objectives</strong> too, so losing the ridge or the yard can end the fight early, and leave scouts staying until turn 5.</p>
+
 Victory conditions used to be buried in the long Game Options list. Since July they've had their own **Victory Conditions** dialog in the lobby, and objectives have their own tab in it. You'll use both tabs.
 
 On the **Victory Conditions** tab, tick **Force game end at turn limit** and set the number of turns. That's the most common way to end an objectives game: when the last turn ends, the side with the most victory points wins, and a tie is a draw.
@@ -477,6 +489,8 @@ Then switch to the **Objectives** tab:
 Close the dialog and start the game when everyone is ready.
 
 ### Step 2: The New Victory Setup Phase
+
+<p class="story-link"><strong>In the story:</strong> Kurita places the points it means to keep: the ridge, the refit yard and the river crossing. Reyes places what she came for: the warehouse crates and the Scan point on the yard. Each side adds its own Standard points at both ends of the valley.</p>
 
 Ticking **Use Objectives** gives your game a brand new phase: **Victory Setup**. It's where every objectives game begins, and it's where you place your points. Leave Use Objectives off and you'll never see it. Your games play exactly as they always have.
 
@@ -523,7 +537,7 @@ Press OK to place the point, or **Remove Flag** to take it back. Click one of yo
 
 Every point has a scoring scheme. Standard, Raid and Scan come straight from the rulebooks. Hold, Defend and Capture are MegaMek missions, there for players who want something different. Our plan has always been to capture the primary methods from the books, and also to offer players alternative ways to score.
 
-Pick a scheme below to see its properties dialog next to an example: a moment from the battlefield, then how it works in MegaMek. Each example is a complete mission, so set it up as written and play it with a friend.
+Each tab follows one thread of Reyes's battle from the story at the top: who places the point, how it scores, and how the fight for it plays out. Put together, they make one mission you can set up and play with a friend. The screenshot beside each one shows that scheme's properties dialog.
 
 <!--
   SHOT 10: the properties dialog, once per scoring scheme, shown in the scheme tabs. CAPTURED.
@@ -567,14 +581,14 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
           <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/1_standard.png' | relative_url }}" alt="The objective properties dialog set to Standard: 1 victory point, control radius 1" width="701" height="410" loading="lazy" />
         </div>
         <div class="scheme-text">
-          <h3>Standard: Trading Ground</h3>
+          <h3>Standard: Both Ends of the Valley</h3>
           <blockquote class="scheme-quote">
-            <p>"They've got our relay station, Major." "Then we take their fuel dump. Whatever they grab, we grab back, and we keep what we started with."</p>
-            <footer>&mdash; Davion company command net</footer>
+            <p>"Landing zone's empty, Captain." "Then it stays ours until they come and take it. Keep a foot in their gate."</p>
+            <footer>&mdash; Lieutenant Hale and Captain Reyes</footer>
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> each End Phase, a side scores 1 victory point if it holds at least one of its own points <em>and</em> at least one of the enemy's. Hold them all and it's 2.</p>
-          <p><strong>Set up:</strong> turn limit 8. Each player places two Standard points, 1 point each, radius 1: a relay station and a fuel dump.</p>
-          <p><strong>In play:</strong> sitting on your own points earns nothing. The Davion player leaves a Hunchback HBK-4G guarding the relay station and sends a Phoenix Hawk PXH-1 to sit on the Kurita fuel dump. Now Davion scores every turn until Kurita pushes it off. This is the best mission to start with.</p>
+          <p><strong>Set up:</strong> each side places two Standard points, 1 point each, radius 1. Reyes takes her landing zone and the river ford. Kurita takes the yard gate and the ridge road. Tick <strong>Keep control when empty</strong> on the landing zone.</p>
+          <p><strong>In play:</strong> every lance Reyes has is committed, so nobody is left at the landing zone. With Keep control when empty ticked, it stays hers until Kurita sends someone to take it. The moment the Command Lance pushes into the yard gate, she holds one of her own and one of theirs, and scores every End Phase from then on. Sitting on your own points earns nothing; it's the foot in their door that pays.</p>
         </div>
       </div>
     </div>
@@ -585,14 +599,14 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
           <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/2_raid.png' | relative_url }}" alt="The objective properties dialog set to Raid: 5 victory points, control radius 0, scoring once at game end" width="669" height="362" loading="lazy" />
         </div>
         <div class="scheme-text">
-          <h3>Raid: Last One Standing on the Crates</h3>
+          <h3>Raid: The Crates We Came For</h3>
           <blockquote class="scheme-quote">
-            <p>"Forget the early fight. The DropShip lifts at dusk, and it only takes whatever is in our hands when it does."</p>
-            <footer>&mdash; Mercenary raid leader, before the drop</footer>
+            <p>"Refit yard or not, we came here for those crates. I still want the crates."</p>
+            <footer>&mdash; Captain Reyes</footer>
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> whoever holds the point scores it. In 0.51.01 it pays once, when the game ends. See What's Next for the change coming to this one.</p>
-          <p><strong>Set up:</strong> turn limit 8. One Raid point on a supply cache in the middle of the map: 5 points, radius 0, so only the cache's own hex counts.</p>
-          <p><strong>In play:</strong> holding the cache on turn 2 is worth nothing. Holding it at the end of turn 8 is worth all 5. Expect both players to circle it for most of the game, then pile in during the last two turns. With a zone just one hex across, a fast Jenner JR7-D that can dash onto the cache at the very end is worth its weight in gold.</p>
+          <p><strong>Set up:</strong> Reyes places a Raid point on the supply warehouse at the yard's edge: 5 points, radius 0, so only the warehouse's own hex counts.</p>
+          <p><strong>In play:</strong> before Okafor's reading, this was the whole job, and it still counts. Holding the warehouse on turn 3 is worth nothing. Whoever is standing in it when the relief column arrives and the game ends gets all 5. Voss's battle armor is already inside the wire. Leave one squad standing on the warehouse at the end, and the crates go home with Reyes.</p>
         </div>
       </div>
     </div>
@@ -618,14 +632,14 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
           </ul>
         </div>
         <div class="scheme-text">
-          <h3>Hold: Dig In and Stay</h3>
+          <h3>Hold: The Cork in the Bottle</h3>
           <blockquote class="scheme-quote">
-            <p>"Command wants that ridge held for a hundred seconds straight. Not ninety. A hundred."</p>
-            <footer>&mdash; Kurita lance commander</footer>
+            <p>"Nobody moves. We don't have to win the fight. We just have to still be here."</p>
+            <footer>&mdash; Kurita lance commander, on the ridge</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> the first side to hold the point for a set number of turns secures it. Either side can win it.</p>
-          <p><strong>Set up:</strong> turn limit 16, with Sudden death objectives ticked. One Hold point on a central ridge: 5 points, radius 1, Turns to secure 10, counted Consecutively.</p>
-          <p><strong>In play:</strong> Kurita gets a Griffin and a Panther onto the ridge on turn 3 and holds it through turn 8: six turns. On turn 9, a Davion Wolverine and Commando reach the zone. That's two against two, a tie, and the Kurita count drops back to zero. Count the turns <em>Cumulatively</em> instead, and the same push only pauses the count: Kurita keeps its six turns and needs four more. With sudden death on, whoever secures the ridge wins outright.</p>
+          <p><strong>Set up:</strong> Kurita places a Hold point on the ridge above the river crossing: 5 points, radius 1, Turns to secure 10, counted Consecutively. Tick Sudden death objectives in the lobby.</p>
+          <p><strong>In play:</strong> Kurita's lance is on the ridge from turn 1, counting. Reyes's first two 'Meks reach the zone on turn 5. Four against two is still Kurita's, and the count keeps climbing. On turn 6 she has four up there: four against four is a tie, nobody holds it, and Kurita's count drops back to zero. On turn 7 her eighth 'Mek arrives and the ridge is hers. Count the turns <em>Cumulatively</em> instead, and that tie only pauses Kurita's count. With sudden death on, if Kurita ever reaches ten, the ridge is secured, the game ends, and Okafor never gets home.</p>
         </div>
       </div>
     </div>
@@ -636,14 +650,14 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
           <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/4_defend.png' | relative_url }}" alt="The objective properties dialog set to Defend: starting grip 10, grip drained 1 per turn, 5 victory points, control radius 1" width="652" height="439" loading="lazy" />
         </div>
         <div class="scheme-text">
-          <h3>Defend: Every Second They're Inside Hurts</h3>
+          <h3>Defend: Inside the Wire</h3>
           <blockquote class="scheme-quote">
-            <p>"I don't care if it's one Locust against my whole company. If it's inside the wire, the civilians are panicking."</p>
-            <footer>&mdash; Garrison commander</footer>
+            <p>"Riding in on Command, ma'am. We drop off at the wire, and then we're inside."</p>
+            <footer>&mdash; Sergeant Voss</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> the point belongs to its owner, and only the enemy can take it. Every turn an enemy unit stands in the zone, the owner's grip drops, even if the owner has more units there. At zero, the point falls.</p>
-          <p><strong>Set up:</strong> turn limit 15. The defender places a Defend point on their command post: 5 points, radius 1, Starting grip 10, Grip drained per turn 1.</p>
-          <p><strong>In play:</strong> the defender's Atlas AS7-D stands on the command post, but a single attacking Locust LCT-1V darts into the zone. Outnumbered or not, the grip drops from 10 to 9. Ten sounds like plenty, but the turns don't have to come in a row, and the grip never comes back. Every End Phase the attacker has anything alive inside the wire costs the defender another point, and at zero the point falls and the attacker scores all 5. The defender has to keep the zone completely clear, so that Locust has to die <em>now</em>.</p>
+          <p><strong>Set up:</strong> Kurita places a Defend point on the refit yard: 5 points, radius 2, Starting grip 10, Grip drained per turn 1.</p>
+          <p><strong>In play:</strong> the Command Lance pushes up to the wire, and Voss's battle armor climbs off and goes inside. Every End Phase anything of Reyes's is alive in the yard, Kurita's grip drops by one, even while Kurita's guards outnumber her. The half-stripped 'Meks on the gantries don't help them either: an immobile unit never counts. Ten turns sounds like plenty, but they don't have to come in a row, and the grip never comes back. At zero the yard falls and Reyes scores all 5. Nobody leaves that yard.</p>
         </div>
       </div>
     </div>
@@ -654,14 +668,14 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
           <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/5_capture.png' | relative_url }}" alt="The objective properties dialog set to Capture: 10 points to capture, progress 1 per turn, 5 victory points, control radius 1" width="644" height="401" loading="lazy" />
         </div>
         <div class="scheme-text">
-          <h3>Capture: A Tug of War</h3>
+          <h3>Capture: The River Crossing</h3>
           <blockquote class="scheme-quote">
-            <p>"We push them out of the spaceport, they push us back out. Whoever holds that tower long enough to make it stick, wins."</p>
-            <footer>&mdash; Spaceport assault commander</footer>
+            <p>"Ford's ours. If they want it back, they can come down off that ridge and get it."</p>
+            <footer>&mdash; Fire Lance leader</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> attackers fill a progress meter by controlling the zone, and the owner pushes it back by retaking it. A tie freezes it.</p>
-          <p><strong>Set up:</strong> turn limit 16. The defender places a Capture point on a spaceport tower: 5 points, radius 1, Points to capture 10, Progress per turn 1.</p>
-          <p><strong>In play:</strong> the attacker controls the zone from turn 2 to turn 7, and the meter climbs to 6 of 10. On turns 8 and 9 the defender retakes it, and the meter slides back to 4. On turn 10 both sides have two 'Meks in the zone, a tie, and the meter freezes. The attacker now needs six clean turns, every turn from 11 to 16, to fill it on the last turn and score the 5 points. One more tie and the tower holds.</p>
+          <p><strong>Set up:</strong> Kurita places a Capture point on the river crossing below the ridge: 5 points, radius 1, Points to capture 6, Progress per turn 1.</p>
+          <p><strong>In play:</strong> Fire Lance takes the ford while Battle Lance climbs, and controls it from turn 3 to turn 6. The meter climbs to 4 of 6. On turn 7 two of the ridge lance come down to retake it, and the meter slides back to 3. On turn 8 it's two against two, a tie, and the meter freezes. Fire Lance needs three more clean turns to take it, and every one of them keeps Okafor's way home open.</p>
         </div>
       </div>
     </div>
@@ -669,10 +683,10 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
     <div class="tab-pane fade" id="scheme-scan" role="tabpanel" aria-labelledby="scheme-scan-tab" tabindex="0">
       <div class="scheme-panel scheme-panel-steps">
         <div class="scheme-text">
-          <h3>Scan: Look, Don't Touch</h3>
+          <h3>Scan: Okafor's Run</h3>
           <blockquote class="scheme-quote">
-            <p>"We don't need the depot. We need to know what's in it, and we need that intel back on the DropShip."</p>
-            <footer>&mdash; Davion recon officer</footer>
+            <p>"Six, Raven One. I've got the reading. Now I just have to get it home."</p>
+            <footer>&mdash; Sergeant Okafor</footer>
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> the point isn't held, it's read. A scout scans it, and the points are paid the moment the scan succeeds, paid but taken back if the scout dies, or paid only once the scout gets home. <strong>Scanned by</strong> picks the side that scans and scores it: your own, or the other side, when you hide something for them to find. <strong>Belongs to</strong> is whose it is, and sets the flag's colour.</p>
           <p class="scheme-aside">Scanned by, and writing the note as a player rather than a game master, arrive in the release after 0.51.01.</p>
@@ -699,7 +713,7 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
             </div>
             <div class="scheme-text">
               <h4>1. Set up</h4>
-              <p>Turn limit 10, scouts stay until turn 5. Team 1 places a Scan point on its own depot: Belongs to Team 1, Scanned by Team 2, 1 point, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> it writes "A hidden depot". Nobody else can read that until Team 2's scan succeeds.</p>
+              <p>Scouts stay until turn 5. A Scan point goes on the refit yard for Reyes's side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
               <pre><code>Gbxllm droo xszmtv gsv dzb blf kozb - Szmw lu Hgziormt</code></pre>
             </div>
           </div>
@@ -711,7 +725,7 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
             </div>
             <div class="scheme-text">
               <h4>2. The scan</h4>
-              <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. Here Team 2's Alfar AL-A1 has closed in on the depot.</p>
+              <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. That's how Kurita knew to put a lance on the ridge.</p>
             </div>
           </div>
         </div>
@@ -722,7 +736,7 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
             </div>
             <div class="scheme-text">
               <h4>3. The reveal</h4>
-              <p>The sensor check is rolled in the End Phase against Piloting skill +3, and range, line of sight, probes, ECM and stealth all apply. The Alfar passes, and Team 2 alone reads "The scan reveals: A hidden depot". If your table prefers the Tactical Operations: Advanced Rules version, tick <strong>TacOps Scanning</strong> in Game Options.</p>
+              <p>The sensor check is rolled in the End Phase against Piloting skill +3, and range, line of sight, probes, ECM and stealth all apply, so Kurita's jamming makes Okafor's job harder. He passes, and only his side reads what the scan reveals. If your table prefers the Tactical Operations: Advanced Rules version, tick <strong>TacOps Scanning</strong> in Game Options.</p>
             </div>
           </div>
         </div>
@@ -733,7 +747,7 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
             </div>
             <div class="scheme-text">
               <h4>4. Not home yet</h4>
-              <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. The Alfar has to stay until turn 5, then leave over its own home edge, and if it dies first the reading dies with it. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
+              <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. Okafor's Raven has to stay until turn 5, then leave over its own home edge, and if it dies first the reading dies with it. Nobody gets left behind. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
             </div>
           </div>
         </div>
@@ -753,6 +767,8 @@ Pick a scheme below to see its properties dialog next to an example: a moment fr
 -->
 
 ### Step 4: Fight for Control
+
+<p class="story-link"><strong>In the story:</strong> eight against four takes the ridge, but two against four doesn't even slow Kurita's count. And Voss's battle armor only counts in the yard once it climbs off the Command Lance's 'Meks, because units being carried never count.</p>
 
 Once everyone has pressed Done, deploy and play as normal. Points are decided in each End Phase. A side **controls** a point when it has more eligible units inside the zone than anyone else. Two 'Meks against one is control. One against one is a tie, and a tie means nobody holds it.
 
@@ -779,6 +795,8 @@ The board keeps you up to date:
 </div>
 
 ### Step 5: The End of the Game
+
+<p class="story-link"><strong>In the story:</strong> the fight ends when the relief column arrives on turn 18, or sooner if the ridge is secured or the yard falls, with sudden death on. Okafor's 3 points only count if his Raven is clear by then.</p>
 
 With objectives on, the game no longer has to end when one side is wiped out. It ends at the turn limit, when a side reaches the points target, or at sudden death, whichever you set in Step 1. Then the victory points decide the winner, and the victory page lists every scan made during the game.
 
