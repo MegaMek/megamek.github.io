@@ -727,7 +727,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>1. Set up</h4>
               <blockquote class="scheme-quote">
-                <p>Low along the riverbank, reactor turned down, every step slow. A Raven carries sensors, not armor. If they see me before I see them, this is a very short night.</p>
+                <p>Low along the riverbank, ECM up, keeping to the trees. A Raven is small and hard to pin down on their screens, and that's all the armor it really has. If they see me before I see them, this is a very short night.</p>
                 <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>Scouts stay until turn 5. Reyes places a Scan point on the warehouse at the heart of the yard for her own side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
@@ -743,7 +743,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>2. The scan</h4>
               <blockquote class="scheme-quote">
-                <p>There's no way to look without being seen. The second these sensors go active, every Kurita display in the valley knows exactly where I am. Close enough. Do it.</p>
+                <p>There's no way to look without being seen. The second the probe goes active, every Kurita display in the valley knows exactly where I am, ECM or not. Close enough. Do it.</p>
                 <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. That's how Kurita knew to put a lance on the ridge.</p>
