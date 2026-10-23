@@ -385,7 +385,7 @@ date: 2026-10-27
   <p>"They're not even firing, Captain," Lieutenant Hale said.</p>
   <p>"They don't need to. They're a cork in a bottle, and every second they sit up there, that ridge gets a little more theirs." Behind the jamming, Kurita would already be calling for help. "Their relief column's three minutes out, maybe less. They want that yard kept secret. Fine. We make sure there's nothing left worth hiding."</p>
   <p>"Orders?"</p>
-  <p>"Fire and Battle Lances, advance on that ridge. Push that lance off it and cover Raven's withdrawal. Command Lance, on me. We're pushing to the yard. Sergeant Voss, have your battle armor keep up. While we hold and engage their relief column, you get inside and finish it. Damage as much as you can. Your priority is to kill the technicians and engineers. Every second we've got anyone inside that wire, their grip on it slips." She finally looked up from the display. "Let's go earn it."</p>
+  <p>"Fire and Battle Lances, advance on that ridge. Push that lance off it and cover Raven's withdrawal. Command Lance, on me. We're pushing to the yard. Sergeant Voss, mount up on Command Lance. While we hold and engage their relief column, you get inside and finish it. Damage as much as you can. Your priority is the technicians and engineers. Nobody leaves that yard. Every second we've got anyone inside that wire, their grip on it slips." She finally looked up from the display. "Let's go earn it."</p>
 </div>
 
 ## The Short Version
