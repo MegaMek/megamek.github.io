@@ -722,7 +722,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
         <div class="tab-pane fade show active" id="scan-setup" role="tabpanel" aria-labelledby="scan-setup-tab" tabindex="0">
           <div class="scan-step">
             <div class="scheme-shot">
-              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/1_setup.png' | relative_url }}" alt="The Scan point properties dialog: paid when the reading gets home, Belongs to Test2, Scanned by Test, 1 victory point, and &quot;A hidden depot&quot; in the scan reveals box" width="785" height="530" loading="lazy" />
+              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/1_setup.png' | relative_url }}" alt="The Scan point properties dialog on a building: paid when the reading gets home, belongs to nobody, &quot;A Hidden Depot&quot; in the scan reveals box, 3 victory points" width="709" height="476" loading="lazy" />
             </div>
             <div class="scheme-text">
               <h4>1. Set up</h4>
@@ -730,7 +730,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
                 <p>Low along the riverbank, ECM up, keeping to the trees. A Raven is small and hard to pin down on their screens, and that's all the armor it really has. If they see me before I see them, this is a very short night.</p>
                 <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
-              <p>Scouts stay until turn 5. Reyes places a Scan point on the warehouse at the heart of the yard for her own side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
+              <p>Scouts stay until turn 5. Reyes places a Scan point on the warehouse at the heart of the yard for her own side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots show the same steps with a Raven scanning a building in a test game.</p>
               <pre><code>Gbxllm droo xszmtv gsv dzb blf kozb - Szmw lu Hgziormt</code></pre>
             </div>
           </div>
@@ -738,7 +738,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
         <div class="tab-pane fade" id="scan-order" role="tabpanel" aria-labelledby="scan-order-tab" tabindex="0">
           <div class="scan-step">
             <div class="scheme-shot">
-              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/2_scan.png' | relative_url }}" alt="A light Mek beside a Scan point, labelled JAMMED and SCANNING, with a sensor sweep to the flag labelled SCANNED" width="530" height="335" loading="lazy" />
+              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/2_scan.png' | relative_url }}" alt="A Raven RVN-3L labelled SCANNING, with a sensor sweep arcing to a Scan point on a building, labelled SCANNED" width="780" height="533" loading="lazy" />
             </div>
             <div class="scheme-text">
               <h4>2. The scan</h4>
@@ -753,7 +753,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
         <div class="tab-pane fade" id="scan-reveal" role="tabpanel" aria-labelledby="scan-reveal-tab" tabindex="0">
           <div class="scan-step">
             <div class="scheme-shot">
-              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/3_reveal.png' | relative_url }}" alt="The End Phase report: the scan succeeds, needing 5 and rolling 6, then &quot;The scan reveals: A hidden depot&quot;" width="527" height="184" loading="lazy" />
+              <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/3_reveal.png' | relative_url }}" alt="The End Phase report: the Raven scans the building and succeeds, needing 1 with its active probe and rolling 8, then &quot;The scan reveals: A Hidden Depot&quot;" width="770" height="189" loading="lazy" />
             </div>
             <div class="scheme-text">
               <h4>3. The reveal</h4>
