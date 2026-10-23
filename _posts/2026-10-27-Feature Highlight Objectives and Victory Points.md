@@ -587,7 +587,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <footer>&mdash; Lieutenant Hale and Captain Reyes</footer>
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> each End Phase, a side scores 1 victory point if it holds at least one of its own points <em>and</em> at least one of the enemy's. Hold them all and it's 2.</p>
-          <p><strong>Set up:</strong> each side places two Standard points, 1 point each, radius 1. Reyes takes her landing zone and the river ford. Kurita takes the yard gate and the ridge road. Tick <strong>Keep control when empty</strong> on the landing zone.</p>
+          <p><strong>Set up:</strong> each side places two Standard points, 1 point each, radius 1. Reyes takes her landing zone and the valley road behind her. Kurita takes the yard gate and the ridge road. Tick <strong>Keep control when empty</strong> on the landing zone.</p>
           <p><strong>In play:</strong> every lance Reyes has is committed, so nobody is left at the landing zone. With Keep control when empty ticked, it stays hers until Kurita sends someone to take it. The moment the Command Lance pushes into the yard gate, she holds one of her own and one of theirs, and scores every End Phase from then on. Sitting on your own points earns nothing; it's the foot in their door that pays.</p>
         </div>
       </div>
@@ -670,12 +670,12 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
         <div class="scheme-text">
           <h3>Capture: The River Crossing</h3>
           <blockquote class="scheme-quote">
-            <p>"Ford's ours. If they want it back, they can come down off that ridge and get it."</p>
-            <footer>&mdash; Fire Lance leader</footer>
+            <p>"We've got the high ground. Fire Lance, take the ford below us and hold it until Raven's across. We'll cover you."</p>
+            <footer>&mdash; Battle Lance leader, on the ridge</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> attackers fill a progress meter by controlling the zone, and the owner pushes it back by retaking it. A tie freezes it.</p>
           <p><strong>Set up:</strong> Kurita places a Capture point on the river crossing below the ridge: 5 points, radius 1, Points to capture 6, Progress per turn 1.</p>
-          <p><strong>In play:</strong> Fire Lance takes the ford while Battle Lance climbs, and controls it from turn 3 to turn 6. The meter climbs to 4 of 6. On turn 7 two of the ridge lance come down to retake it, and the meter slides back to 3. On turn 8 it's two against two, a tie, and the meter freezes. Fire Lance needs three more clean turns to take it, and every one of them keeps Okafor's way home open.</p>
+          <p><strong>In play:</strong> nobody can hold the ford while Kurita owns the ridge above it, so the ridge comes first. Once it's Reyes's on turn 7, Fire Lance comes down and controls the ford from turn 8 to turn 11, and the meter climbs to 4 of 6. On turn 12 the two survivors of the ridge lance fall back into the crossing. Fire Lance lost two 'Meks taking the ridge, so it's two against two, a tie, and the meter freezes. Battle Lance picks them off from above, and two more clean turns fill the meter on turn 14, with the crossing open for Okafor.</p>
         </div>
       </div>
     </div>
