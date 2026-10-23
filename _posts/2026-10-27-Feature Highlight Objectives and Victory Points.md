@@ -539,6 +539,19 @@ Every point has a scoring scheme. Standard, Raid and Scan come straight from the
 
 Each tab follows one thread of Reyes's battle from the story at the top: who places the point, how it scores, and how the fight for it plays out. Put together, they make one mission you can set up and play with a friend. The screenshot beside each one shows that scheme's properties dialog.
 
+<div class="corerules-callout corerules-warning">
+  <h3><i aria-hidden="true" class="fas fa-triangle-exclamation"></i> Read This Before You Set Up the Story</h3>
+  <p><strong>Objectives are still an alpha, and not every part of this story can be played in MegaMek yet.</strong> Here's exactly where the line is.</p>
+  <ul>
+    <li><strong>What works in 0.51.01:</strong> every value on the <strong>Set up</strong> lines below. The turn limit, the schemes, points, radius, Turns to secure, grip, the capture meter, Keep control when empty and the payouts are all real settings. So are the control rules the <strong>In play</strong> lines lean on: majorities, ties, and units that don't count.</li>
+    <li><strong>What's only story:</strong> the relief column is just the turn limit; nothing actually arrives. Wrecking the gantries and the technicians isn't scored; a Demolish scheme is on the roadmap. The half-stripped 'Meks on the gantries are only there if you add them as units yourself.</li>
+    <li><strong>What arrives in the next release:</strong> Scanned by, and writing the scan note as a player. In 0.51.01, only a game master can write the note.</li>
+    <li><strong>Each point needs its own hex.</strong> The Scan point and the Defend point both sit in the yard, so put them on different hexes.</li>
+    <li><strong>The In play lines are one way the battle could go,</strong> not a promise. The dice decide the rest, and as an alpha, objectives may still surprise you.</li>
+    <li><strong>You'll need a human opponent or a game master.</strong> Princess doesn't play objectives yet.</li>
+  </ul>
+</div>
+
 <!--
   SHOT 10: the properties dialog, once per scoring scheme, shown in the scheme tabs. CAPTURED.
   Folder: assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/
@@ -674,7 +687,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <footer>&mdash; Battle Lance leader, on the ridge</footer>
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> attackers fill a progress meter by controlling the zone, and the owner pushes it back by retaking it. A tie freezes it.</p>
-          <p><strong>Set up:</strong> Kurita places a Capture point on the river crossing below the ridge: 5 points, radius 1, Points to capture 6, Progress per turn 1.</p>
+          <p><strong>Set up:</strong> Kurita places a Capture point on the river crossing below the ridge: 5 points, radius 1, Points to capture 6, Progress per turn 1. It has to be Kurita's. The side that places a Capture point owns it, and only its enemies can fill the meter, so Reyes can only take the crossing if Kurita sets it up.</p>
           <p><strong>In play:</strong> nobody can hold the ford while Kurita owns the ridge above it, so the ridge comes first. Once it's Reyes's, Fire Lance comes down and holds the ford for four turns, and the meter climbs to 4 of 6. Then the two survivors of the ridge lance fall back into the crossing. Fire Lance lost two 'Meks taking the ridge, so it's two against two, a tie, and the meter freezes. Battle Lance picks them off from above, and two more clean turns fill the meter, with the crossing open for Okafor.</p>
         </div>
       </div>
