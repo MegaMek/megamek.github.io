@@ -715,7 +715,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           <button class="nav-link" id="scan-reveal-tab" data-bs-toggle="pill" data-bs-target="#scan-reveal" type="button" role="tab" aria-controls="scan-reveal" aria-selected="false">3. The reveal</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="scan-not-home-tab" data-bs-toggle="pill" data-bs-target="#scan-not-home" type="button" role="tab" aria-controls="scan-not-home" aria-selected="false">4. Not home yet</button>
+          <button class="nav-link" id="scan-not-home-tab" data-bs-toggle="pill" data-bs-target="#scan-not-home" type="button" role="tab" aria-controls="scan-not-home" aria-selected="false">4. Getting home</button>
         </li>
         </ul>
         <div class="tab-content">
@@ -727,8 +727,8 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>1. Set up</h4>
               <blockquote class="scheme-quote">
-                <p>"Briefing says supply dump. Get close, get a reading, get home. Raven's a scout, not a brawler. Nobody's supposed to know I was ever here."</p>
-                <footer>&mdash; Sergeant Okafor</footer>
+                <p>Low along the riverbank, reactor turned down, every step slow. A Raven carries sensors, not armor. If they see me before I see them, this is a very short night.</p>
+                <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>Scouts stay until turn 5. Reyes places a Scan point on the warehouse at the heart of the yard for her own side to read: 3 points, paid <em>When the reading gets home</em>. In <strong>The scan reveals</strong> goes what Okafor will find: "It's the yard. A dozen 'Meks on the gantries." Nobody else can read that until his scan succeeds. The screenshots in these steps show the same thing in a test game.</p>
               <pre><code>Gbxllm droo xszmtv gsv dzb blf kozb - Szmw lu Hgziormt</code></pre>
@@ -743,8 +743,8 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>2. The scan</h4>
               <blockquote class="scheme-quote">
-                <p>"Sensors up. The jamming hits like a wall of static. And every Kurita display in this valley just saw a Raven light up beside their warehouse."</p>
-                <footer>&mdash; Sergeant Okafor</footer>
+                <p>There's no way to look without being seen. The second these sensors go active, every Kurita display in the valley knows exactly where I am. Close enough. Do it.</p>
+                <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. That's how Kurita knew to put a lance on the ridge.</p>
             </div>
@@ -758,8 +758,8 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>3. The reveal</h4>
               <blockquote class="scheme-quote">
-                <p>"Crates, like we thought. Then the gantries. A dozen chassis, half of them stripped to the frame. That's no supply dump. Six, Raven One. We found it."</p>
-                <footer>&mdash; Sergeant Okafor</footer>
+                <p>Supplies, fine, that's what we came for. But those shapes on the gantries aren't crates. Months of rumours, and it's sitting right in front of me. Hands steady. Make the call.</p>
+                <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>The sensor check is rolled in the End Phase against Piloting skill +3, and range, line of sight, probes, ECM and stealth all apply, so Kurita's jamming makes Okafor's job harder. He passes, and only his side reads what the scan reveals. If your table prefers the Tactical Operations: Advanced Rules version, tick <strong>TacOps Scanning</strong> in Game Options.</p>
             </div>
@@ -771,10 +771,10 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
               <img src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/scanning/4_not_home.png' | relative_url }}" alt="The start-of-round standings: Team 2 is carrying 1 scan reading not yet home" width="520" height="134" loading="lazy" />
             </div>
             <div class="scheme-text">
-              <h4>4. Not home yet</h4>
+              <h4>4. Getting home</h4>
               <blockquote class="scheme-quote">
-                <p>"Holding for your mark. Four of them on that ridge, and the only way home runs right underneath it. Come on, Fire Lance."</p>
-                <footer>&mdash; Sergeant Okafor</footer>
+                <p>Four of them up there, sitting on the only way out. The Captain says hold, so I hold. When Fire Lance comes down to that ford, I go, and I don't look back.</p>
+                <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. Okafor's Raven is free to leave once the scouts' stay is up, but the only way out runs past the ridge and over the ford. He crosses the moment the ford opens, and leaves over his home edge a couple of turns later. If he dies first, the reading dies with him. Nobody gets left behind. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
             </div>
