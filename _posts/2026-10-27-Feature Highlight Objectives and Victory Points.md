@@ -456,7 +456,7 @@ Here's a game with objectives from start to finish, in the order you'll meet it.
 
 ### Step 1: Switch It On in the Lobby
 
-<p class="story-link"><strong>In the story:</strong> Kurita's relief column, three minutes out, is the turn limit: 18 turns at ten seconds a turn. Leave <strong>Sudden death objectives</strong> off. This battle has several threads, and sudden death would end it on turn 14, when the first points are decided, before Okafor gets home. Scouts stay until turn 5.</p>
+<p class="story-link"><strong>In the story:</strong> Kurita's relief column, three minutes out, is the turn limit: 18 turns at ten seconds a turn. Leave <strong>Sudden death objectives</strong> off. This battle has several threads, and sudden death would end it the moment the first point is decided, before Okafor gets home. Scouts stay until turn 5.</p>
 
 Victory conditions used to be buried in the long Game Options list. Since July they've had their own **Victory Conditions** dialog in the lobby, and objectives have their own tab in it. You'll use both tabs.
 
@@ -588,7 +588,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> each End Phase, a side scores 1 victory point if it holds at least one of its own points <em>and</em> at least one of the enemy's. Hold them all and it's 2.</p>
           <p><strong>Set up:</strong> each side places two Standard points, 1 point each, radius 1. Reyes takes her landing zone and the valley road behind her. Kurita takes the yard gate and the ridge road. Tick <strong>Keep control when empty</strong> on the landing zone.</p>
-          <p><strong>In play:</strong> every lance Reyes has is committed, so nobody is left at the landing zone. With Keep control when empty ticked, it stays hers until Kurita sends someone to take it. When the Command Lance pushes into the yard gate on turn 4, she holds one of her own and one of theirs, and scores every End Phase from then on. Sitting on your own points earns nothing; it's the foot in their door that pays.</p>
+          <p><strong>In play:</strong> every lance Reyes has is committed, so nobody is left at the landing zone. With Keep control when empty ticked, it stays hers until Kurita sends someone to take it. When the Command Lance pushes into the yard gate, she holds one of her own and one of theirs, and scores every End Phase from then on. Sitting on your own points earns nothing; it's the foot in their door that pays.</p>
         </div>
       </div>
     </div>
@@ -606,7 +606,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           </blockquote>
           <p><strong>The rule (Core Rulebook):</strong> whoever holds the point scores it. In 0.51.01 it pays once, when the game ends. See What's Next for the change coming to this one.</p>
           <p><strong>Set up:</strong> Reyes places a Raid point on the supply warehouse at the yard's edge: 5 points, radius 0, so only the warehouse's own hex counts.</p>
-          <p><strong>In play:</strong> before Okafor's reading, this was the whole job, and it still counts. Holding the warehouse on turn 5 is worth nothing. Whoever is standing in it when the relief column arrives and the game ends gets all 5. Voss's battle armor is already inside the wire. Leave one squad standing on the warehouse at the end, and the crates go home with Reyes.</p>
+          <p><strong>In play:</strong> before Okafor's reading, this was the whole job, and it still counts. Holding the warehouse the moment Voss gets inside is worth nothing. Whoever is standing in it when the relief column arrives and the game ends gets all 5. Voss's battle armor is already inside the wire. Leave one squad standing on the warehouse at the end, and the crates go home with Reyes.</p>
         </div>
       </div>
     </div>
@@ -639,7 +639,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> the first side to hold the point for a set number of turns secures it. Either side can win it.</p>
           <p><strong>Set up:</strong> Kurita places a Hold point on the ridge above the river crossing: 5 points, radius 1, Turns to secure 10, counted Consecutively.</p>
-          <p><strong>In play:</strong> Kurita's lance climbs onto the ridge on turn 2, the moment it sees Okafor's scan, and starts counting. Reyes's first two 'Meks reach the zone on turn 5. Four against two is still Kurita's, and the count keeps climbing. On turn 6 she has four up there: four against four is a tie, nobody holds it, and Kurita's count drops back to zero. On turn 7 her eighth 'Mek arrives and the ridge is hers. Count the turns <em>Cumulatively</em> instead, and that tie only pauses Kurita's count. If Kurita ever reached ten, the ridge would be theirs for good and Okafor would have no way home. Instead, Reyes's own count starts on turn 7, and she secures the ridge on turn 16.</p>
+          <p><strong>In play:</strong> Kurita's lance climbs onto the ridge the moment it sees Okafor's scan, and starts counting. Reyes's first two 'Meks reach the zone a few turns later. Four against two is still Kurita's, and the count keeps climbing. A turn later she has four up there: four against four is a tie, nobody holds it, and Kurita's count drops back to zero. The turn after that, her eighth 'Mek arrives and the ridge is hers. Count the turns <em>Cumulatively</em> instead, and that tie only pauses Kurita's count. If Kurita ever reached ten, the ridge would be theirs for good and Okafor would have no way home. Instead, Reyes starts a count of her own, and ten turns later the ridge is secured.</p>
         </div>
       </div>
     </div>
@@ -657,7 +657,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> the point belongs to its owner, and only the enemy can take it. Every turn an enemy unit stands in the zone, the owner's grip drops, even if the owner has more units there. At zero, the point falls.</p>
           <p><strong>Set up:</strong> Kurita places a Defend point on the refit yard: 5 points, radius 2, Starting grip 10, Grip drained per turn 1.</p>
-          <p><strong>In play:</strong> the Command Lance pushes up to the wire, and Voss's battle armor climbs off and goes inside. Every End Phase anything of Reyes's is alive in the yard, Kurita's grip drops by one, even while Kurita's guards outnumber her. The half-stripped 'Meks on the gantries don't help them either: an immobile unit never counts. Ten turns sounds like plenty, but they don't have to come in a row, and the grip never comes back. Voss is inside on turn 5, so the grip runs out on turn 14, and the yard falls with Reyes scoring all 5. Nobody leaves that yard.</p>
+          <p><strong>In play:</strong> the Command Lance pushes up to the wire, and Voss's battle armor climbs off and goes inside. Every End Phase anything of Reyes's is alive in the yard, Kurita's grip drops by one, even while Kurita's guards outnumber her. The half-stripped 'Meks on the gantries don't help them either: an immobile unit never counts. Ten turns sounds like plenty, but they don't have to come in a row, and the grip never comes back. Voss gets in early and stays in, so the grip runs out well before the relief column arrives, and the yard falls with Reyes scoring all 5. Nobody leaves that yard.</p>
         </div>
       </div>
     </div>
@@ -675,7 +675,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
           </blockquote>
           <p><strong>The rule (MegaMek):</strong> attackers fill a progress meter by controlling the zone, and the owner pushes it back by retaking it. A tie freezes it.</p>
           <p><strong>Set up:</strong> Kurita places a Capture point on the river crossing below the ridge: 5 points, radius 1, Points to capture 6, Progress per turn 1.</p>
-          <p><strong>In play:</strong> nobody can hold the ford while Kurita owns the ridge above it, so the ridge comes first. Once it's Reyes's on turn 7, Fire Lance comes down and controls the ford from turn 8 to turn 11, and the meter climbs to 4 of 6. On turn 12 the two survivors of the ridge lance fall back into the crossing. Fire Lance lost two 'Meks taking the ridge, so it's two against two, a tie, and the meter freezes. Battle Lance picks them off from above, and two more clean turns fill the meter on turn 14, with the crossing open for Okafor.</p>
+          <p><strong>In play:</strong> nobody can hold the ford while Kurita owns the ridge above it, so the ridge comes first. Once it's Reyes's, Fire Lance comes down and holds the ford for four turns, and the meter climbs to 4 of 6. Then the two survivors of the ridge lance fall back into the crossing. Fire Lance lost two 'Meks taking the ridge, so it's two against two, a tie, and the meter freezes. Battle Lance picks them off from above, and two more clean turns fill the meter, with the crossing open for Okafor.</p>
         </div>
       </div>
     </div>
@@ -747,7 +747,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             </div>
             <div class="scheme-text">
               <h4>4. Not home yet</h4>
-              <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. Okafor's Raven may leave after turn 5, but the only way out runs past the ridge and over the ford. He crosses when the ford opens on turn 14 and leaves over his home edge on turn 16. If he dies first, the reading dies with him. Nobody gets left behind. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
+              <p>Paid <em>When the reading gets home</em>, nothing is scored yet, and each round the standings remind both sides the reading is still out. Okafor's Raven is free to leave once the scouts' stay is up, but the only way out runs past the ridge and over the ford. He crosses the moment the ford opens, and leaves over his home edge a couple of turns later. If he dies first, the reading dies with him. Nobody gets left behind. Choose <em>On the scan, lost if the scout is destroyed</em> to pay at once but take the point back if the scout dies before it leaves, or <em>On the scan</em> to pay for good.</p>
             </div>
           </div>
         </div>
@@ -796,7 +796,7 @@ The board keeps you up to date:
 
 ### Step 5: The End of the Game
 
-<p class="story-link"><strong>In the story:</strong> the fight runs until the relief column arrives on turn 18. By then the yard has fallen and the ford is taken on turn 14, Okafor is clear and the ridge secured on turn 16, and Voss is still standing on the warehouse when the column rolls in.</p>
+<p class="story-link"><strong>In the story:</strong> the fight runs until the relief column arrives at the turn limit. By then the yard has fallen, the ford is taken, Okafor is clear, the ridge is secured, and Voss is still standing on the warehouse when the column rolls in.</p>
 
 With objectives on, the game no longer has to end when one side is wiped out. It ends at the turn limit, when a side reaches the points target, or at sudden death, whichever you set in Step 1. Then the victory points decide the winner, and the victory page lists every scan made during the game.
 
