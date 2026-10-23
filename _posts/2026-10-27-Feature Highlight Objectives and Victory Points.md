@@ -743,7 +743,7 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
             <div class="scheme-text">
               <h4>2. The scan</h4>
               <blockquote class="scheme-quote">
-                <p>There's no way to look without being seen. The second the probe goes active, every Kurita display in the valley knows exactly where I am, ECM or not. Close enough. Do it.</p>
+                <p>There's no way to look without being seen. The second the probe goes active, every Kurita display in the valley knows exactly where I am, ECM or not. Here we go... Energize.</p>
                 <footer>&mdash; Sergeant Okafor, to himself</footer>
               </blockquote>
               <p>In the pre-End declarations phase, select your scout, press <strong>Scan</strong> and click the flag. Labels go on the scout and the flag, and a sensor sweep is drawn between them, so your opponent can see where you're looking. That's how Kurita knew to put a lance on the ridge.</p>
