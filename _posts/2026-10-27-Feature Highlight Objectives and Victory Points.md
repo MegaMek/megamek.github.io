@@ -378,7 +378,7 @@ date: 2026-10-27
 
 <div class="corerules-callout corerules-fiction">
   <p>"Raven One, Bravo Six. Sitrep on that warehouse."</p>
-  <p>Static, then Sergeant Okafor, thin through the jamming. "Six, Raven One. Reading it now. Supplies, like we expected, hundreds of crates. But that's not all of it. There are 'Meks in there, ma'am. Gantries, a dozen chassis half stripped. They're refitting and repairing. That's no supply dump. It's a refit yard."</p>
+  <p>Static, then Sergeant Okafor, thin through the jamming. "Six, Raven One. Reading it now. Supplies, like we expected, hundreds of crates. But that's not all of it. There are 'Meks in there, ma'am. Gantries, a dozen chassis half stripped. They're refitting and repairing." A pause, then his voice jumped. "Ma'am, it's the yard. The one intel's been chasing for months. We found it."</p>
   <p>Captain Reyes keyed the company net. "All Bravo, you heard that. This stopped being a supply raid thirty seconds ago. Plan's changed, people. Improvise, adapt, overcome. Kurita can't let that reading leave this valley. The jamming's too thick to send it, so it goes home in Okafor's Raven or not at all, and every gun they have is about to turn on him."</p>
   <p>On her display, four red icons had climbed onto the ridge above the river crossing the moment Okafor's sensors lit up, and stopped dead: a full Kurita lance, sitting right across his only way home. "Raven One, hold your position. Once that ridge is ours, you've got cover until you're clear. Nobody gets left behind."</p>
   <p>"Raven One copies. Holding for your mark."</p>
