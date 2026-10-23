@@ -378,9 +378,9 @@ date: 2026-10-27
 
 <div class="corerules-callout corerules-fiction">
   <p>"Raven One, Bravo Six. Sitrep on that warehouse."</p>
-  <p>Static, then Sergeant Okafor, thin through the jamming. "Six, Raven One. Reading it now. Crates, hundreds of them. Myomer bundles, PPC capacitors. That's no supply dump, ma'am. It's a refit yard."</p>
-  <p>Captain Reyes keyed the company net. "All Bravo, you heard that. This stopped being a supply raid thirty seconds ago. Plan's changed, people. Improvise, adapt, overcome. Kurita wants that yard kept quiet, so every gun they have is about to turn on that Raven."</p>
-  <p>On her display, four red icons had climbed onto the ridge above the river crossing and stopped dead: a full Kurita lance, sitting right across Okafor's only way home. "Raven One, hold your position. Once that ridge is ours, you've got cover until you're clear. Nobody gets left behind."</p>
+  <p>Static, then Sergeant Okafor, thin through the jamming. "Six, Raven One. Reading it now. Supplies, like we expected, hundreds of crates. But that's not all of it. There are 'Meks in there, ma'am. Gantries, a dozen chassis half stripped. They're refitting and repairing. That's no supply dump. It's a refit yard."</p>
+  <p>Captain Reyes keyed the company net. "All Bravo, you heard that. This stopped being a supply raid thirty seconds ago. Plan's changed, people. Improvise, adapt, overcome. Kurita can't let that reading leave this valley. The jamming's too thick to send it, so it goes home in Okafor's Raven or not at all, and every gun they have is about to turn on him."</p>
+  <p>On her display, four red icons had climbed onto the ridge above the river crossing the moment Okafor's sensors lit up, and stopped dead: a full Kurita lance, sitting right across his only way home. "Raven One, hold your position. Once that ridge is ours, you've got cover until you're clear. Nobody gets left behind."</p>
   <p>"Raven One copies. Holding for your mark."</p>
   <p>"They're not even firing, Captain," Lieutenant Hale said.</p>
   <p>"They don't need to. Every second they sit up there, that ridge gets a little more theirs." She flicked to the landing field. The fuel bunker under the pad had changed hands twice in the last minute, and her infantry platoon was down in the pump rooms, holding on. Above them, the cargo DropShip was already spooling up. "And that ship lifts in four minutes. Whoever holds the cargo apron when it goes decides what's aboard."</p>
