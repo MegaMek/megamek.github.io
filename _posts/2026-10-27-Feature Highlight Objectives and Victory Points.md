@@ -432,7 +432,7 @@ These all work, and plenty of people still play with them. What they share is th
   <p class="corerules-caption">Victory conditions before 0.51.01. Every one of them counts kills.</p>
 </div>
 
-MekHQ got part of the way there in 2019, when 0.47.1 added [scenario objectives](/2019/11/06/Scenario-Objectives.html): destroy 35% of the enemy, preserve your allies, reach a map edge. Those are checked after the battle, when you resolve the scenario in MekHQ. MegaMek itself still had no idea there was an objective while you were playing.
+MekHQ got part of the way there in 2019, when 0.47.1 added [scenario objectives](/2019/11/06/Scenario-Objectives.html): destroy 35% of the enemy, preserve your allies, reach a map edge. Those are checked after the battle, when you resolve the scenario in MekHQ. MegaMek itself still had no idea there was an objective while you were playing, and neither did Princess.
 
 The tabletop game has had objectives for a long time. The Core Rulebook has a whole section of Standard Missions built around objective counters, control zones, scanning and victory points. So this summer we started building them into MegaMek, properly, from the rules up.
 
