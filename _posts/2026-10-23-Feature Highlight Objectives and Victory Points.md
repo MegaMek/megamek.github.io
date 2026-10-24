@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Feature Highlight: Objectives and Victory Points"
-date: 2026-10-27
+date: 2026-10-23
 ---
 
 <style>
@@ -376,14 +376,6 @@ date: 2026-10-27
 }
 </style>
 
-<!--
-  DRAFT NOTES (delete before publishing)
-  - Every figure now has its file. Still to do: retake dialogs/5_capture.png once the Capture
-    description fix (MM #9342) is in.
-  - Optional extras are marked OPTIONAL SHOT in the comments (Defend video, decoy, roadmap).
-  - New media goes in assets/images/posts/2026/2026-10-27-objectives-and-victory-points/
--->
-
 *By Hammer*
 
 <div class="corerules-callout corerules-fiction">
@@ -552,18 +544,6 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
   </ul>
 </div>
 
-<!--
-  SHOT 10: the properties dialog, once per scoring scheme, shown in the scheme tabs. CAPTURED.
-  Folder: assets/images/posts/2026/2026-10-27-objectives-and-victory-points/dialogs/
-  The example text in each tab uses the numbers in its screenshot, so a retake needs the same
-  settings (or the text changed with it).
-  Where a dropdown changes the rules, each choice has its own shot and its own button under the
-  picture: Hold's Turns counted. The Scan tab walks through a whole scan instead, from scanning/.
-  RETAKE 5_capture.png once the game fix for the Capture description is in: the current shot
-  shows {0} and {1} instead of the numbers. Same settings: 5 points, radius 1, capture 10, rate 1.
-
-  The tabs are Bootstrap 5 tabs (the site already loads bootstrap.bundle), no script of our own.
--->
 <div class="scheme-tabs">
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item" role="presentation">
@@ -788,13 +768,6 @@ Each tab follows one thread of Reyes's battle from the story at the top: who pla
 </div>
 <p class="corerules-caption">Click a tab to see each scoring scheme. Hold and Scan have more buttons under the picture: Hold shows both ways of counting turns, and Scan walks through a scan from start to finish.</p>
 
-<!--
-  SHOT 12 (optional, video, 15-20 s): the Defend example.
-  A Defend point with grip 10; one light 'Mek enters the zone while a heavy defender stands on
-  the flag. Show the End Phase report line "The grip on control point ... is weakening: 9 of 10
-  remaining". File: defend_grip.mp4. It's the scheme players will understand least from text alone.
--->
-
 ### Step 4: Fight for Control
 
 <p class="story-link"><strong>In the story:</strong> eight against four takes the ridge, but two against four doesn't even slow Kurita's count. And Voss's battle armor only counts in the yard once it climbs off the Command Lance's 'Meks, because units being carried never count.</p>
@@ -809,12 +782,6 @@ The board keeps you up to date:
 - **Hover over a flag** to see what it needs and who's winning it.
 - Each End Phase report says who controls each point and what was scored. Each round opens with every side's running total.
 
-<!--
-  SHOT 3: a point being taken. CAPTURED: capture_point_taken.mp4 (Capturing_Contested.mp4,
-  re-encoded H.264, CRF 28, 30 fps, audio stripped, fast start; 51 MB raw, 4.9 MB here). 1542x1104.
-  A Capture point (3 to capture) starts uncontrolled; a Team 2 'Mek moves into the zone, the zone
-  takes Team 2's colour, the report counts 1/3, 2/3, and the point is captured for 3 VP in round 4.
--->
 <div class="corerules-figure">
   <video controls preload="metadata" width="1542" height="1104">
     <source src="{{ '/assets/images/posts/2026/2026-10-27-objectives-and-victory-points/capture_point_taken.mp4' | relative_url }}#t=0.1" type="video/mp4">
@@ -867,11 +834,6 @@ The Core Rulebook has four variants for objective counters, and all four are alr
 
 QA has already played every one of these. They finished too late to go into a release this size, so they'll arrive in 0.51.02.
 
-<!--
-  SHOT 6: carrying a Mobile flag. CAPTURED as two stills in mobile/ (pickup, then carried).
-  A short video would still be a bonus: walk off with the flag, show the "carried by" tooltip, then
-  shoot the carrier for the "needs N to keep hold" roll. File: mobile_flag.mp4.
--->
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="flex-grow: 1.03;">
     <img
@@ -890,13 +852,6 @@ QA has already played every one of these. They finished too late to go into a re
     <p class="corerules-caption">Coming soon: the Phoenix Hawk makes off with the objective.</p>
   </div>
 </div>
-
-<!--
-  SHOT 7 (optional, side by side with SHOT 6 or on its own): a decoy exposed.
-  Same build. Place a Raid flag with Variants: False, scan it, and capture the board after
-  the flag disappears, with the "is a decoy" report line visible.
-  File: decoy_exposed.png.
--->
 
 ### The Objective Raid Mission
 
@@ -965,14 +920,6 @@ The rest of the plan for 0.51.03, the release where we aim to have the whole set
     <p>The bots come last for a reason. Every one of the items above changes what an objective can be. A bot taught today would have to be taught again each time one of them lands. So we'll teach it once, against the finished set. It means objectives stay a human-versus-human game a while longer, and we think that's the better trade. One small piece is already in 0.51.01. In Bot Settings you can mark enemy units as priority targets, such as the scouts in a scanning game or the trucks in a convoy, and the bot will favour shooting them. It still won't go after the flags themselves.</p>
   </div>
 </div>
-
-<!--
-  OPTIONAL SHOT 8: a roadmap graphic.
-  A simple timeline: 0.51.01 (objectives, Victory Setup, the six schemes, scanning); 0.51.02
-  (variants, Objective Raid, Scanned by and private notes); planned (setting the stakes, named flags);
-  further out (the roadmap list above, bots last). Can be a screenshot of GitHub Project 36 filtered to
-  the series, or a small drawn graphic. File: roadmap.png.
--->
 
 ## Thanks
 
