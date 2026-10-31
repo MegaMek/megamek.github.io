@@ -255,7 +255,7 @@ The guns play fairer too. An emplacement used to be able to fire on infantry ins
 <div class="corerules-callout corerules-fiction">
   <p>"And the fab hall?" Lindqvist asked. "What are we walking into?"</p>
   <p>"Medium construction. Walls eat most of what a 'Mek throws at you."</p>
-  <p>"How much is most?" Teague asked.</p>
+  <p>"How much is most?" Private Teague asked.</p>
   <p>"Depends on the gun. And before you ask, there's a basement. Small. Nothing bigger than a man fits down there."</p>
   <p>"So, me."</p>
   <p>"So, you, Teague."</p>
@@ -289,7 +289,7 @@ As for Teague's basement, a roll of 9 on the Basements Table now gives you a sma
 
 ## Fighting Floor to Floor
 
-Once Teague's platoon is inside the fab hall, the building stops being cover and becomes the battlefield, and a couple of things were off in there.
+Once Teague's platoon is inside the fab hall, the building stops being cover and becomes the battlefield. A couple of things were off in there.
 
 When a unit inside a building fired at infantry on another floor, MegaMek used the numbers for attacks from outside. A heavy building soaked up half the damage instead of a quarter, and a hardened building three quarters instead of half. Fights between floors now hit as hard as they should.
 
@@ -298,7 +298,7 @@ Shooting up at a higher floor of your own building never used the Below hit tabl
 ## Getting the Weapons Right
 
 <div class="corerules-callout corerules-fiction">
-  <p>"Kade, Hollis. One's loaded. Jump platoon, SRMs are Infernos, declared at the depot."</p>
+  <p>Hollis came over the net. "Captain Kade, Hollis. One's loaded. Jump platoon, SRMs are Infernos, declared at the depot."</p>
   <p>Teague leaned toward Pike. "Infernos. Those the same as our grenades?"</p>
   <p>"No. The grenades are Incendiary now. They burn people. You throw one at a tank, the tank laughs at you."</p>
   <p>"Says who?"</p>
@@ -339,8 +339,8 @@ Shooting up at a higher floor of your own building never used the Below hit tabl
 ## Getting On and Off
 
 <div class="corerules-callout corerules-fiction">
-  <p>"Kade, Mbeki. If that pad's hot, my people can make the drop."</p>
-  <p>"You can make a thirty meter fall, Sergeant. Once. Hollis has jump packs. You have feet. You go when they land."</p>
+  <p>"Cap'n, Mbeki. If that pad's hot, my people can make the drop."</p>
+  <p>"You can make a thirty-meter fall, Sergeant. Once. Hollis has jump packs. You have feet. You go when they land."</p>
   <p>"Voss, how's the ride?"</p>
   <p>Voss and his battle armor squad were clamped to the hull of Lieutenant Hunter's BattleMaster. "Bumpy. No jump jets on these suits, so if anybody grabs onto a VTOL and it climbs, we're coming off it the hard way."</p>
 </div>
@@ -355,7 +355,7 @@ VTOL beast infantry can now fly over deep water, and an airborne beast platoon s
 
 <div class="corerules-callout corerules-fiction">
   <p>"Valley air's caustic," Pike said. "XCT seals stay on the whole time. Anybody pops a mask down there gets to find out what their lungs taste like."</p>
-  <p>"Sarge," Private Teague said, "I dig holes for a living. My lungs already taste like dirt."</p>
+  <p>"Sarge," Teague said, "I dig holes for a living. My lungs already taste like dirt."</p>
   <p>"Then you'll hardly notice the difference."</p>
   <p>"Hunter," Kade said over the net, "if you punch out down there, keep that sidearm holstered. Kurita doesn't shoot pilots who don't shoot first."</p>
   <p>"Noted," Hunter said, sounding bored.</p>
@@ -421,9 +421,7 @@ If you play MekHQ, a lot of this follows you into your campaign.
   <p>"All right, people. Let's go take a building."</p>
 </div>
 
-Some games you've played before will come out differently now, and that's intended.
-
-I'll be straight with you, though. The infantry rules are huge, and I have no doubt we've still missed things. There will be more questions and more clarifications, and we'll keep working through them. If something doesn't match the book, use Report a Bug, tell us the rule and the page, and attach your files.
+Some games you've played before will come out differently now, and that's intended. I'll be straight with you, though: the infantry rules are huge, and I have no doubt we've still missed things. There will be more questions and more clarifications, and we'll keep working through them. If something doesn't match the book, use Report a Bug, tell us the rule and the page, and attach your files.
 
 We also don't know yet what the Core Rules will mean for infantry. As we covered in [BattleTech Core Rules and the Old Ones](/announcements/development/2026/07/30/BattleTech-Core-Rules-and-the-Old-Ones.html), infantry is one of the areas Catalyst's compatibility work is focused on, and we'll follow wherever that lands. For now, this release is our version of the Marian Reforms. The Roman kind, not the Hegemony.
 
