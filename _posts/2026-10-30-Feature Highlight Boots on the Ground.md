@@ -149,7 +149,7 @@ If you came here for Illiani and a deep dive into MekHQ economics, so did I. Ill
 ## What's New
 Infantry have a reputation at the tabletop. There are a lot of rules, they're spread across Total Warfare, Tactical Operations, the TechManual, and years of errata, and many of them are abstract enough that tracking them by hand slows the whole game down. MegaMek does that bookkeeping for you, which is a big part of why infantry are one of the most popular units in MegaMek. Players are always asking for more from them.
 
-That same complexity makes infantry one of the hardest things in BattleTech to get right in code, and we've been getting a steady stream of questions and bug reports to prove it. So for 0.51.01 we went back through infantry with a fine-tooth comb. We filled in rules that were missing and fixed ones we had wrong, from how they fight inside buildings to what they carry, what they breathe, and how they get off a VTOL. Here's what's new, and why it makes your platoons more interesting to play.
+That same complexity makes infantry one of the hardest things in BattleTech to get right in code, and we've been getting a steady stream of questions and bug reports to prove it. So for 0.51.01 we went back through infantry to fix as many of those issues, and finish as many of the half-implemented rules, as we reasonably could. That covers everything from how they fight inside buildings to what they carry, how they get off a VTOL, and what they breathe. Here's what's new, and why it makes your platoons more interesting to play.
 
 ## Infantry Actions in Buildings
 
@@ -203,7 +203,7 @@ The attacker declares an action against a building, and the defender answers wit
   </div>
 </div>
 
-Strength comes from the Marine Points tables as printed, and heads aren't everything. Regular infantry score 0.75 per trooper, Elementals score 2, and armored troopers get a bonus. Battle armor picks up modifiers for weight class, intact armor, burst-fire and flame weapons, and claws, drills, and the like. The building modifier helps the defender only.
+The old version also got the casualties backwards. Each side lost a share of its own strength instead of its enemy's, so a big platoon attacking a lone crewman could bleed out on its own. Losses now come from the other side's strength, and strength comes from the Marine Points tables as printed, so heads aren't everything. An Elemental is worth more than two riflemen, and battle armor earns its points from its suits and weapons.
 
 <div class="corerules-figure">
   <img
@@ -213,7 +213,7 @@ Strength comes from the Marine Points tables as printed, and heads aren't everyt
   <p class="corerules-caption">Two fights in two emplacements, both still going. The story first, then the odds, the roll, and who lost how many.</p>
 </div>
 
-Once infantry commit to an action, they hold their ground. They don't move, target, or make attacks elsewhere. The only way out is to withdraw, and withdrawing costs you one last exchange at half damage. I'll be upfront: the book doesn't say whether engaged infantry can move, so this is our interpretation. It sits behind an option, Infantry actions: committed units hold their ground, under Advanced Combat > Infantry Actions. It's on by default, so you can turn it off if your table reads it differently. There's also a house-rule option that lets defenders withdraw.
+Once infantry commit to an action, they hold their ground. They don't move, target, or make attacks elsewhere. The only way out is to withdraw, and withdrawing costs you one last exchange at half damage. The book doesn't say whether engaged infantry can move, so this is our call. It sits behind an option, Infantry actions: committed units hold their ground, under Advanced Combat > Infantry Actions. It's on by default, so you can turn it off if your table reads it differently. There's also a house-rule option that lets defenders withdraw.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="flex-grow: 1.706;">
@@ -240,7 +240,15 @@ Units wiped out in an infantry action used to show up as "pilot error" in the en
 
 The bots fight these too. Princess and CASPAR now declare infantry actions the way a player does. They'll start one when the odds look good, reinforce one they're winning, defend their own buildings with the infantry inside and part of the crew, and withdraw when it turns against them. How eager they are depends on their behavior settings. Like everything else Princess does, she won't always make the call you would.
 
-A few honest limits. A captured building currently just sits there. Two attackers who are hostile to each other in the same building aren't modelled. Manei Domini score like regular troopers, because the unit data can't tell them apart yet.
+Some limits for now. A captured building currently just sits there. Two attackers who are hostile to each other in the same building aren't modelled. Manei Domini score like regular troopers, because the unit data can't tell them apart yet.
+
+## Taking the Guns
+
+Kurita's flak emplacements are Advanced Buildings, and they got plenty of attention this release too. An infantry action is only as good as the building it's fought over.
+
+Emplacements now come with a crew. A building's unit file can list one, and if it doesn't, MegaMek works it out from the minimum crew table: gunners for the heavy weapons, people for the communications and support gear, and officers to run it. That's the crew that answers when Hollis comes through the door, and an infantry action can now thin it out a few at a time instead of only wiping it out in one go.
+
+The guns play fairer too. An emplacement used to be able to fire on infantry inside its own hexes, so a platoon that had already fought its way in could be shot by the turret over its head. That's gone. Turrets now take weapon damage and critical hits properly, and a crew with a jammed gun can clear it. And when MegaMek places emplacements on a map for you, it no longer uses the logic meant for units that move, so they stop turning up in odd spots around town.
 
 ## When the Building Becomes the Target
 
@@ -253,7 +261,7 @@ A few honest limits. A captured building currently just sits there. Two attacker
   <p>"So, you, Teague."</p>
 </div>
 
-"How much is most?" Teague asked, and now there's a real answer. When a building is attacked, the type of building sets the share of the attack that reaches the infantry inside (TW p. 172), and every platoon in the building takes that full share. The share is converted using the attacking weapon's own damage, not a flat table. A large pulse laser into a medium building kills three troopers. An AC/20, for all its noise, kills one.
+Until now, MegaMek gave Teague the wrong answer. Every weapon turned into casualties the same way, so a large pulse laser and an AC/20 into a medium building both killed one trooper, and a second platoon in the same building got short-changed. Now each weapon counts by its own damage, and every platoon inside takes the full share. That large pulse laser kills three troopers. The AC/20, for all its noise, still kills one.
 
 <div class="corerules-figure">
   <img
@@ -263,11 +271,13 @@ A few honest limits. A captured building currently just sits there. Two attacker
   <p class="corerules-caption">A PPC into an occupied medium building. Five points carry through, and the platoon inside loses one trooper.</p>
 </div>
 
-Damage from conventional infantry weapons isn't reduced by the building, burst-fire weapons count as direct fire, and mechanized infantry take double from non-infantry weapons. Gun emplacements and fortresses scale the attack down first. Only a deliberate attack on the building reaches the people in it. A shot the building blocks as cover doesn't.
+That wasn't the only thing wrong with buildings. The walls were cutting down fire from enemy infantry, and they shouldn't. Gun emplacements took the infantry's share before halving the attack, instead of after. Platoons right next to the building rolled to see how many troopers hit, when every one of them should. And a shot that only hit the building because it was in the way still hurt the people inside. Now only a deliberate attack on the building gets through to them.
 
-Infernos that hit a building now burn the infantry inside at the building's share, and only on the level they struck. A hardened building keeps them out entirely.
+Infernos had the same problem. Any inferno that hit a building hex burned the infantry inside at full strength, even through a hardened building. Now they burn at the building's share, and only on the level they struck. A hardened building keeps them out entirely.
 
-And Teague's basement is real. A roll of 9 on the Basements Table now gives you a small basement that only infantry can enter. Before this, MegaMek treated anything below ground as water, which made for some very confused infantry.
+The building also stops handing out cover it shouldn't. Only a 'Mek gets partial cover from a building now. Large support vehicles, DropShips and ProtoMeks used to get it just for being tall enough. That big Kurita cargo hauler parked behind the fab hall is a target now, not a wall.
+
+As for Teague's basement, a roll of 9 on the Basements Table now gives you a small basement that only infantry can enter. Before this, MegaMek treated anything below ground as water, which made for some very confused infantry.
 
 <div class="corerules-figure">
   <img
@@ -276,6 +286,14 @@ And Teague's basement is real. A roll of 9 on the Basements Table now gives you 
   />
   <p class="corerules-caption">A small basement, and a platoon already down in it at elevation -1.</p>
 </div>
+
+## Fighting Floor to Floor
+
+Once Teague's platoon is inside the fab hall, the building stops being cover and becomes the battlefield, and a couple of things were off in there.
+
+When a unit inside a building fired at infantry on another floor, MegaMek used the numbers for attacks from outside. A heavy building soaked up half the damage instead of a quarter, and a hardened building three quarters instead of half. Fights between floors now hit as hard as they should.
+
+Shooting up at a higher floor of your own building never used the Below hit table, either. Now it does, and a building's own weapons fire from the level they're mounted on.
 
 ## Getting the Weapons Right
 
@@ -290,11 +308,9 @@ And Teague's basement is real. A roll of 9 on the Basements Table now gives you 
   <p>"Then they go looking for the nearest platoon," Pike said, "and that platoon eats every last missile. So don't be the nearest platoon."</p>
 </div>
 
-A big chunk of this release is us going back to the TechManual and its errata and fixing what we had wrong.
+**Incendiary, not Inferno.** Following the TechManual errata, 17 infantry flame weapons have been renamed from "Inferno" to "Incendiary." They were never Inferno munitions, and the old name had players expecting them to cook vehicle crews. Against vehicles they do damage, not heat, and the log tells you why. Old unit files and saves still load under the old names.
 
-Incendiary, not Inferno. Pike has it right. Following the TechManual errata, 17 infantry flame weapons have been renamed from "Inferno" to "Incendiary." They were never Inferno munitions, and the old name had players expecting them to cook vehicle crews. Against vehicles they do damage, not heat, and the log tells you why. Old unit files and saves still load under the old names.
-
-Infernos are a choice you make before the drop. Any SRM platoon now picks Inferno or Standard under Configure > Equipment > Carried Munitions, and that's what it has for the whole battle. Inferno fires half the platoon's Damage Value in missiles. The separate Inferno SRM launchers are gone, since the errata deletes them, so the Elephant beast infantry now mounts the plain two-shot launcher and gets a bump in damage and BV.
+**Infernos are a choice you make before the drop.** Any SRM platoon now picks Inferno or Standard under Configure > Equipment > Carried Munitions, and that's what it has for the whole battle. Inferno fires half the platoon's Damage Value in missiles. The separate Inferno SRM launchers are gone, since the errata deletes them, so the Elephant beast infantry now mounts the plain two-shot launcher and gets a bump in damage and BV.
 
 <div class="corerules-figure">
   <img
@@ -304,7 +320,7 @@ Infernos are a choice you make before the drop. Any SRM platoon now picks Infern
   <p class="corerules-caption">Hollis's jump platoon, set to Inferno before the drop. That's what it fights with all battle.</p>
 </div>
 
-Heavy Burst. A platoon whose primary weapon is over the damage cap gets Heavy Burst: extra dice against conventional infantry and a to-hit bonus at point blank range. The old code had half of that rule keyed to the wrong unit. It's fixed, and the damage report now tags it, so you can see what it added.
+**Heavy Burst.** Both halves of Heavy Burst were wrong. Whether your platoon got its extra die depended on what the platoon you shot at was carrying, and seven weapons never got their point blank bonus. Both are fixed, and the damage report now tags it, so you can see what it added.
 
 <div class="corerules-figure">
   <img
@@ -314,11 +330,11 @@ Heavy Burst. A platoon whose primary weapon is over the damage cap gets Heavy Bu
   <p class="corerules-caption">Heavy Burst, tagged on the line: +6 on the first volley, +3 on the second. And that caustic air adds a point of its own.</p>
 </div>
 
-Swarm missiles. The Karnov pilot's warning is the rule. A Swarm volley that hits conventional infantry stops there, because the platoon absorbs every missile. When leftover missiles look for a new target, every unit in an adjacent hex is now a candidate, not just one per hex.
+**Swarm missiles.** The Karnov pilot's warning is the rule now. A Swarm volley that hits conventional infantry stops there, because the platoon absorbs every missile. When leftover missiles look for a new target, every unit in an adjacent hex is now a candidate, not just one per hex.
 
-Flame damage. Battle armor with pain shunts now halves flame damage like conventional infantry. Heavy and vehicle flamers get the proper halving against mechanized infantry and inside buildings. Fire-Resistant battle armor now ignores the heavy flamer too.
+**Flame damage.** Battle armor with pain shunts now halves flame damage like conventional infantry. Heavy and vehicle flamers get the proper halving against mechanized infantry and inside buildings. Fire-Resistant battle armor now ignores the heavy flamer too.
 
-The data. We corrected 67 infantry weapons against the TechManual tables, registered two that were missing, and added 15 light machine guns from Shrapnel. Needlers, stunners, and dart guns also stop reporting damage they can't actually do to armor. Fair warning: the BV of some infantry forces will shift.
+**The data.** We corrected 67 infantry weapons against the TechManual tables, registered two that were missing, and added 15 light machine guns from Shrapnel. Needlers, stunners, and dart guns also stop reporting damage they can't actually do to armor. Fair warning: the BV of some infantry forces will shift.
 
 ## Getting On and Off
 
@@ -329,9 +345,9 @@ The data. We corrected 67 infantry weapons against the TechManual tables, regist
   <p>Voss and his battle armor squad were clamped to the hull of Lieutenant Hunter's BattleMaster. "Bumpy. No jump jets on these suits, so if anybody grabs onto a VTOL and it climbs, we're coming off it the hard way."</p>
 </div>
 
-Mbeki wanted to make that drop, and Kade was right to stop him. Under the errata, only infantry with jump or VTOL movement can leave a VTOL or WiGE that hasn't landed. Foot troops stay aboard until it sets down. Jump troops over a building land on the roof and count as having jumped.
+Under the errata, foot troops now stay aboard a VTOL or WiGE until it sets down. Only infantry with jump or VTOL movement can leave one that hasn't landed. Jump troops over a building land on the roof and count as having jumped.
 
-Voss's worry is real too. Battle armor shaken off an airborne VTOL or WiGE now takes damage per trooper for every level it falls. Off a ground vehicle it's a point per trooper, and off a jumping 'Mek it's a point per trooper for every jump MP used. Jump-capable suits come off an airborne carrier without damage, but they can't move or shoot that turn.
+Battle armor shaken off a VTOL used to take the same single 3D6 hit as a rifle platoon, however high it was flying, and none at all if the VTOL was shot down under them. Now every trooper takes a point for each level they fall, so Voss is right to worry. Jump-capable suits still land safely, but they can't move or shoot that turn.
 
 VTOL beast infantry can now fly over deep water, and an airborne beast platoon spends movement just to hold its position.
 
@@ -345,7 +361,7 @@ VTOL beast infantry can now fly over deep water, and an airborne beast platoon s
   <p>"Noted," Hunter said, sounding bored.</p>
 </div>
 
-The valley's caustic air comes from the new Tainted and Toxic Atmospheres rules. Infantry need XCT training and the right gear to take the field at all in tainted or toxic air, which is why Pike was so particular about those seals.
+Tainted and toxic atmospheres are new in 0.51.01. Infantry now need XCT training and the right gear to take the field at all in that air. The caustic point in the Heavy Burst report earlier was this air at work.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="flex-grow: 0.651;">
@@ -368,7 +384,7 @@ The valley's caustic air comes from the new Tainted and Toxic Atmospheres rules.
   </div>
 </div>
 
-Hunter has some new protection too. Crews can now wear personal armor kits that keep protecting them after they eject, whether that's a space suit, a snowsuit, an environment suit, or a MechWarrior combat suit for toxic air and heat. Ejected and dismounted crews also keep their own sidearm instead of picking up a generic rifle. Kade's advice still stands: Princess only respects pilots who don't shoot at her.
+Crews can now wear personal armor kits that keep protecting them after they eject, whether that's a space suit, a snowsuit, an environment suit, or a MekWarrior combat suit for toxic air and heat. Ejected and dismounted crews also keep their own sidearm instead of picking up a generic rifle. Kade's advice still stands: Princess only respects pilots who don't shoot at her.
 
 <div class="corerules-figure">
   <img
@@ -405,7 +421,7 @@ If you play MekHQ, a lot of this follows you into your campaign.
   <p>"All right, people. Let's go take a building."</p>
 </div>
 
-Most of this isn't flashy. It's us going back to rules that have been in the books for years and making MegaMek play them the way they're written. Some games you've played before will come out differently now, and that's intended.
+Some games you've played before will come out differently now, and that's intended.
 
 I'll be straight with you, though. The infantry rules are huge, and I have no doubt we've still missed things. There will be more questions and more clarifications, and we'll keep working through them. If something doesn't match the book, use Report a Bug, tell us the rule and the page, and attach your files.
 
