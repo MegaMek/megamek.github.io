@@ -37,8 +37,7 @@ date: 2026-11-02
   max-width: 900px;
   margin: 1.75rem auto;
 }
-.corerules-figure img,
-.corerules-figure video {
+.corerules-figure img {
   display: block;
   width: 100%;
   height: auto;
@@ -146,18 +145,5 @@ While Core is aimed at everybody, Experimental releases are for our amazing QA t
 In conclusion; this is an exciting time to be a MegaMek fan. Over the years this wonderful project has grown to have a fanbase of thousands. The whole team is eternally grateful to everyone who has submitted a bug, or stuck with us through the hard times. Everything we do is done out of love for the BattleTech hobby, MegaMek, and of course, you, the fans. We want you to be able to enjoy the hard work we put into each release, and with our new launcher we're hoping some of the rough edges are about to be sanded off.
 
 Stay safe out there, MekWarrior, I'll see you in 51.01!
-
-<div class="corerules-figure">
-  <video
-    width="1920"
-    height="1080"
-    controls
-    preload="metadata"
-  >
-    <source src="{{ '/assets/images/posts/2026/2026-11-02-the-megamek-launcher/Launcher_Showcase.mp4' | relative_url }}#t=0.1" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p class="corerules-caption">Watch the video to see our launcher in action.</p>
-</div>
 
 PS: We have some amazing things to announce as we get closer to the end of the year. *Project Tycoon* is coming and so far nobody has guessed what it is!
