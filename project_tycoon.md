@@ -191,6 +191,7 @@ This page will fill in as more is revealed.
 ## Clues So Far
 
 1. **Nicolai Malthus**, from [Feature Highlight: Balancing Gameplay & Economics](https://megamek.org/2026/11/07/Feature-Highlight-Balancing-Gameplay-and-Economics.html)
+2. **Site Maintenance**, found in [a corner of the site](/maintenance) that was supposed to be off limits
 
 Think you know what it is? Come share your guess on [Discord](https://discord.gg/megamek).
 
