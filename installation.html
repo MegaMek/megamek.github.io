@@ -9,29 +9,44 @@ title: Installation and Updating
   </div>
 </div>
 <div class='row'>
-  <div class='col mb-4'>
+  <div class='col-md-8 mb-4'>
     <div class='card dl-card'>
       <div class='card-header'>
-        Installing Java
+        Install with the MegaMek Launcher (recommended)
+      </div>
+      <div class='card-body'>
+        <ol class='card-text'>
+          <li>Download the launcher for your system from the <a href="{{ '/downloads.html#launcher' | relative_url }}">Downloads page</a>.</li>
+          <li>Run the installer. It comes with Java built in, so you don't need to install Java.</li>
+          <li>Open the launcher and install the <strong>Core</strong> release.</li>
+          <li>Start MegaMek, MegaMekLab or MekHQ from the launcher.</li>
+        </ol>
+        <p class='card-text'>
+          The launcher can keep more than one version side by side, update them
+          with one button, and remove old ones. Read more in
+          <a href="{{ '/2026/11/02/Feature-Highlight-The-MegaMek-Launcher.html' | relative_url }}">Feature Highlight: The MegaMek Launcher</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='col-md-4 mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        Core vs. Experimental
       </div>
       <div class='card-body'>
         <p class='card-text'>
-          Java is required for use of this program and we recommend using
-          Adoptium 21 for current and future versions for best results.
-          Starting with the 0.51.0 release, it is required.
-        </p>
-        <p>
-          MegaMek should run on any computer that can run Java without much
-          issue. Will NOT run on iOS/iPadOS/tvOS/Android devices. You
-          experience will vary based on computer specifications.
+          <strong>Core</strong> is the release for most players. It comes out
+          about every four months, with patches in between.
         </p>
         <p class='card-text'>
-          Instructions for <a href='https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)'>Windows</a>
-          and <a href="/wiki/mac_issues.html">macOS</a> are available.
+          <strong>Experimental</strong> builds come out weekly for testers.
+          They have new features and new bugs, so they aren't meant for normal
+          play.
         </p>
-        <div class="ratio ratio-16x9 mt-3">
-          <iframe src="https://www.youtube.com/embed/L06q5aLRdgQ?si=R1vkbmPHgwa95ja8" title="MegaMek Tutorial - Updating / Installing Java and Installing MegaMek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <p class='card-text'>
+          See <a href="https://github.com/MegaMek/megamek/wiki/Milestone-Releases">Release Types: Core and Experimental</a>.
+        </p>
       </div>
     </div>
   </div>
@@ -47,13 +62,25 @@ title: Installation and Updating
         <!-- Critical Warning Banner -->
         <div class="text-center p-3 mb-4" style="border: 2px solid #dc3545; border-radius: 8px;">
           <p class="mb-0" style="color: #e0e0e0;">
-            <strong style="color: #dc3545;"><i class="fas fa-exclamation-circle"></i> CRITICAL:</strong> Always extract each version to its own folder — never unzip a new version over an old one (e.g., don't extract 0.50.11 into your 0.50.06 folder). Overwriting <strong style="color: #dc3545;">will corrupt saves and campaigns</strong>. Campaigns are also <strong style="color: #dc3545;">NOT backward compatible</strong>; if a newer campaign opens in an older version, consider yourself lucky.
+            <strong style="color: #dc3545;"><i class="fas fa-exclamation-circle"></i> CRITICAL:</strong> <strong style="color: #dc3545;">Always back up your campaigns first.</strong> Campaigns are <strong style="color: #dc3545;">NOT backward compatible</strong>; if a newer campaign opens in an older version, consider yourself lucky.
           </p>
         </div>
 
-        <!-- Steps -->
+        <!-- Launcher Steps -->
         <p style="color: #e0e0e0; margin-bottom: 1rem;">
-          Follow these steps to protect your MekHQ campaign data:
+          <strong style="color: #fff;">Using the launcher:</strong>
+        </p>
+        <ol style="color: #e0e0e0; line-height: 1.8;">
+          <li><strong style="color: #fff;">Back up your campaign and custom files</strong> — the launcher can't roll back to an older version</li>
+          <li><strong style="color: #fff;">Close every MegaMek, MegaMekLab and MekHQ window</strong>, then press <strong style="color: #fff;">Update</strong> in the launcher. It updates in place and keeps your campaigns, saves, custom units and settings</li>
+          <li><strong style="color: #fff;">Want to keep the old version?</strong> Use <strong style="color: #fff;">Install another version</strong> instead, then COPY (don't move) your campaigns to it</li>
+          <li><strong style="color: #fff;">Old MegaMek game saves</strong> may not load in the new version</li>
+          <li><strong style="color: #fff;">Re-save custom presets</strong> to update them for the new version</li>
+        </ol>
+
+        <!-- Manual Steps -->
+        <p style="color: #e0e0e0; margin-bottom: 1rem;">
+          <strong style="color: #fff;">Manual install:</strong> always extract each version to its own folder — never unzip a new version over an old one (e.g., don't extract 51.01 into your 51.00 folder). Overwriting <strong style="color: #dc3545;">will corrupt saves and campaigns</strong>.
         </p>
         <ol style="color: #e0e0e0; line-height: 1.8;">
           <li><strong style="color: #fff;">Back up your campaign and custom files</strong> — critical to prevent data loss</li>
@@ -62,6 +89,41 @@ title: Installation and Updating
           <li><strong style="color: #fff;">Do NOT copy</strong> MegaMek saves or preference files between versions</li>
           <li><strong style="color: #fff;">Re-save custom presets</strong> to update them for the new version</li>
         </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col'>
+    <h3>Manual Install</h3>
+    <p>Prefer to install by hand from the archive? You need to install Java yourself first.</p>
+  </div>
+</div>
+<div class='row'>
+  <div class='col mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        Installing Java
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          A manual install needs Java. MegaMek 51.00 and later require
+          Java 21, and we recommend Adoptium Temurin 21. The launcher
+          installers already include it.
+        </p>
+        <p>
+          MegaMek should run on any computer that can run Java without much
+          issue. Will NOT run on iOS/iPadOS/tvOS/Android devices. Your
+          experience will vary based on computer specifications.
+        </p>
+        <p class='card-text'>
+          Instructions for <a href='https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)'>Windows</a>
+          and <a href="/wiki/mac_issues.html">macOS</a> are available.
+        </p>
+        <div class="ratio ratio-16x9 mt-3">
+          <iframe src="https://www.youtube.com/embed/L06q5aLRdgQ?si=R1vkbmPHgwa95ja8" title="MegaMek Tutorial - Updating / Installing Java and Installing MegaMek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -137,22 +199,6 @@ title: Installation and Updating
             <pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
           </div>
         </div>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Milestone vs. Development
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          We recommend that most users download and use the milestone version of
-          the programs to minimize issues with bugs. The development versions
-          are only for those users interested in testing and bug hunting new
-          features.
         </p>
       </div>
     </div>

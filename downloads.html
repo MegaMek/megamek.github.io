@@ -3,6 +3,100 @@ layout: page
 title: Downloads
 ---
 
+{% assign launcher = site.data.current_releases.launcher %}
+{% assign launcher_base = "https://github.com/MegaMek/mm-launcher/releases/download/v" | append: launcher | append: "/MegaMek-Launcher-" | append: launcher %}
+
+<!-- Launcher Section -->
+<div class="row pt-2 mb-3 align-items-center" id="launcher">
+  <div class="col-auto">
+    <img src="{{ '/assets/images/site/icons/megamek.png' | relative_url }}" alt="MegaMek Launcher" class="download-program-img">
+  </div>
+  <div class="col">
+    <h4>MegaMek Launcher</h4>
+    <p>
+      The easiest way to play. The launcher installs MegaMek, MegaMekLab and
+      MekHQ, keeps more than one version side by side, and updates them with
+      one button. The installers come with Java built in. Read more in
+      <a href="{{ '/2026/11/02/Feature-Highlight-The-MegaMek-Launcher.html' | relative_url }}">Feature Highlight: The MegaMek Launcher</a>.
+    </p>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class='col'>
+    <div class="card dl-card">
+      <div class='card-header'>
+        Launcher:
+        {{ launcher }}
+        <small class="badge text-bg-secondary">
+          {{ site.data.current_releases.launcher_date }}
+        </small>
+      </div>
+      <div class='card-body'>
+        <p class='card-text text-center'>
+          <a class="btn card-link" href="{{ launcher_base }}-windows-x64.msi">
+            <i class="fab fa-windows"></i>
+            Windows (.msi)
+          </a>
+          <a class="btn card-link" href="{{ launcher_base }}-macos-apple-silicon.pkg">
+            <i class="fab fa-apple"></i>
+            macOS Apple Silicon (.pkg)
+          </a>
+          <a class="btn card-link" href="{{ launcher_base }}-macos-intel.pkg">
+            <i class="fab fa-apple"></i>
+            macOS Intel (.pkg)
+          </a>
+        </p>
+        <p class='card-text text-center'>
+          <a class="btn card-link" href="{{ launcher_base }}-linux-x64.deb">
+            <i class="fab fa-linux"></i>
+            Linux (.deb)
+          </a>
+          <a class="btn card-link" href="{{ launcher_base }}-linux-x64.rpm">
+            <i class="fab fa-linux"></i>
+            Linux (.rpm)
+          </a>
+          <a class="btn card-link" href="{{ launcher_base }}-linux-x64-portable.tar.gz">
+            <i class="fab fa-linux"></i>
+            Linux portable (.tar.gz)
+          </a>
+        </p>
+        <p class='card-text text-center'>
+          <small>
+            Checksums and older versions are on the
+            <a href="https://github.com/MegaMek/mm-launcher/releases">launcher releases page</a>.
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class='col'>
+    <p>
+      <strong>Core or Experimental?</strong>
+      Core is the release for most players. Experimental builds come out
+      weekly for testers, have new features and new bugs, and are installed
+      through the launcher. If you want an Experimental archive anyway, they
+      are on the GitHub releases pages for
+      <a href="https://github.com/MegaMek/megamek/releases">MegaMek</a>,
+      <a href="https://github.com/MegaMek/megameklab/releases">MegaMekLab</a> and
+      <a href="https://github.com/MegaMek/mekhq/releases">MekHQ</a>.
+      See
+      <a href="https://github.com/MegaMek/megamek/wiki/Milestone-Releases">Release Types: Core and Experimental</a>.
+    </p>
+  </div>
+</div>
+
+<hr />
+
+<h3>Manual install archives</h3>
+<p>
+  Prefer to install by hand? These archives need
+  <a href="https://github.com/MegaMek/megamek/wiki/Java-and-MegaMek">Java 21</a>
+  installed separately. Please review the
+  <a href="{{ '/installation.html' | relative_url }}">install instructions</a> first.
+</p>
+
 <!-- MekHQ Section -->
 <div class="row pt-2 mb-3 align-items-center">
   <div class="col-auto">
@@ -13,8 +107,7 @@ title: Downloads
     <p>
       This download contains all 3 programs, MegaMek, MegaMekLab, and MekHQ.
       If you're wanting to run a campaign, build units, and slaughter your
-      friends in glorious Mek to Mek combat, this is what you want. Please
-      be sure to review the install instructions <a href="https://megamek.org/installation.html">here</a>.
+      friends in glorious Mek to Mek combat, this is what you want.
     </p>
   </div>
 </div>
@@ -22,7 +115,7 @@ title: Downloads
   <div class='col'>
     <div class="card dl-card">
       <div class='card-header'>
-        Milestone:
+        Core:
         {{ site.data.current_releases.stable }}
         <small class="badge text-bg-secondary">
           {{ site.data.current_releases.stable_date }}
@@ -32,28 +125,6 @@ title: Downloads
         <p class='card-text text-center'>
           <a class="btn card-link"
             href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/mekhq-{{ site.data.current_releases.stable }}.tar.gz">
-            <i class="fab fa-windows"></i>
-            <i class="fab fa-linux"></i>
-            <i class="fab fa-apple"></i>
-            All Platforms
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class='col'>
-    <div class="card dl-card">
-      <div class='card-header'>
-        Development:
-        {{ site.data.current_releases.dev }}
-        <small class="badge text-bg-secondary">
-          {{ site.data.current_releases.dev_date }}
-        </small>
-      </div>
-      <div class='card-body'>
-        <p class='card-text text-center'>
-          <a class="btn card-link"
-            href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.dev }}/mekhq-{{ site.data.current_releases.dev }}.tar.gz">
             <i class="fab fa-windows"></i>
             <i class="fab fa-linux"></i>
             <i class="fab fa-apple"></i>
@@ -75,8 +146,7 @@ title: Downloads
     <p>
       This is for those that just wish to do battle. This is the core
       program that will allow you to play against the AI, Princess, or
-      against friends online via dedicated servers. Please
-      be sure to review the install instructions <a href="https://megamek.org/installation.html">here</a>.
+      against friends online via dedicated servers.
     </p>
   </div>
 </div>
@@ -84,7 +154,7 @@ title: Downloads
   <div class='col'>
     <div class="card dl-card">
       <div class='card-header'>
-        Milestone:
+        Core:
         {{ site.data.current_releases.stable }}
         <small class="badge text-bg-secondary">
           {{ site.data.current_releases.stable_date }}
@@ -94,28 +164,6 @@ title: Downloads
         <p class='card-text text-center'>
           <a class="btn card-link"
             href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.stable }}/megamek-{{ site.data.current_releases.stable }}.tar.gz">
-            <i class="fab fa-windows"></i>
-            <i class="fab fa-linux"></i>
-            <i class="fab fa-apple"></i>
-            All Platforms
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class='col'>
-    <div class="card dl-card">
-      <div class='card-header'>
-        Development:
-        {{ site.data.current_releases.dev }}
-        <small class="badge text-bg-secondary">
-          {{ site.data.current_releases.dev_date }}
-        </small>
-      </div>
-      <div class='card-body'>
-        <p class='card-text text-center'>
-          <a class="btn card-link"
-            href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.dev }}/megamek-{{ site.data.current_releases.dev }}.tar.gz">
             <i class="fab fa-windows"></i>
             <i class="fab fa-linux"></i>
             <i class="fab fa-apple"></i>
@@ -138,8 +186,7 @@ title: Downloads
       Want to design your own units? Want to see if a design will work?
       Need to print out a new record sheet for that last unit that blew
       up? This is the package for you. Contains all that is needed to
-      build and design the unit you want. Please
-      be sure to review the install instructions <a href="https://megamek.org/installation.html">here</a>.
+      build and design the unit you want.
     </p>
   </div>
 </div>
@@ -147,7 +194,7 @@ title: Downloads
   <div class='col'>
     <div class="card dl-card">
       <div class='card-header'>
-        Milestone:
+        Core:
         {{ site.data.current_releases.stable }}
         <small class="badge text-bg-secondary">
           {{ site.data.current_releases.stable_date }}
@@ -157,28 +204,6 @@ title: Downloads
         <p class='card-text text-center'>
           <a class="btn card-link"
             href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.stable }}/megameklab-{{ site.data.current_releases.stable }}.tar.gz">
-            <i class="fab fa-windows"></i>
-            <i class="fab fa-linux"></i>
-            <i class="fab fa-apple"></i>
-            All Platforms
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class='col'>
-    <div class="card dl-card">
-      <div class='card-header'>
-        Development:
-        {{ site.data.current_releases.dev }}
-        <small class="badge text-bg-secondary">
-          {{ site.data.current_releases.dev_date }}
-        </small>
-      </div>
-      <div class='card-body'>
-        <p class='card-text text-center'>
-          <a class="btn card-link"
-            href="https://github.com/MegaMek/megameklab/releases/download/v{{ site.data.current_releases.dev }}/megameklab-{{ site.data.current_releases.dev }}.tar.gz">
             <i class="fab fa-windows"></i>
             <i class="fab fa-linux"></i>
             <i class="fab fa-apple"></i>
@@ -303,7 +328,7 @@ title: Downloads
   <div class="col-12">
     <h4>Downloads Per Day by Version</h4>
     <p>
-      Daily downloads broken down by version, covering the current milestone
+      Daily downloads broken down by version, covering the current Core
       release and the three most recently published releases for each program.
     </p>
   </div>

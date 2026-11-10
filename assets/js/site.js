@@ -29,6 +29,25 @@ ready( () => {
 
   }
 
+  let launcherDownloader = document.getElementsByClassName( 'launcher-downloader' );
+
+  for ( let element of launcherDownloader ) {
+    let version = element.dataset.version;
+    let base = "https://github.com/MegaMek/mm-launcher/releases/download/v" + version + "/MegaMek-Launcher-" + version;
+    let userAgent = navigator.userAgent;
+
+    // Windows and Linux each have one obvious file. A Mac browser cannot say
+    // whether it is Apple Silicon or Intel, and other systems are unknown, so
+    // both keep the link to the full launcher list on the downloads page.
+    if ( userAgent.indexOf( "Win" ) != -1 ) {
+      updateDownloadLinks( element, version, base + "-windows-x64.msi", "<i class='fab fa-windows'></i> Windows" );
+    } else if ( userAgent.indexOf( "Mac OS X" ) != -1 ) {
+      element.getElementsByClassName( 'version_platform' )[ 0 ].innerHTML = "<i class='fab fa-apple'></i> macOS: pick your chip";
+    } else if ( userAgent.indexOf( "Linux" ) != -1 && userAgent.indexOf( "Android" ) == -1 ) {
+      updateDownloadLinks( element, version, base + "-linux-x64-portable.tar.gz", "<i class='fab fa-linux'></i> Linux" );
+    }
+  }
+
   loadDownloadStats( "megamek-download-stats", "megamek" );
   loadDownloadStats( "megameklab-download-stats", "megameklab" );
   loadDownloadStats( "mekhq-download-stats", "mekhq" );
