@@ -22,14 +22,21 @@ download links that show on the website depend on this file. For the download
 links to work properly, each release should just include the number of the
 release without a "v."
 
+- `stable` is the current Core release. Keep the key name: the download
+  snapshot workflow reads it by name.
+- `launcher` is the MegaMek Launcher version. It builds the launcher download
+  links on the home and Downloads pages. The launcher updates itself, so this
+  only needs bumping now and then.
+- Experimental releases are not listed. Players get them through the launcher.
+
 ### Launcher Policies and Signing
 
 The public pages are `/launcher-privacy.html`, `/code-signing.html`, and
 `/credits.html`. The privacy contact uses the existing `email` in `_config.yml`.
 The signing policy is launcher-scoped and currently uses pre-approval wording;
 it does not claim that signing is active or that other programs are signed.
-The shared footer links to all three pages. Launcher promotion, installation
-guides, and release-channel download changes are not part of this addition.
+The shared footer links to all three pages. The home, Downloads and
+Installation pages link to the launcher downloads.
 
 Keep the artists' credits and any applicable notices in `credits.md` up to date
 when artwork is added or changed.

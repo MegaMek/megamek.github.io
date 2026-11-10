@@ -25,7 +25,13 @@ toc: |
 <section id="prerequisites">
   <h2><i class="fas fa-java"></i> Prerequisites</h2>
 
-  <p>MekHQ requires <strong>Java 21</strong> or newer to run. Install Java before downloading MekHQ.</p>
+  <div class="guide-callout guide-callout-info">
+    <div class="callout-title"><i class="fas fa-rocket"></i> Easiest Way: The MegaMek Launcher</div>
+    <p>Download the <a href="{{ '/downloads.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It comes with Java built in, installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button.</p>
+    <p class="mb-0">Using the launcher? Skip ahead to <a href="#downloading">Release Types</a> and <a href="#first-launch">First Launch</a>. The Java and extraction steps on this page are for a manual install.</p>
+  </div>
+
+  <p>For a manual install, MekHQ requires <strong>Java 21</strong> or newer to run. Install Java before downloading the MekHQ archive.</p>
 
   <div class="row g-4 mb-4">
     <div class="col-md-6">
@@ -34,7 +40,7 @@ toc: |
           <i class="fab fa-windows"></i> Windows
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p>Follow the Java installation instructions on the <a href="{{ '/downloads' | relative_url }}">Downloads page</a> (displayed prominently).</p>
+          <p>Follow the <a href="https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)" target="_blank">Java installation guide</a> on our wiki.</p>
           <p class="mb-0"><strong>Tip:</strong> The <a href="https://adoptium.net/" target="_blank">Adoptium Temurin</a> installer is recommended.</p>
         </div>
       </div>
@@ -54,7 +60,7 @@ toc: |
 
   <div class="guide-callout guide-callout-warning">
     <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 32-bit Systems</div>
-    <p class="mb-0">Java 21 dropped 32-bit support entirely, so 32-bit machines cannot run 0.51.0 or later. The last release that runs on 32-bit is the 0.50.x series with Java 17 LTS.</p>
+    <p class="mb-0">Java 21 dropped 32-bit support entirely, so 32-bit machines cannot run 51.00 or later. The last release that runs on 32-bit is the 50.x series with Java 17 LTS.</p>
   </div>
 
   <h3>Video Tutorial: Installing Java and MegaMek</h3>
@@ -72,7 +78,7 @@ toc: |
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
 
-  <p>Download the MekHQ Suite from our <a href="{{ '/downloads' | relative_url }}"><strong>Downloads page</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
+  <p>With the launcher, pick the <strong>Core</strong> release when you install. For a manual install, download the MekHQ Suite archive from our <a href="{{ '/downloads' | relative_url }}"><strong>Downloads page</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
 
   <h3>Release Types</h3>
 
@@ -86,26 +92,25 @@ toc: |
     </thead>
     <tbody>
       <tr>
-        <td><strong><i class="fas fa-star text-warning"></i> Milestone</strong></td>
-        <td>Stable, polished version considered most reliable by developers</td>
+        <td><strong><i class="fas fa-star text-warning"></i> Core</strong></td>
+        <td>The standard release, about every four months, with patches in between</td>
         <td>Most players</td>
       </tr>
       <tr>
-        <td><strong><i class="fas fa-code-branch"></i> Development</strong></td>
-        <td>Feature-complete with newer features, may contain bugs</td>
-        <td>Testing new features</td>
-      </tr>
-      <tr>
-        <td><strong><i class="fas fa-moon"></i> Nightly Builds</strong></td>
-        <td>Latest development from <a href="https://github.com/MegaMek/mekhq/releases" target="_blank">GitHub</a></td>
-        <td>Advanced users reporting bugs</td>
+        <td><strong><i class="fas fa-flask"></i> Experimental</strong></td>
+        <td>Weekly builds through the launcher, with new features and new bugs. Not meant for normal play</td>
+        <td>Testers reporting bugs</td>
       </tr>
     </tbody>
   </table>
+
+  <p>See <a href="https://github.com/MegaMek/megamek/wiki/Milestone-Releases" target="_blank">Release Types: Core and Experimental</a> for more.</p>
 </section>
 
 <section id="extracting">
   <h2><i class="fas fa-file-archive"></i> Extracting the Archive</h2>
+
+  <p><em>Manual install only. The launcher does this for you.</em></p>
 
   <p>MekHQ uses <code>.tar.gz</code> archives—a single download that works on Windows, Mac, and Linux.</p>
 
@@ -424,7 +429,18 @@ toc: |
     </div>
   </div>
 
-  <h3>Step-by-Step Migration</h3>
+  <h3>Updating with the Launcher</h3>
+
+  <p>The launcher's <strong>Update</strong> button updates your installation in place. It keeps your campaigns, saves, custom units, user data and settings, but it can't roll back to the old version.</p>
+
+  <ol>
+    <li><strong>Back up</strong> your campaign files (<code>.cpnx</code>) and any custom files first.</li>
+    <li>Close every MegaMek, MegaMekLab and MekHQ window, then press <strong>Update</strong>.</li>
+    <li>Want to keep the old version as a fallback? Use <strong>Install another version</strong> instead, then copy (not move!) your campaigns into it.</li>
+    <li>Re-save any custom campaign presets in the new version.</li>
+  </ol>
+
+  <h3>Step-by-Step Migration (Manual Install)</h3>
 
   <div class="guide-step">
     <div class="step-number">1</div>

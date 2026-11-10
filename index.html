@@ -26,62 +26,36 @@ title: Home
   </div>
   <div class="col-md-6">
     <div class="row">
-      <div class="col text-center downloader" data-version="{{ site.data.current_releases.stable }}">
-        <a href="" class='download_link'>
+      <div class="col text-center launcher-downloader" data-version="{{ site.data.current_releases.launcher }}">
+        <a href="/downloads.html#launcher" class='download_link'>
           <span>
             <img src="assets/images/site/icons/megamek.png" alt="MegaMek Icon" />
           </span>
           <span>
-            Milestone
+            MegaMek Launcher
             <br />
-            <span class='version_display'></span>
+            <span class='version_display'>{{ site.data.current_releases.launcher }}</span>
             <br />
             <span class='version_platform'></span>
           </span>
         </a>
         <br />
       </div>
-
-      {% if site.data.current_releases.corerules %}
-      <div class="col text-center">
-        <a class='download_link corerules-download'
-          href="https://github.com/MegaMek/megamek/releases/download/v{{ site.data.current_releases.corerules }}/MegaMek-{{ site.data.current_releases.corerules }}.tar.gz">
-          <span>
-            <img src="assets/images/site/icons/megamek.png" alt="MegaMek Icon" />
-          </span>
-          <span>
-            Core Rules
-            <br />
-            <span class='version_display'>{{ site.data.current_releases.corerules }}</span>
-          </span>
-          <span class='corerules-spray' aria-hidden="true">Core Rules Edition</span>
-        </a>
-      </div>
-      {% else %}
-      <div class="col text-center downloader" data-version="{{ site.data.current_releases.dev }}">
-        <a href="" class='download_link'>
-          <span>
-            <img src="assets/images/site/icons/megamek.png" alt="MegaMek Icon" />
-          </span>
-          <span>
-            Development
-            <br />
-            <span class='version_display'></span>
-          </span>
-        </a>
-      </div>
-      {% endif %}
     </div>
     <div class="row">
       <div class="col text-center">
-        <strong><em>Java 21 is required.</em></strong>
-        <a href="https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)">If you need to update,
-          follow these instructions.</a>
+        Installs and updates MegaMek, MegaMekLab and MekHQ, with Java built in.
+        <br />
+        <small>
+          Installing by hand? Download the
+          <a href="https://github.com/MegaMek/mekhq/releases/download/v{{ site.data.current_releases.stable }}/MekHQ-{{ site.data.current_releases.stable }}.tar.gz">Core {{ site.data.current_releases.stable }} archive</a>.
+          You need <a href="https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)">Java 21</a>.
+        </small>
       </div>
     </div>
     <div class="row">
       <div class="col text-center">
-        <a href="/downloads.html"><small>Other versions and platforms</small></a>
+        <a href="/downloads.html"><small>Other platforms and programs</small></a>
       </div>
     </div>
     <div class="row">

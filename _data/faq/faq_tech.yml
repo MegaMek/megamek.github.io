@@ -7,8 +7,8 @@
   answer: >
     MegaMek will run on any operating system that can run Java 21
     including Windows, macOS, and Linux. Although it will run on later versions
-    of Java, your experience will vary. Starting with the 0.51.0 release
-    MegaMek will require Java 21 to run. Please
+    of Java, your experience will vary. MegaMek 51.00 and later require
+    Java 21. The MegaMek Launcher installers include it. For a manual install,
     [see these instructions](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) for details.
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: >
