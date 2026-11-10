@@ -9,16 +9,17 @@ title: Downloads
 
 <!-- Launcher Section -->
 <div class="card dl-hero mt-2 mb-4" id="launcher">
-  <div class="row g-0">
-    <div class="col-md-5">
-      <img src="{{ '/assets/images/site/MekHQ Load_uhd.png' | relative_url }}" class="dl-hero-img" alt="MegaMek Launcher">
+  <div class="row g-0 align-items-center">
+    <div class="col-md-3 dl-emblem-wrap">
+      <img src="{{ '/assets/images/site/icons/launcher/MegaMek.png' | relative_url }}" class="dl-emblem dl-emblem-lg" alt="MegaMek Launcher">
     </div>
-    <div class="col-md-7">
+    <div class="col-md-9">
       <div class="card-body">
         <h3 class="card-title">MegaMek Launcher</h3>
         <p class="dl-meta">
           <span class="badge dl-badge-recommended">Recommended</span>
-          Version {{ launcher }} &middot; {{ site.data.current_releases.launcher_date }}
+          Version {{ launcher }}
+          <span class="badge text-bg-secondary">{{ site.data.current_releases.launcher_date }}</span>
         </p>
         <p class="card-text">
           The easiest way to play. The launcher installs MegaMek, MegaMekLab and
@@ -118,7 +119,9 @@ title: Downloads
 <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
   <div class="col">
     <div class="card h-100 program-card dl-archive">
-      <img src="{{ '/assets/images/site/MekHQ Start_uhd.png' | relative_url }}" class="card-img-top" alt="MekHQ">
+      <div class="dl-emblem-wrap">
+        <img src="{{ '/assets/images/site/icons/launcher/MekHQ.png' | relative_url }}" class="dl-emblem" alt="MekHQ">
+      </div>
       <div class="card-body">
         <h5 class="card-title">MekHQ</h5>
         <p class="dl-meta"><span class="badge dl-badge-suite">All 3 programs</span></p>
@@ -129,7 +132,7 @@ title: Downloads
         </p>
       </div>
       <div class="card-footer">
-        <div class="dl-meta">Core {{ core }} &middot; {{ site.data.current_releases.stable_date }}</div>
+        <div class="dl-meta">Core {{ core }} <span class="badge text-bg-secondary">{{ site.data.current_releases.stable_date }}</span></div>
         <a class="dl-btn dl-btn-primary"
           href="https://github.com/MegaMek/mekhq/releases/download/v{{ core }}/mekhq-{{ core }}.tar.gz">
           <i class="fas fa-download"></i> Download (.tar.gz)
@@ -139,7 +142,9 @@ title: Downloads
   </div>
   <div class="col">
     <div class="card h-100 program-card dl-archive">
-      <img src="{{ '/assets/images/site/mm-background.jpg' | relative_url }}" class="card-img-top" alt="MegaMek">
+      <div class="dl-emblem-wrap">
+        <img src="{{ '/assets/images/site/icons/launcher/MegaMek.png' | relative_url }}" class="dl-emblem" alt="MegaMek">
+      </div>
       <div class="card-body">
         <h5 class="card-title">MegaMek</h5>
         <p class="card-text">
@@ -148,7 +153,7 @@ title: Downloads
         </p>
       </div>
       <div class="card-footer">
-        <div class="dl-meta">Core {{ core }} &middot; {{ site.data.current_releases.stable_date }}</div>
+        <div class="dl-meta">Core {{ core }} <span class="badge text-bg-secondary">{{ site.data.current_releases.stable_date }}</span></div>
         <a class="dl-btn dl-btn-primary"
           href="https://github.com/MegaMek/megamek/releases/download/v{{ core }}/megamek-{{ core }}.tar.gz">
           <i class="fas fa-download"></i> Download (.tar.gz)
@@ -158,7 +163,9 @@ title: Downloads
   </div>
   <div class="col">
     <div class="card h-100 program-card dl-archive">
-      <img src="{{ '/assets/images/site/mml_load_uhd.jpg' | relative_url }}" class="card-img-top" alt="MegaMekLab">
+      <div class="dl-emblem-wrap">
+        <img src="{{ '/assets/images/site/icons/launcher/MegaMekLab.png' | relative_url }}" class="dl-emblem" alt="MegaMekLab">
+      </div>
       <div class="card-body">
         <h5 class="card-title">MegaMekLab</h5>
         <p class="card-text">
@@ -167,7 +174,7 @@ title: Downloads
         </p>
       </div>
       <div class="card-footer">
-        <div class="dl-meta">Core {{ core }} &middot; {{ site.data.current_releases.stable_date }}</div>
+        <div class="dl-meta">Core {{ core }} <span class="badge text-bg-secondary">{{ site.data.current_releases.stable_date }}</span></div>
         <a class="dl-btn dl-btn-primary"
           href="https://github.com/MegaMek/megameklab/releases/download/v{{ core }}/megameklab-{{ core }}.tar.gz">
           <i class="fas fa-download"></i> Download (.tar.gz)
@@ -193,7 +200,7 @@ title: Downloads
         </p>
       </div>
       <div class="card-footer">
-        <div class="dl-meta">Version {{ site.data.current_releases.megamek_extras }} &middot; {{ site.data.current_releases.megamek_extras_date }}</div>
+        <div class="dl-meta">Version {{ site.data.current_releases.megamek_extras }} <span class="badge text-bg-secondary">{{ site.data.current_releases.megamek_extras_date }}</span></div>
         <a class="dl-btn"
           href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.megamek_extras }}/megamek-extras-{{ site.data.current_releases.megamek_extras }}.zip">
           <i class="fas fa-download"></i> Download (.zip)
@@ -211,7 +218,7 @@ title: Downloads
         </p>
       </div>
       <div class="card-footer">
-        <div class="dl-meta">Version {{ site.data.current_releases.mekhq_extras }} &middot; {{ site.data.current_releases.mekhq_extras_date }}</div>
+        <div class="dl-meta">Version {{ site.data.current_releases.mekhq_extras }} <span class="badge text-bg-secondary">{{ site.data.current_releases.mekhq_extras_date }}</span></div>
         <a class="dl-btn"
           href="https://github.com/MegaMek/mekhq-extras/releases/download/v{{ site.data.current_releases.mekhq_extras }}/mekhq-extras-{{ site.data.current_releases.mekhq_extras }}.zip">
           <i class="fas fa-download"></i> Download (.zip)

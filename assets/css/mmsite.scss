@@ -406,15 +406,6 @@ div.post-meta {
   border: 1px solid rgba(255, 250, 205, 0.3);
   overflow: hidden;
 
-  .dl-hero-img {
-    width: 100%;
-    height: 100%;
-    min-height: 220px;
-    max-height: 320px;
-    object-fit: cover;
-    object-position: center;
-  }
-
   .card-body {
     padding: 1.5rem;
   }
@@ -470,8 +461,10 @@ div.post-meta {
     opacity: 0.85;
   }
 
+  /* Top-aligned so the first (recommended) button lines up across tiles
+     that hold different numbers of buttons */
   .dl-tile-actions {
-    margin-top: auto;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -490,8 +483,21 @@ div.post-meta {
   }
 }
 
-.dl-archive .card-img-top {
-  height: 160px;
+/* Hexagon program emblems, copied from the launcher's own icons
+   (icons/launcher/) so all three share one size, frame and transparency */
+.dl-emblem-wrap {
+  text-align: center;
+  padding: 1rem 1rem 0;
+}
+
+.dl-emblem {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.dl-emblem-lg {
+  width: 170px;
 }
 
 /* :link and :visited are matched here so these colors win over the site-wide
