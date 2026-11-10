@@ -1,0 +1,10 @@
+#Release tags that were Milestone releases. The Download Stats lists on the
+#Downloads page highlight these rows. Copied from the labels in MekHQ's
+#MekHQ/mmconf/milestoneReleases.yml. The Milestone system ended with 51.01,
+#so this list should not grow.
+- v0.48.0
+- v0.49.7
+- v0.49.19.1
+- v0.50.06
+- v0.50.11
+- v0.51.0

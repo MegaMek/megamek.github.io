@@ -237,8 +237,12 @@ title: Downloads
     <p>
       Download stats are taken from the GitHub Releases API and only reflect the
       cumulative downloads for each release from the repos for all platforms.
+      Highlighted rows were Milestone releases.
     </p>
   </div>
+  <script>
+    window.milestoneReleases = {{ site.data.milestone_releases | jsonify }};
+  </script>
   <div class="col">
     <div class="card dl-card">
       <div class='card-header'>

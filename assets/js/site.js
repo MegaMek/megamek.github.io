@@ -116,10 +116,14 @@ function loadDownloadStats( elementId, repoName ) {
 function addStatsToElement( element, releases ) {
   while ( element.lastChild ) { element.removeChild( element.lastChild ) };
 
+  // Set from _data/milestone_releases.yml on the Downloads page.
+  let milestoneReleases = window.milestoneReleases || [];
+
   releases.forEach( ( release ) => {
     let child = document.createElement( "li" );
     let text = "<strong>" + release.tag_name + "</strong>";
     let totalDownloads = 0;
+    let isMilestone = milestoneReleases.indexOf( release.tag_name ) != -1;
 
     release.assets.forEach( ( asset ) => {
       totalDownloads += asset.download_count;
@@ -127,7 +131,11 @@ function addStatsToElement( element, releases ) {
 
     text += ": <span class='float-right'>" + totalDownloads + "</span>";
 
-    child.className = "list-group-item";
+    if ( isMilestone ) {
+      text += " <span class='badge dl-badge-milestone'>Milestone</span>";
+    }
+
+    child.className = isMilestone ? "list-group-item dl-milestone" : "list-group-item";
     child.innerHTML = text;
     element.appendChild( child );
   } );

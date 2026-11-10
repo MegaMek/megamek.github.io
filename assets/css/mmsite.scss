@@ -278,6 +278,18 @@ ul {
     color: var(--text-color);
     background-color: var(--background-color);
   }
+
+  /* Download Stats rows for releases that were Milestones */
+  li.list-group-item.dl-milestone {
+    background-color: var(--card-color);
+    box-shadow: inset 4px 0 0 var(--accent-color-alternate);
+  }
+}
+
+.dl-badge-milestone {
+  background-color: var(--accent-color-alternate);
+  color: var(--background-color);
+  margin-left: 0.25rem;
 }
 
 /*********************************************************************/
