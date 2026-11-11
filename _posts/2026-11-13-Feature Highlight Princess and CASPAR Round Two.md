@@ -264,7 +264,40 @@ In the coming release you'll see an option to play against CASPAR instead of Pri
 
 That list will grow. Over the next few years you'll see more and more of the bot move into CASPAR.
 
-<div class="shot-placeholder"><strong>Video needed:</strong> The same lance and map played twice, Princess then CASPAR, side by side. Princess's lights run ahead; CASPAR's arrive with the heavies. 20 to 30 seconds each.</div>
+Here's the same map and the same two lances, played three ways:
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 0.806;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}"
+        alt="Animated map replay of Princess against Princess. Each side's light units run out ahead of their heavies"
+        loading="lazy"
+      />
+    </a>
+    <p class="corerules-caption">Princess against Princess. The lights run ahead of the heavies.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.806;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}"
+        alt="Animated map replay of CASPAR against CASPAR. Both lances advance as tight groups and meet in the middle of the map"
+        loading="lazy"
+      />
+    </a>
+    <p class="corerules-caption">CASPAR against CASPAR. Both lances advance together.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.806;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}"
+        alt="Animated map replay of CASPAR against Princess on the same map"
+        loading="lazy"
+      />
+    </a>
+    <p class="corerules-caption">CASPAR against Princess.</p>
+  </div>
+</div>
 
 ## The Bot Control Panel
 
