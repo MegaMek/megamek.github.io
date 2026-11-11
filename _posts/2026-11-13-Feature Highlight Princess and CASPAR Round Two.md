@@ -109,10 +109,33 @@ date: 2026-11-13
   object-fit: cover;
   object-position: 50% 65%;
 }
+/* Screenshots side by side. Each figure's --ratio is its image's width over
+   height, so the images in a row come out the same height. */
+.corerules-figure-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 1.75rem auto;
+}
+.corerules-figure-row .corerules-figure {
+  flex: var(--ratio, 1) 1 0;
+  min-width: 0;
+  margin: 0;
+}
+/* Videos get the same frame as the screenshots */
+.corerules-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+}
 /* Headings and full-width blocks always start below any float */
 h2, h3, h4,
 .corerules-callout,
 .shot-placeholder,
+.corerules-figure-row,
 .corerules-figure:not(.corerules-float-right):not(.corerules-float-left) {
   clear: both;
 }
@@ -122,6 +145,13 @@ h2, h3, h4,
     float: none;
     width: auto;
     margin: 1.75rem auto;
+  }
+  .corerules-figure-row {
+    flex-direction: column;
+  }
+  .corerules-figure-row .corerules-figure {
+    flex: none;
+    width: 100%;
   }
 }
 /* Every screenshot opens at full size when clicked */
@@ -313,21 +343,55 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
   <p class="corerules-caption">A convoy route: four waypoints, the lance keeps together in a wedge, and leaves the board at the last one.</p>
 </div>
 
-This finally makes convoy, escort and breakthrough scenarios playable against the bot without a gamemaster nudging every unit.
-
-<div class="corerules-figure">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
-      alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
-    />
-  </a>
-  <p class="corerules-caption">Right-click a waypoint to change its facing, hold or phase line, remove it, or reopen the route.</p>
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 1.339;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
+        alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
+      />
+    </a>
+    <p class="corerules-caption">Right-click a waypoint to change its facing, hold or phase line, remove it, or reopen the route.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.866;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}"
+        alt="The Strategic Targets tab of Configure Bot: a search box, the enemy Defenders team listed by unit with a tick box each (Shadow Hawk, Gambit, Havoc, Stinger), a note that priority 1 means shoot first and 5 means barely, and a Hex targets list"
+      />
+    </a>
+    <p class="corerules-caption">Strategic Targets: tick enemy units by name, from priority 1 (shoot first) to 5 (barely).</p>
+  </div>
 </div>
 
-<div class="shot-placeholder"><strong>Screenshot needed:</strong> Bot Settings, Strategic Targets tab: enemies ticked by name, a convoy truck at priority 1.</div>
+<div class="corerules-figure-row">
+  <div class="corerules-figure">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_forms_up.gif' | relative_url }}"
+      alt="Animated map: the convoy and its escorts gather at the south edge of the board"
+      loading="lazy"
+    />
+    <p class="corerules-caption">The convoy forms up to move north.</p>
+  </div>
+  <div class="corerules-figure">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_escorts_intercept.gif' | relative_url }}"
+      alt="Animated map: the escort units move out to intercept enemies while the convoy moves north"
+      loading="lazy"
+    />
+    <p class="corerules-caption">The escorts move to intercept.</p>
+  </div>
+  <div class="corerules-figure">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_exit_north_edge.gif' | relative_url }}"
+      alt="Animated map: the convoy follows its route up the board and leaves by the north edge"
+      loading="lazy"
+    />
+    <p class="corerules-caption">The convoy leaves by the north edge.</p>
+  </div>
+</div>
 
-<div class="shot-placeholder"><strong>Video needed:</strong> A convoy lance following its route to the exit edge with an escort lance sticking to it.</div>
+This finally makes convoy, escort and breakthrough scenarios playable against the bot without a gamemaster nudging every unit.
 
 ## Calling in the Guns
 
@@ -352,7 +416,13 @@ Princess now leads her targets. She works out where each enemy is heading and ho
 
 All of this works for both Princess and CASPAR.
 
-<div class="shot-placeholder"><strong>Screenshot needed:</strong> A round report with the fire mission radio calls ("Rounds inbound", "Splash, over").</div>
+<div class="corerules-figure">
+  <video controls muted playsinline preload="metadata"
+    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/radio_calls.mp4' | relative_url }}"
+    aria-label="Calling a barrage of standard ammo from the Artillery menu, then Princess answering in the message box: copies all, fire for effect, suppression, HE, grid 1718, out">
+  </video>
+  <p class="corerules-caption">Call a barrage from the Artillery menu, and Princess answers over the radio.</p>
+</div>
 
 ## Honor Among Mercenaries
 
