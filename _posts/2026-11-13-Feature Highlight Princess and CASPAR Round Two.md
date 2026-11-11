@@ -97,17 +97,18 @@ date: 2026-11-13
   margin-right: 1.75rem;
   margin-left: 0;
 }
-/* A small menu shown at its own size, not stretched */
-.corerules-figure.figure-small {
-  width: 30%;
-  max-width: 316px;
+/* A side image must not run far below the text beside it, so each one gets
+   a width cap (--side-width) to keep its height close to the text's. */
+.corerules-figure.corerules-float-right,
+.corerules-figure.corerules-float-left {
+  max-width: var(--side-width, 380px);
 }
-/* The route close-up is tall and mostly empty board: show the square around
-   the route and the lance. Clicking still opens the whole image. */
-.corerules-figure.figure-crop-route img {
-  aspect-ratio: 1 / 1;
+/* Show only part of a tall screenshot: --crop-ratio is the width over height
+   of the part shown, --crop-pos where it sits. Clicking opens the whole image. */
+.corerules-figure.figure-crop img {
+  aspect-ratio: var(--crop-ratio);
   object-fit: cover;
-  object-position: 50% 65%;
+  object-position: var(--crop-pos, 50% 0);
 }
 /* Screenshots side by side. Each figure's --ratio is its image's width over
    height, so the images in a row come out the same height. */
@@ -243,7 +244,7 @@ That's why most of what's in this post works for both bots.
   <p>"Your lights would have been dead by now."</p>
 </div>
 
-<div class="corerules-figure corerules-float-right">
+<div class="corerules-figure corerules-float-right figure-crop" style="--side-width: 420px; --crop-ratio: 814 / 640; --crop-pos: 50% 0;">
   <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}">
     <img
       src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
@@ -279,7 +280,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   <p class="corerules-caption">Docked, the Bot Control Panel sits as a strip across the top of the board (outlined in red).</p>
 </div>
 
-<div class="corerules-figure corerules-float-right figure-small">
+<div class="corerules-figure corerules-float-right" style="--side-width: 230px;">
   <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
     <img
       src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
@@ -317,7 +318,7 @@ In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where th
 
 This is the big one for 0.51.01. You can now give orders to a bot's units, and both Princess and CASPAR follow them.
 
-<div class="corerules-figure corerules-float-left figure-crop-route">
+<div class="corerules-figure corerules-float-left figure-crop" style="--side-width: 300px; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
   <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
     <img
       src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
