@@ -78,15 +78,55 @@ date: 2026-11-13
   stroke: var(--accent-color);
   stroke-width: 2.5;
 }
-/* Narrow screenshots (dialogs, menus) at their own size instead of stretched to the column */
-.corerules-figure.figure-medium {
-  max-width: 600px;
+/* Smaller screenshots sit beside the text instead of between paragraphs,
+   alternating sides, as in the Balancing Gameplay post. On narrow screens
+   they drop back into the column. */
+.corerules-figure.corerules-float-right,
+.corerules-figure.corerules-float-left {
+  width: 40%;
+  margin-top: 0.35rem;
+  margin-bottom: 1.25rem;
 }
-.corerules-figure.figure-narrow {
-  max-width: 440px;
+.corerules-figure.corerules-float-right {
+  float: right;
+  margin-left: 1.75rem;
+  margin-right: 0;
 }
+.corerules-figure.corerules-float-left {
+  float: left;
+  margin-right: 1.75rem;
+  margin-left: 0;
+}
+/* A small menu shown at its own size, not stretched */
 .corerules-figure.figure-small {
-  max-width: 320px;
+  width: 30%;
+  max-width: 316px;
+}
+/* The route close-up is tall and mostly empty board: show the square around
+   the route and the lance. Clicking still opens the whole image. */
+.corerules-figure.figure-crop-route img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 65%;
+}
+/* Headings and full-width blocks always start below any float */
+h2, h3, h4,
+.corerules-callout,
+.shot-placeholder,
+.corerules-figure:not(.corerules-float-right):not(.corerules-float-left) {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .corerules-figure.corerules-float-right,
+  .corerules-figure.corerules-float-left {
+    float: none;
+    width: auto;
+    margin: 1.75rem auto;
+  }
+}
+/* Every screenshot opens at full size when clicked */
+.corerules-figure a {
+  cursor: zoom-in;
 }
 /* DRAFT ONLY: placeholders for screenshots and videos still to be taken. Remove before merging. */
 .shot-placeholder {
@@ -173,6 +213,16 @@ That's why most of what's in this post works for both bots.
   <p>"Your lights would have been dead by now."</p>
 </div>
 
+<div class="corerules-figure corerules-float-right">
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
+      alt="The Configure Bot dialog. Next to the bot's name, a Bot AI choice between Princess and CASPAR. Below it the Behavior tab with the presets list and the Bravery, Self Preservation, Aggression and Mutual Support sliders, and a Strategic Targets tab"
+    />
+  </a>
+  <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
+</div>
+
 In the coming release you'll see an option to play against CASPAR instead of Princess. It's experimental, and right now there are only a few things CASPAR does differently:
 
 - **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone.
@@ -183,19 +233,31 @@ In the coming release you'll see an option to play against CASPAR instead of Pri
 
 That list will grow. Over the next few years you'll see more and more of the bot move into CASPAR.
 
-<div class="corerules-figure figure-medium">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
-    alt="The Configure Bot dialog. Next to the bot's name, a Bot AI choice between Princess and CASPAR. Below it the Behavior tab with the presets list and the Bravery, Self Preservation, Aggression and Mutual Support sliders, and a Strategic Targets tab"
-  />
-  <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
-</div>
-
 <div class="shot-placeholder"><strong>Video needed:</strong> The same lance and map played twice, Princess then CASPAR, side by side. Princess's lights run ahead; CASPAR's arrive with the heavies. 20 to 30 seconds each.</div>
 
 ## The Bot Control Panel
 
 Most of what follows starts in one place: the Bot Control Panel. Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed.
+
+<div class="corerules-figure">
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}"
+      alt="The game window in the Movement phase, with the Bot Control Panel docked as a strip across the top of the board, outlined in red. Its buttons are Pause Game, Move Order, Quick Orders, Targets, Behavior, Set Behavior, Artillery, Commands and Report a Bug"
+    />
+  </a>
+  <p class="corerules-caption">Docked, the Bot Control Panel sits as a strip across the top of the board (outlined in red).</p>
+</div>
+
+<div class="corerules-figure corerules-float-right figure-small">
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
+      alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
+    />
+  </a>
+  <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
+</div>
 
 - **Put it where you want it.** View > Bot Commands now has Off, Float and Dock. Float is the old separate window. Dock puts the panel as a thin strip across the top of the board, so it's always in reach. Ctrl+Shift+G shows and hides it, and MegaMek remembers your choice.
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
@@ -205,26 +267,12 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
 In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where the next section starts.
 
 <div class="corerules-figure">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}"
-    alt="The game window in the Movement phase, with the Bot Control Panel docked as a strip across the top of the board, outlined in red. Its buttons are Pause Game, Move Order, Quick Orders, Targets, Behavior, Set Behavior, Artillery, Commands and Report a Bug"
-  />
-  <p class="corerules-caption">Docked, the Bot Control Panel sits as a strip across the top of the board (outlined in red).</p>
-</div>
-
-<div class="corerules-figure figure-small">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
-    alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
-  />
-  <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
-</div>
-
-<div class="corerules-figure">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
-    alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
-  />
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
+      alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
+    />
+  </a>
   <p class="corerules-caption">Click the hexes to hit. You can't pick more hexes than the unit has tubes to fire.</p>
 </div>
 
@@ -239,6 +287,16 @@ In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where th
 
 This is the big one for 0.51.01. You can now give orders to a bot's units, and both Princess and CASPAR follow them.
 
+<div class="corerules-figure corerules-float-left figure-crop-route">
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
+      alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
+    />
+  </a>
+  <p class="corerules-caption">A convoy lance's route on the map. The dots show the path, and the flag marks a waypoint.</p>
+</div>
+
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold.
 - **Quick orders.** Right-click the map for move here, pause, resume, stop, hold position, or head for an edge.
 - **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
@@ -246,34 +304,30 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
 <div class="corerules-figure">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
-    alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
-  />
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
+      alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
+    />
+  </a>
   <p class="corerules-caption">A convoy route: four waypoints, the lance keeps together in a wedge, and leaves the board at the last one.</p>
 </div>
 
-<div class="corerules-figure figure-narrow">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
-    alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
-  />
-  <p class="corerules-caption">The same route on the map. The dots show the path, and the flag marks a waypoint.</p>
-</div>
+This finally makes convoy, escort and breakthrough scenarios playable against the bot without a gamemaster nudging every unit.
 
 <div class="corerules-figure">
-  <img
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
-    alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
-  />
+  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
+      alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
+    />
+  </a>
   <p class="corerules-caption">Right-click a waypoint to change its facing, hold or phase line, remove it, or reopen the route.</p>
 </div>
 
 <div class="shot-placeholder"><strong>Screenshot needed:</strong> Bot Settings, Strategic Targets tab: enemies ticked by name, a convoy truck at priority 1.</div>
 
 <div class="shot-placeholder"><strong>Video needed:</strong> A convoy lance following its route to the exit edge with an escort lance sticking to it.</div>
-
-This finally makes convoy, escort and breakthrough scenarios playable against the bot without a gamemaster nudging every unit.
 
 ## Calling in the Guns
 
