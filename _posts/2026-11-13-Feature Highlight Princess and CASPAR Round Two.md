@@ -298,8 +298,6 @@ Princess now leads her targets. She works out where each enemy is heading and ho
 
 All of this works for both Princess and CASPAR.
 
-<div class="shot-placeholder"><strong>Screenshot needed:</strong> The bot artillery heat map (Settings > Advanced > Show Bot Artillery Heat Map): crosshairs where Princess predicts the enemy will be, and the impact hexes ahead of an advancing column.</div>
-
 <div class="shot-placeholder"><strong>Screenshot needed:</strong> A round report with the fire mission radio calls ("Rounds inbound", "Splash, over").</div>
 
 ## Honor Among Mercenaries
