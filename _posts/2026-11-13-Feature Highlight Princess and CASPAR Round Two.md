@@ -352,30 +352,31 @@ In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where th
 
 This is the big one for 0.51.01. You can now give orders to a bot's units, and both Princess and CASPAR follow them.
 
-<div class="corerules-figure corerules-float-left figure-crop" style="--side-width: 300px; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
-      alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
-    />
-  </a>
-  <p class="corerules-caption">A convoy lance's route on the map. The dots show the path, and the flag marks a waypoint.</p>
-</div>
-
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold.
 - **Quick orders.** Right-click the map for move here, pause, resume, stop, hold position, or head for an edge.
 - **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
 - **Priority targets.** In Bot Settings, tick enemy units by name and give each a priority from 1 to 5. An unarmed convoy truck at priority 1 no longer gets passed over for the armed 'Mek escorting it.
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
-<div class="corerules-figure">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
-      alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
-    />
-  </a>
-  <p class="corerules-caption">A convoy route: four waypoints, the lance keeps together in a wedge, and leaves the board at the last one.</p>
+<div class="corerules-figure-row">
+  <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
+        alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
+      />
+    </a>
+    <p class="corerules-caption">A convoy lance's route on the map. The dots show the path, and the flag marks a waypoint.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 2.347;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
+        alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
+      />
+    </a>
+    <p class="corerules-caption">A convoy route: four waypoints, the lance keeps together in a wedge, and leaves the board at the last one.</p>
+  </div>
 </div>
 
 <div class="corerules-figure-row">
