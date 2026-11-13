@@ -313,32 +313,33 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   <p class="corerules-caption">Docked, the Bot Control Panel sits as a strip across the top of the board (outlined in red).</p>
 </div>
 
-<div class="corerules-figure corerules-float-right" style="--side-width: 230px;">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
-      alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
-    />
-  </a>
-  <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
-</div>
-
 - **Put it where you want it.** View > Bot Commands now has Off, Float and Dock. Float is the old separate window. Dock puts the panel as a thin strip across the top of the board, so it's always in reach. Ctrl+Shift+G shows and hides it, and MegaMek remembers your choice.
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
 - **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries.
 - **Radio chatter.** Fire missions come back in the report the way a fire direction center would call them: "Shot, out", "Rounds inbound", "Splash, over".
 
-In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where the next section starts.
-
-<div class="corerules-figure">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
-      alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
-    />
-  </a>
-  <p class="corerules-caption">Click the hexes to hit. You can't pick more hexes than the unit has tubes to fire.</p>
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 0.707;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
+        alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
+      />
+    </a>
+    <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 2.731;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
+        alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
+      />
+    </a>
+    <p class="corerules-caption">Click the hexes to hit. You can't pick more hexes than the unit has tubes to fire.</p>
+  </div>
 </div>
+
+In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where the next section starts.
 
 ## Taking Orders
 
