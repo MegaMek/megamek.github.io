@@ -301,34 +301,25 @@ That list will grow. Over the next few years you'll see more and more of the bot
 Here's the same map and the same two lances, played three ways. When Princess plays, she always enters from the north, at the top of the map.
 
 <div class="corerules-figure-row">
-  <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}">
-      <img
-        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}"
-        alt="Animated map replay of Princess against Princess. Each side's light units run out ahead of their heavies"
-        loading="lazy"
-      />
-    </a>
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_princess_vs_princess.mp4' | relative_url }}"
+      aria-label="Animated map replay of Princess against Princess. Each side's light units run out ahead of their heavies">
+    </video>
     <p class="corerules-caption">Princess against Princess. The lights run ahead of the heavies.</p>
   </div>
-  <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}">
-      <img
-        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}"
-        alt="Animated map replay of CASPAR against CASPAR. Both lances advance as tight groups and meet in the middle of the map"
-        loading="lazy"
-      />
-    </a>
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_caspar.mp4' | relative_url }}"
+      aria-label="Animated map replay of CASPAR against CASPAR. Both lances advance as tight groups and meet in the middle of the map">
+    </video>
     <p class="corerules-caption">CASPAR against CASPAR. Both lances advance together.</p>
   </div>
-  <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}">
-      <img
-        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}"
-        alt="Animated map replay of CASPAR against Princess on the same map. Princess enters from the north, at the top, and CASPAR from the south, at the bottom"
-        loading="lazy"
-      />
-    </a>
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.mp4' | relative_url }}"
+      aria-label="Animated map replay of CASPAR against Princess on the same map. Princess enters from the north, at the top, and CASPAR from the south, at the bottom">
+    </video>
     <p class="corerules-caption">CASPAR against Princess. Princess comes in from the north, CASPAR from the south.</p>
   </div>
 </div>
@@ -477,27 +468,24 @@ Use the bot's own name if you called it something else. To see unit IDs, turn on
 
 <div class="corerules-figure-row">
   <div class="corerules-figure">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_forms_up.gif' | relative_url }}"
-      alt="Animated map: the convoy and its escorts gather at the south edge of the board"
-      loading="lazy"
-    />
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_forms_up.mp4' | relative_url }}"
+      aria-label="Animated map: the convoy and its escorts gather at the south edge of the board">
+    </video>
     <p class="corerules-caption">The convoy forms up to move north.</p>
   </div>
   <div class="corerules-figure">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_escorts_intercept.gif' | relative_url }}"
-      alt="Animated map: the escort units move out to intercept enemies while the convoy moves north"
-      loading="lazy"
-    />
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_escorts_intercept.mp4' | relative_url }}"
+      aria-label="Animated map: the escort units move out to intercept enemies while the convoy moves north">
+    </video>
     <p class="corerules-caption">The escorts move to intercept.</p>
   </div>
   <div class="corerules-figure">
-    <img
-      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_exit_north_edge.gif' | relative_url }}"
-      alt="Animated map: the convoy follows its route up the board and leaves by the north edge"
-      loading="lazy"
-    />
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_exit_north_edge.mp4' | relative_url }}"
+      aria-label="Animated map: the convoy follows its route up the board and leaves by the north edge">
+    </video>
     <p class="corerules-caption">The convoy leaves by the north edge.</p>
   </div>
 </div>
