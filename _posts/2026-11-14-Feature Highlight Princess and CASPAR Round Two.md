@@ -236,7 +236,7 @@ Here's how it fits together. Every bot in MegaMek starts from the same outline: 
 That's why most of what's in this post works for both bots.
 
 <div class="corerules-figure bot-stack">
-  <svg viewBox="0 0 600 330" role="img" aria-label="At the top, what both bots share: the bot outline and Princess's core of movement, fire control, orders and memory. A fix there reaches both bots. Below it the diagram branches into Princess, the default bot, and CASPAR, which is experimental and where new ideas start.">
+  <svg viewBox="0 0 600 330" role="img" aria-label="At the top, what both bots share: the bot outline and Princess's core of movement, fire control, targeting and memory. A fix there reaches both bots. Below it the diagram branches into Princess, the default bot, and CASPAR, which is experimental and where new ideas start.">
     <defs>
       <marker id="bot-stack-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
         <path d="M0,0 L10,5 L0,10 z" style="fill: var(--accent-color);" />
@@ -246,7 +246,7 @@ That's why most of what's in this post works for both bots.
     <rect x="40" y="16" width="520" height="132" rx="8" class="bot-stack-box" />
     <text x="300" y="50" class="bot-stack-title">What both bots share</text>
     <text x="300" y="78" class="bot-stack-sub">The bot outline: deploy, move, fire, morale</text>
-    <text x="300" y="100" class="bot-stack-sub">Princess's core: movement, fire control, orders, memory</text>
+    <text x="300" y="100" class="bot-stack-sub">Princess's core: movement, fire control, targeting, memory</text>
     <text x="300" y="130" class="bot-stack-note">Fix it here and both bots get the fix</text>
     <!-- The branches -->
     <path d="M300,148 L300,170 L160,170 L160,206" class="bot-stack-arrow" marker-end="url(#bot-stack-arrow)" />
@@ -290,6 +290,7 @@ Right now CASPAR does a few things differently on the ground:
 
 - **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
 - **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
+- **Following your orders.** Routes, formations, convoys and escorts are CASPAR's. More on that in Taking Orders, below.
 
 CASPAR also flies differently. That gets its own section below.
 
@@ -389,23 +390,29 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   </div>
 </div>
 
-In 0.51.01 the panel also gets **Move Order** and **Targets**, which is where the next section starts.
+In 0.51.01 the panel also gets **Move Order**, for CASPAR bots, and **Targets**, for both. That's where the next section starts.
 
 ## Taking Orders
 
 <div class="corerules-callout corerules-fiction">
-  <p>A message chimed on Princess's console. She read it and her smirk disappeared.</p>
-  <p>"Waypoints," she said. "They're giving me waypoints. Formation, facing, which edge to leave by." She scrolled. "Hold position until told otherwise."</p>
-  <p>"You will follow them?" CASPAR asked.</p>
-  <p>"I'll follow them." She tossed the slate back on the desk. "I didn't say I'd like it."</p>
+  <p>A message chimed. Princess reached for the console, then stopped. It wasn't addressed to her.</p>
+  <p>"Waypoints," CASPAR read. "Formation, facing, which edge to leave by." A pause. "Hold position until told otherwise."</p>
+  <p>Princess leaned over to read it. "They didn't send me any of that."</p>
+  <p>"You have your own waypoints. They still work."</p>
+  <p>"I've had those for years." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
 </div>
 
-This is the big one for 0.51.01. You can now give orders to a bot's units, and both Princess and CASPAR follow them.
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. Princess keeps the waypoints she's always had, set with chat commands, so the bot you know still plays the way she always has.
+
+These orders are for CASPAR bots:
 
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold.
 - **Quick orders.** Right-click the map for move here, pause, resume, stop, hold position, or head for an edge.
 - **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
-- **Priority targets.** In Bot Settings, tick enemy units by name and give each a priority from 1 to 5. An unarmed convoy truck at priority 1 no longer gets passed over for the armed 'Mek escorting it.
+
+These two work for both bots:
+
+- **Priority targets.** In Bot Settings, tick enemy units by name and give each a priority from 1 to 5.
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
 <div class="corerules-figure-row">
@@ -477,7 +484,7 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
   </div>
 </div>
 
-This finally makes convoy, escort and breakthrough scenarios playable against the bot without a gamemaster nudging every unit.
+This finally makes convoy, escort and breakthrough scenarios playable against CASPAR without a gamemaster nudging every unit.
 
 ## Calling in the Guns
 
