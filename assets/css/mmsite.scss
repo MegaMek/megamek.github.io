@@ -474,3 +474,99 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+/*********************************************************************/
+/* Download Stats table, one row per release line                     */
+/*********************************************************************/
+.dl-stats-table {
+  --bs-table-bg: var(--card-color);
+  --bs-table-color: var(--text-color);
+  --bs-table-border-color: rgba(128, 128, 128, 0.35);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+
+  th {
+    white-space: nowrap;
+  }
+
+  .badge {
+    margin: 0 0.25rem 0.15rem 0;
+  }
+}
+
+.dl-stats-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.dl-stats-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  white-space: nowrap;
+
+  i {
+    transition: transform 0.15s ease;
+    width: 1em;
+  }
+
+  &[aria-expanded="true"] i {
+    transform: rotate(90deg);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-color-alternate);
+    outline-offset: 2px;
+  }
+}
+
+.dl-stats-detail > td {
+  padding: 0 0 0.75rem 1.5rem;
+}
+
+.dl-stats-builds {
+  --bs-table-bg: var(--background-color);
+  --bs-table-color: var(--text-color);
+  margin: 0;
+  font-size: 0.9rem;
+
+  tr.dl-stats-milestone > td {
+    box-shadow: inset 0 0 0 9999px rgba(255, 215, 0, 0.08);
+  }
+
+  tr.dl-stats-milestone > td:first-child {
+    border-left: 4px solid var(--accent-color-alternate);
+  }
+}
+
+.dl-stats-badge-core,
+.dl-stats-badge-milestone {
+  background-color: var(--accent-color-alternate);
+  color: var(--background-color);
+}
+
+.dl-stats-badge-experimental {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.dl-stats-more-btn {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--accent-color-alternate);
+    color: var(--accent-color-alternate);
+  }
+}
+
+.dl-stats-updated {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

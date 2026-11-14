@@ -53,6 +53,10 @@ jobs:
               data.repos = {};
             }
 
+            // Every published release with its current download count, for the
+            // grouped Download Stats table. Rewritten in full each run.
+            const releaseTable = { updated: today, repos: {} };
+
             for (const repo of repos) {
               const releases = await github.paginate(
                 github.rest.repos.listReleases,
@@ -61,6 +65,7 @@ jobs:
 
               let total = 0;
               const downloadsByVersion = {};
+              const releaseList = [];
               for (const release of releases) {
                 let releaseDownloads = 0;
                 for (const asset of release.assets) {
@@ -68,7 +73,18 @@ jobs:
                 }
                 total += releaseDownloads;
                 downloadsByVersion[normalize(release.tag_name)] = releaseDownloads;
+
+                if (!release.draft && release.published_at) {
+                  releaseList.push({
+                    tag: release.tag_name,
+                    name: release.name || '',
+                    date: release.published_at.slice(0, 10),
+                    prerelease: release.prerelease,
+                    downloads: releaseDownloads
+                  });
+                }
               }
+              releaseTable.repos[repo] = releaseList;
 
               // Track the milestone plus the three most recently published
               // releases, de-duplicated (the milestone is often among them).
@@ -103,12 +119,13 @@ jobs:
             data.updated = today;
             fs.mkdirSync('assets/data', { recursive: true });
             fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+            fs.writeFileSync('assets/data/releases.json', JSON.stringify(releaseTable, null, 2) + '\n');
 
       - name: Commit updated history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/data/download_history.json
+          git add assets/data/download_history.json assets/data/releases.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

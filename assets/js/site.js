@@ -29,9 +29,7 @@ ready( () => {
 
   }
 
-  loadDownloadStats( "megamek-download-stats", "megamek" );
-  loadDownloadStats( "megameklab-download-stats", "megameklab" );
-  loadDownloadStats( "mekhq-download-stats", "mekhq" );
+  loadReleaseTable();
 
   loadDownloadChart();
   loadVersionCharts();
@@ -83,35 +81,309 @@ if ( currentTheme ) {
   document.documentElement.setAttribute( 'data-theme', 'dark' );
 }
 
-function loadDownloadStats( elementId, repoName ) {
-  let element = document.getElementById( elementId );
+/*
+ * Download Stats table. One row per release line (51.01, 51.00, ...) with a
+ * column per program. A line's total adds up its Core release, patches and
+ * Experimental builds; opening a row lists each build. The data comes from
+ * assets/data/releases.json, which the daily snapshot workflow rewrites.
+ */
 
-  if ( element ) {
-    fetch( "https://api.github.com/repos/megamek/" + repoName + "/releases" )
-      .then( ( response ) => response.json() )
-      .then( ( response ) => addStatsToElement( element, response ) )
-      .catch( ( error ) => console.log( error ) );
+const STATS_REPOS = [ "megamek", "megameklab", "mekhq" ];
+
+// Release lines shown before the "Show older" button.
+const STATS_VISIBLE_LINES = 6;
+
+function loadReleaseTable() {
+  let table = document.getElementById( "download-stats-table" );
+
+  if ( !table ) {
+    return;
+  }
+
+  fetch( "/assets/data/releases.json" )
+    .then( ( response ) => response.json() )
+    .then( ( data ) => renderReleaseTable( table, data ) )
+    .catch( ( error ) => {
+      console.log( error );
+      table.tBodies[ 0 ].innerHTML = "<tr><td colspan='5'>Download stats are not available right now.</td></tr>";
+    } );
+}
+
+// Splits a tag into a release line and a build number, or returns null for a
+// tag with no version in it (old packaging tests). "v0.51.0" and "v0.51.00.1"
+// are both line 0.51.00; "v0.51.01.5" is line 0.51.01, build 5.
+function parseReleaseTag( tag ) {
+  let match = tag.match( /^v?\.?(\d+(?:\.\d+)*)/ );
+
+  if ( !match ) {
+    return null;
+  }
+
+  let parts = match[ 1 ].split( "." ).map( ( part ) => parseInt( part, 10 ) );
+
+  // Early tags such as "v42.2" and "v.45.1" dropped the leading zero.
+  if ( parts.length == 2 && parts[ 0 ] != 0 ) {
+    parts.unshift( 0 );
+  }
+
+  while ( parts.length < 3 ) {
+    parts.push( 0 );
+  }
+
+  return {
+    line: parts.slice( 0, 3 ),
+    build: parts.length > 3 ? parts[ 3 ] : 0
+  };
+}
+
+function compareVersionParts( first, second ) {
+  for ( let i = 0; i < Math.max( first.length, second.length ); i++ ) {
+    let difference = ( second[ i ] || 0 ) - ( first[ i ] || 0 );
+
+    if ( difference != 0 ) {
+      return difference;
+    }
+  }
+
+  return 0;
+}
+
+// Shown without the leading "0.", to match how releases are named now (51.01).
+function formatReleaseLine( line ) {
+  let minor = String( line[ 2 ] ).padStart( 2, "0" );
+
+  return line[ 0 ] == 0 ? line[ 1 ] + "." + minor : line.join( "." );
+}
+
+function releaseType( release ) {
+  let label = release.name + " " + release.tag;
+
+  if ( release.prerelease || /experimental/i.test( label ) ) {
+    return "Experimental";
+  } else if ( /core rules/i.test( label ) ) {
+    return "Core Rules";
+  } else if ( /\bcore\b/i.test( label ) ) {
+    return "Core";
+  } else if ( /milestone/i.test( label ) ) {
+    return "Milestone";
+  } else if ( /stable/i.test( label ) ) {
+    return "Stable";
+  } else if ( /release candidate|\brc[\d.]*\b/i.test( label ) ) {
+    return "Release Candidate";
+  } else if ( /development|snapshot/i.test( label ) ) {
+    return "Development";
+  }
+
+  return "Release";
+}
+
+// Builds the release lines from every program's releases, newest first.
+function groupReleaseLines( data, milestoneReleases ) {
+  let lines = {};
+
+  STATS_REPOS.forEach( ( repo ) => {
+    ( data.repos[ repo ] || [] ).forEach( ( release ) => {
+      let parsed = parseReleaseTag( release.tag );
+
+      if ( !parsed ) {
+        return;
+      }
+
+      let lineKey = parsed.line.join( "." );
+      let line = lines[ lineKey ];
+
+      if ( !line ) {
+        line = { parts: parsed.line, totals: {}, builds: {}, latest: "" };
+        lines[ lineKey ] = line;
+      }
+
+      line.totals[ repo ] = ( line.totals[ repo ] || 0 ) + release.downloads;
+      line.latest = release.date > line.latest ? release.date : line.latest;
+
+      let build = line.builds[ release.tag ];
+
+      if ( !build ) {
+        build = {
+          tag: release.tag,
+          number: parsed.build,
+          date: release.date,
+          type: releaseType( release ),
+          milestone: milestoneReleases.indexOf( release.tag ) != -1,
+          downloads: {}
+        };
+        line.builds[ release.tag ] = build;
+      }
+
+      build.downloads[ repo ] = release.downloads;
+    } );
+  } );
+
+  let sorted = Object.values( lines );
+  sorted.sort( ( first, second ) => compareVersionParts( first.parts, second.parts ) );
+
+  sorted.forEach( ( line ) => {
+    line.builds = Object.values( line.builds );
+    line.builds.sort( ( first, second ) => second.number - first.number || ( second.date > first.date ? 1 : -1 ) );
+  } );
+
+  return sorted;
+}
+
+function makeBadge( text, className ) {
+  let badge = document.createElement( "span" );
+  badge.className = "badge " + className;
+  badge.textContent = text;
+  return badge;
+}
+
+function typeBadgeClass( type ) {
+  switch ( type ) {
+    case "Core":
+    case "Core Rules":
+      return "dl-stats-badge-core";
+    case "Experimental":
+      return "dl-stats-badge-experimental";
+    default:
+      return "text-bg-secondary";
   }
 }
 
-function addStatsToElement( element, releases ) {
-  while ( element.lastChild ) { element.removeChild( element.lastChild ) };
-
-  releases.forEach( ( release ) => {
-    let child = document.createElement( "li" );
-    let text = "<strong>" + release.tag_name + "</strong>";
-    let totalDownloads = 0;
-
-    release.assets.forEach( ( asset ) => {
-      totalDownloads += asset.download_count;
-    } )
-
-    text += ": <span class='float-right'>" + totalDownloads + "</span>";
-
-    child.className = "list-group-item";
-    child.innerHTML = text;
-    element.appendChild( child );
+function addNumberCells( row, downloads ) {
+  STATS_REPOS.forEach( ( repo ) => {
+    let cell = row.insertCell();
+    cell.className = "dl-stats-num";
+    cell.textContent = downloads[ repo ] != null ? downloads[ repo ].toLocaleString() : "-";
   } );
+}
+
+// Summary for a line: each non-Experimental build type once, plus a count of
+// Experimental builds, plus a Milestone badge if any build was one.
+function fillLineSummary( cell, line ) {
+  let types = [];
+  let experimentalCount = 0;
+
+  line.builds.forEach( ( build ) => {
+    if ( build.type == "Experimental" ) {
+      experimentalCount++;
+    } else if ( types.indexOf( build.type ) == -1 ) {
+      types.push( build.type );
+    }
+  } );
+
+  types.forEach( ( type ) => cell.appendChild( makeBadge( type, typeBadgeClass( type ) ) ) );
+
+  if ( experimentalCount > 0 ) {
+    let label = experimentalCount == 1 ? "1 Experimental build" : experimentalCount + " Experimental builds";
+    cell.appendChild( makeBadge( label, "dl-stats-badge-experimental" ) );
+  }
+
+  if ( line.builds.some( ( build ) => build.milestone ) ) {
+    cell.appendChild( makeBadge( "Milestone", "dl-stats-badge-milestone" ) );
+  }
+}
+
+function makeBuildTable( line ) {
+  let table = document.createElement( "table" );
+  table.className = "table table-sm dl-stats-builds";
+
+  let head = table.createTHead().insertRow();
+  [ "Build", "Type", "Released", "MegaMek", "MegaMekLab", "MekHQ" ].forEach( ( title, index ) => {
+    let header = document.createElement( "th" );
+    header.scope = "col";
+    header.textContent = title;
+    header.className = index > 2 ? "dl-stats-num" : "";
+    head.appendChild( header );
+  } );
+
+  let body = table.createTBody();
+
+  line.builds.forEach( ( build ) => {
+    let row = body.insertRow();
+
+    if ( build.milestone ) {
+      row.className = "dl-stats-milestone";
+    }
+
+    row.insertCell().textContent = build.tag;
+
+    let typeCell = row.insertCell();
+    typeCell.appendChild( makeBadge( build.type, typeBadgeClass( build.type ) ) );
+
+    if ( build.milestone && build.type != "Milestone" ) {
+      typeCell.appendChild( makeBadge( "Milestone", "dl-stats-badge-milestone" ) );
+    }
+
+    row.insertCell().textContent = build.date;
+    addNumberCells( row, build.downloads );
+  } );
+
+  return table;
+}
+
+function renderReleaseTable( table, data ) {
+  let body = table.tBodies[ 0 ];
+  let lines = groupReleaseLines( data, window.milestoneReleases || [] );
+  let olderRows = [];
+
+  body.innerHTML = "";
+
+  lines.forEach( ( line, index ) => {
+    let detailId = "release-line-" + line.parts.join( "-" );
+    let row = body.insertRow();
+    row.className = "dl-stats-line";
+
+    let releaseCell = row.insertCell();
+    let toggle = document.createElement( "button" );
+    toggle.type = "button";
+    toggle.className = "dl-stats-toggle";
+    toggle.setAttribute( "aria-expanded", "false" );
+    toggle.setAttribute( "aria-controls", detailId );
+    toggle.innerHTML = "<i class='fas fa-chevron-right' aria-hidden='true'></i> ";
+    toggle.appendChild( document.createTextNode( formatReleaseLine( line.parts ) ) );
+    releaseCell.appendChild( toggle );
+
+    fillLineSummary( row.insertCell(), line );
+    addNumberCells( row, line.totals );
+
+    let detailRow = body.insertRow();
+    detailRow.className = "dl-stats-detail";
+    detailRow.id = detailId;
+    detailRow.hidden = true;
+
+    let detailCell = detailRow.insertCell();
+    detailCell.colSpan = 5;
+    detailCell.appendChild( makeBuildTable( line ) );
+
+    toggle.addEventListener( "click", () => {
+      let isOpen = toggle.getAttribute( "aria-expanded" ) == "true";
+      toggle.setAttribute( "aria-expanded", isOpen ? "false" : "true" );
+      detailRow.hidden = isOpen;
+    } );
+
+    if ( index >= STATS_VISIBLE_LINES ) {
+      row.hidden = true;
+      olderRows.push( row );
+    }
+  } );
+
+  let more = document.getElementById( "download-stats-more" );
+
+  if ( more && olderRows.length > 0 ) {
+    let button = more.querySelector( "button" );
+    button.textContent = "Show " + olderRows.length + " older release lines";
+    more.hidden = false;
+
+    button.addEventListener( "click", () => {
+      olderRows.forEach( ( row ) => { row.hidden = false; } );
+      more.hidden = true;
+    } );
+  }
+
+  let updated = document.getElementById( "download-stats-updated" );
+
+  if ( updated && data.updated ) {
+    updated.textContent = "Updated " + data.updated + ".";
+  }
 }
 
 // Most recent days of daily deltas to plot, so the x-axis does not grow without bound.

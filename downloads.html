@@ -248,36 +248,37 @@ title: Downloads
   <div class="col-12">
     <h4>Download Stats</h4>
     <p>
-      Download stats are taken from the GitHub Releases API and only reflect the
-      cumulative downloads for each release from the repos for all platforms.
+      Total downloads for each release line, from GitHub and updated once a day.
+      A line adds up its Core release, patches and Experimental builds. Select a
+      line to see each build.
     </p>
   </div>
-  <div class="col">
-    <div class="card dl-card">
-      <div class='card-header'>
-        MegaMek
-      </div>
-      <ul class="list-group list-group-flush" id="megamek-download-stats">
-      </ul>
+  <div class="col-12">
+    <script>
+      window.milestoneReleases = {{ site.data.milestone_releases | jsonify }};
+    </script>
+    <div class="table-responsive">
+      <table class="table dl-stats-table" id="download-stats-table">
+        <thead>
+          <tr>
+            <th scope="col">Release</th>
+            <th scope="col">Includes</th>
+            <th scope="col" class="dl-stats-num">MegaMek</th>
+            <th scope="col" class="dl-stats-num">MegaMekLab</th>
+            <th scope="col" class="dl-stats-num">MekHQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5">Loading download stats...</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-  <div class="col">
-    <div class="card dl-card">
-      <div class='card-header'>
-        MegaMekLab
-      </div>
-      <ul class="list-group list-group-flush" id="megameklab-download-stats">
-      </ul>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card dl-card">
-      <div class='card-header'>
-        MekHQ
-      </div>
-      <ul class="list-group list-group-flush" id="mekhq-download-stats">
-      </ul>
-    </div>
+    <p class="text-center" id="download-stats-more" hidden>
+      <button type="button" class="btn dl-stats-more-btn"></button>
+    </p>
+    <p class="dl-stats-updated" id="download-stats-updated"></p>
   </div>
 </div>
 
