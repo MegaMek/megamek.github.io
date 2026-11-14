@@ -333,7 +333,7 @@ Here's the same map and the same two lances, played three ways. When Princess pl
 
 ## CASPAR in the Air
 
-Aerospace is where CASPAR differs most from Princess so far. All of it applies to fighters flying over a ground map, the normal battlefield maps most games use. In space, and on the high-altitude maps, CASPAR still flies the way Princess does. Like the rest of CASPAR, this is a first pass, and we expect to keep changing it.
+Aerospace is where CASPAR differs most from Princess so far. All of it is for flying in atmosphere: over a ground map, the normal battlefield maps most games use, and on the low-altitude maps. In space, CASPAR still flies the way Princess does. Like the rest of CASPAR, this is a first pass, and we expect to keep changing it.
 
 Here's how the two bots handle the same fighters over a ground map:
 
@@ -348,7 +348,7 @@ Here's how the two bots handle the same fighters over a ground map:
 | **Grounded fighters** | Leave them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
 {: .bot-compare}
 
-In early test duels on a ground map, with the same fighters on both sides, CASPAR destroyed about two and a half times as much as it lost against Princess. That's a promising start, not a finished feature.
+In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of its force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
 
 ## The Bot Control Panel
 
@@ -367,7 +367,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
 - **Put it where you want it.** View > Bot Commands now has Off, Float and Dock. Float is the old separate window. Dock puts the panel as a thin strip across the top of the board, so it's always in reach. Ctrl+Shift+G shows and hides it, and MegaMek remembers your choice.
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
 - **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries.
-- **Radio chatter.** Fire missions come back in the report the way a fire direction center would call them: "Shot, out", "Rounds inbound", "Splash, over".
+- **Radio chatter.** The bot answers a fire mission over the radio, in chat and in on-screen messages, the way a fire direction center would call it: "Shot, out", "Rounds inbound", "Splash, over".
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.707;">
@@ -390,7 +390,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   </div>
 </div>
 
-In 0.51.01 the panel also gets **Move Order**, for CASPAR bots, and **Targets**, for both. That's where the next section starts.
+In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. That's where the next section starts.
 
 ## Taking Orders
 
@@ -399,20 +399,20 @@ In 0.51.01 the panel also gets **Move Order**, for CASPAR bots, and **Targets**,
   <p>"Waypoints," CASPAR read. "Formation, facing, which edge to leave by." A pause. "Hold position until told otherwise."</p>
   <p>Princess leaned over to read it. "They didn't send me any of that."</p>
   <p>"You have your own waypoints. They still work."</p>
-  <p>"I've had those for years." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
+  <p>"I've had those since last year." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
 </div>
 
-This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. Princess keeps the waypoints she's always had, set with chat commands, so the bot you know still plays the way she always has.
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. During a game you can order a CASPAR bot on your own side, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, set with chat commands, so the bot you know still plays the way she always has.
 
 These orders are for CASPAR bots:
 
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold.
-- **Quick orders.** Right-click the map for move here, pause, resume, stop, hold position, or head for an edge.
+- **Quick orders.** Use the **Quick Orders** button, or right-click the map, for move here, pause, resume, stop, hold position, or head for an edge.
 - **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
 
 These two work for both bots:
 
-- **Priority targets.** In Bot Settings, tick enemy units by name and give each a priority from 1 to 5.
+- **Priority targets.** On the Strategic Targets tab of Configure Bot, or from the **Targets** button during a game, tick enemy units by name and give each a priority from 1 (shoot first) to 5.
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
 <div class="corerules-figure-row">
@@ -484,7 +484,7 @@ These two work for both bots:
   </div>
 </div>
 
-This finally makes convoy, escort and breakthrough scenarios playable against CASPAR without a gamemaster nudging every unit.
+This finally makes convoy, escort and breakthrough scenarios playable against CASPAR. Give the lance its role in the lobby, or its route as the gamemaster, and it carries on without anyone nudging every unit.
 
 ## Calling in the Guns
 
@@ -521,18 +521,18 @@ All of this works for both Princess and CASPAR.
 
 <div class="corerules-callout corerules-fiction">
   <p>CASPAR picked up the Ares Conventions and turned a page. Several of the red crosses had been neatly crossed out.</p>
-  <p>"'Do not fire on ejected pilots,'" CASPAR read. "You un-crossed this one."</p>
+  <p>"'Do not hunt ejected pilots,'" CASPAR read. "You un-crossed this one."</p>
   <p>"Someone filed a complaint," Princess said. "Several someones."</p>
 </div>
 
 Princess's honor system got a lot of attention this release.
 
 - She no longer chases ejected pilots.
-- She treats an enemy 'Mek that was deliberately shut down as having surrendered.
+- With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
 - Her crippled units no longer fire on players who never broke the rules of engagement.
 - Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice too, so you know why she's stopped being polite.
 - Crippled units heading off the board now follow their waypoints, instead of fleeing the wrong way.
-- She stopped revealing your hidden units by announcing in chat that she'd spotted them.
+- Her hidden units no longer give themselves away by announcing in chat that they're spotting for indirect fire.
 
 <div class="shot-placeholder"><strong>Screenshot needed:</strong> A withdrawing bot unit with its tag on the map, and the warning you get the first time you shoot at it.</div>
 
@@ -553,7 +553,7 @@ A lot of small fixes add up to a bot that wastes less and misjudges less:
 - **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
 
-We also fixed a handful of freezes: bots stuck on their first move on very low-gravity worlds, grounded WiGEs that never took off again, reinforcements carrying troops, and a refused move that could hang the game.
+We also fixed a handful of freezes and stuck units: bots stuck on their first move on very low-gravity worlds, grounded WiGEs that never took off again, reinforcements carrying troops, and a refused move that could hang the game.
 
 ## Wrapping Up
 
