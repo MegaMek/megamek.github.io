@@ -290,6 +290,8 @@ Right now CASPAR does a few things differently on the ground:
 
 - **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
 - **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
+- **Facing the enemy.** CASPAR's units deploy facing the enemy's deployment zone, not whichever way they happened to be pointing.
+- **Hunting convoys.** CASPAR treats enemy convoy units as priority targets. It shoots at them first, and moves after them when they try to get away.
 - **Following your orders.** Routes, formations, convoys and escorts are CASPAR's. More on that in Taking Orders, below.
 
 CASPAR also flies differently. That gets its own section below.
@@ -350,6 +352,8 @@ Here's how the two bots handle the same fighters over a ground map:
 
 In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of its force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
 
+CASPAR's fighters also attack the ground in their own way. CASPAR plans the whole attack run along the line the fighter will fly. With guns, it picks one victim and likes to come in from behind. With bombs, it aims for the hex between units standing close together, so one drop catches both, and it spends bombs where they buy the most: four bombs that kill a Locust beat ten that only dent an Atlas. It can strafe too, which Princess never does: a straight run of up to five hexes with its energy weapons, announced in an on-screen message.
+
 ## The Bot Control Panel
 
 Most of what follows starts in one place: the Bot Control Panel. Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed.
@@ -402,7 +406,7 @@ In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR b
   <p>"I've had those since last year." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
 </div>
 
-This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. During a game you can order a CASPAR bot on your own side, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, set with chat commands, so the bot you know still plays the way she always has.
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, set with chat commands, so the bot you know still plays the way she always has.
 
 These orders are for CASPAR bots:
 
@@ -484,7 +488,7 @@ These two work for both bots:
   </div>
 </div>
 
-This finally makes convoy, escort and breakthrough scenarios playable against CASPAR. Give the lance its role in the lobby, or its route as the gamemaster, and it carries on without anyone nudging every unit.
+This finally makes convoy, escort and breakthrough scenarios playable against CASPAR. As the gamemaster, give the enemy lance its role in the lobby and its route on the map, and it carries on without anyone nudging every unit.
 
 ## Calling in the Guns
 
@@ -548,12 +552,12 @@ A lot of small fixes add up to a bot that wastes less and misjudges less:
 
 - **Hopeless shots.** Princess stopped firing shots that need a 13 or 14 when a shared ammo bin runs dry.
 - **Kill chances.** The bots saw no chance to kill vehicles at all, and undercounted their chances against 'Meks.
-- **Heat.** They now account for engine hit heat when planning fire, manage their own heat-generating equipment, and no longer abandon a 'Mek that's only overheated for a turn.
+- **Heat.** They now account for engine hit heat when planning fire, manage their own heat-generating equipment, and no longer abandon a 'Mek that's only overheated for a turn. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
 - **Tactical Genius.** They stopped spending it on an initiative they'd already won.
 - **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
 
-We also fixed a handful of freezes and stuck units: bots stuck on their first move on very low-gravity worlds, grounded WiGEs that never took off again, reinforcements carrying troops, and a refused move that could hang the game.
+We also fixed a handful of freezes and stuck units: bots stuck on their first move on very low-gravity worlds, grounded WiGEs that never took off again, reinforcements carrying troops, a refused move that could hang the game, and a bot that could sit on its movement turn forever.
 
 ## Wrapping Up
 
