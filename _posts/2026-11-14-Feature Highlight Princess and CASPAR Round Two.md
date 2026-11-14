@@ -512,7 +512,7 @@ Princess now leads her targets. She works out where each enemy is heading and ho
 
 In 0.51.01 both bots read artillery better, theirs and yours:
 
-- **Range.** The bots know which hexes an artillery piece can hit this turn. For an Arrow IV that's 7 to 17 hexes out. They respect your guns at the right distance, and their own guns can back away from the enemy while staying in range.
+- **Reach.** The bots know what an artillery piece can hit this turn and what it can't, including the ground too close in for it to shell. They respect your guns where your guns can actually reach them, and their own guns can back away from the enemy and keep firing.
 - **To-hit.** The bots estimate an artillery shot the way the game resolves it. A Gunnery 4 Thumper shot comes out at 8, the same number the game will ask for.
 - **Smoke.** Smoke doesn't hide a gun from the bots. Artillery firing from behind it is still a threat, and they treat it as one.
 - **Blast and scatter.** The bots weigh friendly fire and building damage from the shell's real blast. Before they fire, they also check where a miss could scatter and which of their own units are near there. You'll see bot artillery take more shots, and place them with more care.
