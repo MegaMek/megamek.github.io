@@ -286,12 +286,15 @@ That's why most of what's in this post works for both bots.
 
 In the coming release you'll see an option to play against CASPAR instead of Princess. It's experimental, and everything in this section is still in development. What you see now is a first pass, and each piece will keep changing as we refine and tweak it from your games and your feedback.
 
+You can switch a bot between the two in the lobby. The lobby chat tells you which one you've got, and a saved game remembers which bot was which.
+
 Right now CASPAR does a few things differently on the ground:
 
 - **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
 - **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
 - **Facing the enemy.** CASPAR's units deploy facing the enemy's deployment zone, not whichever way they happened to be pointing.
 - **Hunting convoys.** CASPAR treats enemy convoy units as priority targets. It shoots at them first, and moves after them when they try to get away.
+- **Holding a river line.** Tell CASPAR it's defending and deep water becomes its line. It stays on its own bank and fights the enemy while they're in the crossing. Tell it to attack and it pays for the crossing and takes the far bank.
 - **Following your orders.** Routes, formations, convoys and escorts are CASPAR's. More on that in Taking Orders, below.
 
 CASPAR also flies differently. That gets its own section below.
@@ -364,6 +367,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
 - **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries.
 - **Radio chatter.** The bot answers a fire mission over the radio, in chat and in on-screen messages, the way a fire direction center would call it: "Shot, out", "Rounds inbound", "Splash, over".
+- **Attack or defend.** Under **Behavior**, set a bot's combat posture to Attack, Defend or Auto. A defender holds good ground and lets the enemy come to it. On Auto the bot decides each round, and says in chat when it changes its mind and why. You can set it in Configure Bot too.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.707;">
@@ -386,7 +390,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   </div>
 </div>
 
-In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. That's where the next section starts.
+In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. And when a button has nothing to offer, like **Move Order** when the bot only has fighters, the panel now says why. The orders are where the next section starts.
 
 ## Taking Orders
 
@@ -402,7 +406,7 @@ This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orde
 
 These orders are for CASPAR bots:
 
-- **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold.
+- **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold. Select several waypoints to change them all at once.
 - **Quick orders.** Use the **Quick Orders** button, or right-click the map, for move here, pause, resume, stop, hold position, or head for an edge.
 - **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
 
@@ -535,6 +539,7 @@ All of this works for both Princess and CASPAR.
 Princess's honor system got a lot of attention this release.
 
 - She lets ejected pilots go, and doesn't chase them down.
+- She leaves abandoned units alone. Nobody's home, so she saves her shots, and the salvage.
 - With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
 - Her crippled units hold their fire while they withdraw. They shoot back only at an enemy who attacks them once they're visibly crippled.
 - Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice too, so you know why she's stopped being polite.
@@ -542,6 +547,25 @@ Princess's honor system got a lot of attention this release.
 - Her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
 
 <div class="shot-placeholder"><strong>Screenshot needed:</strong> A withdrawing bot unit with its tag on the map, and the warning you get the first time you shoot at it.</div>
+
+## Reading the Ground
+
+<div class="corerules-callout corerules-fiction">
+  <p>The display changed to a shallow river, with an Axman on the near bank and a Griffin on the far one.</p>
+  <p>"I used to think rivers were where the map ended," Princess said.</p>
+  <p>The Axman waded in, climbed out the far side, and squared up on the Griffin.</p>
+  <p>CASPAR watched the hatchet come down. "You've been practicing."</p>
+</div>
+
+Both bots got a lot better at deciding where to stand, and how to get there.
+
+- **Holding good ground.** A unit in a good firing position stays there and shoots, where it used to shuffle a hex or two every turn. The bots value cover too, so a treeline beats open ground. In our test games a defending Princess fired from the same hex more than twice as often, and fought from the edge of the woods nearly three times as often.
+- **Crossing water.** They wade a shallow river to get at you. They also know what a crossing costs, so they take a ford or a land route when there is one. They know which of their guns are underwater, and that standing in water with damaged armor risks a breach.
+- **Closing to melee.** A unit that hits harder up close, like an Axman with its hatchet, closes the distance and squares up on its target when it gets there.
+- **Height in a brawl.** The bots read elevation in physical attacks. A kick from one level up lands on the punch table, where the head is, and they pick their hexes with that in mind.
+- **Weather, night and gravity.** When they choose where to move, they count the weather, wind, fog, darkness and an evading target, so they don't walk into the open on a stormy night expecting easy hits. On a low-gravity world they weigh the leg damage that comes from moving too fast.
+- **Sprinting.** With TacOps sprinting on, they know a sprinting unit can't attack, and they avoid ending a sprint inside the enemy's weapon range.
+- **Thinking faster.** Bot turns take less time, most of all in games with C3, C3i or Nova CEWS networks.
 
 ## Smarter Decisions
 
@@ -558,9 +582,17 @@ A lot of small improvements add up to a bot that wastes less and judges better:
 - **Heat.** They account for engine hit heat when planning fire and manage their own heat-generating equipment. They also know a 'Mek that's only overheated for a turn will move again, so its crew stays aboard. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
 - **Tactical Genius.** They save the reroll for an initiative they've lost.
 - **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
+- **Minefields.** The bots lay tripwires and pitfalls as well as the usual mines. They pick spots that suit the units they're facing, spread their mines out, and set a vibrabomb's trigger weight to match the enemy's 'Meks. They also steer around the EMP mines, pitfalls and tripwires they know about.
+- **Hidden units.** After an enemy moves, a bot looks at its hidden units and decides whether revealing one to open fire is worth it. How readily it does depends on its Aggression setting.
+- **Recon cameras.** Bot units carrying a recon camera use it to spot.
+- **Trailers.** Give a bot tractors and trailers and it hitches them up itself.
+- **Gun emplacements.** The bots site a gun emplacement for its field of fire, spaced out from the others and out of the water. You'll notice it most on town maps.
+- **Mechanical jump boosters.** Princess can plan jumps with mechanical jump boosters.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
 
 We also keep finding and fixing the rare cases where a bot stalls or a unit gets stuck, so your games keep moving.
+
+If you play from MekHQ, the bots in a scenario now start with the default bot settings you chose in Client Settings, and a bot force's combat posture is saved with your campaign.
 
 ## Wrapping Up
 
