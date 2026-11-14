@@ -296,7 +296,7 @@ CASPAR also flies differently. That gets its own section below.
 
 That list will grow. Over the next few years you'll see more and more of the bot move into CASPAR.
 
-Here's the same map and the same two lances, played three ways:
+Here's the same map and the same two lances, played three ways. When Princess plays, she always enters from the north, at the top of the map.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.806;">
@@ -323,11 +323,11 @@ Here's the same map and the same two lances, played three ways:
     <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}">
       <img
         src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}"
-        alt="Animated map replay of CASPAR against Princess on the same map"
+        alt="Animated map replay of CASPAR against Princess on the same map. Princess enters from the north, at the top, and CASPAR from the south, at the bottom"
         loading="lazy"
       />
     </a>
-    <p class="corerules-caption">CASPAR against Princess.</p>
+    <p class="corerules-caption">CASPAR against Princess. Princess comes in from the north, CASPAR from the south.</p>
   </div>
 </div>
 
