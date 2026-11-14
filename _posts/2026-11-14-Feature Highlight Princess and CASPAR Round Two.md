@@ -410,9 +410,9 @@ These two work for both bots:
 - **Priority targets.** On the Strategic Targets tab of Configure Bot, or from the **Targets** button during a game, tick enemy units by name and give each a priority from 1 (shoot first) to 5.
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
-And these are Princess's waypoints. She takes them as chat messages: type the bot's name, then the command, then the unit's ID and the hexes, with a colon after the name and after the command.
+And these are Princess's waypoints. She takes them as chat messages: type the bot's name, then the command, then the unit's ID and the hexes. Put a colon after the name and after the command, and a dash between hexes.
 
-`Princess: sw : 12 0810 0815`
+`Princess: sw : 12 0810-0815`
 
 That tells the bot named Princess to send unit 12 to hex 0810, and then on to hex 0815. There are five commands:
 
