@@ -159,6 +159,36 @@ h2, h3, h4,
 .corerules-figure a {
   cursor: zoom-in;
 }
+/* Princess and CASPAR side-by-side comparison table. */
+.bot-compare {
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  clear: both;
+}
+.bot-compare th,
+.bot-compare td {
+  padding: .6rem .8rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--accent-color);
+}
+.bot-compare thead th {
+  background-color: var(--card-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+.bot-compare td:first-child {
+  white-space: nowrap;
+}
+.bot-compare tbody tr:nth-child(even) {
+  background-color: var(--card-color);
+}
+@media (max-width: 767px) {
+  .bot-compare td:first-child {
+    white-space: normal;
+  }
+}
+
 /* DRAFT ONLY: placeholders for screenshots and videos still to be taken. Remove before merging. */
 .shot-placeholder {
   max-width: 900px;
@@ -254,13 +284,14 @@ That's why most of what's in this post works for both bots.
   <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
 </div>
 
-In the coming release you'll see an option to play against CASPAR instead of Princess. It's experimental, and right now there are only a few things CASPAR does differently:
+In the coming release you'll see an option to play against CASPAR instead of Princess. It's experimental, and everything in this section is still in development. What you see now is a first pass, and each piece will keep changing as we refine and tweak it from your games and your feedback.
 
-- **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone.
-- **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone.
-- **Aerospace in atmosphere.** CASPAR picks its altitude instead of flying at whatever it started at, respects the air-to-air dead zones when it moves and shoots, and can tell enemy fighters that have already moved from ones that haven't.
-- **Flying as an element.** Lead aircraft move before their wingmen, and fighters whose engagement is already settled move before ones still waiting on an opponent.
-- **Getting back in the air.** A grounded fighter now tries to take off again, instead of staying put for the rest of the game.
+Right now CASPAR does a few things differently on the ground:
+
+- **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
+- **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
+
+CASPAR also flies differently. That gets its own section below.
 
 That list will grow. Over the next few years you'll see more and more of the bot move into CASPAR.
 
@@ -298,6 +329,25 @@ Here's the same map and the same two lances, played three ways:
     <p class="corerules-caption">CASPAR against Princess.</p>
   </div>
 </div>
+
+## CASPAR in the Air
+
+Aerospace is where CASPAR differs most from Princess so far. All of it applies to fighters flying over a ground map, the normal battlefield maps most games use. In space, and on the high-altitude maps, CASPAR still flies the way Princess does. Like the rest of CASPAR, this is a first pass, and we expect to keep changing it.
+
+Here's how the two bots handle the same fighters over a ground map:
+
+| | Princess | CASPAR |
+|---|---|---|
+| **Altitude** | Flies at one set altitude. | Chooses its altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
+| **Dead zones** | Can pick a path that ends where the air-to-air dead zone stops it from shooting. | Knows the dead zone: fighters one altitude apart can't fire at each other inside 17 hexes, two apart inside 33. It plans its moves and its shots around that. |
+| **Reading the enemy** | Plans against enemy fighters as though they have all already moved. | Reacts to fighters that have moved, and hedges against the ones that still could. |
+| **Speed** | Can build up speed that carries it past the fight. | Flies slower when enemy fighters share the map, so it can turn back into the fight. |
+| **Firing arcs** | Can count a weapon toward a path even when that weapon can't point at the target. | Checks each weapon's firing arc, so a rear-firing gun counts and a nose-only fighter doesn't plan a shot behind it. |
+| **Who moves first** | Moves fighters in its usual order. | Moves the element leader before the wingmen, and moves fighters whose fight is already settled before ones still waiting on an opponent. |
+| **Grounded fighters** | Leave them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
+{: .bot-compare}
+
+In early test duels on a ground map, with the same fighters on both sides, CASPAR destroyed about two and a half times as much as it lost against Princess. That's a promising start, not a finished feature.
 
 ## The Bot Control Panel
 
