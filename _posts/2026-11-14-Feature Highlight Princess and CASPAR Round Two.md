@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Feature Highlight: Princess and CASPAR, Round Two"
-date: 2026-11-13
+date: 2026-11-14
 ---
 
 <style>
@@ -245,9 +245,9 @@ That's why most of what's in this post works for both bots.
 </div>
 
 <div class="corerules-figure corerules-float-right figure-crop" style="--side-width: 420px; --crop-ratio: 814 / 640; --crop-pos: 50% 0;">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}">
+  <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}">
     <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
       alt="The Configure Bot dialog. Next to the bot's name, a Bot AI choice between Princess and CASPAR. Below it the Behavior tab with the presets list and the Bravery, Self Preservation, Aggression and Mutual Support sliders, and a Strategic Targets tab"
     />
   </a>
@@ -268,9 +268,9 @@ Here's the same map and the same two lances, played three ways:
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_princess_vs_princess.gif' | relative_url }}"
         alt="Animated map replay of Princess against Princess. Each side's light units run out ahead of their heavies"
         loading="lazy"
       />
@@ -278,9 +278,9 @@ Here's the same map and the same two lances, played three ways:
     <p class="corerules-caption">Princess against Princess. The lights run ahead of the heavies.</p>
   </div>
   <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_caspar.gif' | relative_url }}"
         alt="Animated map replay of CASPAR against CASPAR. Both lances advance as tight groups and meet in the middle of the map"
         loading="lazy"
       />
@@ -288,9 +288,9 @@ Here's the same map and the same two lances, played three ways:
     <p class="corerules-caption">CASPAR against CASPAR. Both lances advance together.</p>
   </div>
   <div class="corerules-figure" style="--ratio: 0.806;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/lance_caspar_vs_princess.gif' | relative_url }}"
         alt="Animated map replay of CASPAR against Princess on the same map"
         loading="lazy"
       />
@@ -304,9 +304,9 @@ Here's the same map and the same two lances, played three ways:
 Most of what follows starts in one place: the Bot Control Panel. Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed.
 
 <div class="corerules-figure">
-  <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}">
+  <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}">
     <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}"
       alt="The game window in the Movement phase, with the Bot Control Panel docked as a strip across the top of the board, outlined in red. Its buttons are Pause Game, Move Order, Quick Orders, Targets, Behavior, Set Behavior, Artillery, Commands and Report a Bug"
     />
   </a>
@@ -320,18 +320,18 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.707;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
         alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
       />
     </a>
     <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
   </div>
   <div class="corerules-figure" style="--ratio: 2.731;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
         alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
       />
     </a>
@@ -360,18 +360,18 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
 
 <div class="corerules-figure-row">
   <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
         alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
       />
     </a>
     <p class="corerules-caption">A convoy lance's route on the map. The dots show the path, and the flag marks a waypoint.</p>
   </div>
   <div class="corerules-figure" style="--ratio: 2.347;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
         alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
       />
     </a>
@@ -381,18 +381,18 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 1.339;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
         alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
       />
     </a>
     <p class="corerules-caption">Right-click a waypoint to change its facing, hold or phase line, remove it, or reopen the route.</p>
   </div>
   <div class="corerules-figure" style="--ratio: 0.866;">
-    <a href="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}">
+    <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}">
       <img
-        src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}"
+        src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}"
         alt="The Strategic Targets tab of Configure Bot: a search box, the enemy Defenders team listed by unit with a tick box each (Shadow Hawk, Gambit, Havoc, Stinger), a note that priority 1 means shoot first and 5 means barely, and a Hex targets list"
       />
     </a>
@@ -403,7 +403,7 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
 <div class="corerules-figure-row">
   <div class="corerules-figure">
     <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_forms_up.gif' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_forms_up.gif' | relative_url }}"
       alt="Animated map: the convoy and its escorts gather at the south edge of the board"
       loading="lazy"
     />
@@ -411,7 +411,7 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
   </div>
   <div class="corerules-figure">
     <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_escorts_intercept.gif' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_escorts_intercept.gif' | relative_url }}"
       alt="Animated map: the escort units move out to intercept enemies while the convoy moves north"
       loading="lazy"
     />
@@ -419,7 +419,7 @@ This is the big one for 0.51.01. You can now give orders to a bot's units, and b
   </div>
   <div class="corerules-figure">
     <img
-      src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/convoy_exit_north_edge.gif' | relative_url }}"
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/convoy_exit_north_edge.gif' | relative_url }}"
       alt="Animated map: the convoy follows its route up the board and leaves by the north edge"
       loading="lazy"
     />
@@ -454,7 +454,7 @@ All of this works for both Princess and CASPAR.
 
 <div class="corerules-figure">
   <video controls muted playsinline preload="metadata"
-    src="{{ '/assets/images/posts/2026/2026-11-13-princess-and-caspar-round-two/radio_calls.mp4' | relative_url }}"
+    src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/radio_calls.mp4' | relative_url }}"
     aria-label="Calling a barrage of standard ammo from the Artillery menu, then Princess answering in the message box: copies all, fire for effect, suppression, HE, grid 1718, out">
   </video>
   <p class="corerules-caption">Call a barrage from the Artillery menu, and Princess answers over the radio.</p>
