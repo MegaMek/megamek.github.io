@@ -419,6 +419,20 @@ These two work for both bots:
 - **Priority targets.** On the Strategic Targets tab of Configure Bot, or from the **Targets** button during a game, tick enemy units by name and give each a priority from 1 (shoot first) to 5.
 - **Game Master orders.** A gamemaster can tell a bot unit to withdraw now or fight to the death.
 
+And these are Princess's waypoints. She takes them as chat messages: type the bot's name, then the command, then the unit's ID and the hexes, with a colon after the name and after the command.
+
+`Princess: sw : 12 0810 0815`
+
+That tells the bot named Princess to send unit 12 to hex 0810, and then on to hex 0815. There are five commands:
+
+- `sw`, set waypoints. Give the unit a new route. It visits the hexes in the order you typed them, and any route it already had is replaced.
+- `aw`, add waypoint. Add hexes to the end of the unit's route: `Princess: aw : 12 0820`
+- `rw`, remove waypoint. Take the last hex off the unit's route. It works as an undo: `Princess: rw : 12`
+- `cw`, clear waypoints. Wipe that one unit's route: `Princess: cw : 12`
+- `nw`, clear all waypoints. Wipe the routes of every unit the bot owns. It needs no unit ID: `Princess: nw`
+
+Use the bot's own name if you called it something else. To see unit IDs, turn on "Show each unit's ID next to its name" in Client Settings. Princess only takes these from her own team or from a gamemaster.
+
 <div class="corerules-figure-row">
   <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
     <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
