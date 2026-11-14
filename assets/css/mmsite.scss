@@ -278,6 +278,18 @@ ul {
     color: var(--text-color);
     background-color: var(--background-color);
   }
+
+  /* Download Stats rows for releases that were Milestones */
+  li.list-group-item.dl-milestone {
+    background-color: var(--card-color);
+    box-shadow: inset 4px 0 0 var(--accent-color-alternate);
+  }
+}
+
+.dl-badge-milestone {
+  background-color: var(--accent-color-alternate);
+  color: var(--background-color);
+  margin-left: 0.25rem;
 }
 
 /*********************************************************************/
@@ -395,6 +407,158 @@ div.post-meta {
   .card-text {
     font-size: 0.9rem;
   }
+}
+
+/*********************************************************************/
+/* Downloads page tiles                                               */
+/*********************************************************************/
+.dl-hero {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 250, 205, 0.3);
+  overflow: hidden;
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+}
+
+.dl-meta {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
+.dl-badge-recommended {
+  background-color: var(--accent-color-alternate);
+  color: var(--background-color);
+  margin-right: 0.4rem;
+}
+
+.dl-badge-suite {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.dl-tile {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: 1px solid rgba(128, 128, 128, 0.35);
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+
+  .dl-tile-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    color: var(--accent-color);
+  }
+
+  .dl-tile-note {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  /* Top-aligned so the first (recommended) button lines up across tiles
+     that hold different numbers of buttons */
+  .dl-tile-actions {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.dl-archive,
+.dl-extra {
+  .card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Hexagon program emblems, copied from the launcher's own icons
+   (icons/launcher/) so all three share one size, frame and transparency */
+.dl-emblem-wrap {
+  text-align: center;
+  padding: 1rem 1rem 0;
+}
+
+.dl-emblem {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.dl-emblem-lg {
+  width: 170px;
+}
+
+/* :link and :visited are matched here so these colors win over the site-wide
+   a:link rule */
+.dl-btn {
+  display: block;
+  text-align: center;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  border: 2px solid var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+
+  &,
+  &:link,
+  &:visited {
+    color: var(--accent-color);
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--accent-color-alternate);
+    color: var(--accent-color-alternate);
+  }
+}
+
+.dl-btn-primary {
+  background-image: linear-gradient(#000000, #434343, #000000);
+
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus-visible {
+    color: #dadfe1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    text-shadow: 1px 0 20px var(--accent-color-alternate);
+  }
+}
+
+.dl-callout {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border-left: 4px solid var(--accent-color-alternate);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
 }
 
 /*********************************************************************/
