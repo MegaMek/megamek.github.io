@@ -333,12 +333,12 @@ Here's how the two bots handle the same fighters over a ground map:
 | | Princess | CASPAR |
 |---|---|---|
 | **Altitude** | Flies at one set altitude. | Chooses its altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
-| **Dead zones** | Can pick a path that ends where the air-to-air dead zone stops it from shooting. | Knows the dead zone: fighters one altitude apart can't fire at each other inside 17 hexes, two apart inside 33. It plans its moves and its shots around that. |
-| **Reading the enemy** | Plans against enemy fighters as though they have all already moved. | Reacts to fighters that have moved, and hedges against the ones that still could. |
-| **Speed** | Can build up speed that carries it past the fight. | Flies slower when enemy fighters share the map, so it can turn back into the fight. |
-| **Firing arcs** | Can count a weapon toward a path even when that weapon can't point at the target. | Checks each weapon's firing arc, so a rear-firing gun counts and a nose-only fighter doesn't plan a shot behind it. |
+| **Dead zones** | Plans its path without the air-to-air dead zone in mind. | Knows the dead zone: fighters one altitude apart can't fire at each other inside 17 hexes, two apart inside 33. It plans its moves and its shots around that. |
+| **Reading the enemy** | Plans around where enemy fighters are right now. | Reacts to fighters that have moved, and hedges against the ones that still could. |
+| **Speed** | Flies at whatever speed its chosen path calls for. | Flies slower when enemy fighters share the map, so it can turn back into the fight. |
+| **Firing arcs** | Rates a path by the weapons in range. | Checks each weapon's firing arc, so a rear-firing gun counts and a nose-only fighter doesn't plan a shot behind it. |
 | **Who moves first** | Moves fighters in its usual order. | Moves the element leader before the wingmen, and moves fighters whose fight is already settled before ones still waiting on an opponent. |
-| **Grounded fighters** | Leave them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
+| **Grounded fighters** | Leaves them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
 {: .bot-compare}
 
 In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of its force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
@@ -503,15 +503,15 @@ This finally makes convoy, escort and breakthrough scenarios playable against CA
 
 In June we said Princess had "new glasses" for artillery. Here's what that actually meant, and what 0.51.01 adds on top.
 
-Princess now leads her targets. She works out where each enemy is heading and how long her shells take to arrive, then fires at where they'll be, aiming for the thickest cluster rather than a single unit. She fires Homing Arrow IV when a friendly TAG unit can paint the target, and her TAG spotters hold a standoff position with line of sight instead of charging to point-blank. Her artillery holds back at its minimum indirect range instead of creeping forward into a fight it can't take part in, and her other units stop walking into the barrage she just called down.
+Princess now leads her targets. She works out where each enemy is heading and how long her shells take to arrive, then fires at where they'll be, aiming for the thickest cluster rather than a single unit. She fires Homing Arrow IV when a friendly TAG unit can paint the target, and her TAG spotters hold a standoff position with line of sight instead of charging to point-blank. Her artillery holds back at its minimum indirect range, where it can keep firing, and her other units steer clear of the barrage she just called down.
 
-0.51.01 fixes how both bots read artillery, theirs and yours:
+In 0.51.01 both bots read artillery better, theirs and yours:
 
-- **Range.** The bots were reading artillery range in mapsheets as if it were hexes. An Arrow IV looked harmless past 8 hexes and dangerous at 1 to 6, when the hexes it can actually hit this turn are 7 to 17. Bot guns can now back away from the enemy while staying in range.
-- **To-hit.** The bots now estimate an artillery shot the way the game resolves it. A Gunnery 4 Thumper shot they used to guess at 11 now correctly comes out at 8.
-- **Smoke.** A gun hidden behind smoke used to count as harmless. It's still a threat now.
-- **Blast and scatter.** Friendly fire and building damage now come from the shell's real blast, not a flat guess so high that no artillery shot ever looked worth taking. When the bots do fire, they also check where a miss could scatter and which of their own units are near there. You'll see bot artillery take shots it used to skip.
-- **TAG.** When a bot weighed an enemy TAG spotter, it counted its own guided weapons instead of the enemy's. A Raven painting for two Catapults with homing Arrow IV counted as no threat at all. It does now. And in games without artillery, old TAG estimates never cleared, so they piled up turn after turn.
+- **Range.** The bots know which hexes an artillery piece can hit this turn. For an Arrow IV that's 7 to 17 hexes out. They respect your guns at the right distance, and their own guns can back away from the enemy while staying in range.
+- **To-hit.** The bots estimate an artillery shot the way the game resolves it. A Gunnery 4 Thumper shot comes out at 8, the same number the game will ask for.
+- **Smoke.** Smoke doesn't hide a gun from the bots. Artillery firing from behind it is still a threat, and they treat it as one.
+- **Blast and scatter.** The bots weigh friendly fire and building damage from the shell's real blast. Before they fire, they also check where a miss could scatter and which of their own units are near there. You'll see bot artillery take more shots, and place them with more care.
+- **TAG.** The bots judge an enemy TAG spotter by the guided weapons standing behind it. A Raven painting for two Catapults with homing Arrow IV is a serious threat, and they treat it as one.
 
 All of this works for both Princess and CASPAR.
 
@@ -533,12 +533,12 @@ All of this works for both Princess and CASPAR.
 
 Princess's honor system got a lot of attention this release.
 
-- She no longer chases ejected pilots.
+- She lets ejected pilots go, and doesn't chase them down.
 - With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
-- Her crippled units no longer fire on players who never broke the rules of engagement.
+- Her crippled units hold their fire while they withdraw. They shoot back only at an enemy who attacks them once they're visibly crippled.
 - Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice too, so you know why she's stopped being polite.
-- Crippled units heading off the board now follow their waypoints, instead of fleeing the wrong way.
-- Her hidden units no longer give themselves away by announcing in chat that they're spotting for indirect fire.
+- Crippled units heading off the board follow their waypoints on the way out.
+- Her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
 
 <div class="shot-placeholder"><strong>Screenshot needed:</strong> A withdrawing bot unit with its tag on the map, and the warning you get the first time you shoot at it.</div>
 
@@ -550,16 +550,16 @@ Princess's honor system got a lot of attention this release.
   <p>"The bin was running dry. I was being thrifty."</p>
 </div>
 
-A lot of small fixes add up to a bot that wastes less and misjudges less:
+A lot of small improvements add up to a bot that wastes less and judges better:
 
-- **Hopeless shots.** Princess stopped firing shots that need a 13 or 14 when a shared ammo bin runs dry.
-- **Kill chances.** The bots saw no chance to kill vehicles at all, and undercounted their chances against 'Meks.
-- **Heat.** They now account for engine hit heat when planning fire, manage their own heat-generating equipment, and no longer abandon a 'Mek that's only overheated for a turn. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
-- **Tactical Genius.** They stopped spending it on an initiative they'd already won.
+- **Shared ammo.** When several launchers draw from one ammo bin, Princess counts the shots left, shares them out, and skips any shot that isn't worth the ammo.
+- **Kill chances.** The bots judge their chance of finishing a target off more closely, vehicles and 'Meks alike, so they know when a kill is on the table.
+- **Heat.** They account for engine hit heat when planning fire and manage their own heat-generating equipment. They also know a 'Mek that's only overheated for a turn will move again, so its crew stays aboard. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
+- **Tactical Genius.** They save the reroll for an initiative they've lost.
 - **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
 
-We also fixed a handful of freezes and stuck units: bots stuck on their first move on very low-gravity worlds, grounded WiGEs that never took off again, reinforcements carrying troops, a refused move that could hang the game, and a bot that could sit on its movement turn forever.
+We also keep finding and fixing the rare cases where a bot stalls or a unit gets stuck, so your games keep moving.
 
 ## Wrapping Up
 
