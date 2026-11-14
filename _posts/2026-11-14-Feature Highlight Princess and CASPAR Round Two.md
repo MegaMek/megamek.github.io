@@ -333,7 +333,7 @@ Here's how the two bots handle the same fighters over a ground map:
 | | Princess | CASPAR |
 |---|---|---|
 | **Altitude** | Flies at one set altitude. | Chooses its altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
-| **Dead zones** | Plans its path without the air-to-air dead zone in mind. | Knows the dead zone: fighters one altitude apart can't fire at each other inside 17 hexes, two apart inside 33. It plans its moves and its shots around that. |
+| **Dead zones** | Plans its path without the air-to-air dead zone in mind. | Knows the dead zone: fighters at different altitudes can't fire at each other when they're too close together. It plans its moves and its shots around that. |
 | **Reading the enemy** | Plans around where enemy fighters are right now. | Reacts to fighters that have moved, and hedges against the ones that still could. |
 | **Speed** | Flies at whatever speed its chosen path calls for. | Flies slower when enemy fighters share the map, so it can turn back into the fight. |
 | **Special maneuvers** | Doesn't fly them. | Flies six of them: the Immelmann, loop, Split-S, Hammerhead, side-slip and half-roll. It turns back onto a fighter that has already moved, and half-rolls to swap a shot-up wing for a fresh one. It wants at least an even chance on the control roll, unless it's cornered at the board edge and a reversal is the only way to stay on the map. Skilled pilots fly far more of them, and the game announces each one. |
