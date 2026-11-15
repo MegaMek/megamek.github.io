@@ -592,6 +592,8 @@ The rest is quicker to list:
 - **Sprinting.** With TacOps sprinting on, they know a sprinting unit can't attack, and they avoid ending a sprint inside the enemy's weapon range.
 - **Thinking faster.** Bot turns take less time, most of all in games with C3, C3i or Nova CEWS networks.
 
+Let me set one expectation clearly. We've considerably improved these behaviors, but we do still see problems, and you will too. We keep working on them as your feedback and issue reports come in. Two things in particular are instrumental in helping us understand those problems, and reduce them: the game logging TSV files, and the bot reports that come in through the new **Report a Bug** feature. When a bot stands somewhere it shouldn't, that's the best way to show us.
+
 ## Smarter Decisions
 
 <div class="corerules-callout corerules-fiction">
