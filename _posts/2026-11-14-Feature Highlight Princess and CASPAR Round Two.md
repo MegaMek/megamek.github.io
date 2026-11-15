@@ -567,6 +567,8 @@ And one that has less to do with honor than with keeping a secret: her hidden un
   <p class="corerules-caption">Line up a shot on a withdrawing bot unit and the game warns you before you break the honor rules.</p>
 </div>
 
+Across both Princess and CASPAR, we'll keep refining and improving these behaviors, along with the feedback we give you about them. We'll also be exploring how they link to the Self Preservation slider, so you can tell Princess more accurately whether her units should fight to the death, or surrender and eject to fight another day.
+
 ## Reading the Ground
 
 <div class="corerules-callout corerules-fiction">
