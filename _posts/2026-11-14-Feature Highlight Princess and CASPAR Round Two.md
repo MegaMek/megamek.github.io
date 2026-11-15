@@ -393,6 +393,8 @@ In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR b
 
 This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, with her own two buttons on the panel, so the bot you know still plays the way she always has.
 
+I need to stress this one: unit orders are alpha. These are very early days, and this is going to be a work in progress for a good while yet. Expect rough edges, and expect things to change. Our intention is to keep refining it, so that you have more precise control over the bots on your side, if you want it.
+
 These orders are for CASPAR bots:
 
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold. Select several waypoints to change them all at once.
@@ -499,6 +501,8 @@ One more for the MekHQ players. If you let Princess fight a battle for you with 
 </div>
 
 This finally makes convoy, escort and breakthrough scenarios playable against CASPAR. As the gamemaster, give the enemy lance its role in the lobby and its route on the map, and it carries on without anyone nudging every unit.
+
+Orders won't stay on their own, either. Eventually they'll be linked to the formations you build in the lobby, and as we refine this you'll hear more about how we intend to use formations in the coming development cycles. I'll add one more thing. We're getting close to the point with formations where we can get the Special Command Abilities coded. More on that later.
 
 ## Calling in the Guns
 
