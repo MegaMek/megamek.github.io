@@ -206,7 +206,7 @@ Then the developer behind CASPAR left the project. What we had at that point was
 
 I'll be straight with you. We revealed CASPAR too soon, and we didn't deliver what we said we would. That's on us.
 
-In August I said we'd started bringing CASPAR back, and that it wouldn't be the original vision. This post is what that means. It covers what's changed for the two bots since June. Some of it is already in your hands from the August release, and the rest is coming in 0.51.01.
+In August I said we'd started bringing CASPAR back, and that they wouldn't be the original vision. This post is what that means. It covers what's changed for the two bots since June. Some of it is already in your hands from the August release, and the rest is coming in 0.51.01.
 
 ## Princess Isn't Going Anywhere
 
@@ -220,7 +220,7 @@ Princess has been MegaMek's bot for years, and she has her quirks. Some of them 
 
 So here's the plan. Princess stays the default bot for the foreseeable future. CASPAR is built on top of her, and over time more and more of what makes a good bot moves into CASPAR, because CASPAR's design gives us more room to grow than Princess's does.
 
-It fits together like this. Every bot in MegaMek starts from the same outline: deploy, move, fire, make physical attacks, check morale. Princess fills that outline in with everything she knows, and CASPAR starts from Princess and swaps in its own parts where it does things differently. When we fix Princess, CASPAR gets the fix for free. When we try something new, it goes into CASPAR first, so Princess stays the bot you know while we find out whether the new idea is actually better.
+It fits together like this. Every bot in MegaMek starts from the same outline: deploy, move, fire, make physical attacks, check morale. Princess fills that outline in with everything she knows, and CASPAR starts from Princess and swaps in their own parts where they do things differently. When we fix Princess, CASPAR gets the fix for free. When we try something new, it goes into CASPAR first, so Princess stays the bot you know while we find out whether the new idea is actually better.
 
 That's why most of what's in this post works for both bots.
 
@@ -273,7 +273,7 @@ That's why most of what's in this post works for both bots.
   <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
 </div>
 
-In 0.51.01 you'll see an option to play against CASPAR instead of Princess. We've been burned by our own enthusiasm on CASPAR before, so the caveat comes first: it's experimental, and everything in this section is a first pass that's still in development. Each piece will keep changing as your games and your feedback come in.
+In 0.51.01 you'll see an option to play against CASPAR instead of Princess. We've been burned by our own enthusiasm on CASPAR before, so the caveat comes first: CASPAR is experimental, and everything in this section is a first pass that's still in development. Each piece will keep changing as your games and your feedback come in.
 
 You can switch a bot between the two in the lobby. The lobby chat tells you which one you've got, and a saved game remembers which bot was which.
 
@@ -282,8 +282,8 @@ Right now CASPAR does a few things differently on the ground:
 - **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
 - **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
 - **Facing the enemy.** CASPAR's units deploy facing the enemy's deployment zone, not whichever way they happened to be pointing.
-- **Hunting convoys.** CASPAR treats enemy convoy units as priority targets. It shoots at them first, and moves after them when they try to get away.
-- **Holding a river line.** Tell CASPAR it's defending and water becomes its line, a shallow ford as much as a deep river. It stays on its own bank and fights the enemy while they're in the crossing. Tell it to attack and it pays for the crossing and takes the far bank.
+- **Hunting convoys.** CASPAR treats enemy convoy units as priority targets, shooting at them first and moving after them when they try to get away.
+- **Holding a river line.** Tell CASPAR they're defending and water becomes their line, a shallow ford as much as a deep river. They stay on their own bank and fight the enemy in the crossing. Tell them to attack and they pay for the crossing and take the far bank.
 - **Following your orders.** Routes, formations, convoys and escorts are CASPAR's. Taking Orders, below, has the details.
 
 That list will grow. CASPAR also flies differently, and that gets its own section below.
@@ -322,21 +322,21 @@ Here's how the two bots handle the same fighters over a ground map:
 
 | | Princess | CASPAR |
 |---|---|---|
-| **Altitude** | Flies at one set altitude. | Chooses its altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
-| **Dead zones** | Plans its path without the air-to-air dead zone in mind. | Knows the dead zone: fighters at different altitudes can't fire at each other when they're too close together. It plans its moves and its shots around that. |
+| **Altitude** | Flies at one set altitude. | Chooses their altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
+| **Dead zones** | Plans her path without the air-to-air dead zone in mind. | Knows the dead zone: fighters at different altitudes can't fire at each other when they're too close together. They plan their moves and their shots around that. |
 | **Reading the enemy** | Plans around where enemy fighters are right now. | Reacts to fighters that have moved, and hedges against the ones that still could. |
-| **Speed** | Flies at whatever speed its chosen path calls for. | Flies slower when enemy fighters share the map, so it can turn back into the fight. |
+| **Speed** | Flies at whatever speed her chosen path calls for. | Flies slower when enemy fighters share the map, so they can turn back into the fight. |
 | **Special maneuvers** | Doesn't fly them. | Flies six of them: the Immelmann, loop, Split-S, Hammerhead, side-slip and half-roll. |
 | **Firing arcs** | Rates a path by the weapons in range. | Checks each weapon's firing arc, so a rear-firing gun counts and a nose-only fighter doesn't plan a shot behind it. |
-| **Who moves first** | Moves fighters in its usual order. | Moves the element leader before the wingmen, and moves fighters whose fight is already settled before ones still waiting on an opponent. |
+| **Who moves first** | Moves fighters in her usual order. | Moves the element leader before the wingmen, and moves fighters whose fight is already settled before ones still waiting on an opponent. |
 | **Grounded fighters** | Leaves them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
 {: .bot-compare}
 
-Those maneuvers aren't for show. CASPAR uses them to turn back onto a fighter that has already moved, and it half-rolls to swap a shot-up wing for a fresh one. It wants at least an even chance on the control roll first, unless it's cornered at the board edge and a reversal is the only way to stay on the map. Skilled pilots fly far more of them. The game announces each one, so you'll know exactly what just got behind you.
+Those maneuvers aren't for show. CASPAR uses them to turn back onto a fighter that has already moved, and half-rolls to swap a shot-up wing for a fresh one. CASPAR wants at least an even chance on the control roll first, unless a fighter is cornered at the board edge and a reversal is the only way to stay on the map. Skilled pilots fly far more of them. The game announces each one, so you'll know exactly what just got behind you.
 
-In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of its force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
+In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of their force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
 
-CASPAR's fighters also attack the ground in their own way. CASPAR plans the whole attack run along the line the fighter will fly. With guns, it picks one victim and likes to come in from behind. With bombs, it aims for the hex between units standing close together, so one drop catches both, and it spends bombs where they buy the most: four bombs that kill a Locust beat ten that only dent an Atlas. It can strafe too, which Princess never does: a straight run of up to five hexes with its energy weapons, announced in an on-screen message.
+CASPAR's fighters also attack the ground in their own way. CASPAR plans the whole attack run along the line the fighter will fly. With guns, they pick one victim and like to come in from behind. With bombs, they aim for the hex between units standing close together, so one drop catches both, and they spend bombs where each one buys the most: four bombs that kill a Locust beat ten that only dent an Atlas. CASPAR can strafe too, which Princess never does: a straight run of up to five hexes with energy weapons, announced in an on-screen message.
 
 ## The Bot Control Panel
 
@@ -356,7 +356,7 @@ Most of what follows starts in one place: the Bot Control Panel. (The game's Vie
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
 - **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries. **Halt Fire** stops the bot's guns, and **Fire at Will** lets it pick its own targets again.
 - **Radio chatter.** The bot answers a fire mission over the radio, in chat and in on-screen messages, the way a fire direction center would call it: "Shot, out", "Rounds inbound", "Splash, over".
-- **Attack or defend.** Under **Behavior**, open **Combat Posture** and pick Attack, Defend or Auto. You can set it in Configure Bot too. A defending bot stops pushing toward the enemy once they're close, and it's slower to give up a hex it's shooting well from. It still won't sit in a hex where it's losing the exchange. Auto is the default. On Auto the bot makes the call each round: it defends while the enemy is advancing on it, and it attacks when the enemy hangs back, when there's no enemy in sight, or when you've sent it to a board edge. When the posture changes, the bot says so in chat and gives its reason. A defending CASPAR does two more things that Princess doesn't. It holds its own bank of the water, as covered above, and its fighters put more weight on going after enemy aircraft that can attack the ground units on its side.
+- **Attack or defend.** Under **Behavior**, open **Combat Posture** and pick Attack, Defend or Auto. You can set it in Configure Bot too. A defending bot stops pushing toward the enemy once they're close, and it's slower to give up a hex it's shooting well from. It still won't sit in a hex where it's losing the exchange. Auto is the default. On Auto the bot makes the call each round: it defends while the enemy is advancing on it, and it attacks when the enemy hangs back, when there's no enemy in sight, or when you've sent it to a board edge. When the posture changes, the bot says so in chat and gives its reason. A defending CASPAR does two more things that Princess doesn't. They hold their own bank of the water, as covered above, and their fighters put more weight on going after enemy aircraft that can attack the ground units on their side.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.707;">
@@ -391,7 +391,7 @@ In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR b
   <p>"I've had those since last year." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
 </div>
 
-This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, with her own two buttons on the panel, so the bot you know still plays the way she always has.
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and CASPAR follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, with her own two buttons on the panel, so the bot you know still plays the way she always has.
 
 I need to stress this one: unit orders are alpha. These are very early days, and they'll be a work in progress for a good while yet, so expect rough edges. Our intention is to keep refining them, so that you have more precise control over the bots on your side, if you want it.
 
@@ -624,9 +624,9 @@ And we keep finding and fixing the rare cases where a bot stalls or a unit gets 
   <p>"I intend to," CASPAR said. "Eventually."</p>
 </div>
 
-CASPAR isn't what we promised in 2025, and I'm not going to pretend it is. What it is now is a better foundation: one where every fix helps both bots, and where new ideas can be tried without breaking the bot you already play against.
+CASPAR isn't what we promised in 2025, and I'm not going to pretend otherwise. What they are now is a better foundation: one where every fix helps both bots, and where new ideas can be tried without breaking the bot you already play against.
 
-Princess remains the default. If you want to see where things are heading, pick CASPAR in the bot setup and tell us how it plays. When either bot does something strange, use **Report a Bug** and attach your files. The bot logs now keep a much longer history, so they'll actually show us what she was thinking.
+Princess remains the default. If you want to see where things are heading, pick CASPAR in the bot setup and tell us how they play. When either bot does something strange, use **Report a Bug** and attach your files. The bot logs now keep a much longer history, so they'll actually show us what the bot was thinking.
 
 And thank you. To everyone who switched on game logging and sent us your files back in 2025, to the players who send a report when a bot does something odd, and to the developers and test pilots who review and play all of this before you see it: none of it happens without you.
 
