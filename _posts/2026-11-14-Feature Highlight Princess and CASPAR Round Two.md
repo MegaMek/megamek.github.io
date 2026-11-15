@@ -390,7 +390,7 @@ Most of what follows starts in one place: the Bot Control Panel. Back in June we
   </div>
 </div>
 
-In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. And when a button has nothing to offer, like **Move Order** when the bot only has fighters, the panel now says why. The orders are where the next section starts.
+In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. Princess bots keep the **Waypoints** and **Movement** buttons they had in August. If you command more than one bot, every menu shows each bot's name and whether it's Princess or CASPAR, and a button that belongs to the other bot tells you which one to use instead. And when a button has nothing to offer, like **Move Order** when the bot only has fighters, the panel now says why. The orders are where the next section starts.
 
 ## Taking Orders
 
@@ -402,13 +402,13 @@ In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR b
   <p>"I've had those since last year." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
 </div>
 
-This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, set with chat commands, so the bot you know still plays the way she always has.
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and it follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, with her own two buttons on the panel, so the bot you know still plays the way she always has.
 
 These orders are for CASPAR bots:
 
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold. Select several waypoints to change them all at once.
 - **Quick orders.** Use the **Quick Orders** button, or right-click the map, for move here, pause, resume, stop, hold position, or head for an edge.
-- **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
+- **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts. If a force arrives as a pile of loose units, the lobby's new **Assemble Force** button sorts it into lances, stars or Level IIs, and the lobby does the same for any units still loose when you click I'm Done. Every bot force starts round one with formations to give orders to.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
@@ -457,7 +457,19 @@ These two work for both bots:
   </div>
 </div>
 
-And these are Princess's waypoints. She takes them as chat messages: type the bot's name, then the command, then the unit's ID and the hexes. Put a colon after the name and after the command, and a dash between hexes.
+And these are Princess's waypoints. She has two buttons of her own on the Bot Commands panel.
+
+**Waypoints** works one unit at a time. Pick the order, then the unit, and for a route click the hexes on the map:
+
+- **Set Waypoints.** Give the unit a new route. It visits the hexes in the order you picked them, and any route it already had is replaced.
+- **Add Waypoint.** Add hexes to the end of the unit's route.
+- **Remove Last Waypoint.** Take the last hex off the unit's route. It works as an undo.
+- **Clear Unit Waypoints.** Wipe that one unit's route.
+- **Clear All Waypoints.** Wipe the routes of every unit the bot owns.
+
+**Movement** speaks to the whole bot. **Hold Position** keeps her units in their hexes, where they still fight and can turn to face the enemy, and **Resume Movement** lets them go again. You can also send the whole force to the north, east, south, west or nearest edge of the board, and **Cancel Retreat** calls it off.
+
+The waypoint orders still work as chat messages too, the way they always have. Type the bot's name, then the command, then the unit's ID and the hexes. Put a colon after the name and after the command, and a dash between hexes.
 
 `Princess: sw : 12 0810-0815`
 
@@ -470,6 +482,8 @@ That tells the bot named Princess to send unit 12 to hex 0810, and then on to he
 - `nw`, clear all waypoints. Wipe the routes of every unit the bot owns. It needs no unit ID: `Princess: nw`
 
 Use the bot's own name if you called it something else. To see unit IDs, turn on "Show each unit's ID next to its name" in Client Settings. Princess only takes these from her own team or from a gamemaster.
+
+One more for the MekHQ players. If you let Princess fight a battle for you with PACAR and watch from the Commander window, her orders are easier to give there too. For any order that needs hexes, whether it's a waypoint route, a fire mission or a strategic target, you now click them on the minimap. Click a hex again to take it back, and a route shows its hexes numbered in the order you picked them. **Targets** opens the same priority target picker as the game window, so you can rank her targets from 1 to 5 there as well.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure">
