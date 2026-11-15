@@ -399,7 +399,7 @@ These orders are for CASPAR bots:
 
 - **Routes.** Open **Move Order** from the Bot Commands panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold. Select several waypoints to change them all at once.
 - **Quick orders.** Use the **Quick Orders** button, or right-click the map, for move here, pause, resume, stop, hold position, or head for an edge.
-- **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts. If a force arrives as a pile of loose units, the lobby's new **Assemble Force** button sorts it into lances, stars or Level IIs, and the lobby does the same for any units still loose when you click I'm Done. Every bot force starts round one with formations to give orders to.
+- **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
