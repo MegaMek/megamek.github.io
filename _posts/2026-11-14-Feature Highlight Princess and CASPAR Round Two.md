@@ -284,7 +284,7 @@ That's why most of what's in this post works for both bots.
   <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
 </div>
 
-In the coming release you'll see an option to play against CASPAR instead of Princess. It's experimental, and everything in this section is still in development. What you see now is a first pass, and each piece will keep changing as we refine and tweak it from your games and your feedback.
+In the coming release you'll see an option to play against CASPAR instead of Princess. I want to be careful here, because we've been burned by our own enthusiasm on CASPAR before. It's experimental, and everything in this section is still in development. What you see now is a first pass, and each piece will keep changing as we refine and tweak it from your games and your feedback.
 
 You can switch a bot between the two in the lobby. The lobby chat tells you which one you've got, and a saved game remembers which bot was which.
 
@@ -536,15 +536,15 @@ All of this works for both Princess and CASPAR.
   <p>"Someone filed a complaint," Princess said. "Several someones."</p>
 </div>
 
-Princess's honor system got a lot of attention this release.
+Princess's honor system got a lot of attention this release, and most of it comes down to one idea: a unit that's out of the fight should be left out of it.
 
-- She lets ejected pilots go, and doesn't chase them down.
-- She leaves abandoned units alone. Nobody's home, so she saves her shots, and the salvage.
-- With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
-- Her crippled units hold their fire while they withdraw. They shoot back only at an enemy who attacks them once they're visibly crippled.
-- Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice too, so you know why she's stopped being polite.
-- Crippled units heading off the board follow their waypoints on the way out.
-- Her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
+She lets ejected pilots go, and doesn't chase them down. She leaves abandoned units alone too. Nobody's home, so she saves her shots, and the salvage. With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
+
+She holds her own side to the same standard. Her crippled units hold their fire while they withdraw, and they shoot back only at an enemy who attacks them once they're visibly crippled. Crippled units heading off the board follow their waypoints on the way out.
+
+You get fair warning, too. Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice as well, so you know why she's stopped being polite.
+
+And one that has less to do with honor than with keeping a secret: her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
 
 <div class="corerules-figure">
   <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/withdrawing_unit_warning.png' | relative_url }}">
@@ -567,10 +567,14 @@ Princess's honor system got a lot of attention this release.
 
 Both bots got a lot better at deciding where to stand, and how to get there.
 
-- **Holding good ground.** A unit in a good firing position stays there and shoots, where it used to shuffle a hex or two every turn. The bots value cover too, so a treeline beats open ground. In our test games a defending Princess fired from the same hex more than twice as often, and fought from the edge of the woods nearly three times as often.
-- **Crossing water.** They wade a shallow river to get at you. They also know what a crossing costs, so they take a ford or a land route when there is one. They know which of their guns are underwater, and that standing in water with damaged armor risks a breach.
-- **Closing to melee.** A unit that hits harder up close, like an Axman with its hatchet, closes the distance and squares up on its target when it gets there.
-- **Height in a brawl.** The bots read elevation in physical attacks. A kick from one level up lands on the punch table, where the head is, and they pick their hexes with that in mind.
+If you've played against Princess for any length of time, you know the shuffle. She finds a perfectly good firing position, then steps a hex sideways for no reason anyone could explain. That's the habit we went after first. A unit in a good firing position now stays there and shoots, and the bots value cover too, so a treeline beats open ground. In our test games a defending Princess fired from the same hex more than twice as often, and fought from the edge of the woods nearly three times as often.
+
+Then there's water. The bots now wade a shallow river to get at you. They also know what a crossing costs, so they take a ford or a land route when there is one, and they know which of their guns are underwater and that standing in water with damaged armor risks a breach. If you've been counting on a stream to keep them off you, it's time for a new plan.
+
+They've learned to brawl as well. A unit that hits harder up close, like an Axman with its hatchet, closes the distance and squares up on its target when it gets there. The bots read elevation in physical attacks, too: a kick from one level up lands on the punch table, where the head is, and they pick their hexes with that in mind.
+
+The rest is quicker to list:
+
 - **Weather, night and gravity.** When they choose where to move, they count the weather, wind, fog, darkness and an evading target, so they don't walk into the open on a stormy night expecting easy hits. On a low-gravity world they weigh the leg damage that comes from moving too fast.
 - **Sprinting.** With TacOps sprinting on, they know a sprinting unit can't attack, and they avoid ending a sprint inside the enemy's weapon range.
 - **Thinking faster.** Bot turns take less time, most of all in games with C3, C3i or Nova CEWS networks.
@@ -583,20 +587,18 @@ Both bots got a lot better at deciding where to stand, and how to get there.
   <p>"The bin was running dry. I was being thrifty."</p>
 </div>
 
-A lot of small improvements add up to a bot that wastes less and judges better:
+None of these is a headline on its own. Together they add up to a bot that wastes less and judges better:
 
 - **Shared ammo.** When several launchers draw from one ammo bin, Princess counts the shots left, shares them out, and skips any shot that isn't worth the ammo.
 - **Kill chances.** The bots judge their chance of finishing a target off more closely, vehicles and 'Meks alike, so they know when a kill is on the table.
 - **Heat.** They account for engine hit heat when planning fire and manage their own heat-generating equipment. They also know a 'Mek that's only overheated for a turn will move again, so its crew stays aboard. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
-- **Tactical Genius.** They save the reroll for an initiative they've lost.
-- **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
+- **Tactical Genius.** They save the reroll for an initiative they've lost, which is more discipline than some of us manage.
 - **Minefields.** The bots lay tripwires and pitfalls as well as the usual mines. They pick spots that suit the units they're facing, spread their mines out, and set a vibrabomb's trigger weight to match the enemy's 'Meks. They also steer around the EMP mines, pitfalls and tripwires they know about.
 - **Hidden units.** After an enemy moves, a bot looks at its hidden units and decides whether revealing one to open fire is worth it. How readily it does depends on its Aggression setting.
-- **Recon cameras.** Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.)
-- **Trailers.** Give a bot tractors and trailers and it hitches them up itself.
 - **Gun emplacements.** The bots site a gun emplacement for its field of fire, spaced out from the others and out of the water. You'll notice it most on town maps.
-- **Mechanical jump boosters.** Princess can plan jumps with mechanical jump boosters.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
+
+The bots have picked up a few new tricks with their kit as well. Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.) Give it tractors and trailers and it hitches them up itself. Princess can now arrive by walking on from the map edge, and she can plan jumps with mechanical jump boosters.
 
 We also keep finding and fixing the rare cases where a bot stalls or a unit gets stuck, so your games keep moving.
 
@@ -613,6 +615,8 @@ If you play from MekHQ, the bots in a scenario now start with the default bot se
 CASPAR isn't what we promised in 2025, and I'm not going to pretend it is. What it is now is a better foundation: one where every fix helps both bots, and where new ideas can be tried without breaking the bot you already play against.
 
 Princess remains the default. If you want to see where things are heading, pick CASPAR in the bot setup and tell us how it plays. When either bot does something strange, use Report a Bug and attach your files. The bot logs now keep a much longer history, so they'll actually show us what she was thinking.
+
+And thank you. To everyone who switched on game logging and sent us your files back in 2025, to the players who send a report when a bot does something odd, and to the developers and test pilots who review and play all of this before you see it: none of it happens without you.
 
 <!-- HAND-OFF: next post and author TBD -->
 
