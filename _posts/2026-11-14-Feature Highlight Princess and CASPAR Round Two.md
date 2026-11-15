@@ -135,7 +135,6 @@ date: 2026-11-14
 /* Headings and full-width blocks always start below any float */
 h2, h3, h4,
 .corerules-callout,
-.shot-placeholder,
 .corerules-figure-row,
 .corerules-figure:not(.corerules-float-right):not(.corerules-float-left) {
   clear: both;
@@ -187,16 +186,6 @@ h2, h3, h4,
   .bot-compare td:first-child {
     white-space: normal;
   }
-}
-
-/* DRAFT ONLY: placeholders for screenshots and videos still to be taken. Remove before merging. */
-.shot-placeholder {
-  max-width: 900px;
-  margin: 1.75rem auto;
-  padding: 1rem 1.25rem;
-  border: 2px dashed var(--accent-color);
-  border-radius: 8px;
-  font-size: 0.95rem;
 }
 </style>
 
