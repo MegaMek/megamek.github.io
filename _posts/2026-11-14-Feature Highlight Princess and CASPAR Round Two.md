@@ -546,7 +546,15 @@ Princess's honor system got a lot of attention this release.
 - Crippled units heading off the board follow their waypoints on the way out.
 - Her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
 
-<div class="shot-placeholder"><strong>Screenshot needed:</strong> A withdrawing bot unit with its tag on the map, and the warning you get the first time you shoot at it.</div>
+<div class="corerules-figure">
+  <a href="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/withdrawing_unit_warning.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/withdrawing_unit_warning.png' | relative_url }}"
+      alt="A crippled Kestrel VTOL tagged WITHDRAW on the map. Below it, the Dishonorable action? dialog: the Kestrel VTOL is crippled and withdrawing under the Forced Withdrawal rules, and bot opponents will consider you dishonored and stop showing your units mercy for the rest of the battle. It asks Proceed with these attacks?, with Yes and No buttons and a Do not bother me again box"
+    />
+  </a>
+  <p class="corerules-caption">Line up a shot on a withdrawing bot unit and the game warns you before you break the honor rules.</p>
+</div>
 
 ## Reading the Ground
 
