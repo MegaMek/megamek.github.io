@@ -25,10 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Record release download totals
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -44,6 +44,18 @@ jobs:
 
             // Strip a leading "v" so tags (v0.50.11) match yml values (0.50.11).
             const normalize = (tag) => tag.replace(/^v/, '');
+
+            // Only program packages count as downloads. Releases also carry
+            // files nobody installs: the launcher's suite-record-*.json (read
+            // on every update check, so its count is checks, not downloads),
+            // plus a few old changelogs and tile atlases. Add a new package
+            // format here if the builds ever ship one.
+            const isPackage = (name) => /\.(zip|tar\.gz|tgz|tar\.bz2|7z)$/i.test(name);
+
+            // Marks history entries counted packages-only. The charts skip the
+            // one day that spans an older all-files entry and a packages entry,
+            // so the switch does not plot as a drop.
+            const basis = 'packages';
 
             let data = { updated: null, repos: {} };
             if (fs.existsSync(path)) {
@@ -69,7 +81,9 @@ jobs:
               for (const release of releases) {
                 let releaseDownloads = 0;
                 for (const asset of release.assets) {
-                  releaseDownloads += asset.download_count;
+                  if (isPackage(asset.name)) {
+                    releaseDownloads += asset.download_count;
+                  }
                 }
                 total += releaseDownloads;
                 downloadsByVersion[normalize(release.tag_name)] = releaseDownloads;
@@ -111,8 +125,9 @@ jobs:
                 // A re-run on the same day overwrites that day's value.
                 last.total = total;
                 last.versions = versions;
+                last.basis = basis;
               } else {
-                series.push({ date: today, total: total, versions: versions });
+                series.push({ date: today, total: total, versions: versions, basis: basis });
               }
             }
 
