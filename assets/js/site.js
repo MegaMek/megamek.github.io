@@ -257,8 +257,15 @@ function addNumberCells( row, downloads ) {
 }
 
 // Summary for a line: each non-Experimental build type once, plus a count of
-// Experimental builds, plus a Milestone badge if any build was one.
+// Experimental builds, plus a Milestone badge if any build was one. A line with
+// a single build shows that build's own badges and release date instead, since
+// it has no detail table to open.
 function fillLineSummary( cell, line ) {
+  if ( line.builds.length == 1 ) {
+    fillSingleBuildSummary( cell, line.builds[ 0 ] );
+    return;
+  }
+
   let types = [];
   let experimentalCount = 0;
 
@@ -280,6 +287,19 @@ function fillLineSummary( cell, line ) {
   if ( line.builds.some( ( build ) => build.milestone ) ) {
     cell.appendChild( makeBadge( "Milestone", "dl-stats-badge-milestone" ) );
   }
+}
+
+function fillSingleBuildSummary( cell, build ) {
+  cell.appendChild( makeBadge( build.type, typeBadgeClass( build.type ) ) );
+
+  if ( build.milestone && build.type != "Milestone" ) {
+    cell.appendChild( makeBadge( "Milestone", "dl-stats-badge-milestone" ) );
+  }
+
+  let date = document.createElement( "span" );
+  date.className = "dl-stats-date";
+  date.textContent = build.date;
+  cell.appendChild( date );
 }
 
 function makeBuildTable( line ) {
@@ -328,10 +348,32 @@ function renderReleaseTable( table, data ) {
   body.innerHTML = "";
 
   lines.forEach( ( line, index ) => {
-    let detailId = "release-line-" + line.parts.join( "-" );
     let row = body.insertRow();
     row.className = "dl-stats-line";
 
+    if ( index >= STATS_VISIBLE_LINES ) {
+      row.hidden = true;
+      olderRows.push( row );
+    }
+
+    // One build: the line row already says everything, so there is nothing to open.
+    if ( line.builds.length == 1 ) {
+      if ( line.builds[ 0 ].milestone ) {
+        row.classList.add( "dl-stats-milestone" );
+      }
+
+      let label = document.createElement( "span" );
+      label.className = "dl-stats-label";
+      label.innerHTML = "<i class='dl-stats-spacer' aria-hidden='true'></i> ";
+      label.appendChild( document.createTextNode( formatReleaseLine( line.parts ) ) );
+      row.insertCell().appendChild( label );
+
+      fillLineSummary( row.insertCell(), line );
+      addNumberCells( row, line.totals );
+      return;
+    }
+
+    let detailId = "release-line-" + line.parts.join( "-" );
     let releaseCell = row.insertCell();
     let toggle = document.createElement( "button" );
     toggle.type = "button";
@@ -359,11 +401,6 @@ function renderReleaseTable( table, data ) {
       toggle.setAttribute( "aria-expanded", isOpen ? "false" : "true" );
       detailRow.hidden = isOpen;
     } );
-
-    if ( index >= STATS_VISIBLE_LINES ) {
-      row.hidden = true;
-      olderRows.push( row );
-    }
   } );
 
   let more = document.getElementById( "download-stats-more" );
