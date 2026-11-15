@@ -597,9 +597,11 @@ Let me set one expectation clearly. We've considerably improved these behaviors,
 ## Smarter Decisions
 
 <div class="corerules-callout corerules-fiction">
-  <p>"I still say most of your fancy maths comes down to one thing," Princess said. "Don't shoot when you can't hit."</p>
-  <p>CASPAR pulled up a log. "Turn six. You fired an AC/20 needing a fourteen."</p>
-  <p>"The bin was running dry. I was being thrifty."</p>
+  <p>"I still say most of your fancy maths comes down to one thing," Princess said. "Don't waste the shot."</p>
+  <p>CASPAR pulled up a log. "Turn six. Two rounds left in the AC/20 bin, and a Locust at long range. You needed an eleven."</p>
+  <p>"So I held fire." She scrolled down a line. "Turn seven. Same Locust, three hexes away. That's what the round was for."</p>
+  <p>"The old you would have taken the eleven."</p>
+  <p>"The old me ran dry by turn eight."</p>
 </div>
 
 None of these is a headline on its own. Together they add up to a bot that wastes less and judges better:
