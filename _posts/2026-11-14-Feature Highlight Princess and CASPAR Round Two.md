@@ -527,6 +527,10 @@ In 0.51.01 both bots read artillery better, theirs and yours:
 
 All of this works for both Princess and CASPAR.
 
+Playtesting and feedback on all of this have been really positive. We've had players tell us that Princess's artillery isn't as deadly to your own side now that you can call it off, and that it's more accurate than players are used to seeing.
+
+Earlier we mentioned CASPAR and the changes to air power. One of the things we'll be exploring next is an airstrike menu, much like the artillery menu, so you'll be able to call in airstrikes and set a priority, like ground attack versus air cover. More on that in a later release.
+
 <div class="corerules-figure">
   <video controls muted playsinline preload="metadata"
     src="{{ '/assets/images/posts/2026/2026-11-14-princess-and-caspar-round-two/radio_calls.mp4' | relative_url }}"
