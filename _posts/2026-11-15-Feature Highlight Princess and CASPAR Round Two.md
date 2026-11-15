@@ -340,7 +340,7 @@ CASPAR's fighters also attack the ground in their own way. CASPAR plans the whol
 
 ## The Bot Control Panel
 
-Most of what follows starts in one place: the Bot Control Panel. (The game's View menu lists it as Bot Commands.) Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed.
+Most of what follows starts in one place: the Bot Control Panel. (The game's View menu lists it as Bot Commands.) Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed. Everything in this list works for both bots.
 
 <div class="corerules-figure">
   <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}">
@@ -356,7 +356,7 @@ Most of what follows starts in one place: the Bot Control Panel. (The game's Vie
 - **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
 - **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries. **Halt Fire** stops the bot's guns, and **Fire at Will** lets it pick its own targets again.
 - **Radio chatter.** The bot answers a fire mission over the radio, in chat and in on-screen messages, the way a fire direction center would call it: "Shot, out", "Rounds inbound", "Splash, over".
-- **Attack or defend.** Under **Behavior**, set a bot's combat posture to Attack, Defend or Auto. A defender holds good ground and lets the enemy come to it. On Auto the bot decides each round, and says in chat when it changes its mind and why. You can set it in Configure Bot too.
+- **Attack or defend.** Under **Behavior**, open **Combat Posture** and pick Attack, Defend or Auto. You can set it in Configure Bot too. A defending bot stops pushing toward the enemy once they're close, and it's slower to give up a hex it's shooting well from. It still won't sit in a hex where it's losing the exchange. Auto is the default. On Auto the bot makes the call each round: it defends while the enemy is advancing on it, and it attacks when the enemy hangs back, when there's no enemy in sight, or when you've sent it to a board edge. When the posture changes, the bot says so in chat and gives its reason. A defending CASPAR does two more things that Princess doesn't. It holds its own bank of deep water, as covered above, and its fighters put more weight on going after enemy aircraft that can attack the ground units on its side.
 
 <div class="corerules-figure-row">
   <div class="corerules-figure" style="--ratio: 0.707;">
@@ -512,7 +512,7 @@ Orders are only the first step. Eventually they'll be linked to the formations y
 
 In June we said Princess had "new glasses" for artillery. Here's what that actually meant, and what 0.51.01 adds on top.
 
-Princess now leads her targets. She works out where each enemy is heading and how long her shells take to arrive, then fires at where they'll be, aiming for the thickest cluster rather than a single unit. She fires Homing Arrow IV when a friendly TAG unit can paint the target, and her TAG spotters hold a standoff position with line of sight instead of charging to point-blank. Her other units steer clear of the barrage she just called down.
+Princess now leads her targets. She works out where each enemy is heading and how long her shells take to arrive, then fires at where they'll be, aiming for the thickest cluster rather than a single unit. She fires Homing Arrow IV when a friendly TAG unit can paint the target, and her TAG spotters hold a standoff position with line of sight instead of charging to point-blank. Her other units steer clear of the barrage she just called down. CASPAR gets all of that from her.
 
 In 0.51.01 both bots read artillery better, theirs and yours:
 
@@ -601,7 +601,7 @@ We've considerably improved these behaviors, but we do still see problems, and y
 
 None of these is a headline on its own. Together they add up to a bot that wastes less and judges better:
 
-- **Shared ammo.** When several launchers draw from one ammo bin, Princess counts the shots left, shares them out, and skips any shot that isn't worth the ammo.
+- **Shared ammo.** When several launchers draw from one ammo bin, the bot counts the shots left, shares them out, and skips any shot that isn't worth the ammo.
 - **Kill chances.** The bots judge their chance of finishing a target off more closely, vehicles and 'Meks alike, so they know when a kill is on the table.
 - **Heat.** They account for engine hit heat when planning fire and manage their own heat-generating equipment. They also know a 'Mek that's only overheated for a turn will move again, so its crew stays aboard. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
 - **Tactical Genius.** They save the reroll for an initiative they've lost, which is more discipline than some of us manage.
@@ -610,7 +610,7 @@ None of these is a headline on its own. Together they add up to a bot that waste
 - **Gun emplacements.** The bots site a gun emplacement for its field of fire, spaced out from the others and out of the water. You'll notice it most on town maps.
 - **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
 
-The bots have picked up a few new tricks with their kit as well. Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.) Give it tractors and trailers and it hitches them up itself. Princess can now arrive by walking on from the map edge, and she can plan jumps with mechanical jump boosters.
+The bots have picked up a few new tricks with their kit as well. Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.) Give it tractors and trailers and it hitches them up itself. Both bots can now arrive by walking on from the map edge, and they can plan jumps with mechanical jump boosters.
 
 If you play from MekHQ, the bots in a scenario now start with the default bot settings you chose in Client Settings, and a bot force's combat posture is saved with your campaign.
 
