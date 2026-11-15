@@ -592,7 +592,7 @@ A lot of small improvements add up to a bot that wastes less and judges better:
 - **Walk-on deployment.** Princess can now arrive by walking on from the map edge.
 - **Minefields.** The bots lay tripwires and pitfalls as well as the usual mines. They pick spots that suit the units they're facing, spread their mines out, and set a vibrabomb's trigger weight to match the enemy's 'Meks. They also steer around the EMP mines, pitfalls and tripwires they know about.
 - **Hidden units.** After an enemy moves, a bot looks at its hidden units and decides whether revealing one to open fire is worth it. How readily it does depends on its Aggression setting.
-- **Recon cameras.** Bot units carrying a recon camera use it to spot.
+- **Recon cameras.** Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.)
 - **Trailers.** Give a bot tractors and trailers and it hitches them up itself.
 - **Gun emplacements.** The bots site a gun emplacement for its field of fire, spaced out from the others and out of the water. You'll notice it most on town maps.
 - **Mechanical jump boosters.** Princess can plan jumps with mechanical jump boosters.
