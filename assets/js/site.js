@@ -389,6 +389,13 @@ function renderReleaseTable( table, data ) {
 // Most recent days of daily deltas to plot, so the x-axis does not grow without bound.
 const DOWNLOAD_CHART_DAYS = 14;
 
+// Older snapshots added up every file on a release, including the launcher's
+// update-check file. Newer ones (basis "packages") count program packages only.
+// A day that spans the two is not a real download figure, so it is left as a gap.
+function isSameCountBasis( currentPoint, previousPoint ) {
+  return ( currentPoint.basis || "all-files" ) === ( previousPoint.basis || "all-files" );
+}
+
 function loadDownloadChart() {
   let canvas = document.getElementById( "download-chart" );
 
@@ -425,17 +432,24 @@ function renderDownloadChart( canvas, history ) {
   let labels = allLabels.slice( firstLabelIndex );
 
   let datasets = Object.keys( repos ).map( ( repo ) => {
-    let totalsByDate = {};
-    ( repos[ repo ] || [] ).forEach( ( point ) => { totalsByDate[ point.date ] = point.total; } );
+    let pointsByDate = {};
+    ( repos[ repo ] || [] ).forEach( ( point ) => { pointsByDate[ point.date ] = point; } );
 
     let data = labels.map( ( label, index ) => {
       let previousDate = dates[ firstLabelIndex + index ]; // the snapshot before labels[index]
-      let current = totalsByDate[ label ];
-      let previous = totalsByDate[ previousDate ];
+      let currentPoint = pointsByDate[ label ];
+      let previousPoint = pointsByDate[ previousDate ];
 
-      if ( current == null || previous == null ) {
+      if ( currentPoint == null || previousPoint == null ) {
         return null;
       }
+
+      if ( !isSameCountBasis( currentPoint, previousPoint ) ) {
+        return null;
+      }
+
+      let current = currentPoint.total;
+      let previous = previousPoint.total;
 
       // Clamp at zero so a re-tagged release can never show a negative day.
       return Math.max( 0, current - previous );
@@ -533,6 +547,10 @@ function renderVersionChart( canvas, history, repo ) {
       let previous = ( series[ seriesIndex ].versions || {} )[ version ];
 
       if ( current == null ) {
+        return null;
+      }
+
+      if ( previous != null && !isSameCountBasis( series[ seriesIndex + 1 ], series[ seriesIndex ] ) ) {
         return null;
       }
 
