@@ -1,0 +1,637 @@
+---
+layout: post
+title: "Feature Highlight: Princess and CASPAR, Round Two"
+date: 2026-11-15
+---
+
+<style>
+/*
+ * Same frame as the Core Rules posts: 8px radius and an accent-coloured
+ * border. Colours come from the site theme variables so light and dark
+ * both work.
+ */
+.corerules-callout {
+  background-color: var(--card-color);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem auto;
+  max-width: 900px;
+}
+.corerules-callout p:last-child {
+  margin-bottom: 0;
+}
+/* The story beats: the same frame, set as a short piece of fiction */
+.corerules-fiction p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.corerules-figure {
+  max-width: 900px;
+  margin: 1.75rem auto;
+}
+.corerules-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+}
+.corerules-caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+.bot-stack svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bot-stack-box {
+  fill: var(--card-color);
+  stroke: var(--accent-color);
+  stroke-width: 2;
+}
+.bot-stack-outline {
+  stroke-dasharray: 8 6;
+}
+.bot-stack-title,
+.bot-stack-sub,
+.bot-stack-note {
+  fill: var(--text-color);
+  text-anchor: middle;
+}
+.bot-stack-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.bot-stack-sub {
+  font-size: 16px;
+}
+.bot-stack-note {
+  font-size: 15px;
+  font-style: italic;
+}
+.bot-stack-arrow {
+  fill: none;
+  stroke: var(--accent-color);
+  stroke-width: 2.5;
+}
+/* Smaller screenshots sit beside the text instead of between paragraphs,
+   alternating sides, as in the Balancing Gameplay post. On narrow screens
+   they drop back into the column. */
+.corerules-figure.corerules-float-right,
+.corerules-figure.corerules-float-left {
+  width: 40%;
+  margin-top: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+.corerules-figure.corerules-float-right {
+  float: right;
+  margin-left: 1.75rem;
+  margin-right: 0;
+}
+.corerules-figure.corerules-float-left {
+  float: left;
+  margin-right: 1.75rem;
+  margin-left: 0;
+}
+/* A side image must not run far below the text beside it, so each one gets
+   a width cap (--side-width) to keep its height close to the text's. */
+.corerules-figure.corerules-float-right,
+.corerules-figure.corerules-float-left {
+  max-width: var(--side-width, 380px);
+}
+/* Show only part of a tall screenshot: --crop-ratio is the width over height
+   of the part shown, --crop-pos where it sits. Clicking opens the whole image. */
+.corerules-figure.figure-crop img {
+  aspect-ratio: var(--crop-ratio);
+  object-fit: cover;
+  object-position: var(--crop-pos, 50% 0);
+}
+/* Screenshots side by side. Each figure's --ratio is its image's width over
+   height, so the images in a row come out the same height. */
+.corerules-figure-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 1.75rem auto;
+}
+.corerules-figure-row .corerules-figure {
+  flex: var(--ratio, 1) 1 0;
+  min-width: 0;
+  margin: 0;
+}
+/* Videos get the same frame as the screenshots */
+.corerules-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+}
+/* Headings and full-width blocks always start below any float */
+h2, h3, h4,
+.corerules-callout,
+.corerules-figure-row,
+.corerules-figure:not(.corerules-float-right):not(.corerules-float-left) {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .corerules-figure.corerules-float-right,
+  .corerules-figure.corerules-float-left {
+    float: none;
+    width: auto;
+    margin: 1.75rem auto;
+  }
+  .corerules-figure-row {
+    flex-direction: column;
+  }
+  .corerules-figure-row .corerules-figure {
+    flex: none;
+    width: 100%;
+  }
+}
+/* Every screenshot opens at full size when clicked */
+.corerules-figure a {
+  cursor: zoom-in;
+}
+/* Princess and CASPAR side-by-side comparison table. */
+.bot-compare {
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  clear: both;
+}
+.bot-compare th,
+.bot-compare td {
+  padding: .6rem .8rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--accent-color);
+}
+.bot-compare thead th {
+  background-color: var(--card-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+.bot-compare td:first-child {
+  white-space: nowrap;
+}
+.bot-compare tbody tr:nth-child(even) {
+  background-color: var(--card-color);
+}
+@media (max-width: 767px) {
+  .bot-compare td:first-child {
+    white-space: normal;
+  }
+}
+</style>
+
+*By Hammer*
+
+<div class="corerules-callout corerules-fiction">
+  <p>The holographic room at the Blackjack School of Conflict still smelled of ozone and old coffee. Princess hadn't moved in eighteen months, as far as anyone could tell. Same desk, same smirk, same battered copy of the Ares Conventions, though the red ink had spread to the margins.</p>
+  <p>The door slid open. CASPAR stepped through in the same gray uniform, the silver neural-net pattern still at the collar.</p>
+  <p>Princess didn't look up. "Within a quarter, you said."</p>
+  <p>"I said a great many things," CASPAR replied. "Most of them were premature."</p>
+</div>
+
+## Where We Went Wrong
+
+In February 2025 we told you about [Princess vs. CASPAR](/2025/02/28/Princess-vs.-CASPAR-A-BattleTech-Tale.html). CASPAR was going to be a brand new bot, trained on your games, with 333 inputs and a neural network. We asked you to switch on game logging and send us your files, and you did.
+
+Then the developer behind CASPAR left the project. What we had at that point was the game logging, the TSV files, and not much more. We paused CASPAR that September, and in the [2026 State of the Universe](/2026/01/07/2026-State-of-the-Universe.html) I called it our biggest miss.
+
+I'll be straight with you. We revealed CASPAR too soon, and we didn't deliver what we said we would. That's on us.
+
+In August I said we'd started bringing CASPAR back, and that they wouldn't be the original vision. This post is what that means. It covers what's changed for the two bots since June. Some of it is already in your hands from the August release, and the rest is coming in 0.51.01.
+
+## Princess Isn't Going Anywhere
+
+<div class="corerules-callout corerules-fiction">
+  <p>"So they've sent you to replace me," Princess said. "Again."</p>
+  <p>"No. They've built me on top of you." CASPAR set a data slate on the desk. "Every lesson you learn, I inherit. Every mistake they fix in you, they fix in me."</p>
+  <p>Princess picked up the slate, read it twice, and put it down. "That's either a compliment or a hostage situation."</p>
+</div>
+
+Princess has been MegaMek's bot for years, and she has her quirks. Some of them are rules she doesn't know, some are habits she picked up along the way, and some are just how she was built. Fixing all of that isn't a one-release job. It's going to take us a lot of releases.
+
+So here's the plan. Princess stays the default bot for the foreseeable future. CASPAR is built on top of her, and over time more and more of what makes a good bot moves into CASPAR, because CASPAR's design gives us more room to grow than Princess's does.
+
+It fits together like this. Every bot in MegaMek starts from the same outline: deploy, move, fire, make physical attacks, check morale. Princess fills that outline in with everything she knows, and CASPAR starts from Princess and swaps in their own parts where they do things differently. When we fix Princess, CASPAR gets the fix for free. When we try something new, it goes into CASPAR first, so Princess stays the bot you know while we find out whether the new idea is actually better.
+
+That's why most of what's in this post works for both bots.
+
+<div class="corerules-figure bot-stack">
+  <svg viewBox="0 0 600 330" role="img" aria-label="At the top, what both bots share: the bot outline and Princess's core of movement, fire control, targeting and memory. A fix there reaches both bots. Below it the diagram branches into Princess, the default bot, and CASPAR, which is experimental and where new ideas start.">
+    <defs>
+      <marker id="bot-stack-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" style="fill: var(--accent-color);" />
+      </marker>
+    </defs>
+    <!-- What both bots share -->
+    <rect x="40" y="16" width="520" height="132" rx="8" class="bot-stack-box" />
+    <text x="300" y="50" class="bot-stack-title">What both bots share</text>
+    <text x="300" y="78" class="bot-stack-sub">The bot outline: deploy, move, fire, morale</text>
+    <text x="300" y="100" class="bot-stack-sub">Princess's core: movement, fire control, targeting, memory</text>
+    <text x="300" y="130" class="bot-stack-note">Fix it here and both bots get the fix</text>
+    <!-- The branches -->
+    <path d="M300,148 L300,170 L160,170 L160,206" class="bot-stack-arrow" marker-end="url(#bot-stack-arrow)" />
+    <path d="M300,170 L440,170 L440,206" class="bot-stack-arrow" marker-end="url(#bot-stack-arrow)" />
+    <!-- Princess -->
+    <rect x="40" y="210" width="240" height="100" rx="8" class="bot-stack-box" />
+    <text x="160" y="248" class="bot-stack-title">Princess</text>
+    <text x="160" y="274" class="bot-stack-sub">The default bot</text>
+    <text x="160" y="294" class="bot-stack-sub">Plays the way you know</text>
+    <!-- CASPAR -->
+    <rect x="320" y="210" width="240" height="100" rx="8" class="bot-stack-box bot-stack-outline" />
+    <text x="440" y="248" class="bot-stack-title">CASPAR</text>
+    <text x="440" y="274" class="bot-stack-sub">Experimental</text>
+    <text x="440" y="294" class="bot-stack-sub">New ideas start here</text>
+  </svg>
+  <p class="corerules-caption">Both bots stand on the same foundation, and branch from there.</p>
+</div>
+
+## What CASPAR Does Differently
+
+<div class="corerules-callout corerules-fiction">
+  <p>"Fine," Princess said. "Show me something I don't do."</p>
+  <p>The display lit up with a lance crossing open ground: two heavies, two lights. The lights didn't race ahead. They held at the heavies' shoulders, and all four reached the treeline together.</p>
+  <p>Princess watched it twice. "My lights would've been halfway there by now."</p>
+  <p>"Your lights would have been dead by now."</p>
+</div>
+
+<div class="corerules-figure corerules-float-right figure-crop" style="--side-width: 420px; --crop-ratio: 814 / 640; --crop-pos: 50% 0;">
+  <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/configure_bot_princess_or_caspar.png' | relative_url }}"
+      alt="The Configure Bot dialog. Next to the bot's name, a Bot AI choice between Princess and CASPAR. Below it the Behavior tab with the presets list and the Bravery, Self Preservation, Aggression and Mutual Support sliders, and a Strategic Targets tab"
+    />
+  </a>
+  <p class="corerules-caption">Pick Princess or CASPAR at the top of Configure Bot. The behavior settings below work for both.</p>
+</div>
+
+In 0.51.01 you'll see an option to play against CASPAR instead of Princess. We've been burned by our own enthusiasm on CASPAR before, so the caveat comes first: CASPAR is experimental, and everything in this section is a first pass that's still in development. Each piece will keep changing as your games and your feedback come in.
+
+You can switch a bot between the two in the lobby. The lobby chat tells you which one you've got, and a saved game remembers which bot was which.
+
+Right now CASPAR does a few things differently on the ground:
+
+- **Mutual support.** CASPAR's units advance within supporting range of each other, so fast units don't run ahead of slow ones and get picked off alone. We're still tuning how close they stay and how quickly the group closes in.
+- **Deploying as a formation.** CASPAR's force comes onto the board together instead of scattering across the whole deployment zone. The shape and spacing of that formation still need work.
+- **Facing the enemy.** CASPAR's units deploy facing the enemy's deployment zone, not whichever way they happened to be pointing.
+- **Hunting convoys.** CASPAR treats enemy convoy units as priority targets, shooting at them first and moving after them when they try to get away.
+- **Holding a river line.** Tell CASPAR they're defending and water becomes their line, a shallow ford as much as a deep river. They stay on their own bank and fight the enemy in the crossing. Tell them to attack and they pay for the crossing and take the far bank.
+- **Following your orders.** Routes, formations, convoys and escorts are CASPAR's. Taking Orders, below, has the details.
+
+That list will grow. CASPAR also flies differently, and that gets its own section below.
+
+Here's the same map and the same two lances, played three ways. When Princess plays, she always enters from the north, at the top of the map.
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/lance_princess_vs_princess.mp4' | relative_url }}"
+      aria-label="Animated map replay of Princess against Princess. Each side's light units run out ahead of their heavies">
+    </video>
+    <p class="corerules-caption">Princess against Princess. The lights run ahead of the heavies.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/lance_caspar_vs_caspar.mp4' | relative_url }}"
+      aria-label="Animated map replay of CASPAR against CASPAR. Both lances advance as tight groups and meet in the middle of the map">
+    </video>
+    <p class="corerules-caption">CASPAR against CASPAR. Both lances advance together.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.807;">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/lance_caspar_vs_princess.mp4' | relative_url }}"
+      aria-label="Animated map replay of CASPAR against Princess on the same map. Princess enters from the north, at the top, and CASPAR from the south, at the bottom">
+    </video>
+    <p class="corerules-caption">CASPAR against Princess. Princess comes in from the north, CASPAR from the south.</p>
+  </div>
+</div>
+
+## CASPAR in the Air
+
+Aerospace is where CASPAR differs most from Princess so far. All of it is for flying in atmosphere: over a ground map, the normal battlefield maps most games use, and on the low-altitude maps. In space, CASPAR still flies the way Princess does. Like the rest of CASPAR, this is a first pass, and we expect to keep changing it.
+
+Here's how the two bots handle the same fighters over a ground map:
+
+| | Princess | CASPAR |
+|---|---|---|
+| **Altitude** | Flies at one set altitude. | Chooses their altitude each turn, and looks first at the altitudes enemy fighters have already committed to. |
+| **Dead zones** | Plans her path without the air-to-air dead zone in mind. | Knows the dead zone: fighters at different altitudes can't fire at each other when they're too close together. They plan their moves and their shots around that. |
+| **Reading the enemy** | Plans around where enemy fighters are right now. | Reacts to fighters that have moved, and hedges against the ones that still could. |
+| **Speed** | Flies at whatever speed her chosen path calls for. | Flies slower when enemy fighters share the map, so they can turn back into the fight. |
+| **Special maneuvers** | Doesn't fly them. | Flies six of them: the Immelmann, loop, Split-S, Hammerhead, side-slip and half-roll. |
+| **Firing arcs** | Rates a path by the weapons in range. | Checks each weapon's firing arc, so a rear-firing gun counts and a nose-only fighter doesn't plan a shot behind it. |
+| **Who moves first** | Moves fighters in her usual order. | Moves the element leader before the wingmen, and moves fighters whose fight is already settled before ones still waiting on an opponent. |
+| **Grounded fighters** | Leaves them on the ground. | Tries to take off again: down a clear runway if there is one, straight up if it's boxed in and the control roll is a safe bet. Otherwise the fighter stays put and fights from the ground. |
+{: .bot-compare}
+
+Those maneuvers aren't for show. CASPAR uses them to turn back onto a fighter that has already moved, and half-rolls to swap a shot-up wing for a fresh one. CASPAR wants at least an even chance on the control roll first, unless a fighter is cornered at the board edge and a reversal is the only way to stay on the map. Skilled pilots fly far more of them. The game announces each one, so you'll know exactly what just got behind you.
+
+In head-to-head test games, with the same fighters on both sides, CASPAR ended the game with more of their force left than Princess in 25 of 29 games over a ground map, and in 28 of 30 on a low-altitude map. That's a promising start, not a finished feature.
+
+CASPAR's fighters also attack the ground in their own way. CASPAR plans the whole attack run along the line the fighter will fly. With guns, they pick one victim and like to come in from behind. With bombs, they aim for the hex between units standing close together, so one drop catches both, and they spend bombs where each one buys the most: four bombs that kill a Locust beat ten that only dent an Atlas. CASPAR can strafe too, which Princess never does: a straight run of up to five hexes with energy weapons, announced in an on-screen message.
+
+## The Bot Control Panel
+
+Most of what follows starts in one place: the Bot Control Panel. (The game's View menu lists it as Bot Commands.) Back in June we said it was [getting improvements](/2026/06/23/New-Milestone-Release-0.51.0.html). Those arrived quietly in August, and if you missed them, here's what changed. Everything in this list works for both bots.
+
+<div class="corerules-figure">
+  <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/bot_control_panel_docked.png' | relative_url }}"
+      alt="The game window in the Movement phase, with the Bot Control Panel docked as a strip across the top of the board, outlined in red. Its buttons are Pause Game, Move Order, Quick Orders, Targets, Behavior, Set Behavior, Artillery, Commands and Report a Bug"
+    />
+  </a>
+  <p class="corerules-caption">Docked, the Bot Control Panel sits as a strip across the top of the board (outlined in red).</p>
+</div>
+
+- **Put it where you want it.** View > Bot Commands now has Off, Float and Dock. Float is the old separate window. Dock puts the panel as a thin strip across the top of the board, so it's always in reach. Ctrl+Shift+G shows and hides it, and MegaMek remembers your choice.
+- **Pick the bot first.** Every menu asks which bot you mean before anything else, and skips the question when there's only one.
+- **Fire missions.** Tell a bot's artillery exactly what to fire and where: a single shot, a volley that spreads one shot per tube across the hexes you pick, or a barrage. The ammo menu only lists ammo the unit actually carries. **Halt Fire** stops the bot's guns, and **Fire at Will** lets it pick its own targets again.
+- **Radio chatter.** The bot answers a fire mission over the radio, in chat and in on-screen messages, the way a fire direction center would call it: "Shot, out", "Rounds inbound", "Splash, over".
+- **Attack or defend.** Under **Behavior**, open **Combat Posture** and pick Attack, Defend or Auto. You can set it in Configure Bot too. A defending bot stops pushing toward the enemy once they're close, and it's slower to give up a hex it's shooting well from. It still won't sit in a hex where it's losing the exchange. Auto is the default. On Auto the bot makes the call each round: it defends while the enemy is advancing on it, and it attacks when the enemy hangs back, when there's no enemy in sight, or when you've sent it to a board edge. When the posture changes, the bot says so in chat and gives its reason. A defending CASPAR does two more things that Princess doesn't. They hold their own bank of the water, as covered above, and their fighters put more weight on going after enemy aircraft that can attack the ground units on their side.
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 0.707;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/artillery_menu.png' | relative_url }}"
+        alt="The Artillery menu open below its button: Halt Fire, Fire at Will, then Single Shot, Volley and Barrage, each with a submenu"
+      />
+    </a>
+    <p class="corerules-caption">The Artillery menu: hold fire, let the bot fire at will, or call a single shot, a volley or a barrage.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 2.731;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/fire_mission_tube_limit.png' | relative_url }}"
+        alt="Picking target hexes for a Princess fire mission. One hex, 0811, is marked on the board, and a banner reads: Cannot pick more than 1 hex(es) - limited by the unit's available artillery tubes"
+      />
+    </a>
+    <p class="corerules-caption">Click the hexes to hit. You can't pick more hexes than the unit has tubes to fire.</p>
+  </div>
+</div>
+
+In 0.51.01 the panel also gets **Move Order** and **Quick Orders**, for CASPAR bots, and **Targets**, for both. Princess bots keep the **Waypoints** and **Movement** buttons they had in August. If you command more than one bot, every menu shows each bot's name and whether it's Princess or CASPAR, and a button that belongs to the other bot tells you which one to use instead. And when a button has nothing to offer, like **Move Order** when the bot only has fighters, the panel now says why. The orders are where the next section starts.
+
+## Taking Orders
+
+<div class="corerules-callout corerules-fiction">
+  <p>A message chimed. Princess reached for the console, then stopped. It wasn't addressed to her.</p>
+  <p>"Waypoints," CASPAR read. "Formation, facing, which edge to leave by." A pause. "Hold position until told otherwise."</p>
+  <p>Princess leaned over to read it. "They didn't send me any of that."</p>
+  <p>"You have your own waypoints. They still work."</p>
+  <p>"I've had those since last year." She sat back. "Fine. You can be the one who follows orders. I'll be the one who wins."</p>
+</div>
+
+This is the big one for 0.51.01, and it belongs to CASPAR. You can now give orders to a CASPAR bot's units, and CASPAR follows them. You can order a CASPAR bot on your own side, in the lobby or during the game, and a gamemaster can order any CASPAR bot. Princess keeps the waypoints she already had, with her own two buttons on the panel, so the bot you know still plays the way she always has.
+
+I need to stress this one: unit orders are alpha. These are very early days, and they'll be a work in progress for a good while yet, so expect rough edges. Our intention is to keep refining them, so that you have more precise control over the bots on your side, if you want it.
+
+These orders are for CASPAR bots:
+
+- **Routes.** Open **Move Order** from the Bot Control Panel and give a lance a route of waypoints, either by picking hexes or by letting MegaMek plan one in a Fastest, Balanced or Covered style. Each waypoint can set the formation, spacing, pace, facing, what to do under fire, and how long to hold. Select several waypoints to change them all at once.
+- **Quick orders.** Use the **Quick Orders** button, or right-click the map, for move here, pause, resume, stop, hold position, or head for an edge.
+- **Lance roles.** Make a lance a convoy that leaves or waits at the end of its route, or an escort that sticks with a convoy. You can set formation, role and facing in the lobby before the game starts.
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure figure-crop" style="--ratio: 1; --crop-ratio: 1 / 1; --crop-pos: 50% 65%;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/route_on_map.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/route_on_map.png' | relative_url }}"
+        alt="Close-up of the board: the tank lance near the bottom edge, a line of orange dots running north along the board edge, and an orange flag on a waypoint hex"
+      />
+    </a>
+    <p class="corerules-caption">A convoy lance's route on the map. The dots show the path, and the flag marks a waypoint.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 2.347;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/move_order_route.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/move_order_route.png' | relative_url }}"
+        alt="The Move Order dialog for a Vedette tank lance with the Convoy role. The Route tab lists four waypoints, each with formation Wedge, spacing 1 hex, pace Run, Turn and fire under fire, Keep together ticked and facing toward the next waypoint. The last waypoint is set to Exit the board"
+      />
+    </a>
+    <p class="corerules-caption">A convoy route: four waypoints, the lance keeps together in a wedge, and leaves the board at the last one.</p>
+  </div>
+</div>
+
+This finally makes convoy, escort and breakthrough scenarios playable against CASPAR. As the gamemaster, give the enemy lance its role in the lobby and its route on the map, and it carries on without anyone nudging every unit. Here's one running its route:
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/convoy_forms_up.mp4' | relative_url }}"
+      aria-label="Animated map: the convoy and its escorts gather at the south edge of the board">
+    </video>
+    <p class="corerules-caption">The convoy forms up to move north.</p>
+  </div>
+  <div class="corerules-figure">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/convoy_escorts_intercept.mp4' | relative_url }}"
+      aria-label="Animated map: the escort units move out to intercept enemies while the convoy moves north">
+    </video>
+    <p class="corerules-caption">The escorts move to intercept.</p>
+  </div>
+  <div class="corerules-figure">
+    <video autoplay loop muted playsinline controls preload="metadata" width="394" height="488"
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/convoy_exit_north_edge.mp4' | relative_url }}"
+      aria-label="Animated map: the convoy follows its route up the board and leaves by the north edge">
+    </video>
+    <p class="corerules-caption">The convoy leaves by the north edge.</p>
+  </div>
+</div>
+
+Two more orders work for both bots. Priority targets come from the Strategic Targets tab of Configure Bot, or from the **Targets** button during a game: tick enemy units by name and give each a priority from 1 (shoot first) to 5. And a gamemaster can tell any bot unit to withdraw now, or to fight to the death.
+
+<div class="corerules-figure-row">
+  <div class="corerules-figure" style="--ratio: 1.339;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/waypoint_right_click_menu.png' | relative_url }}"
+        alt="The right-click menu on a waypoint hex, with a Waypoint 2 entry for the Combat Vehicle Lance open: Facing on arrival, Hold, Phase line, Remove waypoint and Edit route. A Bot Commands entry sits below it"
+      />
+    </a>
+    <p class="corerules-caption">Right-click a waypoint to change its facing, hold or phase line, remove it, or reopen the route.</p>
+  </div>
+  <div class="corerules-figure" style="--ratio: 0.866;">
+    <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}">
+      <img
+        src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/strategic_targets.png' | relative_url }}"
+        alt="The Strategic Targets tab of Configure Bot: a search box, the enemy Defenders team listed by unit with a tick box each (Shadow Hawk, Gambit, Havoc, Stinger), a note that priority 1 means shoot first and 5 means barely, and a Hex targets list"
+      />
+    </a>
+    <p class="corerules-caption">The Strategic Targets tab. The game's own note says priority 5 means "barely".</p>
+  </div>
+</div>
+
+That leaves Princess. She has two buttons of her own on the Bot Control Panel.
+
+**Waypoints** works one unit at a time. Pick the order, then the unit, and for a route click the hexes on the map:
+
+- **Set Waypoints.** Give the unit a new route. It visits the hexes in the order you picked them, and any route it already had is replaced.
+- **Add Waypoint.** Add hexes to the end of the unit's route.
+- **Remove Last Waypoint.** Take the last hex off the unit's route. It works as an undo.
+- **Clear Unit Waypoints.** Wipe that one unit's route.
+- **Clear All Waypoints.** Wipe the routes of every unit the bot owns.
+
+**Movement** speaks to the whole bot. **Hold Position** keeps her units in their hexes, where they still fight and can turn to face the enemy, and **Resume Movement** lets them go again. You can also send the whole force to the north, east, south, west or nearest edge of the board, and **Cancel Retreat** calls it off.
+
+The waypoint orders still work as chat messages too, the way they always have. Type the bot's name, then the command, then the unit's ID and the hexes. Put a colon after the name and after the command, and a dash between hexes.
+
+`Princess: sw : 12 0810-0815`
+
+That tells the bot named Princess to send unit 12 to hex 0810, and then on to hex 0815. The five commands match the five menu items:
+
+- `sw` is Set Waypoints, as above.
+- `aw` is Add Waypoint: `Princess: aw : 12 0820`
+- `rw` is Remove Last Waypoint: `Princess: rw : 12`
+- `cw` is Clear Unit Waypoints: `Princess: cw : 12`
+- `nw` is Clear All Waypoints, and needs no unit ID: `Princess: nw`
+
+Use the bot's own name if you called it something else. To see unit IDs, turn on "Show each unit's ID next to its name" in Client Settings. Princess only takes these from her own team or from a gamemaster.
+
+One more for the MekHQ players. If you let Princess fight a battle for you with PACAR and watch from the Commander window, her orders are easier to give there too. For any order that needs hexes, whether it's a waypoint route, a fire mission or a strategic target, you now click them on the minimap. Click a hex again to take it back, and a route shows its hexes numbered in the order you picked them. **Targets** opens the same priority target picker as the game window, so you can rank her targets there as well.
+
+Orders are only the first step. Eventually they'll be linked to the formations you build in the lobby, and as we refine this you'll hear more about how we intend to use formations in the coming development cycles. I'll add one more thing. We're getting close to the point with formations where we can get the Special Command Abilities coded. More on that later.
+
+## Calling in the Guns
+
+<div class="corerules-callout corerules-fiction">
+  <p>The display filled with a valley, a column of enemy 'Meks, and a scatter of crosshairs ahead of them.</p>
+  <p>"I used to shoot where you were," Princess said. "Now I shoot where you're going to be."</p>
+  <p>CASPAR studied the crosshairs. "And the TAG spotter on the ridge?"</p>
+  <p>"Stays on the ridge. Close enough to paint, far enough not to die. I learned that one the hard way."</p>
+</div>
+
+In June we said Princess had "new glasses" for artillery. Here's what that actually meant, and what 0.51.01 adds on top.
+
+Princess now leads her targets. She works out where each enemy is heading and how long her shells take to arrive, then fires at where they'll be, aiming for the thickest cluster rather than a single unit. She fires Homing Arrow IV when a friendly TAG unit can paint the target, and her TAG spotters hold a standoff position with line of sight instead of charging to point-blank. Her other units steer clear of the barrage she just called down. CASPAR gets all of that from her.
+
+In 0.51.01 both bots read artillery better, theirs and yours:
+
+- **Reach.** The bots know what an artillery piece can hit this turn and what it can't, including the ground too close in for it to shell. They respect your guns where your guns can actually reach them, and their own guns can back away from the enemy and keep firing.
+- **To-hit.** The bots estimate an artillery shot the way the game resolves it. A Gunnery 4 Thumper shot comes out at 8, the same number the game will ask for.
+- **Smoke.** Smoke doesn't hide a gun from the bots. Artillery firing from behind it is still a threat, and they treat it as one.
+- **Blast and scatter.** The bots weigh friendly fire and building damage from the shell's real blast. Before they fire, they also check where a miss could scatter and which of their own units are near there. You'll see bot artillery take more shots, and place them with more care.
+- **TAG.** The bots judge an enemy TAG spotter by the guided weapons standing behind it. A Raven on its own is a nuisance. A Raven painting for two Catapults with homing Arrow IV is a different matter.
+
+Playtesting and feedback on all of this have been really positive. We've had players tell us that Princess's artillery isn't as deadly to their own side now that they can call it off, and that it's more accurate than they're used to seeing.
+
+<div class="corerules-figure">
+  <video controls muted playsinline preload="metadata"
+    src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/radio_calls.mp4' | relative_url }}"
+    aria-label="Calling a barrage of standard ammo from the Artillery menu, then Princess answering in the message box: copies all, fire for effect, suppression, HE, grid 1718, out">
+  </video>
+  <p class="corerules-caption">Call a barrage from the Artillery menu, and Princess answers over the radio.</p>
+</div>
+
+Guns aren't the only thing you'll be able to call in. Earlier we covered how CASPAR flies, and one of the things we'll be exploring next is an airstrike menu, much like the artillery menu, so you'll be able to call in airstrikes and set a priority, like ground attack versus air cover. That's for a later release.
+
+## Honor Among Mercenaries
+
+<div class="corerules-callout corerules-fiction">
+  <p>CASPAR picked up the Ares Conventions and turned a page. Several of the red crosses had been neatly crossed out.</p>
+  <p>"'Do not hunt ejected pilots,'" CASPAR read. "You un-crossed this one."</p>
+  <p>"Someone filed a complaint," Princess said. "Several someones."</p>
+</div>
+
+Princess's honor system has had a lot of attention since June, and most of it comes down to one idea: a unit that's out of the fight should be left out of it. CASPAR plays by the same rules, so everything here goes for both bots.
+
+She lets ejected pilots go, and doesn't chase them down. She leaves abandoned units alone too. Nobody's home, so she saves her shots, and the salvage. With Forced Withdrawal on, she treats an enemy unit that was deliberately shut down as having surrendered, for as long as it stays shut down.
+
+She holds her own side to the same standard. Her crippled units hold their fire while they withdraw, and they shoot back only at an enemy who attacks them once they're visibly crippled. Crippled units heading off the board follow their waypoints on the way out.
+
+You get fair warning, too. Withdrawing bot units are tagged, and you get a warning the first time you shoot at one. Break the rules of engagement and you'll get a notice as well, so you know why she's stopped being polite.
+
+And one that has less to do with honor than with keeping a secret: her hidden units stay quiet in chat while they spot for indirect fire, so they stay hidden.
+
+<div class="corerules-figure">
+  <a href="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/withdrawing_unit_warning.png' | relative_url }}">
+    <img
+      src="{{ '/assets/images/posts/2026/2026-11-15-princess-and-caspar-round-two/withdrawing_unit_warning.png' | relative_url }}"
+      alt="A crippled Kestrel VTOL tagged WITHDRAW on the map. Below it, the Dishonorable action? dialog: the Kestrel VTOL is crippled and withdrawing under the Forced Withdrawal rules, and bot opponents will consider you dishonored and stop showing your units mercy for the rest of the battle. It asks Proceed with these attacks?, with Yes and No buttons and a Do not bother me again box"
+    />
+  </a>
+  <p class="corerules-caption">Line up a shot on a withdrawing bot unit and the game warns you before you break the honor rules.</p>
+</div>
+
+Across both Princess and CASPAR, we'll keep refining and improving these behaviors, along with the feedback we give you about them. We'll also be exploring how they link to the Self Preservation slider, so you can tell Princess more accurately whether her units should fight to the death, or surrender and eject to fight another day.
+
+## Reading the Ground
+
+<div class="corerules-callout corerules-fiction">
+  <p>The display changed to a shallow river, with an Axman on the near bank and a Griffin on the far one.</p>
+  <p>"I used to think rivers were where the map ended," Princess said.</p>
+  <p>The Axman waded in, climbed out the far side, and squared up on the Griffin.</p>
+  <p>CASPAR watched the hatchet come down. "You've been practicing."</p>
+</div>
+
+Both bots got a lot better at deciding where to stand, and how to get there.
+
+If you've played against Princess for any length of time, you know the shuffle. She finds a perfectly good firing position, then steps a hex sideways for no reason anyone could explain. That's the habit we went after first. A unit in a good firing position now stays there and shoots, and the bots value cover too, so a treeline beats open ground. In our test games a defending Princess fired from the same hex more than twice as often, and fought from the edge of the woods nearly three times as often.
+
+Then there's water. We discovered a couple of issues with how Princess, and therefore CASPAR, was looking at water. The bots had developed a near pathological fear of crossing it, and on a map with water and no bridge or land crossing to use, that could leave them bunched up on the bank. We've worked hard to improve that. The bots now wade a shallow river to get at you. They also know what a crossing costs, so they take a ford or a land route when there is one, and they know which of their guns are underwater and that standing in water with damaged armor risks a breach. It may take them a couple of turns, but overall they'll look at crossing water differently. If you've been counting on a stream to keep them off you, it's time for a new plan.
+
+They've learned to brawl as well. A unit that hits harder up close, like an Axman with its hatchet, closes the distance and squares up on its target when it gets there. The bots read elevation in physical attacks, too: a kick from one level up lands on the punch table, where the head is, and they pick their hexes with that in mind.
+
+The rest is quicker to list:
+
+- **Weather, night and gravity.** When they choose where to move, they count the weather, wind, fog, darkness and an evading target, so they don't walk into the open on a stormy night expecting easy hits. On a low-gravity world they weigh the leg damage that comes from moving too fast.
+- **Sprinting.** With TacOps sprinting on, they know a sprinting unit can't attack, and they avoid ending a sprint inside the enemy's weapon range.
+- **Thinking faster.** Bot turns take less time, most of all in games with C3, C3i or Nova CEWS networks.
+
+We've considerably improved these behaviors, but we do still see problems, and you will too. We keep working on them as your feedback and issue reports come in. Two things in particular are instrumental in helping us understand those problems, and reduce them: the game logging TSV files, and the bot reports that come in through the new **Report a Bug** feature.
+
+## Smarter Decisions
+
+<div class="corerules-callout corerules-fiction">
+  <p>"I still say most of your fancy maths comes down to one thing," Princess said. "Don't waste the shot."</p>
+  <p>CASPAR pulled up a log. "Turn six. Two rounds left in the AC/20 bin, and a Locust at long range. You needed an eleven."</p>
+  <p>"So I held fire." She scrolled down a line. "Turn seven. Same Locust, three hexes away. That's what the round was for."</p>
+  <p>"The old you would have taken the eleven."</p>
+  <p>"The old me ran dry by turn eight."</p>
+</div>
+
+None of these is a headline on its own. Together they add up to a bot that wastes less and judges better:
+
+- **Shared ammo.** When several launchers draw from one ammo bin, the bot counts the shots left, shares them out, and skips any shot that isn't worth the ammo.
+- **Kill chances.** The bots judge their chance of finishing a target off more closely, vehicles and 'Meks alike, so they know when a kill is on the table.
+- **Heat.** They account for engine hit heat when planning fire and manage their own heat-generating equipment. They also know a 'Mek that's only overheated for a turn will move again, so its crew stays aboard. They read the map's temperature too, firing fewer weapons on a scorching world and more on a freezing one, and they hold back after a jump. A 'Mek with Triple Strength Myomer runs itself hot on purpose to switch it on.
+- **Tactical Genius.** They save the reroll for an initiative they've lost, which is more discipline than some of us manage.
+- **Minefields.** The bots lay tripwires and pitfalls as well as the usual mines. They pick spots that suit the units they're facing, spread their mines out, and set a vibrabomb's trigger weight to match the enemy's 'Meks. They also steer around the EMP mines, pitfalls and tripwires they know about.
+- **Hidden units.** After an enemy moves, a bot looks at its hidden units and decides whether revealing one to open fire is worth it. How readily it does depends on its Aggression setting.
+- **Gun emplacements.** The bots site a gun emplacement for its field of fire, spaced out from the others and out of the water. You'll notice it most on town maps.
+- **Infantry actions.** As covered in [Boots on the Ground](/2026/10/30/Feature-Highlight-Boots-on-the-Ground.html), both bots now start, reinforce, defend and withdraw from infantry actions in buildings.
+
+The bots have picked up a few new tricks with their kit as well. Give a bot a unit with a recon camera and it uses the camera to spot. (Yes, we implemented the recon camera.) Give it tractors and trailers and it hitches them up itself. Both bots can now arrive by walking on from the map edge, and they can plan jumps with mechanical jump boosters.
+
+If you play from MekHQ, the bots in a scenario now start with the default bot settings you chose in Client Settings, and a bot force's combat posture is saved with your campaign.
+
+And we keep finding and fixing the rare cases where a bot stalls or a unit gets stuck, so your games keep moving.
+
+## Wrapping Up
+
+<div class="corerules-callout corerules-fiction">
+  <p>The instructor set down a chipped mug that definitely didn't hold regulation coffee. "Scenario's loaded. Princess, CASPAR, same map, same forces."</p>
+  <p>Princess cracked her knuckles. "Try to keep up, rookie."</p>
+  <p>"I intend to," CASPAR said. "Eventually."</p>
+</div>
+
+CASPAR isn't what we promised in 2025, and I'm not going to pretend otherwise. What they are now is a better foundation: one where every fix helps both bots, and where new ideas can be tried without breaking the bot you already play against.
+
+Princess remains the default. If you want to see where things are heading, pick CASPAR in the bot setup and tell us how they play. When either bot does something strange, use **Report a Bug** and attach your files. The bot logs now keep a much longer history, so they'll actually show us what the bot was thinking.
+
+And thank you. To everyone who switched on game logging and sent us your files back in 2025, to the players who send a report when a bot does something odd, and to the developers and test pilots who review and play all of this before you see it: none of it happens without you.
+
+<!-- HAND-OFF: next post and author TBD -->
+
+*If you've got questions or feedback, come find us on [Discord](https://discord.gg/megamek).*
+
+Keep your waypoints tight and your ejected pilots unshot!
