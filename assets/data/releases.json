@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "repos": {
     "megamek": [
       {
@@ -7,7 +7,7 @@
         "name": "MegaMek 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 11
+        "downloads": 16
       },
       {
         "tag": "v0.51.01.7",
@@ -63,14 +63,14 @@
         "name": "v0.51.00.1-Core Rules",
         "date": "2026-08-15",
         "prerelease": false,
-        "downloads": 7295
+        "downloads": 7341
       },
       {
         "tag": "v0.51.0",
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 2972
+        "downloads": 2981
       },
       {
         "tag": "v0.50.12",
@@ -105,7 +105,7 @@
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 4159
+        "downloads": 4160
       },
       {
         "tag": "v0.50.05",
@@ -203,7 +203,7 @@
         "name": "v0.49.15 Development Snapshot",
         "date": "2023-10-21",
         "prerelease": false,
-        "downloads": 891
+        "downloads": 892
       },
       {
         "tag": "v0.49.14",
@@ -786,14 +786,14 @@
         "name": "MegaMekLab 0.51.01.1 (Experimental)",
         "date": "2026-10-31",
         "prerelease": true,
-        "downloads": 3
+        "downloads": 4
       },
       {
         "tag": "v0.51.0",
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 2994
+        "downloads": 3018
       },
       {
         "tag": "v0.50.12",
@@ -1460,7 +1460,7 @@
         "name": "MekHQ 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 75
+        "downloads": 84
       },
       {
         "tag": "v0.51.01.7",
@@ -1516,7 +1516,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 15026
+        "downloads": 15099
       },
       {
         "tag": "v0.50.12",
@@ -1551,7 +1551,7 @@
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 25297
+        "downloads": 25299
       },
       {
         "tag": "v0.50.05",
