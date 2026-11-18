@@ -1,13 +1,20 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "repos": {
     "megamek": [
+      {
+        "tag": "v0.51.01.9",
+        "name": "MegaMek 0.51.01.9 (Experimental)",
+        "date": "2026-11-18",
+        "prerelease": true,
+        "downloads": 4
+      },
       {
         "tag": "v0.51.01.8",
         "name": "MegaMek 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 16
+        "downloads": 21
       },
       {
         "tag": "v0.51.01.7",
@@ -63,14 +70,14 @@
         "name": "v0.51.00.1-Core Rules",
         "date": "2026-08-15",
         "prerelease": false,
-        "downloads": 7341
+        "downloads": 7389
       },
       {
         "tag": "v0.51.0",
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 2981
+        "downloads": 3002
       },
       {
         "tag": "v0.50.12",
@@ -98,252 +105,252 @@
         "name": "v0.50.07-Development",
         "date": "2025-10-12",
         "prerelease": false,
-        "downloads": 523
+        "downloads": 524
       },
       {
         "tag": "v0.50.06",
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 4160
+        "downloads": 4161
       },
       {
         "tag": "v0.50.05",
         "name": "v0.50.05-Development",
         "date": "2025-04-25",
         "prerelease": false,
-        "downloads": 322
+        "downloads": 323
       },
       {
         "tag": "v0.50.04",
         "name": "v0.50.04-Development",
         "date": "2025-03-22",
         "prerelease": false,
-        "downloads": 406
+        "downloads": 407
       },
       {
         "tag": "v0.50.03",
         "name": "v0.50.03-Development",
         "date": "2025-02-02",
         "prerelease": false,
-        "downloads": 488
+        "downloads": 489
       },
       {
         "tag": "v0.50.02",
         "name": "v0.50.02-Development",
         "date": "2024-12-30",
         "prerelease": false,
-        "downloads": 378
+        "downloads": 379
       },
       {
         "tag": "v0.50.01",
         "name": "v0.50.01-Development",
         "date": "2024-11-10",
         "prerelease": false,
-        "downloads": 351
+        "downloads": 352
       },
       {
         "tag": "v0.50.0",
         "name": "v0.50.0-Development",
         "date": "2024-09-01",
         "prerelease": false,
-        "downloads": 581
+        "downloads": 582
       },
       {
         "tag": "v0.49.20",
         "name": "v0.49.20-Development",
         "date": "2024-06-28",
         "prerelease": false,
-        "downloads": 469
+        "downloads": 471
       },
       {
         "tag": "v0.49.19.1",
         "name": "v0.49.19.1 Milestone",
         "date": "2024-05-14",
         "prerelease": false,
-        "downloads": 4779
+        "downloads": 4781
       },
       {
         "tag": "v0.49.19",
         "name": "v0.49.19 Development Snapshot",
         "date": "2024-04-19",
         "prerelease": false,
-        "downloads": 433
+        "downloads": 435
       },
       {
         "tag": "v0.49.18",
         "name": "v0.49.18 Development Snapshot",
         "date": "2024-02-17",
         "prerelease": false,
-        "downloads": 624
+        "downloads": 626
       },
       {
         "tag": "0.41.26-testing",
         "name": "0.41.26-testing",
         "date": "2016-10-29",
         "prerelease": true,
-        "downloads": 143
+        "downloads": 147
       },
       {
         "tag": "v0.49.17",
         "name": "v0.49.17 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 532
+        "downloads": 534
       },
       {
         "tag": "v0.49.16",
         "name": "DO NOT USE - v0.49.16 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 51
+        "downloads": 53
       },
       {
         "tag": "v0.49.15",
         "name": "v0.49.15 Development Snapshot",
         "date": "2023-10-21",
         "prerelease": false,
-        "downloads": 892
+        "downloads": 894
       },
       {
         "tag": "v0.49.14",
         "name": "v0.49.14 Development Snapshot",
         "date": "2023-07-28",
         "prerelease": false,
-        "downloads": 825
+        "downloads": 827
       },
       {
         "tag": "v0.49.13",
         "name": "v0.49.13 Development Snapshot",
         "date": "2023-05-24",
         "prerelease": false,
-        "downloads": 657
+        "downloads": 659
       },
       {
         "tag": "v0.49.12",
         "name": "v0.49.12 Development Snapshot",
         "date": "2023-03-04",
         "prerelease": false,
-        "downloads": 1064
+        "downloads": 1066
       },
       {
         "tag": "v0.49.11",
         "name": "v0.49.11 Development Snapshot",
         "date": "2022-12-22",
         "prerelease": false,
-        "downloads": 999
+        "downloads": 1001
       },
       {
         "tag": "v0.49.10",
         "name": "v0.49.10 Development Snapshot",
         "date": "2022-09-12",
         "prerelease": false,
-        "downloads": 883
+        "downloads": 885
       },
       {
         "tag": "v0.49.9",
         "name": "v0.49.9 Development Snapshot",
         "date": "2022-09-07",
         "prerelease": false,
-        "downloads": 150
+        "downloads": 152
       },
       {
         "tag": "v0.49.8",
         "name": "v0.49.8 Development Snapshot",
         "date": "2022-05-27",
         "prerelease": false,
-        "downloads": 808
+        "downloads": 810
       },
       {
         "tag": "v0.49.7",
         "name": "v0.49.7 MILESTONE",
         "date": "2022-02-18",
         "prerelease": false,
-        "downloads": 2262
+        "downloads": 2264
       },
       {
         "tag": "v0.49.6",
         "name": "v0.49.6 Development Snapshot",
         "date": "2021-12-31",
         "prerelease": false,
-        "downloads": 545
+        "downloads": 547
       },
       {
         "tag": "v0.49.5",
         "name": "v0.49.5 Development Snapshot",
         "date": "2021-11-06",
         "prerelease": false,
-        "downloads": 452
+        "downloads": 454
       },
       {
         "tag": "v0.49.4",
         "name": "v0.49.4 Development Snapshot",
         "date": "2021-10-30",
         "prerelease": false,
-        "downloads": 132
+        "downloads": 134
       },
       {
         "tag": "v0.49.3",
         "name": "v0.49.3 Development Snapshot",
         "date": "2021-08-24",
         "prerelease": false,
-        "downloads": 558
+        "downloads": 560
       },
       {
         "tag": "v0.49.2",
         "name": "v0.49.2 Development Snapshot",
         "date": "2021-06-20",
         "prerelease": false,
-        "downloads": 634
+        "downloads": 636
       },
       {
         "tag": "v0.49.1",
         "name": "v0.49.1 Development Snapshot",
         "date": "2021-05-23",
         "prerelease": false,
-        "downloads": 281
+        "downloads": 283
       },
       {
         "tag": "v0.49.0",
         "name": "v0.49.0 Development Snapshot",
         "date": "2021-05-02",
         "prerelease": false,
-        "downloads": 256
+        "downloads": 258
       },
       {
         "tag": "v0.48.0",
         "name": "v0.48.0 Stable",
         "date": "2021-03-05",
         "prerelease": false,
-        "downloads": 30062
+        "downloads": 30064
       },
       {
         "tag": "v0.47.17",
         "name": "v0.47.17 Development Snapshot (Release Candidate 3)",
         "date": "2021-02-07",
         "prerelease": false,
-        "downloads": 298
+        "downloads": 300
       },
       {
         "tag": "v0.47.16",
         "name": "v0.47.16 Development Snapshot (Release Candidate 2)",
         "date": "2021-01-05",
         "prerelease": false,
-        "downloads": 358
+        "downloads": 360
       },
       {
         "tag": "v0.47.15",
         "name": "v0.47.15 Development Snapshot (Release Candidate 1)",
         "date": "2020-12-15",
         "prerelease": false,
-        "downloads": 203
+        "downloads": 205
       },
       {
         "tag": "v0.47.14",
         "name": "v0.47.14 Development Snapshot",
         "date": "2020-11-15",
         "prerelease": false,
-        "downloads": 353
+        "downloads": 355
       },
       {
         "tag": "v0.47.13",
@@ -364,380 +371,387 @@
         "name": "v0.47.11 Development Snapshot",
         "date": "2020-10-04",
         "prerelease": false,
-        "downloads": 251
+        "downloads": 253
       },
       {
         "tag": "v0.47.10",
         "name": "v0.47.10 Development Snapshot",
         "date": "2020-09-20",
         "prerelease": false,
-        "downloads": 147
+        "downloads": 149
       },
       {
         "tag": "v0.47.9",
         "name": "v0.47.9 Development Snapshot",
         "date": "2020-08-08",
         "prerelease": false,
-        "downloads": 302
+        "downloads": 304
       },
       {
         "tag": "v0.47.8",
         "name": "v0.47.8 Development Snapshot **Buggy Don't Use*",
         "date": "2020-08-03",
         "prerelease": false,
-        "downloads": 119
+        "downloads": 121
       },
       {
         "tag": "v0.47.7",
         "name": "v0.47.7 Development Snapshot",
         "date": "2020-06-23",
         "prerelease": false,
-        "downloads": 300
+        "downloads": 302
       },
       {
         "tag": "v0.47.6",
         "name": "v0.47.6 Development Snapshot",
         "date": "2020-05-03",
         "prerelease": false,
-        "downloads": 406
+        "downloads": 408
       },
       {
         "tag": "v0.47.5",
         "name": "v0.47.5 Development Snapshot",
         "date": "2020-04-02",
         "prerelease": true,
-        "downloads": 247
+        "downloads": 249
       },
       {
         "tag": "v0.47.4",
         "name": "v0.47.4 Development Snapshot",
         "date": "2020-02-10",
         "prerelease": false,
-        "downloads": 308
+        "downloads": 310
       },
       {
         "tag": "v0.47.3",
         "name": "v0.47.3 Development Snapshot",
         "date": "2020-02-01",
         "prerelease": false,
-        "downloads": 148
+        "downloads": 150
       },
       {
         "tag": "v0.46.1",
         "name": "v0.46.1 Stable",
         "date": "2020-01-17",
         "prerelease": false,
-        "downloads": 3784
+        "downloads": 3786
       },
       {
         "tag": "v0.47.2",
         "name": "v0.47.2 Development Snapshot",
         "date": "2019-11-15",
         "prerelease": false,
-        "downloads": 389
+        "downloads": 391
       },
       {
         "tag": "v0.47.1",
         "name": "v0.47.1 Development Snapshot",
         "date": "2019-11-06",
         "prerelease": true,
-        "downloads": 166
+        "downloads": 168
       },
       {
         "tag": "v0.47.0",
         "name": "v0.47.0 Development Snapshot",
         "date": "2019-08-21",
         "prerelease": true,
-        "downloads": 286
+        "downloads": 288
       },
       {
         "tag": "v0.46.0",
         "name": "v0.46.0 Stable",
         "date": "2019-08-20",
         "prerelease": false,
-        "downloads": 1548
+        "downloads": 1550
       },
       {
         "tag": "v0.46.0-rc.2",
         "name": "v0.46.0 Release Candidate 2",
         "date": "2019-08-12",
         "prerelease": true,
-        "downloads": 92
+        "downloads": 94
       },
       {
         "tag": "v0.46.0-rc.1",
         "name": "v0.46.0 Release Candidate 1",
         "date": "2019-07-23",
         "prerelease": true,
-        "downloads": 96
+        "downloads": 98
       },
       {
         "tag": "v0.45.4",
         "name": "v0.45.4 Development Snapshot",
         "date": "2019-03-24",
         "prerelease": false,
-        "downloads": 1701
+        "downloads": 1703
       },
       {
         "tag": "v0.45.3",
         "name": "v0.45.3 Development Snapshot",
         "date": "2019-02-12",
         "prerelease": false,
-        "downloads": 499
+        "downloads": 501
       },
       {
         "tag": "v0.45.2",
         "name": "v0.45.2 Development Snapshot",
         "date": "2018-11-18",
         "prerelease": false,
-        "downloads": 777
+        "downloads": 780
       },
       {
         "tag": "v0.45.1",
         "name": "v0.45.1 Development Snapshot",
         "date": "2018-09-04",
         "prerelease": false,
-        "downloads": 638
+        "downloads": 642
       },
       {
         "tag": "0.45.0",
         "name": "v0.45.0 Development Snapshot",
         "date": "2018-08-04",
         "prerelease": false,
-        "downloads": 363
+        "downloads": 367
       },
       {
         "tag": "v0.44.0",
         "name": "0.44.0 Stable Release",
         "date": "2018-06-24",
         "prerelease": false,
-        "downloads": 13059
+        "downloads": 13063
       },
       {
         "tag": "v0.43.11",
         "name": "v0.43.11 Development Snapshot (0.44 RC5)",
         "date": "2018-06-05",
         "prerelease": false,
-        "downloads": 769
+        "downloads": 773
       },
       {
         "tag": "v0.43.10",
         "name": "v0.43.10 Development Snapshot (0.44 RC4)",
         "date": "2018-04-18",
         "prerelease": false,
-        "downloads": 719
+        "downloads": 723
       },
       {
         "tag": "v0.43.9",
         "name": "v0.43.9 Development Snapshot (0.44 RC3)",
         "date": "2018-03-13",
         "prerelease": false,
-        "downloads": 962
+        "downloads": 966
       },
       {
         "tag": "v0.43.8",
         "name": "v0.43.8 Development Snapshot (0.44 RC2)",
         "date": "2018-02-11",
         "prerelease": false,
-        "downloads": 471
+        "downloads": 476
       },
       {
         "tag": "v0.43.7-RC1",
         "name": "v0.43.7-RC1 Development Release (RC1 for Stable 0.44.0)",
         "date": "2018-01-22",
         "prerelease": false,
-        "downloads": 379
+        "downloads": 383
       },
       {
         "tag": "v0.43.6",
         "name": "v0.43.6 Development Release",
         "date": "2017-12-22",
         "prerelease": false,
-        "downloads": 463
+        "downloads": 467
       },
       {
         "tag": "v0.43.5",
         "name": "v0.43.5 Development Release",
         "date": "2017-12-18",
         "prerelease": true,
-        "downloads": 207
+        "downloads": 211
       },
       {
         "tag": "v0.43.4",
         "name": "v0.43.4 Development Release",
         "date": "2017-10-02",
         "prerelease": true,
-        "downloads": 919
+        "downloads": 923
       },
       {
         "tag": "v0.43.3",
         "name": "v0.43.3 Development Release",
         "date": "2017-07-18",
         "prerelease": true,
-        "downloads": 777
+        "downloads": 781
       },
       {
         "tag": "v42.2",
         "name": "v0.42.2 Stable Release",
         "date": "2017-05-01",
         "prerelease": false,
-        "downloads": 14548
+        "downloads": 14552
       },
       {
         "tag": "v0.43.2",
         "name": "v0.43.2 Development Release",
         "date": "2017-05-01",
         "prerelease": true,
-        "downloads": 747
+        "downloads": 751
       },
       {
         "tag": "v0.43.1",
         "name": "v0.43.1 Development Release",
         "date": "2017-04-01",
         "prerelease": true,
-        "downloads": 407
+        "downloads": 411
       },
       {
         "tag": "v0.43.0",
         "name": "v0.43.0 Development Snapshot-  DO NOT USE THIS RELEASE HAS A PACKING ERROR DO NOT USE.",
         "date": "2017-02-14",
         "prerelease": true,
-        "downloads": 402
+        "downloads": 406
       },
       {
         "tag": "v0.42.1",
         "name": "v0.42.1 Stable Release",
         "date": "2017-02-14",
         "prerelease": false,
-        "downloads": 2543
+        "downloads": 2547
       },
       {
         "tag": "v0.42.0",
         "name": "v0.42.0",
         "date": "2017-01-01",
         "prerelease": false,
-        "downloads": 2910
+        "downloads": 2914
       },
       {
         "tag": "v0.41.28",
         "name": "v0.41.28 (v0.42.0 RC2)",
         "date": "2016-12-18",
         "prerelease": false,
-        "downloads": 386
+        "downloads": 390
       },
       {
         "tag": "v0.41.27",
         "name": "v0.41.27 (v0.42.0 RC1)",
         "date": "2016-12-07",
         "prerelease": false,
-        "downloads": 459
+        "downloads": 463
       },
       {
         "tag": "v0.41.26",
         "name": "v0.41.26",
         "date": "2016-11-02",
         "prerelease": false,
-        "downloads": 710
+        "downloads": 714
       },
       {
         "tag": "0.41.25",
         "name": "v0.41.25",
         "date": "2016-10-15",
         "prerelease": false,
-        "downloads": 435
+        "downloads": 439
       },
       {
         "tag": "v0.41.24",
         "name": "v0.41.24",
         "date": "2016-10-06",
         "prerelease": false,
-        "downloads": 309
+        "downloads": 313
       },
       {
         "tag": "v0.41.23",
         "name": "v0.41.23",
         "date": "2016-09-20",
         "prerelease": false,
-        "downloads": 218
+        "downloads": 222
       },
       {
         "tag": "v0.41.23-GR",
         "name": "v0.41.23-GR   (Graphic Enhancement Experimental Release)",
         "date": "2016-09-02",
         "prerelease": false,
-        "downloads": 163
+        "downloads": 167
       },
       {
         "tag": "v0.41.22",
         "name": "v0.41.22",
         "date": "2016-08-27",
         "prerelease": false,
-        "downloads": 287
+        "downloads": 291
       },
       {
         "tag": "v0.41.21",
         "name": "v0.41.21",
         "date": "2016-07-31",
         "prerelease": false,
-        "downloads": 1421
+        "downloads": 1425
       },
       {
         "tag": "v0.41.20",
         "name": "v0.41.20",
         "date": "2016-06-28",
         "prerelease": false,
-        "downloads": 371
+        "downloads": 375
       },
       {
         "tag": "v0.41.19",
         "name": "0.41.19",
         "date": "2016-06-05",
         "prerelease": false,
-        "downloads": 799
+        "downloads": 804
       },
       {
         "tag": "v0.41.18",
         "name": "v0.41.18",
         "date": "2016-05-27",
         "prerelease": false,
-        "downloads": 247
+        "downloads": 251
       },
       {
         "tag": "v0.41.17",
         "name": "v0.41.17",
         "date": "2016-04-16",
         "prerelease": false,
-        "downloads": 773
+        "downloads": 777
       },
       {
         "tag": "v0.41.16",
         "name": "v0.41.16",
         "date": "2016-04-10",
         "prerelease": false,
-        "downloads": 151
+        "downloads": 155
       },
       {
         "tag": "v0.41.15",
         "name": "v0.41.15",
         "date": "2016-02-21",
         "prerelease": false,
-        "downloads": 798
+        "downloads": 802
       },
       {
         "tag": "v0.41.14",
         "name": "v0.41.14",
         "date": "2016-02-02",
         "prerelease": false,
-        "downloads": 407
+        "downloads": 411
       }
     ],
     "megameklab": [
+      {
+        "tag": "v0.51.01.9",
+        "name": "MegaMekLab 0.51.01.9 (Experimental)",
+        "date": "2026-11-18",
+        "prerelease": true,
+        "downloads": 3
+      },
       {
         "tag": "v0.51.01.8",
         "name": "MegaMekLab 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 12
+        "downloads": 13
       },
       {
         "tag": "v0.51.01.7",
@@ -793,7 +807,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 3018
+        "downloads": 3030
       },
       {
         "tag": "v0.50.12",
@@ -828,238 +842,238 @@
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 4212
+        "downloads": 4213
       },
       {
         "tag": "v0.50.05",
         "name": "v0.50.05-Development",
         "date": "2025-04-25",
         "prerelease": false,
-        "downloads": 271
+        "downloads": 272
       },
       {
         "tag": "v0.50.04",
         "name": "v0.50.04-Development",
         "date": "2025-03-22",
         "prerelease": false,
-        "downloads": 389
+        "downloads": 390
       },
       {
         "tag": "v0.50.03",
         "name": "v0.50.03-Development",
         "date": "2025-02-02",
         "prerelease": false,
-        "downloads": 455
+        "downloads": 456
       },
       {
         "tag": "v0.50.02",
         "name": "v0.50.02-Development",
         "date": "2024-12-30",
         "prerelease": false,
-        "downloads": 280
+        "downloads": 281
       },
       {
         "tag": "v0.50.01",
         "name": "v0.50.01-Development",
         "date": "2024-11-10",
         "prerelease": false,
-        "downloads": 298
+        "downloads": 299
       },
       {
         "tag": "v0.50.0",
         "name": "v0.50.0-Development",
         "date": "2024-09-01",
         "prerelease": false,
-        "downloads": 452
+        "downloads": 453
       },
       {
         "tag": "v0.49.20",
         "name": "v0.49.20-Development",
         "date": "2024-06-28",
         "prerelease": false,
-        "downloads": 497
+        "downloads": 499
       },
       {
         "tag": "v0.49.19.1",
         "name": "v0.49.19.1 Milestone",
         "date": "2024-05-14",
         "prerelease": false,
-        "downloads": 5897
+        "downloads": 5899
       },
       {
         "tag": "v0.49.19",
         "name": "v0.49.19 Development Snapshot",
         "date": "2024-04-19",
         "prerelease": false,
-        "downloads": 368
+        "downloads": 370
       },
       {
         "tag": "v0.49.18",
         "name": "v0.49.18 Development Snapshot",
         "date": "2024-02-17",
         "prerelease": false,
-        "downloads": 536
+        "downloads": 538
       },
       {
         "tag": "v0.49.17",
         "name": "v0.49.17 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 522
+        "downloads": 524
       },
       {
         "tag": "v0.49.16",
         "name": "DO NOT USE v0.49.16 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 32
+        "downloads": 34
       },
       {
         "tag": "v0.49.15",
         "name": "v0.49.15 Development Snapshot",
         "date": "2023-10-21",
         "prerelease": false,
-        "downloads": 655
+        "downloads": 657
       },
       {
         "tag": "v0.49.14",
         "name": "v0.49.14 Development Snapshot",
         "date": "2023-07-28",
         "prerelease": false,
-        "downloads": 744
+        "downloads": 746
       },
       {
         "tag": "v0.49.13",
         "name": "v0.49.13 Development Snapshot",
         "date": "2023-05-24",
         "prerelease": false,
-        "downloads": 634
+        "downloads": 636
       },
       {
         "tag": "v0.49.12",
         "name": "v0.49.12 Development Snapshot",
         "date": "2023-03-04",
         "prerelease": false,
-        "downloads": 833
+        "downloads": 835
       },
       {
         "tag": "v0.49.11",
         "name": "v0.49.11 Development Snapshot",
         "date": "2022-12-22",
         "prerelease": false,
-        "downloads": 796
+        "downloads": 798
       },
       {
         "tag": "v0.49.10",
         "name": "v0.49.10 Development Snapshot",
         "date": "2022-09-12",
         "prerelease": false,
-        "downloads": 650
+        "downloads": 652
       },
       {
         "tag": "v0.49.9",
         "name": "v0.49.9 Development Snapshot",
         "date": "2022-09-07",
         "prerelease": false,
-        "downloads": 116
+        "downloads": 118
       },
       {
         "tag": "v0.49.8",
         "name": "v0.49.8 Development Snapshot",
         "date": "2022-05-27",
         "prerelease": false,
-        "downloads": 698
+        "downloads": 700
       },
       {
         "tag": "v0.49.7",
         "name": "v0.49.7 MILESTONE",
         "date": "2022-02-18",
         "prerelease": false,
-        "downloads": 2049
+        "downloads": 2051
       },
       {
         "tag": "v0.49.6",
         "name": "v0.49.6 Development Snapshot",
         "date": "2021-12-31",
         "prerelease": false,
-        "downloads": 373
+        "downloads": 375
       },
       {
         "tag": "v0.49.5",
         "name": "v0.49.5 Development Snapshot",
         "date": "2021-11-06",
         "prerelease": false,
-        "downloads": 377
+        "downloads": 379
       },
       {
         "tag": "v0.49.4",
         "name": "v0.49.4 Development Snapshot",
         "date": "2021-10-30",
         "prerelease": false,
-        "downloads": 102
+        "downloads": 104
       },
       {
         "tag": "v0.49.3",
         "name": "v0.49.3 Development Snapshot",
         "date": "2021-08-24",
         "prerelease": false,
-        "downloads": 400
+        "downloads": 402
       },
       {
         "tag": "v0.49.2",
         "name": "v0.49.2 Development Snapshot",
         "date": "2021-06-20",
         "prerelease": false,
-        "downloads": 383
+        "downloads": 385
       },
       {
         "tag": "v0.49.1",
         "name": "v0.49.1 Development Snapshot",
         "date": "2021-05-23",
         "prerelease": false,
-        "downloads": 164
+        "downloads": 166
       },
       {
         "tag": "v0.49.0",
         "name": "v0.49.0 Development Snapshot",
         "date": "2021-05-02",
         "prerelease": false,
-        "downloads": 155
+        "downloads": 157
       },
       {
         "tag": "v0.48.0",
         "name": "v0.48.0 Stable",
         "date": "2021-03-05",
         "prerelease": false,
-        "downloads": 11423
+        "downloads": 11425
       },
       {
         "tag": "v0.47.17",
         "name": "v0.47.17 Development Snapshot (Release Candidate 3)",
         "date": "2021-02-07",
         "prerelease": false,
-        "downloads": 177
+        "downloads": 179
       },
       {
         "tag": "v0.47.16",
         "name": "v0.47.16 Development Snapshot (Release Candidate 2)",
         "date": "2021-01-05",
         "prerelease": false,
-        "downloads": 183
+        "downloads": 190
       },
       {
         "tag": "v0.47.15",
         "name": "v0.47.15 Development Snapshot (Release Candidate 1)",
         "date": "2020-12-15",
         "prerelease": false,
-        "downloads": 141
+        "downloads": 143
       },
       {
         "tag": "v0.47.14",
         "name": "v0.47.14 Development Snapshot",
         "date": "2020-11-15",
         "prerelease": false,
-        "downloads": 181
+        "downloads": 183
       },
       {
         "tag": "v0.47.13",
@@ -1080,394 +1094,401 @@
         "name": "v0.47.11 Development Snapshot",
         "date": "2020-10-04",
         "prerelease": false,
-        "downloads": 211
+        "downloads": 213
       },
       {
         "tag": "v0.47.10",
         "name": "v0.47.10 Development Snapshot",
         "date": "2020-09-20",
         "prerelease": false,
-        "downloads": 110
+        "downloads": 112
       },
       {
         "tag": "v0.47.9",
         "name": "v0.47.9 Development Snapshot",
         "date": "2020-08-08",
         "prerelease": false,
-        "downloads": 283
+        "downloads": 285
       },
       {
         "tag": "v0.47.8",
         "name": "v0.47.8 Development Snapshot **Buggy Don't Use*",
         "date": "2020-08-03",
         "prerelease": false,
-        "downloads": 92
+        "downloads": 94
       },
       {
         "tag": "v0.47.7",
         "name": "v0.47.7 Development Snapshot",
         "date": "2020-06-23",
         "prerelease": false,
-        "downloads": 261
+        "downloads": 263
       },
       {
         "tag": "v0.47.6",
         "name": "v0.47.6 Development Snapshot",
         "date": "2020-05-03",
         "prerelease": false,
-        "downloads": 302
+        "downloads": 304
       },
       {
         "tag": "v0.47.5",
         "name": "v0.47.5 Development Snapshot",
         "date": "2020-04-02",
         "prerelease": true,
-        "downloads": 181
+        "downloads": 183
       },
       {
         "tag": "v0.47.4",
         "name": "v0.47.4 Development Snapshot",
         "date": "2020-02-10",
         "prerelease": false,
-        "downloads": 320
+        "downloads": 322
       },
       {
         "tag": "v0.47.3",
         "name": "v0.47.3 Development Snapshot",
         "date": "2020-02-01",
         "prerelease": false,
-        "downloads": 127
+        "downloads": 129
       },
       {
         "tag": "v0.46.1",
         "name": "v0.46.1 Stable",
         "date": "2020-01-17",
         "prerelease": false,
-        "downloads": 2197
+        "downloads": 2199
       },
       {
         "tag": "v0.47.2",
         "name": "v0.47.2 Development Snapshot",
         "date": "2019-11-15",
         "prerelease": false,
-        "downloads": 456
+        "downloads": 458
       },
       {
         "tag": "v0.47.1",
         "name": "v0.47.1 Development Snapshot",
         "date": "2019-11-06",
         "prerelease": true,
-        "downloads": 133
+        "downloads": 135
       },
       {
         "tag": "v0.47.0",
         "name": "v0.47.0 Development Snapshot",
         "date": "2019-08-21",
         "prerelease": true,
-        "downloads": 231
+        "downloads": 233
       },
       {
         "tag": "v0.46.0",
         "name": "v0.46.0 Stable",
         "date": "2019-08-20",
         "prerelease": false,
-        "downloads": 1196
+        "downloads": 1198
       },
       {
         "tag": "v0.46.0-rc.2",
         "name": "v0.46.0 Release Candidate 2",
         "date": "2019-08-12",
         "prerelease": true,
-        "downloads": 111
+        "downloads": 113
       },
       {
         "tag": "v0.46.0-rc.1",
         "name": "v0.46.0 Release Candidate 1",
         "date": "2019-07-23",
         "prerelease": true,
-        "downloads": 128
+        "downloads": 130
       },
       {
         "tag": "v0.45.4",
         "name": "v0.45.4 Development Snapshot",
         "date": "2019-03-24",
         "prerelease": false,
-        "downloads": 1364
+        "downloads": 1366
       },
       {
         "tag": "v0.45.3",
         "name": "v0.45.3 Development Snapshot",
         "date": "2019-02-12",
         "prerelease": false,
-        "downloads": 458
+        "downloads": 460
       },
       {
         "tag": "v0.45.2",
         "name": "v0.45.2 Development Snapshot",
         "date": "2018-11-18",
         "prerelease": false,
-        "downloads": 488
+        "downloads": 491
       },
       {
         "tag": "v0.45.1",
         "name": "v0.45.1 Development Snapshot",
         "date": "2018-09-04",
         "prerelease": false,
-        "downloads": 408
+        "downloads": 412
       },
       {
         "tag": "0.45.0",
         "name": "v0.45.0 Development Snapshot",
         "date": "2018-08-04",
         "prerelease": false,
-        "downloads": 218
+        "downloads": 222
       },
       {
         "tag": "v0.44.0",
         "name": "0.44.0 Stable Release",
         "date": "2018-06-24",
         "prerelease": false,
-        "downloads": 3984
+        "downloads": 3988
       },
       {
         "tag": "v0.43.11",
         "name": "v0.43.11 Development Snapshot (0.44 RC5)",
         "date": "2018-06-05",
         "prerelease": false,
-        "downloads": 230
+        "downloads": 234
       },
       {
         "tag": "v0.43.10",
         "name": "v0.43.10 Development Snapshot (0.44 RC4)",
         "date": "2018-04-19",
         "prerelease": false,
-        "downloads": 380
+        "downloads": 384
       },
       {
         "tag": "v0.43.9",
         "name": "v0.43.9 Development Snapshot (0.44 RC3)",
         "date": "2018-03-13",
         "prerelease": false,
-        "downloads": 433
+        "downloads": 437
       },
       {
         "tag": "v0.43.8",
         "name": "v0.43.8 Development Snapshot (0.44 RC2)",
         "date": "2018-02-12",
         "prerelease": false,
-        "downloads": 252
+        "downloads": 256
       },
       {
         "tag": "v0.43.7-RC1",
         "name": "v0.43.7-RC1 Development Release (RC1 for Stable 0.44.0)",
         "date": "2018-01-22",
         "prerelease": false,
-        "downloads": 225
+        "downloads": 229
       },
       {
         "tag": "v0.43.6",
         "name": "v0.43.6 Development Release",
         "date": "2017-12-22",
         "prerelease": false,
-        "downloads": 294
+        "downloads": 298
       },
       {
         "tag": "v0.43.5",
         "name": "v0.43.5 Development Release",
         "date": "2017-12-18",
         "prerelease": true,
-        "downloads": 169
+        "downloads": 173
       },
       {
         "tag": "v0.43.4",
         "name": "v0.43.4 Development Release",
         "date": "2017-10-02",
         "prerelease": true,
-        "downloads": 478
+        "downloads": 482
       },
       {
         "tag": "v0.43.3",
         "name": "v0.43.3 Development Release",
         "date": "2017-07-18",
         "prerelease": true,
-        "downloads": 342
+        "downloads": 346
       },
       {
         "tag": "v0.43.2",
         "name": "v0.43.2 Development Release",
         "date": "2017-05-01",
         "prerelease": true,
-        "downloads": 313
+        "downloads": 317
       },
       {
         "tag": "v0.42.2",
         "name": "v0.42.2 Stable Release",
         "date": "2017-05-01",
         "prerelease": false,
-        "downloads": 3383
+        "downloads": 3387
       },
       {
         "tag": "v0.43.1",
         "name": "v0.43.1 Development Release",
         "date": "2017-04-01",
         "prerelease": true,
-        "downloads": 217
+        "downloads": 221
       },
       {
         "tag": "v0.43.0",
         "name": "v0.43.0 Development Snapshot",
         "date": "2017-02-14",
         "prerelease": true,
-        "downloads": 211
+        "downloads": 215
       },
       {
         "tag": "v0.42.1",
         "name": "v0.42.1",
         "date": "2017-02-14",
         "prerelease": false,
-        "downloads": 747
+        "downloads": 751
       },
       {
         "tag": "v0.42.0",
         "name": "v0.42.0",
         "date": "2017-01-01",
         "prerelease": false,
-        "downloads": 1025
+        "downloads": 1029
       },
       {
         "tag": "v0.41.28",
         "name": "v0.41.28 (v0.42.0 RC2)",
         "date": "2016-12-18",
         "prerelease": false,
-        "downloads": 461
+        "downloads": 465
       },
       {
         "tag": "v0.41.27",
         "name": "v0.41.27 (v0.42.0 RC1)",
         "date": "2016-12-07",
         "prerelease": false,
-        "downloads": 490
+        "downloads": 494
       },
       {
         "tag": "v0.41.26",
         "name": "v0.41.26",
         "date": "2016-11-02",
         "prerelease": false,
-        "downloads": 397
+        "downloads": 401
       },
       {
         "tag": "0.41.25",
         "name": "v0.41.25",
         "date": "2016-10-15",
         "prerelease": false,
-        "downloads": 223
+        "downloads": 227
       },
       {
         "tag": "v0.41.24",
         "name": "v0.41.24",
         "date": "2016-10-06",
         "prerelease": false,
-        "downloads": 186
+        "downloads": 190
       },
       {
         "tag": "OSX_Packaging_Test2",
         "name": "OSX Packaging Test Release #2",
         "date": "2016-10-01",
         "prerelease": true,
-        "downloads": 72
+        "downloads": 76
       },
       {
         "tag": "OSX_Packaging_Test",
         "name": "OSX Packaging Test Release",
         "date": "2016-10-01",
         "prerelease": true,
-        "downloads": 86
+        "downloads": 90
       },
       {
         "tag": "v0.1.59",
         "name": "v0.1.59",
         "date": "2016-09-20",
         "prerelease": false,
-        "downloads": 142
+        "downloads": 146
       },
       {
         "tag": "v0.1.58",
         "name": "v0.1.58",
         "date": "2016-08-27",
         "prerelease": false,
-        "downloads": 189
+        "downloads": 193
       },
       {
         "tag": "v0.1.57",
         "name": "v0.1.57",
         "date": "2016-07-31",
         "prerelease": false,
-        "downloads": 990
+        "downloads": 994
       },
       {
         "tag": "v0.1.56",
         "name": "v0.1.56",
         "date": "2016-06-28",
         "prerelease": false,
-        "downloads": 526
+        "downloads": 530
       },
       {
         "tag": "v0.1.55",
         "name": "0.1.55",
         "date": "2016-06-05",
         "prerelease": false,
-        "downloads": 495
+        "downloads": 499
       },
       {
         "tag": "v0.1.54",
         "name": "v0.1.54",
         "date": "2016-05-27",
         "prerelease": false,
-        "downloads": 141
+        "downloads": 145
       },
       {
         "tag": "v0.1.53",
         "name": "v0.1.53",
         "date": "2016-04-16",
         "prerelease": false,
-        "downloads": 557
+        "downloads": 561
       },
       {
         "tag": "v0.1.52",
         "name": "v0.1.52",
         "date": "2016-04-10",
         "prerelease": false,
-        "downloads": 109
+        "downloads": 113
       },
       {
         "tag": "v0.1.51",
         "name": "v0.1.51",
         "date": "2016-02-21",
         "prerelease": false,
-        "downloads": 640
+        "downloads": 644
       },
       {
         "tag": "v0.1.50",
         "name": "v0.1.50",
         "date": "2016-02-02",
         "prerelease": false,
-        "downloads": 309
+        "downloads": 313
       }
     ],
     "mekhq": [
+      {
+        "tag": "v0.51.01.9",
+        "name": "MekHQ 0.51.01.9 (Experimental)",
+        "date": "2026-11-18",
+        "prerelease": true,
+        "downloads": 8
+      },
       {
         "tag": "v0.51.01.8",
         "name": "MekHQ 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 84
+        "downloads": 100
       },
       {
         "tag": "v0.51.01.7",
         "name": "MekHQ 0.51.01.7 (Experimental)",
         "date": "2026-11-12",
         "prerelease": true,
-        "downloads": 63
+        "downloads": 64
       },
       {
         "tag": "v0.51.01.6",
@@ -1488,7 +1509,7 @@
         "name": "MekHQ 0.51.01.4 (Experimental)",
         "date": "2026-11-06",
         "prerelease": true,
-        "downloads": 57
+        "downloads": 58
       },
       {
         "tag": "v0.51.01.3",
@@ -1516,7 +1537,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 15099
+        "downloads": 15176
       },
       {
         "tag": "v0.50.12",
@@ -1551,238 +1572,238 @@
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 25299
+        "downloads": 25301
       },
       {
         "tag": "v0.50.05",
         "name": "v0.50.05-Development",
         "date": "2025-04-25",
         "prerelease": false,
-        "downloads": 2132
+        "downloads": 2133
       },
       {
         "tag": "v0.50.04",
         "name": "v0.50.04-Development",
         "date": "2025-03-22",
         "prerelease": false,
-        "downloads": 2677
+        "downloads": 2678
       },
       {
         "tag": "v0.50.03",
         "name": "v0.50.03-Development",
         "date": "2025-02-02",
         "prerelease": false,
-        "downloads": 3185
+        "downloads": 3186
       },
       {
         "tag": "v0.50.02",
         "name": "v0.50.02-Development",
         "date": "2024-12-30",
         "prerelease": false,
-        "downloads": 2443
+        "downloads": 2444
       },
       {
         "tag": "v0.50.01",
         "name": "v0.50.01-Development",
         "date": "2024-11-10",
         "prerelease": false,
-        "downloads": 2780
+        "downloads": 2781
       },
       {
         "tag": "v0.50.0",
         "name": "v0.50.0-Development",
         "date": "2024-09-01",
         "prerelease": false,
-        "downloads": 4221
+        "downloads": 4222
       },
       {
         "tag": "v0.49.20",
         "name": "v0.49.20-Development",
         "date": "2024-06-28",
         "prerelease": false,
-        "downloads": 3039
+        "downloads": 3041
       },
       {
         "tag": "v0.49.19.1",
         "name": "0.49.19.1 Milestone",
         "date": "2024-05-14",
         "prerelease": false,
-        "downloads": 34418
+        "downloads": 34420
       },
       {
         "tag": "v0.49.19",
         "name": "v0.49.19 Development Snapshot",
         "date": "2024-04-19",
         "prerelease": false,
-        "downloads": 2351
+        "downloads": 2353
       },
       {
         "tag": "v0.49.18",
         "name": "v0.49.18 Development Snapshot",
         "date": "2024-02-17",
         "prerelease": false,
-        "downloads": 3089
+        "downloads": 3091
       },
       {
         "tag": "v0.49.17",
         "name": "v0.49.17 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 2670
+        "downloads": 2672
       },
       {
         "tag": "v0.49.16",
         "name": "DO NOT USE v0.49.16 Development Snapshot",
         "date": "2023-12-31",
         "prerelease": false,
-        "downloads": 39
+        "downloads": 41
       },
       {
         "tag": "v0.49.15",
         "name": "v0.49.15 Development Snapshot",
         "date": "2023-10-21",
         "prerelease": false,
-        "downloads": 2928
+        "downloads": 2930
       },
       {
         "tag": "v0.49.14",
         "name": "v0.49.14 Development Snapshot",
         "date": "2023-07-28",
         "prerelease": false,
-        "downloads": 3215
+        "downloads": 3217
       },
       {
         "tag": "v0.49.13",
         "name": "v0.49.13 Development Snapshot",
         "date": "2023-05-24",
         "prerelease": false,
-        "downloads": 2518
+        "downloads": 2520
       },
       {
         "tag": "v0.49.12",
         "name": "v0.49.12 Development Snapshot",
         "date": "2023-03-04",
         "prerelease": false,
-        "downloads": 3199
+        "downloads": 3201
       },
       {
         "tag": "v0.49.11",
         "name": "v0.49.11 Development Snapshot",
         "date": "2022-12-22",
         "prerelease": false,
-        "downloads": 2881
+        "downloads": 2883
       },
       {
         "tag": "v0.49.10",
         "name": "v0.49.10 Development Snapshot",
         "date": "2022-09-12",
         "prerelease": false,
-        "downloads": 2585
+        "downloads": 2587
       },
       {
         "tag": "v0.49.9",
         "name": "v0.49.9 Development Snapshot",
         "date": "2022-09-07",
         "prerelease": false,
-        "downloads": 412
+        "downloads": 414
       },
       {
         "tag": "v0.49.8",
         "name": "v0.49.8 Development Snapshot",
         "date": "2022-05-27",
         "prerelease": false,
-        "downloads": 2423
+        "downloads": 2425
       },
       {
         "tag": "v0.49.7",
         "name": "v0.49.7 MILESTONE",
         "date": "2022-02-18",
         "prerelease": false,
-        "downloads": 11980
+        "downloads": 11982
       },
       {
         "tag": "v0.49.6",
         "name": "v0.49.6 Development Snapshot",
         "date": "2021-12-31",
         "prerelease": false,
-        "downloads": 1519
+        "downloads": 1521
       },
       {
         "tag": "v0.49.5",
         "name": "v0.49.5 Development Snapshot",
         "date": "2021-11-06",
         "prerelease": false,
-        "downloads": 1544
+        "downloads": 1546
       },
       {
         "tag": "v0.49.4",
         "name": "v0.49.4 Development Snapshot",
         "date": "2021-10-30",
         "prerelease": false,
-        "downloads": 422
+        "downloads": 424
       },
       {
         "tag": "v0.49.3",
         "name": "v0.49.3 Development Snapshot",
         "date": "2021-08-24",
         "prerelease": false,
-        "downloads": 1640
+        "downloads": 1642
       },
       {
         "tag": "v0.49.2",
         "name": "v0.49.2 Development Snapshot",
         "date": "2021-06-20",
         "prerelease": false,
-        "downloads": 1510
+        "downloads": 1512
       },
       {
         "tag": "v0.49.1",
         "name": "v0.49.1 Development Snapshot",
         "date": "2021-05-23",
         "prerelease": false,
-        "downloads": 811
+        "downloads": 813
       },
       {
         "tag": "v0.49.0",
         "name": "v0.49.0 Development Snapshot",
         "date": "2021-05-02",
         "prerelease": false,
-        "downloads": 608
+        "downloads": 610
       },
       {
         "tag": "v0.48.0",
         "name": "v0.48.0 Stable",
         "date": "2021-03-05",
         "prerelease": false,
-        "downloads": 67888
+        "downloads": 67892
       },
       {
         "tag": "v0.47.17",
         "name": "v0.47.17 Development Snapshot (Release Candidate 3)",
         "date": "2021-02-07",
         "prerelease": false,
-        "downloads": 724
+        "downloads": 726
       },
       {
         "tag": "v0.47.16",
         "name": "v0.47.16 Development Snapshot (Release Candidate 2)",
         "date": "2021-01-05",
         "prerelease": false,
-        "downloads": 1039
+        "downloads": 1044
       },
       {
         "tag": "v0.47.15",
         "name": "v0.47.15 Development Snapshot (Release Candidate 1)",
         "date": "2020-12-15",
         "prerelease": false,
-        "downloads": 651
+        "downloads": 653
       },
       {
         "tag": "v0.47.14",
         "name": "v0.47.14 Development Snapshot",
         "date": "2020-11-15",
         "prerelease": false,
-        "downloads": 907
+        "downloads": 912
       },
       {
         "tag": "v0.47.13",
@@ -1803,364 +1824,364 @@
         "name": "v0.47.11 Development Snapshot",
         "date": "2020-10-04",
         "prerelease": false,
-        "downloads": 968
+        "downloads": 970
       },
       {
         "tag": "v0.47.10",
         "name": "v0.47.10 Development Snapshot",
         "date": "2020-09-20",
         "prerelease": false,
-        "downloads": 452
+        "downloads": 454
       },
       {
         "tag": "v0.47.9",
         "name": "v0.47.9 Development Snapshot",
         "date": "2020-08-08",
         "prerelease": false,
-        "downloads": 977
+        "downloads": 979
       },
       {
         "tag": "v0.47.8",
         "name": "v0.47.8 Development Snapshot **Buggy Don't Use*",
         "date": "2020-08-03",
         "prerelease": false,
-        "downloads": 286
+        "downloads": 288
       },
       {
         "tag": "v0.47.7",
         "name": "v0.47.7 Development Snapshot",
         "date": "2020-06-23",
         "prerelease": false,
-        "downloads": 937
+        "downloads": 939
       },
       {
         "tag": "v0.47.6",
         "name": "v0.47.6 Development Snapshot",
         "date": "2020-05-03",
         "prerelease": false,
-        "downloads": 1179
+        "downloads": 1181
       },
       {
         "tag": "v0.47.5",
         "name": "v0.47.5 Development Snapshot",
         "date": "2020-04-02",
         "prerelease": true,
-        "downloads": 830
+        "downloads": 832
       },
       {
         "tag": "v0.47.4",
         "name": "v0.47.4 Development Snapshot",
         "date": "2020-02-10",
         "prerelease": false,
-        "downloads": 980
+        "downloads": 982
       },
       {
         "tag": "v0.47.3",
         "name": "v0.47.3 Development Snapshot",
         "date": "2020-02-01",
         "prerelease": false,
-        "downloads": 400
+        "downloads": 406
       },
       {
         "tag": "v0.46.1",
         "name": "v0.46.1 Stable",
         "date": "2020-01-17",
         "prerelease": false,
-        "downloads": 18320
+        "downloads": 18322
       },
       {
         "tag": "v0.47.2",
         "name": "v0.47.2 Development Snapshot",
         "date": "2019-11-15",
         "prerelease": false,
-        "downloads": 1397
+        "downloads": 1399
       },
       {
         "tag": "v0.47.1",
         "name": "v0.47.1 Development Snapshot",
         "date": "2019-11-06",
         "prerelease": true,
-        "downloads": 370
+        "downloads": 372
       },
       {
         "tag": "v0.47.0",
         "name": "v0.47.0 Development Snapshot",
         "date": "2019-08-21",
         "prerelease": true,
-        "downloads": 897
+        "downloads": 899
       },
       {
         "tag": "v0.46.0",
         "name": "v0.46.0 Stable",
         "date": "2019-08-20",
         "prerelease": false,
-        "downloads": 6754
+        "downloads": 6756
       },
       {
         "tag": "v0.46.0-rc.2",
         "name": "v0.46.0 Release Candidate 2",
         "date": "2019-08-12",
         "prerelease": true,
-        "downloads": 372
+        "downloads": 374
       },
       {
         "tag": "v.0.46.0-rc.1",
         "name": "v0.46.0 Release Candidate 1",
         "date": "2019-07-23",
         "prerelease": true,
-        "downloads": 284
+        "downloads": 286
       },
       {
         "tag": "v0.45.4",
         "name": "v0.45.4 Development Snapshot",
         "date": "2019-03-24",
         "prerelease": false,
-        "downloads": 2093
+        "downloads": 2095
       },
       {
         "tag": "v0.45.3",
         "name": "v0.45.3 Development Snapshot",
         "date": "2019-02-12",
         "prerelease": false,
-        "downloads": 840
+        "downloads": 842
       },
       {
         "tag": "v0.45.2",
         "name": "v0.45.2 Development Snapshot",
         "date": "2018-11-18",
         "prerelease": false,
-        "downloads": 1110
+        "downloads": 1113
       },
       {
         "tag": "v.45.1",
         "name": "v0.45.1 Development Snapshot",
         "date": "2018-09-04",
         "prerelease": false,
-        "downloads": 933
+        "downloads": 937
       },
       {
         "tag": "0.45.0",
         "name": "v0.45.0 Development Snapshot",
         "date": "2018-08-04",
         "prerelease": false,
-        "downloads": 575
+        "downloads": 579
       },
       {
         "tag": "v0.44.0",
         "name": "0.44.0 Stable Release",
         "date": "2018-06-24",
         "prerelease": false,
-        "downloads": 7008
+        "downloads": 7012
       },
       {
         "tag": "v0.43.11",
         "name": "v0.43.11 Development Snapshot (0.44 RC5)",
         "date": "2018-06-05",
         "prerelease": false,
-        "downloads": 752
+        "downloads": 756
       },
       {
         "tag": "v0.43.10",
         "name": "v0.43.10 Development Snapshot (0.44 RC4)",
         "date": "2018-04-19",
         "prerelease": false,
-        "downloads": 1059
+        "downloads": 1063
       },
       {
         "tag": "v0.43.9",
         "name": "v0.43.9 Development Snapshot (0.44 RC3)",
         "date": "2018-03-13",
         "prerelease": false,
-        "downloads": 1199
+        "downloads": 1203
       },
       {
         "tag": "v0.43.8",
         "name": "v0.43.8 Development Snapshot (0.44 RC2)",
         "date": "2018-02-12",
         "prerelease": false,
-        "downloads": 599
+        "downloads": 603
       },
       {
         "tag": "v0.43.7-RC1",
         "name": "v0.43.7-RC1 Development Release (RC1 for Stable 0.44.0)",
         "date": "2018-01-22",
         "prerelease": false,
-        "downloads": 554
+        "downloads": 558
       },
       {
         "tag": "v0.43.6",
         "name": "v0.43.6 Development Release",
         "date": "2017-12-22",
         "prerelease": false,
-        "downloads": 650
+        "downloads": 654
       },
       {
         "tag": "v0.43.5",
         "name": "v0.43.5 Development Release-DO NOT USE FOR MekHQ - Game Breaking Issue.",
         "date": "2017-12-18",
         "prerelease": true,
-        "downloads": 292
+        "downloads": 296
       },
       {
         "tag": "v0.43.4",
         "name": "v0.43.4 Development Release",
         "date": "2017-10-02",
         "prerelease": false,
-        "downloads": 967
+        "downloads": 971
       },
       {
         "tag": "v0.43.3",
         "name": "v0.43.3 Development Release",
         "date": "2017-07-18",
         "prerelease": true,
-        "downloads": 886
+        "downloads": 890
       },
       {
         "tag": "v0.43.2",
         "name": "v0.43.2 Development Release",
         "date": "2017-05-01",
         "prerelease": true,
-        "downloads": 884
+        "downloads": 888
       },
       {
         "tag": "v0.42.2",
         "name": "v0.42.2 Stable Release",
         "date": "2017-05-01",
         "prerelease": false,
-        "downloads": 6273
+        "downloads": 6277
       },
       {
         "tag": "v0.43.1",
         "name": "v0.43.1 Development Release",
         "date": "2017-04-01",
         "prerelease": true,
-        "downloads": 529
+        "downloads": 533
       },
       {
         "tag": "v0.43.0",
         "name": "v0.43.0",
         "date": "2017-02-14",
         "prerelease": true,
-        "downloads": 470
+        "downloads": 474
       },
       {
         "tag": "v0.42.1",
         "name": "v0.42.1",
         "date": "2017-02-14",
         "prerelease": false,
-        "downloads": 1270
+        "downloads": 1274
       },
       {
         "tag": "v0.42.0",
         "name": "v0.42.0",
         "date": "2017-01-01",
         "prerelease": false,
-        "downloads": 1648
+        "downloads": 1652
       },
       {
         "tag": "v0.41.28",
         "name": "v0.41.28 (v0.42.0 RC2)",
         "date": "2016-12-18",
         "prerelease": false,
-        "downloads": 495
+        "downloads": 499
       },
       {
         "tag": "v0.41.27",
         "name": "v0.41.27 (v0.42.0 RC1)",
         "date": "2016-12-07",
         "prerelease": false,
-        "downloads": 701
+        "downloads": 705
       },
       {
         "tag": "v0.41.26",
         "name": "v0.41.26",
         "date": "2016-11-02",
         "prerelease": false,
-        "downloads": 854
+        "downloads": 858
       },
       {
         "tag": "0.41.25",
         "name": "v0.41.25",
         "date": "2016-10-15",
         "prerelease": false,
-        "downloads": 448
+        "downloads": 452
       },
       {
         "tag": "v0.41.24",
         "name": "v0.41.24",
         "date": "2016-10-06",
         "prerelease": false,
-        "downloads": 351
+        "downloads": 355
       },
       {
         "tag": "v0.3.33",
         "name": "v0.3.33",
         "date": "2016-09-20",
         "prerelease": false,
-        "downloads": 284
+        "downloads": 288
       },
       {
         "tag": "v0.3.32",
         "name": "v0.3.32",
         "date": "2016-08-27",
         "prerelease": false,
-        "downloads": 390
+        "downloads": 394
       },
       {
         "tag": "v0.3.31",
         "name": "v0.3.31",
         "date": "2016-07-31",
         "prerelease": false,
-        "downloads": 1840
+        "downloads": 1844
       },
       {
         "tag": "v0.3.30",
         "name": "v0.3.30",
         "date": "2016-06-28",
         "prerelease": false,
-        "downloads": 437
+        "downloads": 441
       },
       {
         "tag": "v0.3.29",
         "name": "0.3.29",
         "date": "2016-06-05",
         "prerelease": false,
-        "downloads": 755
+        "downloads": 759
       },
       {
         "tag": "v0.3.28",
         "name": "v0.3.28",
         "date": "2016-05-27",
         "prerelease": false,
-        "downloads": 274
+        "downloads": 278
       },
       {
         "tag": "v0.3.27",
         "name": "v0.3.27",
         "date": "2016-04-16",
         "prerelease": false,
-        "downloads": 855
+        "downloads": 859
       },
       {
         "tag": "v0.3.26",
         "name": "v0.3.26",
         "date": "2016-04-10",
         "prerelease": false,
-        "downloads": 199
+        "downloads": 203
       },
       {
         "tag": "v0.3.25",
         "name": "v0.3.25",
         "date": "2016-02-21",
         "prerelease": false,
-        "downloads": 896
+        "downloads": 900
       },
       {
         "tag": "v0.3.24",
         "name": "v0.3.24",
         "date": "2016-02-02",
         "prerelease": false,
-        "downloads": 527
+        "downloads": 532
       }
     ]
   }
