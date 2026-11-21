@@ -532,7 +532,7 @@ When you build, your Warehouse, Finances and Command Center tabs all show the fi
   <p>"I don't care what it is." He was grinning as he headed for the door. "No job too small, no fee too high."</p>
 </div>
 
-Wilson found his contract, and Illiani has already told that story in [The Contract Overhaul Project](/2026/10/20/Feature-Highlight-The-Contract-Overhaul-Project.html). Let's just say he should have read the header. Go find your new command some work. It's got a DropShip to pay off.
+Wilson found his contract, and Illiani has already told that story in [The Contract Overhaul Project](/2026/10/20/Feature-Highlight-The-Contract-Overhaul-Project.html). Let's just say No Questions Asked turned out to be a little too literal. Go find your new command some work. It's got a DropShip to pay off.
 
 ---
 
