@@ -94,9 +94,9 @@ h2, h3, h4,
   <p>Tomas Brandt, his XO since their AFFS days, turned his glass slowly. "And a name."</p>
   <p>"Wilson's Wildcards."</p>
   <p>Brandt winced. "Every bonding clerk from here to Outreach will file us under Wilson's Hussars. Heaven forbid anyone confuses us with them."</p>
-  <p>Wilson looked around the bar for inspiration and found it in the sign over the door. "The Last Contract."</p>
-  <p>"We're naming a mercenary unit after a bar?"</p>
-  <p>"Half the units in this room are named after a bar. They just won't admit it."</p>
+  <p>Wilson looked around the bar for inspiration and found it on the sign scrawled over the back booth. "No Questions Asked."</p>
+  <p>"We're naming a mercenary unit after a bar sign?"</p>
+  <p>"Half the units in this room are named after something on a bar wall. They just won't admit it."</p>
 </div>
 
 In the [2026 State of the Universe](/2026/01/07/2026-State-of-the-Universe.html), I put a new company generator on our roadmap for this year. I'll admit that when I wrote that line, I didn't expect it to turn into one of the biggest pieces of work in 0.51.01. But here we are, and here it is.
