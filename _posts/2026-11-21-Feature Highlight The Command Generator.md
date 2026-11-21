@@ -452,6 +452,19 @@ The designer also opens small now. It used to open on whatever your faction's de
 
 One thing to know: the designer always rolls for your campaign's own faction. If you want a different force, start your campaign as that faction.
 
+<div class="corerules-figure">
+  <video
+    width="1920"
+    height="1080"
+    controls
+    preload="metadata"
+  >
+    <source src="{{ '/assets/images/posts/2026/2026-11-21-command-generator/commandgeneratorinaction.mp4' | relative_url }}#t=0.1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p class="corerules-caption">Building a starting command in MekHQ, from the first roll to the People and Logistics pages.</p>
+</div>
+
 ## Ships, Trucks and the People Who Run Them
 
 <div class="corerules-callout corerules-fiction">
