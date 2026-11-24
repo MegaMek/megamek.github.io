@@ -606,17 +606,77 @@ div.post-meta {
   border-radius: 8px;
 }
 
+/* Updating Between Versions box. Light theme uses dark amber and red so
+   the text reads on the grey card; dark theme overrides below. */
+.dl-update-box {
+  border: 3px solid #ffc107;
+  border-radius: 12px;
+
+  > .card-header {
+    border-bottom: 2px solid #ffc107;
+
+    h4 {
+      color: #8a5a00;
+    }
+  }
+}
+
+.dl-critical {
+  border: 2px solid #b33000;
+  border-radius: 8px;
+  background-color: rgba(255, 69, 0, 0.12);
+  color: #b33000;
+}
+
+.dl-danger {
+  color: #b33000;
+}
+
 .dl-update-panel {
-  background-color: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 193, 7, 0.45);
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(138, 90, 0, 0.45);
   border-radius: 8px;
   padding: 1rem 1.25rem 0.25rem;
+  color: var(--text-color);
+
+  ol {
+    line-height: 1.8;
+  }
 
   h5 {
-    color: #ffc107;
-    border-bottom: 1px solid rgba(255, 193, 7, 0.45);
+    color: #8a5a00;
+    border-bottom: 1px solid rgba(138, 90, 0, 0.45);
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
+  }
+}
+
+[data-theme="dark"] {
+  .dl-update-box > .card-header h4,
+  .dl-update-panel h5 {
+    color: #ffc107;
+  }
+
+  .dl-critical,
+  .dl-danger {
+    color: #ff4500;
+  }
+
+  .dl-critical {
+    border-color: #ff4500;
+  }
+
+  .dl-update-panel {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 193, 7, 0.45);
+
+    h5 {
+      border-bottom-color: rgba(255, 193, 7, 0.45);
+    }
+
+    strong:not(.dl-danger) {
+      color: #fff;
+    }
   }
 }
 
