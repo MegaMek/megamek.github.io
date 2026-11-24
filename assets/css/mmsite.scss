@@ -262,15 +262,21 @@ a.download_link.corerules-download {
 ul {
   list-style-type: none;
 
+  /* The crosshairs icon is only in Font Awesome's solid (900) set. Without
+     the weight the browser uses the regular (400) set, which lacks it, and
+     shows a missing-glyph box. */
   li:before {
     content: "\f05b";
     font-family: "Font Awesome 6 Free";
+    font-weight: 900;
     padding-right: 5px;
     margin-left: -20px;
   }
 
+  /* The newspaper is in the regular set, so news keeps its outline icon. */
   li.news:before {
     font-family: "Font Awesome 6 Free";
+    font-weight: 400;
     content: "\f1ea";
   }
 
