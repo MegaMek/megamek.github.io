@@ -48,7 +48,7 @@ title: Installing and Updating
       <div class="card-body">
         <div class="dl-tile-icon"><i class="fab fa-windows"></i></div>
         <h5 class="card-title">Windows</h5>
-        <p class="card-text dl-tile-note">64-bit Windows 10 or 11</p>
+        <p class="card-text dl-tile-note">64-bit Windows 10 or 11. Not code-signed yet, <a href="#windows-signing">see below</a>.</p>
         <div class="dl-tile-actions">
           <a class="dl-btn dl-btn-primary" href="{{ launcher_base }}-windows-x64.msi">
             <i class="fas fa-download"></i> Installer (.msi)
@@ -95,6 +95,39 @@ title: Installing and Updating
     </div>
   </div>
 </div>
+<div class="dl-callout dl-callout-warning mb-3" id="windows-signing">
+  <p class="mb-2">
+    <strong><i class="fab fa-windows"></i> Windows: the installer is not code-signed yet.</strong>
+    We're waiting on our code signing certificate. Until it arrives, the
+    <code>.msi</code> has no Authenticode signature, so Windows treats it as
+    coming from an unknown publisher.
+  </p>
+  <ul class="mb-2">
+    <li>
+      <strong>Microsoft Defender SmartScreen</strong> shows
+      <em>"Windows protected your PC"</em>. Click <strong>More info</strong>,
+      then <strong>Run anyway</strong>. Your browser may also warn that the
+      file "isn't commonly downloaded". Choose <strong>Keep</strong>.
+    </li>
+    <li>
+      <strong>Antivirus scanners</strong>, Microsoft Defender Antivirus
+      included, may flag it. This is a false positive from reputation or
+      heuristic checks on an unsigned file, not a real detection.
+    </li>
+    <li>
+      <strong>Smart App Control</strong> on Windows 11 may block it with no
+      option to run it. If that happens, wait for the signed release.
+    </li>
+  </ul>
+  <p class="mb-0">
+    Want to be sure the file is ours? Compare its SHA-256 hash with the
+    <code>.sha256</code> file on the
+    <a href="https://github.com/MegaMek/mm-launcher/releases/tag/v{{ launcher }}">launcher release</a>.
+    In PowerShell: <code>Get-FileHash .\MegaMek-Launcher-{{ launcher }}-windows-x64.msi</code>.
+    See our <a href="{{ '/code-signing.html' | relative_url }}">code signing policy</a>.
+  </p>
+</div>
+
 <p class="text-center mb-4">
   <small>
     Checksums and older versions are on the
@@ -112,7 +145,7 @@ title: Installing and Updating
       <div class='card-body'>
         <ol class='card-text'>
           <li>Download the launcher for your system from the buttons above.</li>
-          <li>Run the installer. <strong>You don't need Java if you're using the launcher.</strong> It comes built in.</li>
+          <li>Run the installer. <strong>You don't need Java if you're using the launcher.</strong> It comes built in. On Windows, expect a SmartScreen warning until the installer is signed: <a href="#windows-signing">here's what to do</a>.</li>
           <li>Open the launcher and install the <strong>Core</strong> release.</li>
           <li>Start MegaMek, MegaMekLab or MekHQ from the launcher.</li>
         </ol>

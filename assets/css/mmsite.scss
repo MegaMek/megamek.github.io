@@ -550,6 +550,19 @@ div.post-meta {
   }
 }
 
+/* Warning version of the callout, used for the unsigned Windows installer */
+.dl-callout.dl-callout-warning {
+  border-left-color: #ffc107;
+
+  ul {
+    padding-left: 1.25rem;
+  }
+}
+
+#windows-signing {
+  scroll-margin-top: 6rem;
+}
+
 /* Jump links at the top of the Installing and Updating page. The targets
    get a scroll margin so the fixed header does not cover them. */
 .dl-jump {
