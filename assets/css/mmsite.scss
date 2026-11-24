@@ -445,6 +445,10 @@ div.post-meta {
   color: var(--text-color);
   border: 1px solid rgba(128, 128, 128, 0.35);
 
+  /* The home page macOS and Linux buttons jump straight to their tile;
+     keep it clear of the fixed header */
+  scroll-margin-top: 6rem;
+
   .card-body {
     display: flex;
     flex-direction: column;
