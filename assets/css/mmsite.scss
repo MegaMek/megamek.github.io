@@ -551,6 +551,28 @@ div.post-meta {
   }
 }
 
+/* Jump links at the top of the Installing and Updating page. The targets
+   get a scroll margin so the fixed header does not cover them. */
+.dl-jump {
+  font-weight: 600;
+}
+
+#launcher,
+#install-launcher,
+#updating,
+#manual-install,
+#extras {
+  scroll-margin-top: 6rem;
+}
+
+.dl-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+}
+
 .dl-callout {
   background-color: var(--card-color);
   color: var(--text-color);

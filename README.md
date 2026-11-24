@@ -68,9 +68,10 @@ content they change:
   - `credits.md`: Artwork, project contributors, and dependency notices.
   - `community.md`: Information about the MegaMek community. Shows on its own page.
   - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
-  - `downloads.html`: Download information
+  - `downloads.html`: Installing and Updating: launcher and archive downloads, install steps, updating, extras
+  - `download-stats.html`: Download numbers and charts, linked from the footer
   - `faq.html`: FAQ Information
-  - `installation.html`: How to install and update information
+  - `installation.html`: Redirects to `downloads.html`, so old links keep working
   - `servers.md`: Current games that are being announced for anyone to join.
 - The `wiki` directory contains additional markdown files for supplementary content that is not directly used in the main navbar but that can be linked to and is available at `wiki/name_of_file.html` when the site is compiled.
 
