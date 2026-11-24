@@ -26,7 +26,7 @@ title: Home
   </div>
   <div class="col-md-6">
     <div class="row">
-      <div class="col text-center launcher-downloader" data-version="{{ site.data.launcher_release.version }}">
+      <div class="col text-center launcher-downloader">
         <a href="/downloads.html#launcher" class='download_link'>
           <span>
             <img src="assets/images/site/icons/megamek.png" alt="MegaMek Icon" />
@@ -35,11 +35,25 @@ title: Home
             MegaMek Launcher
             <br />
             <span class='version_display'>{{ site.data.launcher_release.version }}</span>
-            <br />
-            <span class='version_platform'></span>
           </span>
         </a>
-        <br />
+        <div class="row g-2 mt-2 launcher-platforms">
+          <div class="col-4">
+            <a class="dl-btn dl-btn-primary" href="https://github.com/MegaMek/mm-launcher/releases/download/v{{ site.data.launcher_release.version }}/MegaMek-Launcher-{{ site.data.launcher_release.version }}-windows-x64.msi" title="Installer for 64-bit Windows 10 or 11">
+              <i class="fab fa-windows"></i> Windows
+            </a>
+          </div>
+          <div class="col-4">
+            <a class="dl-btn dl-btn-primary" href="https://github.com/MegaMek/mm-launcher/releases/download/v{{ site.data.launcher_release.version }}/MegaMek-Launcher-{{ site.data.launcher_release.version }}-macos-apple-silicon.pkg" title="Apple Silicon Macs. Intel Macs: see Other platforms">
+              <i class="fab fa-apple"></i> macOS
+            </a>
+          </div>
+          <div class="col-4">
+            <a class="dl-btn dl-btn-primary" href="https://github.com/MegaMek/mm-launcher/releases/download/v{{ site.data.launcher_release.version }}/MegaMek-Launcher-{{ site.data.launcher_release.version }}-linux-x64-portable.tar.gz" title="Portable build for any 64-bit Linux. .deb and .rpm: see Other platforms">
+              <i class="fab fa-linux"></i> Linux
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
