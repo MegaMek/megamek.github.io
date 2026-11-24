@@ -27,56 +27,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      # Keeps the site's Core release (_data/current_releases.yml) on the
-      # newest one. GitHub's "latest" release skips drafts and Experimental
-      # pre-releases, so it is the Core release. The version is only taken once
-      # megamek, megameklab and mekhq all agree on it and each has its archive,
-      # so a half-published release never produces broken links. Runs before
-      # the download totals, which read "stable". Any problem keeps the
-      # current value and does not stop the snapshot.
-      - name: Record the latest Core release
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = '_data/current_releases.yml';
-            const programs = [['megamek', 'MegaMek'], ['megameklab', 'MegaMekLab'], ['mekhq', 'MekHQ']];
-
-            try {
-              const found = [];
-              for (const [repo, name] of programs) {
-                const { data: release } = await github.rest.repos.getLatestRelease({
-                  owner: 'MegaMek',
-                  repo: repo
-                });
-                const version = release.tag_name.replace(/^v/, '');
-                const archive = `${name}-${version}.tar.gz`.toLowerCase();
-                if (!release.assets.some((asset) => asset.name.toLowerCase() === archive)) {
-                  core.warning(`${name} ${version} has no ${archive} yet; keeping the current Core release.`);
-                  return;
-                }
-                found.push({ version: version, published: release.published_at });
-              }
-
-              const versions = [...new Set(found.map((entry) => entry.version))];
-              if (versions.length !== 1) {
-                core.warning(`Latest releases disagree (${versions.join(', ')}); keeping the current Core release.`);
-                return;
-              }
-
-              const newest = found.map((entry) => entry.published).sort().pop();
-              const date = new Date(newest).toLocaleDateString('en-US', {
-                month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC'
-              });
-              const yml = fs.readFileSync(path, 'utf8')
-                .replace(/^stable:.*$/m, `stable: ${versions[0]}`)
-                .replace(/^stable_date:.*$/m, `stable_date: ${date}`);
-              fs.writeFileSync(path, yml);
-              core.info(`Core release is ${versions[0]} (${date}).`);
-            } catch (error) {
-              core.warning(`Could not read the latest Core release: ${error.message}`);
-            }
-
       - name: Record release download totals
         uses: actions/github-script@v9
         with:
@@ -86,7 +36,8 @@ jobs:
             const repos = ['megamek', 'megameklab', 'mekhq'];
             const today = new Date().toISOString().slice(0, 10);
 
-            // The milestone version is the site's own "stable" pointer. The
+            // The milestone version is the site's own "stable" pointer, kept
+            // current by the Track latest releases workflow. The
             // per-version charts track this plus the three most recent releases.
             const releasesYml = fs.readFileSync('_data/current_releases.yml', 'utf8');
             const milestoneMatch = releasesYml.match(/^stable:\s*(.+?)\s*$/m);
@@ -186,56 +137,11 @@ jobs:
             fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
             fs.writeFileSync('assets/data/releases.json', JSON.stringify(releaseTable, null, 2) + '\n');
 
-      # Keeps the home and Downloads launcher links on the newest launcher
-      # release. A release is only taken once all six installers are on it, so a
-      # half-uploaded release never produces broken links. Any problem here
-      # keeps the previous version and does not stop the download snapshot.
-      - name: Record the latest launcher release
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = '_data/launcher_release.json';
-            const installers = [
-              'windows-x64.msi',
-              'macos-apple-silicon.pkg',
-              'macos-intel.pkg',
-              'linux-x64.deb',
-              'linux-x64.rpm',
-              'linux-x64-portable.tar.gz'
-            ];
-
-            try {
-              const { data: release } = await github.rest.repos.getLatestRelease({
-                owner: 'MegaMek',
-                repo: 'mm-launcher'
-              });
-              const version = release.tag_name.replace(/^v/, '');
-              const assetNames = release.assets.map((asset) => asset.name);
-              const missing = installers.filter(
-                (installer) => !assetNames.includes(`MegaMek-Launcher-${version}-${installer}`)
-              );
-
-              if (missing.length > 0) {
-                core.warning(`Launcher ${version} is missing ${missing.join(', ')}; keeping the previous version.`);
-                return;
-              }
-
-              const launcherRelease = {
-                version: version,
-                date: release.published_at.slice(0, 10)
-              };
-              fs.writeFileSync(path, JSON.stringify(launcherRelease, null, 2) + '\n');
-              core.info(`Launcher links now point at ${version}.`);
-            } catch (error) {
-              core.warning(`Could not read the latest launcher release: ${error.message}`);
-            }
-
       - name: Commit updated history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/data/download_history.json assets/data/releases.json _data/launcher_release.json _data/current_releases.yml
+          git add assets/data/download_history.json assets/data/releases.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

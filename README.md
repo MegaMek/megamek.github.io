@@ -22,13 +22,17 @@ download links that show on the website depend on this file. For the download
 links to work properly, each release should just include the number of the
 release without a "v."
 
-- `stable` is the current Core release. Keep the key name: the download
-  snapshot workflow reads it by name.
-- The MegaMek Launcher version is not set by hand. The daily snapshot workflow
-  (`.github/workflows/snapshot-downloads.yml`) writes the newest launcher
-  release to `_data/launcher_release.json`, and the home and Downloads pages
-  build their launcher links from it. A release is only used once all six
-  installers are uploaded, so links lag a new launcher by up to a day.
+- Neither version is set by hand any more. The Track latest releases workflow
+  (`.github/workflows/track-releases.yml`) checks every 15 minutes, so a new
+  release reaches the site within about half an hour. It only commits, and
+  only redeploys the site, when a version changes. Run it from the Actions tab
+  to pick up a release straight away.
+- `stable` is the current Core release: the release GitHub marks as Latest in
+  megamek, megameklab and mekhq, once all three share the tag and have their
+  archives. Keep the key name: the download snapshot workflow reads it by name.
+- The MegaMek Launcher version goes to `_data/launcher_release.json`, and the
+  home and Downloads pages build their launcher links from it. A release is
+  only used once all six installers are uploaded.
 - Experimental releases are not listed. Players get them through the launcher.
 
 ### Launcher Policies and Signing

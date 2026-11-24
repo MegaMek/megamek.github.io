@@ -1,0 +1,143 @@
+# Keeps the site's download links on the newest MegaMek Launcher and the newest
+# Core release. Checks every 15 minutes, so a new release reaches the site within
+# about half an hour (GitHub can run scheduled jobs late when it is busy). It
+# only commits, and only redeploys the site, when a version actually changes,
+# so most runs do nothing. The daily "Snapshot download counts" workflow still
+# records the download numbers.
+name: Track latest releases
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+
+  # Allows a manual run from the Actions tab, for example right after a release.
+  workflow_dispatch:
+
+permissions:
+  # Commit the updated data files back to the repo.
+  contents: write
+  # Start the Pages deploy. A push made with GITHUB_TOKEN does not trigger
+  # other workflows, but a workflow_dispatch does.
+  actions: write
+
+# Shares a group with the download snapshot so the two never commit at once.
+concurrency:
+  group: "download-snapshot"
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # Keeps the home and Downloads launcher links on the newest launcher
+      # release. A release is only taken once all six installers are on it, so a
+      # half-uploaded release never produces broken links. Any problem here
+      # keeps the previous version and does not stop the run.
+      - name: Record the latest launcher release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '_data/launcher_release.json';
+            const installers = [
+              'windows-x64.msi',
+              'macos-apple-silicon.pkg',
+              'macos-intel.pkg',
+              'linux-x64.deb',
+              'linux-x64.rpm',
+              'linux-x64-portable.tar.gz'
+            ];
+
+            try {
+              const { data: release } = await github.rest.repos.getLatestRelease({
+                owner: 'MegaMek',
+                repo: 'mm-launcher'
+              });
+              const version = release.tag_name.replace(/^v/, '');
+              const assetNames = release.assets.map((asset) => asset.name);
+              const missing = installers.filter(
+                (installer) => !assetNames.includes(`MegaMek-Launcher-${version}-${installer}`)
+              );
+
+              if (missing.length > 0) {
+                core.warning(`Launcher ${version} is missing ${missing.join(', ')}; keeping the previous version.`);
+                return;
+              }
+
+              const launcherRelease = {
+                version: version,
+                date: release.published_at.slice(0, 10)
+              };
+              fs.writeFileSync(path, JSON.stringify(launcherRelease, null, 2) + '\n');
+              core.info(`Launcher links now point at ${version}.`);
+            } catch (error) {
+              core.warning(`Could not read the latest launcher release: ${error.message}`);
+            }
+
+      # Keeps the site's Core release (_data/current_releases.yml) on the
+      # newest one. GitHub's "latest" release skips drafts and Experimental
+      # pre-releases, so it is the Core release. The version is only taken once
+      # megamek, megameklab and mekhq all agree on it and each has its archive,
+      # so a half-published release never produces broken links. Any problem
+      # keeps the current value and does not stop the run.
+      - name: Record the latest Core release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '_data/current_releases.yml';
+            const programs = [['megamek', 'MegaMek'], ['megameklab', 'MegaMekLab'], ['mekhq', 'MekHQ']];
+
+            try {
+              const found = [];
+              for (const [repo, name] of programs) {
+                const { data: release } = await github.rest.repos.getLatestRelease({
+                  owner: 'MegaMek',
+                  repo: repo
+                });
+                const version = release.tag_name.replace(/^v/, '');
+                const archive = `${name}-${version}.tar.gz`.toLowerCase();
+                if (!release.assets.some((asset) => asset.name.toLowerCase() === archive)) {
+                  core.warning(`${name} ${version} has no ${archive} yet; keeping the current Core release.`);
+                  return;
+                }
+                found.push({ version: version, published: release.published_at });
+              }
+
+              const versions = [...new Set(found.map((entry) => entry.version))];
+              if (versions.length !== 1) {
+                core.warning(`Latest releases disagree (${versions.join(', ')}); keeping the current Core release.`);
+                return;
+              }
+
+              const newest = found.map((entry) => entry.published).sort().pop();
+              const date = new Date(newest).toLocaleDateString('en-US', {
+                month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC'
+              });
+              const yml = fs.readFileSync(path, 'utf8')
+                .replace(/^stable:.*$/m, `stable: ${versions[0]}`)
+                .replace(/^stable_date:.*$/m, `stable_date: ${date}`);
+              fs.writeFileSync(path, yml);
+              core.info(`Core release is ${versions[0]} (${date}).`);
+            } catch (error) {
+              core.warning(`Could not read the latest Core release: ${error.message}`);
+            }
+
+      - name: Commit and deploy if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add _data/launcher_release.json _data/current_releases.yml
+          if git diff --staged --quiet; then
+            echo "No new releases"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update the latest Launcher and Core release"
+          git pull --rebase
+          git push
+          gh workflow run jekyll.yml --ref main
