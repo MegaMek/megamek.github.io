@@ -204,6 +204,23 @@ a.download_link {
   }
 }
 
+/* Text under the home page launcher buttons. Link text never wraps, so
+   "Java 21" or the archive name does not split across two lines. */
+.launcher-notes {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+
+  a {
+    white-space: nowrap;
+  }
+}
+
+.launcher-notes-manual {
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
 /**********************************************************************/
 /* Core Rules release button                                          */
 /* Carries the same flair as the MegaMek splash screen: the edition    */
