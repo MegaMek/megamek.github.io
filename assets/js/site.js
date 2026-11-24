@@ -174,6 +174,14 @@ function releaseType( release ) {
     return "Development";
   }
 
+  // From 0.51.01 on, a release that isn't an Experimental pre-release is a
+  // Core release, even though its name ("MegaMek 0.51.01.14") doesn't say so.
+  let parsed = parseReleaseTag( release.tag );
+
+  if ( parsed && compareVersionParts( parsed.line, [ 0, 51, 1 ] ) <= 0 ) {
+    return "Core";
+  }
+
   return "Release";
 }
 
