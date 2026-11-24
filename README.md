@@ -22,14 +22,23 @@ download links that show on the website depend on this file. For the download
 links to work properly, each release should just include the number of the
 release without a "v."
 
+- `stable` is the current Core release. Keep the key name: the download
+  snapshot workflow reads it by name.
+- The MegaMek Launcher version is not set by hand. The daily snapshot workflow
+  (`.github/workflows/snapshot-downloads.yml`) writes the newest launcher
+  release to `_data/launcher_release.json`, and the home and Downloads pages
+  build their launcher links from it. A release is only used once all six
+  installers are uploaded, so links lag a new launcher by up to a day.
+- Experimental releases are not listed. Players get them through the launcher.
+
 ### Launcher Policies and Signing
 
 The public pages are `/launcher-privacy.html`, `/code-signing.html`, and
 `/credits.html`. The privacy contact uses the existing `email` in `_config.yml`.
 The signing policy is launcher-scoped and currently uses pre-approval wording;
 it does not claim that signing is active or that other programs are signed.
-The shared footer links to all three pages. Launcher promotion, installation
-guides, and release-channel download changes are not part of this addition.
+The shared footer links to all three pages. The home page, the Installing and Updating
+page (`downloads.html`) and the MekHQ guide link to the launcher downloads.
 
 Keep the artists' credits and any applicable notices in `credits.md` up to date
 when artwork is added or changed.
@@ -59,9 +68,10 @@ content they change:
   - `credits.md`: Artwork, project contributors, and dependency notices.
   - `community.md`: Information about the MegaMek community. Shows on its own page.
   - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
-  - `downloads.html`: Download information
+  - `downloads.html`: Installing and Updating: launcher and archive downloads, install steps, updating
+  - `download-stats.html`: Download numbers and charts, linked from the footer
   - `faq.html`: FAQ Information
-  - `installation.html`: How to install and update information
+  - `installation.html`: Redirects to `downloads.html`, so old links keep working
   - `servers.md`: Current games that are being announced for anyone to join.
 - The `wiki` directory contains additional markdown files for supplementary content that is not directly used in the main navbar but that can be linked to and is available at `wiki/name_of_file.html` when the site is compiled.
 

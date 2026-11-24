@@ -1,14 +1,8 @@
 #update with current release information
 
+#Current Core release. The download snapshot workflow reads this key by name,
+#so keep it called "stable".
 stable: 0.51.0
 stable_date: June 6, 2026
-dev: 0.51.0
-dev_date: June 6, 2026
-#MegaMek-only Core Rules release. Delete these two entries when it is over and
-#the front page goes back to showing the Development button.
-corerules: 0.51.00.1
-corerules_date: August 14, 2026
-megamek_extras: 1.2
-megamek_extras_date: July 10th, 2021
-mekhq_extras: 1.1
-mekhq_extras_date: February 20th, 2022
+#The MegaMek Launcher version is not set here. The daily snapshot workflow
+#writes the newest launcher release to _data/launcher_release.json.
