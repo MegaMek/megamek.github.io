@@ -44,6 +44,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<script defer src="{{ '/assets/js/site.js' | relative_url }}" type="text/javascript"></script>
+<script defer src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" type="text/javascript"></script>
 </body>
 </html>
