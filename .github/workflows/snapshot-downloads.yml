@@ -27,6 +27,56 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      # Keeps the site's Core release (_data/current_releases.yml) on the
+      # newest one. GitHub's "latest" release skips drafts and Experimental
+      # pre-releases, so it is the Core release. The version is only taken once
+      # megamek, megameklab and mekhq all agree on it and each has its archive,
+      # so a half-published release never produces broken links. Runs before
+      # the download totals, which read "stable". Any problem keeps the
+      # current value and does not stop the snapshot.
+      - name: Record the latest Core release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '_data/current_releases.yml';
+            const programs = [['megamek', 'MegaMek'], ['megameklab', 'MegaMekLab'], ['mekhq', 'MekHQ']];
+
+            try {
+              const found = [];
+              for (const [repo, name] of programs) {
+                const { data: release } = await github.rest.repos.getLatestRelease({
+                  owner: 'MegaMek',
+                  repo: repo
+                });
+                const version = release.tag_name.replace(/^v/, '');
+                const archive = `${name}-${version}.tar.gz`.toLowerCase();
+                if (!release.assets.some((asset) => asset.name.toLowerCase() === archive)) {
+                  core.warning(`${name} ${version} has no ${archive} yet; keeping the current Core release.`);
+                  return;
+                }
+                found.push({ version: version, published: release.published_at });
+              }
+
+              const versions = [...new Set(found.map((entry) => entry.version))];
+              if (versions.length !== 1) {
+                core.warning(`Latest releases disagree (${versions.join(', ')}); keeping the current Core release.`);
+                return;
+              }
+
+              const newest = found.map((entry) => entry.published).sort().pop();
+              const date = new Date(newest).toLocaleDateString('en-US', {
+                month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC'
+              });
+              const yml = fs.readFileSync(path, 'utf8')
+                .replace(/^stable:.*$/m, `stable: ${versions[0]}`)
+                .replace(/^stable_date:.*$/m, `stable_date: ${date}`);
+              fs.writeFileSync(path, yml);
+              core.info(`Core release is ${versions[0]} (${date}).`);
+            } catch (error) {
+              core.warning(`Could not read the latest Core release: ${error.message}`);
+            }
+
       - name: Record release download totals
         uses: actions/github-script@v9
         with:
@@ -185,7 +235,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/data/download_history.json assets/data/releases.json _data/launcher_release.json
+          git add assets/data/download_history.json assets/data/releases.json _data/launcher_release.json _data/current_releases.yml
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
