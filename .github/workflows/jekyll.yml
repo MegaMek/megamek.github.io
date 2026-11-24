@@ -62,6 +62,9 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v5
+        with:
+          # Keeps .well-known (Flathub verification) in the deployed site
+          include-hidden-files: true
 
   # Deployment job
   deploy:

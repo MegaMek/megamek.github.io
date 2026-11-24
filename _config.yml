@@ -33,6 +33,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-titles-from-headings
 
+# Jekyll skips dot-folders unless listed here. .well-known holds the Flathub app
+# verification token (org.flathub.VerifiedApps.txt).
+include:
+  - .well-known
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
