@@ -24,10 +24,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-  <link href="{{ '/assets/css/mmsite.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+  {% comment %} The ?v= stamp changes on every build, so browsers fetch the new file after a deploy instead of reusing a cached copy. {% endcomment %}
+  <link href="{{ '/assets/css/mmsite.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
+  <link href="{{ '/assets/css/syntax.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   {% if page.layout == 'guide' %}
-  <link href="{{ '/assets/css/guide.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/guide.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   {% endif %}
   {% seo %}
 </head>

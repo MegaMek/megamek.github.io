@@ -38,7 +38,7 @@ The public pages are `/launcher-privacy.html`, `/code-signing.html`, and
 The signing policy is launcher-scoped and currently uses pre-approval wording;
 it does not claim that signing is active or that other programs are signed.
 The shared footer links to all three pages. The home page, the Installing and Updating
-page (`downloads.html`) and the MekHQ guide link to the launcher downloads.
+page (`installing_and_updating.html`) and the MekHQ guide link to the launcher downloads.
 
 Keep the artists' credits and any applicable notices in `credits.md` up to date
 when artwork is added or changed.
@@ -68,10 +68,10 @@ content they change:
   - `credits.md`: Artwork, project contributors, and dependency notices.
   - `community.md`: Information about the MegaMek community. Shows on its own page.
   - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
-  - `downloads.html`: Installing and Updating: launcher and archive downloads, install steps, updating
+  - `installing_and_updating.html`: Installing and Updating: launcher and archive downloads, install steps, updating
   - `download-stats.html`: Download numbers and charts, linked from the footer
   - `faq.html`: FAQ Information
-  - `installation.html`: Redirects to `downloads.html`, so old links keep working
+  - `downloads.html` and `installation.html`: Redirect to `installing_and_updating.html`, so old links keep working
   - `servers.md`: Current games that are being announced for anyone to join.
 - The `wiki` directory contains additional markdown files for supplementary content that is not directly used in the main navbar but that can be linked to and is available at `wiki/name_of_file.html` when the site is compiled.
 
