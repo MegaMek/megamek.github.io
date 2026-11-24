@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v7
 
       # Keeps the home and Downloads launcher links on the newest launcher
-      # release. A release is only taken once all six installers are on it, so a
+      # release. A release is only taken once all seven installers are on it, so a
       # half-uploaded release never produces broken links. Any problem here
       # keeps the previous version and does not stop the run.
       - name: Record the latest launcher release
@@ -48,7 +48,8 @@ jobs:
               'macos-intel.pkg',
               'linux-x64.deb',
               'linux-x64.rpm',
-              'linux-x64-portable.tar.gz'
+              'linux-x64-portable.tar.gz',
+              'linux-x64.flatpak'
             ];
 
             try {
