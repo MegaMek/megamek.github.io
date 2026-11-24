@@ -2,7 +2,7 @@
 
 #Current Core release. The download snapshot workflow reads this key by name,
 #so keep it called "stable".
-stable: 0.51.0
-stable_date: June 6, 2026
+stable: 0.51.01
+stable_date: November 24, 2026
 #The MegaMek Launcher version is not set here. The daily snapshot workflow
 #writes the newest launcher release to _data/launcher_release.json.
