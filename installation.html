@@ -80,7 +80,7 @@ title: Installation and Updating
 
         <!-- Manual Steps -->
         <p style="color: #e0e0e0; margin-bottom: 1rem;">
-          <strong style="color: #fff;">Manual install:</strong> always extract each version to its own folder — never unzip a new version over an old one (e.g., don't extract 51.01 into your 51.00 folder). Overwriting <strong style="color: #dc3545;">will corrupt saves and campaigns</strong>.
+          <strong style="color: #fff;">Manual install:</strong> always extract each version to its own folder — never unpack a new version over an old one (e.g., don't unpack 51.01 into your 51.00 folder). Overwriting <strong style="color: #dc3545;">will corrupt saves and campaigns</strong>.
         </p>
         <ol style="color: #e0e0e0; line-height: 1.8;">
           <li><strong style="color: #fff;">Back up your campaign and custom files</strong> — critical to prevent data loss</li>
@@ -94,17 +94,22 @@ title: Installation and Updating
   </div>
 </div>
 
-<div class='row'>
+<div class='row mt-4'>
   <div class='col'>
-    <h3>Manual Install</h3>
-    <p>Prefer to install by hand from the archive? You need to install Java yourself first.</p>
+    <h3>Manual Install (Without the Launcher)</h3>
+    <div class="dl-callout mb-3">
+      <strong>Only for players NOT using the MegaMek Launcher.</strong>
+      If you installed the launcher, stop here: it already installs the
+      programs, includes Java, and handles updates. Follow these three steps
+      only if you want to install by hand from the <code>.tar.gz</code> archive.
+    </div>
   </div>
 </div>
 <div class='row'>
   <div class='col mb-4'>
     <div class='card dl-card'>
       <div class='card-header'>
-        Installing Java
+        1. Install Java
       </div>
       <div class='card-body'>
         <p class='card-text'>
@@ -129,96 +134,95 @@ title: Installation and Updating
   </div>
 </div>
 
-<div class="row row-cols-3 mt-4">
+<div class='row'>
   <div class='col mb-4'>
     <div class='card dl-card'>
       <div class='card-header'>
-        macOS and MegaMek
+        2. Unpack the archive
       </div>
       <div class='card-body'>
         <p class='card-text'>
-          For those of us using macOS, there are some additional things that
-          we need to be aware of. We're making this more prominent in hopes
-          to reduce the number of questions we get that can be solved by
-          going <a href="/wiki/mac_issues.html">here</a>.
+          The download is a <code>.tar.gz</code> archive that works on Windows,
+          macOS and Linux. Unpack each version into its own new folder. Never
+          unpack a new version over an old one.
         </p>
         <p class='card-text'>
-          Make sure Adoptium 21 is installed. Recommended way is in the link
-          above.
+          <strong>Windows:</strong> do <strong>NOT</strong> use the built-in
+          Windows extractor. It struggles with the thousands of files in the
+          archive and can fail or corrupt them. We recommend
+          <a href='https://www.7-zip.org'>7-Zip</a>.
         </p>
         <p class='card-text'>
-          Make sure the decompressed files are <em><strong>NOT</strong></em>
-          in the <strong>Documents</strong>, <strong>Downloads</strong>,
-          or <strong>Desktop</strong> folders. These are
-          <em><strong>protected</strong></em> folders and macOS will not
-          let it run.
+          <strong>macOS:</strong> do <strong>NOT</strong> unpack into the
+          <strong>Documents</strong>, <strong>Downloads</strong> or
+          <strong>Desktop</strong> folders. macOS protects them and will not
+          let the programs run there.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col'>
+    <h4>3. Run the programs</h4>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3">
+  <div class='col mb-4'>
+    <div class='card dl-card h-100'>
+      <div class='card-header'>
+        <i class="fab fa-windows"></i> Windows
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          Double-click <code>MekHQ.exe</code>, <code>MegaMek.exe</code> or
+          <code>MegaMekLab.exe</code> in the folder you unpacked.
         </p>
       </div>
     </div>
   </div>
 
   <div class='col mb-4'>
-    <div class='card dl-card'>
+    <div class='card dl-card h-100'>
       <div class='card-header'>
-        Windows
+        <i class="fab fa-apple"></i> macOS
       </div>
       <div class='card-body'>
         <p class='card-text'>
-          To run the programs from Windows, just double-click on the given
-          program icon from within the folder you unzipped.
+          Open Terminal in the folder you unpacked and run the program's
+          script, for example:
         </p>
-        <p class='card-text'>
-          Depending on how Java is setup on your machine, you may also be able
-          to double click on the JAR files themselves vs the EXE. No real
-          difference between the two other than possible launching experience.
-        </p>
-        <p class='card-text'>
-          <strong><em>DO NOT USE THE BUILTIN UTILITY FOR DECOMPRESSING ZIP FILES!</em></strong>
-          We recommend using <a href='https://www.7-zip.org'>7-Zip.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='col mb-4'>
-    <div class='card dl-card'>
-      <div class='card-header'>
-        Unix/Linux
-      </div>
-      <div class='card-body'>
-        <p class='card-text'>
-          The Unix/Linux releases do not include application binaries, but
-          you can run the programs directly from the included JAR files. On
-          some desktops, you may just be able to double-click these JAR
-          files in order to run the programs. you can also run the programs
-          (MegaMek, in the example below) from the command line with the
-          command:
-
         <div class="language-bash highlighter-rouge">
           <div>
-            <pre class="highlight"><code>java <span class="nt">-jar</span> MegaMek.jar &amp;</code></pre>
+            <pre class="highlight"><code>./MekHQ.sh</code></pre>
           </div>
         </div>
+        <p class='card-text'>
+          Stuck? Most Mac questions are answered on the
+          <a href="/wiki/mac_issues.html">macOS issues</a> page.
         </p>
       </div>
     </div>
   </div>
 
   <div class='col mb-4'>
-    <div class='card dl-card'>
+    <div class='card dl-card h-100'>
       <div class='card-header'>
-        Installation and Running
+        <i class="fab fa-linux"></i> Linux
       </div>
       <div class='card-body'>
         <p class='card-text'>
-          To install the programs, unzip the download into the directory of
-          your choice. To run the programs follow the platform specific
-          instructions below.
+          Run the program's script from the folder you unpacked, for example:
         </p>
-        <p>
-          On Windows, do <strong>NOT</strong> use the built in utility for
-          decompression zip files as it has been known to cause issues.
-          We recommend using <a href='https://www.7-zip.org'>7-Zip</a>.
+        <div class="language-bash highlighter-rouge">
+          <div>
+            <pre class="highlight"><code>./MekHQ.sh</code></pre>
+          </div>
+        </div>
+        <p class='card-text'>
+          <code>MegaMek.sh</code> and <code>MegaMekLab.sh</code> start the
+          other programs.
         </p>
       </div>
     </div>
