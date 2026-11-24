@@ -552,10 +552,32 @@ div.post-meta {
 
 /* Warning version of the callout, used for the unsigned Windows installer */
 .dl-callout.dl-callout-warning {
-  border-left-color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.14);
+  border: 2px solid #ffc107;
+  border-left-width: 6px;
+
+  > p:first-child strong {
+    color: #8a5a00;
+    font-size: 1.1em;
+  }
 
   ul {
     padding-left: 1.25rem;
+  }
+}
+
+/* "Not code-signed yet" on the Windows tile */
+.dl-unsigned {
+  color: #8a5a00;
+  font-weight: 700;
+}
+
+/* Bright amber reads well on the dark theme; the darker amber above is for
+   the light theme */
+[data-theme="dark"] {
+  .dl-callout.dl-callout-warning > p:first-child strong,
+  .dl-unsigned {
+    color: #ffc107;
   }
 }
 
