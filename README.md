@@ -37,8 +37,8 @@ The public pages are `/launcher-privacy.html`, `/code-signing.html`, and
 `/credits.html`. The privacy contact uses the existing `email` in `_config.yml`.
 The signing policy is launcher-scoped and currently uses pre-approval wording;
 it does not claim that signing is active or that other programs are signed.
-The shared footer links to all three pages. The home, Downloads and
-Installation pages link to the launcher downloads.
+The shared footer links to all three pages. The home page, the Installing and Updating
+page (`downloads.html`) and the MekHQ guide link to the launcher downloads.
 
 Keep the artists' credits and any applicable notices in `credits.md` up to date
 when artwork is added or changed.

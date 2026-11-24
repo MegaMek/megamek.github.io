@@ -573,6 +573,20 @@ div.post-meta {
   border-radius: 8px;
 }
 
+.dl-update-panel {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 193, 7, 0.45);
+  border-radius: 8px;
+  padding: 1rem 1.25rem 0.25rem;
+
+  h5 {
+    color: #ffc107;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.45);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 .dl-callout {
   background-color: var(--card-color);
   color: var(--text-color);

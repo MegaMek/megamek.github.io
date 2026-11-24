@@ -3,16 +3,26 @@ layout: info_page
 title: Mac Issues
 ---
 
+### The MegaMek Launcher (Recommended)
+
+The [MegaMek Launcher](/downloads.html#launcher-macos) installs MegaMek, MegaMekLab and MekHQ for you. **You don't need Java if you're using the launcher.** It comes built in. Pick the `.pkg` that matches your Mac's chip: Apple Silicon (M-series) or Intel.
+
+Everything below is for a manual install from the `.tar.gz` archive (not recommended, use the launcher).
+
 ### Java On Mac
 
-This has gotten simpler over the years. previously you would have had to install Homebrew and walk through a process to get it setup. Now, it is as simple as running a Package Installer. The recommended installer can be found [here](https://adoptium.net/temurin/releases/?os=mac&version=21) and this is preset to use the recommended version of Java for the latest development release (21 LTS). If you intend to do Java Development, get the JDK (Java Development Kit) version, otherwise get the JRE (Java Runtime Environment) version. As of 03/27/2024 there are 2 active processor platforms for macOS, x64 for Intel and aarch64 for M-Series.
+A manual install needs Java 21. Use the package installer from [Adoptium](https://adoptium.net/temurin/releases/?os=mac&version=21), which is preset to the version we recommend (21 LTS). Pick aarch64 for Apple Silicon (M-series) Macs or x64 for Intel Macs. The JRE (Java Runtime Environment) is all you need to play. Get the JDK (Java Development Kit) only if you plan to do Java development.
 
-### MegaMek Installation
+### Where to Put MegaMek
 
-Now that that is out of the way, let's get to the hard part! Due to the increased security of macOS in recent releases, running any of the MegaMek programs from the Downloads folder will fail... horribly. To solve this, all we have to do is move them OUT of the Downloads folder. We recommend creating a `Games` folder in your home directory and placing the uncompressed files in there.
+Due to the increased security of macOS, running any of the MegaMek programs from the Downloads folder will fail... horribly. To solve this, move them OUT of the Downloads folder. We recommend creating a `Games` folder in your home directory and unpacking the archive there.
 
 Note: The `Downloads`, `Documents`, and `Desktop` folders are macOS protected folders and MegaMek will not run from these locations. In addition, if you have iCloud set to sync these folders, it is possible some files will get "deleted" locally and cause issues even if you could get MegaMek to load.
 
-After that, on first load of the JAR files, you'll need to right-click and select open. A dialog will appear mentioning that you downloaded the file from the internet, from a (most likely) Amazon domain, and asking if you are absolutely sure you wish to run it. Hit yes. After that, you can double click the JAR file and it'll load like any other program without any known issue.
+### Starting the Programs
 
-Any time you update to a newer version, you'll need to repeat these steps of right-clicking to open on first run.
+Open Terminal in the folder you unpacked and run the program's script, for example `./MekHQ.sh`. `MegaMek.sh` and `MegaMekLab.sh` start the other programs.
+
+If you'd rather double-click, use the JAR files (`MekHQ.jar`, `MegaMek.jar`, `MegaMekLab.jar`). On the first run you'll need to right-click and select Open. A dialog will appear mentioning that you downloaded the file from the internet, and asking if you are absolutely sure you wish to run it. Hit yes. After that, you can double-click the JAR file and it'll load like any other program.
+
+Any time you update to a newer version by hand, you'll need to repeat these steps of right-clicking to open on first run.

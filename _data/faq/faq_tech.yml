@@ -9,7 +9,7 @@
     including Windows, macOS, and Linux. Although it will run on later versions
     of Java, your experience will vary. MegaMek 51.00 and later require
     Java 21. You don't need Java if you're using the MegaMek Launcher, because
-    its installers include it. For a manual install,
+    its installers include it. For a manual install (not recommended, use the launcher),
     [see these instructions](https://github.com/MegaMek/megamek/wiki/Updating-to-Adoptium-(Eclipse-Temurin-Open-Source-Java)) for details.
 - question: "On a Mac, How do I open up multiple instances of MegaMek?"
   answer: >
@@ -21,11 +21,12 @@
       java -jar MegaMek.jar &
     ```
 
-    The `-n` argument tells macOS to open up a new instance of the application.
+    Run it once for each extra instance you want.
 - question: "I am on a Mac, and MegaMek will not open up up properly when I click on it. What should I do?"
   answer: >
-    Use the `pkg` installer on Adoptium to install either the JRE or JDK version of
-    Java you need (21). For example, the
+    If you use the MegaMek Launcher, you don't need to install Java: it comes
+    built in. For a manual install (not recommended, use the launcher), use the `pkg` installer on Adoptium to
+    install either the JRE or JDK version of Java you need (21). For example, the
     version for the Apple Silicon (M-Series) Macs can be found [here](https://adoptium.net/temurin/releases/?os=mac&arch=aarch64&version=21).
     Additional information can be found on the [macOS Issues](/wiki/mac_issues.html) page.
 - question: "How do I use more, or less, memory?"

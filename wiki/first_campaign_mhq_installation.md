@@ -26,12 +26,12 @@ toc: |
   <h2><i class="fas fa-java"></i> Prerequisites</h2>
 
   <div class="guide-callout guide-callout-info">
-    <div class="callout-title"><i class="fas fa-rocket"></i> Easiest Way: The MegaMek Launcher</div>
+    <div class="callout-title"><i class="fas fa-rocket"></i> The MegaMek Launcher (Recommended)</div>
     <p>Download the <a href="{{ '/downloads.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button. <strong>You don't need Java if you're using the launcher.</strong> It comes built in.</p>
-    <p class="mb-0">Using the launcher? Skip ahead to <a href="#downloading">Release Types</a> and <a href="#first-launch">First Launch</a>. The Java and extraction steps on this page are for a manual install.</p>
+    <p class="mb-0">Using the launcher? Skip ahead to <a href="#downloading">Release Types</a> and <a href="#first-launch">First Launch</a>. The Java and extraction steps on this page are for a manual install (not recommended, use the launcher).</p>
   </div>
 
-  <p>For a manual install, MekHQ requires <strong>Java 21</strong> or newer to run. Install Java before downloading the MekHQ archive.</p>
+  <p>For a manual install (not recommended, use the launcher), MekHQ requires <strong>Java 21</strong> or newer to run. Install Java before downloading the MekHQ archive.</p>
 
   <div class="row g-4 mb-4">
     <div class="col-md-6">
@@ -78,7 +78,7 @@ toc: |
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
 
-  <p>With the launcher, pick the <strong>Core</strong> release when you install. For a manual install, download the MekHQ Suite archive from our <a href="{{ '/downloads' | relative_url }}"><strong>Downloads page</strong></a>. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
+  <p>With the launcher, pick the <strong>Core</strong> release when you install. For a manual install (not recommended, use the launcher), download the MekHQ Suite archive from the <a href="{{ '/downloads.html#manual-install' | relative_url }}"><strong>Installing and Updating</strong></a> page. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
 
   <h3>Release Types</h3>
 
@@ -110,7 +110,7 @@ toc: |
 <section id="extracting">
   <h2><i class="fas fa-file-archive"></i> Extracting the Archive</h2>
 
-  <p><em>Manual install only. The launcher does this for you.</em></p>
+  <p><em>Manual install only (not recommended, use the launcher). The launcher does this for you.</em></p>
 
   <p>MekHQ uses <code>.tar.gz</code> archives—a single download that works on Windows, Mac, and Linux.</p>
 
@@ -186,6 +186,11 @@ toc: |
 <section id="first-launch">
   <h2><i class="fas fa-play-circle"></i> First Launch</h2>
 
+  <div class="guide-callout guide-callout-info">
+    <div class="callout-title"><i class="fas fa-rocket"></i> Using the Launcher (Recommended)</div>
+    <p class="mb-0">Press <strong>Launch MekHQ</strong> in the launcher. The steps below are for a manual install (not recommended, use the launcher).</p>
+  </div>
+
   <div class="row g-4">
     <div class="col-md-6">
       <div class="card h-100" style="background: var(--card-color); border: 1px solid rgba(0, 120, 215, 0.3);">
@@ -219,13 +224,14 @@ toc: |
           <i class="fab fa-apple"></i> Mac
         </div>
         <div class="card-body" style="color: var(--text-color);">
-          <p><strong>First run requires Gatekeeper bypass:</strong></p>
+          <p>Open Terminal in the folder you unpacked and run <code>./MekHQ.sh</code>.</p>
+          <p><strong>Prefer to double-click?</strong> The first time, macOS needs a Gatekeeper bypass:</p>
           <ol class="mb-3">
-            <li><strong>Right-click</strong> (or Control-click) the JAR file</li>
+            <li><strong>Right-click</strong> (or Control-click) <code>MekHQ.jar</code></li>
             <li>Select <strong>"Open"</strong> from the menu</li>
             <li>Click <strong>"Open"</strong> in the security dialog</li>
           </ol>
-          <p class="mb-0"><strong>After updates:</strong> Repeat this process for each new version.</p>
+          <p class="mb-0"><strong>After updates:</strong> Repeat this for each new version. Stuck? See <a href="{{ '/wiki/mac_issues.html' | relative_url }}">macOS issues</a>.</p>
         </div>
       </div>
     </div>
@@ -429,7 +435,7 @@ toc: |
     </div>
   </div>
 
-  <h3>Updating with the Launcher</h3>
+  <h3>Updating with the Launcher (Recommended)</h3>
 
   <p>The launcher's <strong>Update</strong> button updates your installation in place. It keeps your campaigns, saves, custom units, user data and settings, but it can't roll back to the old version.</p>
 
@@ -440,7 +446,7 @@ toc: |
     <li>Re-save any custom campaign presets in the new version.</li>
   </ol>
 
-  <h3>Step-by-Step Migration (Manual Install)</h3>
+  <h3>Step-by-Step Migration: Manual Install (Not recommended, use the launcher)</h3>
 
   <div class="guide-step">
     <div class="step-number">1</div>
