@@ -68,7 +68,7 @@ content they change:
   - `credits.md`: Artwork, project contributors, and dependency notices.
   - `community.md`: Information about the MegaMek community. Shows on its own page.
   - `play.md`: Information about how to play MegaMek and MekHQ. Shows on its own page.
-  - `downloads.html`: Installing and Updating: launcher and archive downloads, install steps, updating, extras
+  - `downloads.html`: Installing and Updating: launcher and archive downloads, install steps, updating
   - `download-stats.html`: Download numbers and charts, linked from the footer
   - `faq.html`: FAQ Information
   - `installation.html`: Redirects to `downloads.html`, so old links keep working

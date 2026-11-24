@@ -12,7 +12,7 @@ title: Installing and Updating
   <a href="#install-launcher">Install</a> &middot;
   <a href="#updating">Updating</a> &middot;
   <a href="#manual-install">Manual install</a> &middot;
-  <a href="#extras">Extras</a>
+  <a href="{{ '/download-stats.html' | relative_url }}">Download stats</a>
 </nav>
 
 <!-- Launcher Section -->
@@ -347,10 +347,22 @@ title: Installing and Updating
           <a href='https://www.7-zip.org'>7-Zip</a>.
         </p>
         <p class='card-text'>
-          <strong>macOS:</strong> do <strong>NOT</strong> unpack into the
-          <strong>Documents</strong>, <strong>Downloads</strong> or
-          <strong>Desktop</strong> folders. macOS protects them and will not
-          let the programs run there.
+          <strong>macOS:</strong> do <strong>NOT</strong> unpack into a
+          protected folder: <strong>Documents</strong>, <strong>Downloads</strong>
+          or <strong>Desktop</strong>. macOS will not let the programs run
+          there. A <code>Games</code> folder in your home folder works well.
+        </p>
+        <p class='card-text'>
+          <strong>Linux:</strong> do <strong>NOT</strong> ever unpack into the
+          root folder (<code>/</code>) or as root with <code>sudo</code>.
+          Unpack into a folder in your home folder, such as
+          <code>~/Games</code>.
+        </p>
+        <p class='card-text'>
+          <strong>All systems:</strong> do <strong>NOT</strong> unpack into a
+          cloud folder (Dropbox, OneDrive, Google Drive or iCloud). The sync
+          can move or remove files while the program runs, and strange things
+          happen.
         </p>
       </div>
     </div>
@@ -423,53 +435,8 @@ title: Installing and Updating
   </div>
 </div>
 
-<!-- Extras Section -->
-<h3 id="extras">Extras</h3>
-<p>Optional resource packs that are not included in the program downloads.</p>
-
-<div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-  <div class="col">
-    <div class="card h-100 dl-tile dl-extra">
-      <div class="card-body">
-        <h5 class="card-title"><i class="fas fa-palette"></i> MegaMek Extras</h5>
-        <p class="card-text">
-          Camouflage and portrait packs. The file structure matches the
-          programs, so they can be extracted directly into the main program
-          directories.
-        </p>
-      </div>
-      <div class="card-footer">
-        <div class="dl-meta">Version {{ site.data.current_releases.megamek_extras }} <span class="badge text-bg-secondary">{{ site.data.current_releases.megamek_extras_date }}</span></div>
-        <a class="dl-btn"
-          href="https://github.com/MegaMek/megamek-extras/releases/download/v{{ site.data.current_releases.megamek_extras }}/megamek-extras-{{ site.data.current_releases.megamek_extras }}.zip">
-          <i class="fas fa-download"></i> Download (.zip)
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 dl-tile dl-extra">
-      <div class="card-body">
-        <h5 class="card-title"><i class="fas fa-shield-alt"></i> MekHQ Extras</h5>
-        <p class="card-text">
-          Force icon packs for MekHQ. Please use the attached README when
-          adding these to MekHQ.
-        </p>
-      </div>
-      <div class="card-footer">
-        <div class="dl-meta">Version {{ site.data.current_releases.mekhq_extras }} <span class="badge text-bg-secondary">{{ site.data.current_releases.mekhq_extras_date }}</span></div>
-        <a class="dl-btn"
-          href="https://github.com/MegaMek/mekhq-extras/releases/download/v{{ site.data.current_releases.mekhq_extras }}/mekhq-extras-{{ site.data.current_releases.mekhq_extras }}.zip">
-          <i class="fas fa-download"></i> Download (.zip)
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <p class="text-center mb-4">
-  <small>
-    How many people download each release? See the
-    <a href="{{ '/download-stats.html' | relative_url }}">download stats</a>.
-  </small>
+  <a class="dl-btn d-inline-block px-4" href="{{ '/download-stats.html' | relative_url }}">
+    <i class="fas fa-chart-line"></i> See how many people download each release
+  </a>
 </p>

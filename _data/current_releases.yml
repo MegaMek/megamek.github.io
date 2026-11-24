@@ -6,7 +6,3 @@ stable: 0.51.0
 stable_date: June 6, 2026
 #The MegaMek Launcher version is not set here. The daily snapshot workflow
 #writes the newest launcher release to _data/launcher_release.json.
-megamek_extras: 1.2
-megamek_extras_date: July 10th, 2021
-mekhq_extras: 1.1
-mekhq_extras_date: February 20th, 2022
