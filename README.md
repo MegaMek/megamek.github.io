@@ -32,7 +32,7 @@ release without a "v."
   archives. Keep the key name: the download snapshot workflow reads it by name.
 - The MegaMek Launcher version goes to `_data/launcher_release.json`, and the
   home and Downloads pages build their launcher links from it. A release is
-  only used once all six installers are uploaded.
+  only used once all seven installers are uploaded (including the Linux Flatpak).
 - Experimental releases are not listed. Players get them through the launcher.
 
 ### Launcher Policies and Signing
