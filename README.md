@@ -24,9 +24,11 @@ release without a "v."
 
 - `stable` is the current Core release. Keep the key name: the download
   snapshot workflow reads it by name.
-- `launcher` is the MegaMek Launcher version. It builds the launcher download
-  links on the home and Downloads pages. The launcher updates itself, so this
-  only needs bumping now and then.
+- The MegaMek Launcher version is not set by hand. The daily snapshot workflow
+  (`.github/workflows/snapshot-downloads.yml`) writes the newest launcher
+  release to `_data/launcher_release.json`, and the home and Downloads pages
+  build their launcher links from it. A release is only used once all six
+  installers are uploaded, so links lag a new launcher by up to a day.
 - Experimental releases are not listed. Players get them through the launcher.
 
 ### Launcher Policies and Signing

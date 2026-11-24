@@ -3,7 +3,7 @@ layout: page
 title: Downloads
 ---
 
-{% assign launcher = site.data.current_releases.launcher %}
+{% assign launcher = site.data.launcher_release.version %}
 {% assign launcher_base = "https://github.com/MegaMek/mm-launcher/releases/download/v" | append: launcher | append: "/MegaMek-Launcher-" | append: launcher %}
 {% assign core = site.data.current_releases.stable %}
 
@@ -19,7 +19,7 @@ title: Downloads
         <p class="dl-meta">
           <span class="badge dl-badge-recommended">Recommended</span>
           Version {{ launcher }}
-          <span class="badge text-bg-secondary">{{ site.data.current_releases.launcher_date }}</span>
+          <span class="badge text-bg-secondary">{{ site.data.launcher_release.date | date: "%B %-d, %Y" }}</span>
         </p>
         <p class="card-text">
           The easiest way to play. The launcher installs MegaMek, MegaMekLab and
