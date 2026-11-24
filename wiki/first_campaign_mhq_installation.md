@@ -27,7 +27,7 @@ toc: |
 
   <div class="guide-callout guide-callout-info">
     <div class="callout-title"><i class="fas fa-rocket"></i> Easiest Way: The MegaMek Launcher</div>
-    <p>Download the <a href="{{ '/downloads.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It comes with Java built in, installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button.</p>
+    <p>Download the <a href="{{ '/downloads.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button. <strong>You don't need Java if you're using the launcher.</strong> It comes built in.</p>
     <p class="mb-0">Using the launcher? Skip ahead to <a href="#downloading">Release Types</a> and <a href="#first-launch">First Launch</a>. The Java and extraction steps on this page are for a manual install.</p>
   </div>
 
