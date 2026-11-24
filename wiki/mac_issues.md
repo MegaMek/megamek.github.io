@@ -5,7 +5,7 @@ title: Mac Issues
 
 ### The MegaMek Launcher (Recommended)
 
-The [MegaMek Launcher](/downloads.html#launcher-macos) installs MegaMek, MegaMekLab and MekHQ for you. **You don't need Java if you're using the launcher.** It comes built in. Pick the `.pkg` that matches your Mac's chip: Apple Silicon (M-series) or Intel.
+The [MegaMek Launcher](/installing_and_updating.html#launcher-macos) installs MegaMek, MegaMekLab and MekHQ for you. **You don't need Java if you're using the launcher.** It comes built in. Pick the `.pkg` that matches your Mac's chip: Apple Silicon (M-series) or Intel.
 
 Everything below is for a manual install from the `.tar.gz` archive (not recommended, use the launcher).
 

@@ -27,7 +27,7 @@ toc: |
 
   <div class="guide-callout guide-callout-info">
     <div class="callout-title"><i class="fas fa-rocket"></i> The MegaMek Launcher (Recommended)</div>
-    <p>Download the <a href="{{ '/downloads.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button. <strong>You don't need Java if you're using the launcher.</strong> It comes built in.</p>
+    <p>Download the <a href="{{ '/installing_and_updating.html#launcher' | relative_url }}"><strong>MegaMek Launcher</strong></a> for your system and run its installer. It installs MegaMek, MegaMekLab and MekHQ for you, and updates them with one button. <strong>You don't need Java if you're using the launcher.</strong> It comes built in.</p>
     <p class="mb-0">Using the launcher? Skip ahead to <a href="#downloading">Release Types</a> and <a href="#first-launch">First Launch</a>. The Java and extraction steps on this page are for a manual install (not recommended, use the launcher).</p>
   </div>
 
@@ -78,7 +78,7 @@ toc: |
 <section id="downloading">
   <h2><i class="fas fa-download"></i> Downloading MekHQ</h2>
 
-  <p>With the launcher, pick the <strong>Core</strong> release when you install. For a manual install (not recommended, use the launcher), download the MekHQ Suite archive from the <a href="{{ '/downloads.html#manual-install' | relative_url }}"><strong>Installing and Updating</strong></a> page. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
+  <p>With the launcher, pick the <strong>Core</strong> release when you install. For a manual install (not recommended, use the launcher), download the MekHQ Suite archive from the <a href="{{ '/installing_and_updating.html#manual-install' | relative_url }}"><strong>Installing and Updating</strong></a> page. The suite includes MegaMek (battles) and MegaMekLab (unit editor) in one package.</p>
 
   <h3>Release Types</h3>
 
