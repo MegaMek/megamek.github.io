@@ -12,6 +12,7 @@ title: Installing and Updating
   <a href="#install-launcher">Install</a> &middot;
   <a href="#updating">Updating</a> &middot;
   <a href="#manual-install">Manual install</a> &middot;
+  <a href="#dedicated-server">Dedicated server</a> &middot;
   <a href="{{ '/download-stats.html' | relative_url }}">Download stats</a>
 </nav>
 
@@ -481,6 +482,41 @@ title: Installing and Updating
           <code>MegaMek.sh</code> and <code>MegaMekLab.sh</code> start the
           other programs.
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='row' id="dedicated-server">
+  <div class='col mb-4'>
+    <div class='card dl-card'>
+      <div class='card-header'>
+        <i class="fab fa-docker"></i> Running a dedicated server
+      </div>
+      <div class='card-body'>
+        <p class='card-text'>
+          Hosting games for your group? MegaMek is also published as a Docker
+          image. It runs a dedicated server on any Linux machine, amd64 or
+          arm64, with Java built in.
+        </p>
+        <div class="language-bash highlighter-rouge">
+          <div>
+            <pre class="highlight"><code>docker run -d -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest</code></pre>
+          </div>
+        </div>
+        <p class='card-text'>
+          <code>latest</code> is the newest Core release. Players must run the
+          same version as the server, so pin a version tag for a long game.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="dl-btn dl-btn-primary px-4"
+            href="https://github.com/orgs/MegaMek/packages/container/package/megamek">
+            <i class="fab fa-docker"></i> Docker image
+          </a>
+          <a class="dl-btn px-4" href="{{ '/wiki/ded_servers.html' | relative_url }}">
+            <i class="fas fa-server"></i> Dedicated server guide
+          </a>
+        </div>
       </div>
     </div>
   </div>

@@ -5,6 +5,28 @@ title: Dedicated Servers
 
 ### Running a Dedicated MegaMek Server
 
+#### The easy way: Docker
+
+MegaMek is published as a [Docker image](https://github.com/orgs/MegaMek/packages/container/package/megamek) for Linux, on amd64 and arm64. It has Java built in and starts a dedicated server on port 2346. A new image is built for every release.
+
+```bash
+docker run -d -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest
+```
+
+The `userdata` folder holds your custom units, maps and other user files. Change `./userdata` to wherever you want them kept.
+
+Pick the version with the tag at the end of the image name:
+
+- `latest` or `core`: the newest Core release
+- `experimental`: the newest Experimental release
+- A version such as `v0.51.01.14`: that exact release. Every release has its own tag
+
+Players must run the same MegaMek version as the server. For a game that runs for weeks, pin a version tag instead of `latest`, so an update doesn't lock your players out.
+
+To build the image yourself, see the [megamek-docker-image](https://github.com/MegaMek/megamek-docker-image) repository.
+
+#### Running it with Java
+
 You can run a dedicated MegaMek server on your machine. A dedicated server will always be on and players can connect to it at anytime to play games. We advise that you use a static ip address to run a dedicated server. You will want to ensure that any port forwarding is done from your router, if necessary.
 
 Dedicated servers are usually started from the command line. On a Linux system, you can enter the following command from the directory containing the MegaMek JAR:
