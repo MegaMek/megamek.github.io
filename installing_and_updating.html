@@ -501,7 +501,7 @@ title: Installing and Updating
         </p>
         <div class="language-bash highlighter-rouge">
           <div>
-            <pre class="highlight"><code>docker run -d -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest</code></pre>
+            <pre class="highlight"><code>docker run -d --pull always -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest</code></pre>
           </div>
         </div>
         <p class='card-text'>

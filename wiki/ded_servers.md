@@ -10,8 +10,10 @@ title: Dedicated Servers
 MegaMek is published as a [Docker image](https://github.com/orgs/MegaMek/packages/container/package/megamek) for Linux, on amd64 and arm64. It has Java built in and starts a dedicated server on port 2346. A new image is built for every release.
 
 ```bash
-docker run -d -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest
+docker run -d --pull always -p 2346:2346 -v ./userdata:/app/userdata ghcr.io/megamek/megamek:latest
 ```
+
+`--pull always` fetches the current image each time. Without it, Docker reuses any copy you pulled before, and `latest` can be an old release.
 
 The `userdata` folder holds your custom units, maps and other user files. Change `./userdata` to wherever you want them kept.
 
