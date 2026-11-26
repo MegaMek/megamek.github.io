@@ -1,0 +1,103 @@
+---
+layout: explorer
+title: Force Generator Explorer
+permalink: /forcegen/
+hide_carousel: true
+description: "How MegaMek's Force Generator fills each slot of a force, and how availability changes move the picks."
+stylesheets:
+  - "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&family=Roboto+Condensed:wght@400;700;800&display=swap"
+  - "/rat/rat.css"
+  - "/forcegen/forcegen.css"
+  - "/assets/css/explorers.css"
+scripts:
+  - "/forcegen/forcegen.js"
+---
+<div class="ratx" id="fgx">
+  <header class="ratx-header">
+    <div>
+      <p class="ratx-eyebrow">Force Generator Explorer</p>
+      <h1 id="fg-title">How forces are built</h1>
+      <p class="ratx-sub">What MegaMek's Force Generator asks for in each slot, what it actually picks, and how changing one unit's availability moves the picks. Every number comes from running MegaMek's own Force Generator many times with fixed dice.</p>
+    </div>
+    <nav class="ratx-tabs" aria-label="Pages">
+      <a class="ratx-tab" href="/rat/" style="text-decoration:none">RAT Explorer</a>
+      <span class="ratx-tab" aria-current="page" style="--frame:#fff;color:#000;background-color:var(--bt-yellow)">Force Generator</span>
+    </nav>
+  </header>
+
+  <p class="ratx-status" id="fg-status" role="status">Loading studies…</p>
+
+  <section class="ratx-panel ratx-filters" aria-label="Study" id="fg-filters" hidden>
+    <div class="ratx-field">
+      <label for="fg-faction">Faction</label>
+      <select id="fg-faction"></select>
+    </div>
+    <div class="ratx-field">
+      <label for="fg-year">Year</label>
+      <select id="fg-year"></select>
+    </div>
+    <div class="ratx-field ratx-grow">
+      <label for="fg-force">Force</label>
+      <select id="fg-force"></select>
+    </div>
+  </section>
+
+  <div class="ratx-tiles" id="fg-tiles"></div>
+
+  <section class="ratx-panel ratx-flush" aria-labelledby="fg-slots-h">
+    <div class="ratx-panel-head">
+      <h2 id="fg-slots-h">How slots are filled</h2>
+      <span class="ratx-hint">Each row is a kind of slot: the lance's formation type and the roles the slot asks for.</span>
+    </div>
+    <div class="ratx-scroll"><table class="ratx-table fg-table">
+      <thead><tr><th scope="col">Lance type</th><th scope="col">Roles asked</th><th scope="col">Share of slots</th><th scope="col">Role honoured</th><th scope="col">Slot weight matched</th><th scope="col">Most picked</th></tr></thead>
+      <tbody id="fg-slots"></tbody>
+    </table></div>
+  </section>
+
+  <div class="fg-columns">
+    <section class="ratx-panel" aria-labelledby="fg-roles-h">
+      <h2 id="fg-roles-h">Roles asked vs roles delivered</h2>
+      <p class="ratx-help">When a slot asks for a role, how often the RAT Generator's own role rules accept the unit it gets. Recon, cavalry and anti-aircraft also take untagged units that fit (fast 'Meks, hovercraft, flak weapons), and omni reads the unit's omni flag, so the tagged share is lower. Roles a unit type cannot take, such as omni on a Nova's battle armor, are left out.</p>
+      <div id="fg-roles"></div>
+    </section>
+    <section class="ratx-panel" aria-labelledby="fg-weight-h">
+      <h2 id="fg-weight-h">Weight asked vs weight delivered</h2>
+      <p class="ratx-help">Rows: the weight class the slot asked for. Columns: what it got. The Force Generator picks a lance's units from the weight classes the lance asked for, then hands them out to its slots, so a slot can get a neighbour's weight while the lance stays in its classes.</p>
+      <div class="ratx-scroll" id="fg-weight"></div>
+    </section>
+  </div>
+
+  <section class="ratx-panel ratx-flush" aria-labelledby="fg-units-h">
+    <div class="ratx-panel-head">
+      <h2 id="fg-units-h">Units and where they are used</h2>
+      <span class="ratx-hint">Unit names open the unit in MekBay. Right-click a name for what code edits did to it and a link to edit its codes.</span>
+    </div>
+    <div class="ratx-scroll"><table class="ratx-table fg-table">
+      <thead><tr><th scope="col">#</th><th scope="col">Unit</th><th scope="col">Share of picks</th><th scope="col">Per force</th><th scope="col">Its roles</th><th scope="col">Slots it fills</th></tr></thead>
+      <tbody id="fg-units"></tbody>
+    </table></div>
+  </section>
+
+  <section class="ratx-panel" aria-labelledby="fg-sweep-h">
+    <h2 id="fg-sweep-h">What availability changes do</h2>
+    <p class="ratx-help">For the most-picked chassis, the overnight run moved this faction's chassis code down 2, up 2, and to 0, then built the same forces again with the same dice. A move counts as real (●) only when it is bigger than chance and bigger than the control run, which rebuilt the forces with different dice and no edit.</p>
+    <div class="ratx-field ratx-grow" style="max-width:420px">
+      <label for="fg-chassis">Chassis</label>
+      <select id="fg-chassis"></select>
+    </div>
+    <div id="fg-sweep"></div>
+  </section>
+
+  <section class="ratx-panel" aria-labelledby="fg-empty-h" id="fg-empty-box">
+    <h2 id="fg-empty-h">Slots left empty</h2>
+    <p class="ratx-help">Slots where the Force Generator found no unit at any rating, weight or role relaxation.</p>
+    <div id="fg-empty"></div>
+  </section>
+
+  <footer class="ratx-panel ratx-about">
+    <h2>How this was made</h2>
+    <p>A study runs MegaMek's Force Generator (the steps of <code>Ruleset.processRoot</code>) hundreds of times with seeded dice. Before units are picked it records what each slot of the force tree asks for: unit type, formation, roles and weight class. Afterwards it records the unit picked. Sensitivity runs change one availability code in memory, as the RAT Editor would, and repeat the same seeds.</p>
+    <p id="fg-build"></p>
+  </footer>
+</div>

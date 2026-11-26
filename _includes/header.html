@@ -27,6 +27,14 @@
   {% comment %} The ?v= stamp changes on every build, so browsers fetch the new file after a deploy instead of reusing a cached copy. {% endcomment %}
   <link href="{{ '/assets/css/mmsite.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="{{ '/assets/css/syntax.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
+  {% comment %} Pages can list extra stylesheets in their front matter; full URLs are used as they are. {% endcomment %}
+  {% for stylesheet in page.stylesheets %}
+  {% if stylesheet contains '://' %}
+  <link href="{{ stylesheet }}" rel="stylesheet">
+  {% else %}
+  <link href="{{ stylesheet | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
+  {% endif %}
+  {% endfor %}
   {% if page.layout == 'guide' %}
   <link href="{{ '/assets/css/guide.css' | relative_url }}?v={{ site.time | date: '%s' }}" rel="stylesheet">
   {% endif %}
@@ -70,6 +78,8 @@
       </div>
     </nav>
   </header>
+  {% comment %} Tool pages such as the RAT Explorer set hide_carousel: true to start right under the menu. {% endcomment %}
+  {% unless page.hide_carousel %}
   <div class='container-fluid px-0'>
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
       <div class="carousel-inner">
@@ -88,3 +98,4 @@
       </div>
     </div>
   </div>
+  {% endunless %}

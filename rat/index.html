@@ -1,0 +1,235 @@
+---
+layout: explorer
+title: RAT Explorer
+permalink: /rat/
+hide_carousel: true
+description: "The chance that one roll on a faction's random assignment table gives each unit, worked out the way the MegaMek RAT Generator does it."
+stylesheets:
+  - "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&family=Roboto+Condensed:wght@400;700;800&display=swap"
+  - "/rat/rat.css"
+  - "/assets/css/explorers.css"
+scripts:
+  - "/rat/ratgen.js"
+  - "/rat/rat.js"
+---
+<div class="ratx" id="ratx">
+  <header class="ratx-header">
+    <div>
+      <p class="ratx-eyebrow">RAT Probability Explorer</p>
+      <h1 id="ratx-title">Random Assignment Tables</h1>
+      <p class="ratx-sub">The chance that one roll on a faction's table gives each unit, worked out the way the MegaMek RAT Generator does it. Change any availability code to see how the odds move.</p>
+    </div>
+    <nav class="ratx-tabs" aria-label="Views">
+      <button type="button" class="ratx-tab" data-view="table" aria-pressed="true">Roll table</button>
+      <button type="button" class="ratx-tab" data-view="history" aria-pressed="false">Unit across years</button>
+      <button type="button" class="ratx-tab" data-view="compare" aria-pressed="false">Compare factions</button>
+      <a class="ratx-tab" href="/forcegen/" style="text-decoration:none">Force Generator</a>
+    </nav>
+  </header>
+
+  <p class="ratx-status" id="ratx-status" role="status">Loading data…</p>
+
+  <div class="ratx-edits" id="ratx-edits" hidden>
+    <div class="ratx-edits-text">
+      <strong id="ratx-edits-count">Test edits active</strong>
+      <span>Every number on this page includes your test edits. "Before" shows the published data.</span>
+    </div>
+    <div class="ratx-edits-actions">
+      <button type="button" class="ratx-button-quiet" id="ratx-edits-show">Show changes</button>
+      <button type="button" class="ratx-button-quiet" id="ratx-edits-copy">Copy as list</button>
+      <button type="button" class="ratx-button" id="ratx-edits-reset">Reset all</button>
+    </div>
+    <ul class="ratx-edits-list" id="ratx-edits-list" hidden></ul>
+  </div>
+
+  <!-- Shared filters -->
+  <section class="ratx-panel ratx-filters" aria-label="Filters" id="ratx-filters" hidden>
+    <div class="ratx-field">
+      <label for="f-year">Year</label>
+      <div class="ratx-year">
+        <input id="f-year" type="number" inputmode="numeric">
+        <input id="f-year-range" type="range" aria-label="Year slider">
+      </div>
+    </div>
+    <div class="ratx-field ratx-grow ratx-combo" data-views="table history">
+      <label for="f-faction">Faction</label>
+      <input id="f-faction" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-faction-options"
+             autocomplete="off" spellcheck="false" placeholder="Type a name or code, e.g. FS">
+      <ul class="ratx-combo-list" id="f-faction-options" role="listbox" aria-label="Factions" hidden></ul>
+      <datalist id="f-faction-list"></datalist>
+    </div>
+    <div class="ratx-field">
+      <label for="f-type">Unit type</label>
+      <select id="f-type"></select>
+    </div>
+    <fieldset class="ratx-field" data-views="table history">
+      <legend>Equipment rating <span class="ratx-hint" data-views="table">· pick one or more</span></legend>
+      <div class="ratx-pills" id="f-ratings"></div>
+    </fieldset>
+    <div class="ratx-field ratx-grow" data-views="table">
+      <label for="f-query">Find unit</label>
+      <input id="f-query" type="search" placeholder="Chassis or model, e.g. Atlas">
+    </div>
+
+    <details class="ratx-ratgen" id="f-ratgen">
+      <summary>RAT Generator options <span class="ratx-hint" id="f-ratgen-summary"></span></summary>
+      <div class="ratx-ratgen-grid">
+        <fieldset class="ratx-group" id="f-weights-box">
+          <legend>Weight class</legend>
+          <div id="f-weights" class="ratx-checks"></div>
+          <p class="ratx-help">None ticked: every weight class. Two or more: the table is rebalanced to the faction's usual weight mix, as the RAT Generator does.</p>
+        </fieldset>
+        <fieldset class="ratx-group" id="f-motives-box">
+          <legend>Motive type</legend>
+          <div id="f-motives" class="ratx-checks"></div>
+        </fieldset>
+        <fieldset class="ratx-group" id="f-network-box">
+          <legend>C3 network</legend>
+          <div id="f-network" class="ratx-checks"></div>
+        </fieldset>
+        <fieldset class="ratx-group ratx-roles-box">
+          <legend>Mission roles</legend>
+          <div class="ratx-field ratx-inline">
+            <label for="f-strictness">Role strictness</label>
+            <select id="f-strictness"><option value="1">Low</option><option value="2" selected>Medium</option><option value="3">High</option></select>
+          </div>
+          <div id="f-roles" class="ratx-checks ratx-roles"></div>
+        </fieldset>
+      </div>
+      <button type="button" class="ratx-button-quiet" id="f-ratgen-reset">Clear options</button>
+    </details>
+  </section>
+
+  <p class="ratx-note" id="ratx-note" hidden></p>
+
+  <!-- View: roll table -->
+  <section id="view-table" class="ratx-view" aria-label="Roll table" hidden>
+    <div class="ratx-tiles" id="t-tiles"></div>
+    <div class="ratx-panel ratx-flush">
+      <div class="ratx-panel-head">
+        <h2 id="t-heading">Roll chances</h2>
+        <label class="ratx-check"><input type="checkbox" id="t-show-all"> Show every unit</label>
+      </div>
+      <div class="ratx-scroll">
+        <table class="ratx-table">
+          <thead id="t-head"></thead>
+          <tbody id="t-body"></tbody>
+        </table>
+      </div>
+      <p class="ratx-foot" id="t-foot"></p>
+    </div>
+
+    <!-- Test weights editor -->
+    <section class="ratx-panel ratx-editor" id="t-editor" aria-label="Test weights" hidden>
+      <div class="ratx-editor-head">
+        <div>
+          <p class="ratx-eyebrow">Test weights</p>
+          <h2 id="e-title">Unit</h2>
+          <p class="ratx-sub" id="e-source"></p>
+          <div class="ratx-links" id="e-links"></div>
+        </div>
+        <button type="button" class="ratx-button-quiet" id="e-close">Close</button>
+      </div>
+      <p class="ratx-help">Each cell is an availability code from the era files, the same grid as the RAT Editor. Type a new value (for example <code>6</code>, <code>7+</code>, <code>5-</code>, <code>4:3055</code> or <code>!A:6!B:4</code>) and press Enter; clear a cell to remove the code. A code of <code>0</code> takes the unit out of this faction's own table; salvage from other factions can still bring it in. A cleared cell falls back to the parent faction's code (for example IS), so clearing alone may change nothing. Hover over a cell to see the whole code and what it gives at each equipment rating. Right-click a cell for an editor with − and + buttons and the unit's chance before and after. The table above updates at once. Edits stay in this browser tab only.</p>
+      <h3 class="ratx-editor-sub">Chassis codes <span class="ratx-hint" id="e-chassis-key"></span></h3>
+      <div class="ratx-scroll"><table class="ratx-grid" id="e-chassis-grid"></table></div>
+      <div class="ratx-add">
+        <label for="e-chassis-add">Add a faction row</label>
+        <input id="e-chassis-add" list="f-faction-list" placeholder="Faction code">
+        <button type="button" class="ratx-button-quiet" data-add="chassis">Add</button>
+      </div>
+      <h3 class="ratx-editor-sub">Model codes <span class="ratx-hint" id="e-model-key"></span></h3>
+      <div class="ratx-scroll"><table class="ratx-grid" id="e-model-grid"></table></div>
+      <div class="ratx-add">
+        <label for="e-model-add">Add a faction row</label>
+        <input id="e-model-add" list="f-faction-list" placeholder="Faction code">
+        <button type="button" class="ratx-button-quiet" data-add="model">Add</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- View: unit across years -->
+  <section id="view-history" class="ratx-view" aria-label="Unit across years" hidden>
+    <div class="ratx-panel ratx-filters">
+      <div class="ratx-field ratx-grow">
+        <label for="h-unit">Unit</label>
+        <input id="h-unit" list="h-unit-list" autocomplete="off" placeholder="e.g. Atlas AS7-D">
+        <datalist id="h-unit-list"></datalist>
+      </div>
+      <div class="ratx-field ratx-grow">
+        <label for="h-factions">Factions (codes, up to 6)</label>
+        <input id="h-factions" placeholder="FS, LA, DC, CC, FWL">
+      </div>
+      <div class="ratx-field">
+        <label for="h-from">From</label>
+        <input id="h-from" type="number" inputmode="numeric">
+      </div>
+      <div class="ratx-field">
+        <label for="h-to">To</label>
+        <input id="h-to" type="number" inputmode="numeric">
+      </div>
+      <div class="ratx-field">
+        <span class="ratx-label">&nbsp;</span>
+        <button type="button" class="ratx-button" id="h-go">Draw chart</button>
+      </div>
+    </div>
+    <div class="ratx-panel">
+      <h2 id="h-heading">Chance per roll by year</h2>
+      <div id="h-chart" class="ratx-chart"></div>
+      <div id="h-legend" class="ratx-legend"></div>
+    </div>
+  </section>
+
+  <!-- View: compare factions -->
+  <section id="view-compare" class="ratx-view" aria-label="Compare factions" hidden>
+    <div class="ratx-panel ratx-filters">
+      <div class="ratx-field ratx-grow">
+        <label for="c-factions">Factions (codes, up to 8)</label>
+        <input id="c-factions" placeholder="FS, LA, DC, CC, FWL">
+      </div>
+      <div class="ratx-field">
+        <label for="c-group">Group by</label>
+        <select id="c-group"><option value="chassis">Chassis</option><option value="model">Model</option></select>
+      </div>
+      <div class="ratx-field">
+        <label for="c-rating">Rating</label>
+        <select id="c-rating"><option value="mid">Middle of each faction's scale</option><option value="top">Best</option><option value="bottom">Worst</option></select>
+      </div>
+    </div>
+    <div class="ratx-panel ratx-flush">
+      <div class="ratx-panel-head"><h2 id="c-heading">Most common across factions</h2>
+        <div class="ratx-scale"><span>0%</span><span class="ratx-ramp" aria-hidden="true"></span><span id="c-max">max</span></div>
+      </div>
+      <div class="ratx-scroll"><table class="ratx-table ratx-heat"><thead id="c-head"></thead><tbody id="c-body"></tbody></table></div>
+    </div>
+  </section>
+
+  <footer class="ratx-panel ratx-about">
+    <h2>How these numbers are made</h2>
+    <div class="ratx-about-grid">
+      <section>
+        <h3>Where the data comes from</h3>
+        <p>The same files MegaMek loads:</p>
+        <ul>
+          <li>availability codes from the era files</li>
+          <li>unit stats (weight class, motive, roles)</li>
+          <li>faction settings (ratings, salvage, weight mix)</li>
+        </ul>
+      </section>
+      <section>
+        <h3>How a roll works</h3>
+        <ol>
+          <li><strong>Salvage first.</strong> If the salvage chance hits, the unit comes from the salvage faction's table five years earlier.</li>
+          <li><strong>Otherwise, by weight.</strong> A unit's chance is its weight divided by the total weight of the faction's own units.</li>
+          <li><strong>Codes set weight.</strong> Weight is 2<sup>code&nbsp;/&nbsp;2</sup>, so a code 2 higher doubles it. A code of 0 or less leaves the unit out.</li>
+        </ol>
+      </section>
+      <section>
+        <h3>How it is checked</h3>
+        <p>Your browser runs a copy of the RAT Generator's table-building steps.</p>
+        <p>Every published build is compared with MegaMek itself on thousands of random tables. They agree to within MegaMek's own rounding.</p>
+      </section>
+    </div>
+    <dl class="ratx-about-meta" id="ratx-build"></dl>
+  </footer>
+</div>
