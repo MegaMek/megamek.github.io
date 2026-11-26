@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "repos": {
     "megamek": [
       {
@@ -7,7 +7,7 @@
         "name": "MegaMek 0.51.01.14",
         "date": "2026-11-24",
         "prerelease": false,
-        "downloads": 149
+        "downloads": 226
       },
       {
         "tag": "v0.51.01.13",
@@ -49,7 +49,7 @@
         "name": "MegaMek 0.51.01.8 (Experimental)",
         "date": "2026-11-14",
         "prerelease": true,
-        "downloads": 25
+        "downloads": 26
       },
       {
         "tag": "v0.51.01.7",
@@ -112,7 +112,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 3138
+        "downloads": 3139
       },
       {
         "tag": "v0.50.12",
@@ -140,7 +140,7 @@
         "name": "v0.50.07-Development",
         "date": "2025-10-12",
         "prerelease": false,
-        "downloads": 525
+        "downloads": 527
       },
       {
         "tag": "v0.50.06",
@@ -413,7 +413,7 @@
         "name": "v0.47.10 Development Snapshot",
         "date": "2020-09-20",
         "prerelease": false,
-        "downloads": 159
+        "downloads": 160
       },
       {
         "tag": "v0.47.9",
@@ -735,7 +735,7 @@
         "name": "0.41.19",
         "date": "2016-06-05",
         "prerelease": false,
-        "downloads": 829
+        "downloads": 830
       },
       {
         "tag": "v0.41.18",
@@ -779,7 +779,7 @@
         "name": "MegaMekLab 0.51.01.14",
         "date": "2026-11-24",
         "prerelease": false,
-        "downloads": 69
+        "downloads": 122
       },
       {
         "tag": "v0.51.01.13",
@@ -877,7 +877,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 3157
+        "downloads": 3159
       },
       {
         "tag": "v0.50.12",
@@ -905,7 +905,7 @@
         "name": "v0.50.07-Development",
         "date": "2025-10-12",
         "prerelease": false,
-        "downloads": 514
+        "downloads": 516
       },
       {
         "tag": "v0.50.06",
@@ -961,7 +961,7 @@
         "name": "v0.49.20-Development",
         "date": "2024-06-28",
         "prerelease": false,
-        "downloads": 511
+        "downloads": 512
       },
       {
         "tag": "v0.49.19.1",
@@ -1544,14 +1544,14 @@
         "name": "MekHQ 0.51.01.14",
         "date": "2026-11-24",
         "prerelease": false,
-        "downloads": 805
+        "downloads": 1147
       },
       {
         "tag": "v0.51.01.13",
         "name": "MekHQ 0.51.01.13 (Experimental)",
         "date": "2026-11-22",
         "prerelease": true,
-        "downloads": 88
+        "downloads": 92
       },
       {
         "tag": "v0.51.01.12",
@@ -1579,7 +1579,7 @@
         "name": "MekHQ 0.51.01.10 (Experimental)",
         "date": "2026-11-18",
         "prerelease": true,
-        "downloads": 49
+        "downloads": 50
       },
       {
         "tag": "v0.51.01.8",
@@ -1642,7 +1642,7 @@
         "name": "v0.51.0-Development",
         "date": "2026-06-06",
         "prerelease": false,
-        "downloads": 15791
+        "downloads": 15793
       },
       {
         "tag": "v0.50.12",
@@ -1656,7 +1656,7 @@
         "name": "v0.50.11-Development",
         "date": "2025-12-30",
         "prerelease": false,
-        "downloads": 14536
+        "downloads": 14537
       },
       {
         "tag": "v0.50.10",
@@ -1670,14 +1670,14 @@
         "name": "v0.50.07-Development",
         "date": "2025-10-12",
         "prerelease": false,
-        "downloads": 2881
+        "downloads": 2883
       },
       {
         "tag": "v0.50.06",
         "name": "v0.50.06-Milestone",
         "date": "2025-05-19",
         "prerelease": false,
-        "downloads": 25310
+        "downloads": 25311
       },
       {
         "tag": "v0.50.05",
@@ -1803,7 +1803,7 @@
         "name": "v0.49.10 Development Snapshot",
         "date": "2022-09-12",
         "prerelease": false,
-        "downloads": 2597
+        "downloads": 2598
       },
       {
         "tag": "v0.49.9",
@@ -1880,7 +1880,7 @@
         "name": "v0.48.0 Stable",
         "date": "2021-03-05",
         "prerelease": false,
-        "downloads": 67905
+        "downloads": 67906
       },
       {
         "tag": "v0.47.17",
