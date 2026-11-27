@@ -120,6 +120,23 @@
   const ratingArgument = (faction, rating) => (faction.ratingLevels.length === 1 ? null : rating);
   const middleRating = (faction) => { const list = ratingsFor(faction); return list[Math.floor((list.length - 1) / 2)]; };
 
+  /**
+   * The rating on another faction's scale at the same place as the one picked, so an Inner Sphere A lines up with a
+   * Clan Keshik and a C with Second Line. MegaMek moves between rating systems by level the same way.
+   *
+   * @param faction    the faction the rating is for
+   * @param wanted     the rating picked, from the selected faction's scale
+   * @param sourceList the scale the picked rating comes from
+   */
+  function equivalentRating(faction, wanted, sourceList) {
+    const list = ratingsFor(faction);
+    if (list.includes(wanted)) return wanted;
+    const position = sourceList.indexOf(wanted);
+    if (position < 0 || list.length === 1 || sourceList.length < 2) return middleRating(faction);
+    const fraction = position / (sourceList.length - 1);
+    return list[Math.round(fraction * (list.length - 1))];
+  }
+
   function isActive(faction, year) {
     for (const [first, last] of faction.activeYears) if (year >= first && year <= last) return true;
     return false;
@@ -1084,8 +1101,8 @@
     const series = [];
     keys.forEach((key, i) => {
       const faction = factionByKey.get(key);
-      const wanted = state.ratings[0];
-      const rating = ratingsFor(faction).includes(wanted) ? wanted : middleRating(faction);
+      const selected = factionByKey.get(state.faction);
+      const rating = equivalentRating(faction, state.ratings[0], selected ? selected.ratingSystem : []);
       const line = (engine) => years.map((year) => {
         if (!isActive(faction, year)) return null;
         return chances(engine.findTable(tableParams(key, rating, year, unitType))).units.get(modelIndex) || 0;
