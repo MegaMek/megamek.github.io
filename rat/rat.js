@@ -413,6 +413,67 @@
     $('f-ratgen-summary').textContent = summary.length ? `· ${summary.join(' · ')}` : '· none set';
   }
 
+  // ---- Where the selected faction's codes come from, in the order the RAT Generator looks
+  /**
+   * The codes a faction's own units are filed under, in the order the engine reads them (ratgen.js lineageCodes): the
+   * name it went by in the year first, then its key, then its other names.
+   */
+  function ownCodes(faction, year) {
+    const years = Object.keys(faction.aliasesByYear || {}).map(Number).sort((a, b) => a - b);
+    if (years.length === 0) return [faction.key];
+    let active = null;
+    for (const aliasYear of years) if (aliasYear <= year) active = faction.aliasesByYear[aliasYear];
+    const codes = [active !== null ? active : faction.key];
+    if (!codes.includes(faction.key)) codes.push(faction.key);
+    for (const aliasYear of years) {
+      const code = faction.aliasesByYear[aliasYear];
+      if (!codes.includes(code)) codes.push(code);
+    }
+    return codes;
+  }
+
+  function lineageLink(key) {
+    const faction = factionByKey.get(key);
+    if (!faction) return `<span class="ratx-lineage-step"><span class="ratx-combo-key">${esc(key)}</span></span>`;
+    return `<a class="ratx-lineage-step" href="#" data-lineage-goto="${esc(key)}" title="Show ${esc(factionName(faction, state.year))}">`
+      + `${esc(factionName(faction, state.year))} <span class="ratx-combo-key">${esc(key)}</span></a>`;
+  }
+
+  function refreshLineage() {
+    const start = factionByKey.get(state.faction);
+    if (!start) { $('f-lineage').innerHTML = ''; return; }
+    const steps = [];
+    const seen = new Set();
+    let faction = start;
+    let ending = null;
+    while (faction && !seen.has(faction.key)) {
+      seen.add(faction.key);
+      const codes = ownCodes(faction, state.year);
+      steps.push(lineageLink(faction.key)
+        + (codes.length > 1 ? ` <span class="ratx-hint">(codes filed under ${codes.map(esc).join(', then ')})</span>` : ''));
+      const parents = faction.parents || [];
+      if (parents.length === 1) {
+        faction = factionByKey.get(parents[0]);
+        // "General" (or a code with no faction record) reads the General codes, as findChassisByKey does
+        if (!faction) ending = '<span class="ratx-lineage-step">General</span>';
+      } else if (parents.length > 1) {
+        ending = `<span class="ratx-lineage-step">the average of ${parents.map(lineageLink).join(' and ')}</span>`
+          + ' <span class="ratx-hint">(each with its own fallback)</span>';
+        faction = null;
+      } else {
+        ending = '<span class="ratx-lineage-step">General</span>';
+        faction = null;
+      }
+    }
+    if (ending) steps.push(ending);
+    const tip = 'For each chassis and model, the RAT Generator uses the first code it finds, left to right. '
+      + "It reads the faction's own code first, then its parent faction's, and so on. A faction with several "
+      + 'parents takes the average of their codes. General is the code for any faction with none of its own. '
+      + 'A faction that changed its name reads the codes under its name for that year first, then its other names. '
+      + 'Click a faction to show its table.';
+    $('f-lineage').innerHTML = `${tipLabel('Codes come from', tip)} ${steps.join(' <span class="ratx-lineage-arrow" aria-hidden="true">&rarr;</span> ')}`;
+  }
+
   function showFieldsForView() {
     for (const element of document.querySelectorAll('[data-views]')) element.hidden = !element.dataset.views.split(' ').includes(state.view);
     for (const tab of document.querySelectorAll('.ratx-tab')) tab.setAttribute('aria-pressed', String(tab.dataset.view === state.view));
@@ -1125,6 +1186,7 @@
       refreshRatings();
       refreshUnitTypes();
       refreshRatGenOptions();
+      refreshLineage();
       refreshEditsBanner();
       if (token !== renderToken) return;
       writeHash();
@@ -1192,6 +1254,13 @@
     });
     $('f-strictness').addEventListener('change', (event) => { state.strictness = Number(event.target.value); render(); });
     $('f-ratgen-reset').addEventListener('click', () => { resetRatGenOptions(); render(); });
+    $('f-lineage').addEventListener('click', (event) => {
+      const link = event.target.closest('[data-lineage-goto]');
+      if (!link) return;
+      event.preventDefault();
+      state.faction = link.dataset.lineageGoto;
+      render();
+    });
 
     $('t-show-all').addEventListener('change', (event) => { state.showAll = event.target.checked; render(); });
     $('t-body').addEventListener('click', (event) => {
