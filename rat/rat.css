@@ -173,6 +173,9 @@
   font-size: 12px; font-weight: 700; color: var(--text-color-secondary); padding: 0; text-transform: uppercase; letter-spacing: 0.08em;
 }
 .ratx-field legend { margin-bottom: 6px; }
+.ratx-label-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.ratx-field .ratx-check-small { font-size: 11px; gap: 6px; cursor: pointer; color: var(--text-color-tertiary); }
+.ratx-check-small input { margin: 0; }
 .ratx-year { display: flex; gap: 10px; align-items: center; }
 .ratx .ratx-year input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) { width: 96px; }
 .ratx-year input[type="range"] { width: 200px; }
@@ -258,6 +261,11 @@
 .ratx-edits-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: rgba(0, 0, 0, 0.35); padding: 6px 10px; }
 
 /* ---------- RAT Generator options ---------- */
+.ratx-lineage { flex: 1 1 100%; margin: 0; font-size: 13px; color: var(--text-color-secondary); line-height: 1.8; }
+.ratx-lineage-step { color: #fff; white-space: nowrap; }
+a.ratx-lineage-step { text-decoration: underline; text-decoration-color: var(--border-color); text-underline-offset: 3px; }
+a.ratx-lineage-step:hover { text-decoration-color: var(--bt-yellow); }
+.ratx-lineage-arrow { color: var(--bt-yellow); margin: 0 6px; }
 .ratx-ratgen { flex: 1 1 100%; border-top: 1px solid var(--border-color); padding-top: 12px; }
 .ratx-ratgen summary { cursor: pointer; font-size: 14px; font-weight: 700; min-height: 32px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bt-yellow); }
 .ratx-ratgen summary .ratx-hint { text-transform: none; letter-spacing: 0; }
@@ -275,6 +283,16 @@
 .ratx .ratx-inline select { width: auto; }
 .ratx-help { font-size: 13px; color: var(--text-color-tertiary); margin-top: 8px !important; line-height: 1.5; }
 .ratx-help code, .ratx-editor code { font-family: ui-monospace, Menlo, monospace; background: #333; color: var(--bt-yellow); padding: 1px 4px; }
+
+/* ---------- First-time notice for the test weights editor ---------- */
+.ratx-notice {
+  max-width: 520px; width: calc(100% - 32px); padding: 24px; border: 2px solid var(--bt-yellow);
+  background: var(--background-color-menu); color: var(--text-color); line-height: 1.5;
+}
+.ratx-notice::backdrop { background: rgba(0, 0, 0, 0.7); }
+.ratx-notice h2 { margin: 4px 0 12px; text-align: left; }
+.ratx-notice p { margin: 0 0 10px; }
+.ratx-notice-actions { display: flex; justify-content: flex-end; margin-top: 16px; }
 
 /* ---------- Test weights editor ---------- */
 .ratx-editor { display: flex; flex-direction: column; gap: 10px; border-color: var(--bt-yellow); }
@@ -320,7 +338,7 @@
 /* The hidden attribute must win over the display rules above */
 .ratx [hidden] { display: none !important; }
 
-/* Links out to MekBay and the Master Unit List */
+/* Links out to MekBay */
 .ratx-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .ratx-links .ratx-button-quiet { text-decoration: none; color: #bbb; }
 .ratx-links .ratx-button-quiet:hover { color: #fff; }

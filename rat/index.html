@@ -52,7 +52,12 @@ scripts:
       </div>
     </div>
     <div class="ratx-field ratx-grow ratx-combo" data-views="table history">
-      <label for="f-faction">Faction</label>
+      <div class="ratx-label-row">
+        <label for="f-faction">Faction</label>
+        <label class="ratx-check ratx-check-small" title="List commands and other sub-factions (codes with a dot, such as FWL.MM) in the faction list. Typing a command's exact code finds it either way.">
+          <input type="checkbox" id="f-show-commands"> Show commands
+        </label>
+      </div>
       <input id="f-faction" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-faction-options"
              autocomplete="off" spellcheck="false" placeholder="Type a name or code, e.g. FS">
       <ul class="ratx-combo-list" id="f-faction-options" role="listbox" aria-label="Factions" hidden></ul>
@@ -70,6 +75,8 @@ scripts:
       <label for="f-query">Find unit</label>
       <input id="f-query" type="search" placeholder="Chassis or model, e.g. Atlas">
     </div>
+
+    <p class="ratx-lineage" id="f-lineage" data-views="table history" aria-live="polite"></p>
 
     <details class="ratx-ratgen" id="f-ratgen">
       <summary>RAT Generator options <span class="ratx-hint" id="f-ratgen-summary"></span></summary>
@@ -118,6 +125,18 @@ scripts:
       </div>
       <p class="ratx-foot" id="t-foot"></p>
     </div>
+
+    <!-- Shown the first time someone opens the test weights editor -->
+    <dialog class="ratx-panel ratx-notice" id="test-notice" aria-labelledby="test-notice-title">
+      <p class="ratx-eyebrow">Test weights</p>
+      <h2 id="test-notice-title">A planning tool</h2>
+      <p>Test edits let you try a different availability code and see how the odds move. They are for planning only.</p>
+      <p>There is no export. MegaMek's availability data is spread over many era files, and most factions take their codes from parent factions, so an edit here cannot be turned into a file MegaMek could load safely. To change the real data, make the change in MegaMek's RAT Editor.</p>
+      <p>Your edits stay in this browser tab, and are gone when you close it.</p>
+      <form method="dialog" class="ratx-notice-actions">
+        <button type="submit" class="ratx-button" id="test-notice-ok">Got it</button>
+      </form>
+    </dialog>
 
     <!-- Test weights editor -->
     <section class="ratx-panel ratx-editor" id="t-editor" aria-label="Test weights" hidden>
