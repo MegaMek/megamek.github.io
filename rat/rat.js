@@ -78,7 +78,7 @@
   let renderToken = 0;
 
   const state = {
-    view: 'table', year: 3039, faction: 'FS', unitType: 0, ratings: [], query: '', showAll: false,
+    view: 'table', year: 3151, faction: 'IS', unitType: 0, ratings: ['C'], query: '', showAll: false,
     weights: [], motives: null, network: 0, roles: [], strictness: 2, editing: null, extraRows: { model: [], chassis: [] },
   };
 
@@ -569,6 +569,29 @@
   }
 
   // ---------------------------------------------------------------- test weights editor
+  const TEST_NOTICE_KEY = 'ratx-test-notice-seen';
+  let testNoticeShownThisPage = false;
+
+  /** Explains, once per browser, that test edits are for planning and cannot be exported. */
+  function showTestNoticeOnce() {
+    if (testNoticeShownThisPage) return;
+    testNoticeShownThisPage = true;
+    try {
+      if (localStorage.getItem(TEST_NOTICE_KEY)) return;
+      localStorage.setItem(TEST_NOTICE_KEY, '1');
+    } catch (error) {
+      // Storage is blocked (private mode): show it once per page load instead
+    }
+    const notice = $('test-notice');
+    if (typeof notice.showModal === 'function') notice.showModal();
+  }
+
+  /** After the notice closes, put the keyboard back in the editor the user just opened. */
+  function focusEditorAfterNotice() {
+    const firstCell = document.querySelector('#t-editor input');
+    if (firstCell) firstCell.focus({ preventScroll: true });
+  }
+
   function renderEditor() {
     const modelIndex = state.editing;
     $('t-editor').hidden = modelIndex === null;
@@ -1189,10 +1212,12 @@
         state.extraRows = { model: [], chassis: [] };
         render();
         $('t-editor').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        showTestNoticeOnce();
       }
     });
 
     // Editor
+    $('test-notice').addEventListener('close', () => focusEditorAfterNotice());
     $('e-close').addEventListener('click', () => { state.editing = null; render(); });
     const commitCell = (input) => {
       const { level, era, index, faction } = input.dataset;
