@@ -276,6 +276,16 @@
 .ratx-help { font-size: 13px; color: var(--text-color-tertiary); margin-top: 8px !important; line-height: 1.5; }
 .ratx-help code, .ratx-editor code { font-family: ui-monospace, Menlo, monospace; background: #333; color: var(--bt-yellow); padding: 1px 4px; }
 
+/* ---------- First-time notice for the test weights editor ---------- */
+.ratx-notice {
+  max-width: 520px; width: calc(100% - 32px); padding: 24px; border: 2px solid var(--bt-yellow);
+  background: var(--background-color-menu); color: var(--text-color); line-height: 1.5;
+}
+.ratx-notice::backdrop { background: rgba(0, 0, 0, 0.7); }
+.ratx-notice h2 { margin: 4px 0 12px; text-align: left; }
+.ratx-notice p { margin: 0 0 10px; }
+.ratx-notice-actions { display: flex; justify-content: flex-end; margin-top: 16px; }
+
 /* ---------- Test weights editor ---------- */
 .ratx-editor { display: flex; flex-direction: column; gap: 10px; border-color: var(--bt-yellow); }
 .ratx-editor-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }

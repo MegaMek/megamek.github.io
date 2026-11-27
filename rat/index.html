@@ -119,6 +119,18 @@ scripts:
       <p class="ratx-foot" id="t-foot"></p>
     </div>
 
+    <!-- Shown the first time someone opens the test weights editor -->
+    <dialog class="ratx-panel ratx-notice" id="test-notice" aria-labelledby="test-notice-title">
+      <p class="ratx-eyebrow">Test weights</p>
+      <h2 id="test-notice-title">A planning tool</h2>
+      <p>Test edits let you try a different availability code and see how the odds move. They are for planning only.</p>
+      <p>There is no export. MegaMek's availability data is spread over many era files, and most factions take their codes from parent factions, so an edit here cannot be turned into a file MegaMek could load safely. To change the real data, make the change in MegaMek's RAT Editor.</p>
+      <p>Your edits stay in this browser tab, and are gone when you close it.</p>
+      <form method="dialog" class="ratx-notice-actions">
+        <button type="submit" class="ratx-button" id="test-notice-ok">Got it</button>
+      </form>
+    </dialog>
+
     <!-- Test weights editor -->
     <section class="ratx-panel ratx-editor" id="t-editor" aria-label="Test weights" hidden>
       <div class="ratx-editor-head">
