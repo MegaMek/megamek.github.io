@@ -52,7 +52,12 @@ scripts:
       </div>
     </div>
     <div class="ratx-field ratx-grow ratx-combo" data-views="table history">
-      <label for="f-faction">Faction</label>
+      <div class="ratx-label-row">
+        <label for="f-faction">Faction</label>
+        <label class="ratx-check ratx-check-small" title="List commands and other sub-factions (codes with a dot, such as FWL.MM) in the faction list. Typing a command's exact code finds it either way.">
+          <input type="checkbox" id="f-show-commands"> Show commands
+        </label>
+      </div>
       <input id="f-faction" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-faction-options"
              autocomplete="off" spellcheck="false" placeholder="Type a name or code, e.g. FS">
       <ul class="ratx-combo-list" id="f-faction-options" role="listbox" aria-label="Factions" hidden></ul>

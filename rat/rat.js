@@ -80,6 +80,7 @@
   const state = {
     view: 'table', year: 3151, faction: 'IS', unitType: 0, ratings: ['C'], query: '', showAll: false,
     weights: [], motives: null, network: 0, roles: [], strictness: 2, editing: null, extraRows: { model: [], chassis: [] },
+    showCommands: false,
   };
 
   // ---------------------------------------------------------------- loading
@@ -191,6 +192,7 @@
     state.network = params.has('n') ? Number(params.get('n')) || 0 : 0;
     state.roles = params.has('roles') ? params.get('roles').split(',').filter(Boolean) : [];
     state.strictness = params.has('s') ? Number(params.get('s')) || 2 : 2;
+    state.showCommands = params.get('cmd') === '1';
     if (params.has('unit')) $('h-unit').value = params.get('unit');
     if (params.has('hf')) $('h-factions').value = params.get('hf');
     if (params.has('cf')) $('c-factions').value = params.get('cf');
@@ -219,6 +221,7 @@
     if (state.network) params.set('n', state.network);
     if (state.roles.length) params.set('roles', state.roles.join(','));
     if (state.strictness !== 2) params.set('s', state.strictness);
+    if (state.showCommands) params.set('cmd', '1');
     if (state.view === 'history') { params.set('unit', $('h-unit').value); params.set('hf', $('h-factions').value); }
     if (state.view === 'compare') params.set('cf', $('c-factions').value);
     if (state.editing !== null && work.models[state.editing]) params.set('edit', work.models[state.editing].key);
@@ -244,6 +247,9 @@
     return `${factionName(faction, state.year)} (${faction.key})`;
   }
 
+  /** A command or other sub-faction: its code has a dot, such as FWL.MM or BAN.HW. */
+  const isCommand = (faction) => faction.key.includes('.');
+
   function factionMatches(text) {
     const query = text.trim().toLowerCase();
     const exactCode = [];
@@ -252,6 +258,8 @@
       if (!isActive(faction, state.year)) continue;
       const label = factionLabel(faction).toLowerCase();
       if (query && faction.key.toLowerCase() === query) exactCode.push(faction);
+      // Commands are listed only when asked for, apart from the faction on show
+      else if (isCommand(faction) && !state.showCommands && faction.key !== state.faction) continue;
       else if (!query || label.includes(query)) rest.push(faction);
     }
     rest.sort((a, b) => factionName(a, state.year).localeCompare(factionName(b, state.year)));
@@ -261,7 +269,8 @@
   function drawFactionOptions() {
     const list = $('f-faction-options');
     if (!picker.matches.length) {
-      list.innerHTML = '<li class="ratx-combo-empty" role="presentation">No faction active in this year matches.</li>';
+      list.innerHTML = '<li class="ratx-combo-empty" role="presentation">No faction active in this year matches.'
+        + (state.showCommands ? '' : ' Tick Show commands to search commands too.') + '</li>';
       return;
     }
     list.innerHTML = picker.matches.map((faction, position) => `<li role="option" id="f-faction-option-${position}"`
@@ -1183,6 +1192,7 @@
       $('f-year').value = state.year;
       $('f-year-range').value = state.year;
       refreshFactionList();
+      $('f-show-commands').checked = state.showCommands;
       refreshRatings();
       refreshUnitTypes();
       refreshRatGenOptions();
@@ -1254,6 +1264,11 @@
     });
     $('f-strictness').addEventListener('change', (event) => { state.strictness = Number(event.target.value); render(); });
     $('f-ratgen-reset').addEventListener('click', () => { resetRatGenOptions(); render(); });
+    $('f-show-commands').addEventListener('change', (event) => {
+      state.showCommands = event.target.checked;
+      writeHash();
+      if (picker.open) openFactionPicker('');
+    });
     $('f-lineage').addEventListener('click', (event) => {
       const link = event.target.closest('[data-lineage-goto]');
       if (!link) return;
