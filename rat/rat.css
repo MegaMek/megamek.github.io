@@ -173,6 +173,9 @@
   font-size: 12px; font-weight: 700; color: var(--text-color-secondary); padding: 0; text-transform: uppercase; letter-spacing: 0.08em;
 }
 .ratx-field legend { margin-bottom: 6px; }
+.ratx-label-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.ratx-field .ratx-check-small { font-size: 11px; gap: 6px; cursor: pointer; color: var(--text-color-tertiary); }
+.ratx-check-small input { margin: 0; }
 .ratx-year { display: flex; gap: 10px; align-items: center; }
 .ratx .ratx-year input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) { width: 96px; }
 .ratx-year input[type="range"] { width: 200px; }
