@@ -330,7 +330,7 @@
 /* The hidden attribute must win over the display rules above */
 .ratx [hidden] { display: none !important; }
 
-/* Links out to MekBay and the Master Unit List */
+/* Links out to MekBay */
 .ratx-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .ratx-links .ratx-button-quiet { text-decoration: none; color: #bbb; }
 .ratx-links .ratx-button-quiet:hover { color: #fff; }

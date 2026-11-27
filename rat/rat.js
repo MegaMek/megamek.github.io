@@ -603,9 +603,6 @@
       `<a class="ratx-button-quiet" href="${esc(mekbayUrl(model, 'General'))}" target="_blank" rel="noopener">Stats in MekBay</a>`,
       `<a class="ratx-button-quiet" href="${esc(mekbayUrl(model, 'Factions'))}" target="_blank" rel="noopener">Availability in MekBay</a>`,
     ];
-    if (model.mulId > 0) {
-      links.push(`<a class="ratx-button-quiet" href="https://masterunitlist.info/Unit/Details/${model.mulId}" target="_blank" rel="noopener">Master Unit List</a>`);
-    }
     $('e-links').innerHTML = links.join('');
     $('e-model-key').textContent = `· ${model.key}`;
     $('e-chassis-key').textContent = `· ${chassisRecord.name} (shared by ${chassisRecord.models.length} model${chassisRecord.models.length === 1 ? '' : 's'})`;
