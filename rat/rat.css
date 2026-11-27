@@ -258,6 +258,11 @@
 .ratx-edits-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: rgba(0, 0, 0, 0.35); padding: 6px 10px; }
 
 /* ---------- RAT Generator options ---------- */
+.ratx-lineage { flex: 1 1 100%; margin: 0; font-size: 13px; color: var(--text-color-secondary); line-height: 1.8; }
+.ratx-lineage-step { color: #fff; white-space: nowrap; }
+a.ratx-lineage-step { text-decoration: underline; text-decoration-color: var(--border-color); text-underline-offset: 3px; }
+a.ratx-lineage-step:hover { text-decoration-color: var(--bt-yellow); }
+.ratx-lineage-arrow { color: var(--bt-yellow); margin: 0 6px; }
 .ratx-ratgen { flex: 1 1 100%; border-top: 1px solid var(--border-color); padding-top: 12px; }
 .ratx-ratgen summary { cursor: pointer; font-size: 14px; font-weight: 700; min-height: 32px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bt-yellow); }
 .ratx-ratgen summary .ratx-hint { text-transform: none; letter-spacing: 0; }
