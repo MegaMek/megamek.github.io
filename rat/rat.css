@@ -1,0 +1,398 @@
+/*
+ * RAT Probability Explorer, styled after MekBay (github.com/MegaMek/mekbay, src/styles.scss):
+ * dark theme, BattleTech yellow accent, square corner-bracket frames, Roboto / Roboto Condensed.
+ * Scoped under .ratx so it can sit inside the website layout.
+ */
+.ratx {
+  /* MekBay tokens */
+  --background-color: #141414;
+  --background-color-menu: #292929;
+  --background-color-light: #313131;
+  --background-input: rgba(40, 40, 40, 0.5);
+  --background-highlight: #3d3d3d;
+  --background-highlight-bright: #7a7a7a;
+  --border-color: #555;
+  --text-color: #ffffff;
+  --text-color-secondary: silver;
+  --text-color-tertiary: #888;
+  --bt-yellow: #eaae3f;
+  --bt-yellow-strong: #ffae16;
+  --bt-yellow-background: #443912;
+  --bt-yellow-background-transparent: #68540faa;
+  --semantic-color: #17a2b8;
+  --primary-focus-color-highlight: rgb(192, 192, 255);
+  --success: #7dcc80;
+  --damaged: rgb(255, 105, 105);
+  --panel: #1e1e1e;
+  --table: #222;
+  --table-head: #333;
+
+  color-scheme: dark;
+  font-family: 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
+  background: var(--background-color);
+  max-width: 1320px; margin: 0 auto; padding: 28px 20px 64px;
+  display: flex; flex-direction: column; gap: 18px; box-sizing: border-box; min-height: 100vh;
+}
+.ratx *, .ratx *::before, .ratx *::after { box-sizing: border-box; }
+.ratx p { margin: 0; }
+.ratx h1, .ratx h2, .ratx h3, .ratx-eyebrow, .ratx-tile span:first-child, .ratx-field label, .ratx-field legend,
+.ratx-label, .ratx-table th, .ratx-group legend, .ratx-ratgen summary {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+}
+.ratx h1 { margin: 0; font-size: clamp(24px, 3.6vw, 34px); line-height: 1.1; font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; }
+.ratx h2 { margin: 0; font-size: 1.15em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.ratx h3 { font-size: 1.05em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.ratx a { color: #fff; text-decoration: underline; transition: color 0.15s ease; }
+.ratx a:hover { color: var(--bt-yellow); }
+.ratx-eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bt-yellow); }
+.ratx-sub { font-size: 15px; color: var(--text-color-secondary); margin-top: 6px !important; max-width: 70ch; line-height: 1.45; }
+.ratx-muted { color: var(--text-color-secondary); }
+.ratx-hint { font-weight: 400; color: var(--text-color-tertiary); text-transform: none; letter-spacing: 0; }
+.ratx-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; }
+
+/* Keyboard focus, as MekBay's keyboard-navigation mode */
+.ratx :focus-visible { outline: 2px solid var(--primary-focus-color-highlight) !important; outline-offset: 1px; }
+
+/* ---------- Corner-bracket frame (MekBay .bt-button / .bt-input / .corner-borders) ---------- */
+.ratx-tab, .ratx-pill, .ratx-button, .ratx-button-quiet,
+.ratx input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+  --frame: #666;
+  border: 2px solid transparent; border-radius: 0;
+  background-color: var(--background-input);
+  background-repeat: no-repeat; background-origin: border-box;
+  background-image:
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame));
+  background-size: 12px 2px, 2px 12px, 12px 2px, 2px 12px, 12px 2px, 2px 12px, 12px 2px, 2px 12px;
+  background-position: top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.ratx-tab:hover, .ratx-pill:hover, .ratx-button:hover, .ratx-button-quiet:hover,
+.ratx input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):hover,
+.ratx input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus {
+  --frame: #fff;
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+
+/* Buttons */
+.ratx-tab, .ratx-pill, .ratx-button, .ratx-button-quiet {
+  font: inherit; font-weight: 700; color: #bbb; cursor: pointer; white-space: nowrap;
+  display: inline-flex; align-items: center; justify-content: center; touch-action: manipulation;
+}
+.ratx-tab, .ratx-pill, .ratx-button { min-height: 44px; padding: 0 16px; font-size: 14px; }
+.ratx-button-quiet { min-height: 36px; padding: 0 12px; font-size: 13px; }
+.ratx-tab, .ratx-pill { font-family: 'Roboto Condensed', 'Roboto', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
+.ratx-pill { min-width: 44px; padding: 0 12px; }
+.ratx-tab:hover, .ratx-pill:hover, .ratx-button:hover, .ratx-button-quiet:hover { color: #fff; background-color: var(--background-highlight); }
+.ratx-tab:active, .ratx-pill:active, .ratx-button:active, .ratx-button-quiet:active { background-color: var(--background-highlight-bright); }
+/* Selected: MekBay .bt-button.selected */
+.ratx-tab[aria-pressed="true"], .ratx-pill[aria-pressed="true"] {
+  --frame: #fff; color: #000; background-color: var(--bt-yellow);
+}
+/* Primary action: MekBay .bt-button.active (yellow frame and text) */
+.ratx-button {
+  --frame: var(--bt-yellow); color: var(--bt-yellow);
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx-button:hover { --frame: var(--bt-yellow-strong); color: var(--bt-yellow-strong); background-color: var(--bt-yellow-background); }
+.ratx-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Inputs */
+.ratx input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+  font: inherit; font-size: 14px; color: #fff; height: 44px; padding: 0 10px; width: 100%;
+}
+.ratx input::placeholder { color: var(--text-color-tertiary); }
+.ratx input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus { background-color: var(--background-input); }
+
+/* Selects: MekBay .bt-select */
+.ratx select {
+  --frame: #666;
+  --arrow: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23999999'%3e%3cpath d='M8 11L2 5h12z'/%3e%3c/svg%3e");
+  font: inherit; font-size: 14px; color: #fff; height: 44px; width: 100%; cursor: pointer;
+  padding: 0 26px 0 10px; border: 2px solid transparent; border-radius: 0;
+  -webkit-appearance: none; appearance: none; background-color: rgb(40, 40, 40);
+  background-repeat: no-repeat; background-origin: border-box;
+  background-image: var(--arrow),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame));
+  background-size: 12px 12px, 12px 2px, 2px 12px, 12px 2px, 2px 12px, 12px 2px, 2px 12px, 12px 2px, 2px 12px;
+  background-position: right 8px center, top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right;
+  transition: background 0.2s ease-in-out;
+}
+.ratx select:hover, .ratx select:focus {
+  --frame: #fff;
+  --arrow: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M8 11L2 5h12z'/%3e%3c/svg%3e");
+  background-size: 12px 12px, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx select option { background: #282828; color: #fff; }
+
+/* Check boxes and radios: MekBay .bt-checkbox */
+.ratx input[type="checkbox"], .ratx input[type="radio"] {
+  --fill: transparent; --frame: #666;
+  -webkit-appearance: none; appearance: none; flex: none;
+  width: 20px; height: 20px; margin: 0; padding: 0; border: 2px solid transparent; border-radius: 0; cursor: pointer;
+  background-color: var(--background-input); background-repeat: no-repeat; background-origin: border-box;
+  background-image: linear-gradient(var(--fill), var(--fill)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame)),
+    linear-gradient(var(--frame), var(--frame)), linear-gradient(var(--frame), var(--frame));
+  background-size: 12px 12px, 6px 2px, 2px 6px, 6px 2px, 2px 6px, 6px 2px, 2px 6px, 6px 2px, 2px 6px;
+  background-position: center, top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right;
+  transition: background 0.2s ease-in-out;
+}
+.ratx input[type="radio"] { background-size: 8px 8px, 6px 2px, 2px 6px, 6px 2px, 2px 6px, 6px 2px, 2px 6px, 6px 2px, 2px 6px; }
+.ratx input[type="checkbox"]:hover, .ratx input[type="checkbox"]:focus-visible {
+  --frame: #fff; background-color: var(--background-highlight);
+  background-size: 12px 12px, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx input[type="radio"]:hover, .ratx input[type="radio"]:focus-visible {
+  --frame: #fff; background-color: var(--background-highlight);
+  background-size: 8px 8px, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx input[type="checkbox"]:checked, .ratx input[type="radio"]:checked { --fill: var(--bt-yellow); --frame: var(--bt-yellow); }
+.ratx input[type="range"] { accent-color: var(--bt-yellow); padding: 0; border: 0; height: 24px; }
+
+/* ---------- Panels ---------- */
+.ratx-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.16)), var(--panel);
+  border: 1px solid var(--border-color); border-radius: 0; padding: 18px 20px;
+}
+.ratx-flush { padding: 0; overflow: hidden; }
+.ratx-panel-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid var(--border-color); }
+.ratx-filters { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
+.ratx-field { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; min-width: 120px; }
+.ratx-grow { flex: 1 1 220px; }
+.ratx-field label, .ratx-field legend, .ratx-label {
+  font-size: 12px; font-weight: 700; color: var(--text-color-secondary); padding: 0; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.ratx-field legend { margin-bottom: 6px; }
+.ratx-year { display: flex; gap: 10px; align-items: center; }
+.ratx .ratx-year input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) { width: 96px; }
+.ratx-year input[type="range"] { width: 200px; }
+.ratx-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+.ratx-status { font-size: 14px; color: var(--text-color-secondary); }
+.ratx-status:empty { display: none; }
+.ratx-note { font-size: 14px; background: var(--bt-yellow-background); border: 1px solid var(--bt-yellow); color: #ffe3a8; padding: 10px 14px; }
+
+/* Tiles */
+.ratx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.ratx-tile {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.16)), var(--panel);
+  border: 1px solid var(--border-color); border-left: 3px solid var(--bt-yellow);
+  padding: 14px 18px; display: flex; flex-direction: column; gap: 4px;
+}
+.ratx-tile span:first-child { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-color-secondary); }
+.ratx-tile strong { font-size: 28px; font-weight: 800; color: var(--bt-yellow); font-variant-numeric: tabular-nums; }
+.ratx-tile span:last-child { font-size: 13px; color: var(--text-color-tertiary); }
+
+/* ---------- Tables: MekBay data table ---------- */
+.ratx-scroll { overflow-x: auto; }
+.ratx-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 860px; background: var(--table); }
+.ratx-table thead th {
+  text-align: left; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-color-secondary);
+  font-weight: 700; padding: 10px 8px; white-space: nowrap; background: var(--table-head); border-bottom: 2px solid var(--border-color);
+}
+.ratx-table td { padding: 9px 8px; border-bottom: 1px solid #444; vertical-align: middle; transition: background-color 0.2s; }
+.ratx-table tbody tr:hover td { background: var(--background-highlight); }
+.ratx-table th:first-child, .ratx-table td:first-child { padding-left: 20px; }
+.ratx-table th:last-child, .ratx-table td:last-child { padding-right: 20px; }
+.ratx-num { font-variant-numeric: tabular-nums; font-family: ui-monospace, 'Cascadia Mono', Menlo, monospace; font-size: 13px; }
+.ratx-bar { display: flex; align-items: center; gap: 8px; min-width: 130px; }
+.ratx-bar-track { flex: 1 1 auto; height: 8px; background: #333; overflow: hidden; min-width: 48px; }
+.ratx-bar-fill { height: 100%; background: var(--bt-yellow); }
+.ratx-bar-fill.is-blend { background: #fff; }
+.ratx-bar .ratx-num { min-width: 52px; text-align: right; }
+.ratx-unit-name { font-weight: 700; }
+.ratx-salvage-row td { background: #1a1a1a; color: var(--text-color-secondary); }
+.ratx-link { color: #fff; }
+.ratx-foot { padding: 12px 20px; border-top: 1px solid var(--border-color); font-size: 13px; color: var(--text-color-tertiary); background: var(--table); }
+.ratx-check { display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer; }
+.ratx-change { font-weight: 700; }
+.ratx-change.is-up { color: var(--success); }
+.ratx-change.is-down { color: var(--damaged); }
+.ratx-table tr.is-editing td { background: var(--bt-yellow-background-transparent); }
+
+/* Charts and heatmap */
+.ratx-chart svg { width: 100%; height: auto; display: block; }
+.ratx-legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; margin-top: 8px; color: var(--text-color-secondary); }
+.ratx-swatch { display: inline-block; width: 12px; height: 12px; margin-right: 6px; vertical-align: -1px; }
+.ratx-heat { border-collapse: separate; border-spacing: 3px; padding: 8px 12px 12px; }
+.ratx-heat thead th { background: transparent; border-bottom: 0; }
+.ratx-heat td { border-bottom: 0; text-align: center; }
+.ratx-heat tbody tr:hover td { background: inherit; }
+.ratx-heat td:first-child, .ratx-heat th:first-child { text-align: left; }
+.ratx-scale { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-color-secondary); }
+.ratx-ramp { width: 160px; height: 10px; background: linear-gradient(90deg, #262626, #68540f, #eaae3f); }
+
+/* Footer */
+.ratx-about { display: flex; flex-direction: column; gap: 14px; }
+.ratx-about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.ratx-about-grid section { border-left: 3px solid var(--bt-yellow); background: rgba(0, 0, 0, 0.22); padding: 12px 16px; }
+.ratx-about-grid h3 { margin: 0 0 8px; font-family: 'Roboto Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bt-yellow); }
+.ratx-about p, .ratx-about li { font-size: 14px; line-height: 1.55; color: var(--text-color-secondary); }
+.ratx-about p { margin: 0 0 6px; }
+.ratx-about ul, .ratx-about ol { margin: 0; padding-left: 20px; }
+.ratx-about li + li { margin-top: 6px; }
+.ratx-about strong { color: #fff; font-weight: 700; }
+.ratx-about-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.ratx-about-meta div { display: flex; gap: 8px; align-items: baseline; padding: 4px 10px; background: #2b2b2b; border: 1px solid #3a3a3a; }
+.ratx-about-meta dt { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-color-secondary); }
+.ratx-about-meta dd { margin: 0; font-size: 13px; color: #fff; font-variant-numeric: tabular-nums; }
+
+/* ---------- Test edits banner ---------- */
+.ratx-edits {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
+  background: var(--bt-yellow-background); border: 1px solid var(--bt-yellow); padding: 12px 16px;
+}
+.ratx-edits-text { display: flex; flex-direction: column; gap: 2px; font-size: 14px; color: #ffe3a8; }
+.ratx-edits-text strong { color: var(--bt-yellow); font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; }
+.ratx-edits-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.ratx-edits-list { flex: 1 1 100%; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.ratx-edits-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: rgba(0, 0, 0, 0.35); padding: 6px 10px; }
+
+/* ---------- RAT Generator options ---------- */
+.ratx-ratgen { flex: 1 1 100%; border-top: 1px solid var(--border-color); padding-top: 12px; }
+.ratx-ratgen summary { cursor: pointer; font-size: 14px; font-weight: 700; min-height: 32px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bt-yellow); }
+.ratx-ratgen summary .ratx-hint { text-transform: none; letter-spacing: 0; }
+/* One row: the short option boxes as narrow columns, mission roles taking the rest; wraps on narrow screens */
+.ratx-ratgen-grid { display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; margin: 12px 0; }
+.ratx-ratgen-grid > .ratx-group { flex: 1 1 240px; }
+.ratx-ratgen-grid > .ratx-group[hidden] { display: none; }
+.ratx-group { border: 1px solid var(--border-color); padding: 10px 14px 12px; margin: 0; min-width: 0; background: rgba(0, 0, 0, 0.2); }
+.ratx-group legend { font-size: 12px; font-weight: 700; color: var(--text-color-secondary); padding: 0 4px; text-transform: uppercase; letter-spacing: 0.08em; }
+.ratx-ratgen-grid > .ratx-roles-box { flex: 5 1 560px; }
+.ratx-checks { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.ratx-roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 2px 12px; margin-top: 8px; }
+.ratx-checks .ratx-check { min-height: 32px; font-size: 14px; text-transform: capitalize; }
+.ratx-inline { flex-direction: row; align-items: center; gap: 10px; }
+.ratx .ratx-inline select { width: auto; }
+.ratx-help { font-size: 13px; color: var(--text-color-tertiary); margin-top: 8px !important; line-height: 1.5; }
+.ratx-help code, .ratx-editor code { font-family: ui-monospace, Menlo, monospace; background: #333; color: var(--bt-yellow); padding: 1px 4px; }
+
+/* ---------- Test weights editor ---------- */
+.ratx-editor { display: flex; flex-direction: column; gap: 10px; border-color: var(--bt-yellow); }
+.ratx-editor-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.ratx-editor h2 { font-size: 22px; margin-top: 4px; text-transform: none; letter-spacing: 0; }
+.ratx-editor-sub { margin: 10px 0 0; }
+.ratx-grid { border-collapse: collapse; font-size: 13px; background: var(--table); }
+.ratx-grid th, .ratx-grid td { border: 1px solid #333; padding: 2px; text-align: center; white-space: nowrap; }
+.ratx-grid thead th { font-size: 12px; color: var(--text-color-secondary); padding: 6px 4px; position: sticky; top: 0; background: var(--table-head); }
+.ratx-grid tbody th { text-align: left; padding: 4px 8px; font-weight: 700; position: sticky; left: 0; background: var(--table-head); z-index: 1; }
+/* Dense grid: plain cells; the MekBay frame only appears on the cell being hovered or edited */
+.ratx .ratx-grid input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+  width: 64px; height: 30px; padding: 0 4px; font-size: 13px; font-family: ui-monospace, Menlo, monospace; text-align: center;
+  --frame: transparent; background-color: transparent;
+}
+.ratx .ratx-grid input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):hover, .ratx .ratx-grid input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus {
+  --frame: #fff; background-color: var(--background-highlight);
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx-grid .is-current { background: var(--background-highlight); }
+.ratx-grid thead th.is-current { color: var(--bt-yellow); }
+.ratx-grid .is-next { background: #2b2b2b; }
+.ratx .ratx-grid td.is-edited input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+  --frame: var(--bt-yellow); color: var(--bt-yellow); font-weight: 700; background-color: var(--bt-yellow-background);
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+}
+.ratx-grid tr.is-current-faction th { color: var(--bt-yellow); }
+.ratx-add { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; }
+.ratx-add label { font-weight: 700; color: var(--text-color-secondary); text-transform: uppercase; letter-spacing: 0.06em; font-size: 12px; }
+.ratx .ratx-add input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) { width: 180px; height: 36px; }
+
+/* Thin MekBay scrollbars */
+.ratx ::-webkit-scrollbar { width: 6px; height: 6px; }
+.ratx ::-webkit-scrollbar-track { background: transparent; }
+.ratx ::-webkit-scrollbar-thumb { background: #666; }
+.ratx ::-webkit-scrollbar-thumb:hover { background: #888; }
+
+@media (max-width: 640px) {
+  .ratx { padding: 18px 12px 48px; }
+  .ratx-year input[type="range"] { width: 140px; }
+}
+
+/* The hidden attribute must win over the display rules above */
+.ratx [hidden] { display: none !important; }
+
+/* Links out to MekBay and the Master Unit List */
+.ratx-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ratx-links .ratx-button-quiet { text-decoration: none; color: #bbb; }
+.ratx-links .ratx-button-quiet:hover { color: #fff; }
+
+/* Code tooltip for the editor grids (appended to <body>, so colours are literal) */
+.ratx-code-tip { position: fixed; z-index: 50; max-width: 340px; padding: 10px 12px; background: #1b1b1b; border: 1px solid #eaae3f;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); color: #ddd; font: 13px/1.45 Roboto, sans-serif; pointer-events: none; }
+.ratx-code-tip[hidden] { display: none; }
+.ratx-code-tip-head { font-family: 'Roboto Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #eaae3f; }
+.ratx-code-tip-code { margin: 4px 0 6px; font: 15px ui-monospace, Menlo, monospace; color: #fff; word-break: break-all; }
+.ratx-code-tip p { margin: 4px 0; }
+.ratx-code-tip code { font-family: ui-monospace, Menlo, monospace; color: #fff; }
+.ratx-code-tip table { border-collapse: collapse; margin: 4px 0; }
+.ratx-code-tip th { text-align: left; font-weight: 500; color: #aaa; padding: 1px 12px 1px 0; }
+.ratx-code-tip td { font-variant-numeric: tabular-nums; color: #fff; }
+.ratx-code-tip .ratx-muted { color: #8a8a8a; }
+.ratx-code-tip-error { color: #ff6969; }
+
+/* Faction picker: searchable dropdown under the faction box */
+.ratx-combo { position: relative; }
+.ratx-combo-list { position: absolute; top: 100%; left: 0; right: 0; z-index: 20; margin: 4px 0 0; padding: 4px 0; list-style: none;
+  max-height: 320px; overflow-y: auto; background: #1b1b1b; border: 1px solid var(--bt-yellow); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); }
+.ratx-combo-list[hidden] { display: none; }
+.ratx-combo-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 10px; font-size: 14px; cursor: pointer; color: #ddd; }
+.ratx-combo-list li.is-current { color: var(--bt-yellow); }
+.ratx-combo-list li.is-active, .ratx-combo-list li:hover { background: var(--background-highlight); color: #fff; }
+.ratx-combo-key { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: var(--text-color-secondary); }
+.ratx-combo-list li.ratx-combo-empty { cursor: default; color: var(--text-color-secondary); }
+
+/* Selected faction's row in the code grids: tinted across, yellow bar on the name, brightest where it meets the current era */
+.ratx-grid tr.is-current-faction td { background: rgba(234, 174, 63, 0.10); }
+.ratx-grid tr.is-current-faction td.is-current { background: rgba(234, 174, 63, 0.24); }
+.ratx-grid tr.is-current-faction th { background: var(--bt-yellow-background); box-shadow: inset 4px 0 0 var(--bt-yellow); }
+.ratx-grid tr.is-current-faction td, .ratx-grid tr.is-current-faction th { border-top: 1px solid rgba(234, 174, 63, 0.55); border-bottom: 1px solid rgba(234, 174, 63, 0.55); }
+
+/* Heading explanations: a small "?" after a tile or column heading, explained on hover or focus */
+.ratx-tip-target { cursor: help; display: inline-flex; align-items: center; gap: 6px; }
+.ratx-tip-target:focus-visible { outline: 2px solid var(--bt-yellow); outline-offset: 2px; }
+.ratx-tile span.ratx-tip-target { font-size: 12px; color: var(--text-color-secondary); }
+.ratx-tip-target .ratx-tip-mark, .ratx-tile span.ratx-tip-mark {
+  display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; border-radius: 50%;
+  border: 1px solid currentColor; font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: 0; color: var(--text-color-secondary); opacity: 0.8; }
+.ratx-tip-target:hover .ratx-tip-mark, .ratx-tip-target:focus .ratx-tip-mark { color: var(--bt-yellow); opacity: 1; }
+.ratx-help-tip { max-width: 300px; font-size: 13px; line-height: 1.5; text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* Right-click code editor (appended to <body>, positioned on the page so it scrolls with the grid) */
+.ratx-code-editor { position: absolute; z-index: 60; width: 330px; padding: 12px 14px; background: #1b1b1b; border: 1px solid #eaae3f;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7); color: #ddd; font: 13px/1.45 Roboto, sans-serif; display: flex; flex-direction: column; gap: 10px; }
+.ratx-code-editor[hidden] { display: none; }
+.ratx-code-editor p { margin: 0; }
+.ratx-code-editor code { font-family: ui-monospace, Menlo, monospace; color: #fff; }
+.ratx-code-editor button { font: inherit; color: #fff; background: #2b2b2b; border: 1px solid #444; padding: 3px 10px; cursor: pointer; }
+.ratx-code-editor button:hover, .ratx-code-editor button:focus-visible { border-color: #eaae3f; outline: none; }
+.ratx-code-editor button[aria-pressed="true"] { background: #443912; border-color: #eaae3f; color: #eaae3f; }
+.ratx-code-editor button:disabled { opacity: 0.4; cursor: default; }
+.ratx-ce-body { display: flex; flex-direction: column; gap: 4px; }
+.ratx-ce-row { display: flex; align-items: center; gap: 6px; }
+.ratx-ce-name { flex: 0 0 110px; color: #aaa; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ratx-ce-row button[data-step] { width: 28px; padding: 3px 0; font-weight: 700; }
+.ratx-ce-value { width: 26px; text-align: center; font: 700 15px ui-monospace, Menlo, monospace; color: #fff; }
+.ratx-ce-note { color: #8a8a8a; font-size: 12px; }
+.ratx-ce-shift { flex-wrap: wrap; }
+.ratx-ce-shift button { padding: 2px 6px; font-size: 12px; }
+.ratx-code-editor .ratx-ce-link { align-self: flex-start; background: none; border: 0; padding: 0; color: #eaae3f; text-decoration: underline; }
+.ratx-ce-quick { display: flex; flex-wrap: wrap; gap: 6px; }
+.ratx-ce-code { font-size: 12px; word-break: break-all; }
+.ratx-ce-preview table { border-collapse: collapse; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.ratx-ce-preview th { text-align: left; color: #aaa; font-weight: 500; padding: 1px 10px 1px 0; }
+.ratx-ce-preview td { padding: 1px 6px 1px 0; }
+.ratx-ce-preview strong { color: #fff; }
+.ratx-code-editor .ratx-up { color: #6fcf6f; }
+.ratx-code-editor .ratx-down { color: #ff6969; }
+.ratx-code-editor .ratx-muted { color: #8a8a8a; }
+.ratx-ce-actions { display: flex; gap: 8px; justify-content: flex-end; }
+.ratx-code-editor .ratx-ce-apply { background: #eaae3f; border-color: #eaae3f; color: #000; font-weight: 700; }

@@ -1,0 +1,15 @@
+{% comment %}
+  Full-width page for the RAT Explorer and the Force Generator Explorer: the site's header, menu and footer around a
+  dark, wide container. A page lists its own stylesheets (loaded by header.html) and scripts (loaded here, after the
+  page content, before the footer closes the page) in its front matter.
+{% endcomment %}
+{% include header.html %}
+<main role="main">
+  <div class="container-xxl top explorer-top">
+    {{ content }}
+  </div>
+</main>
+{% for script in page.scripts %}
+<script src="{{ script | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{% endfor %}
+{% include footer.html %}

@@ -1,0 +1,85 @@
+# Keeps the RAT Explorer (/rat/) in step with MegaMek. MegaMek's "RAT Explorer Data" workflow builds the explorer's
+# data and its copy of the RAT Generator (ratgen.js) on main and every night, checks them against MegaMek itself, and
+# keeps them as a workflow artifact. This workflow fetches the newest one and commits it when the data changed.
+# Only unit availability data and code are fetched; no visitor or personal data is involved.
+name: Update RAT Explorer data
+
+on:
+  # Runs once a day, after MegaMek's nightly data build. Time is off the hour to be polite to shared runners.
+  schedule:
+    - cron: "47 7 * * *"
+
+  # Allows a manual run from the Actions tab.
+  workflow_dispatch:
+
+# Needs write access to commit the updated data back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: "rat-data"
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Download MegaMek's newest RAT data
+        id: download
+        env:
+          # Reading another repository's artifacts may need a token with "Actions: read" on MegaMek/megamek. Without
+          # the secret, the workflow's own token is tried.
+          GH_TOKEN: ${{ secrets.RAT_DATA_READ_TOKEN || github.token }}
+        run: |
+          run_id=$(gh run list --repo MegaMek/megamek --workflow rat-data.yml --branch main --status success \
+            --limit 20 --json databaseId,event --jq '[.[] | select(.event != "pull_request")][0].databaseId')
+          if [ -z "$run_id" ] || [ "$run_id" = "null" ]; then
+            echo "::notice::MegaMek has no successful RAT data build yet; keeping the current data."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          gh run download "$run_id" --repo MegaMek/megamek --name rat-data --dir incoming
+          echo "found=true" >> "$GITHUB_OUTPUT"
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+
+      - name: Replace the data if it changed
+        id: compare
+        if: steps.download.outputs.found == 'true'
+        shell: python
+        run: |
+          import gzip, json, os, shutil
+
+          def content(path):
+              """The data without its build stamp, so a rebuild of unchanged data is not a change."""
+              with gzip.open(path, "rt", encoding="utf-8") as stream:
+                  data = json.load(stream)
+              for stamp in ("generatedAt", "buildId"):
+                  data.pop(stamp, None)
+              return data
+
+          def read(path):
+              with open(path, "rb") as stream:
+                  return stream.read()
+
+          data_changed = (not os.path.exists("rat/data/inputs.json.gz")
+                          or content("incoming/inputs.json.gz") != content("rat/data/inputs.json.gz"))
+          engine_changed = read("incoming/ratgen.js") != read("rat/ratgen.js")
+          if data_changed:
+              shutil.copyfile("incoming/inputs.json.gz", "rat/data/inputs.json.gz")
+          if engine_changed:
+              shutil.copyfile("incoming/ratgen.js", "rat/ratgen.js")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"changed={'true' if (data_changed or engine_changed) else 'false'}\n")
+          print(f"data changed: {data_changed}, engine changed: {engine_changed}")
+
+      - name: Commit updated data
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rat/data/inputs.json.gz rat/ratgen.js
+          git commit -m "Update RAT Explorer data from MegaMek run ${{ steps.download.outputs.run_id }}"
+          git push

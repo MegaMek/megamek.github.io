@@ -1,0 +1,40 @@
+/* Force Generator Explorer: additions to ../rat/rat.css (MekBay look) */
+.fg-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
+.fg-columns .ratx-panel { display: flex; flex-direction: column; gap: 10px; }
+.fg-table td { vertical-align: top; }
+.fg-chips { display: flex; flex-wrap: wrap; gap: 4px 6px; max-width: 560px; }
+.fg-chip { font-size: 12px; padding: 2px 6px; background: #2b2b2b; border: 1px solid #3a3a3a; white-space: nowrap; }
+.fg-chip a { color: #fff; }
+.fg-chip .ratx-num { color: var(--bt-yellow); margin-left: 4px; }
+.fg-meter { display: flex; align-items: center; gap: 8px; min-width: 120px; }
+.fg-meter-track { flex: 1 1 auto; height: 8px; background: #333; min-width: 60px; }
+.fg-meter-fill { height: 100%; background: var(--bt-yellow); }
+.fg-meter-fill.is-low { background: var(--damaged); }
+.fg-role-row { display: grid; grid-template-columns: 130px 1fr 60px 60px; gap: 10px; align-items: center; font-size: 14px; }
+.fg-role-row span:first-child { text-transform: capitalize; }
+.fg-matrix { border-collapse: separate; border-spacing: 3px; font-size: 13px; }
+.fg-matrix th { font-family: 'Roboto Condensed', sans-serif; font-size: 12px; color: var(--text-color-secondary); font-weight: 700; padding: 4px 6px; text-transform: uppercase; }
+.fg-matrix td { min-width: 64px; text-align: center; padding: 8px 4px; font-variant-numeric: tabular-nums; }
+.fg-edits { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; margin-top: 12px; }
+.fg-edit { border: 1px solid var(--border-color); background: rgba(0, 0, 0, 0.25); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.fg-edit h3 { margin: 0; font-size: 15px; }
+.fg-edit .fg-big { font-size: 22px; font-weight: 800; color: var(--bt-yellow); font-variant-numeric: tabular-nums; }
+.fg-edit table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.fg-edit td, .fg-edit th { padding: 4px 4px; border-bottom: 1px solid #333; text-align: left; vertical-align: top; }
+.fg-edit th { font-size: 11px; color: var(--text-color-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+.fg-sig { color: var(--bt-yellow); }
+.fg-up { color: var(--success); }
+.fg-down { color: var(--damaged); }
+.fg-empty-list { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.6; color: var(--text-color-secondary); }
+.fg-role-head { font-size: 11px; color: var(--text-color-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+.fg-role-head span:first-child { text-transform: uppercase; }
+.fg-table .ratx-hint { display: block; margin-top: 2px; }
+
+/* Right-click unit menu (look shared with the RAT Explorer's code editor) */
+.fg-unit-menu { width: 380px; }
+.fg-unit-menu .ratx-ce-preview td { padding-right: 10px; }
+.fg-unit-menu .fg-menu-fill td { padding: 0 0 6px 12px; font-size: 12px; color: #aaa; }
+.fg-unit-menu .ratx-ce-actions { align-items: center; justify-content: space-between; }
+.fg-unit-menu .fg-menu-link { color: #000; background: #eaae3f; padding: 4px 10px; font-weight: 700; text-decoration: none; }
+.fg-unit-menu .fg-up { color: #6fcf6f; }
+.fg-unit-menu .fg-down { color: #ff6969; }

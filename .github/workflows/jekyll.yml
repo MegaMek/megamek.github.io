@@ -11,11 +11,12 @@ on:
   push:
     branches: ["main"]
 
-  # Runs after the daily download snapshot commits new data. The snapshot bot
-  # pushes with GITHUB_TOKEN, which does not trigger the push event above, so
-  # without this the live site would never pick up the new download data.
+  # Runs after the daily download snapshot and the RAT Explorer data update
+  # commit new data. Both bots push with GITHUB_TOKEN, which does not trigger
+  # the push event above, so without this the live site would never pick up
+  # the new data.
   workflow_run:
-    workflows: ["Snapshot download counts"]
+    workflows: ["Snapshot download counts", "Update RAT Explorer data"]
     types: [completed]
 
   # Allows you to run this workflow manually from the Actions tab

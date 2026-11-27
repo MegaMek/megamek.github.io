@@ -1,0 +1,41 @@
+/*
+ * The RAT Explorer and Force Generator Explorer inside the site layout. The explorers carry their own dark styling
+ * (rat/rat.css); this file only undoes the site and Bootstrap rules that would otherwise reach into them.
+ */
+
+/* The site's body container is a light rounded box; the explorers need a dark one */
+.container.top.explorer-top,
+.container-xxl.top.explorer-top {
+  background-color: #141414;
+  color: #ddd;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* The site centres h1-h3 */
+.ratx h1,
+.ratx h2,
+.ratx h3 {
+  text-align: left;
+}
+
+/* Bootstrap floats legends and makes them full width */
+.ratx legend {
+  float: none;
+  width: auto;
+  margin-bottom: 0;
+  line-height: inherit;
+}
+
+/* Bootstrap sets its own link colour and font sizes on a few elements */
+.ratx a {
+  color: inherit;
+}
+
+.ratx small,
+.ratx label {
+  margin-bottom: 0;
+}
