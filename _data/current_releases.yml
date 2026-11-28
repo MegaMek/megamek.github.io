@@ -5,7 +5,7 @@
 #Latest in megamek, megameklab and mekhq, once all three share the same tag and
 #have their archives. Edit by hand only to force a value. The workflow also
 #reads this key by name, so keep it called "stable".
-stable: 0.51.01.14
-stable_date: November 24, 2026
+stable: 0.51.01.15
+stable_date: November 28, 2026
 #The MegaMek Launcher version is not set here. The Track latest releases
 #workflow writes the newest launcher release to _data/launcher_release.json.
